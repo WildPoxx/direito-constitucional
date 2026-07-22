@@ -1,0 +1,17 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Editor and local workspace metadata
+.obsidian/
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
