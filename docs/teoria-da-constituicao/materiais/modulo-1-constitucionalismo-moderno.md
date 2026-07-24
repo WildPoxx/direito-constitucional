@@ -4,7 +4,7 @@ materia: Teoria da Constituição
 modulo: 1
 deck: "Deck HTML - Módulo 1 - Constitucionalismo Moderno.html"
 tema: "Constitucionalismo moderno e Direito Constitucional"
-status: versão inicial
+status: versão inicial com camada crítica
 data: 2026-07-24
 tags:
   - direito-constitucional
@@ -12,6 +12,7 @@ tags:
   - texto-de-apoio
   - modulo-1
   - constitucionalismo
+  - historia-constitucional
 ---
 
 # Constitucionalismo Moderno E Direito Constitucional
@@ -24,7 +25,7 @@ A pergunta central do módulo é:
 
 **quando começa, propriamente, o constitucionalismo?**
 
-Responder a essa pergunta exige separar o uso amplo e histórico da palavra do seu sentido mais rigoroso na teoria jurídica.
+Responder a essa pergunta exige separar o uso amplo e histórico da palavra do seu sentido mais rigoroso na teoria jurídica. Também exige situar o constitucionalismo moderno em seu contexto histórico: a crise do absolutismo, a ascensão da burguesia, a formação do Estado moderno e o desenvolvimento do capitalismo.
 
 ## 1. Nem Todo Limite Ao Poder É Constitucionalismo
 
@@ -36,6 +37,8 @@ Por isso, convém distinguir:
 
 - um uso **amplo**, que fala em antecedentes históricos da limitação do poder;
 - um uso **rigoroso**, que reserva a palavra constitucionalismo para a experiência moderna de organização jurídica do Estado e garantia de direitos.
+
+Essa distinção é importante porque evita uma confusão comum: tratar qualquer pacto político antigo como se fosse equivalente a uma Constituição moderna. O constitucionalismo, em sentido forte, pertence à modernidade.
 
 ## 2. "Antigo", "Medieval" E "Do Futuro" Como Categorias Auxiliares
 
@@ -59,7 +62,17 @@ O constitucionalismo moderno surge quando três exigências se combinam.
 
 Essas três exigências ajudam a compreender por que o constitucionalismo moderno está ligado ao fim do absolutismo, à ascensão do Estado de Direito e à afirmação de uma nova legitimidade política.
 
-## 4. Três Matrizes Do Constitucionalismo Moderno
+## 4. Localização Histórica E De Classe
+
+O constitucionalismo moderno não deve ser estudado apenas como história das ideias. Ele também é parte da formação histórica da sociedade burguesa. Isso significa que a Constituição moderna não nasce em abstrato: ela aparece em um contexto de crise do absolutismo, expansão do mercado, afirmação da propriedade privada, fortalecimento do comércio, desenvolvimento do capitalismo e reorganização do poder político em torno do Estado moderno.
+
+Essa leitura não elimina a importância dos direitos e das garantias constitucionais. Ao contrário: ajuda a compreender sua ambivalência. O constitucionalismo moderno foi um avanço contra o poder absoluto, contra privilégios estamentais e contra formas pessoais de dominação. Mas também foi uma forma jurídica adequada à nova ordem burguesa, fundada na liberdade formal, na igualdade perante a lei, na propriedade privada e na circulação mercantil.
+
+Hobsbawm (s.d.) ajuda a situar esse processo ao tratar a passagem entre 1789 e 1848 como resultado de uma dupla revolução: a Revolução Francesa, de caráter político, e a Revolução Industrial inglesa, de caráter econômico e social. Para a Teoria da Constituição, essa chave é muito útil: o constitucionalismo moderno se consolida no mesmo movimento histórico em que a burguesia afirma sua posição social e política.
+
+A crítica marxista permite acrescentar um ponto decisivo: a igualdade jurídica moderna convive com desigualdades materiais profundas. O cidadão aparece como sujeito livre e igual perante a lei, mas a sociedade capitalista permanece organizada por diferenças de propriedade, classe, trabalho e poder econômico. A Constituição moderna, portanto, pode ser vista ao mesmo tempo como instrumento de emancipação política e como forma de estabilização jurídica da sociedade burguesa.
+
+## 5. Três Matrizes Do Constitucionalismo Moderno
 
 O constitucionalismo moderno não tem uma única origem. Ele se forma a partir de matrizes históricas distintas.
 
@@ -67,17 +80,23 @@ O constitucionalismo moderno não tem uma única origem. Ele se forma a partir d
 
 A tradição inglesa é marcada por um processo histórico gradual de limitação do poder. Nela, ganham destaque o Parlamento, a tradição do common law e a resistência à concentração absoluta do poder monárquico.
 
+Do ponto de vista histórico-social, essa matriz também expressa a consolidação de uma classe proprietária com força política crescente. A limitação do poder real não significou democratização plena. Ela significou, antes, a reorganização do Estado em torno de interesses parlamentares, proprietários, mercantis e coloniais que acompanharam o desenvolvimento do capitalismo inglês.
+
 ### A Matriz Estadunidense
 
 Nos Estados Unidos, o constitucionalismo se organiza em torno da Constituição escrita, da supremacia constitucional, do federalismo e da possibilidade de controle judicial dos atos estatais.
+
+A experiência estadunidense deve ser apresentada com sua contradição central: afirma liberdade, autogoverno e limitação do poder, mas convive historicamente com escravidão, expropriação indígena e exclusões políticas. Isso mostra que a linguagem constitucional universal pode nascer seletiva em sua aplicação concreta.
 
 ### A Matriz Francesa
 
 A experiência francesa enfatiza a soberania popular, o poder constituinte e a declaração de direitos. É uma matriz fortemente associada à ruptura revolucionária e à refundação política.
 
+Na França, a Revolução de 1789 rompe com privilégios feudais e afirma a igualdade formal dos cidadãos. Ao mesmo tempo, consagra a propriedade como eixo da nova ordem. A universalidade dos direitos declara uma humanidade abstrata, mas a sociedade que se reorganiza é atravessada por classe, propriedade e trabalho.
+
 Essas matrizes não se excluem. Muitas ordens constitucionais contemporâneas combinam traços das três.
 
-## 5. Do Constitucionalismo Liberal Ao Social E Democrático
+## 6. Do Constitucionalismo Liberal Ao Social E Democrático
 
 O constitucionalismo moderno não permaneceu estático. Ele se transformou ao longo do tempo.
 
@@ -89,7 +108,9 @@ No **constitucionalismo democrático**, ganham força temas como participação,
 
 Essas camadas não se substituem por completo. O constitucionalismo contemporâneo reúne elementos liberais, sociais e democráticos em combinação tensa e histórica.
 
-## 6. Direito Constitucional Como Disciplina
+Uma leitura crítica deve notar que cada camada responde a conflitos sociais concretos. O constitucionalismo liberal estabiliza a ordem burguesa contra o absolutismo. O constitucionalismo social surge quando a questão operária, a desigualdade e a luta de classes tornam insuficiente a promessa liberal de igualdade apenas formal. O constitucionalismo democrático amplia o problema da legitimidade ao incorporar participação, pluralismo e novos sujeitos coletivos.
+
+## 7. Direito Constitucional Como Disciplina
 
 O Direito Constitucional não estuda apenas normas isoladas. Ele estuda a Constituição como norma, instituição e prática.
 
@@ -101,7 +122,7 @@ Há pelo menos três planos de estudo:
 
 Essa divisão ajuda a entender que a disciplina não se resume a decorar artigos. Ela é também teoria, história e análise institucional.
 
-## 7. Problemas Contemporâneos E Limites Das Constituições Nacionais
+## 8. Problemas Contemporâneos E Limites Das Constituições Nacionais
 
 Hoje, muitos problemas escapam dos marcos tradicionais do Estado nacional. Direitos humanos, mudanças climáticas, tecnologia, plataformas digitais, migração, segurança global e mercados transnacionais pressionam as Constituições.
 
@@ -109,7 +130,9 @@ Isso não significa que a Constituição nacional se tornou inútil. Significa q
 
 A questão contemporânea não é abandonar a Constituição, mas reconhecer que sua suficiência está sob tensão.
 
-## 8. Aplicação: Debate Sobre Problemas Globais
+Também aqui há um problema crítico: a globalização econômica desloca poder para mercados, empresas transnacionais, organismos financeiros, plataformas digitais e cadeias produtivas que escapam parcialmente ao controle democrático nacional. A pergunta constitucional contemporânea não é apenas jurídica; é também política e econômica.
+
+## 9. Aplicação: Debate Sobre Problemas Globais
 
 O debate proposto no deck pergunta:
 
@@ -121,7 +144,9 @@ De um lado, a Constituição continua sendo o principal centro de organização 
 
 O ponto importante é perceber que a Constituição não desaparece. Ela passa a operar em um ambiente mais complexo.
 
-## 9. Como Este Módulo Prepara O Próximo
+Uma forma de enriquecer o debate é perguntar: quem decide, de fato, os rumos de problemas globais? Parlamentos nacionais? Tribunais constitucionais? Organizações internacionais? Mercados? Empresas de tecnologia? Essa pergunta ajuda a deslocar a discussão da Constituição como texto para a Constituição como prática de poder.
+
+## 10. Como Este Módulo Prepara O Próximo
 
 Este primeiro módulo organiza o terreno para a Teoria Geral da Constituição.
 
@@ -129,7 +154,8 @@ Antes de discutir conceitos de Constituição, classificações, poder constitui
 
 - que o constitucionalismo é um fenômeno moderno;
 - que ele nasce de lutas históricas concretas;
-- que a Constituição é instrumento de limitação, organização e legitimação do poder.
+- que a Constituição é instrumento de limitação, organização e legitimação do poder;
+- que a forma constitucional moderna também carrega marcas da sociedade burguesa que a produziu.
 
 Sem esse pano de fundo, os conceitos seguintes ficam abstratos demais.
 
@@ -139,7 +165,9 @@ Sem esse pano de fundo, os conceitos seguintes ficam abstratos demais.
 - Constitucionalismo, em sentido rigoroso, é fenômeno moderno.
 - As categorias "antigo", "medieval" e "do futuro" têm utilidade comparativa, não equivalência conceitual.
 - O constitucionalismo moderno limita o poder, organiza o Estado e garante direitos.
+- O constitucionalismo moderno também acompanha a ascensão histórica da sociedade burguesa e do capitalismo.
 - As matrizes inglesa, estadunidense e francesa ajudam a compreender sua formação.
+- A promessa de liberdade e igualdade jurídica convive, desde a origem, com exclusões materiais, coloniais, raciais, econômicas e de classe.
 - O constitucionalismo passa por camadas liberais, sociais e democráticas.
 - O Direito Constitucional estuda a Constituição como norma, instituição e prática.
 - Problemas transnacionais desafiam, mas não eliminam, a centralidade da Constituição.
@@ -152,10 +180,16 @@ Sem esse pano de fundo, os conceitos seguintes ficam abstratos demais.
 4. O que distingue as matrizes inglesa, estadunidense e francesa?
 5. Como o constitucionalismo liberal se diferencia do social e do democrático?
 6. Por que a disciplina Direito Constitucional não pode ser reduzida ao estudo literal do texto constitucional?
+7. Como a Revolução Francesa e a independência estadunidense articulam liberdade política, propriedade e exclusões sociais?
+8. Por que a leitura de Hobsbawm sobre a dupla revolução ajuda a compreender o constitucionalismo moderno como parte da formação da sociedade burguesa?
 
 ## Referências Bibliográficas
 
 BARROSO, Luís Roberto. *Curso de direito constitucional contemporâneo: os conceitos fundamentais e a construção do novo modelo*. 9. ed. São Paulo: Saraiva Educação, 2020.
+
+HOBSBAWM, Eric J. *A era das revoluções: 1789-1848*. Rio de Janeiro: Paz e Terra, s.d.
+
+HOBSBAWM, Eric J. *A era do capital: 1848-1875*. Tradução de Luciano Costa Neto. Rio de Janeiro: Paz e Terra, s.d.
 
 LENZA, Pedro. *Direito constitucional esquematizado*. 28. ed. São Paulo: SaraivaJur, 2024.
 
