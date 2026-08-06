@@ -7,6 +7,7 @@ Este espaço reúne materiais de apoio, documentos institucionais, atividades e 
 ## Ramos internos da disciplina
 
 - Teoria da Constituição
+- Direito Constitucional - Direitos Fundamentais e Organização do Estado
 - Direito Constitucional - Organização dos Poderes
 
 As denominações acima seguem os planos de ensino oficiais disponibilizados pela instituição.
@@ -33,4 +34,3 @@ Os planos de ensino oficiais estão disponíveis em `docs/documentos-institucion
 - `atividades/`: propostas de atividades em sala ou extraclasse.
 - `jurisprudencia/`: seleção de julgados e materiais jurisprudenciais.
 - `materiais-complementares/`: leituras, roteiros e materiais auxiliares.
-

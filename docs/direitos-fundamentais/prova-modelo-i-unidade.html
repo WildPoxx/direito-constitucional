@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prova-modelo interativa | Direitos Fundamentais</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <strong>Prof. Mario Bastos</strong>
+        <span>Direito Constitucional</span>
+      </div>
+      <nav aria-label="Navegação principal">
+        <a href="../">Início</a>
+        <a href="./">Direitos Fundamentais</a>
+        <a href="../documentos-institucionais/">Documentos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="exam-app">
+    <section class="hero exam-hero">
+      <span class="tag">Treino pessoal</span>
+      <h1>Prova-modelo interativa - I Unidade</h1>
+      <p>Responda às questões, corrija as objetivas automaticamente e gere um relatório de estudo com justificativas, fontes e rubrica das discursivas.</p>
+    </section>
+
+    <section class="notice">
+      <strong>Uso atual:</strong> este protótipo não envia respostas pela internet. Os dados ficam no navegador e podem ser baixados em Markdown ou JSON para análise interna.
+    </section>
+
+    <section class="exam-meta" aria-label="Dados da avaliação">
+      <div>
+        <span>Disciplina</span>
+        <strong>Direitos Fundamentais e Organização do Estado</strong>
+      </div>
+      <div>
+        <span>Unidade</span>
+        <strong>I Unidade</strong>
+      </div>
+      <div>
+        <span>Estrutura</span>
+        <strong>8 objetivas + 2 discursivas</strong>
+      </div>
+      <div>
+        <span>Valor</span>
+        <strong>6,0 pontos</strong>
+      </div>
+    </section>
+
+    <form id="examForm" class="exam-form">
+      <section>
+        <h2>Identificação local</h2>
+        <div class="field-grid">
+          <label>
+            Nome ou identificador
+            <input id="studentName" type="text" autocomplete="name" placeholder="Ex.: Mario - teste 01">
+          </label>
+          <label>
+            Turma ou contexto
+            <input id="studentGroup" type="text" value="3º semestre - treino pessoal">
+          </label>
+        </div>
+      </section>
+
+      <section>
+        <h2>Questões objetivas</h2>
+        <div id="objectiveQuestions" class="question-list"></div>
+      </section>
+
+      <section>
+        <h2>Questões discursivas</h2>
+        <div id="discursiveQuestions" class="question-list"></div>
+      </section>
+
+      <section class="actions-panel" aria-label="Ações do formulário">
+        <button type="submit" class="primary-button">Corrigir e gerar relatório</button>
+        <button type="button" id="resetButton" class="secondary-button">Limpar respostas</button>
+      </section>
+    </form>
+
+    <section id="resultsPanel" class="results-panel" hidden>
+      <h2>Resultado</h2>
+      <div id="scoreSummary" class="score-summary"></div>
+      <div id="feedbackList" class="feedback-list"></div>
+      <div class="actions-panel">
+        <button type="button" id="copyMarkdownButton" class="primary-button">Copiar relatório em Markdown</button>
+        <button type="button" id="downloadJsonButton" class="secondary-button">Baixar JSON</button>
+      </div>
+      <textarea id="reportBox" class="report-box" readonly aria-label="Relatório gerado"></textarea>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Protótipo de banco de questões e treino avaliativo. Fontes: Constituição Federal de 1988 e plano de ensino da disciplina.
+  </footer>
+
+  <script>
+    const exam = {
+      title: "Prova-modelo interativa - I Unidade",
+      discipline: "Direito Constitucional - Direitos Fundamentais e Organização do Estado",
+      objectiveValue: 0.5,
+      discursiveValue: 1,
+      sources: [
+        "BRASIL. Constituição da República Federativa do Brasil de 1988, arts. 1º a 5º, 6º, 12, 18 e 225.",
+        "Plano de Ensino - Direito Constitucional - Direitos Fundamentais e Organização do Estado - FBBR 2026.2.",
+        "Matriz de Avaliação - I Unidade - Direitos Fundamentais e Organização do Estado - 2026.2."
+      ],
+      objectives: [
+        {
+          id: "q1",
+          title: "Questão 1 - Princípios Fundamentais",
+          prompt: "Uma estudante afirma que os arts. 1º a 4º da Constituição Federal de 1988 são apenas uma introdução política, sem relevância jurídica para a interpretação dos direitos fundamentais. À luz da Constituição, a afirmação é:",
+          options: {
+            A: "correta, porque princípios fundamentais não possuem qualquer função interpretativa.",
+            B: "correta, porque direitos fundamentais estão isolados dos fundamentos da República.",
+            C: "incorreta, porque os princípios fundamentais orientam a organização do Estado, a interpretação dos direitos e a atuação estatal.",
+            D: "incorreta, mas apenas porque o art. 4º trata exclusivamente de direito privado.",
+            E: "correta, porque o Estado Democrático de Direito não possui relação com direitos fundamentais."
+          },
+          answer: "C",
+          source: "CF/88, arts. 1º a 4º.",
+          explanation: "Os princípios fundamentais não são ornamento. Eles definem fundamentos, objetivos e princípios estruturantes da República, orientando a organização do Estado, a interpretação constitucional e a proteção dos direitos."
+        },
+        {
+          id: "q2",
+          title: "Questão 2 - Direitos E Garantias Individuais",
+          prompt: "Sobre os direitos e garantias fundamentais na Constituição de 1988, assinale a alternativa correta.",
+          options: {
+            A: "Direitos fundamentais protegem apenas brasileiros natos.",
+            B: "Garantias constitucionais são instrumentos destinados à proteção dos direitos.",
+            C: "Direitos individuais não possuem relação com liberdade, igualdade ou segurança jurídica.",
+            D: "A Constituição exclui a proteção judicial dos direitos fundamentais.",
+            E: "A aplicabilidade dos direitos fundamentais depende sempre de autorização administrativa prévia."
+          },
+          answer: "B",
+          source: "CF/88, art. 5º.",
+          explanation: "Garantias constitucionais são mecanismos de proteção dos direitos. Elas permitem defender posições jurídicas fundamentais contra violações ou ameaças."
+        },
+        {
+          id: "q3",
+          title: "Questão 3 - Direitos Individuais E Coletivos",
+          prompt: "Assinale a alternativa que apresenta corretamente um instrumento constitucional de proteção coletiva.",
+          options: {
+            A: "Mandado de segurança coletivo.",
+            B: "Decreto municipal sem controle jurídico.",
+            C: "Naturalização ordinária.",
+            D: "Intervenção federal espontânea por particular.",
+            E: "Mandato político vitalício."
+          },
+          answer: "A",
+          source: "CF/88, art. 5º, LXX.",
+          explanation: "O mandado de segurança coletivo é instrumento constitucional de proteção coletiva de direito líquido e certo, nas hipóteses constitucionais."
+        },
+        {
+          id: "q4",
+          title: "Questão 4 - Direitos Sociais",
+          prompt: "Os direitos sociais previstos na Constituição de 1988 devem ser compreendidos como:",
+          options: {
+            A: "normas estranhas ao campo dos direitos fundamentais.",
+            B: "direitos relacionados à igualdade material e à exigência de prestações e políticas públicas.",
+            C: "simples recomendações morais sem relevância constitucional.",
+            D: "direitos que excluem trabalhadores da proteção constitucional.",
+            E: "proibições absolutas de atuação estatal em saúde, educação e trabalho."
+          },
+          answer: "B",
+          source: "CF/88, arts. 6º e 7º.",
+          explanation: "Direitos sociais integram o campo dos direitos fundamentais e se relacionam à igualdade material, às prestações estatais e à organização de políticas públicas."
+        },
+        {
+          id: "q5",
+          title: "Questão 5 - Nacionalidade",
+          prompt: "Sobre a nacionalidade na Constituição brasileira, assinale a alternativa correta.",
+          options: {
+            A: "A Constituição não distingue brasileiros natos e naturalizados.",
+            B: "Nacionalidade é vínculo jurídico-político entre pessoa e Estado.",
+            C: "Todo estrangeiro se torna brasileiro nato ao ingressar no território nacional.",
+            D: "Nacionalidade é idêntica a domicílio civil.",
+            E: "Brasileiros naturalizados não possuem direitos fundamentais."
+          },
+          answer: "B",
+          source: "CF/88, art. 12.",
+          explanation: "Nacionalidade é o vínculo jurídico-político que liga a pessoa ao Estado. A Constituição distingue brasileiros natos e naturalizados."
+        },
+        {
+          id: "q6",
+          title: "Questão 6 - Direitos Humanos, Cidadania E Etnicidade",
+          prompt: "A Constituição de 1988 deve ser lida em diálogo com os direitos humanos porque:",
+          options: {
+            A: "a dignidade da pessoa humana e a prevalência dos direitos humanos integram a identidade constitucional brasileira.",
+            B: "direitos humanos e direitos fundamentais são categorias necessariamente incompatíveis.",
+            C: "a cidadania constitucional elimina qualquer proteção de grupos vulnerabilizados.",
+            D: "a Constituição rejeita a proteção contra discriminação racial.",
+            E: "o art. 4º impede qualquer relação entre Constituição e ordem internacional."
+          },
+          answer: "A",
+          source: "CF/88, arts. 1º, III, 3º, IV, e 4º, II.",
+          explanation: "A dignidade da pessoa humana é fundamento da República, e a prevalência dos direitos humanos é princípio de relações internacionais. Esses comandos aproximam Constituição e proteção internacional de direitos."
+        },
+        {
+          id: "q7",
+          title: "Questão 7 - Igualdade Material E Grupos Vulnerabilizados",
+          prompt: "Uma política pública cria medidas de inclusão para reduzir desigualdades históricas de acesso à educação por grupos socialmente vulnerabilizados. Constitucionalmente, essa política deve ser analisada principalmente a partir:",
+          options: {
+            A: "da proibição absoluta de qualquer diferenciação jurídica.",
+            B: "da igualdade material, da cidadania e dos objetivos fundamentais da República.",
+            C: "da irrelevância jurídica das desigualdades sociais.",
+            D: "da exclusão dos direitos sociais do texto constitucional.",
+            E: "da impossibilidade de políticas públicas em matéria educacional."
+          },
+          answer: "B",
+          source: "CF/88, arts. 1º, II e III, 3º, III e IV, e 6º.",
+          explanation: "A igualdade material permite analisar medidas de inclusão voltadas a reduzir desigualdades reais. A Constituição também fixa objetivos de redução das desigualdades e promoção do bem de todos."
+        },
+        {
+          id: "q8",
+          title: "Questão 8 - Organização Do Estado",
+          prompt: "Na organização constitucional brasileira, são entes federativos:",
+          options: {
+            A: "União, Estados, Distrito Federal e Municípios.",
+            B: "apenas União e Estados.",
+            C: "apenas Municípios e partidos políticos.",
+            D: "Poder Judiciário, Ministério Público e advocacia privada.",
+            E: "sindicatos, empresas públicas e associações civis."
+          },
+          answer: "A",
+          source: "CF/88, arts. 1º e 18.",
+          explanation: "A organização político-administrativa brasileira compreende União, Estados, Distrito Federal e Municípios, todos autônomos nos termos da Constituição."
+        }
+      ],
+      discursives: [
+        {
+          id: "q9",
+          title: "Questão 9 - Dignidade, Liberdade E Igualdade",
+          prompt: "Explique, em até 15 linhas, como a dignidade da pessoa humana pode orientar a interpretação dos direitos individuais e dos direitos sociais na Constituição de 1988. Em sua resposta, diferencie liberdade formal e igualdade material.",
+          source: "CF/88, arts. 1º, III, 5º e 6º.",
+          rubric: [
+            "Identifica a dignidade da pessoa humana como fundamento da República.",
+            "Explica a relação entre dignidade e direitos individuais.",
+            "Explica a relação entre dignidade e direitos sociais.",
+            "Diferencia liberdade formal e igualdade material.",
+            "Organiza a resposta com clareza e conclusão."
+          ],
+          expected: "Uma boa resposta deve mostrar que a dignidade, prevista no art. 1º, III, orienta a leitura dos direitos fundamentais. Ela protege liberdades individuais, mas também reforça direitos sociais quando a ausência de condições materiais mínimas compromete uma vida digna."
+        },
+        {
+          id: "q10",
+          title: "Questão 10 - Nacionalidade, Cidadania E Estado Federal",
+          prompt: "Uma pessoa nascida no exterior, filha de brasileiro, procura orientação para compreender se pode possuir vínculo jurídico-político com o Brasil e quais seriam os efeitos constitucionais desse vínculo. Ao mesmo tempo, pergunta por que o Brasil é chamado de República Federativa e quais entes exercem autonomia política na federação brasileira. Responda articulando os conceitos de nacionalidade, cidadania e organização federativa do Estado brasileiro.",
+          source: "CF/88, arts. 1º, 12 e 18.",
+          rubric: [
+            "Explica nacionalidade como vínculo jurídico-político entre pessoa e Estado.",
+            "Indica que a Constituição distingue brasileiros natos e naturalizados.",
+            "Relaciona nacionalidade e cidadania constitucional.",
+            "Identifica União, Estados, Distrito Federal e Municípios como entes federativos.",
+            "Organiza a resposta com aplicação ao caso e conclusão."
+          ],
+          expected: "Uma boa resposta deve articular pertencimento jurídico-político, cidadania e estrutura federativa. Também deve identificar que a federação brasileira inclui União, Estados, Distrito Federal e Municípios."
+        }
+      ]
+    };
+
+    const form = document.getElementById("examForm");
+    const objectiveContainer = document.getElementById("objectiveQuestions");
+    const discursiveContainer = document.getElementById("discursiveQuestions");
+    const resultsPanel = document.getElementById("resultsPanel");
+    const scoreSummary = document.getElementById("scoreSummary");
+    const feedbackList = document.getElementById("feedbackList");
+    const reportBox = document.getElementById("reportBox");
+    const copyMarkdownButton = document.getElementById("copyMarkdownButton");
+    const downloadJsonButton = document.getElementById("downloadJsonButton");
+    const resetButton = document.getElementById("resetButton");
+
+    let latestReport = null;
+
+    function renderObjectives() {
+      objectiveContainer.innerHTML = exam.objectives.map((question, index) => {
+        const options = Object.entries(question.options).map(([letter, text]) => `
+          <label class="option-row">
+            <input type="radio" name="${question.id}" value="${letter}">
+            <span><strong>${letter}.</strong> ${text}</span>
+          </label>
+        `).join("");
+
+        return `
+          <article class="question-card">
+            <span class="tag">Objetiva ${index + 1} - 0,5 ponto</span>
+            <h3>${question.title}</h3>
+            <p>${question.prompt}</p>
+            <div class="options-list">${options}</div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderDiscursives() {
+      discursiveContainer.innerHTML = exam.discursives.map((question, index) => {
+        const rubric = question.rubric.map((item, itemIndex) => `
+          <label class="check-row">
+            <input type="checkbox" name="${question.id}_rubric" value="${itemIndex}">
+            <span>${item}</span>
+          </label>
+        `).join("");
+
+        return `
+          <article class="question-card">
+            <span class="tag">Discursiva ${index + 1} - 1,0 ponto</span>
+            <h3>${question.title}</h3>
+            <p>${question.prompt}</p>
+            <label>
+              Sua resposta
+              <textarea name="${question.id}" rows="8" placeholder="Escreva sua resposta aqui."></textarea>
+            </label>
+            <div class="rubric-box">
+              <strong>Autoavaliação por rubrica</strong>
+              ${rubric}
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function getObjectiveAnswer(questionId) {
+      const selected = form.querySelector(`input[name="${questionId}"]:checked`);
+      return selected ? selected.value : "";
+    }
+
+    function getDiscursiveAnswer(questionId) {
+      const field = form.querySelector(`textarea[name="${questionId}"]`);
+      return field ? field.value.trim() : "";
+    }
+
+    function getRubricChecks(questionId) {
+      return Array.from(form.querySelectorAll(`input[name="${questionId}_rubric"]:checked`)).map(input => Number(input.value));
+    }
+
+    function buildReport() {
+      const name = document.getElementById("studentName").value.trim() || "Sem identificação";
+      const group = document.getElementById("studentGroup").value.trim() || "Sem turma/contexto";
+      const timestamp = new Date().toISOString();
+
+      const objectiveResults = exam.objectives.map(question => {
+        const chosen = getObjectiveAnswer(question.id);
+        const correct = chosen === question.answer;
+        return {
+          id: question.id,
+          title: question.title,
+          chosen,
+          expected: question.answer,
+          correct,
+          score: correct ? exam.objectiveValue : 0,
+          source: question.source,
+          explanation: question.explanation,
+          chosenText: chosen ? question.options[chosen] : "Sem resposta",
+          expectedText: question.options[question.answer]
+        };
+      });
+
+      const discursiveResults = exam.discursives.map(question => {
+        const checked = getRubricChecks(question.id);
+        return {
+          id: question.id,
+          title: question.title,
+          answer: getDiscursiveAnswer(question.id),
+          checkedRubric: checked.map(index => question.rubric[index]),
+          selfScore: checked.length * 0.2,
+          maxScore: exam.discursiveValue,
+          source: question.source,
+          expected: question.expected,
+          rubric: question.rubric
+        };
+      });
+
+      const objectiveScore = objectiveResults.reduce((sum, item) => sum + item.score, 0);
+      const discursiveSelfScore = discursiveResults.reduce((sum, item) => sum + item.selfScore, 0);
+
+      return {
+        exam: exam.title,
+        discipline: exam.discipline,
+        student: name,
+        group,
+        timestamp,
+        objectiveScore,
+        objectiveMax: exam.objectives.length * exam.objectiveValue,
+        discursiveSelfScore,
+        discursiveMax: exam.discursives.length * exam.discursiveValue,
+        totalEstimatedScore: objectiveScore + discursiveSelfScore,
+        totalMax: exam.objectives.length * exam.objectiveValue + exam.discursives.length * exam.discursiveValue,
+        objectiveResults,
+        discursiveResults,
+        sources: exam.sources
+      };
+    }
+
+    function reportToMarkdown(report) {
+      const lines = [];
+      lines.push(`# Relatório de treino - ${report.exam}`);
+      lines.push("");
+      lines.push(`- Estudante/contexto: ${report.student}`);
+      lines.push(`- Turma/contexto: ${report.group}`);
+      lines.push(`- Data técnica: ${report.timestamp}`);
+      lines.push(`- Objetivas: ${report.objectiveScore.toFixed(1)} / ${report.objectiveMax.toFixed(1)}`);
+      lines.push(`- Discursivas (autoavaliação): ${report.discursiveSelfScore.toFixed(1)} / ${report.discursiveMax.toFixed(1)}`);
+      lines.push(`- Total estimado: ${report.totalEstimatedScore.toFixed(1)} / ${report.totalMax.toFixed(1)}`);
+      lines.push("");
+      lines.push("## Objetivas");
+      report.objectiveResults.forEach(item => {
+        lines.push("");
+        lines.push(`### ${item.title}`);
+        lines.push(`- Resposta marcada: ${item.chosen || "sem resposta"} - ${item.chosenText}`);
+        lines.push(`- Gabarito: ${item.expected} - ${item.expectedText}`);
+        lines.push(`- Resultado: ${item.correct ? "correta" : "incorreta"}`);
+        lines.push(`- Por quê: ${item.explanation}`);
+        lines.push(`- Fonte: ${item.source}`);
+      });
+      lines.push("");
+      lines.push("## Discursivas");
+      report.discursiveResults.forEach(item => {
+        lines.push("");
+        lines.push(`### ${item.title}`);
+        lines.push(`- Autoavaliação: ${item.selfScore.toFixed(1)} / ${item.maxScore.toFixed(1)}`);
+        lines.push(`- Fonte: ${item.source}`);
+        lines.push("- Critérios marcados:");
+        if (item.checkedRubric.length === 0) {
+          lines.push("  - Nenhum critério marcado.");
+        } else {
+          item.checkedRubric.forEach(criterion => lines.push(`  - ${criterion}`));
+        }
+        lines.push("");
+        lines.push("Resposta escrita:");
+        lines.push("");
+        lines.push(item.answer || "Sem resposta.");
+        lines.push("");
+        lines.push(`Comentário orientador: ${item.expected}`);
+      });
+      lines.push("");
+      lines.push("## Fontes");
+      report.sources.forEach(source => lines.push(`- ${source}`));
+      return lines.join("\n");
+    }
+
+    function renderResults(report) {
+      scoreSummary.innerHTML = `
+        <div><span>Objetivas</span><strong>${report.objectiveScore.toFixed(1)} / ${report.objectiveMax.toFixed(1)}</strong></div>
+        <div><span>Discursivas</span><strong>${report.discursiveSelfScore.toFixed(1)} / ${report.discursiveMax.toFixed(1)}</strong></div>
+        <div><span>Total estimado</span><strong>${report.totalEstimatedScore.toFixed(1)} / ${report.totalMax.toFixed(1)}</strong></div>
+      `;
+
+      feedbackList.innerHTML = report.objectiveResults.map(item => `
+        <article class="feedback-card ${item.correct ? "is-correct" : "is-wrong"}">
+          <h3>${item.title}</h3>
+          <p><strong>Resultado:</strong> ${item.correct ? "correta" : "incorreta"}</p>
+          <p><strong>Sua resposta:</strong> ${item.chosen || "sem resposta"} - ${item.chosenText}</p>
+          <p><strong>Gabarito:</strong> ${item.expected} - ${item.expectedText}</p>
+          <p><strong>Explicação:</strong> ${item.explanation}</p>
+          <p><strong>Fonte:</strong> ${item.source}</p>
+        </article>
+      `).join("");
+
+      const markdown = reportToMarkdown(report);
+      reportBox.value = markdown;
+      resultsPanel.hidden = false;
+      resultsPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      latestReport = buildReport();
+      localStorage.setItem("dc_treino_direitos_i_unidade_latest", JSON.stringify(latestReport));
+      renderResults(latestReport);
+    });
+
+    copyMarkdownButton.addEventListener("click", async () => {
+      if (!latestReport) return;
+      await navigator.clipboard.writeText(reportToMarkdown(latestReport));
+      copyMarkdownButton.textContent = "Relatório copiado";
+      setTimeout(() => copyMarkdownButton.textContent = "Copiar relatório em Markdown", 1800);
+    });
+
+    downloadJsonButton.addEventListener("click", () => {
+      if (!latestReport) return;
+      const blob = new Blob([JSON.stringify(latestReport, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "relatorio-treino-direitos-fundamentais-i-unidade.json";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    });
+
+    resetButton.addEventListener("click", () => {
+      form.reset();
+      resultsPanel.hidden = true;
+      latestReport = null;
+      localStorage.removeItem("dc_treino_direitos_i_unidade_latest");
+    });
+
+    renderObjectives();
+    renderDiscursives();
+  </script>
+</body>
+</html>
