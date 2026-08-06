@@ -1,6 +1,6 @@
 # Direito Constitucional
 
-Repositório docente da disciplina Direito Constitucional, mantido no perfil/organização `prof-mario-bastos`.
+Repositório docente da disciplina Direito Constitucional, mantido no perfil GitHub `WildPoxx`.
 
 Este espaço reúne materiais de apoio, documentos institucionais, atividades e conteúdos complementares destinados aos alunos.
 
@@ -22,7 +22,7 @@ Após publicar o repositório no GitHub, habilite o Pages em:
 
 Endereço esperado:
 
-`https://prof-mario-bastos.github.io/direito-constitucional/`
+`https://wildpoxx.github.io/direito-constitucional/`
 
 ## Documentos institucionais
 
