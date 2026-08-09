@@ -4,6 +4,15 @@ Repositório docente da disciplina Direito Constitucional, mantido no perfil Git
 
 Este espaço reúne materiais de apoio, documentos institucionais, atividades e conteúdos complementares destinados aos alunos.
 
+## Localização operacional
+
+- Vault/acervo docente sincronizado com Google Drive: `C:\Users\amari\source\Docência Geral`.
+- Diretório Git/GitHub deste repositório: `C:\Users\amari\source\GITS\GitHub - Docência Geral\direito-constitucional`.
+
+Esta separação é deliberada: o vault permanece em sync com Google Drive, enquanto os repositórios Git do projeto ficam fora do Drive para commits, histórico, publicação e GitHub Pages. Antes de publicar ou commitar, confirmar que o terminal está neste diretório e que `git status` reconhece o repositório.
+
+O caminho antigo `C:\Users\amari\source\Docência Geral\GitHub\direito-constitucional` está aposentado e não existe mais.
+
 ## Ramos internos da disciplina
 
 - Teoria da Constituição
