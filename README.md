@@ -25,13 +25,19 @@ As denominações acima seguem os planos de ensino oficiais disponibilizados pel
 
 O conteúdo público do repositório fica na pasta `docs/`, preparada para publicação por GitHub Pages.
 
-Após publicar o repositório no GitHub, habilite o Pages em:
+Estado atual do Pages:
 
-`Settings > Pages > Build and deployment > Deploy from a branch > main > /docs`
+- URL: `https://wildpoxx.github.io/direito-constitucional/`
+- Fonte publicada no GitHub: branch `gh-pages`, pasta raiz `/`
+- Fonte editável no repositório: branch `main`, pasta `docs/`
 
-Endereço esperado:
+O branch `gh-pages` deve ser tratado como artefato de publicação. Edite `main/docs/`; depois publique por workflow ou pela rotina manual documentada em `PUBLICATION.md`.
 
-`https://wildpoxx.github.io/direito-constitucional/`
+## Avaliações Interativas E Dados
+
+O repositório pode hospedar formulários estáticos de treino e avaliação informal. Por regra, esses formulários não devem enviar respostas automaticamente nem armazenar dados de alunos sem decisão expressa posterior.
+
+Relatórios baixados, respostas, bases de resultado, identificadores de alunos e análises internas devem ficar fora do Git público. A política está documentada em `DATA_POLICY.md`.
 
 ## Documentos institucionais
 

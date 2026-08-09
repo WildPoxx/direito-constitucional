@@ -15,3 +15,26 @@ Desktop.ini
 *.bak
 *.log
 
+# Local environment and tool caches
+.env
+.env.*
+!.env.example
+node_modules/
+.cache/
+.parcel-cache/
+.vite/
+dist/
+build/
+
+# Private assessment/result exports.
+# Keep the public question bank in docs/ when intended for students, but never
+# commit downloaded answer reports, student data, or internal analytics dumps.
+respostas/
+resultados/
+submissions/
+dados-alunos/
+analises-internas/
+*.local.json
+*.private.json
+relatorio-treino-*.json
+relatorio-treino-*.md

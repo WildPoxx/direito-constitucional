@@ -18,3 +18,7 @@ O vault guarda planejamento, fontes, modelos, notas internas e materiais de trab
 ## Publicacao
 
 O conteudo publico do site deve permanecer em `docs/`, preparado para GitHub Pages. Ao publicar, confirmar que o trabalho foi feito neste diretorio, nao no vault sincronizado.
+
+O GitHub Pages deste repositorio usa o branch `gh-pages` como artefato publicado. A fonte editavel fica em `main/docs`. Nao editar `gh-pages` manualmente, salvo recuperacao tecnica.
+
+Nao commitar respostas de alunos, relatorios baixados, identificadores pessoais, bases internas de resultados ou fontes privadas do vault. Esses arquivos devem permanecer no vault ou em area local privada.
