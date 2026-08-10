@@ -315,6 +315,23 @@ def build_page() -> None:
       <strong>Como estudar:</strong> leia primeiro o problema central, depois acompanhe os tópicos em sequência. Ao final, responda às questões de treino e use o feedback como guia de revisão.
     </section>
 
+    <section>
+      <h2>Leituras Do Módulo</h2>
+      <div class="reading-list">
+        <article class="reading-item">
+          <span class="tag">PDF aberto</span>
+          <h3>Barroso - Neoconstitucionalismo e constitucionalização do Direito</h3>
+          <p>Leitura complementar obrigatória para compreender o contexto do neoconstitucionalismo, a força normativa da Constituição e a constitucionalização do Direito. Publicado na Revista Quaestio Iuris, com licença CC-BY 4.0.</p>
+          <a href="../leituras/barroso-neoconstitucionalismo-constitucionalizacao-direito.pdf">Baixar PDF</a>
+        </article>
+        <article class="reading-item">
+          <span class="tag">Referência central</span>
+          <h3>Barroso - A dignidade da pessoa humana no direito constitucional contemporâneo</h3>
+          <p>Fonte central deste módulo. O PDF integral da obra não é hospedado publicamente nesta página sem confirmação de licença ou autorização específica de disponibilização.</p>
+        </article>
+      </div>
+    </section>
+
     <div class="module-layout">
       <aside class="toc-card" aria-label="Sumário do módulo">
         <h2>Sumário</h2>
@@ -328,7 +345,7 @@ def build_page() -> None:
 
         <section class="quiz-panel" aria-labelledby="treino-final">
           <h2 id="treino-final">Treino Final Do Módulo</h2>
-          <p>As questões abaixo servem para revisar o conteúdo. A correção das objetivas acontece no próprio navegador e não envia dados pela internet.</p>
+          <p>As questões abaixo servem para revisar o conteúdo. A correção das objetivas acontece no próprio navegador e não envia dados pela internet nem encaminha respostas ao professor.</p>
           <form id="moduleQuiz">
             <div id="objectiveTraining" class="question-list"></div>
             <div id="discursiveTraining" class="question-list"></div>
