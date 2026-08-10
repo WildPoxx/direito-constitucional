@@ -367,7 +367,7 @@ def build_page() -> None:
             <div id="objectiveTraining" class="question-list"></div>
             <div id="discursiveTraining" class="question-list"></div>
             <div class="actions-panel">
-              <button type="submit" class="primary-button">Corrigir objetivas</button>
+              <button type="submit" class="primary-button">Corrigir e gerar relatório</button>
               <button type="button" id="clearQuiz" class="secondary-button">Limpar respostas</button>
             </div>
           </form>
@@ -378,6 +378,7 @@ def build_page() -> None:
             <div class="actions-panel">
               <button type="button" id="copyTrainingReport" class="primary-button">Copiar relatório</button>
               <button type="button" id="sendTrainingReport" class="secondary-button">Enviar ao professor</button>
+              <button type="button" id="downloadTrainingTxt" class="secondary-button">Baixar TXT</button>
             </div>
             <p id="trainingSubmissionStatus" class="helper-text" aria-live="polite">Contato do professor: <a href="mailto:mario.bastos.adv@gmail.com">mario.bastos.adv@gmail.com</a>.</p>
             <textarea id="trainingReport" class="report-box" readonly aria-label="Relatório de estudo"></textarea>
@@ -495,7 +496,19 @@ def build_page() -> None:
 
     function truncateForForm(value, limit = 7800) {{
       if (!value || value.length <= limit) return value || "";
-      return `${{value.slice(0, limit)}}\\n\\n[Relatório truncado para caber no formulário. Use o botão "Copiar relatório" para preservar a versão integral.]`;
+      return `${{value.slice(0, limit)}}\\n\\n[Relatório truncado para caber no formulário. Use o botão "Copiar relatório" ou "Baixar TXT" para preservar a versão integral.]`;
+    }}
+
+    function downloadTextFile(filename, text) {{
+      const blob = new Blob([text], {{ type: "text/plain;charset=utf-8" }});
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
     }}
 
     function objectiveSummary(feedback) {{
@@ -561,7 +574,7 @@ def build_page() -> None:
       const subject = encodeURIComponent(`Relatório de treino - ${{payload.discipline}}`);
       const body = encodeURIComponent(payload.reportText.slice(0, 1800));
       window.location.href = `mailto:${{config.professorEmail}}?subject=${{subject}}&body=${{body}}`;
-      status.innerHTML = `Google Forms ainda não configurado. Foi preparado um e-mail para <a href="mailto:${{config.professorEmail}}">${{config.professorEmail}}</a>; para enviar o relatório completo, use também "Copiar relatório".`;
+      status.innerHTML = `Google Forms ainda não configurado. Foi preparado um e-mail para <a href="mailto:${{config.professorEmail}}">${{config.professorEmail}}</a>; para enviar o relatório completo, use também "Copiar relatório" ou "Baixar TXT".`;
     }}
 
     document.getElementById("moduleQuiz").addEventListener("submit", (event) => {{
@@ -594,7 +607,9 @@ def build_page() -> None:
         </article>
       `).join("");
       const reportText = buildReport(score, feedback);
-      document.getElementById("trainingReport").value = reportText;
+      const trainingReport = document.getElementById("trainingReport");
+      trainingReport.value = reportText;
+      trainingReport.scrollTop = 0;
       latestModuleSubmission = buildSubmissionPayload(score, feedback, reportText);
       document.getElementById("trainingResult").hidden = false;
     }});
@@ -613,6 +628,12 @@ def build_page() -> None:
         return;
       }}
       openSubmissionTarget(latestModuleSubmission);
+    }});
+
+    document.getElementById("downloadTrainingTxt").addEventListener("click", () => {{
+      const reportText = document.getElementById("trainingReport").value;
+      if (!reportText) return;
+      downloadTextFile("relatorio-treino-modulo-1-dignidade-principios.txt", reportText);
     }});
 
     document.getElementById("clearQuiz").addEventListener("click", () => {{
