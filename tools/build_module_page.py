@@ -345,7 +345,7 @@ def build_page() -> None:
 
         <section class="quiz-panel" aria-labelledby="treino-final">
           <h2 id="treino-final">Treino Final Do Módulo</h2>
-          <p>As questões abaixo servem para revisar o conteúdo. A correção das objetivas acontece no próprio navegador. Depois da correção, o estudante pode abrir um formulário Google pré-preenchido ou preparar um e-mail para o professor.</p>
+          <p>As questões abaixo servem para revisar o conteúdo. A correção das objetivas acontece no próprio navegador. O site não envia respostas ao professor. Para solicitar feedback, baixe o TXT e envie para <a href="mailto:mario.bastos.adv@gmail.com">mario.bastos.adv@gmail.com</a>.</p>
           <form id="moduleQuiz">
             <section class="submission-panel" aria-label="Identificação para envio">
               <h3>Identificação para envio</h3>
@@ -377,10 +377,9 @@ def build_page() -> None:
             <div id="trainingFeedback" class="feedback-list"></div>
             <div class="actions-panel">
               <button type="button" id="copyTrainingReport" class="primary-button">Copiar relatório</button>
-              <button type="button" id="sendTrainingReport" class="secondary-button">Enviar ao professor</button>
               <button type="button" id="downloadTrainingTxt" class="secondary-button">Baixar TXT</button>
             </div>
-            <p id="trainingSubmissionStatus" class="helper-text" aria-live="polite">Contato do professor: <a href="mailto:mario.bastos.adv@gmail.com">mario.bastos.adv@gmail.com</a>.</p>
+            <p class="helper-text">Para solicitar feedback, envie o arquivo TXT ao professor: <a href="mailto:mario.bastos.adv@gmail.com">mario.bastos.adv@gmail.com</a>.</p>
             <textarea id="trainingReport" class="report-box" readonly aria-label="Relatório de estudo"></textarea>
           </section>
         </section>
@@ -397,13 +396,11 @@ def build_page() -> None:
     Material de apoio da disciplina Direito Constitucional - Direitos Fundamentais e Organização do Estado.
   </footer>
 
-  <script src="../../assets/submission-config.js"></script>
   <script>
     const objectiveQuestions = {quiz_json};
     const discursiveQuestion = {discursive_json};
     const activityTitle = "Treino Final - Módulo 1: Dignidade, Princípios e Efetividade Constitucional";
     const disciplineTitle = "Direito Constitucional - Direitos Fundamentais e Organização do Estado";
-    let latestModuleSubmission = null;
 
     function optionHtml(question) {{
       return Object.entries(question.options).map(([key, value]) => `
@@ -487,18 +484,6 @@ def build_page() -> None:
       return lines.join("\\n");
     }}
 
-    function getSubmissionConfig() {{
-      return window.DC_SUBMISSION_CONFIG || {{
-        professorEmail: "mario.bastos.adv@gmail.com",
-        googleForm: {{ enabled: false, prefillUrl: "", entries: {{}} }}
-      }};
-    }}
-
-    function truncateForForm(value, limit = 7800) {{
-      if (!value || value.length <= limit) return value || "";
-      return `${{value.slice(0, limit)}}\\n\\n[Relatório truncado para caber no formulário. Use o botão "Copiar relatório" ou "Baixar TXT" para preservar a versão integral.]`;
-    }}
-
     function downloadTextFile(filename, text) {{
       const blob = new Blob([text], {{ type: "text/plain;charset=utf-8" }});
       const url = URL.createObjectURL(blob);
@@ -509,72 +494,6 @@ def build_page() -> None:
       link.click();
       link.remove();
       URL.revokeObjectURL(url);
-    }}
-
-    function objectiveSummary(feedback) {{
-      return feedback.map((item) => {{
-        const status = item.correct ? "correta" : "incorreta";
-        return `${{item.title}}: marcada ${{item.selected || "sem resposta"}}; gabarito ${{item.answer}}; ${{status}}`;
-      }}).join("\\n");
-    }}
-
-    function buildSubmissionPayload(score, feedback, reportText) {{
-      const name = document.getElementById("moduleStudentName").value.trim() || "Sem identificação";
-      const email = document.getElementById("moduleStudentEmail").value.trim() || "Sem e-mail informado";
-      const group = document.getElementById("moduleStudentGroup").value.trim() || "Sem turma/contexto";
-      const discursiveAnswer = document.getElementById(discursiveQuestion.id).value.trim() || "Sem resposta.";
-      return {{
-        student: name,
-        email,
-        group,
-        discipline: disciplineTitle,
-        activity: activityTitle,
-        scoreText: `${{score}} / ${{objectiveQuestions.length}} objetivas`,
-        objectiveAnswers: objectiveSummary(feedback),
-        discursiveAnswer,
-        reportText
-      }};
-    }}
-
-    function buildPrefilledGoogleFormUrl(payload) {{
-      const config = getSubmissionConfig().googleForm || {{}};
-      if (!config.enabled || !config.prefillUrl || !config.entries) return "";
-
-      const url = new URL(config.prefillUrl);
-      const fields = {{
-        nome: payload.student,
-        email: payload.email,
-        turma: payload.group,
-        disciplina: payload.discipline,
-        atividade: payload.activity,
-        acertos: payload.scoreText,
-        respostasObjetivas: payload.objectiveAnswers,
-        respostaDiscursiva: payload.discursiveAnswer,
-        relatorio: truncateForForm(payload.reportText)
-      }};
-
-      Object.entries(fields).forEach(([key, value]) => {{
-        const entryId = config.entries[key];
-        if (entryId) url.searchParams.set(entryId, value);
-      }});
-
-      return url.toString();
-    }}
-
-    function openSubmissionTarget(payload) {{
-      const status = document.getElementById("trainingSubmissionStatus");
-      const formUrl = buildPrefilledGoogleFormUrl(payload);
-      if (formUrl) {{
-        window.open(formUrl, "_blank", "noopener");
-        status.innerHTML = "Formulário Google aberto em nova aba. Confira os dados e clique em enviar no próprio formulário.";
-        return;
-      }}
-
-      const config = getSubmissionConfig();
-      const subject = encodeURIComponent(`Relatório de treino - ${{payload.discipline}}`);
-      const body = encodeURIComponent(payload.reportText.slice(0, 1800));
-      window.location.href = `mailto:${{config.professorEmail}}?subject=${{subject}}&body=${{body}}`;
-      status.innerHTML = `Google Forms ainda não configurado. Foi preparado um e-mail para <a href="mailto:${{config.professorEmail}}">${{config.professorEmail}}</a>; para enviar o relatório completo, use também "Copiar relatório" ou "Baixar TXT".`;
     }}
 
     document.getElementById("moduleQuiz").addEventListener("submit", (event) => {{
@@ -610,7 +529,6 @@ def build_page() -> None:
       const trainingReport = document.getElementById("trainingReport");
       trainingReport.value = reportText;
       trainingReport.scrollTop = 0;
-      latestModuleSubmission = buildSubmissionPayload(score, feedback, reportText);
       document.getElementById("trainingResult").hidden = false;
     }});
 
@@ -620,14 +538,6 @@ def build_page() -> None:
       await navigator.clipboard.writeText(reportText);
       document.getElementById("copyTrainingReport").textContent = "Relatório copiado";
       setTimeout(() => document.getElementById("copyTrainingReport").textContent = "Copiar relatório", 1800);
-    }});
-
-    document.getElementById("sendTrainingReport").addEventListener("click", () => {{
-      if (!latestModuleSubmission) {{
-        document.getElementById("trainingSubmissionStatus").textContent = "Corrija o treino antes de enviar o relatório.";
-        return;
-      }}
-      openSubmissionTarget(latestModuleSubmission);
     }});
 
     document.getElementById("downloadTrainingTxt").addEventListener("click", () => {{
@@ -640,8 +550,6 @@ def build_page() -> None:
       document.getElementById("moduleQuiz").reset();
       document.getElementById("trainingResult").hidden = true;
       document.getElementById("trainingReport").value = "";
-      latestModuleSubmission = null;
-      document.getElementById("trainingSubmissionStatus").innerHTML = "Contato do professor: <a href=\\"mailto:mario.bastos.adv@gmail.com\\">mario.bastos.adv@gmail.com</a>.";
     }});
 
     renderQuiz();
