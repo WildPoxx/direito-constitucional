@@ -380,7 +380,7 @@ def build_page() -> None:
               <button type="button" id="downloadTrainingTxt" class="secondary-button">Baixar TXT</button>
               <button type="button" id="sendTrainingReport" class="secondary-button">Enviar via Google Forms</button>
             </div>
-            <p id="trainingSubmissionStatus" class="helper-text" aria-live="polite">O envio via Google Forms abre uma nova aba para conferência e envia um resumo do relatório. Para guardar a versão integral, use Baixar TXT.</p>
+            <p id="trainingSubmissionStatus" class="helper-text" aria-live="polite">O envio via Google Forms abre uma nova aba para conferência. Também é possível baixar o TXT e enviar manualmente para <a href="mailto:mario.bastos.adv@gmail.com">mario.bastos.adv@gmail.com</a>.</p>
             <textarea id="trainingReport" class="report-box" readonly aria-label="Relatório de estudo"></textarea>
           </section>
         </section>
@@ -506,9 +506,9 @@ def build_page() -> None:
       }};
     }}
 
-    function truncateForForm(value, limit = 1800) {{
+    function truncateForForm(value, limit = 7800) {{
       if (!value || value.length <= limit) return value || "";
-      return `${{value.slice(0, limit)}}\\n\\n[Resumo truncado para caber no Google Forms. Use "Baixar TXT" para preservar o relatório integral.]`;
+      return `${{value.slice(0, limit)}}\\n\\n[Relatório truncado para caber no formulário. Use "Baixar TXT" para preservar a versão integral.]`;
     }}
 
     function objectiveSummary(feedback) {{
@@ -634,7 +634,7 @@ def build_page() -> None:
       document.getElementById("trainingResult").hidden = true;
       document.getElementById("trainingReport").value = "";
       latestModulePayload = null;
-      document.getElementById("trainingSubmissionStatus").textContent = "O envio via Google Forms abre uma nova aba para conferência e envia um resumo do relatório. Para guardar a versão integral, use Baixar TXT.";
+      document.getElementById("trainingSubmissionStatus").innerHTML = "O envio via Google Forms abre uma nova aba para conferência. Também é possível baixar o TXT e enviar manualmente para <a href=\\"mailto:mario.bastos.adv@gmail.com\\">mario.bastos.adv@gmail.com</a>.";
     }});
 
     renderQuiz();
