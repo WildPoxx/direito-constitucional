@@ -391,7 +391,7 @@
 
         <section class="quiz-panel" aria-labelledby="treino-final">
           <h2 id="treino-final">Treino Final Do Módulo</h2>
-          <p>As questões abaixo servem para revisar o conteúdo. A correção das objetivas acontece no próprio navegador. Depois da correção, o botão de envio abre um Google Forms pré-preenchido; o envio só acontece se o estudante conferir os dados e clicar em enviar no próprio formulário.</p>
+          <p>As questões abaixo servem para revisar o conteúdo. A correção das objetivas acontece no próprio navegador. O site não envia respostas ao professor. Para solicitar feedback, baixe o TXT e envie para <a href="mailto:mario.bastos.adv@gmail.com">mario.bastos.adv@gmail.com</a>.</p>
           <form id="moduleQuiz">
             <section class="submission-panel" aria-label="Identificação para envio">
               <h3>Identificação para envio</h3>
@@ -424,9 +424,8 @@
             <div class="actions-panel">
               <button type="button" id="copyTrainingReport" class="primary-button">Copiar relatório</button>
               <button type="button" id="downloadTrainingTxt" class="secondary-button">Baixar TXT</button>
-              <button type="button" id="sendTrainingReport" class="secondary-button">Enviar via Google Forms</button>
             </div>
-            <p id="trainingSubmissionStatus" class="helper-text" aria-live="polite">O envio via Google Forms abre uma nova aba para conferência. Também é possível baixar o TXT e enviar manualmente para <a href="mailto:mario.bastos.adv@gmail.com">mario.bastos.adv@gmail.com</a>.</p>
+            <p class="helper-text">Para solicitar feedback, envie o arquivo TXT ao professor: <a href="mailto:mario.bastos.adv@gmail.com">mario.bastos.adv@gmail.com</a>.</p>
             <textarea id="trainingReport" class="report-box" readonly aria-label="Relatório de estudo"></textarea>
           </section>
         </section>
@@ -443,7 +442,6 @@
     Material de apoio da disciplina Direito Constitucional - Direitos Fundamentais e Organização do Estado.
   </footer>
 
-  <script src="../../assets/submission-config.js"></script>
   <script>
     const objectiveQuestions = [
   {
@@ -520,7 +518,6 @@
 };
     const activityTitle = "Treino Final - Módulo 1: Dignidade, Princípios e Efetividade Constitucional";
     const disciplineTitle = "Direito Constitucional - Direitos Fundamentais e Organização do Estado";
-    let latestModulePayload = null;
 
     function optionHtml(question) {
       return Object.entries(question.options).map(([key, value]) => `
@@ -616,68 +613,6 @@
       URL.revokeObjectURL(url);
     }
 
-    function getSubmissionConfig() {
-      return window.DC_SUBMISSION_CONFIG || {
-        professorEmail: "mario.bastos.adv@gmail.com",
-        googleForm: { enabled: false, prefillUrl: "", entries: {} }
-      };
-    }
-
-    function truncateForForm(value, limit = 7800) {
-      if (!value || value.length <= limit) return value || "";
-      return `${value.slice(0, limit)}\n\n[Relatório truncado para caber no formulário. Use "Baixar TXT" para preservar a versão integral.]`;
-    }
-
-    function objectiveSummary(feedback) {
-      return feedback.map((item) => {
-        const status = item.correct ? "correta" : "incorreta";
-        return `${item.title}: marcada ${item.selected || "sem resposta"}; gabarito ${item.answer}; ${status}`;
-      }).join("\n");
-    }
-
-    function buildSubmissionPayload(score, feedback, reportText) {
-      const name = document.getElementById("moduleStudentName").value.trim() || "Sem identificação";
-      const email = document.getElementById("moduleStudentEmail").value.trim() || "Sem e-mail informado";
-      const group = document.getElementById("moduleStudentGroup").value.trim() || "Sem turma/contexto";
-      const discursiveAnswer = document.getElementById(discursiveQuestion.id).value.trim() || "Sem resposta.";
-      return {
-        student: name,
-        email,
-        group,
-        discipline: disciplineTitle,
-        activity: activityTitle,
-        scoreText: `${score} / ${objectiveQuestions.length} objetivas`,
-        objectiveAnswers: objectiveSummary(feedback),
-        discursiveAnswer,
-        reportText
-      };
-    }
-
-    function buildPrefilledGoogleFormUrl(payload) {
-      const config = getSubmissionConfig().googleForm || {};
-      if (!config.enabled || !config.prefillUrl || !config.entries) return "";
-
-      const url = new URL(config.prefillUrl);
-      const fields = {
-        nome: payload.student,
-        email: payload.email,
-        turma: payload.group,
-        disciplina: payload.discipline,
-        atividade: payload.activity,
-        acertos: payload.scoreText,
-        respostasObjetivas: payload.objectiveAnswers,
-        respostaDiscursiva: payload.discursiveAnswer,
-        relatorio: truncateForForm(payload.reportText)
-      };
-
-      Object.entries(fields).forEach(([key, value]) => {
-        const entryId = config.entries[key];
-        if (entryId) url.searchParams.set(entryId, value);
-      });
-
-      return url.toString();
-    }
-
     document.getElementById("moduleQuiz").addEventListener("submit", (event) => {
       event.preventDefault();
       const feedback = objectiveQuestions.map((question) => {
@@ -711,7 +646,6 @@
       const trainingReport = document.getElementById("trainingReport");
       trainingReport.value = reportText;
       trainingReport.scrollTop = 0;
-      latestModulePayload = buildSubmissionPayload(score, feedback, reportText);
       document.getElementById("trainingResult").hidden = false;
     });
 
@@ -729,29 +663,10 @@
       downloadTextFile("relatorio-treino-modulo-1-dignidade-principios.txt", reportText);
     });
 
-    document.getElementById("sendTrainingReport").addEventListener("click", () => {
-      const status = document.getElementById("trainingSubmissionStatus");
-      if (!latestModulePayload) {
-        status.textContent = "Corrija o treino antes de abrir o formulário de envio.";
-        return;
-      }
-
-      const formUrl = buildPrefilledGoogleFormUrl(latestModulePayload);
-      if (!formUrl) {
-        status.innerHTML = "Google Forms ainda não configurado. Use Baixar TXT e envie manualmente para <a href=\"mailto:mario.bastos.adv@gmail.com\">mario.bastos.adv@gmail.com</a>.";
-        return;
-      }
-
-      window.open(formUrl, "_blank", "noopener");
-      status.textContent = "Google Forms aberto em nova aba. Confira os dados e clique em enviar no próprio formulário.";
-    });
-
     document.getElementById("clearQuiz").addEventListener("click", () => {
       document.getElementById("moduleQuiz").reset();
       document.getElementById("trainingResult").hidden = true;
       document.getElementById("trainingReport").value = "";
-      latestModulePayload = null;
-      document.getElementById("trainingSubmissionStatus").innerHTML = "O envio via Google Forms abre uma nova aba para conferência. Também é possível baixar o TXT e enviar manualmente para <a href=\"mailto:mario.bastos.adv@gmail.com\">mario.bastos.adv@gmail.com</a>.";
     });
 
     renderQuiz();
