@@ -89,8 +89,8 @@ DISCURSIVE = {
 
 
 AI_NOTICE = (
-    "Este material fez uso de Inteligência Artificial Generativa (ChatGPT, modelo 5.5, e Claude Anthropic, modelo "
-    "Alps 5.0) para organização e estruturação do texto, revisão de redação e estilo, preparação visual ou "
+    "Este material fez uso de Inteligência Artificial Generativa (ChatGPT, da OpenAI, e Claude, da "
+    "Anthropic) para organização e estruturação do texto, revisão de redação e estilo, preparação visual ou "
     "adaptação didática e apoio à elaboração de questões e atividades, observadas as diretrizes da Portaria CNPq "
     "nº 2.664/2026. A seleção do conteúdo, a conferência das fontes e a responsabilidade final são do docente "
     "responsável."
