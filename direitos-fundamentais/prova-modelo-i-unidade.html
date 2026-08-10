@@ -92,9 +92,9 @@
       <div id="scoreSummary" class="score-summary"></div>
       <div id="feedbackList" class="feedback-list"></div>
       <div class="actions-panel">
-        <button type="button" id="copyMarkdownButton" class="primary-button">Copiar relatório em Markdown</button>
+        <button type="button" id="copyReportButton" class="primary-button">Copiar relatório</button>
         <button type="button" id="openGoogleFormButton" class="secondary-button">Enviar ao professor</button>
-        <button type="button" id="downloadJsonButton" class="secondary-button">Baixar JSON</button>
+        <button type="button" id="downloadTxtButton" class="secondary-button">Baixar TXT</button>
       </div>
       <p id="submissionStatus" class="helper-text" aria-live="polite">Contato do professor: <a href="mailto:mario.bastos.adv@gmail.com">mario.bastos.adv@gmail.com</a>.</p>
       <textarea id="reportBox" class="report-box" readonly aria-label="Relatório gerado"></textarea>
@@ -339,9 +339,9 @@
     const scoreSummary = document.getElementById("scoreSummary");
     const feedbackList = document.getElementById("feedbackList");
     const reportBox = document.getElementById("reportBox");
-    const copyMarkdownButton = document.getElementById("copyMarkdownButton");
+    const copyReportButton = document.getElementById("copyReportButton");
     const openGoogleFormButton = document.getElementById("openGoogleFormButton");
-    const downloadJsonButton = document.getElementById("downloadJsonButton");
+    const downloadTxtButton = document.getElementById("downloadTxtButton");
     const submissionStatus = document.getElementById("submissionStatus");
     const resetButton = document.getElementById("resetButton");
 
@@ -527,7 +527,7 @@
 
     function truncateForForm(value, limit = 7800) {
       if (!value || value.length <= limit) return value || "";
-      return `${value.slice(0, limit)}\n\n[Relatório truncado para caber no formulário. Use o botão "Copiar relatório em Markdown" para preservar a versão integral.]`;
+      return `${value.slice(0, limit)}\n\n[Relatório truncado para caber no formulário. Use o botão "Copiar relatório" ou "Baixar TXT" para preservar a versão integral.]`;
     }
 
     function objectiveSummary(report) {
@@ -581,7 +581,19 @@
       const markdown = reportToMarkdown(report);
       const shortBody = encodeURIComponent(markdown.slice(0, 1800));
       window.location.href = `mailto:${config.professorEmail}?subject=${subject}&body=${shortBody}`;
-      submissionStatus.innerHTML = `Google Forms ainda não configurado. Foi preparado um e-mail para <a href="mailto:${config.professorEmail}">${config.professorEmail}</a>; para enviar o relatório completo, use também "Copiar relatório em Markdown".`;
+      submissionStatus.innerHTML = `Google Forms ainda não configurado. Foi preparado um e-mail para <a href="mailto:${config.professorEmail}">${config.professorEmail}</a>; para enviar o relatório completo, use também "Copiar relatório" ou "Baixar TXT".`;
+    }
+
+    function downloadTextFile(filename, text) {
+      const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
     }
 
     function renderResults(report) {
@@ -605,6 +617,7 @@
 
       const markdown = reportToMarkdown(report);
       reportBox.value = markdown;
+      reportBox.scrollTop = 0;
       resultsPanel.hidden = false;
       resultsPanel.scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -616,24 +629,19 @@
       renderResults(latestReport);
     });
 
-    copyMarkdownButton.addEventListener("click", async () => {
+    copyReportButton.addEventListener("click", async () => {
       if (!latestReport) return;
       await navigator.clipboard.writeText(reportToMarkdown(latestReport));
-      copyMarkdownButton.textContent = "Relatório copiado";
-      setTimeout(() => copyMarkdownButton.textContent = "Copiar relatório em Markdown", 1800);
+      copyReportButton.textContent = "Relatório copiado";
+      setTimeout(() => copyReportButton.textContent = "Copiar relatório", 1800);
     });
 
-    downloadJsonButton.addEventListener("click", () => {
+    downloadTxtButton.addEventListener("click", () => {
       if (!latestReport) return;
-      const blob = new Blob([JSON.stringify(latestReport, null, 2)], { type: "application/json" });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = "relatorio-treino-direitos-fundamentais-i-unidade.json";
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-      URL.revokeObjectURL(url);
+      downloadTextFile(
+        "relatorio-treino-direitos-fundamentais-i-unidade.txt",
+        reportToMarkdown(latestReport)
+      );
     });
 
     openGoogleFormButton.addEventListener("click", () => {
