@@ -391,8 +391,25 @@
 
         <section class="quiz-panel" aria-labelledby="treino-final">
           <h2 id="treino-final">Treino Final Do Módulo</h2>
-          <p>As questões abaixo servem para revisar o conteúdo. A correção das objetivas acontece no próprio navegador e não envia dados pela internet nem encaminha respostas ao professor.</p>
+          <p>As questões abaixo servem para revisar o conteúdo. A correção das objetivas acontece no próprio navegador. Depois da correção, o estudante pode abrir um formulário Google pré-preenchido ou preparar um e-mail para o professor.</p>
           <form id="moduleQuiz">
+            <section class="submission-panel" aria-label="Identificação para envio">
+              <h3>Identificação para envio</h3>
+              <div class="field-grid">
+                <label>
+                  Nome
+                  <input id="moduleStudentName" type="text" autocomplete="name" placeholder="Nome completo">
+                </label>
+                <label>
+                  E-mail
+                  <input id="moduleStudentEmail" type="email" autocomplete="email" placeholder="nome@email.com">
+                </label>
+                <label>
+                  Turma
+                  <input id="moduleStudentGroup" type="text" value="3º semestre - Direitos Fundamentais">
+                </label>
+              </div>
+            </section>
             <div id="objectiveTraining" class="question-list"></div>
             <div id="discursiveTraining" class="question-list"></div>
             <div class="actions-panel">
@@ -404,6 +421,11 @@
             <h3>Resultado do treino</h3>
             <div id="trainingSummary" class="score-summary"></div>
             <div id="trainingFeedback" class="feedback-list"></div>
+            <div class="actions-panel">
+              <button type="button" id="copyTrainingReport" class="primary-button">Copiar relatório</button>
+              <button type="button" id="sendTrainingReport" class="secondary-button">Enviar ao professor</button>
+            </div>
+            <p id="trainingSubmissionStatus" class="helper-text" aria-live="polite">Contato do professor: <a href="mailto:mario.bastos.adv@gmail.com">mario.bastos.adv@gmail.com</a>.</p>
             <textarea id="trainingReport" class="report-box" readonly aria-label="Relatório de estudo"></textarea>
           </section>
         </section>
@@ -420,6 +442,7 @@
     Material de apoio da disciplina Direito Constitucional - Direitos Fundamentais e Organização do Estado.
   </footer>
 
+  <script src="../../assets/submission-config.js"></script>
   <script>
     const objectiveQuestions = [
   {
@@ -494,6 +517,9 @@
   ],
   "source": "CF/88, art. 1º, III; Barroso, A dignidade da pessoa humana no direito constitucional contemporâneo; Barroso, Neoconstitucionalismo e constitucionalização do Direito."
 };
+    const activityTitle = "Treino Final - Módulo 1: Dignidade, Princípios e Efetividade Constitucional";
+    const disciplineTitle = "Direito Constitucional - Direitos Fundamentais e Organização do Estado";
+    let latestModuleSubmission = null;
 
     function optionHtml(question) {
       return Object.entries(question.options).map(([key, value]) => `
@@ -538,9 +564,18 @@
     }
 
     function buildReport(score, feedback) {
+      const name = document.getElementById("moduleStudentName").value.trim() || "Sem identificação";
+      const email = document.getElementById("moduleStudentEmail").value.trim() || "Sem e-mail informado";
+      const group = document.getElementById("moduleStudentGroup").value.trim() || "Sem turma/contexto";
+      const discursiveAnswer = document.getElementById(discursiveQuestion.id).value.trim() || "Sem resposta.";
       const lines = [
         "# Relatório de treino - Módulo 1",
         "",
+        `- Estudante: ${name}`,
+        `- E-mail: ${email}`,
+        `- Turma/contexto: ${group}`,
+        `- Disciplina: ${disciplineTitle}`,
+        `- Atividade: ${activityTitle}`,
         `Resultado objetivo: ${score}/${objectiveQuestions.length}`,
         "",
         "## Questões objetivas"
@@ -558,11 +593,92 @@
       lines.push("## Questão discursiva");
       lines.push(discursiveQuestion.prompt);
       lines.push("");
+      lines.push("### Resposta escrita");
+      lines.push(discursiveAnswer);
+      lines.push("");
       lines.push("### Roteiro de autocorreção");
       discursiveQuestion.rubric.forEach((item) => lines.push(`- ${item}`));
       lines.push("");
       lines.push(`Fonte: ${discursiveQuestion.source}`);
       return lines.join("\n");
+    }
+
+    function getSubmissionConfig() {
+      return window.DC_SUBMISSION_CONFIG || {
+        professorEmail: "mario.bastos.adv@gmail.com",
+        googleForm: { enabled: false, prefillUrl: "", entries: {} }
+      };
+    }
+
+    function truncateForForm(value, limit = 7800) {
+      if (!value || value.length <= limit) return value || "";
+      return `${value.slice(0, limit)}\n\n[Relatório truncado para caber no formulário. Use o botão "Copiar relatório" para preservar a versão integral.]`;
+    }
+
+    function objectiveSummary(feedback) {
+      return feedback.map((item) => {
+        const status = item.correct ? "correta" : "incorreta";
+        return `${item.title}: marcada ${item.selected || "sem resposta"}; gabarito ${item.answer}; ${status}`;
+      }).join("\n");
+    }
+
+    function buildSubmissionPayload(score, feedback, reportText) {
+      const name = document.getElementById("moduleStudentName").value.trim() || "Sem identificação";
+      const email = document.getElementById("moduleStudentEmail").value.trim() || "Sem e-mail informado";
+      const group = document.getElementById("moduleStudentGroup").value.trim() || "Sem turma/contexto";
+      const discursiveAnswer = document.getElementById(discursiveQuestion.id).value.trim() || "Sem resposta.";
+      return {
+        student: name,
+        email,
+        group,
+        discipline: disciplineTitle,
+        activity: activityTitle,
+        scoreText: `${score} / ${objectiveQuestions.length} objetivas`,
+        objectiveAnswers: objectiveSummary(feedback),
+        discursiveAnswer,
+        reportText
+      };
+    }
+
+    function buildPrefilledGoogleFormUrl(payload) {
+      const config = getSubmissionConfig().googleForm || {};
+      if (!config.enabled || !config.prefillUrl || !config.entries) return "";
+
+      const url = new URL(config.prefillUrl);
+      const fields = {
+        nome: payload.student,
+        email: payload.email,
+        turma: payload.group,
+        disciplina: payload.discipline,
+        atividade: payload.activity,
+        acertos: payload.scoreText,
+        respostasObjetivas: payload.objectiveAnswers,
+        respostaDiscursiva: payload.discursiveAnswer,
+        relatorio: truncateForForm(payload.reportText)
+      };
+
+      Object.entries(fields).forEach(([key, value]) => {
+        const entryId = config.entries[key];
+        if (entryId) url.searchParams.set(entryId, value);
+      });
+
+      return url.toString();
+    }
+
+    function openSubmissionTarget(payload) {
+      const status = document.getElementById("trainingSubmissionStatus");
+      const formUrl = buildPrefilledGoogleFormUrl(payload);
+      if (formUrl) {
+        window.open(formUrl, "_blank", "noopener");
+        status.innerHTML = "Formulário Google aberto em nova aba. Confira os dados e clique em enviar no próprio formulário.";
+        return;
+      }
+
+      const config = getSubmissionConfig();
+      const subject = encodeURIComponent(`Relatório de treino - ${payload.discipline}`);
+      const body = encodeURIComponent(payload.reportText.slice(0, 1800));
+      window.location.href = `mailto:${config.professorEmail}?subject=${subject}&body=${body}`;
+      status.innerHTML = `Google Forms ainda não configurado. Foi preparado um e-mail para <a href="mailto:${config.professorEmail}">${config.professorEmail}</a>; para enviar o relatório completo, use também "Copiar relatório".`;
     }
 
     document.getElementById("moduleQuiz").addEventListener("submit", (event) => {
@@ -594,14 +710,34 @@
           <p><strong>Fonte:</strong> ${item.source}</p>
         </article>
       `).join("");
-      document.getElementById("trainingReport").value = buildReport(score, feedback);
+      const reportText = buildReport(score, feedback);
+      document.getElementById("trainingReport").value = reportText;
+      latestModuleSubmission = buildSubmissionPayload(score, feedback, reportText);
       document.getElementById("trainingResult").hidden = false;
+    });
+
+    document.getElementById("copyTrainingReport").addEventListener("click", async () => {
+      const reportText = document.getElementById("trainingReport").value;
+      if (!reportText) return;
+      await navigator.clipboard.writeText(reportText);
+      document.getElementById("copyTrainingReport").textContent = "Relatório copiado";
+      setTimeout(() => document.getElementById("copyTrainingReport").textContent = "Copiar relatório", 1800);
+    });
+
+    document.getElementById("sendTrainingReport").addEventListener("click", () => {
+      if (!latestModuleSubmission) {
+        document.getElementById("trainingSubmissionStatus").textContent = "Corrija o treino antes de enviar o relatório.";
+        return;
+      }
+      openSubmissionTarget(latestModuleSubmission);
     });
 
     document.getElementById("clearQuiz").addEventListener("click", () => {
       document.getElementById("moduleQuiz").reset();
       document.getElementById("trainingResult").hidden = true;
       document.getElementById("trainingReport").value = "";
+      latestModuleSubmission = null;
+      document.getElementById("trainingSubmissionStatus").innerHTML = "Contato do professor: <a href=\"mailto:mario.bastos.adv@gmail.com\">mario.bastos.adv@gmail.com</a>.";
     });
 
     renderQuiz();

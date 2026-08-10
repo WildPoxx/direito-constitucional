@@ -301,6 +301,7 @@ label {
 }
 
 input[type="text"],
+input[type="email"],
 textarea {
   width: 100%;
   border: 1px solid var(--line);
@@ -369,6 +370,26 @@ textarea {
   flex-wrap: wrap;
   gap: 10px;
   margin: 24px 0;
+}
+
+.submission-panel {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0 22px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.submission-panel h3 {
+  margin: 0;
+}
+
+.helper-text {
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.92rem;
 }
 
 button {

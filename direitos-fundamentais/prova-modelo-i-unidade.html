@@ -30,7 +30,7 @@
     </section>
 
     <section class="notice">
-      <strong>Uso atual:</strong> este protótipo não envia respostas pela internet nem encaminha dados ao professor. As respostas ficam no navegador e podem ser baixadas em Markdown ou JSON pelo próprio usuário. Veja a <a href="../privacidade.html">página de privacidade</a>.
+      <strong>Uso atual:</strong> este protótipo corrige as respostas no navegador e gera um relatório de estudo. Depois da correção, o estudante pode abrir um formulário Google pré-preenchido ou preparar um e-mail para o professor. Nenhum dado é enviado sem ação expressa do usuário. Veja a <a href="../privacidade.html">página de privacidade</a>.
     </section>
 
     <section class="exam-meta" aria-label="Dados da avaliação">
@@ -61,6 +61,10 @@
             <input id="studentName" type="text" autocomplete="name" placeholder="Ex.: Mario - teste 01">
           </label>
           <label>
+            E-mail
+            <input id="studentEmail" type="email" autocomplete="email" placeholder="nome@email.com">
+          </label>
+          <label>
             Turma ou contexto
             <input id="studentGroup" type="text" value="3º semestre - treino pessoal">
           </label>
@@ -89,8 +93,10 @@
       <div id="feedbackList" class="feedback-list"></div>
       <div class="actions-panel">
         <button type="button" id="copyMarkdownButton" class="primary-button">Copiar relatório em Markdown</button>
+        <button type="button" id="openGoogleFormButton" class="secondary-button">Enviar ao professor</button>
         <button type="button" id="downloadJsonButton" class="secondary-button">Baixar JSON</button>
       </div>
+      <p id="submissionStatus" class="helper-text" aria-live="polite">Contato do professor: <a href="mailto:mario.bastos.adv@gmail.com">mario.bastos.adv@gmail.com</a>.</p>
       <textarea id="reportBox" class="report-box" readonly aria-label="Relatório gerado"></textarea>
     </section>
 
@@ -104,6 +110,7 @@
     Protótipo de banco de questões e treino avaliativo. Fontes: Constituição Federal de 1988 e plano de ensino da disciplina.
   </footer>
 
+  <script src="../assets/submission-config.js"></script>
   <script>
     const exam = {
       title: "Prova-modelo interativa - I Unidade",
@@ -333,7 +340,9 @@
     const feedbackList = document.getElementById("feedbackList");
     const reportBox = document.getElementById("reportBox");
     const copyMarkdownButton = document.getElementById("copyMarkdownButton");
+    const openGoogleFormButton = document.getElementById("openGoogleFormButton");
     const downloadJsonButton = document.getElementById("downloadJsonButton");
+    const submissionStatus = document.getElementById("submissionStatus");
     const resetButton = document.getElementById("resetButton");
 
     let latestReport = null;
@@ -401,6 +410,7 @@
 
     function buildReport() {
       const name = document.getElementById("studentName").value.trim() || "Sem identificação";
+      const email = document.getElementById("studentEmail").value.trim() || "Sem e-mail informado";
       const group = document.getElementById("studentGroup").value.trim() || "Sem turma/contexto";
       const timestamp = new Date().toISOString();
 
@@ -444,6 +454,7 @@
         exam: exam.title,
         discipline: exam.discipline,
         student: name,
+        email,
         group,
         timestamp,
         objectiveScore,
@@ -463,6 +474,7 @@
       lines.push(`# Relatório de treino - ${report.exam}`);
       lines.push("");
       lines.push(`- Estudante/contexto: ${report.student}`);
+      lines.push(`- E-mail: ${report.email}`);
       lines.push(`- Turma/contexto: ${report.group}`);
       lines.push(`- Data técnica: ${report.timestamp}`);
       lines.push(`- Objetivas: ${report.objectiveScore.toFixed(1)} / ${report.objectiveMax.toFixed(1)}`);
@@ -504,6 +516,72 @@
       lines.push("## Fontes");
       report.sources.forEach(source => lines.push(`- ${source}`));
       return lines.join("\n");
+    }
+
+    function getSubmissionConfig() {
+      return window.DC_SUBMISSION_CONFIG || {
+        professorEmail: "mario.bastos.adv@gmail.com",
+        googleForm: { enabled: false, prefillUrl: "", entries: {} }
+      };
+    }
+
+    function truncateForForm(value, limit = 7800) {
+      if (!value || value.length <= limit) return value || "";
+      return `${value.slice(0, limit)}\n\n[Relatório truncado para caber no formulário. Use o botão "Copiar relatório em Markdown" para preservar a versão integral.]`;
+    }
+
+    function objectiveSummary(report) {
+      return report.objectiveResults.map(item => {
+        const status = item.correct ? "correta" : "incorreta";
+        return `${item.id}: marcada ${item.chosen || "sem resposta"}; gabarito ${item.expected}; ${status}`;
+      }).join("\n");
+    }
+
+    function discursiveSummary(report) {
+      return report.discursiveResults.map(item => {
+        return `${item.title}\nAutoavaliação: ${item.selfScore.toFixed(1)} / ${item.maxScore.toFixed(1)}\nResposta:\n${item.answer || "Sem resposta."}`;
+      }).join("\n\n");
+    }
+
+    function buildPrefilledGoogleFormUrl(report) {
+      const config = getSubmissionConfig().googleForm || {};
+      if (!config.enabled || !config.prefillUrl || !config.entries) return "";
+
+      const url = new URL(config.prefillUrl);
+      const fields = {
+        nome: report.student,
+        email: report.email,
+        turma: report.group,
+        disciplina: report.discipline,
+        atividade: report.exam,
+        acertos: `${report.totalEstimatedScore.toFixed(1)} / ${report.totalMax.toFixed(1)} | objetivas ${report.objectiveScore.toFixed(1)} / ${report.objectiveMax.toFixed(1)} | discursivas ${report.discursiveSelfScore.toFixed(1)} / ${report.discursiveMax.toFixed(1)}`,
+        respostasObjetivas: objectiveSummary(report),
+        respostaDiscursiva: discursiveSummary(report),
+        relatorio: truncateForForm(reportToMarkdown(report))
+      };
+
+      Object.entries(fields).forEach(([key, value]) => {
+        const entryId = config.entries[key];
+        if (entryId) url.searchParams.set(entryId, value);
+      });
+
+      return url.toString();
+    }
+
+    function openSubmissionTarget(report) {
+      const formUrl = buildPrefilledGoogleFormUrl(report);
+      if (formUrl) {
+        window.open(formUrl, "_blank", "noopener");
+        submissionStatus.innerHTML = "Formulário Google aberto em nova aba. Confira os dados e clique em enviar no próprio formulário.";
+        return;
+      }
+
+      const config = getSubmissionConfig();
+      const subject = encodeURIComponent(`Relatório de treino - ${report.discipline}`);
+      const markdown = reportToMarkdown(report);
+      const shortBody = encodeURIComponent(markdown.slice(0, 1800));
+      window.location.href = `mailto:${config.professorEmail}?subject=${subject}&body=${shortBody}`;
+      submissionStatus.innerHTML = `Google Forms ainda não configurado. Foi preparado um e-mail para <a href="mailto:${config.professorEmail}">${config.professorEmail}</a>; para enviar o relatório completo, use também "Copiar relatório em Markdown".`;
     }
 
     function renderResults(report) {
@@ -558,10 +636,19 @@
       URL.revokeObjectURL(url);
     });
 
+    openGoogleFormButton.addEventListener("click", () => {
+      if (!latestReport) {
+        submissionStatus.textContent = "Corrija a prova-modelo antes de enviar o relatório.";
+        return;
+      }
+      openSubmissionTarget(latestReport);
+    });
+
     resetButton.addEventListener("click", () => {
       form.reset();
       resultsPanel.hidden = true;
       latestReport = null;
+      submissionStatus.innerHTML = "Contato do professor: <a href=\"mailto:mario.bastos.adv@gmail.com\">mario.bastos.adv@gmail.com</a>.";
       localStorage.removeItem("dc_treino_direitos_i_unidade_latest");
     });
 
