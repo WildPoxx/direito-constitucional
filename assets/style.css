@@ -423,6 +423,57 @@ button {
   background: var(--surface);
 }
 
+.info-list,
+.timeline-list {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.info-list li,
+.timeline-list li {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.timeline-list li {
+  display: grid;
+  grid-template-columns: minmax(100px, 130px) minmax(0, 1fr);
+  gap: 14px;
+}
+
+.timeline-list time {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.reading-list {
+  display: grid;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.reading-item {
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.reading-item p {
+  margin: 8px 0 12px;
+}
+
+.ai-disclosure.compact {
+  padding: 16px 18px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .site-footer {
   margin-top: 48px;
   padding: 28px 0 40px;
@@ -453,5 +504,9 @@ button {
 
   .toc-card {
     position: static;
+  }
+
+  .timeline-list li {
+    grid-template-columns: 1fr;
   }
 }
