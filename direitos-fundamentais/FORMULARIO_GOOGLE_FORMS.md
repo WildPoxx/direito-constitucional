@@ -9,7 +9,7 @@ E-mail de contato: <mario.bastos.adv@gmail.com>
 
 As páginas do site corrigem as questões objetivas no próprio navegador. Depois da correção, o botão **Enviar via Google Forms** abre um Google Form pré-preenchido com os dados do relatório. O estudante deve revisar as informações no formulário e clicar em enviar.
 
-Se o Google Form ainda não estiver configurado, o botão prepara um e-mail para o professor e orienta o estudante a copiar o relatório completo.
+Se o Google Form ainda não estiver configurado, a página deve orientar o estudante a baixar o TXT e enviar manualmente ao professor.
 
 ## Campos recomendados no Google Form
 
@@ -23,12 +23,12 @@ Crie um Google Form com os seguintes campos, preferencialmente nesta ordem:
 6. Acertos ou pontuação
 7. Respostas objetivas
 8. Resposta discursiva
-9. Relatório completo
+9. Relatório resumido
 
 Sugestões:
 
 - Use campo de resposta curta para nome, e-mail, turma, disciplina, atividade e acertos.
-- Use parágrafo para respostas objetivas, resposta discursiva e relatório completo.
+- Use parágrafo para respostas objetivas, resposta discursiva e relatório resumido.
 - Não colete senha dos alunos. Se precisar de identificação mais segura, use a opção nativa do Google Forms para coletar e-mail.
 - Vincule as respostas a uma planilha Google Sheets para análise posterior.
 
