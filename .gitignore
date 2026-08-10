@@ -20,6 +20,7 @@ Desktop.ini
 .env.*
 !.env.example
 node_modules/
+__pycache__/
 .cache/
 .parcel-cache/
 .vite/
