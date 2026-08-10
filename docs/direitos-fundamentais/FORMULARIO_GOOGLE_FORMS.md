@@ -7,7 +7,7 @@ E-mail de contato: <mario.bastos.adv@gmail.com>
 
 ## Modelo adotado
 
-As páginas do site corrigem as questões objetivas no próprio navegador. Depois da correção, o botão **Enviar ao professor** tenta abrir um Google Form pré-preenchido com os dados do relatório. O estudante deve revisar as informações no formulário e clicar em enviar.
+As páginas do site corrigem as questões objetivas no próprio navegador. Depois da correção, o botão **Enviar via Google Forms** abre um Google Form pré-preenchido com os dados do relatório. O estudante deve revisar as informações no formulário e clicar em enviar.
 
 Se o Google Form ainda não estiver configurado, o botão prepara um e-mail para o professor e orienta o estudante a copiar o relatório completo.
 
@@ -71,7 +71,38 @@ window.DC_SUBMISSION_CONFIG = {
 };
 ```
 
-Enquanto `enabled` estiver como `false`, o site não abrirá Google Form e usará o e-mail como fallback.
+## Formulário ativo
+
+Formulário criado na conta Google de Mario Bastos em 10/08/2026.
+
+Link público de resposta:
+
+`https://docs.google.com/forms/d/e/1FAIpQLScoNpMgUacPp4sOFT3242jBC74Mnk4XzGET9Mn3CfBzXKz3BA/viewform`
+
+Configuração aplicada em `docs/assets/submission-config.js`:
+
+```js
+window.DC_SUBMISSION_CONFIG = {
+  professorEmail: "mario.bastos.adv@gmail.com",
+  googleForm: {
+    enabled: true,
+    prefillUrl: "https://docs.google.com/forms/d/e/1FAIpQLScoNpMgUacPp4sOFT3242jBC74Mnk4XzGET9Mn3CfBzXKz3BA/viewform?usp=pp_url",
+    entries: {
+      nome: "entry.1755870499",
+      email: "entry.1389493846",
+      turma: "entry.1871012338",
+      disciplina: "entry.285185478",
+      atividade: "entry.1843160963",
+      acertos: "entry.1071976634",
+      respostasObjetivas: "entry.52127091",
+      respostaDiscursiva: "entry.1176055158",
+      relatorio: "entry.278636789"
+    }
+  }
+};
+```
+
+Enquanto `enabled` estiver como `false`, o site não abrirá Google Form e deverá orientar o envio manual por TXT/e-mail.
 
 ## Fontes técnicas
 
