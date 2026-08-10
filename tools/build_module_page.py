@@ -298,7 +298,7 @@ def build_page() -> None:
       <nav aria-label="Navegação principal">
         <a href="../../">Início</a>
         <a href="../">Direitos Fundamentais</a>
-        <a href="../../documentos-institucionais/">Documentos</a>
+        <a href="../../documentos-institucionais/">Documentos e leituras</a>
         <a href="../../privacidade.html">Privacidade</a>
       </nav>
     </div>
