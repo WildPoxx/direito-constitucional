@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roteiro Guiado de Pesquisa — Teoria da Constituição</title>
+<meta name="description" content="Ferramenta guiada que conduz o estudante, etapa por etapa, da definição do objeto até um mini plano de pesquisa pronto. Teoria da Constituição, FBBR 2026.2.">
+<meta name="robots" content="index,follow">
+<style>
+:root{
+  --paper:#f7f4ee; --paper-warm:#fffaf3; --ink:#1f2933; --muted:#667085;
+  --accent:#7c2d12; --accent-2:#255957; --line:#d8c8b8; --ok:#1b6b52;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#efe9e0;color:var(--ink);
+  font-family:"Aptos","Inter","Segoe UI",Arial,sans-serif;line-height:1.5}
+header{background:var(--accent);color:#fdf6ef;padding:22px 20px}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+header h1{margin:0;font-size:26px;line-height:1.15}
+header p{margin:6px 0 0;font-size:15px;opacity:.9}
+
+/* trilha de etapas */
+.trilha{display:flex;flex-wrap:wrap;gap:6px;margin:18px auto 0;max-width:900px;padding:0 20px}
+.trilha span{flex:1 1 90px;min-width:80px;text-align:center;padding:7px 4px;font-size:12px;
+  font-weight:700;letter-spacing:.03em;text-transform:uppercase;border-radius:3px;
+  background:#e2d7c9;color:#8a7a6b}
+.trilha span.atual{background:var(--accent);color:#fff}
+.trilha span.feita{background:var(--ok);color:#fff}
+
+main{max-width:900px;margin:20px auto 60px;padding:0 20px}
+.cartao{background:var(--paper);border:1px solid var(--line);border-radius:4px;
+  padding:26px 28px;box-shadow:0 6px 24px rgba(0,0,0,.07)}
+.etapa{display:none}
+.etapa.ativa{display:block}
+h2{margin:0 0 6px;font-size:23px;line-height:1.2}
+.ajuda{margin:0 0 18px;color:var(--muted);font-size:15px}
+.ajuda strong{color:var(--ink)}
+
+.opcao{display:block;border:1px solid var(--line);border-left:5px solid var(--line);
+  background:var(--paper-warm);padding:13px 16px;margin-bottom:10px;border-radius:3px;cursor:pointer;
+  transition:border-color .12s, background .12s}
+.opcao:hover{border-left-color:var(--accent-2)}
+.opcao input{margin-right:9px}
+.opcao.sel{border-left-color:var(--accent);background:#fff;box-shadow:inset 0 0 0 1px rgba(124,45,18,.18)}
+.opcao .rot{font-weight:600}
+.opcao .exp{display:block;margin-top:4px;color:var(--muted);font-size:13.5px}
+
+textarea,input[type=text]{width:100%;font:inherit;font-size:15px;padding:10px 12px;
+  border:1px solid var(--line);border-radius:3px;background:#fff;color:var(--ink)}
+textarea{min-height:74px;resize:vertical}
+label.campo{display:block;margin:14px 0 5px;font-weight:600;font-size:14.5px}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+.chip{border:1px solid var(--line);background:var(--paper-warm);padding:7px 13px;border-radius:20px;
+  cursor:pointer;font-size:14px}
+.chip.on{background:var(--accent-2);border-color:var(--accent-2);color:#fff}
+
+.nav{display:flex;justify-content:space-between;gap:12px;margin-top:24px}
+button{font:inherit;font-size:15px;font-weight:600;padding:11px 22px;border-radius:3px;cursor:pointer;
+  border:1px solid var(--accent);background:var(--accent);color:#fff}
+button.sec{background:transparent;color:var(--accent)}
+button:disabled{opacity:.4;cursor:not-allowed}
+button.larga{width:100%}
+
+.aviso{margin-top:14px;padding:11px 15px;border-left:5px solid var(--accent-2);
+  background:rgba(37,89,87,.08);font-size:14px}
+.erro{margin-top:12px;color:#8a2020;font-size:14px;font-weight:600;display:none}
+.erro.on{display:block}
+
+pre.saida{white-space:pre-wrap;background:#fff;border:1px solid var(--line);border-radius:3px;
+  padding:22px 24px;font-family:"Aptos","Segoe UI",Arial,sans-serif;font-size:14.5px;line-height:1.55}
+.acoes{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.rodape{max-width:900px;margin:0 auto 40px;padding:0 20px;color:var(--muted);font-size:13px;line-height:1.45}
+
+@media print{
+  header,.trilha,.nav,.acoes,.rodape,.naoimprime{display:none!important}
+  body{background:#fff}.cartao{border:none;box-shadow:none;padding:0}
+  pre.saida{border:none;padding:0}
+}
+@media (max-width:640px){
+  .cartao{padding:20px 18px}h2{font-size:20px}
+  .nav{flex-direction:column-reverse}button{width:100%}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Roteiro Guiado de Pesquisa</h1>
+    <p>Teoria da Constituição · I Unidade · 2026.2 · Prof. Mario Bastos
+      &nbsp;·&nbsp; <a href="../" style="color:#fdf6ef;text-decoration:underline">voltar à página da disciplina</a></p>
+  </div>
+</header>
+
+<div class="trilha" id="trilha"></div>
+
+<main>
+<div class="cartao">
+
+  <!-- 0 · IDENTIFICAÇÃO -->
+  <section class="etapa ativa" data-etapa="0">
+    <h2>Antes de começar</h2>
+    <p class="ajuda">Este roteiro conduz vocês, passo a passo, até um <strong>mini plano de pesquisa</strong>.
+      São seis etapas curtas. No fim, o texto sai pronto para copiar e enviar pelo portal.
+      Nada aqui é salvo em servidor nenhum: se fechar a página, o trabalho se perde. Copiem o resultado no fim.</p>
+    <label class="campo" for="equipe">Nomes da equipe, até três</label>
+    <input type="text" id="equipe" placeholder="Ex.: Ana Ribeiro, Caio Mendes, Júlia Nunes">
+    <div class="aviso">A equipe que vocês formarem aqui é a mesma que seguirá até o miniartigo da II Unidade.
+      Escolham com quem realmente vão trabalhar.</div>
+    <p class="erro" id="erro0">Escrevam ao menos um nome para continuar.</p>
+    <div class="nav"><span></span><button onclick="avancar()">Começar</button></div>
+  </section>
+
+  <!-- 1 · OBJETO -->
+  <section class="etapa" data-etapa="1">
+    <h2>Etapa 1 · O objeto</h2>
+    <p class="ajuda">O tema desta unidade já está dado: <strong>neoconstitucionalismo e constitucionalização
+      do Direito no Brasil</strong>, a partir do texto de Barroso. Tema, porém, é largo demais para pesquisar.
+      O que se pesquisa é um <strong>objeto</strong>: dois ou três termos conceituais combinados, que recortam
+      o tema. Escolham o recorte que mais interessa a vocês.</p>
+    <div id="objetos"></div>
+    <p class="erro" id="erro1">Escolham um objeto para continuar.</p>
+    <div class="nav"><button class="sec" onclick="voltar()">Voltar</button><button onclick="avancar()">Continuar</button></div>
+  </section>
+
+  <!-- 2 · PROBLEMA -->
+  <section class="etapa" data-etapa="2">
+    <h2>Etapa 2 · O problema</h2>
+    <p class="ajuda">O problema é a <strong>pergunta que a pesquisa vai responder</strong> — a parte mais
+      importante do trabalho. Mudar o problema muda a pesquisa inteira. Abaixo há quatro perguntas já
+      formuladas para o objeto que vocês escolheram. Podem adotar uma delas ou escrever a sua.</p>
+    <div id="problemas"></div>
+    <p class="erro" id="erro2">Escolham ou escrevam um problema para continuar.</p>
+    <div class="nav"><button class="sec" onclick="voltar()">Voltar</button><button onclick="avancar()">Continuar</button></div>
+  </section>
+
+  <!-- 3 · PROBLEMATIZAÇÕES -->
+  <section class="etapa" data-etapa="3">
+    <h2>Etapa 3 · As problematizações</h2>
+    <p class="ajuda">Problematizações são <strong>perguntas menores</strong> que ajudam a responder a pergunta
+      maior. Cada uma vira, mais adiante, um objetivo específico. Marquem <strong>duas ou três</strong>.</p>
+    <div id="problematizacoes"></div>
+    <label class="campo" for="pzExtra">Se quiserem, acrescentem uma de autoria de vocês</label>
+    <textarea id="pzExtra" placeholder="Ex.: Que papel o Supremo Tribunal Federal cumpre nesse processo?"></textarea>
+    <p class="erro" id="erro3">Marquem ao menos duas problematizações.</p>
+    <div class="nav"><button class="sec" onclick="voltar()">Voltar</button><button onclick="avancar()">Continuar</button></div>
+  </section>
+
+  <!-- 4 · HIPÓTESE -->
+  <section class="etapa" data-etapa="4">
+    <h2>Etapa 4 · A hipótese</h2>
+    <p class="ajuda">Hipótese é a <strong>resposta que vocês imaginam</strong> antes de investigar. Não precisa
+      estar certa: precisa ser curta, sensata e clara o bastante para poder ser desmentida pela leitura.
+      É ela que dá direção ao trabalho.</p>
+    <div id="hipoteses"></div>
+    <p class="erro" id="erro4">Escolham ou escrevam uma hipótese para continuar.</p>
+    <div class="nav"><button class="sec" onclick="voltar()">Voltar</button><button onclick="avancar()">Continuar</button></div>
+  </section>
+
+  <!-- 5 · VERBOS E OBJETIVOS -->
+  <section class="etapa" data-etapa="5">
+    <h2>Etapa 5 · Os objetivos</h2>
+    <p class="ajuda">O <strong>objetivo geral</strong> é responder ao problema. Os <strong>objetivos
+      específicos</strong> são o caminho até lá: um para cada problematização. O que muda o sentido de um
+      objetivo é o <strong>verbo</strong>. Escolham com atenção — cada verbo promete um tipo diferente de
+      resultado.</p>
+    <div id="objetivos"></div>
+    <p class="erro" id="erro5">Escolham um verbo para cada objetivo.</p>
+    <div class="nav"><button class="sec" onclick="voltar()">Voltar</button><button onclick="avancar()">Gerar o plano</button></div>
+  </section>
+
+  <!-- 6 · RESULTADO -->
+  <section class="etapa" data-etapa="6">
+    <h2 class="naoimprime">Pronto</h2>
+    <p class="ajuda naoimprime">Este é o seu mini plano de pesquisa. Confiram, ajustem o que quiserem e
+      enviem pelo portal. Se usaram alguma ferramenta de IA em qualquer etapa, declarem no campo abaixo antes
+      de copiar — é a mesma regra que vale para o material do professor.</p>
+    <label class="campo naoimprime" for="iag">Declaração de uso de IA, se houver</label>
+    <input type="text" id="iag" class="naoimprime" placeholder="Ex.: ChatGPT, para revisão de redação do problema"
+      oninput="gerar()">
+    <pre class="saida" id="saida"></pre>
+    <div class="acoes">
+      <button onclick="copiar()" id="btCopiar">Copiar o texto</button>
+      <button class="sec" onclick="window.print()">Salvar em PDF</button>
+      <button class="sec" onclick="voltar()">Voltar e ajustar</button>
+      <button class="sec" onclick="recomecar()">Começar de novo</button>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<p class="rodape">
+  Fonte principal da unidade: BARROSO, Luís Roberto. Neoconstitucionalismo e constitucionalização do Direito
+  (O triunfo tardio do direito constitucional no Brasil). <i>Quaestio Iuris</i>, Rio de Janeiro, v. 2, n. 1,
+  p. 1-48, 2006 — Introdução e Parte I, p. 1 a 10.<br>
+  Roteiro construído sobre BASTOS, Mário. <i>Orientações Gerais de Pesquisa em Direito</i>. Salvador, 2019, e
+  sobre o <i>Roteiro de Anteprojeto de Pesquisa</i> do mesmo autor.<br>
+  * Ferramenta elaborada com apoio de Inteligência Artificial Generativa — Claude (Anthropic), modelo Opus 5,
+  e ChatGPT (OpenAI), modelo 5.5 — para estruturação da interface e redação das opções. Conteúdo conferido e
+  responsabilidade integral do professor. Diretrizes: Portaria CNPq nº 2.664/2026.
+</p>
+
+<script>
+/* =====================================================================
+   BANCO DE CONTEÚDO
+   Para reaproveitar este roteiro em outra disciplina, basta trocar TEMA
+   e o vetor OBJETOS. A mecânica das etapas não precisa ser alterada.
+
+   Cada objeto tem: rotulo, termos (os 2-3 conceitos), e problemas.
+   Cada problema tem:
+     q   = a pergunta, como o aluno a lê
+     og  = o complemento do OBJETIVO GERAL (vem depois do verbo)
+     pzs = problematizações; cada uma com q (pergunta) e oe (complemento
+           do objetivo específico, que vem depois do verbo)
+     hips = hipóteses sugeridas para aquele problema
+   ===================================================================== */
+
+const TEMA = "Neoconstitucionalismo e constitucionalização do Direito no Brasil";
+
+const OBJETOS = [
+{
+  rotulo: "Força normativa da Constituição e efetividade dos direitos",
+  termos: "força normativa da Constituição · efetividade · direitos",
+  problemas: [
+    { q: "Em que medida o reconhecimento da força normativa da Constituição alterou a posição do texto constitucional diante do legislador ordinário no Brasil pós-1988?",
+      og: "em que medida o reconhecimento da força normativa da Constituição alterou a posição do texto constitucional diante do legislador ordinário no Brasil pós-1988",
+      pzs: [
+        { q: "O que Barroso identifica como marco histórico do novo direito constitucional?", oe: "o marco histórico que Barroso atribui ao novo direito constitucional" },
+        { q: "Como se descreve a passagem da Constituição de documento político a norma jurídica?", oe: "como se descreve a passagem da Constituição de documento político a norma jurídica" },
+        { q: "Que consequências práticas essa passagem produz para o controle de constitucionalidade?", oe: "as consequências práticas dessa passagem para o controle de constitucionalidade" },
+        { q: "Que papel a redemocratização brasileira cumpre nesse processo?", oe: "o papel da redemocratização brasileira nesse processo" }
+      ],
+      hips: [
+        "A força normativa da Constituição deslocou o legislador ordinário da posição de intérprete último da ordem jurídica, submetendo sua produção a um parâmetro que ele não controla.",
+        "O reconhecimento da força normativa mudou o discurso jurídico mais do que a prática legislativa, que segue operando com relativa indiferença ao texto constitucional."
+      ] },
+    { q: "A afirmação da força normativa da Constituição é suficiente para explicar a baixa efetividade dos direitos sociais no Brasil?",
+      og: "se a afirmação da força normativa da Constituição é suficiente para explicar a baixa efetividade dos direitos sociais no Brasil",
+      pzs: [
+        { q: "O que o texto entende por efetividade de uma norma constitucional?", oe: "o que se entende por efetividade de uma norma constitucional" },
+        { q: "Que condições institucionais uma norma precisa encontrar para produzir efeitos?", oe: "as condições institucionais de que uma norma depende para produzir efeitos" },
+        { q: "Em que medida a escassez de recursos públicos condiciona a efetividade dos direitos sociais?", oe: "em que medida a escassez de recursos públicos condiciona a efetividade dos direitos sociais" },
+        { q: "Que fatores extrajurídicos explicam a distância entre texto e realidade?", oe: "os fatores extrajurídicos que explicam a distância entre texto e realidade" }
+      ],
+      hips: [
+        "A força normativa é condição necessária e insuficiente da efetividade: sem instituições, recursos e disputa social, a norma permanece promessa.",
+        "A baixa efetividade dos direitos sociais decorre menos de fragilidade normativa do que de escolhas orçamentárias e políticas que a Constituição não consegue vincular."
+      ] },
+    { q: "Que relação existe entre a força normativa da Constituição, em Barroso, e os fatores reais de poder, em Lassalle?",
+      og: "a relação entre a força normativa da Constituição, em Barroso, e os fatores reais de poder, em Lassalle",
+      pzs: [
+        { q: "O que Lassalle chama de fatores reais de poder?", oe: "o que Lassalle chama de fatores reais de poder" },
+        { q: "Em que sentido a tese da força normativa responde ao diagnóstico de Lassalle?", oe: "em que sentido a tese da força normativa responde ao diagnóstico de Lassalle" },
+        { q: "As duas posições se excluem ou se completam?", oe: "se as duas posições se excluem ou se completam" },
+        { q: "Que exemplo brasileiro recente ilustra a tensão entre elas?", oe: "um exemplo brasileiro recente que ilustre a tensão entre as duas posições" }
+      ],
+      hips: [
+        "As duas teses não se excluem: Lassalle descreve a condição social de possibilidade daquilo que Barroso descreve como conquista jurídica.",
+        "A tese da força normativa subestima o peso dos fatores reais de poder e, por isso, tende a atribuir ao Direito uma autonomia que ele não tem."
+      ] },
+    { q: "O reconhecimento da normatividade dos princípios amplia ou reduz a segurança jurídica?",
+      og: "se o reconhecimento da normatividade dos princípios amplia ou reduz a segurança jurídica",
+      pzs: [
+        { q: "Que distinção o texto estabelece entre regras e princípios?", oe: "a distinção entre regras e princípios estabelecida no texto" },
+        { q: "O que se entende por segurança jurídica nesse debate?", oe: "o que se entende por segurança jurídica nesse debate" },
+        { q: "Que riscos a aplicação direta de princípios cria para a previsibilidade das decisões?", oe: "os riscos que a aplicação direta de princípios cria para a previsibilidade das decisões" },
+        { q: "Que mecanismos limitam a discricionariedade do intérprete?", oe: "os mecanismos que limitam a discricionariedade do intérprete" }
+      ],
+      hips: [
+        "A normatividade dos princípios amplia a proteção substantiva de direitos ao custo de reduzir a previsibilidade, e o dever de fundamentação é a contrapartida dessa troca.",
+        "Bem operada, a distinção entre regras e princípios não reduz a segurança jurídica: apenas desloca o lugar onde ela é produzida, do texto para a fundamentação."
+      ] }
+  ]
+},
+{
+  rotulo: "Expansão da jurisdição constitucional e separação de poderes",
+  termos: "jurisdição constitucional · judicialização · separação de poderes",
+  problemas: [
+    { q: "A expansão da jurisdição constitucional descrita por Barroso fortalece ou tensiona a separação de poderes?",
+      og: "se a expansão da jurisdição constitucional fortalece ou tensiona a separação de poderes",
+      pzs: [
+        { q: "Como o texto descreve a expansão da jurisdição constitucional no pós-guerra?", oe: "como se descreve a expansão da jurisdição constitucional no pós-guerra" },
+        { q: "Que desenho institucional a Constituição de 1988 adotou para o controle de constitucionalidade?", oe: "o desenho institucional adotado pela Constituição de 1988 para o controle de constitucionalidade" },
+        { q: "Em que ponto a atuação do Judiciário passa a substituir a decisão legislativa?", oe: "em que ponto a atuação do Judiciário passa a substituir a decisão legislativa" },
+        { q: "Que instrumentos de contenção recíproca entre os poderes permanecem em funcionamento?", oe: "os instrumentos de contenção recíproca entre os poderes que permanecem em funcionamento" }
+      ],
+      hips: [
+        "A expansão da jurisdição constitucional é consequência do próprio desenho de 1988 e tensiona a separação de poderes sem rompê-la, desde que a fundamentação das decisões permaneça controlável.",
+        "A jurisdição constitucional ampliada desloca para o Judiciário decisões que a Constituição reservou à deliberação política, e nessa medida enfraquece a separação de poderes."
+      ] },
+    { q: "Em que medida a judicialização de questões políticas decorre da própria Constituição de 1988?",
+      og: "em que medida a judicialização de questões políticas decorre da própria Constituição de 1988",
+      pzs: [
+        { q: "Que características do texto de 1988 favorecem a judicialização?", oe: "as características do texto de 1988 que favorecem a judicialização" },
+        { q: "Que papel a analiticidade da Constituição cumpre nesse fenômeno?", oe: "o papel da analiticidade da Constituição nesse fenômeno" },
+        { q: "Em que medida a inércia dos demais poderes contribui para o deslocamento?", oe: "em que medida a inércia dos demais poderes contribui para esse deslocamento" },
+        { q: "Que exemplos recentes ilustram a judicialização de temas políticos?", oe: "exemplos recentes de judicialização de temas políticos" }
+      ],
+      hips: [
+        "A judicialização é efeito estrutural de uma Constituição analítica e de amplo acesso à jurisdição, e não desvio de conduta de um tribunal em particular.",
+        "A judicialização resulta mais da omissão dos poderes representativos do que do desenho constitucional, e retrocederia se esses poderes voltassem a decidir."
+      ] },
+    { q: "Que critérios permitem distinguir judicialização legítima de ativismo judicial?",
+      og: "os critérios que permitem distinguir judicialização legítima de ativismo judicial",
+      pzs: [
+        { q: "Como se define judicialização, e como se define ativismo?", oe: "as definições de judicialização e de ativismo judicial" },
+        { q: "Que papel a fundamentação da decisão cumpre nessa distinção?", oe: "o papel da fundamentação da decisão nessa distinção" },
+        { q: "Em que medida a distinção é jurídica, e em que medida é política?", oe: "em que medida essa distinção é jurídica e em que medida é política" },
+        { q: "Que consequências a confusão entre as duas noções produz no debate público?", oe: "as consequências da confusão entre as duas noções no debate público" }
+      ],
+      hips: [
+        "A distinção é operável e reside na fundamentação: há judicialização legítima quando a decisão se deixa controlar por razões constitucionais expostas e criticáveis.",
+        "A distinção é retórica: serve para qualificar como ativismo a decisão de que se discorda e como judicialização a decisão de que se gosta."
+      ] },
+    { q: "A expansão do controle de constitucionalidade amplia o acesso a direitos ou desloca a decisão para fora do espaço democrático?",
+      og: "se a expansão do controle de constitucionalidade amplia o acesso a direitos ou desloca a decisão para fora do espaço democrático",
+      pzs: [
+        { q: "Quem tem acesso efetivo à jurisdição constitucional no Brasil?", oe: "quem tem acesso efetivo à jurisdição constitucional no Brasil" },
+        { q: "Que direitos foram concretizados por via judicial nas últimas décadas?", oe: "os direitos concretizados por via judicial nas últimas décadas" },
+        { q: "Que déficit de legitimidade democrática se atribui à decisão judicial?", oe: "o déficit de legitimidade democrática atribuído à decisão judicial" },
+        { q: "Como se pode compatibilizar controle judicial e soberania popular?", oe: "como se pode compatibilizar controle judicial e soberania popular" }
+      ],
+      hips: [
+        "A jurisdição constitucional amplia o acesso a direitos de grupos sub-representados justamente porque não depende de maioria, e é aí que reside seu valor e seu risco.",
+        "O deslocamento da decisão para o Judiciário desloca-a também para quem tem advogado, e por isso amplia direitos de modo socialmente seletivo."
+      ] }
+  ]
+},
+{
+  rotulo: "Pós-positivismo, princípios e interpretação constitucional",
+  termos: "pós-positivismo · princípios · interpretação constitucional",
+  problemas: [
+    { q: "Que diferença o pós-positivismo estabelece entre regras e princípios, e por que essa diferença importa juridicamente?",
+      og: "a diferença que o pós-positivismo estabelece entre regras e princípios e a importância jurídica dessa diferença",
+      pzs: [
+        { q: "O que o texto entende por pós-positivismo?", oe: "o que se entende por pós-positivismo" },
+        { q: "Como se distinguem regras e princípios quanto ao modo de aplicação?", oe: "a distinção entre regras e princípios quanto ao modo de aplicação" },
+        { q: "Que relação essa distinção guarda com a reaproximação entre Direito e ética?", oe: "a relação dessa distinção com a reaproximação entre Direito e ética" },
+        { q: "Que consequências práticas a distinção produz na decisão judicial?", oe: "as consequências práticas dessa distinção na decisão judicial" }
+      ],
+      hips: [
+        "A distinção importa porque muda o modo de aplicação: regras se aplicam por subsunção e princípios por ponderação, e disso decorre um dever reforçado de fundamentação.",
+        "A distinção é menos nítida na prática do que na teoria, e sua principal função tem sido ampliar o espaço argumentativo do intérprete."
+      ] },
+    { q: "A normatividade dos princípios amplia o poder do intérprete a ponto de comprometer a previsibilidade do Direito?",
+      og: "se a normatividade dos princípios amplia o poder do intérprete a ponto de comprometer a previsibilidade do Direito",
+      pzs: [
+        { q: "Que espaço de escolha a aplicação de princípios abre para o juiz?", oe: "o espaço de escolha que a aplicação de princípios abre para o juiz" },
+        { q: "Que limites a fundamentação impõe a esse espaço?", oe: "os limites que a fundamentação impõe a esse espaço" },
+        { q: "Em que medida a previsibilidade é valor absoluto no Direito?", oe: "em que medida a previsibilidade é um valor absoluto no Direito" },
+        { q: "Que críticas foram dirigidas ao uso expansivo de princípios no Brasil?", oe: "as críticas dirigidas ao uso expansivo de princípios no Brasil" }
+      ],
+      hips: [
+        "Sim: sem critérios estáveis de ponderação, a invocação de princípios funciona como cláusula de abertura que permite fundamentar decisões opostas com igual aparência de correção.",
+        "Não: o dever de fundamentação e o controle recursal reconstroem a previsibilidade em outro nível, o das razões, e não o do texto."
+      ] },
+    { q: "Em que medida a ponderação é método, e em que medida é apenas retórica de justificação?",
+      og: "em que medida a ponderação é método e em que medida é retórica de justificação",
+      pzs: [
+        { q: "Que etapas o texto atribui ao raciocínio ponderativo?", oe: "as etapas atribuídas ao raciocínio ponderativo" },
+        { q: "Que papel a razoabilidade cumpre nesse raciocínio?", oe: "o papel da razoabilidade nesse raciocínio" },
+        { q: "É possível controlar racionalmente o resultado de uma ponderação?", oe: "se é possível controlar racionalmente o resultado de uma ponderação" },
+        { q: "Que alternativas à ponderação são propostas na doutrina?", oe: "as alternativas à ponderação propostas na doutrina" }
+      ],
+      hips: [
+        "A ponderação é método quando suas etapas são explicitadas e cada peso atribuído é justificado; sem isso, degenera em ornamento retórico de uma decisão já tomada.",
+        "A ponderação nunca chega a ser método em sentido forte, porque não há critério externo que permita comparar os pesos atribuídos."
+      ] },
+    { q: "Como a nova interpretação constitucional redefine o papel do juiz na democracia?",
+      og: "como a nova interpretação constitucional redefine o papel do juiz na democracia",
+      pzs: [
+        { q: "Que papel o juiz cumpria no modelo positivista clássico?", oe: "o papel do juiz no modelo positivista clássico" },
+        { q: "Que atividade criativa a nova interpretação reconhece ao julgador?", oe: "a atividade criativa reconhecida ao julgador pela nova interpretação" },
+        { q: "Que exigências de legitimação acompanham essa atividade?", oe: "as exigências de legitimação que acompanham essa atividade" },
+        { q: "Que tensão isso cria com a lógica da separação de poderes?", oe: "a tensão que isso cria com a lógica da separação de poderes" }
+      ],
+      hips: [
+        "O juiz deixa de ser boca da lei e passa a coparticipar da criação do Direito, o que exige dele uma legitimação argumentativa que a mera investidura não fornece.",
+        "A redefinição é menos profunda do que se anuncia: o juiz sempre criou Direito, e a novidade está apenas no reconhecimento explícito disso."
+      ] }
+  ]
+},
+{
+  rotulo: "Constituição, desigualdade e limites do otimismo constitucional",
+  termos: "constitucionalismo · desigualdade · crítica",
+  problemas: [
+    { q: "O triunfo tardio do direito constitucional, tal como descrito por Barroso, traduziu-se em redução de desigualdades no Brasil?",
+      og: "se o triunfo tardio do direito constitucional se traduziu em redução de desigualdades no Brasil",
+      pzs: [
+        { q: "Que promessas de transformação social a Constituição de 1988 formula?", oe: "as promessas de transformação social formuladas pela Constituição de 1988" },
+        { q: "Que indicadores permitiriam avaliar o cumprimento dessas promessas?", oe: "os indicadores que permitiriam avaliar o cumprimento dessas promessas" },
+        { q: "Em que medida o avanço jurídico se descolou do avanço material?", oe: "em que medida o avanço jurídico se descolou do avanço material" },
+        { q: "Que papel o tom celebratório do texto cumpre em seu argumento?", oe: "o papel do tom celebratório do texto em seu argumento" }
+      ],
+      hips: [
+        "O triunfo descrito é sobretudo jurídico e institucional, e conviveu com a persistência de desigualdades que o próprio texto constitucional se propôs a erradicar.",
+        "A redução da desigualdade observada em certos períodos decorreu de política pública e não de constitucionalização, o que revela os limites do argumento jurídico."
+      ] },
+    { q: "Em que medida o neoconstitucionalismo pressupõe instituições que a sociedade brasileira não chegou a consolidar?",
+      og: "em que medida o neoconstitucionalismo pressupõe instituições que a sociedade brasileira não chegou a consolidar",
+      pzs: [
+        { q: "Que pressupostos institucionais o modelo europeu do pós-guerra assume?", oe: "os pressupostos institucionais assumidos pelo modelo europeu do pós-guerra" },
+        { q: "Que diferenças históricas separam esse modelo da formação brasileira?", oe: "as diferenças históricas entre esse modelo e a formação brasileira" },
+        { q: "Que efeitos essa transposição produz sobre a eficácia das normas?", oe: "os efeitos dessa transposição sobre a eficácia das normas" },
+        { q: "É possível um constitucionalismo adequado às condições periféricas?", oe: "a possibilidade de um constitucionalismo adequado às condições periféricas" }
+      ],
+      hips: [
+        "O neoconstitucionalismo brasileiro importou um vocabulário formado sob condições institucionais que aqui não existiam, e daí a distância recorrente entre discurso e prática.",
+        "A ausência de consolidação institucional não invalida o modelo: torna-o programa a realizar, e não diagnóstico já cumprido."
+      ] },
+    { q: "Que críticas ao neoconstitucionalismo põem em dúvida seu diagnóstico otimista?",
+      og: "as críticas ao neoconstitucionalismo que põem em dúvida seu diagnóstico otimista",
+      pzs: [
+        { q: "Que objeções se dirigem ao uso expansivo de princípios?", oe: "as objeções dirigidas ao uso expansivo de princípios" },
+        { q: "Que objeções se dirigem ao protagonismo judicial?", oe: "as objeções dirigidas ao protagonismo judicial" },
+        { q: "Que objeções se dirigem à ideia de reaproximação entre Direito e moral?", oe: "as objeções dirigidas à reaproximação entre Direito e moral" },
+        { q: "Que resposta o próprio texto oferece, ou deixa de oferecer, a essas objeções?", oe: "a resposta que o próprio texto oferece, ou deixa de oferecer, a essas objeções" }
+      ],
+      hips: [
+        "As críticas mais consistentes não negam as conquistas do período, mas mostram que o texto converte um programa contingente em narrativa de progresso necessário.",
+        "As objeções atingem a aplicação brasileira do modelo e não seu núcleo teórico, que permanece defensável."
+      ] },
+    { q: "A centralidade da dignidade da pessoa humana produz efeitos jurídicos materiais ou funciona sobretudo como fórmula retórica?",
+      og: "se a centralidade da dignidade da pessoa humana produz efeitos jurídicos materiais ou funciona sobretudo como fórmula retórica",
+      pzs: [
+        { q: "Que função o texto atribui à dignidade no arranjo pós-positivista?", oe: "a função atribuída à dignidade no arranjo pós-positivista" },
+        { q: "Que conteúdo mínimo se pode extrair do princípio?", oe: "o conteúdo mínimo que se pode extrair do princípio" },
+        { q: "Em que decisões a dignidade foi determinante, e não apenas ornamental?", oe: "as decisões em que a dignidade foi determinante, e não apenas ornamental" },
+        { q: "Que riscos a invocação genérica do princípio produz?", oe: "os riscos produzidos pela invocação genérica do princípio" }
+      ],
+      hips: [
+        "A dignidade produz efeitos materiais quando o julgador especifica qual de seus conteúdos está em jogo; invocada em bloco, opera como reforço retórico de conclusões obtidas por outra via.",
+        "A dignidade cumpre função estruturante mesmo quando não decide sozinha, porque organiza a interpretação de todos os demais direitos."
+      ] }
+  ]
+}
+];
+
+const VERBOS = [
+  { v:"Analisar",    e:"quando se quer verificar uma parte determinada do fenômeno" },
+  { v:"Compreender", e:"quando ainda não se tem ideia clara do que o fenômeno é ou do que abrange" },
+  { v:"Entender",    e:"quando o fenômeno se mostra muito complexo" },
+  { v:"Estudar",     e:"quando se quer aprofundar o tema como um todo" },
+  { v:"Verificar",   e:"quando se suspeita que aquilo que se sabe pode não ser verdadeiro" },
+  { v:"Estimar",     e:"quando só se tem uma amplitude ou uma ideia vaga de algo" },
+  { v:"Explorar",    e:"quando não há estudo feito naquela direção" },
+  { v:"Identificar", e:"quando se quer localizar e nomear elementos ainda dispersos" }
+];
+
+/* ===================== ESTADO E MECÂNICA ===================== */
+const E = { etapa:0, equipe:"", obj:null, prob:null, probLivre:"", pzs:[], pzExtra:"",
+            hip:null, hipLivre:"", verboGeral:"", verbosEsp:[] };
+const NOMES = ["Início","Objeto","Problema","Perguntas","Hipótese","Objetivos","Plano"];
+const $ = id => document.getElementById(id);
+
+function trilha(){
+  $("trilha").innerHTML = NOMES.map((n,i)=>
+    `<span class="${i===E.etapa?'atual':(i<E.etapa?'feita':'')}">${n}</span>`).join("");
+}
+function mostrar(){
+  document.querySelectorAll(".etapa").forEach(s=>
+    s.classList.toggle("ativa", +s.dataset.etapa === E.etapa));
+  trilha();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function erro(n,on){ const el=$("erro"+n); if(el) el.classList.toggle("on",on); }
+
+function objetoAtual(){ return OBJETOS[E.obj]; }
+function problemaAtual(){ return E.prob===null?null:objetoAtual().problemas[E.prob]; }
+function textoProblema(){
+  return E.prob==="livre" ? E.probLivre.trim() : (problemaAtual()?problemaAtual().q:"");
+}
+
+/* ---- renderização por etapa ---- */
+function pintarObjetos(){
+  $("objetos").innerHTML = OBJETOS.map((o,i)=>`
+    <label class="opcao ${E.obj===i?'sel':''}">
+      <input type="radio" name="obj" value="${i}" ${E.obj===i?'checked':''}>
+      <span class="rot">${o.rotulo}</span>
+      <span class="exp">Termos que compõem o objeto: ${o.termos}</span>
+    </label>`).join("");
+  $("objetos").querySelectorAll("input").forEach(r=>r.onchange=()=>{
+    if(E.obj !== +r.value){ E.prob=null; E.pzs=[]; E.hip=null; }
+    E.obj=+r.value; pintarObjetos(); erro(1,false);
+  });
+}
+function pintarProblemas(){
+  const o = objetoAtual();
+  $("problemas").innerHTML = o.problemas.map((p,i)=>`
+    <label class="opcao ${E.prob===i?'sel':''}">
+      <input type="radio" name="prob" value="${i}" ${E.prob===i?'checked':''}>
+      <span class="rot">${p.q}</span>
+    </label>`).join("") + `
+    <label class="opcao ${E.prob==='livre'?'sel':''}">
+      <input type="radio" name="prob" value="livre" ${E.prob==='livre'?'checked':''}>
+      <span class="rot">Outro — vamos formular a nossa pergunta</span>
+    </label>
+    <textarea id="probLivre" placeholder="Escrevam a pergunta. Uma só, terminando em ponto de interrogação.">${E.probLivre}</textarea>
+    <div class="aviso">Pergunta boa é curta, específica e responde-se com investigação, não com opinião.
+      Se a resposta couber em “sim” ou “não” sem nenhuma leitura, ainda não é problema de pesquisa.</div>`;
+  $("problemas").querySelectorAll("input").forEach(r=>r.onchange=()=>{
+    const nv = r.value==="livre" ? "livre" : +r.value;
+    if(E.prob !== nv){ E.pzs=[]; E.hip=null; }
+    E.prob = nv; pintarProblemas(); erro(2,false);
+  });
+  const t=$("probLivre");
+  if(t) t.oninput=()=>{ E.probLivre=t.value; };
+}
+function pintarPzs(){
+  if(E.prob==="livre"){
+    $("problematizacoes").innerHTML = `<div class="aviso">Como vocês formularam a própria pergunta,
+      as problematizações também são de vocês. Escrevam de duas a três abaixo, uma por linha.</div>
+      <textarea id="pzLivres" style="min-height:120px" placeholder="1) ...&#10;2) ...&#10;3) ...">${E.pzs.join("\n")}</textarea>`;
+    const t=$("pzLivres");
+    t.oninput=()=>{ E.pzs = t.value.split("\n").map(x=>x.trim()).filter(Boolean); erro(3,false); };
+    return;
+  }
+  const p = problemaAtual();
+  $("problematizacoes").innerHTML = p.pzs.map((z,i)=>`
+    <label class="opcao ${E.pzs.includes(i)?'sel':''}">
+      <input type="checkbox" value="${i}" ${E.pzs.includes(i)?'checked':''}>
+      <span class="rot">${z.q}</span>
+    </label>`).join("");
+  $("problematizacoes").querySelectorAll("input").forEach(c=>c.onchange=()=>{
+    const i=+c.value;
+    E.pzs = c.checked ? [...E.pzs,i].sort((a,b)=>a-b) : E.pzs.filter(x=>x!==i);
+    pintarPzs(); erro(3,false);
+  });
+}
+function pintarHips(){
+  const base = (E.prob==="livre") ? [] : problemaAtual().hips;
+  const nota = (E.prob==="livre") ? `<div class="aviso">Como a pergunta é de vocês, não há hipótese
+    sugerida. Escrevam a de vocês no campo abaixo: uma resposta possível, curta, que a leitura possa
+    confirmar ou desmentir.</div>` : "";
+  $("hipoteses").innerHTML = nota + base.map((h,i)=>`
+    <label class="opcao ${E.hip===i?'sel':''}">
+      <input type="radio" name="hip" value="${i}" ${E.hip===i?'checked':''}>
+      <span class="rot">${h}</span>
+    </label>`).join("") + `
+    <label class="opcao ${E.hip==='livre'?'sel':''}">
+      <input type="radio" name="hip" value="livre" ${E.hip==='livre'?'checked':''}>
+      <span class="rot">Outra — a nossa hipótese é esta</span>
+    </label>
+    <textarea id="hipLivre" placeholder="Uma resposta possível ao problema, ainda não comprovada.">${E.hipLivre}</textarea>`;
+  $("hipoteses").querySelectorAll("input").forEach(r=>r.onchange=()=>{
+    E.hip = r.value==="livre" ? "livre" : +r.value; pintarHips(); erro(4,false);
+  });
+  const t=$("hipLivre"); if(t) t.oninput=()=>{ E.hipLivre=t.value; };
+}
+function listaPzs(){
+  if(E.prob==="livre") return E.pzs.slice();
+  const p=problemaAtual();
+  const l = E.pzs.map(i=>p.pzs[i].q);
+  if(E.pzExtra.trim()) l.push(E.pzExtra.trim());
+  return l;
+}
+function listaOes(){
+  if(E.prob==="livre") return E.pzs.map(x=>x.replace(/\?$/,"").replace(/^\d+[\)\.\-\s]*/,"").trim());
+  const p=problemaAtual();
+  const l = E.pzs.map(i=>p.pzs[i].oe);
+  if(E.pzExtra.trim()) l.push(E.pzExtra.trim().replace(/\?$/,""));
+  return l;
+}
+function seletorVerbo(id, valor){
+  return `<select id="${id}" style="font:inherit;font-size:15px;padding:9px 11px;border:1px solid var(--line);border-radius:3px;background:#fff">
+    <option value="">— escolham o verbo —</option>
+    ${VERBOS.map(v=>`<option value="${v.v}" ${valor===v.v?'selected':''}>${v.v} — ${v.e}</option>`).join("")}
+  </select>`;
+}
+function pintarObjetivos(){
+  const og = (E.prob==="livre")
+    ? E.probLivre.trim().replace(/\?$/,"").replace(/^[A-ZÀ-Ú]/, c=>c.toLowerCase())
+    : (problemaAtual()?problemaAtual().og:"");
+  const oes = listaOes();
+  E.verbosEsp = oes.map((_,i)=>E.verbosEsp[i]||"");
+  $("objetivos").innerHTML = `
+    <label class="campo">Objetivo geral — responde ao problema</label>
+    ${seletorVerbo("vg", E.verboGeral)}
+    <p class="ajuda" style="margin:9px 0 0"><b>Ficará assim:</b>
+      <span id="prevG">${E.verboGeral? E.verboGeral+" "+og+"." : "…"}</span></p>
+    <label class="campo" style="margin-top:22px">Objetivos específicos — um para cada pergunta menor</label>
+    ${oes.map((t,i)=>`<div style="margin-bottom:14px">
+        ${seletorVerbo("ve"+i, E.verbosEsp[i])}
+        <p class="ajuda" style="margin:7px 0 0"><span id="prevE${i}">${E.verbosEsp[i]? E.verbosEsp[i]+" "+t+"." : "…"}</span></p>
+      </div>`).join("")}`;
+  const g=$("vg");
+  g.onchange=()=>{ E.verboGeral=g.value; $("prevG").textContent = g.value? g.value+" "+og+"." : "…"; erro(5,false); };
+  oes.forEach((t,i)=>{ const s=$("ve"+i);
+    s.onchange=()=>{ E.verbosEsp[i]=s.value; $("prevE"+i).textContent = s.value? s.value+" "+t+"." : "…"; erro(5,false); };
+  });
+}
+
+/* ---- validação e navegação ---- */
+function valida(){
+  switch(E.etapa){
+    case 0: E.equipe=$("equipe").value.trim(); if(!E.equipe){erro(0,true);return false;} return true;
+    case 1: if(E.obj===null){erro(1,true);return false;} return true;
+    case 2: if(E.prob===null||(E.prob==="livre"&&!E.probLivre.trim())){erro(2,true);return false;} return true;
+    case 3: E.pzExtra = $("pzExtra").value;
+            if(listaPzs().length<2){erro(3,true);return false;} return true;
+    case 4: if(E.hip===null||(E.hip==="livre"&&!E.hipLivre.trim())){erro(4,true);return false;} return true;
+    case 5: if(!E.verboGeral||E.verbosEsp.slice(0,listaOes().length).some(v=>!v)){erro(5,true);return false;} return true;
+  }
+  return true;
+}
+function avancar(){
+  if(!valida()) return;
+  E.etapa++;
+  if(E.etapa===1) pintarObjetos();
+  if(E.etapa===2) pintarProblemas();
+  if(E.etapa===3) pintarPzs();
+  if(E.etapa===4) pintarHips();
+  if(E.etapa===5) pintarObjetivos();
+  if(E.etapa===6) gerar();
+  mostrar();
+}
+function voltar(){
+  if(E.etapa===0) return;
+  E.etapa--;
+  if(E.etapa===1) pintarObjetos();
+  if(E.etapa===2) pintarProblemas();
+  if(E.etapa===3) pintarPzs();
+  if(E.etapa===4) pintarHips();
+  if(E.etapa===5) pintarObjetivos();
+  mostrar();
+}
+function recomecar(){ if(confirm("Isso apaga tudo o que vocês preencheram. Continuar?")) location.reload(); }
+
+/* ---- geração do texto final ---- */
+function gerar(){
+  const o = objetoAtual();
+  const og = (E.prob==="livre")
+    ? E.probLivre.trim().replace(/\?$/,"").replace(/^[A-ZÀ-Ú]/, c=>c.toLowerCase())
+    : problemaAtual().og;
+  const pzs = listaPzs(), oes = listaOes();
+  const hip = E.hip==="livre" ? E.hipLivre.trim() : problemaAtual().hips[E.hip];
+  const iag = $("iag").value.trim();
+  const d = new Date();
+  const data = String(d.getDate()).padStart(2,"0")+"/"+String(d.getMonth()+1).padStart(2,"0")+"/"+d.getFullYear();
+
+  const t = [
+"MINI PLANO DE PESQUISA",
+"Teoria da Constituição · I Unidade · FBBR 2026.2",
+"Equipe: " + E.equipe,
+"",
+"1. TEMA",
+TEMA,
+"",
+"2. OBJETO",
+o.rotulo + " (" + o.termos + ")",
+"",
+"3. PROBLEMA",
+textoProblema(),
+"",
+"4. PROBLEMATIZAÇÕES",
+...pzs.map((p,i)=>(i+1)+") "+p),
+"",
+"5. HIPÓTESE",
+hip,
+"",
+"6. OBJETIVO GERAL",
+E.verboGeral+" "+og+".",
+"",
+"7. OBJETIVOS ESPECÍFICOS",
+...oes.map((t,i)=>(i+1)+") "+E.verbosEsp[i]+" "+t+"."),
+"",
+"8. FONTE PRINCIPAL",
+"BARROSO, Luís Roberto. Neoconstitucionalismo e constitucionalização do Direito (O triunfo tardio do direito constitucional no Brasil). Quaestio Iuris, Rio de Janeiro, v. 2, n. 1, p. 1-48, 2006. Introdução e Parte I, p. 1-10.",
+"",
+"9. FONTES DE APOIO",
+"A definir na etapa 2 da qualitativa: dois artigos escolhidos pela equipe, com referência completa e link.",
+"",
+"10. USO DE INTELIGÊNCIA ARTIFICIAL",
+iag ? iag : "Não houve uso de Inteligência Artificial Generativa na elaboração deste plano.",
+"",
+"— Gerado em "+data+" pelo Roteiro Guiado de Pesquisa, Teoria da Constituição, FBBR 2026.2."
+  ].join("\n");
+  $("saida").textContent = t;
+}
+function copiar(){
+  const t=$("saida").textContent, b=$("btCopiar");
+  const ok=()=>{ b.textContent="Copiado"; setTimeout(()=>b.textContent="Copiar o texto",1800); };
+  if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(t).then(ok, manual); }
+  else manual();
+  function manual(){
+    const a=document.createElement("textarea"); a.value=t; a.style.position="fixed"; a.style.opacity="0";
+    document.body.appendChild(a); a.select();
+    try{ document.execCommand("copy"); ok(); }catch(e){ b.textContent="Selecione e copie"; }
+    document.body.removeChild(a);
+  }
+}
+trilha();
+</script>
+</body>
+</html>
