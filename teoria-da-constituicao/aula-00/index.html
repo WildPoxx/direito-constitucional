@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teoria da Constituição - Aula 00 - Apresentação da Disciplina (versão do aluno)</title>
+  <style>
+:root { --paper:#f7f4ee; --paper-warm:#fffaf3; --ink:#1f2933; --muted:#667085; --accent:#7c2d12; --accent-soft:#e7d0c2; --line:#d8c8b8; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:"Aptos","Inter","Segoe UI",Arial,sans-serif; background:#27221f; color:var(--ink); }
+.deck { display:flex; flex-direction:column; gap:28px; align-items:center; padding:28px; }
+.slide { position:relative; width:1280px; height:720px; padding:56px 72px; overflow:hidden; background:var(--paper); color:var(--ink); box-shadow:0 20px 70px rgba(0,0,0,.35); }
+.slide::after { content:attr(data-slide); position:absolute; right:72px; bottom:32px; font-size:18px; color:var(--muted); }
+.title { display:flex; flex-direction:column; justify-content:center; }
+.title::before { content:""; position:absolute; inset:0 0 auto auto; width:360px; height:720px; background:linear-gradient(180deg,rgba(124,45,18,.12),rgba(124,45,18,0)); }
+.kicker { margin:0 0 18px; font-size:22px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--accent); }
+h1 { max-width:940px; margin:0; font-size:58px; line-height:1.05; letter-spacing:0; }
+h2 { max-width:1000px; margin:0 0 28px; font-size:42px; line-height:1.1; letter-spacing:0; }
+.lead { max-width:920px; margin:28px 0 0; font-size:30px; line-height:1.25; }
+.rule { width:120px; height:6px; margin:30px 0 0; background:var(--accent); }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:42px; }
+.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:42px; }
+.box { min-height:178px; padding:20px 24px; border-left:6px solid var(--accent); background:var(--paper-warm); }
+.box strong { display:block; margin-bottom:14px; font-size:28px; line-height:1.1; color:var(--accent); }
+.box.compact { min-height:112px; padding:16px 20px; }
+.box.compact strong { margin-bottom:8px; font-size:24px; }
+.box.compact .small { font-size:19px; line-height:1.28; }
+.small { margin:0; font-size:22px; line-height:1.35; }
+.footer { position:absolute; bottom:32px; left:72px; margin:0; max-width:860px; font-size:18px; line-height:1.3; color:var(--muted); }
+.visual-layout { display:grid; grid-template-columns:1.05fr .95fr; gap:36px; align-items:stretch; margin-top:30px; }
+.stack { display:grid; gap:18px; }
+.image-slot { min-height:376px; padding:24px; border:2px dashed var(--accent-soft); background:linear-gradient(135deg,rgba(124,45,18,.08),rgba(255,250,243,.82)),var(--paper-warm); display:flex; flex-direction:column; justify-content:flex-end; }
+.image-slot-label { margin:0 0 12px; font-size:18px; font-weight:750; text-transform:uppercase; letter-spacing:.06em; color:var(--accent); }
+.image-prompt { margin:0; font-size:18px; line-height:1.3; color:#344054; }
+.activity-question { max-width:980px; margin:32px 0 0; font-size:38px; line-height:1.15; font-weight:750; }
+@media (max-width:1320px) { .deck { align-items:flex-start; } .slide { transform:scale(calc((100vw - 56px)/1280)); transform-origin:top left; margin-bottom:calc((720px * ((100vw - 56px)/1280)) - 720px); } }
+@media print { body { background:#fff; } .deck { display:block; padding:0; } .slide { page-break-after:always; box-shadow:none; } }
+
+/* ==========================================================
+   CAMADA DE REGÊNCIA DE TEMPO, PROJEÇÃO SEGURA E LAYOUT DENSO
+   Acrescentada em 11/08/2026 para o Deck da Aula 01.
+   NADA foi removido do bloco acima: os decks dos Módulos 1 a 8,
+   de julho de 2026, continuam abrindo exatamente como antes.
+   As regras de projeção segura (gabarito e notas ocultos) só
+   valem para decks que declaram <body class="projecao-segura">.
+   ========================================================== */
+
+:root {
+  --accent-2: #255957;
+  --accent-2-soft: #c9dfdc;
+}
+
+.slide { scroll-margin-top: 24px; }
+
+/* --- Caixas: variante secundária e variante mínima --- */
+.box.alt { border-left-color: var(--accent-2); }
+.box.alt strong { color: var(--accent-2); }
+.box.mini { min-height: 118px; padding: 14px 16px; }
+.box.mini strong { margin-bottom: 8px; font-size: 21px; }
+.box.mini .small { font-size: 19px; line-height: 1.28; }
+
+/* --- Grade de cinco colunas (incisos do art. 1º) --- */
+.grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-top: 34px; }
+
+/* --- Tabela de três colunas --- */
+.table { display: grid; grid-template-columns: .8fr 1fr 1.15fr; border: 2px solid var(--line); background: var(--paper-warm); margin-top: 34px; }
+.table div { min-height: 86px; padding: 16px 18px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 20px; line-height: 1.25; }
+.table div:nth-child(3n) { border-right: none; }
+.table .head { min-height: 54px; font-weight: 750; color: var(--accent); background: rgba(124, 45, 18, .08); }
+.table.duas { grid-template-columns: 1fr 1.35fr; }
+.table.duas div:nth-child(3n) { border-right: 1px solid var(--line); }
+.table.duas div:nth-child(2n) { border-right: none; }
+
+/* --- Citação em bloco --- */
+.quote { margin-top: 42px; padding: 30px 34px; border: 2px solid var(--line); background: rgba(255, 250, 243, .72); font-size: 32px; line-height: 1.25; }
+.quote.compacta { margin-top: 24px; padding: 22px 26px; font-size: 25px; line-height: 1.3; }
+
+/* --- Alternativas de questão objetiva --- */
+.choice { display: grid; gap: 12px; margin-top: 24px; }
+.choice div { padding: 12px 16px; background: var(--paper-warm); border-left: 5px solid var(--line); font-size: 21px; line-height: 1.22; }
+.choice .correct { border-left-color: var(--accent); font-weight: 750; }
+
+/* --- Etiquetas, avisos, cronograma e lista de fontes --- */
+.tag-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.tag { display: inline-flex; align-items: center; min-height: 42px; padding: 8px 14px; border: 1px solid var(--line); background: var(--paper-warm); color: var(--accent); font-size: 19px; font-weight: 750; }
+.notice { margin-top: 28px; padding: 18px 22px; border-left: 6px solid var(--accent-2); background: rgba(37, 89, 87, .08); font-size: 22px; line-height: 1.3; }
+.schedule { display: grid; grid-template-columns: 145px 1.05fr 1.25fr; border: 2px solid var(--line); background: var(--paper-warm); margin-top: 26px; }
+.schedule.four { grid-template-columns: 140px 1fr 1.2fr .8fr; }
+.schedule div { min-height: 52px; padding: 10px 12px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 18px; line-height: 1.22; }
+.schedule.thin div { min-height: 44px; padding: 8px 11px; font-size: 17px; }
+.schedule div:nth-child(3n) { border-right: none; }
+.schedule.four div:nth-child(3n) { border-right: 1px solid var(--line); }
+.schedule.four div:nth-child(4n) { border-right: none; }
+.schedule .head { min-height: 44px; font-weight: 750; color: var(--accent); background: rgba(124, 45, 18, .08); }
+.source-list { display: grid; gap: 14px; margin-top: 30px; }
+.source-list div { padding: 14px 18px; border-left: 5px solid var(--accent); background: var(--paper-warm); font-size: 21px; line-height: 1.25; }
+.source-list strong { color: var(--accent); }
+
+/* --- Texto miúdo de rodapé interno --- */
+.micro { margin: 10px 0 0; color: var(--muted); font-size: 17px; line-height: 1.25; }
+
+/* --- Faixa superior de bloco e horário-alvo --- */
+.block-band { position: absolute; top: 0; left: 0; right: 0; z-index: 3; display: flex; align-items: center; gap: 14px; height: 34px; padding: 0 72px; background: rgba(124, 45, 18, .10); border-bottom: 1px solid var(--line); font-size: 17px; font-weight: 750; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+.block-band .clock { margin-left: auto; font-variant-numeric: tabular-nums; color: var(--muted); }
+.block-band .opt { padding: 2px 10px; background: rgba(37, 89, 87, .14); border: 1px solid rgba(37, 89, 87, .35); color: var(--accent-2); letter-spacing: .03em; }
+
+.slide.banded { padding-top: 74px; }
+.slide.banded.title { padding-top: 56px; }
+.title::before { z-index: 0; }
+.slide.title.banded::before { top: 34px; height: 686px; }
+
+/* --- Lâmina opcional: corte ao vivo sem prejuízo do núcleo --- */
+.slide.optional { background: repeating-linear-gradient(135deg, rgba(37, 89, 87, .035) 0 18px, rgba(37, 89, 87, 0) 18px 36px), var(--paper); }
+.slide.optional .block-band { background: rgba(37, 89, 87, .10); color: var(--accent-2); }
+body.hide-optional .slide.optional { display: none; }
+
+/* --- Marcas do professor: tecla M limpa para projeção neutra --- */
+body.sem-marcas .block-band .opt { display: none; }
+body.sem-marcas .slide.optional { background: var(--paper); }
+body.sem-marcas .slide.optional .block-band { background: rgba(124, 45, 18, .10); color: var(--accent); }
+
+/* --- Ajuste fino para lâminas densas --- */
+.slide.tight h2 { font-size: 38px; margin-bottom: 14px; }
+.slide.tight .schedule { margin-top: 16px; }
+.slide.tight .grid-3, .slide.tight .grid-2 { margin-top: 26px; }
+.slide.tight .table { margin-top: 20px; }
+
+/* --- Painel do professor: relógio real contra horário-alvo --- */
+.hud { position: fixed; left: 18px; bottom: 18px; z-index: 50; display: flex; align-items: center; gap: 16px; padding: 10px 16px; border-radius: 4px; background: rgba(31, 41, 51, .92); color: #f7f4ee; font-family: "Aptos", "Inter", "Segoe UI", Arial, sans-serif; font-size: 15px; line-height: 1.2; box-shadow: 0 8px 30px rgba(0, 0, 0, .4); }
+.hud .hud-item { display: flex; flex-direction: column; gap: 2px; }
+.hud .hud-label { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #c9b5a6; }
+.hud .hud-value { font-size: 17px; font-weight: 750; font-variant-numeric: tabular-nums; }
+.hud .hud-value.late { color: #f4a58a; }
+.hud .hud-value.ahead { color: #8fd3c8; }
+.hud .hud-help { max-width: 300px; font-size: 11px; line-height: 1.35; color: #c9b5a6; }
+body.hud-off .hud { display: none; }
+
+/* --- Projeção segura: gabarito e notas escondidos até a tecla --- */
+body.projecao-segura .choice .correct { border-left-color: var(--line); font-weight: 400; }
+body.projecao-segura.mostrar-gabarito .choice .correct { border-left-color: var(--accent); font-weight: 750; }
+body.projecao-segura .gabarito { visibility: hidden; }
+body.projecao-segura.mostrar-gabarito .gabarito { visibility: visible; }
+body.projecao-segura .nota-professor, body.projecao-segura .image-prompt { visibility: hidden; }
+body.projecao-segura.mostrar-notas .nota-professor, body.projecao-segura.mostrar-notas .image-prompt { visibility: visible; }
+body.projecao-segura .visual-layout > .quote { display: flex; align-items: center; margin-top: 0; align-self: stretch; }
+
+/* --- Impressão: o PDF é a cópia do professor --- */
+@media print {
+  .hud { display: none; }
+  .slide.optional { background: #fff; }
+  body.projecao-segura .gabarito,
+  body.projecao-segura .nota-professor,
+  body.projecao-segura .image-prompt { visibility: visible; }
+  body.projecao-segura .choice .correct { border-left-color: var(--accent); font-weight: 750; }
+}
+
+/* Variante compacta da tabela, para quadros de cinco ou mais linhas */
+.table.compacta div { min-height: 60px; padding: 11px 16px; font-size: 19px; line-height: 1.22; }
+.table.compacta .head { min-height: 46px; }
+
+/* Declaração de uso de IAG em exposição eletrônica (Portaria CNPq 2.664/2026, art. 9º, I, "c") */
+.declaracao-iag { margin: 30px 0 0; max-width: 940px; font-size: 16px; line-height: 1.32; color: var(--muted); }
+
+/* Aperto adicional em lâminas .tight densas (só afeta quem declara .tight) */
+.slide.tight .box { min-height: 148px; }
+.slide.tight .notice { margin-top: 18px; padding: 14px 20px; }
+.slide.tight .micro { margin-top: 8px; }
+
+/* Ênfase dentro do corpo da caixa não deve virar bloco (o .box strong é o título) */
+.box .small strong, .box .small em { display: inline; margin: 0; font-size: inherit; line-height: inherit; color: inherit; }
+.box .small strong { font-weight: 750; }
+.slide.tight .source-list { margin-top: 18px; gap: 10px; }
+.slide.tight .source-list div { padding: 10px 16px; font-size: 19px; line-height: 1.24; }
+.slide.tight .declaracao-iag { margin-top: 16px; font-size: 15px; }
+  </style>
+</head>
+<body class="projecao-segura hud-off" data-bloco="Bloco 1" data-fim="19:20">
+  <main class="deck" aria-label="Deck da Aula 00 de Teoria da Constituição">
+
+    <section class="slide title banded" data-slide="1/20" data-alvo="18:30">
+      <div class="block-band"><span>Bloco 1 · Abertura institucional</span></div>
+      <p class="kicker">Teoria da Constituição - 2026.2</p>
+      <h1>Apresentação da disciplina</h1>
+      <p class="lead">Plano do semestre, avaliações, datas e rota de estudo.</p>
+      <div class="rule"></div>
+      <p class="declaracao-iag">* Material elaborado com apoio de Inteligência Artificial Generativa — Claude (Anthropic), modelo Opus 5, e ChatGPT (OpenAI), modelo 5.5 — para geração de roteiro e estruturação das lâminas, apoio à elaboração de questões e atividades e apoio à busca bibliográfica. Fontes conferidas e responsabilidade integral do professor. Diretrizes: Portaria CNPq nº 2.664/2026.</p>
+      <p class="footer">FBBR - Direito - 2º semestre, Turma B - Professor Mario Bastos - terças-feiras, 18:30 às 22:00.</p>
+    </section>
+    <section class="slide banded" data-slide="2/20" data-alvo="18:33">
+      <div class="block-band"><span>Bloco 1 · Localização</span></div>
+      <p class="kicker">Localização</p>
+      <h2>Esta disciplina pergunta o que é uma Constituição, e não apenas o que ela diz</h2>
+      <div class="grid-3">
+        <div class="box"><strong>Conceito</strong><p class="small">O que queremos dizer com a palavra Constituição? A resposta não é única, e é disputada.</p></div>
+        <div class="box"><strong>Formação</strong><p class="small">Quem faz uma Constituição, com que poder, e sob que limites ela pode ser mudada?</p></div>
+        <div class="box alt"><strong>Aplicação</strong><p class="small">Como suas normas produzem efeitos e como devem ser interpretadas?</p></div>
+      </div>
+      <p class="footer">Ementa oficial: estatuto epistemológico da Teoria da Constituição, constitucionalismo, conceito e classificações, Poder Constituinte, Constituição no tempo, eficácia, hermenêutica e comparação jurídica.</p>
+    </section>
+    <section class="slide banded" data-slide="3/20" data-alvo="18:36">
+      <div class="block-band"><span>Bloco 1 · Estrutura do semestre</span></div>
+      <p class="kicker">Estrutura do semestre</p>
+      <h2>O semestre é organizado em duas unidades de aprendizagem</h2>
+      <div class="grid-2">
+        <div class="box"><strong>I Unidade</strong><p class="small">Constitucionalismo e neoconstitucionalismo; Direito Constitucional como disciplina; conceito e sentidos de Constituição; classificações; Constituições brasileiras e estrutura da CF/88; Poder Constituinte; cláusulas pétreas; elementos da Constituição.</p></div>
+        <div class="box alt"><strong>II Unidade</strong><p class="small">Entrada em vigor de uma Constituição e Constituição no tempo; eficácia das normas constitucionais; hermenêutica constitucional, métodos e princípios; teoria geral dos direitos fundamentais.</p></div>
+      </div>
+      <div class="notice">A prova de cada unidade cobra o conteúdo efetivamente trabalhado em sala, e não uma lista abstrata de temas.</div>
+    </section>
+    <section class="slide banded" data-slide="4/20" data-alvo="18:39">
+      <div class="block-band"><span>Bloco 1 · Contrato pedagógico</span></div>
+      <p class="kicker">Contrato pedagógico</p>
+      <h2>A avaliação é construída por engenharia reversa</h2>
+      <div class="visual-layout">
+        <div class="stack">
+          <div class="box compact"><strong>Conteúdo</strong><p class="small">Primeiro identificamos o tema constitucional da aula.</p></div>
+          <div class="box compact"><strong>Competência</strong><p class="small">Depois definimos o que você deve saber fazer com esse tema.</p></div>
+          <div class="box compact"><strong>Questão</strong><p class="small">Em seguida treinamos questões do mesmo tipo cognitivo da prova.</p></div>
+        </div>
+        <div class="quote">A prova não é instrumento de surpresa. Ela é o fechamento avaliativo de competências treinadas durante o percurso.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="5/20" data-alvo="18:42">
+      <div class="block-band"><span>Bloco 1 · Avaliação</span></div>
+      <p class="kicker">Avaliação</p>
+      <h2>Cada unidade vale 10,0 pontos</h2>
+      <div class="grid-3">
+        <div class="box"><strong>6,0</strong><p class="small">Avaliação processual: prova contemplando habilidades objetivas e discursivas.</p></div>
+        <div class="box alt"><strong>4,0</strong><p class="small">Avaliação qualitativa: metodologias ativas de aprendizagem — estudo dirigido, método do caso, sala de aula invertida.</p></div>
+        <div class="box"><strong>10,0</strong><p class="small">Resultado da unidade: soma entre desempenho na prova e percurso qualitativo.</p></div>
+      </div>
+      <p class="footer">Plano de Ensino FBBR - Teoria da Constituição, item Avaliação: Processual 6,0 + Qualitativa 4,0, nas duas unidades.</p>
+    </section>
+    <section class="slide banded" data-slide="6/20" data-alvo="18:45">
+      <div class="block-band"><span>Bloco 1 · Prova processual</span></div>
+      <p class="kicker">Prova regular da I Unidade · 06/10/2026</p>
+      <h2>Como a prova de 6,0 se reparte</h2>
+      <div class="table">
+        <div class="head">Formato</div><div class="head">Peso</div><div class="head">O que será avaliado</div>
+        <div>8 objetivas</div><div>0,5 cada = 4,0</div><div>Identificar conceitos, autores, classificações e dispositivos constitucionais, e relacionar temas entre si.</div>
+        <div>2 discursivas</div><div>1,0 cada = 2,0</div><div>Construir resposta com conceito, fundamento constitucional, aplicação e conclusão.</div>
+        <div>Total</div><div>6,0</div><div>Competências treinadas nas aulas da unidade.</div>
+      </div>
+      <p class="footer">Data oficial: Calendário de Provas do Curso de Direito 2026.2, "2º semestre - Turma B". Plano de Ensino FBBR: prova de 6,0 contemplando habilidades discursivas e objetivas.</p>
+    </section>
+    <section class="slide banded tight" data-slide="7/20" data-alvo="18:48">
+      <div class="block-band"><span>Bloco 1 · Qualitativa da I Unidade</span></div>
+      <p class="kicker">Qualitativa da I Unidade · duas entregas</p>
+      <h2>Duas etapas que já constroem o trabalho da II Unidade</h2>
+      <div class="grid-2">
+        <div class="box"><strong>Etapa 1 — Fichamento do texto-base · 2,0</strong><p class="small">BARROSO, Luís Roberto. <em>Neoconstitucionalismo e constitucionalização do Direito</em>. Quaestio Iuris, 2006. Ler <strong>Introdução e Parte I, p. 1 a 10</strong>. PDF no portal. Entrega até <strong>04/09</strong>.</p></div>
+        <div class="box alt"><strong>Etapa 2 — Dois artigos em diálogo · 2,0</strong><p class="small">A equipe pesquisa, escolhe e resume <strong>dois artigos</strong> que conversem com o tema. Serão a base do miniartigo da II Unidade. Entrega até <strong>18/09</strong>.</p></div>
+      </div>
+      <div class="notice">As duas entregas são <strong>pelo portal</strong>, em sextas-feiras. Equipes de até 3 alunos, e <strong>a mesma equipe segue até o fim do semestre</strong>.</div>
+    </section>
+    <section class="slide banded tight" data-slide="8/20" data-alvo="18:51">
+      <div class="block-band"><span>Bloco 1 · Rota da I Unidade</span></div>
+      <p class="kicker">I Unidade</p>
+      <h2>Sete encontros até a primeira prova</h2>
+      <div class="schedule thin four">
+        <div class="head">Data</div><div class="head">Tema</div><div class="head">Competência treinada</div><div class="head">Produto</div>
+        <div>11/08</div><div>Constituição, Estado, poder e direitos</div><div>Ler o preâmbulo e o art. 1º como texto de abertura.</div><div>Leitura guiada</div>
+        <div>18/08</div><div>Constitucionalismo e Direito Constitucional</div><div>Situar historicamente a limitação jurídica do poder.</div><div>Roteiro da resenha</div>
+        <div>25/08</div><div>Conceito e sentidos de Constituição</div><div>Distinguir Lassalle, Schmitt e Kelsen.</div><div>Quadro comparativo</div>
+        <div>01/09</div><div>Classificações, supremacia e rigidez</div><div>Classificar uma Constituição por critérios técnicos.</div><div>Sorteio das fichas</div>
+        <div>08/09</div><div>Constituições brasileiras e estrutura da CF/88</div><div>Relacionar momento histórico e texto constitucional.</div><div>Fichas em sala</div>
+        <div>22/09</div><div>Poder Constituinte originário e derivado</div><div>Identificar limites do poder de reformar.</div><div>Mini-caso</div>
+        <div>29/09</div><div>Cláusulas pétreas, elementos e revisão</div><div>Integrar os eixos da unidade.</div><div>Mapa final</div>
+      </div>
+      <p class="micro">Não há aula em <strong>15/09</strong>: feriado municipal, Dia de Nossa Senhora do Bom Sucesso, numa terça-feira. A qualitativa é entregue pelo portal, até <strong>18/09</strong>.</p>
+    </section>
+    <section class="slide banded" data-slide="9/20" data-alvo="18:55">
+      <div class="block-band"><span>Bloco 1 · Marcos da I Unidade</span></div>
+      <p class="kicker">Marcos da I Unidade</p>
+      <h2>As datas que governam o ritmo da turma</h2>
+      <div class="schedule">
+        <div class="head">Data</div><div class="head">Marco</div><div class="head">Efeito para vocês</div>
+        <div>24/08 a 21/09</div><div>Janela institucional da qualitativa I</div><div>Toda a produção qualitativa acontece aqui dentro.</div>
+        <div>04/09</div><div>Entrega do fichamento, pelo portal</div><div>Sexta-feira. Primeira das duas entregas.</div>
+        <div>15/09</div><div>Feriado municipal, terça-feira</div><div>Sem aula. Use a semana para fechar os dois resumos.</div>
+        <div>18/09</div><div>Entrega dos dois resumos, pelo portal</div><div>Sexta-feira. Fecha a qualitativa da I Unidade.</div>
+        <div>06/10</div><div>Prova regular da I Unidade</div><div>No nosso horário de aula. Data oficial da coordenação.</div>
+        <div>23/11</div><div>Prazo final de recurso de nota da I Unidade</div><div>Depois disso a nota da unidade não se discute mais.</div>
+      </div>
+      <p class="footer">Calendário Acadêmico FBBR 2026.2 e Calendário de Provas do Curso de Direito 2026.2.</p>
+    </section>
+    <section class="slide banded" data-slide="10/20" data-alvo="18:58">
+      <div class="block-band"><span>Bloco 1 · Escopo da prova</span></div>
+      <p class="kicker">Escopo da primeira prova</p>
+      <h2>Oito núcleos máximos de cobrança</h2>
+      <div class="grid-2">
+        <div class="box compact"><strong>1 a 4</strong><p class="small">Constitucionalismo e neoconstitucionalismo; Direito Constitucional como disciplina; conceito e sentidos de Constituição; classificações das Constituições.</p></div>
+        <div class="box compact alt"><strong>5 a 8</strong><p class="small">Constituições brasileiras e estrutura da CF/88; Poder Constituinte; cláusulas pétreas; elementos da Constituição.</p></div>
+      </div>
+      <div class="notice">Limite de justiça avaliativa: o conteúdo precisa ter sido trabalhado até <strong>29/09</strong> para ser cobrado com segurança em <strong>06/10</strong>.</div>
+    </section>
+    <section class="slide banded optional tight" data-slide="11/20" data-alvo="19:01">
+      <div class="block-band"><span>Bloco 1 · Rota da II Unidade</span><span class="opt">opcional</span></div>
+      <p class="kicker">II Unidade</p>
+      <h2>Depois da primeira prova, a disciplina passa da formação à aplicação</h2>
+      <div class="schedule thin four">
+        <div class="head">Data</div><div class="head">Tema</div><div class="head">Competência treinada</div><div class="head">Observação</div>
+        <div>13/10</div><div>Constituição no tempo: recepção e mutação</div><div>Explicar o destino do direito anterior à Constituição.</div><div>Abre a unidade</div>
+        <div>20/10</div><div>Eficácia das normas constitucionais</div><div>Distinguir eficácia plena, contida e limitada.</div><div>José Afonso da Silva</div>
+        <div>27/10</div><div>Hermenêutica: métodos de interpretação</div><div>Aplicar método adequado a um problema constitucional.</div><div>Savigny a Müller</div>
+        <div>03/11</div><div>Princípios de interpretação e ponderação</div><div>Resolver tensão entre normas constitucionais.</div><div>Unidade, concordância</div>
+        <div>10/11</div><div>Teoria geral dos direitos fundamentais</div><div>Identificar dimensões e funções dos direitos.</div><div>Ponte para o 3º semestre</div>
+        <div>17/11</div><div>Direitos sociais, eficácia e colisões</div><div>Relacionar direito social e capacidade estatal.</div><div>Semana do VII SEMPEX</div>
+        <div>24/11</div><div>Revisão geral e socialização dos miniartigos</div><div>Integrar os eixos da unidade.</div><div>Qualitativa II</div>
+      </div>
+    </section>
+    <section class="slide banded tight" data-slide="12/20" data-alvo="19:04">
+      <div class="block-band"><span>Bloco 1 · Qualitativa da II Unidade</span></div>
+      <p class="kicker">Qualitativa da II Unidade</p>
+      <h2>Miniartigo: escrita e pesquisa acadêmica em equipe</h2>
+      <div class="grid-3">
+        <div class="box"><strong>Formato</strong><p class="small">A <strong>mesma equipe</strong> da I Unidade, até 3 alunos. Tema delimitado, pergunta clara e um texto curto com introdução, desenvolvimento e conclusão.</p></div>
+        <div class="box"><strong>O que se exige</strong><p class="small">Partir de um dispositivo constitucional lido de verdade e dos <strong>dois artigos que vocês escolheram</strong> em setembro. Citar tudo o que não é seu.</p></div>
+        <div class="box alt"><strong>O que se avalia</strong><p class="small">A qualidade da pergunta, o uso do texto constitucional, a honestidade da citação e a clareza da escrita. Não se exige originalidade doutrinária.</p></div>
+      </div>
+      <div class="notice">Janela institucional: <strong>13/10 a 19/11/2026</strong>. A tarefa de hoje, para 18/08, já é o primeiro ensaio da pergunta deste trabalho.</div>
+    </section>
+    <section class="slide banded" data-slide="13/20" data-alvo="19:06">
+      <div class="block-band"><span>Bloco 1 · Progressão de escrita</span></div>
+      <p class="kicker">Progressão de escrita</p>
+      <h2>Um degrau de cada vez, até o artigo do fim do semestre</h2>
+      <div class="schedule four">
+        <div class="head">Degrau</div><div class="head">O que a equipe entrega</div><div class="head">O que aprende a fazer</div><div class="head">Quando</div>
+        <div>1. Nota de pesquisa</div><div>Dez linhas: tema, pergunta, dispositivo e uma fonte.</div><div>Formular uma pergunta, em vez de anunciar um tema.</div><div>18/08 · sem nota</div>
+        <div>2. Fichamento do texto-base</div><div>Ficha do texto de Barroso, Introdução e Parte I.</div><div>Ler doutrina com fidelidade, sem misturar com opinião.</div><div>até 04/09 · 2,0</div>
+        <div>3. Dois artigos em diálogo</div><div>Resumo de dois artigos escolhidos pela equipe.</div><div>Encontrar interlocutores e sintetizar o que dizem.</div><div>até 18/09 · 2,0</div>
+        <div>4. Miniartigo</div><div>Pergunta própria sustentada por esses interlocutores.</div><div>Argumentar com apoio e assumir uma posição.</div><div>II Unidade · 4,0</div>
+      </div>
+      <p class="micro">A equipe é a mesma do degrau 1 ao 4. <strong>Os dois artigos que vocês escolherem em setembro são a bibliografia do trabalho de novembro</strong> — a escolha de agora decide o resto do semestre.</p>
+    </section>
+    <section class="slide banded optional" data-slide="14/20" data-alvo="19:08">
+      <div class="block-band"><span>Bloco 1 · Marcos da II Unidade</span><span class="opt">opcional</span></div>
+      <p class="kicker">Marcos da II Unidade</p>
+      <h2>O fim do semestre também combina prova e qualitativa</h2>
+      <div class="schedule">
+        <div class="head">Data</div><div class="head">Marco</div><div class="head">Observação</div>
+        <div>13/10 a 19/11</div><div>Janela institucional da qualitativa II</div><div>Período de produção e entrega do miniartigo em equipe.</div>
+        <div>01/12</div><div>Prova regular da II Unidade</div><div>No nosso horário de aula. Data oficial da coordenação.</div>
+        <div>10/12</div><div>Segunda chamada</div><div>Requerida na Secretaria, dentro do prazo, com taxa.</div>
+        <div>15/12</div><div>Prova final</div><div>Só para quem ficar com média entre 4,0 e 6,9.</div>
+      </div>
+      <p class="footer">Calendário de Provas do Curso de Direito 2026.2, seção "2º semestre - Turma B".</p>
+    </section>
+    <section class="slide banded" data-slide="15/20" data-alvo="19:10">
+      <div class="block-band"><span>Bloco 1 · Regras do jogo</span></div>
+      <p class="kicker">Regras institucionais</p>
+      <h2>O que não depende de mim nem de vocês</h2>
+      <div class="grid-3">
+        <div class="box compact"><strong>Aprovação</strong><p class="small">Média final igual ou maior que 7,0 aprova direto. Entre 4,0 e 6,9, prova final. Abaixo de 4,0, reprovação sem direito à final.</p></div>
+        <div class="box compact"><strong>Frequência</strong><p class="small">O máximo tolerável de faltas é 25% da carga horária. Acompanhem pelo Portal do Aluno, mensalmente.</p></div>
+        <div class="box compact alt"><strong>Segunda chamada</strong><p class="small">Requerida na Secretaria, no prazo do calendário, com pagamento de taxa — independentemente do motivo da ausência.</p></div>
+      </div>
+      <p class="footer">Guia do Estudante FBBR 2026.2, itens 2, 3, 4 e 5.</p>
+    </section>
+    <section class="slide banded" data-slide="16/20" data-alvo="19:12">
+      <div class="block-band"><span>Bloco 1 · Método de aula</span></div>
+      <p class="kicker">Método de aula</p>
+      <h2>A Constituição é o texto de trabalho permanente</h2>
+      <div class="grid-3">
+        <div class="box"><strong>Leitura guiada</strong><p class="small">Dispositivos constitucionais lidos em sala, com pergunta jurídica concreta na mão.</p></div>
+        <div class="box"><strong>Casos e problemas</strong><p class="small">O conteúdo é testado em situações de aplicação, não só em definição abstrata.</p></div>
+        <div class="box alt"><strong>Questões-modelo</strong><p class="small">Cada módulo alimenta o banco de questões e a preparação para a prova.</p></div>
+      </div>
+      <p class="tag-row"><span class="tag">conceito</span><span class="tag">autor</span><span class="tag">dispositivo</span><span class="tag">caso</span><span class="tag">conclusão</span></p>
+    </section>
+    <section class="slide banded" data-slide="17/20" data-alvo="19:14">
+      <div class="block-band"><span>Bloco 1 · Como estudar</span></div>
+      <p class="kicker">Como estudar</p>
+      <h2>O melhor estudo semanal é pequeno, constante e situado no texto</h2>
+      <div class="schedule">
+        <div class="head">Momento</div><div class="head">Ação</div><div class="head">Resultado esperado</div>
+        <div>Antes da aula</div><div>Ler os dispositivos indicados da Constituição.</div><div>Chegar com vocabulário mínimo.</div>
+        <div>Durante a aula</div><div>Anotar conceito, autor, artigo e exemplo.</div><div>Transformar exposição em resposta possível.</div>
+        <div>Depois da aula</div><div>Resolver ou reler a questão-modelo.</div><div>Identificar a dúvida antes da prova, e não depois.</div>
+      </div>
+    </section>
+    <section class="slide banded optional" data-slide="18/20" data-alvo="19:16">
+      <div class="block-band"><span>Bloco 1 · Fontes</span><span class="opt">opcional</span></div>
+      <p class="kicker">Fontes de referência</p>
+      <h2>A disciplina parte da Constituição e dialoga com a bibliografia do plano</h2>
+      <div class="source-list">
+        <div><strong>Fonte primária:</strong> Constituição da República Federativa do Brasil de 1988.</div>
+        <div><strong>Bibliografia básica:</strong> Pedro Lenza, <em>Esquematizado - Direito Constitucional</em>; Alexandre de Moraes, <em>Direito Constitucional</em>; Sylvio Motta, <em>Direito Constitucional</em>.</div>
+        <div><strong>Bibliografia complementar:</strong> José Geraldo Filomeno; Rodrigo Padilha; Guilherme Peña de Moraes; Elisio Bastos, Lise Merlin e Patricia Cichovski; André Ramos Tavares.</div>
+        <div><strong>Onde encontrar:</strong> todos disponíveis na Minha Biblioteca, pelo Portal do Aluno.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="19/20" data-alvo="19:18">
+      <div class="block-band"><span>Bloco 1 · Transição para o conteúdo</span></div>
+      <p class="kicker">Hoje</p>
+      <h2>Depois do mapa do semestre, entramos no primeiro conteúdo</h2>
+      <p class="activity-question">O que muda quando um país passa a ter uma Constituição?</p>
+      <div class="grid-3">
+        <div class="box"><strong>Muda o poder</strong><p class="small">Quem manda passa a mandar dentro de regras que não criou sozinho.</p></div>
+        <div class="box"><strong>Muda o conflito</strong><p class="small">Disputas políticas passam a ter um terreno jurídico comum onde se decidem.</p></div>
+        <div class="box alt"><strong>Ou não muda nada?</strong><p class="small">Um texto sozinho não move instituições. Guardem esta dúvida: ela volta no Bloco 2.</p></div>
+      </div>
+      <p class="footer">Próximo passo da noite: Constituição, Estado e poder - abrir o Deck da Aula 01.</p>
+    </section>
+
+    <section class="slide banded tight" data-slide="20/20" data-alvo="19:19">
+      <div class="block-band"><span>Bloco 1 · Referências e transparência</span></div>
+      <p class="kicker">Referências</p>
+      <h2>O que sustenta este material</h2>
+      <div class="source-list">
+        <div><strong>Fonte primária:</strong> BRASIL. Constituição da República Federativa do Brasil de 1988.</div>
+        <div><strong>Texto-base da qualitativa:</strong> BARROSO, Luís Roberto. Neoconstitucionalismo e constitucionalização do Direito (O triunfo tardio do direito constitucional no Brasil). <em>Quaestio Iuris</em>, Rio de Janeiro, v. 2, n. 1, p. 1-48, 2006.</div>
+        <div><strong>Documentos institucionais:</strong> FBBR. Plano de Ensino de Teoria da Constituição, 2026.2; Calendário Acadêmico 2026.2; Calendário de Provas do Curso de Direito 2026.2; Guia do Estudante 2026.2.</div>
+        <div><strong>Bibliografia do plano:</strong> LENZA, Pedro. <em>Direito Constitucional Esquematizado</em>. Saraiva, 2022; MORAES, Alexandre de. <em>Direito Constitucional</em>. GEN, 2022; MOTTA, Sylvio. <em>Direito Constitucional</em>. GEN, 2021. E-books na Minha Biblioteca.</div>
+        <div><strong>Metodologia da pesquisa:</strong> BASTOS, Mário. <em>Orientações Gerais de Pesquisa em Direito</em>. Salvador, 2019.</div>
+      </div>
+      <p class="declaracao-iag">* Material elaborado com apoio de Inteligência Artificial Generativa — Claude (Anthropic), modelo Opus 5, e ChatGPT (OpenAI), modelo 5.5 — para geração de roteiro e estruturação das lâminas, apoio à elaboração de questões e atividades e apoio à busca bibliográfica. Fontes conferidas e responsabilidade integral do professor. Diretrizes: Portaria CNPq nº 2.664/2026.</p>
+    </section>
+
+  </main>
+
+  <div class="hud" id="hud" aria-hidden="true">
+    <div class="hud-item"><span class="hud-label">Lâmina</span><span class="hud-value" id="hud-slide">1/20</span></div>
+    <div class="hud-item"><span class="hud-label">Alvo</span><span class="hud-value" id="hud-alvo">18:30</span></div>
+    <div class="hud-item"><span class="hud-label">Agora</span><span class="hud-value" id="hud-agora">--:--</span></div>
+    <div class="hud-item"><span class="hud-label">Ritmo</span><span class="hud-value" id="hud-delta">-</span></div>
+    <p class="hud-help">setas navegam · F tela cheia · O oculta opcionais</p>
+  </div>
+
+  <script>
+  (function () {
+    var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+    var hudSlide = document.getElementById('hud-slide');
+    var hudAlvo = document.getElementById('hud-alvo');
+    var hudAgora = document.getElementById('hud-agora');
+    var hudDelta = document.getElementById('hud-delta');
+    var atual = 0;
+
+    function visiveis() {
+      return slides.filter(function (s) { return s.offsetParent !== null; });
+    }
+
+    function irPara(i) {
+      var lista = visiveis();
+      if (!lista.length) return;
+      i = Math.max(0, Math.min(lista.length - 1, i));
+      atual = i;
+      lista[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+      atualizarHud(lista[i], i, lista.length);
+    }
+
+    function minutos(hhmm) {
+      var p = (hhmm || '').split(':');
+      if (p.length !== 2) return null;
+      return parseInt(p[0], 10) * 60 + parseInt(p[1], 10);
+    }
+
+    function doisDigitos(n) { return (n < 10 ? '0' : '') + n; }
+
+    function atualizarHud(slide, i, total) {
+      if (!slide) return;
+      var alvo = slide.getAttribute('data-alvo') || '--:--';
+      hudSlide.textContent = (i + 1) + '/' + total;
+      hudAlvo.textContent = alvo;
+      var agora = new Date();
+      var agoraMin = agora.getHours() * 60 + agora.getMinutes();
+      hudAgora.textContent = doisDigitos(agora.getHours()) + ':' + doisDigitos(agora.getMinutes());
+      var alvoMin = minutos(alvo);
+      hudDelta.className = 'hud-value';
+      if (alvoMin === null) { hudDelta.textContent = '-'; return; }
+      var d = agoraMin - alvoMin;
+      if (d > 2) { hudDelta.textContent = '+' + d + ' min'; hudDelta.classList.add('late'); }
+      else if (d < -2) { hudDelta.textContent = d + ' min'; hudDelta.classList.add('ahead'); }
+      else { hudDelta.textContent = 'em dia'; }
+    }
+
+    function refrescar() {
+      var lista = visiveis();
+      if (!lista.length) return;
+      var i = Math.min(atual, lista.length - 1);
+      atualizarHud(lista[i], i, lista.length);
+    }
+
+    // Qual lamina esta efetivamente na tela agora.
+    function laminaNaTela() {
+      var lista = visiveis(), melhor = null, dist = Infinity;
+      lista.forEach(function (s) {
+        var d = Math.abs(s.getBoundingClientRect().top);
+        if (d < dist) { dist = d; melhor = s; }
+      });
+      return melhor;
+    }
+
+    // Depois de ocultar/reexibir opcionais, permanecer na mesma lamina.
+    function reancorar(ref) {
+      var lista = visiveis();
+      if (!lista.length) return;
+      var i = lista.indexOf(ref);
+      if (i < 0) {
+        var pos = slides.indexOf(ref);
+        for (var j = pos; j < slides.length && i < 0; j++) { i = lista.indexOf(slides[j]); }
+        for (var m = pos; m >= 0 && i < 0; m--) { i = lista.indexOf(slides[m]); }
+      }
+      if (i < 0) i = 0;
+      atual = i;
+      lista[i].scrollIntoView({ block: 'start' });
+      atualizarHud(lista[i], i, lista.length);
+    }
+
+    document.addEventListener('keydown', function (e) {
+      var k = e.key;
+      if (k === 'ArrowRight' || k === 'ArrowDown' || k === 'PageDown' || k === ' ') { e.preventDefault(); irPara(atual + 1); }
+      else if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'PageUp') { e.preventDefault(); irPara(atual - 1); }
+      else if (k === 'Home') { e.preventDefault(); irPara(0); }
+      else if (k === 'End') { e.preventDefault(); irPara(visiveis().length - 1); }
+      else if (k === 'f' || k === 'F') {
+        if (document.fullscreenElement) { document.exitFullscreen(); }
+        else if (document.documentElement.requestFullscreen) { document.documentElement.requestFullscreen(); }
+      }
+      else if (k === 'o' || k === 'O') { var ref = laminaNaTela(); document.body.classList.toggle('hide-optional'); reancorar(ref); }
+      else if (k === 'm' || k === 'M') {
+        document.body.classList.toggle('sem-marcas');
+      }
+    });
+
+    if ('IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function (entradas) {
+        entradas.forEach(function (en) {
+          if (en.isIntersecting) {
+            var lista = visiveis();
+            var i = lista.indexOf(en.target);
+            if (i >= 0) { atual = i; atualizarHud(en.target, i, lista.length); }
+          }
+        });
+      }, { threshold: 0.55 });
+      slides.forEach(function (s) { obs.observe(s); });
+    }
+
+    setInterval(refrescar, 20000);
+    refrescar();
+  })();
+  </script>
+</body>
+</html>
