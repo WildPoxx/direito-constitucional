@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /direito-constitucional/organizacao-dos-poderes/_acesso-docente-20260814/
