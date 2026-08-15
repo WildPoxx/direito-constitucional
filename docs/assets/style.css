@@ -244,6 +244,35 @@ th {
   background: var(--surface);
 }
 
+.supplementary-box,
+.learning-box {
+  margin: 34px 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.supplementary-box {
+  border-color: #b8d7be;
+  border-left: 5px solid #4d875b;
+  background: #edf7ef;
+}
+
+.learning-box {
+  background: #f7f8f2;
+}
+
+.learning-box--task {
+  border-left: 5px solid var(--accent-2);
+  background: #f4f7fb;
+}
+
+.supplementary-box h2,
+.learning-box h2,
+.learning-box h3 {
+  margin-top: 0;
+}
+
 .quiz-panel h2,
 .ai-disclosure h2 {
   margin-top: 0;
@@ -422,6 +451,28 @@ button {
 
 .feedback-card.is-wrong {
   border-left-color: #a74432;
+}
+
+.quiz-feedback {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8f8f5;
+}
+
+.quiz-feedback.is-correct {
+  border-color: #9bc6a4;
+  background: #edf7ef;
+}
+
+.quiz-feedback.is-wrong {
+  border-color: #dfb4ac;
+  background: #fdf0ee;
+}
+
+.quiz-feedback p {
+  margin: 0;
 }
 
 .report-box {
