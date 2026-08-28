@@ -4,8 +4,9 @@ disciplina: Direito Constitucional - Organização dos Poderes
 subtitulo-da-disciplina: Organização do Estado Democrático de Direito e dos Poderes
 unidade: I Unidade
 modulo: 2B
-status: rascunho-de-teste
+status: publicado
 data: 2026-08-15
+atualizado: 2026-08-28
 fonte-normativa: CF/88, arts. 23 e 24
 tags:
   - direito-constitucional
@@ -152,7 +153,7 @@ Uma leitura crítica não substitui o artigo constitucional por uma opinião pol
 4. O que a União pode fazer no exercício da competência concorrente?
 5. O que acontece com uma lei estadual editada na ausência de norma geral federal quando surge lei federal posterior?
 
-### Questão Objetiva Comentada
+### Questões Objetivas Comentadas
 
 Em matéria incluída no art. 24 da Constituição, não existe norma geral federal. Um Estado aprova lei disciplinando integralmente aspectos ligados às suas peculiaridades. Posteriormente, a União edita norma geral sobre o tema. É correto afirmar que:
 
@@ -162,6 +163,70 @@ Em matéria incluída no art. 24 da Constituição, não existe norma geral fede
 **D.** o Município passa a ter competência concorrente para escolher qual das duas leis aplicar.
 
 **Resposta: C.** O art. 24, § 4º, fala em suspensão da eficácia da lei estadual no que lhe for contrário. A alternativa A transforma suspensão parcial em revogação integral. A B ignora a competência da União para editar normas gerais. A D erra porque Municípios não integram o caput do art. 24; sua competência será examinada a partir do art. 30.
+
+Um rio que atravessa três Municípios apresenta contaminação persistente. O Estado adota duas providências: cria um programa estadual de despoluição, com equipes de fiscalização em campo, e aprova lei disciplinando o controle da poluição naquela bacia. Sobre o fundamento constitucional de cada providência, é correto afirmar que:
+
+**A.** ambas se fundam no art. 23, porque proteger o meio ambiente é competência comum.  
+**B.** ambas se fundam no art. 24, porque a proteção do meio ambiente é matéria de legislação concorrente.  
+**C.** a primeira encontra fundamento na competência comum do art. 23, de natureza material, e a segunda na competência legislativa concorrente do art. 24.  
+**D.** a primeira depende de autorização da União e a segunda é vedada ao Estado.
+
+**Resposta: C.** As duas providências têm naturezas distintas. Criar programa e fiscalizar em campo é atuação material, campo do art. 23, que inclui proteger o meio ambiente e combater a poluição em qualquer de suas formas. Editar lei sobre controle da poluição é atividade legislativa, campo do art. 24, que arrola conservação da natureza, proteção do meio ambiente e controle da poluição. A alternativa A ignora que editar lei não é ato administrativo; a B faz o inverso, tratando fiscalização como produção normativa; a D erra porque nenhuma das providências depende de autorização da União.
+
+Em sessão da Câmara Municipal, um vereador sustenta que o Município possui competência legislativa concorrente para tratar de proteção do meio ambiente, invocando diretamente o caput do art. 24 da Constituição. A afirmação é:
+
+**A.** correta, porque todos os entes federativos são autônomos e, portanto, todos figuram no art. 24.  
+**B.** incorreta, porque o caput do art. 24 arrola União, Estados e Distrito Federal; a atuação legislativa do Município em matéria ambiental precisa ser fundamentada em outro dispositivo.  
+**C.** incorreta, porque o Município não pode tratar de meio ambiente sob nenhuma forma.  
+**D.** correta, porque o art. 23 e o art. 24 possuem exatamente os mesmos destinatários.
+
+**Resposta: B.** O caput do art. 24 arrola União, Estados e Distrito Federal. O Município não integra esse rol, o que não significa que esteja fora da matéria ambiental: ele figura expressamente no art. 23, de natureza material, e dispõe de competência legislativa própria, examinada a partir do art. 30. A alternativa A confunde autonomia com presença em todos os dispositivos de repartição; a C exagera na direção oposta; a D erra porque os destinatários dos dois artigos não coincidem.
+
+A União edita lei sobre matéria expressamente incluída no art. 24 da Constituição, disciplinando o tema de forma exaustiva e minuciosa, sem deixar espaço normativo aos Estados. Um Estado impugna a lei. À luz da Constituição, o argumento estadual:
+
+**A.** tem amparo, porque no âmbito da legislação concorrente a competência da União limita-se a estabelecer normas gerais.  
+**B.** não tem amparo, porque a lei federal sempre prevalece sobre a estadual em matéria concorrente.  
+**C.** tem amparo apenas se a lei federal for ordinária, e não complementar.  
+**D.** não tem amparo, porque o art. 24 é rol de matérias privativas da União.
+
+**Resposta: A.** O § 1º do art. 24 estabelece que, no âmbito da legislação concorrente, a competência da União limitar-se-á a estabelecer normas gerais; esgotar a matéria desborda desse limite. O § 2º reforça o desenho ao dizer que a competência da União para legislar sobre normas gerais não exclui a competência suplementar dos Estados. A alternativa B transforma repartição vertical em hierarquia; a C cria distinção que a Constituição não faz; a D confunde o art. 24 com o rol de competências privativas do art. 22.
+
+Sobre determinada matéria expressamente incluída no art. 24, não existe lei federal estabelecendo normas gerais. Um Estado pretende disciplinar o tema integralmente, para atender a peculiaridades regionais. Nesse caso, o Estado:
+
+**A.** deve aguardar a edição da norma geral federal, sob pena de invasão de competência.  
+**B.** só pode legislar se lei complementar federal o autorizar expressamente.  
+**C.** pode legislar e, a partir daí, a União perde a competência para editar normas gerais sobre o tema.  
+**D.** pode exercer competência legislativa plena para atender a suas peculiaridades, observados os demais limites constitucionais.
+
+**Resposta: D.** O § 3º do art. 24 dispõe que, inexistindo lei federal sobre normas gerais, os Estados exercerão a competência legislativa plena, para atender a suas peculiaridades. A omissão federal não paralisa a resposta normativa estadual, mas o adjetivo pleno não significa soberania legislativa. A alternativa A impõe espera que o § 3º afasta; a B importa para o art. 24 um requisito que pertence ao art. 22, parágrafo único, onde a lei complementar federal autoriza os Estados a legislar sobre questões específicas de matéria privativa da União; a C erra porque a União conserva a competência para editar normas gerais a qualquer tempo.
+
+Um Estado legislou de forma plena sobre matéria concorrente, na ausência de normas gerais federais. Anos depois, a União edita a norma geral, e parte da disciplina estadual conflita com ela. Sobre o efeito jurídico produzido, é correto afirmar que a lei estadual:
+
+**A.** é revogada, no ponto conflitante, pela lei federal superveniente.  
+**B.** tem sua eficácia suspensa naquilo que for contrário à norma geral federal, permanecendo eficaz na parte compatível.  
+**C.** torna-se integralmente inconstitucional desde a sua origem.  
+**D.** prevalece sobre a lei federal, por ter sido editada anteriormente.
+
+**Resposta: B.** O § 4º do art. 24 determina que a superveniência de lei federal sobre normas gerais suspende a eficácia da lei estadual, no que lhe for contrário. Três precisões importam: o efeito é de suspensão, não de revogação; é parcial, alcançando apenas o que conflita; e não há vício de origem, porque a lei estadual era válida quando editada. A alternativa A confunde suspensão com revogação; a C ignora que não havia norma geral a contrariar à época; a D erra porque anterioridade não resolve conflito entre esferas na legislação concorrente.
+
+Diante de um programa de saneamento que depende de mais de um ente, um gestor afirma que a cooperação federativa é matéria de entendimento político voluntário entre governos, sem previsão constitucional que a organize. À luz do art. 23, essa afirmação é:
+
+**A.** correta, porque a Constituição não trata de cooperação entre entes federativos.  
+**B.** correta, porque a cooperação depende exclusivamente de convênios firmados caso a caso.  
+**C.** incorreta, porque o parágrafo único do art. 23 prevê que leis complementares fixarão normas para a cooperação entre os entes, tendo em vista o equilíbrio do desenvolvimento e do bem-estar em âmbito nacional.  
+**D.** incorreta, porque a cooperação é decidida pela União, à qual os demais entes devem submissão hierárquica.
+
+**Resposta: C.** O parágrafo único do art. 23 prevê expressamente que leis complementares fixarão normas para a cooperação entre a União e os Estados, o Distrito Federal e os Municípios, tendo em vista o equilíbrio do desenvolvimento e do bem-estar em âmbito nacional. A cooperação não foi deixada à boa vontade. A alternativa A ignora dispositivo expresso; a B trata convênios como se substituíssem a previsão constitucional; a D erra porque competência comum não estabelece hierarquia entre os entes.
+
+Preocupada com o descarte irregular de entulho em área de preservação, uma Câmara Municipal aprova lei que, além de disciplinar a fiscalização e prever multa administrativa, cria pena de detenção para o infrator. A Câmara invoca a competência comum de proteção do meio ambiente. Sobre a lei, é correto afirmar que:
+
+**A.** a disciplina administrativa e a multa podem encontrar fundamento constitucional, mas a criação de pena de detenção invade a competência legislativa privativa da União sobre direito penal.  
+**B.** a lei é integralmente válida, porque proteger o meio ambiente é competência comum de todos os entes federativos.  
+**C.** a lei é integralmente inválida, porque o Município não pode tratar de matéria ambiental.  
+**D.** a criação da pena seria válida se o Estado houvesse autorizado o Município por lei estadual específica.
+
+**Resposta: A.** Proteger o meio ambiente e combater a poluição está entre as competências comuns do art. 23, de natureza material: por isso a fiscalização e a sanção administrativa podem encontrar fundamento. Criar crime e cominar pena é legislar sobre direito penal, matéria reservada à União pelo art. 22, I. A finalidade legítima não converte competência material em competência legislativa penal. A alternativa B extrai da competência comum uma licença para qualquer instrumento; a C nega ao Município a competência ambiental que ele efetivamente tem; a D erra porque não existe delegação estadual de competência penal ao Município.
+
 
 ### Roteiro De Resposta Discursiva
 
