@@ -194,7 +194,13 @@
 
     function corrigir() {
       let acertos = 0;
-      const linhas = ['RELATORIO DE TREINO — Modulo 2', 'Teoria Geral dos Direitos Fundamentais e Garantias Individuais', ''];
+      const cartao = document.querySelector('.hero .tag');
+      const tituloPagina = document.querySelector('.hero h1');
+      const linhas = [
+        'RELATORIO DE TREINO' + (cartao ? ' — ' + semMarcacao(cartao.textContent) : ''),
+        tituloPagina ? semMarcacao(tituloPagina.textContent) : document.title,
+        ''
+      ];
       questoes.forEach((q) => {
         const escolha = escolhida(q.id);
         const acertou = escolha === q.correta;
@@ -222,13 +228,14 @@
         linhas.push('');
       });
       linhas.splice(3, 0, `Desempenho nas objetivas: ${acertos} de ${questoes.length}.`, '');
-      linhas.push('AUTOAVALIACAO DA DISCURSIVA');
-      linhas.push('Releia o roteiro de resposta discursiva e verifique se seu texto:');
-      linhas.push('  ( ) definiu direito, garantia e remedio, uma frase cada;');
-      linhas.push('  ( ) indicou o artigo e o inciso pertinentes;');
-      linhas.push('  ( ) comecou pela pessoa e pelo fato, e nao pelo nome de uma acao;');
-      linhas.push('  ( ) concluiu que o cabimento do remedio depende dos requisitos do caso.');
-      linhas.push('');
+      const itensAuto = (main.dataset.autoavaliacao || '')
+        .split('|').map((i) => i.trim()).filter(Boolean);
+      if (itensAuto.length) {
+        linhas.push('AUTOAVALIACAO DA DISCURSIVA');
+        linhas.push('Releia o roteiro de resposta discursiva e verifique se seu texto:');
+        itensAuto.forEach((i) => linhas.push('  ( ) ' + i));
+        linhas.push('');
+      }
       linhas.push('Relatorio gerado no navegador. Nenhuma resposta foi enviada ou armazenada pelo site.');
       textoRelatorio.textContent = linhas.join('\n');
       relatorio.hidden = false;

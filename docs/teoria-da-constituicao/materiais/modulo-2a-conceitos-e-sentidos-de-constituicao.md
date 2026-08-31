@@ -203,17 +203,6 @@ Retome a cena do corredor e responda, em um parágrafo por item:
 3. A Constituição de 1988 é material ou formalmente constitucional quando trata de moradia? Explique a diferença entre os dois critérios usando esse exemplo.
 4. Se um governo afirmasse que "a decisão de 1988 está superada porque a sociedade mudou", que problema constitucional essa afirmação levanta? Relacione com o sentido político de Constituição.
 
-### Questão-Modelo
-
-Assinale a alternativa que melhor traduz a concepção normativa de Constituição:
-
-**A.** A Constituição é a soma dos fatores reais de poder; o texto escrito só vale quando os exprime fielmente.
-**B.** A Constituição é norma superior e sua validade não guarda qualquer relação com a realidade social que pretende regular.
-**C.** A Constituição é condicionada pela realidade histórica e, ao mesmo tempo, dotada de força normativa para conformá-la, existindo entre norma e realidade uma tensão permanente.
-**D.** A Constituição é a decisão política fundamental do soberano, cuja validade independe de qualquer conteúdo material.
-
-<!-- Gabarito: C. A alternativa A reduz a Constituição ao sentido sociológico; a B, ao sentido estritamente jurídico isolado da realidade; a D, ao sentido decisionista. -->
-
 ### Questões Para Estudo
 
 1. Por que a existência de vários sentidos de Constituição não é um defeito da teoria constitucional?
@@ -223,6 +212,210 @@ Assinale a alternativa que melhor traduz a concepção normativa de Constituiç�
 5. Por que a separação entre ser e dever-ser, em Kelsen, é uma força e um limite ao mesmo tempo?
 6. Explique, com suas palavras, o que significa dizer que entre norma e realidade há tensão permanente.
 7. Como o art. 5º, § 1º, da CF/88 pode ser usado como argumento contra a tese de que direito não cumprido é direito inexistente?
+
+## Treino
+
+Dez questões objetivas sobre o módulo. Responda antes de conferir: o comentário só aparece depois da sua escolha, e ele explica também por que cada alternativa errada está errada. Estas questões são a base das objetivas da prova da unidade — as da prova serão versões alteradas destas.
+
+#### Questão 1 · A Constituição como folha de papel
+
+Em um município, a Câmara aprova por unanimidade uma lei que cria programa de moradia popular. A lei nunca sai do papel: não há dotação orçamentária, e os proprietários de terra da região, que financiaram a maioria das campanhas, articulam sua revogação no ano seguinte. Um estudante comenta: "isso confirma que a Constituição é uma folha de papel". Ele está mobilizando, sem citar, a tese de qual autor, e em que sentido?
+
+**A.** De Kelsen, no sentido jurídico-normativo, porque a lei revogada perde o fundamento de validade.
+
+**B.** De Lassalle, no sentido sociológico, porque a Constituição efetiva seria a soma dos fatores reais de poder que regem a sociedade.
+
+**C.** De Schmitt, no sentido político, porque houve uma nova decisão política fundamental do soberano.
+
+**D.** De Canotilho, no sentido do conceito ideal, porque faltou garantia de direitos no texto municipal.
+
+**Resposta: B.**
+
+A expressão "folha de papel" pertence à concepção sociológica associada a Ferdinand Lassalle, para quem a Constituição real de um país é a soma dos fatores reais do poder — forças políticas, econômicas e sociais em disputa —, e a Constituição jurídica se limita a converter esses fatores em instituições. O caso descreve exatamente isso: quem tem capacidade de impor a vontade determina o destino da norma.
+
+- **A** Kelsen trata da validade da norma no interior do ordenamento, não da sua eficácia social; para ele, descumprir não invalida.
+- **C** Decisão política fundamental, em Schmitt, é o ato fundador da ordem — não a articulação política que sabota uma lei ordinária.
+- **D** O conceito ideal de constituição, que Canotilho atribui a Schmitt, é um critério de conteúdo mínimo do texto constitucional, e não uma explicação da ineficácia de leis municipais.
+
+#### Questão 2 · O que a validade não depende
+
+Um promotor sustenta, em audiência pública, que o art. 6º da Constituição "perdeu validade na prática", porque o direito à moradia não é cumprido há décadas na cidade. Do ponto de vista da concepção jurídico-normativa exposta no módulo, essa afirmação é:
+
+**A.** Correta, porque uma norma reiteradamente descumprida deixa de integrar o ordenamento.
+
+**B.** Correta, porque a eficácia social é o critério de pertinência de uma norma ao sistema jurídico.
+
+**C.** Incorreta, porque a validade da norma constitucional decorre de sua posição no ordenamento, e não do grau em que é cumprida.
+
+**D.** Incorreta, porque somente uma decisão judicial transitada em julgado poderia retirar a validade do dispositivo.
+
+**Resposta: C.**
+
+Na leitura de Kelsen apresentada no módulo, Direito é norma, e o mundo normativo é o do dever-ser, não o do ser. A Constituição é concebida como estrutura formal cuja nota característica é a normatividade, e a ordem jurídica é um sistema escalonado em cujo topo ela está, como fundamento de validade das demais normas. Descumprimento é problema de efetividade, não de validade — e é justamente por isso que a Constituição continua servindo de parâmetro contra o poder do momento.
+
+- **A** Confunde validade com eficácia: se descumprir revogasse, bastaria descumprir para revogar.
+- **B** Incorre no mesmo erro e ainda inverte a separação entre ser e dever-ser que sustenta a teoria pura.
+- **D** Atribui a decisão judicial um efeito que ela não tem sobre a vigência do dispositivo constitucional, além de aceitar a premissa equivocada do promotor.
+
+#### Questão 3 · A tensão permanente
+
+Assinale a alternativa que melhor traduz a concepção normativa de Constituição, tal como o módulo a apresenta:
+
+**A.** A Constituição é a soma dos fatores reais de poder; o texto escrito só vale quando os exprime fielmente.
+
+**B.** A Constituição é norma superior e sua validade não guarda qualquer relação com a realidade social que pretende regular.
+
+**C.** A Constituição é historicamente condicionada pela realidade de seu tempo e, ao mesmo tempo, dotada de força normativa para conformá-la, havendo entre norma e realidade uma tensão permanente.
+
+**D.** A Constituição é a decisão política fundamental do soberano, cuja validade independe de qualquer conteúdo material.
+
+**Resposta: C.**
+
+A concepção normativa é uma síntese: reconhece que a Constituição é condicionada historicamente, mas recusa reduzi-la ao reflexo das circunstâncias, porque ela tem existência própria decorrente de sua força normativa, pela qual ordena e conforma o contexto social e político. Dessa tensão permanente derivam as possibilidades e os limites do Direito Constitucional — ela não é defeito do campo, é o que o constitui.
+
+- **A** Estaciona no sentido sociológico e dissolve a normatividade.
+- **B** Isola a norma dos fatos a ponto de nada poder dizer sobre a distância entre o art. 6º e a realidade.
+- **D** Descreve a leitura decisionista, que explica a origem da Constituição, mas não a sua força como limite.
+
+#### Questão 4 · Material ou formal
+
+A Constituição de 1988 contém dispositivo sobre a organização de determinada atividade econômica de alcance restrito, sem relação direta com direitos fundamentais ou com a estrutura dos Poderes. Um aluno pergunta se essa norma é "constitucional de verdade". A resposta tecnicamente correta é:
+
+**A.** Não, porque só é constitucional a norma que trate de organização do poder ou de direitos fundamentais.
+
+**B.** Sim em sentido formal, porque consta do texto constitucional e foi produzida pelo processo constituinte próprio, ainda que não integre o núcleo material clássico.
+
+**C.** Sim em sentido material, porque tudo o que está no texto constitucional é, por definição, matéria constitucional.
+
+**D.** A pergunta não tem resposta, porque os critérios material e formal são sinônimos.
+
+**Resposta: B.**
+
+O critério **formal** é de posição e procedimento: são constitucionais as normas que aparecem no texto constitucional e resultam do poder constituinte originário ou de reforma, independentemente do seu conteúdo, situadas no ápice da hierarquia. O critério **material** é de conteúdo: normas que instituem órgãos, fixam competências, disciplinam controles recíprocos e limitam a ação estatal em favor dos direitos fundamentais. A norma do enunciado é formalmente constitucional sem pertencer ao núcleo material clássico — e é exatamente para descrever esse caso que os dois critérios existem.
+
+- **A** Aplica o critério material como se fosse o único, e nega estatuto constitucional a uma norma que está no texto.
+- **C** Inverte os critérios: estar no texto é o critério formal, não o material.
+- **D** Os dois critérios respondem a perguntas diferentes — o que a norma trata e onde ela está.
+
+#### Questão 5 · O que o art. 5º, § 1º, faz
+
+Uma associação pleiteia judicialmente uma prestação ligada a direito fundamental, e o ente público se defende alegando que "sem lei regulamentadora não há direito exigível". Qual dispositivo constitucional o módulo mobiliza para responder a essa defesa, e com que efeito?
+
+**A.** O art. 1º, porque o Estado Democrático de Direito impede qualquer alegação de ausência de lei.
+
+**B.** O art. 3º, porque os objetivos fundamentais da República criam direito subjetivo imediato a qualquer prestação.
+
+**C.** O art. 5º, § 1º, segundo o qual as normas definidoras dos direitos e garantias fundamentais têm aplicação imediata, de modo que a exigibilidade não depende de autorização legislativa posterior.
+
+**D.** O art. 6º, porque a lista de direitos sociais é exaustiva e dispensa qualquer outro fundamento.
+
+**Resposta: C.**
+
+O art. 5º, § 1º, é um comando dirigido a quem aplica o Direito, e o módulo o usa como teste concreto contra a leitura puramente sociológica: quem o invoca não está pedindo um favor à correlação de forças, está exigindo o cumprimento de uma norma. É esse dispositivo que impede tratar direito não cumprido como direito inexistente.
+
+- **A** O art. 1º fixa fundamentos do Estado, sem resolver a questão da aplicabilidade da norma definidora de direito.
+- **B** O art. 3º estabelece objetivos e tarefas, e o módulo é expresso ao distingui-los de direito subjetivo imediato a qualquer prestação.
+- **D** Erra em dois pontos: o art. 6º define quais são os direitos sociais, não a sua aplicabilidade; e o rol foi ampliado por emendas, o que mostra que não é exaustivo por natureza.
+
+#### Questão 6 · O preço do decisionismo
+
+Um governo sustenta que a Constituição vale porque expressa a decisão política fundamental tomada em 1988, e conclui que uma nova decisão política, tomada agora pela maioria, poderia redefinir livremente os direitos ali inscritos. Sobre esse raciocínio, é correto afirmar que:
+
+**A.** É coerente com a concepção normativa, que admite a revisão dos direitos pela maioria.
+
+**B.** Reproduz a leitura decisionista e, ao fazê-lo, converte a normatividade em função da vontade, em vez de limite dela.
+
+**C.** É idêntico à posição de Kelsen, para quem a norma fundamental é a vontade do soberano.
+
+**D.** Encontra apoio em Lassalle, para quem a Constituição escrita deve ser periodicamente reescrita.
+
+**Resposta: B.**
+
+O sentido político acerta ao mostrar que a Constituição não caiu do céu: o art. 1º é escolha tomada em momento histórico determinado. Mas se a Constituição se reduz à decisão, o passo seguinte é curto e perigoso — quem decidiu uma vez pode decidir de novo, inclusive contra os direitos que a decisão havia estabelecido. É o oposto do que o Módulo 1 chamou de constitucionalismo. Vale registrar, com o próprio Barroso, que a concepção decisionista é associada a uma visão autoritária da Constituição e do poder, ao antissemitismo e à ascensão do nazismo.
+
+- **A** A concepção normativa sustenta a força normativa da Constituição precisamente contra a vontade ocasional.
+- **C** Kelsen busca depurar o Direito da política e da vontade, e não fundá-lo nelas.
+- **D** Lassalle descreve a dependência do texto em relação aos fatores de poder; não prescreve reescrita periódica.
+
+#### Questão 7 · A palavra antes do conceito
+
+Ao mostrar que "constituição" já designou os atos normativos do imperador com força de lei, em Roma, o modo de ser da comunidade política, em Aristóteles, e a organização jurídica do povo, em Cícero, o módulo pretende demonstrar que:
+
+**A.** Os usos antigos são versões imperfeitas do conceito moderno, superadas pelo constitucionalismo.
+
+**B.** O conceito é plurívoco, e usos históricos distintos respondem a perguntas distintas — o que não autoriza, porém, um conceito tão largo que perca utilidade para o jurista.
+
+**C.** Qualquer ordenação social pode ser chamada de Constituição, sendo indiferente o critério adotado.
+
+**D.** Somente a Constituição escrita da modernidade merece o nome, razão pela qual os usos antigos devem ser descartados.
+
+**Resposta: B.**
+
+A plurivocidade é o ponto de partida do módulo: são usos diferentes da mesma palavra, e não versões imperfeitas do uso atual. Mas o módulo trava esse movimento imediatamente com a advertência de Mendes e Branco: um conceito tão amplo que se aplique à organização de qualquer coisa fica destituído de utilidade para o jurista. Reconhecer a pluralidade e recortar o objeto são operações complementares.
+
+- **A** Trata a história do conceito como progresso linear rumo ao sentido atual.
+- **C** É exatamente a diluição que o módulo recusa, apoiado em Mendes e Branco.
+- **D** Descarta a dimensão histórica que o módulo usa para situar o conceito moderno.
+
+#### Questão 8 · Converter poder em Direito
+
+Segundo a formulação de Barroso adotada no módulo, a função que define a Constituição moderna é:
+
+**A.** Descrever o funcionamento real das instituições de um Estado em determinado momento histórico.
+
+**B.** Registrar a correlação de forças sociais existente, conferindo-lhe estabilidade documental.
+
+**C.** Transportar o fenômeno político para o mundo jurídico, convertendo o poder em Direito.
+
+**D.** Substituir a política pela técnica jurídica, retirando dos órgãos eleitos a decisão sobre fins públicos.
+
+**Resposta: C.**
+
+O poder existe antes da Constituição e existiria sem ela; mede-se por força. O que a Constituição moderna faz é dar-lhe forma jurídica — competências, procedimentos e limites — e, com isso, torná-lo discutível em termos de validade, e não apenas de força. Essa é a função que as três teorias do módulo disputam: cada uma responde de modo diferente à pergunta sobre o quanto essa conversão realmente funciona.
+
+- **A** Descreve a Constituição histórica ou institucional em acepção ampla, que é antes um dado da realidade; a perspectiva moderna pretende ordenar, não apenas descrever.
+- **B** Reduz a Constituição ao registro da correlação de forças, que é a leitura sociológica.
+- **D** Converter poder em Direito não elimina a política: organiza-a juridicamente e submete-a a limites.
+
+#### Questão 9 · A emenda como prova do critério formal
+
+O art. 6º da Constituição passou a incluir "moradia" pela Emenda Constitucional n. 26/2000, "alimentação" pela EC n. 64/2010 e "transporte" pela EC n. 90/2015. Esse histórico ilustra, sobretudo:
+
+**A.** Que o rol de direitos sociais é meramente exemplificativo e pode ser alterado por lei ordinária.
+
+**B.** Que a Constituição muda por procedimento jurídico próprio, o que confirma o critério formal e afasta a ideia de que o texto se altera pela simples pressão dos fatos.
+
+**C.** Que a concepção sociológica está correta, porque os fatores reais de poder acabaram inscritos no texto.
+
+**D.** Que direitos sociais só existem depois de emenda, não integrando o projeto original de 1988.
+
+**Resposta: B.**
+
+O critério formal envolve posição e procedimento. O art. 6º não se alterou porque a realidade social mudou de opinião: alterou-se por emendas constitucionais, isto é, por atuação do poder constituinte de reforma segundo o rito próprio. Esse é o ponto do módulo quando diz que a Constituição se apresenta, ao mesmo tempo, como decisão e como norma.
+
+- **A** O art. 6º não se altera por lei ordinária, e sim por emenda constitucional.
+- **C** Se bastassem os fatores de poder, a inclusão dispensaria o procedimento — e é justamente o procedimento que a caracteriza.
+- **D** O texto de 1988 já trazia direitos sociais desde a redação original; as emendas ampliaram o rol.
+
+#### Questão 10 · Quem guarda a Constituição
+
+Mendes e Branco registram que, no período entre as duas guerras mundiais, instaurou-se um debate dominado por Carl Schmitt e Hans Kelsen em torno dos instrumentos de proteção da Constituição. Sobre esse debate e o seu desfecho histórico, é correto afirmar que:
+
+**A.** Era uma discussão puramente terminológica sobre o conceito de Constituição, sem consequência institucional.
+
+**B.** Tratava de saber quem deve proteger a Constituição, e a experiência posterior à Segunda Guerra respondeu com a expansão da Justiça Constitucional como instrumento dessa proteção.
+
+**C.** Foi encerrado pela vitória da tese de que o Parlamento é o guardião natural da Constituição.
+
+**D.** Não guarda relação com os sentidos de Constituição estudados neste módulo, pertencendo apenas ao direito processual.
+
+**Resposta: B.**
+
+A disputa entre os dois autores nunca foi apenas teórica: era sobre **quem** protege a Constituição e com quais instrumentos. O debate foi interrompido dramaticamente pela Segunda Guerra e, terminado o conflito, a Justiça Constitucional passou a ser o instrumento de proteção da Constituição, que então logra desfrutar de efetiva força de norma superior, resguardada por mecanismo jurídico de censura dos atos que a desrespeitem. A pergunta institucional será retomada no estudo do controle de constitucionalidade.
+
+- **A** A controvérsia tinha objeto institucional preciso, e não meramente conceitual.
+- **C** O Parlamento havia se revelado débil diante da escalada de abusos, e perdeu a primazia que o marcara até então.
+- **D** O debate é o desdobramento institucional direto da oposição entre o sentido político e o sentido jurídico-normativo trabalhados aqui.
 
 ## Síntese Para Revisão
 
