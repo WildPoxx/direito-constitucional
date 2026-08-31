@@ -479,6 +479,10 @@ button {
   min-height: 280px;
   font-family: Consolas, "Courier New", monospace;
   font-size: 0.86rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 .doc-list {

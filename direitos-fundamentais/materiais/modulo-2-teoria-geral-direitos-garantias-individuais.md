@@ -433,6 +433,152 @@ remédio, assinale a alternativa correta:
 - **C** Confunde os remédios. O habeas data serve ao conhecimento ou à retificação de informações **relativas à pessoa do impetrante** constantes de registros públicos (art. 5º, LXXII). A certidão pedida para instruir defesa não se enquadra automaticamente nessa hipótese.
 - **D** Repete o erro mais comum sobre a característica 7. Aplicabilidade imediata significa que a norma é preceptiva e vincula a autoridade desde já; não dispensa procedimento, requerimento nem, se for o caso, via judicial. Os próprios autores citam o acesso ao Judiciário como exemplo de garantia que depende de direito processual para operar.
 
+#### Questão 4
+
+Uma transportadora autuada por órgão de fiscalização pretende impetrar habeas corpus,
+alegando que a autuação atinge a atividade de seus motoristas. No mesmo dia, um turista alemão
+é preso sem ordem judicial em aeroporto brasileiro e procura orientação. Sobre a titularidade
+dos direitos fundamentais, assinale a alternativa correta:
+
+**A.** O turista pode impetrar habeas corpus; a pessoa jurídica invoca os direitos compatíveis com sua natureza, entre os quais não está a liberdade de locomoção.
+
+**B.** A transportadora pode impetrar habeas corpus, porque a universalidade assegura a todos os titulares exatamente os mesmos direitos; o turista, não, por não ser residente.
+
+**C.** Nenhum dos dois pode invocar o art. 5º: o caput menciona brasileiros e estrangeiros residentes, e a enumeração é taxativa.
+
+**D.** Ambos dependem de lei que estenda expressamente a titularidade a estrangeiros não residentes e a pessoas jurídicas.
+
+**Resposta: A.** O caput do art. 5º é ponto de partida, não resposta final: doutrina e Supremo acrescentam, por interpretação sistemática, estrangeiros não residentes, apátridas e pessoas jurídicas. Um estrangeiro de passagem, preso ilegalmente, impetra habeas corpus. A pessoa jurídica invoca o que é compatível com sua natureza — pode sofrer dano moral e pedir indenização, mas não sofre ameaça à liberdade de locomoção.
+
+- **B** Erra o conteúdo da universalidade. Ela significa titularidade ampla, não alcance idêntico em todo caso: há direitos de todas as pessoas e posições referidas apenas a alguns, e nem no polo passivo há uniformidade. Da universalidade não decorre que a transportadora tenha liberdade de locomoção a proteger.
+- **C** Trata a literalidade do caput como se fosse o alcance final da norma. O texto delimita o ponto de partida; a leitura sistemática, acolhida pela doutrina e pelo Supremo, alcança quem não está nomeado ali. Fosse taxativo, o turista preso ilegalmente não teria remédio algum.
+- **D** Inverte a relação entre Constituição e lei. Os direitos fundamentais fundam-se na Constituição, e é a lei que deve mover-se no âmbito deles, não o contrário (característica 7). Condicionar a titularidade a lei futura converteria norma preceptiva em programática.
+
+#### Questão 5
+
+Discute-se em audiência pública um projeto que regula o uso de reconhecimento facial por
+empresas em espaços privados abertos ao público. Um participante sustenta que, como a
+Constituição de 1988 não menciona a tecnologia, o assunto é de política pública e não envolve
+direito fundamental. Assinale a alternativa correta:
+
+**A.** O participante tem razão: sem previsão expressa da técnica empregada, não há direito fundamental em jogo.
+
+**B.** O caso se resolve pela imprescritibilidade dos direitos fundamentais, que impede o decurso do tempo de afetar posições personalíssimas.
+
+**C.** A historicidade significa que direitos proclamados em 1988 perdem validade quando surgem tecnologias que seus redatores não previram.
+
+**D.** A historicidade indica o contrário: os direitos se transformam diante das novas feições do poder, e a inviolabilidade da intimidade e da vida privada já é o ponto de partida da análise.
+
+**Resposta: D.** Os direitos fazem sentido dentro de um contexto histórico e são impulsionados pelas lutas contra poderes antigos e contra as novas feições do poder. Bobbio, citado por Mendes e Branco: os direitos nascem quando o aumento do poder do homem sobre o homem cria novas ameaças à liberdade do indivíduo. Vigilância digital é exatamente esse tipo de ameaça nova sobre uma proteção já existente.
+
+- **A** Confunde ausência de menção à tecnologia com ausência de direito. A proteção constitucional recai sobre a posição jurídica — intimidade, vida privada, imagem —, não sobre o instrumento pelo qual ela é ameaçada. Aceitar o argumento significaria deixar sem proteção toda ameaça inventada depois de 1988.
+- **B** Importa um nome do bloco C e ainda o aplica fora de lugar. A imprescritibilidade é tese de José Afonso da Silva, reproduzida por Lenza, e não vale como atributo geral; além disso, o problema do caso não é prazo, é âmbito de proteção diante de uma técnica de vigilância.
+- **C** Transforma historicidade em caducidade. A característica descreve afirmação e transformação dos direitos nos conflitos, com ampliação de proteção diante de ameaças novas; não prevê perda de validade por obsolescência tecnológica. É o oposto do que a citação de Bobbio afirma.
+
+#### Questão 6
+
+Um contrato de trabalho contém cláusula pela qual o empregado declara renunciar, por todo o
+vínculo, ao direito de manifestar opinião sobre a empresa em qualquer meio, e autoriza o
+monitoramento de suas mensagens pessoais. O empregado assinou o contrato. Assinale a
+alternativa correta:
+
+**A.** O consentimento resolve a questão: assinado o contrato, não há violação a direito fundamental a examinar.
+
+**B.** A cláusula é válida quanto à opinião e nula quanto ao monitoramento, porque somente o sigilo é declarado inviolável pela Constituição.
+
+**C.** O consentimento não legitima, por si, a preterição do direito: uma coisa é restringir o exercício com fundamento constitucional, outra é exigir renúncia permanente à posição jurídica.
+
+**D.** Sendo os direitos fundamentais irrenunciáveis, é inconstitucional qualquer restrição à liberdade de expressão dentro de uma relação de trabalho.
+
+**Resposta: C.** A inalienabilidade tem como consequência prática justamente esta: a preterição de um direito fundamental não está sempre justificada pelo simples fato de o titular consentir. E a irrenunciabilidade olha para o ato do titular — o que pode ocorrer é o não exercício do direito, nunca a sua renúncia. Restrições pontuais ao exercício são discutíveis no caso; a exigência de abandono permanente da posição, não.
+
+- **A** Toma o consentimento como salvo-conduto. Se bastasse assinar, a inalienabilidade não teria função alguma, e a assimetria de poder que caracteriza a contratação de trabalho ficaria fora do exame jurídico. O consentimento entra na análise; não a encerra.
+- **B** Constrói uma hierarquia que o texto não autoriza. Inviolabilidade é palavra do próprio texto constitucional e aparece sobre várias posições — consciência, sigilo da correspondência —, sem que isso torne as demais disponíveis. Em ambos os casos a pergunta é a mesma: está em jogo o núcleo de autodeterminação ou apenas o exercício?
+- **D** Converte indisponibilidade em absoluto e colide com a relatividade. Nem todos os direitos fundamentais são indisponíveis, e nada impede que o exercício de certos direitos seja restringido em prol de finalidade que a ordem constitucional acolha — o módulo dá o exemplo da liberdade de expressão que cede ao sigilo profissional.
+
+#### Questão 7
+
+Em debate sobre políticas de igualdade, um expositor afirma que a norma constitucional que
+assegura igualdade é "letra morta", já que a desigualdade material persiste décadas depois de
+1988. Considerando a distinção entre eficácia jurídica e efetividade, assinale a alternativa
+correta:
+
+**A.** Eficácia jurídica e efetividade são planos distintos: a norma pode fundamentar pretensões e invalidar atos incompatíveis ainda que sua realização social seja incompleta.
+
+**B.** O expositor tem razão: norma cujos efeitos não se realizam no mundo dos fatos é norma sem eficácia jurídica.
+
+**C.** Como a Constituição tem força normativa, a persistência da desigualdade só pode ser explicada por omissão do Judiciário em aplicá-la.
+
+**D.** A distinção não tem consequência prática, porque a eficácia dos princípios constitucionais se limita a orientar a interpretação de outras normas.
+
+**Resposta: A.** Barroso trabalha com dois planos: eficácia jurídica é a aptidão da norma para produzir efeitos no sistema — criar deveres, invalidar atos incompatíveis, fundamentar pretensões —, e efetividade é a realização desses efeitos no mundo dos fatos. Conviver com desigualdade material não prova que a norma seja enfeite.
+
+- **B** Colapsa os dois planos num só. Se a validade da norma dependesse de sua realização integral, quase todo o catálogo constitucional seria declarado inexistente — e, ao mesmo tempo, desapareceria o fundamento para exigir o que ainda não foi cumprido.
+- **C** Reduz a um único fator o que o módulo apresenta como tensão entre força normativa, realidade social, escolhas políticas e resistência do que já está posto. Limites fáticos, jurídicos, institucionais e orçamentários existem — devem ser demonstrados no caso concreto, não invocados como desculpa genérica nem descartados em bloco.
+- **D** Empobrece a eficácia dos princípios. Barroso registra três modos de atuação: fundamentar diretamente uma decisão, orientar a interpretação de outras normas e paralisar a aplicação de ato incompatível — eficácia direta, interpretativa e negativa. A interpretativa é uma delas, não o teto.
+
+#### Questão 8
+
+Um município deixa de instalar iluminação pública e de manter policiamento em bairro onde se
+repetem agressões contra mulheres. Acionado, sustenta em defesa que os direitos fundamentais
+impõem ao Estado apenas o dever de não agredir. Assinale a alternativa correta:
+
+**A.** A defesa está correta: direitos fundamentais são direitos de defesa e se esgotam em deveres de abstenção estatal.
+
+**B.** Só haveria dever de agir se lei ordinária tivesse especificado a política de segurança devida naquele bairro.
+
+**C.** O caso é de direito de participação, pois o que se discute é o controle das decisões públicas do município.
+
+**D.** A defesa desconsidera a índole ambivalente dos direitos e a dimensão objetiva, que gera deveres de proteção independentemente de quem reclama.
+
+**Resposta: D.** As funções não são estanques: Mendes e Branco falam em índole ambivalente, e o exemplo dos próprios autores é o direito à vida, que exige que o Estado não mate arbitrariamente e também que proteja as pessoas contra agressões de terceiros. Na dimensão objetiva, o direito funciona como valor da ordem constitucional e gera deveres de proteção que independem de quem reclama.
+
+- **A** Toma uma função pelo todo. Direitos de defesa, direitos a prestação e direitos de participação convivem no mesmo catálogo, e um mesmo direito pode exigir abstenção e ação. A tese da defesa apagaria os direitos a prestação inteiros.
+- **B** Repete o erro sobre a aplicabilidade imediata e ignora o conteúdo positivo da vinculação. As normas definidoras de direitos são preceptivas, não programáticas, e a vinculação pode tornar imperiosa a atuação do poder público; a inércia legislativa, aliás, é que enseja ação direta de inconstitucionalidade por omissão ou mandado de injunção.
+- **C** Erra a categoria. Participação é influir na formação da vontade política e controlar decisões públicas. O que está em jogo aqui é prestação material — serviços e política de proteção —, ainda que o controle também seja possível por outra via.
+
+#### Questão 9
+
+Numa reunião de estudos, um participante afirma que determinada posição jurídica, prevista em
+tratado internacional de que o Brasil é parte, não pode ser invocada por não constar do rol do
+art. 5º. Outro responde que, diante da abertura do catálogo, basta alegar qualquer pretensão
+socialmente relevante para que exista direito fundamental. Assinale a alternativa correta:
+
+**A.** O primeiro está certo: o rol do art. 5º é taxativo, e só o poder constituinte reformador pode ampliá-lo.
+
+**B.** O segundo está certo: a abertura do catálogo dispensa vínculo com o texto constitucional.
+
+**C.** Os dois erram: o art. 5º, § 2º, torna o rol exemplificativo, mas a abertura exige demonstrar o vínculo da pretensão com o texto, com os princípios adotados pela Constituição ou com tratado pertinente.
+
+**D.** A questão se resolve pela constitucionalização, característica que restringe os direitos fundamentais ao que está expresso no texto.
+
+**Resposta: C.** O art. 5º, § 2º, determina que os direitos e garantias expressos não excluem outros decorrentes do regime e dos princípios adotados pela Constituição, ou dos tratados internacionais de que o Brasil seja parte. O rol é exemplificativo — e abertura não autoriza inventar um direito a cada preferência.
+
+- **A** Desconhece o § 2º, que está no mesmo artigo que o participante invoca como taxativo. A abertura do catálogo é decisão do próprio constituinte originário, e não depende de emenda para operar.
+- **B** Converte abertura em licença. Sem a exigência de vínculo demonstrado com o texto, com os princípios ou com tratado, qualquer preferência viraria direito fundamental — e a categoria perderia a função de limitar o poder, que é a razão de existir dela.
+- **D** Força a constitucionalização a dizer o contrário do que diz. Ela identifica os direitos consagrados na ordem jurídica de um Estado e impõe-nos a todos os poderes constituídos, até ao de reforma; não fecha o catálogo. Mendes e Branco, aliás, tratam dos direitos decorrentes do regime em capítulo próprio, e não entre as características.
+
+#### Questão 10
+
+Considere duas situações. (i) Um servidor não consegue exercer direito previsto na Constituição
+porque a norma regulamentadora nunca foi editada. (ii) Um cidadão pretende impugnar ato de
+autoridade municipal que causa lesão ao patrimônio público em obra da prefeitura. Assinale a
+alternativa que indica corretamente os instrumentos cabíveis:
+
+**A.** (i) mandado de segurança; (ii) habeas data.
+
+**B.** (i) mandado de injunção; (ii) ação popular, que só pode ser proposta por cidadão.
+
+**C.** (i) ação popular; (ii) mandado de injunção.
+
+**D.** Em ambos cabe mandado de segurança, por ser remédio de cabimento residual.
+
+**Resposta: B.** O mandado de injunção é a via prevista para o caso de exercício de direito inviabilizado por falta de norma regulamentadora (art. 5º, LXXI). A ação popular tem por objeto ato lesivo ao patrimônio público, à moralidade administrativa, ao meio ambiente ou ao patrimônio histórico e cultural, e sua legitimidade é restrita ao cidadão (art. 5º, LXXIII).
+
+- **A** Troca as duas vias. O mandado de segurança pressupõe direito líquido e certo atingido por ilegalidade ou abuso de poder de autoridade, e não supre ausência de norma. O habeas data serve ao conhecimento ou à retificação de informações relativas à pessoa do impetrante constantes de registros públicos (art. 5º, LXXII) — nada tem com lesão ao patrimônio público.
+- **C** Inverte os objetos dos dois instrumentos. É um exemplo do que o módulo adverte: tratar o quadro dos remédios como cardápio, escolhendo o nome antes de qualificar o problema, quem praticou o ato e que requisitos a via exige.
+- **D** Lê residualidade como generalidade. O mandado de segurança é residual em relação ao habeas corpus e ao habeas data, mas continua exigindo requisitos próprios; e, onde a Constituição prevê via específica — LXXI e LXXIII —, é ela que corresponde ao problema.
+
 ### Roteiro de resposta discursiva
 
 Tema: **diferencie direito fundamental, garantia constitucional e remédio constitucional,
