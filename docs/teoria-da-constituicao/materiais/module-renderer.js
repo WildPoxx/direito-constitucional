@@ -60,6 +60,11 @@
       [...depois.matchAll(/^- \*\*([A-D])\*\*\s*([\s\S]*?)(?=\n- \*\*[A-D]\*\*|$)/gm)]
         .forEach((m) => { porAlternativa[m[1]] = m[2].trim(); });
       const geral = depois.split(/\n- \*\*[A-D]\*\*/)[0].trim();
+      // Observação opcional: tudo o que vier depois do último comentário por alternativa.
+      const linhasDepois = depois.split('\n');
+      let ultimoComentario = -1;
+      linhasDepois.forEach((l, k) => { if (/^- \*\*[A-D]\*\*/.test(l)) ultimoComentario = k; });
+      const nota = ultimoComentario >= 0 ? linhasDepois.slice(ultimoComentario + 1).join('\n').trim() : '';
 
       questoes.push({
         id: indice + 1,
@@ -68,7 +73,8 @@
         alternativas,
         correta: marcaResposta[1],
         explicacaoCorreta: geral,
-        explicacoes: porAlternativa
+        explicacoes: porAlternativa,
+        nota
       });
     });
 
@@ -220,7 +226,9 @@
         const marca = marcada ? ' · sua escolha' : '';
         return `<p class="${classes.join(' ')}"><span class="verdict">${a.chave} — ${selo}${marca}</span>${inline(texto)}</p>`;
       }).join('');
-      return { escolha, acertou, html: cabecalho + `<div class="answer-breakdown">${linhas}</div>` };
+      const paragrafos = (t) => t.split(/\n\s*\n/).map((par) => `<p>${inline(par.replace(/\s*\n\s*/g, ' ').trim())}</p>`).join('');
+      const notaHtml = q.nota ? `<div class="answer-note">${paragrafos(q.nota)}</div>` : '';
+      return { escolha, acertou, html: cabecalho + `<div class="answer-breakdown">${linhas}</div>` + notaHtml };
     }
 
     function conferir(id, forcar) {
@@ -271,6 +279,7 @@
           if (!texto) return;
           linhas.push(`  ${a.chave} (${certa ? 'correta' : 'nao se sustenta'}): ${semMarcacao(texto)}`);
         });
+        if (q.nota) linhas.push(`  Observacao: ${semMarcacao(q.nota).replace(/\s*\n\s*/g, ' ')}`);
         linhas.push('');
       });
       linhas.splice(3, 0, `Desempenho nas objetivas: ${acertos} de ${questoes.length}.`, '');
