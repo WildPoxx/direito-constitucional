@@ -8,7 +8,7 @@ professor: Mario Bastos
 unidade: I Unidade
 vinculado_a: Módulo 2 - Teoria Geral dos Direitos Fundamentais
 data: 2026-09-01
-status: publicado — revisão 2 (01/09/2026): ADI 3.105 detalhada e quadro das cinco perpetuidades
+status: publicado — revisão 3 (01/09/2026): contexto histórico da EC 41 e a categoria do regime jurídico
 uso: leitura de aprofundamento — não é cobrado em questão objetiva; é base para questão discursiva
 tags:
   - direito-constitucional
@@ -301,6 +301,17 @@ quem já se aposentara teria direito adquirido a não contribuir. A relatora, Mi
 votou pela inconstitucionalidade, acompanhada, entre outros, pelo Min. Carlos Ayres Britto.
 Prevaleceu o voto-vista do Min. Cezar Peluso, que redigiu o acórdão.
 
+Antes do que se decidiu, vale registrar o custo político da emenda, porque ele mede o que estava
+em jogo. A reforma foi conduzida por um governo recém-empossado, contra a resistência do
+funcionalismo público e de parte da própria base parlamentar. Em **14 de dezembro de 2003**, o
+Diretório Nacional do Partido dos Trabalhadores expulsou quatro parlamentares que haviam votado
+contra a reforma: a senadora Heloísa Helena e os deputados federais Luciana Genro, João Batista
+Araújo (Babá) e João Fontes. Em **6 de junho de 2004**, esse grupo fundou o Partido Socialismo e
+Liberdade, com registro definitivo no Tribunal Superior Eleitoral em 15 de setembro de 2005. Uma
+emenda em matéria previdenciária produziu uma cisão partidária e um partido novo. Guarde isso ao
+ler a discussão jurídica que segue: a controvérsia sobre direito adquirido, ali, não era exercício
+de escola — era a forma jurídica de um conflito distributivo real.
+
 Dois pontos do que se decidiu.
 
 **O alcance exato da tese.** O Tribunal não disse que inexiste direito adquirido em matéria
@@ -370,6 +381,42 @@ recurso extraordinário com repercussão geral, sem necessidade de ação rescis
 irretroatividade e as anterioridades. É matéria tributária — com ponte para a previdenciária,
 já que a contribuição previdenciária é tributo. E a tese não abole a coisa julgada: limita a sua
 projeção para o futuro nas relações que se renovam no tempo.
+
+### Direito adquirido e regime jurídico
+
+A fórmula que decidiu a ADI 3.105 merece ser isolada, porque organiza uma família inteira de
+casos e vale muito além da previdência: **não há direito adquirido a regime jurídico.**
+
+A distinção que ela opera é entre duas coisas que a linguagem comum funde. De um lado, o
+**direito já incorporado ao patrimônio** — a aposentadoria concedida, a parcela já recebida, o
+ato já consumado. De outro, o **regime jurídico**: o conjunto de regras que governa aquela
+posição dali em diante — alíquotas, requisitos, formas de cálculo, procedimentos. O primeiro está
+protegido contra a lei nova; o segundo, não. Alterar o regime não é retroagir sobre o direito; é
+dispor para o futuro. Mendes e Branco formulam o ponto sem rodeios: "o princípio constitucional
+do direito adquirido não se mostra apto a proteger as posições jurídicas contra eventuais
+mudanças dos institutos jurídicos ou dos próprios estatutos jurídicos previamente fixados"
+(p. 559-560).
+
+E há um critério por trás, que o Supremo explicitou num caso improvável — o FGTS. O Tribunal
+afastou ali a alegação de direito adquirido observando que o Fundo, "ao contrário do que sucede
+com as cadernetas de poupança, não tem natureza contratual, mas, sim, estatutária, por decorrer
+da Lei e por ela ser disciplinado. Assim, é de aplicar-se a ele a firme jurisprudência desta
+Corte no sentido de que não há direito adquirido a regime jurídico" (p. 559).
+
+Aí está o critério: **estatutário × contratual**. Onde a relação nasce de um contrato, as partes
+fixaram os termos, e alterá-los unilateralmente é retroagir sobre o que foi pactuado. Onde a
+relação nasce da lei e por ela é disciplinada — o servidor público, o FGTS, o regime
+previdenciário —, quem a criou pode alterá-la, porque não houve pacto sobre a permanência das
+regras. O servidor tem direito à aposentadoria que obteve; não tem direito a que as regras de
+custeio continuem sendo as do ano em que se aposentou.
+
+Dois limites, para que a fórmula não vire salvo-conduto. Primeiro, ela **opera para o futuro**:
+o que já se consumou permanece protegido, e é aí que o direito adquirido e o ato jurídico
+perfeito continuam a operar com força. Segundo, ela **não desativa a cláusula pétrea**: a mudança
+de regime segue sujeita ao exame do núcleo. Dizer que não há direito adquirido a regime jurídico
+não é dizer que o regime pode ser qualquer um — é dizer que a discussão **se desloca**: da
+retroatividade para a proporcionalidade, do art. 5º, XXXVI para o art. 60, § 4º, IV. É a mesma
+pergunta da seção anterior, chegando por outro caminho.
 
 Dois corolários. Primeiro, a **vedação ao retrocesso** não é absoluta. O Módulo 2 já a
 apresentou, com Mendes e Branco, como "aspecto polêmico" da vinculação do legislador: obtido
@@ -485,4 +532,4 @@ LENZA, Pedro. *Direito constitucional*. São Paulo: Saraiva, 2024. Localizadores
 
 MENDES, Gilmar Ferreira; BRANCO, Paulo Gustavo Gonet. *Curso de direito constitucional*. 13. ed. São Paulo: Saraiva Educação, 2018. Localizadores (páginas do PDF): cláusula pétrea como proteção do núcleo, p. 185; direitos sociais e cláusula pétrea, item 4.6.5, p. 189; criação de novos direitos fundamentais, item 4.6.6, p. 191; direitos previstos em tratados, item 4.6.7, p. 192; concepções filosóficas, item 3, p. 203-205; constitucionalização, item 5.4, p. 214-216; outros direitos decorrentes do regime e de tratados, item 11, p. 253-254; as quatro correntes sobre o status dos tratados, p. 986-989.
 
-**Nota de verificação.** As decisões do Supremo foram conferidas em fontes oficiais ou de referência (LexML, Planalto) quando acessíveis; a ADI 1.946 foi conferida por fonte secundária, com relator e data confirmados na nota 537 de Mendes e Branco; a relatoria e a composição de votos da ADI 3.105, bem como as teses dos Temas 881 e 885, foram conferidas em fontes secundárias de referência. **Nenhum inteiro teor foi lido integralmente.** Quem for citar em trabalho acadêmico deve consultar os acórdãos no portal do STF e a paginação impressa das obras doutrinárias.
+**Nota de verificação.** As decisões do Supremo foram conferidas em fontes oficiais ou de referência (LexML, Planalto) quando acessíveis; a ADI 1.946 foi conferida por fonte secundária, com relator e data confirmados na nota 537 de Mendes e Branco; a relatoria e a composição de votos da ADI 3.105, bem como as teses dos Temas 881 e 885, foram conferidas em fontes secundárias de referência. As datas da expulsão dos parlamentares do PT (14-12-2003), da fundação do PSOL (6-6-2004) e do registro definitivo no TSE (15-9-2005) foram conferidas em fontes públicas concordantes, com divergência menor de uma delas quanto ao mês da fundação. **Nenhum inteiro teor foi lido integralmente.** Quem for citar em trabalho acadêmico deve consultar os acórdãos no portal do STF e a paginação impressa das obras doutrinárias.
