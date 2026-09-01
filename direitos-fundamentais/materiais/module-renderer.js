@@ -153,7 +153,7 @@
     const html = questoes.map((q) => `
       <fieldset class="question-card interactive-question" data-questao="${q.id}">
         <legend>Questão ${q.id}</legend>
-        <p>${inline(q.enunciado)}</p>
+        ${q.enunciado.split(/\n\s*\n/).map((par) => `<p>${inline(par.replace(/\s*\n\s*/g, ' ').trim())}</p>`).join('')}
         <div class="options-list">${q.alternativas.map((a) => `
           <label class="option-row" data-alternativa="${a.chave}"><input type="radio" name="questao-${q.id}" value="${a.chave}">
           <span><strong>${a.chave}.</strong> ${inline(a.texto)}</span></label>`).join('')}
