@@ -732,6 +732,14 @@ pela pessoa e pelo fato; depois nomeie o direito, localize o dispositivo e expli
 garantia. Só então pergunte se existe instrumento constitucional específico e se os dados
 disponíveis bastam para cogitá-lo.
 
+### Para aprofundar
+
+A Questão 2 deste treino abriu uma cadeia de perguntas que não cabia no módulo: se o rito decide
+a matéria, se norma supralegal é cláusula pétrea, se o tratado do § 3º é, se todo direito
+fundamental é, e o que "tendente a abolir" protege. O percurso está reproduzido, na ordem em que
+aconteceu, no **[Aprofundamento 01 — Do tratado à cláusula pétrea](aprofundamento-01-do-tratado-a-clausula-petrea.html)**.
+Não é cobrado em questão objetiva; é base para questão discursiva.
+
 ## Referências
 
 BRASIL. Constituição da República Federativa do Brasil de 1988. Texto compilado. Brasília, DF: Presidência da República, Casa Civil. Disponível em: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm. Acesso em: 16 ago. 2026.
