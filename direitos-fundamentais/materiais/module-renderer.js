@@ -155,8 +155,11 @@
         <legend>Questão ${q.id}</legend>
         <p>${inline(q.enunciado)}</p>
         <div class="options-list">${q.alternativas.map((a) => `
-          <label class="option-row"><input type="radio" name="questao-${q.id}" value="${a.chave}">
+          <label class="option-row" data-alternativa="${a.chave}"><input type="radio" name="questao-${q.id}" value="${a.chave}">
           <span><strong>${a.chave}.</strong> ${inline(a.texto)}</span></label>`).join('')}
+        </div>
+        <div class="actions-panel actions-inline">
+          <button type="button" class="secondary-button" data-acao="conferir" data-alvo="${q.id}">Conferir resposta</button>
         </div>
         <div class="quiz-feedback" hidden aria-live="polite"></div>
       </fieldset>`).join('');
@@ -164,12 +167,13 @@
     slot.outerHTML = `
       <section class="quiz-panel" aria-labelledby="titulo-treino">
         <h2 id="titulo-treino">Treino</h2>
-        <p class="notice">Responda às questões e clique em <strong>Corrigir e gerar relatório</strong>.
-        A correção acontece no seu navegador: nada é enviado, nada é armazenado e nenhuma resposta fica
-        associada a você. Se quiser devolutiva do professor, baixe o relatório em TXT e envie por e-mail.</p>
+        <p class="notice">Marque a alternativa e clique em <strong>Conferir resposta</strong>, na própria questão:
+        o comentário abre ali mesmo, alternativa por alternativa. Ao final, se quiser um registro do conjunto,
+        use <strong>Gerar relatório</strong>. A correção acontece no seu navegador: nada é enviado, nada é
+        armazenado e nenhuma resposta fica associada a você.</p>
         ${html}
         <div class="actions-panel">
-          <button type="button" class="primary-button" data-acao="corrigir">Corrigir e gerar relatório</button>
+          <button type="button" class="primary-button" data-acao="corrigir">Conferir todas e gerar relatório</button>
           <button type="button" class="secondary-button" data-acao="limpar">Limpar respostas</button>
         </div>
         <div class="results-panel" hidden>
@@ -186,49 +190,98 @@
     const painel = document.querySelector('.quiz-panel');
     const relatorio = painel.querySelector('.results-panel');
     const textoRelatorio = painel.querySelector('.report-box');
+    const porId = {};
+    questoes.forEach((q) => { porId[q.id] = q; });
 
     const escolhida = (id) => {
       const marcado = painel.querySelector(`input[name="questao-${id}"]:checked`);
       return marcado ? marcado.value : null;
     };
 
+    // Comentario completo de uma questao: veredito da escolha + as quatro alternativas.
+    function detalhar(q) {
+      const escolha = escolhida(q.id);
+      const acertou = escolha === q.correta;
+      let cabecalho;
+      if (!escolha) {
+        cabecalho = `<p class="verdict-line"><strong>Sem resposta marcada.</strong> A correta é a <strong>${q.correta}</strong>.</p>`;
+      } else if (acertou) {
+        cabecalho = `<p class="verdict-line"><strong>Você acertou.</strong> A correta é a <strong>${q.correta}</strong>.</p>`;
+      } else {
+        cabecalho = `<p class="verdict-line"><strong>Você marcou ${escolha}.</strong> A correta é a <strong>${q.correta}</strong>.</p>`;
+      }
+      const linhas = q.alternativas.map((a) => {
+        const certa = a.chave === q.correta;
+        const marcada = a.chave === escolha;
+        const texto = certa ? q.explicacaoCorreta : (q.explicacoes[a.chave] || 'Sem comentário registrado para esta alternativa.');
+        const classes = ['answer-line', certa ? 'is-correct' : 'is-wrong'];
+        if (marcada) classes.push('is-chosen');
+        const selo = certa ? 'Correta' : 'Não se sustenta';
+        const marca = marcada ? ' · sua escolha' : '';
+        return `<p class="${classes.join(' ')}"><span class="verdict">${a.chave} — ${selo}${marca}</span>${inline(texto)}</p>`;
+      }).join('');
+      return { escolha, acertou, html: cabecalho + `<div class="answer-breakdown">${linhas}</div>` };
+    }
+
+    function conferir(id, forcar) {
+      const q = porId[id];
+      if (!q) return;
+      const cartao = painel.querySelector(`[data-questao="${id}"]`);
+      const campo = cartao.querySelector('.quiz-feedback');
+      const botao = cartao.querySelector('[data-acao="conferir"]');
+      if (!forcar && !campo.hidden) {           // segundo clique fecha
+        campo.hidden = true;
+        campo.innerHTML = '';
+        campo.className = 'quiz-feedback';
+        botao.textContent = 'Conferir resposta';
+        cartao.querySelectorAll('.option-row').forEach((l) => {
+          l.classList.remove('is-correct', 'is-chosen-wrong');
+        });
+        return;
+      }
+      const d = detalhar(q);
+      campo.className = 'quiz-feedback' + (d.escolha ? (d.acertou ? ' is-correct' : ' is-wrong') : '');
+      campo.innerHTML = d.html;
+      campo.hidden = false;
+      botao.textContent = 'Ocultar resposta';
+      cartao.querySelectorAll('.option-row').forEach((l) => {
+        const chave = l.dataset.alternativa;
+        l.classList.toggle('is-correct', chave === q.correta);
+        l.classList.toggle('is-chosen-wrong', chave === d.escolha && chave !== q.correta);
+      });
+      return d;
+    }
+
     function corrigir() {
       let acertos = 0;
-      const linhas = ['RELATORIO DE TREINO — Modulo 2', 'Teoria Geral dos Direitos Fundamentais e Garantias Individuais', ''];
+      const cartao = document.querySelector('.hero .tag');
+      const tituloPagina = document.querySelector('.hero h1');
+      const linhas = [
+        'RELATORIO DE TREINO' + (cartao ? ' — ' + semMarcacao(cartao.textContent) : ''),
+        tituloPagina ? semMarcacao(tituloPagina.textContent) : document.title,
+        ''
+      ];
       questoes.forEach((q) => {
-        const escolha = escolhida(q.id);
-        const acertou = escolha === q.correta;
-        if (acertou) acertos++;
-        const campo = painel.querySelector(`[data-questao="${q.id}"] .quiz-feedback`);
-        campo.hidden = false;
-        if (!escolha) {
-          campo.className = 'quiz-feedback';
-          campo.innerHTML = `<p><strong>Sem resposta.</strong> A alternativa correta é <strong>${q.correta}</strong>. ${inline(q.explicacaoCorreta)}</p>`;
-        } else if (acertou) {
-          campo.className = 'quiz-feedback is-correct';
-          campo.innerHTML = `<p><strong>Correta.</strong> ${inline(q.explicacaoCorreta)}</p>`;
-        } else {
-          campo.className = 'quiz-feedback is-wrong';
-          const porque = q.explicacoes[escolha];
-          campo.innerHTML =
-            `<p><strong>A alternativa ${escolha} não se sustenta.</strong> ${porque ? inline(porque) : ''}` +
-            `<br><br><strong>A correta é a ${q.correta}.</strong> ${inline(q.explicacaoCorreta)}</p>`;
-        }
-        linhas.push(`Questao ${q.id}: sua resposta = ${escolha || '(em branco)'} | correta = ${q.correta} | ${acertou ? 'ACERTOU' : 'REVER'}`);
-        if (escolha && !acertou && q.explicacoes[escolha]) {
-          linhas.push(`  Por que ${escolha} nao se sustenta: ${semMarcacao(q.explicacoes[escolha])}`);
-        }
-        linhas.push(`  Por que ${q.correta} e a correta: ${semMarcacao(q.explicacaoCorreta)}`);
+        const d = conferir(q.id, true);
+        if (d.acertou) acertos++;
+        linhas.push(`Questao ${q.id}: sua resposta = ${d.escolha || '(em branco)'} | correta = ${q.correta} | ${d.acertou ? 'ACERTOU' : 'REVER'}`);
+        q.alternativas.forEach((a) => {
+          const certa = a.chave === q.correta;
+          const texto = certa ? q.explicacaoCorreta : (q.explicacoes[a.chave] || '');
+          if (!texto) return;
+          linhas.push(`  ${a.chave} (${certa ? 'correta' : 'nao se sustenta'}): ${semMarcacao(texto)}`);
+        });
         linhas.push('');
       });
       linhas.splice(3, 0, `Desempenho nas objetivas: ${acertos} de ${questoes.length}.`, '');
-      linhas.push('AUTOAVALIACAO DA DISCURSIVA');
-      linhas.push('Releia o roteiro de resposta discursiva e verifique se seu texto:');
-      linhas.push('  ( ) definiu direito, garantia e remedio, uma frase cada;');
-      linhas.push('  ( ) indicou o artigo e o inciso pertinentes;');
-      linhas.push('  ( ) comecou pela pessoa e pelo fato, e nao pelo nome de uma acao;');
-      linhas.push('  ( ) concluiu que o cabimento do remedio depende dos requisitos do caso.');
-      linhas.push('');
+      const itensAuto = (main.dataset.autoavaliacao || '')
+        .split('|').map((i) => i.trim()).filter(Boolean);
+      if (itensAuto.length) {
+        linhas.push('AUTOAVALIACAO DA DISCURSIVA');
+        linhas.push('Releia o roteiro de resposta discursiva e verifique se seu texto:');
+        itensAuto.forEach((i) => linhas.push('  ( ) ' + i));
+        linhas.push('');
+      }
       linhas.push('Relatorio gerado no navegador. Nenhuma resposta foi enviada ou armazenada pelo site.');
       textoRelatorio.textContent = linhas.join('\n');
       relatorio.hidden = false;
@@ -237,27 +290,39 @@
 
     function limpar() {
       painel.querySelectorAll('input[type="radio"]').forEach((i) => { i.checked = false; });
-      painel.querySelectorAll('.quiz-feedback').forEach((f) => { f.hidden = true; f.innerHTML = ''; });
+      painel.querySelectorAll('.quiz-feedback').forEach((f) => {
+        f.hidden = true; f.innerHTML = ''; f.className = 'quiz-feedback';
+      });
+      painel.querySelectorAll('[data-acao="conferir"]').forEach((b) => { b.textContent = 'Conferir resposta'; });
+      painel.querySelectorAll('.option-row').forEach((l) => { l.classList.remove('is-correct', 'is-chosen-wrong'); });
       relatorio.hidden = true;
       textoRelatorio.textContent = '';
     }
 
+    const nomeArquivo = () => {
+      const t = document.querySelector('.hero h1');
+      const base = t ? slug(semMarcacao(t.textContent)) : 'modulo';
+      return `relatorio-treino-${base}.txt`;
+    };
+
     painel.addEventListener('click', (evento) => {
-      const acao = evento.target.dataset && evento.target.dataset.acao;
+      const alvo = evento.target.closest ? evento.target.closest('[data-acao]') : null;
+      const acao = alvo && alvo.dataset.acao;
       if (!acao) return;
+      if (acao === 'conferir') return void conferir(alvo.dataset.alvo, false);
       if (acao === 'corrigir') return corrigir();
       if (acao === 'limpar') return limpar();
       if (acao === 'copiar') {
         const texto = textoRelatorio.textContent;
         if (navigator.clipboard) {
           navigator.clipboard.writeText(texto).then(
-            () => { evento.target.textContent = 'Relatório copiado'; },
-            () => { evento.target.textContent = 'Selecione e copie o texto acima'; }
+            () => { alvo.textContent = 'Relatório copiado'; },
+            () => { alvo.textContent = 'Selecione e copie o texto acima'; }
           );
         } else {
-          evento.target.textContent = 'Selecione e copie o texto acima';
+          alvo.textContent = 'Selecione e copie o texto acima';
         }
-        setTimeout(() => { evento.target.textContent = 'Copiar relatório'; }, 2500);
+        setTimeout(() => { alvo.textContent = 'Copiar relatório'; }, 2500);
         return;
       }
       if (acao === 'baixar') {
@@ -265,7 +330,7 @@
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'relatorio-treino-modulo-2-direitos-fundamentais.txt';
+        a.download = nomeArquivo();
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
