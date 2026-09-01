@@ -8,7 +8,7 @@ professor: Mario Bastos
 unidade: I Unidade
 aula: Aula 02
 data_aula: 2026-08-17
-status: publicado — revisão 6 (01/09/2026): enunciados contextualizados nas objetivas doutrinárias
+status: publicado — revisão 7 (01/09/2026): Questão 2 e subseção dos tratados com o regime do RE 466.343
 tags:
   - direito-constitucional
   - direitos-fundamentais
@@ -272,24 +272,40 @@ Constitucional n. 45/2004: os tratados e convenções sobre direitos humanos apr
 Casa do Congresso Nacional, em dois turnos, por três quintos dos votos dos respectivos membros,
 **equivalem a emendas constitucionais**.
 
-Mendes e Branco extraem daí uma consequência estreita, e o advérbio é deles: nesses casos, e
-apenas nesses, essas normas gozam de status constitucional. Os tratados aprovados pelo
-procedimento comum ingressam com status infraconstitucional — e o Supremo, depois da EC 45,
-tem-lhes atribuído caráter **supralegal**: acima da lei ordinária, abaixo da Constituição. Antes da
-EC 45, o Tribunal recusou status constitucional a direitos previstos em tratados como o Pacto
-de San José.
+Repare no verbo: "que **forem** aprovados". O rito qualificado é uma opção do Congresso, não uma
+obrigação — Mendes e Branco registram que a emenda "não impede que se opte pela aprovação de
+tratado sobre direitos humanos pelo procedimento comum" (p. 192). E extraem daí uma
+consequência estreita, com o advérbio deles: nesses casos, e apenas nesses, essas normas gozam de
+status constitucional.
+
+Os tratados aprovados pelo procedimento comum ingressam com status infraconstitucional. Para
+eles, o Supremo fixou, no **RE 466.343** (julgado em 3-12-2008, por 5 votos a 4), o caráter
+**supralegal**: acima da lei ordinária, abaixo da Constituição. Foi esse julgamento — sobre a
+prisão do depositário infiel, vedada pelo Pacto de San José — que deu origem à **Súmula
+Vinculante 25**. A divergência, liderada pelo Min. Celso de Mello, sustentava a natureza
+constitucional desses tratados em razão da matéria, alargando o "bloco de constitucionalidade";
+Lenza acompanha a divergência e anota que "este tema ainda não está fechado". Antes da EC 45, o
+Tribunal recusava status constitucional a direitos previstos em tratados como o Pacto de San José.
+
+Desde 2004, três tratados de direitos humanos entraram pelo rito do § 3º e têm, por isso, status
+de norma constitucional: a **Convenção sobre os Direitos das Pessoas com Deficiência** e seu
+Protocolo Facultativo (Decreto Legislativo 186/2008; Decreto 6.949/2009), o **Tratado de
+Marraqueche** (DL 261/2015; Decreto 9.522/2018) e a **Convenção Interamericana contra o
+Racismo, a Discriminação Racial e Formas Correlatas de Intolerância** (DL 1/2021; Decreto
+10.932/2022). Os demais — Pacto de San José, Pacto Internacional de Direitos Civis e Políticos e
+os outros aprovados pelo rito comum — valem como normas supralegais.
 
 Guarde a distinção, porque ela é fina e é cobrada: **internalizar não é constitucionalizar.** Um
 tratado pode valer no Brasil sem estar na Constituição. E é o **rito de aprovação**, não a
 matéria do tratado, que define o status.
 
-**Um aviso de honestidade, porque este é terreno disputado.** Os próprios autores registram
-quatro correntes sobre o status dos tratados de direitos humanos — supraconstitucional,
-constitucional, de lei ordinária e supralegal — e adotam a última. Há corrente respeitável que
-lê o § 2º como cláusula aberta de recepção, atribuindo estatura constitucional automática aos
-tratados de direitos humanos; contra ela pesa o argumento de que, se o § 2º bastasse, o § 3º
-seria supérfluo. Este curso segue a obra de referência e o entendimento do Supremo — e diz que
-segue, em vez de apresentar uma escolha como se fosse consenso.
+**Um aviso de honestidade, porque este é terreno disputado.** Mendes e Branco registram quatro
+correntes sobre o status dos tratados de direitos humanos — supraconstitucional, constitucional,
+de lei ordinária e supralegal — e adotam a última, que é a que prevaleceu por 5 a 4. A corrente da
+estatura constitucional lê o § 2º como cláusula aberta de recepção; contra ela pesa o argumento
+de que, se o § 2º bastasse, o § 3º seria supérfluo. Este curso ensina o regime que prevalece no
+Supremo e diz que o faz — sem esconder que uma das obras de referência do próprio curso fica com
+a divergência.
 
 Isso devolve a pergunta à característica 5, e a resposta é coerente: o que separa os dois
 vocabulários é a positivação numa ordem jurídica concreta, e a constitucionalização é a técnica
@@ -299,7 +315,8 @@ materialmente fundamentais que estão fora da lista" do catálogo.
 *Localizadores, na edição do* Curso de direito constitucional *(13. ed., 2018) usada no curso:
 constitucionalização, p. 214-216; tratados de direitos humanos e a EC 45, p. 192; direitos
 materialmente fundamentais fora da lista, p. 253-254; as quatro correntes sobre o status dos
-tratados, p. 986-989.* **São páginas do arquivo PDF, não da edição impressa** — confira a
+tratados, p. 986-989. Em Lenza (2024): os três tratados pelo § 3º e "este tema ainda não está
+fechado", p. 5.340-5.373; RE 466.343, divergência e SV 25, p. 15.115-15.171.* **São páginas do arquivo PDF, não da edição impressa** — confira a
 paginação do exemplar antes de citar em trabalho seu.
 
 ## 6. Quem pode invocar
@@ -469,8 +486,11 @@ pretensões de índole filosófica ou inscritas em documentos internacionais. No
 ressalvam que as duas esferas não estão "em esferas estanques, incomunicáveis entre si", e que a
 técnica de recepção varia no direito comparado; no Brasil, os direitos fundamentais definem-se
 como direitos constitucionais. Em outro ponto da obra (item 4.6.7, p. 192), tratam do art. 5º,
-§ 3º, introduzido pela EC 45/2004, e do entendimento do Supremo sobre os tratados aprovados
-pelo rito comum.
+§ 3º, introduzido pela EC 45/2004 — tratados e convenções sobre direitos humanos "que forem
+aprovados", em cada Casa, em dois turnos, por três quintos dos votos, "serão equivalentes às
+emendas constitucionais" — e registram que a emenda "não impede que se opte pela aprovação de
+tratado sobre direitos humanos pelo procedimento comum". Para os aprovados pelo rito comum, o
+Supremo fixou, no RE 466.343 (2008), o status supralegal: acima da lei, abaixo da Constituição.
 
 Considere agora a situação. O Congresso Nacional aprova, no mesmo semestre, dois tratados
 internacionais de direitos humanos. O primeiro passa pelo rito do § 3º — dois turnos em cada
@@ -483,16 +503,16 @@ alternativa correta:
 
 **A.** O estudante tem razão: a internalização, por si só, equipara os dois tratados, e a constitucionalização deixa de operar como critério.
 
-**B.** Ambos adquirem status constitucional, porque o art. 5º, § 2º já incorpora automaticamente ao catálogo os direitos decorrentes de tratados.
+**B.** Ambos adquirem status constitucional em razão da matéria, porque o art. 5º, § 2º já incorpora ao catálogo os direitos decorrentes de tratados — tese que prevalece no Supremo.
 
 **C.** Nenhum dos dois pode ser invocado internamente, porque direitos humanos e direitos fundamentais ocupam esferas estanques.
 
-**D.** Apenas o tratado aprovado pelo rito do art. 5º, § 3º ganha status constitucional; o outro ingressa com status infraconstitucional, ao qual o Supremo tem atribuído caráter supralegal.
+**D.** Ambos versam sobre direitos humanos, mas só o aprovado pelo rito do art. 5º, § 3º equivale a emenda constitucional e ingressa com status de norma constitucional; o aprovado pelo rito comum, embora vinculante, tem status supralegal — acima da lei, abaixo da Constituição —, conforme o regime fixado pelo Supremo no RE 466.343.
 
-**Resposta: D.** A partir da EC 45/2004, os tratados sobre direitos humanos aprovados em dois turnos, por três quintos dos votos, em cada Casa, equivalem a emendas constitucionais — e Mendes e Branco são taxativos: nesses casos, e apenas nesses, essas normas gozam de status constitucional. Os aprovados pelo procedimento comum valem com status infraconstitucional, e o Supremo, depois da EC 45, tem-lhes atribuído caráter supralegal. É o rito de aprovação, não a matéria do tratado, que define o status — e é isso que o critério dos autores, lido com as ressalvas que eles mesmos fazem, já dizia.
+**Resposta: D.** Os dois tratados têm a mesma matéria — direitos humanos — e é por isso que o caso serve de teste: a matéria, sozinha, não constitucionaliza. O § 3º é facultativo na própria letra ("que forem aprovados"), e Mendes e Branco são taxativos: nos casos de aprovação pelo rito qualificado, "e apenas nesses", as normas do tratado gozam de status constitucional. Os aprovados pelo procedimento comum valem — vinculam o Estado brasileiro —, mas com status supralegal, conforme o Supremo fixou no RE 466.343 (julgado em 3-12-2008), entendimento que deu origem à Súmula Vinculante 25. Desde 2004, três tratados entraram pelo § 3º: a Convenção sobre os Direitos das Pessoas com Deficiência (2009), o Tratado de Marraqueche (2018) e a Convenção Interamericana contra o Racismo (2022). Internalizar não é constitucionalizar; o rito é que decide.
 
 - **A** Confunde internalizar com constitucionalizar. Entrar no ordenamento e entrar na Constituição são operações distintas — e é justamente essa distinção que o critério descreve. A objeção do estudante funcionaria contra uma versão dura do critério; contra o que os autores escrevem, um traço divisor entre expressões, com ressalva expressa de que as esferas se comunicam, ela não se sustenta.
-- **B** Atribui ao § 2º um efeito que ele não produz sozinho. A tese da estatura constitucional automática existe e é levada a sério na doutrina, mas não é a adotada pela obra de referência nem pelo Supremo. Contra ela pesa um argumento simples: se o § 2º bastasse, o § 3º seria supérfluo.
+- **B** A tese existe e é séria: foi a divergência do Min. Celso de Mello no RE 466.343 — natureza constitucional em razão da matéria —, e Lenza a acompanha. Mas perdeu por 5 votos a 4, e a alternativa erra exatamente ao afirmar que ela prevalece. Contra ela pesa ainda um argumento simples: se o § 2º bastasse, o § 3º seria supérfluo.
 - **C** Inverte a ressalva que o próprio enunciado transcreve. Os autores dizem que a distinção conceitual não coloca direitos humanos e direitos fundamentais em esferas estanques e incomunicáveis: há interação recíproca, e as constituições não raro acolhem em seu catálogo direitos proclamados em declarações internacionais.
 
 #### Questão 3
