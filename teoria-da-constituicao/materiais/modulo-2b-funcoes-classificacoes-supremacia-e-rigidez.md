@@ -1,311 +1,485 @@
 ---
 tipo: texto de apoio ao aluno
 materia: Teoria da Constituição
-modulo: 2
+unidade: I
+modulo: 2B
 deck: "Deck HTML - Módulo 2B - Funções Classificações Supremacia e Rigidez.html"
 tema: "Funções, classificações, supremacia e rigidez"
-status: versão com camada crítica e integração modular
-data: 2026-07-24
+status: versão autoral revisada — aguarda revisão docente
+data: 2026-09-01
 tags:
   - direito-constitucional
   - teoria-da-constituicao
   - texto-de-apoio
-  - modulo-2
+  - modulo-2b
+  - classificacoes-constitucionais
   - supremacia-constitucional
   - rigidez-constitucional
-  - classificacoes-constitucionais
 ---
 
 # Funções, Classificações, Supremacia E Rigidez
 
-## Texto De Apoio Ao Aluno - Módulo 2B
+## Módulo 2B — Unidade I
 
-Este texto acompanha o segundo deck do Módulo 2. No Módulo 1, vimos que o constitucionalismo moderno nasce ligado à limitação do poder, à organização do Estado e à garantia de direitos. No Módulo 2A, estudamos diferentes sentidos de Constituição: texto, norma, prática, fato social, decisão política e norma superior.
+> **Pergunta de partida:** dizer que a Constituição de 1988 é "rígida e analítica" muda alguma coisa, ou é só rótulo de manual?
 
-Agora damos um passo adiante. Se a Constituição pode ser compreendida de vários modos, precisamos perguntar: **o que ela faz dentro da ordem jurídica e política?**
+No Módulo 2A, a discussão era o que a palavra Constituição designa. Chegamos a uma síntese: ela é norma superior e, ao mesmo tempo, está em tensão permanente com a realidade que pretende conformar.
 
-O módulo gira em torno de quatro ideias: **funções**, **classificações**, **supremacia** e **rigidez**. Essas categorias parecem técnicas, mas não são neutras. Elas ajudam a explicar como a Constituição organiza o poder, estabiliza compromissos políticos, protege determinadas escolhas e, ao mesmo tempo, pode esconder tensões entre promessa jurídica e realidade social.
+Agora o passo é outro. Se a Constituição é norma superior, **como isso funciona na prática?** O que ela faz dentro da ordem jurídica, por que se classifica de um jeito e não de outro, o que sustenta a sua posição no topo e o que a impede de ser mudada como uma lei qualquer.
 
-A pergunta central do deck é:
+Este módulo vai mostrar que classificação constitucional não é vocabulário decorativo. Cada critério corresponde a uma consequência que se pode medir — em quórum, em turnos, em quem pode propor, em o que pode ser afastado. E vai mostrar também que a própria doutrina diverge sobre onde encaixar a Constituição brasileira. Essa divergência não é defeito: é a prova de que classificar é uma decisão teórica, com efeitos, e não a leitura de uma etiqueta colada no objeto.
 
-**classificar a Constituição ajuda a entender como ela opera?**
+## Ao Final Deste Módulo, Você Deve Ser Capaz De
 
-A resposta é sim, desde que a classificação seja usada como instrumento de análise, e não como lista decorativa de conceitos.
+1. enunciar as funções que a Constituição cumpre ao mesmo tempo e apontar onde elas entram em conflito;
+2. distinguir sentido material e sentido formal, e reconhecer, no texto de 1988, uma norma apenas formalmente constitucional;
+3. demonstrar a rigidez da Constituição comparando o art. 60 com os arts. 47, 61, 65 e 69;
+4. explicar por que a supremacia depende da rigidez e por que exige um mecanismo de controle;
+5. tomar posição fundamentada na controvérsia sobre a Constituição de 1988 ser rígida ou super-rígida.
 
-## 1. O Fio Condutor: Do Conceito À Operação Da Constituição
+---
 
-O Módulo 2A mostrou que a Constituição pode ser vista de maneiras diferentes. Lassalle chama atenção para os fatores reais de poder. Schmitt destaca a decisão política fundamental. Kelsen enfatiza a Constituição como norma superior do sistema jurídico. As concepções contemporâneas acrescentam a Constituição como prática institucional e como projeto normativo.
+## 1. Uma Emenda Em Tramitação
 
-O Módulo 2B conecta essas ideias ao funcionamento concreto da Constituição.
+Imagine que chega ao Congresso uma proposta de emenda constitucional. Ela quer mudar a idade mínima para a aposentadoria, tema que hoje está no texto da Constituição.
 
-Quando falamos em **funções**, perguntamos o que a Constituição realiza: organiza, limita, legitima, integra e dirige.
+Três perguntas aparecem antes de qualquer discussão sobre o mérito.
 
-Quando falamos em **classificações**, perguntamos que tipo de Constituição estamos analisando e quais efeitos decorrem disso.
+A primeira: **quem podia ter proposto isso?** Não é qualquer um. A segunda: **quantos votos são necessários, e em quantas votações?** Não é a mesma conta de uma lei comum. A terceira: **existe algum limite de conteúdo — algo que uma emenda simplesmente não pode fazer, por mais votos que reúna?**
 
-Quando falamos em **supremacia**, retomamos a ideia de Constituição como norma superior.
+Se as três respostas fossem "tanto faz", a Constituição não seria superior a nada. Ela seria um texto com nome pomposo, alterável na mesma velocidade e pelas mesmas maiorias que alteram qualquer lei. O fato de as respostas **não** serem "tanto faz" é o que este módulo estuda.
 
-Quando falamos em **rigidez**, perguntamos por que a Constituição não pode ser modificada como uma lei comum.
+E note: nenhuma dessas perguntas se responde com teoria. Todas se respondem abrindo a Constituição e comparando artigos.
 
-Assim, este deck não abandona o anterior. Ele transforma os conceitos do 2A em instrumentos de leitura da Constituição em funcionamento.
+## 2. A Constituição Em Números
 
-## 2. A Constituição Cumpre Várias Funções Ao Mesmo Tempo
+Abra o texto constitucional e leia estes dispositivos, nesta ordem — a comparação entre eles é o coração do módulo:
 
-A Constituição não serve para uma única coisa. Ela cumpre funções simultâneas.
+- o [art. 59](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm), que lista o que o processo legislativo compreende, começando pelas emendas à Constituição;
+- o [art. 60, caput e incisos I a III](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm), sobre quem pode propor emenda;
+- o [art. 60, §§ 1º a 5º](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm), sobre quando não se pode emendar, como se vota, quem promulga, o que não pode ser abolido e o que não pode voltar na mesma sessão legislativa;
+- o [art. 61](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm), sobre quem pode propor lei complementar ou ordinária;
+- o [art. 47](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm), sobre como se decide, em regra, em cada Casa;
+- o [art. 65](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm), sobre em quantos turnos a Casa revisora aprecia um projeto de lei;
+- o [art. 69](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm), sobre o quórum da lei complementar.
 
-Ela **organiza** o Estado ao distribuir competências, estruturar poderes e fixar procedimentos. Sem essa função, não haveria mapa básico de quem pode decidir, como decide e dentro de quais limites.
+Agora ponha lado a lado o que você leu:
 
-Ela **limita** o poder, impondo freios, garantias e formas de controle. A limitação constitucional impede que a autoridade pública se confunda com vontade pessoal do governante.
+| | Emenda constitucional | Lei complementar | Lei ordinária |
+|---|---|---|---|
+| **Quem propõe** | Rol fechado do art. 60, I a III | Rol amplo do art. 61 | Rol amplo do art. 61 |
+| **Turnos** | Dois, em cada Casa (art. 60, § 2º) | Turno único na Casa revisora (art. 65) | Turno único na Casa revisora (art. 65) |
+| **Quórum** | Três quintos dos membros (art. 60, § 2º) | Maioria absoluta (art. 69) | Maioria dos votos, presente a maioria absoluta (art. 47) |
+| **Limite de conteúdo** | Art. 60, § 4º | Não há equivalente | Não há equivalente |
+| **Quem promulga** | As Mesas da Câmara e do Senado (art. 60, § 3º) | Sanção presidencial | Sanção presidencial |
 
-Ela **legitima** a ordem política, oferecendo um fundamento jurídico para o exercício da autoridade estatal. O poder passa a se apresentar como poder constitucionalmente autorizado.
+É esta tabela — e não uma definição — que responde à pergunta de abertura. Quando se diz que a Constituição de 1988 é **rígida**, está se dizendo exatamente isto: quatro exigências a mais, todas verificáveis no texto.
 
-Ela também **integra** a comunidade política, na medida em que estabelece referências comuns, direitos, objetivos e compromissos institucionais.
+Guarde ainda o **art. 60, § 4º**, que voltará adiante. Ele diz que não será objeto de deliberação a proposta de emenda **tendente a abolir** a forma federativa de Estado, o voto direto, secreto, universal e periódico, a separação dos Poderes e os direitos e garantias individuais. Repare na expressão "tendente a abolir": ela não proíbe tocar nesses temas, proíbe caminhar na direção de suprimi-los. A diferença entre as duas leituras vai render uma controvérsia inteira.
 
-Em Constituições contemporâneas, pode-se acrescentar uma função **dirigente** ou **programática**: a Constituição não apenas descreve instituições, mas orienta políticas públicas, fixa tarefas para o futuro e promete transformação social.
+## 3. O Que A Constituição Faz Ao Mesmo Tempo
 
-### Ponto De Tensão
+Antes de classificar, convém enunciar o que se está classificando. A Constituição não serve a uma coisa só; cumpre várias funções simultaneamente.
 
-Essas funções podem entrar em conflito. Uma Constituição pode limitar o Estado e, ao mesmo tempo, exigir que ele atue para realizar direitos sociais. Pode estabilizar a ordem existente e, ao mesmo tempo, prometer sua transformação. Por isso, a Constituição moderna é simultaneamente instrumento de conservação, disputa e mudança.
+Ela **organiza**: distribui competências, estrutura órgãos, fixa procedimentos. Sem isso não haveria mapa de quem decide o quê.
 
-Aqui reaparece a discussão do Módulo 1: o constitucionalismo moderno limita o absolutismo, mas também organiza a sociedade burguesa. A Constituição pode conter o poder político e, ao mesmo tempo, estabilizar relações sociais marcadas por desigualdade material.
+Ela **limita**: impõe freios, garantias e controles, de modo que a autoridade pública não se confunda com a vontade pessoal de quem governa. Foi o tema do Módulo 1.
 
-## 3. Constituição Em Sentido Material E Formal
+Ela **legitima**: oferece fundamento jurídico ao exercício do poder, que passa a se apresentar como poder constitucionalmente autorizado — e não apenas como força.
 
-Nem toda norma constitucional tem o mesmo sentido.
+Ela **integra**: estabelece referências comuns, direitos e compromissos que permitem a uma comunidade política dividida continuar sendo uma comunidade.
 
-Em **sentido formal**, é constitucional a norma que está incluída no documento constitucional, seguindo o procedimento próprio de aprovação e reforma. O critério aqui é a posição da norma no texto.
+E, em Constituições como a nossa, ela **dirige**: não descreve apenas instituições, mas fixa tarefas e programas para o futuro.
 
-Em **sentido material**, é constitucional a norma que trata de matéria propriamente constitucional, como forma de Estado, organização dos poderes, competências, direitos fundamentais e estrutura básica da ordem política. O critério aqui é o conteúdo.
+Essas funções brigam entre si, e é bom que o aluno perceba isso cedo. A mesma Constituição limita o Estado e exige que ele atue; estabiliza a ordem existente e promete transformá-la. Aqui reaparece a tensão do Módulo 1: o constitucionalismo moderno conteve o poder político e, no mesmo movimento, organizou juridicamente uma sociedade marcada por desigualdade material. A Constituição é, ao mesmo tempo, instrumento de conservação e de mudança — e boa parte das disputas constitucionais é disputa sobre qual das duas funções deve prevalecer em um caso concreto.
 
-Essa distinção é importante porque mostra que o texto constitucional pode conter normas com densidade política muito diferente. Também ajuda a entender por que nem toda emenda, por exemplo, afeta da mesma maneira a identidade da Constituição.
+## 4. Material E Formal: O Que A Distinção Resolve
 
-Em Constituições analíticas, como a brasileira de 1988, essa diferença aparece com muita força. O texto constitucional reúne normas centrais sobre Estado, direitos e democracia, mas também inclui detalhes institucionais, regras administrativas, regimes específicos e compromissos setoriais.
+O 2A já apresentou o par. Aqui ele vira ferramenta.
 
-### Ponto De Tensão
+**Material** é critério de conteúdo. Moraes define a Constituição material como o conjunto de regras materialmente constitucionais, estejam ou não codificadas em documento único (MORAES, 2017). Barroso detalha esse conteúdo em três categorias: normas que organizam o poder político, normas que definem direitos fundamentais e normas que indicam valores e fins públicos — as programáticas (BARROSO, 2020).
 
-O sentido formal protege o texto. O sentido material ajuda a identificar o núcleo político da Constituição. A pergunta crítica é: quais temas uma sociedade decide elevar ao nível constitucional e quais interesses ficam fora dessa proteção superior?
+**Formal** é critério de posição e procedimento. Constituição formal é a consubstanciada por escrito, em documento solene estabelecido pelo poder constituinte originário (MORAES, 2017).
 
-Essa pergunta dialoga diretamente com Lassalle. O texto constitucional diz o que a ordem jurídica reconhece como superior. Mas os fatores reais de poder ajudam a explicar por que certos interesses conseguem chegar à Constituição e outros permanecem fora dela.
+A pergunta interessante não é qual dos dois é o certo. É o que acontece quando eles **não coincidem**.
 
-## 4. Constituição Dirigente, Compromissória E Simbólica
+Barroso mostra os dois desencontros possíveis. De um lado, há normas **apenas formalmente constitucionais**: têm essa natureza por integrarem o documento formal, não pela matéria de que tratam. Ele cita dois exemplos da Constituição de 1988 — o regime jurídico dos serviços notariais, no art. 236, e o status federal do Colégio Pedro II, no art. 242 (BARROSO, 2020). Lenza usa exatamente o mesmo exemplo, por caminho próprio, ao explicar por que as Constituições analíticas descem a minúcias que "deveriam estar em leis infraconstitucionais" (LENZA, 2024).
 
-Algumas classificações procuram mostrar não apenas a forma da Constituição, mas sua função histórica.
+Vale abrir e ler, porque a experiência é instrutiva. O art. 242, § 2º, diz, com todas as letras: "O Colégio Pedro II, localizado na cidade do Rio de Janeiro, será mantido na órbita federal." Esta frase tem a mesma hierarquia normativa que o art. 5º. Alterá-la exige três quintos, dois turnos e iniciativa restrita.
 
-Uma **Constituição dirigente** não se limita a organizar o poder. Ela também indica objetivos, tarefas e direções para a ação estatal. É o caso de Constituições que falam em desenvolvimento, redução de desigualdades, justiça social, políticas públicas e transformação da realidade.
+Do outro lado, há normas **materialmente constitucionais fora da Constituição**. Barroso registra que o fenômeno é menos comum, mas existe, e aponta como exemplo brasileiro diversas normas da Lei de Introdução às normas do Direito Brasileiro (BARROSO, 2020).
 
-Uma **Constituição compromissória** procura acomodar forças políticas diversas. Ela transforma conflitos sociais em compromissos institucionais relativamente estáveis. Por isso, muitas vezes contém normas abertas, princípios amplos e soluções negociadas.
+E há um dispositivo que embaralha de vez a fronteira. O art. 5º, § 3º, incluído pela Emenda Constitucional n. 45/2004, estabelece que tratados de direitos humanos aprovados em cada Casa, em dois turnos, por três quintos dos votos, **equivalem às emendas constitucionais**. Ou seja: o critério formal passou a admitir entrada por uma porta que não é a do texto original. Lenza registra que essa novidade sugere hoje uma perspectiva classificatória mista, e não mais estanque (LENZA, 2024).
 
-Uma **Constituição simbólica** é aquela em que o texto promete mais do que a realidade institucional consegue realizar. O símbolo continua importante, mas a distância entre promessa e efetividade pode ser grande.
+## 5. Os Critérios De Classificação — E A Briga Sobre O Nome
 
-Essas categorias ajudam a pensar a Constituição brasileira de 1988, que possui traços dirigentes, compromissórios e, em certos pontos, também simbólicos.
+A doutrina classifica Constituições por vários critérios. Barroso trabalha com quatro, e a lista dele é a mais enxuta das três que este módulo utiliza (BARROSO, 2020):
 
-### Leitura Crítica
+| Critério | O que pergunta | Espécies |
+|---|---|---|
+| **Forma** | Como as normas são veiculadas? | escrita · não escrita |
+| **Origem** | Houve participação popular na elaboração? | promulgada (democrática) · outorgada |
+| **Estabilidade do texto** | Mudar a Constituição é mais difícil que mudar uma lei? | rígida · flexível · semirrígida |
+| **Conteúdo** | Quanta minúcia o texto assume? | sintética · analítica |
 
-A Constituição dirigente revela uma aposta forte: usar a forma constitucional para orientar transformação social. Mas essa aposta enfrenta limites materiais. Direitos sociais, redução das desigualdades e justiça distributiva dependem de orçamento, correlação de forças, estrutura econômica, capacidade estatal e vontade política.
+Moraes acrescenta o modo de elaboração — dogmática ou histórica — e trata separadamente conteúdo e extensão (MORAES, 2017). Lenza chega a mais de uma dezena de critérios, incluindo sistemática, dogmática, correspondência com a realidade e função (LENZA, 2024).
 
-A Constituição compromissória, por sua vez, mostra que o texto constitucional muitas vezes nasce de acordos entre forças sociais desiguais. O compromisso pode estabilizar a democracia, mas também pode preservar ambiguidades. Já a Constituição simbólica aponta uma pergunta incômoda: quando a promessa constitucional serve para mobilizar lutas sociais e quando serve apenas para administrar frustrações?
+E aqui aparece a primeira divergência do módulo, que é sobre o **nome** do terceiro critério. Barroso e Moraes o chamam de estabilidade. Lenza prefere **alterabilidade**, e registra o mapa da discórdia: Araujo e Serrano Nunes Júnior falam em alterabilidade; José Afonso da Silva e Alexandre de Moraes falam em estabilidade; Pinto Ferreira fala em consistência (LENZA, 2024).
 
-## 5. Constituição Sintética E Constituição Analítica
+Parece preciosismo, e não é. "Estabilidade" descreve um resultado — o texto muda pouco. "Alterabilidade" descreve um procedimento — o texto exige mais para mudar. São coisas diferentes: uma Constituição pode ser difícil de alterar e ainda assim ser emendada dezenas de vezes, como a nossa. O nome do critério já embute uma tese sobre o que se está medindo.
 
-Outra classificação importante distingue Constituições **sintéticas** e **analíticas**.
+**Nenhum autor está errado aqui.** O que o aluno precisa levar é o hábito de perguntar, diante de qualquer classificação: o que exatamente este critério mede?
 
-Uma **Constituição sintética** é mais breve, concentrada em estruturas fundamentais do Estado, direitos centrais e regras gerais de organização política. O exemplo clássico é a Constituição dos Estados Unidos, de 1787, cujo texto original é curto e deixa grande parte da concretização constitucional para a prática institucional, para a legislação e para a interpretação judicial.
+## 6. Sintética E Analítica: Por Que A Curta Dura E A Longa Protege
 
-Uma **Constituição analítica** é mais extensa e detalhada. Ela regula muitos temas no próprio texto constitucional, incluindo direitos, políticas públicas, administração, tributação, ordem econômica, ordem social e procedimentos institucionais. A Constituição brasileira de 1988 é o exemplo mais importante para nós.
+Esta é a classificação com a consequência prática mais visível, e por isso merece uma seção própria.
 
-É importante não confundir os critérios. **Sintética ou analítica** diz respeito à extensão e ao grau de detalhamento do texto. **Dirigente ou não dirigente** diz respeito à presença de tarefas, fins e programas constitucionais. A Constituição brasileira de 1988 é analítica e dirigente. A Constituição estadunidense é sintética e historicamente mais aberta à concretização por interpretação, costumes constitucionais e precedentes.
+**Sintéticas** são as Constituições enxutas, que fixam princípios e normas gerais de regência do Estado e deixam o resto para a legislação, a prática institucional e a interpretação. **Analíticas** são as que examinam e regulamentam, no próprio texto constitucional, tudo o que consideraram relevante. Os três autores usam os mesmos exemplos: a Constituição norte-americana e a brasileira de 1988 (BARROSO, 2020; LENZA, 2024; MORAES, 2017).
 
-### Debate Comparativo: Estados Unidos E Brasil
+O ponto que interessa é o **efeito** de cada formato, e aqui Barroso e Lenza chegam à mesma explicação por caminhos independentes.
 
-Durante muito tempo, parte da doutrina brasileira viu com simpatia o modelo sintético. A crítica à Constituição brasileira de 1988 dizia, em linhas gerais, que um texto muito longo, detalhado e dirigente poderia gerar excesso de constitucionalização, insegurança jurídica, judicialização de conflitos e promessas irrealizáveis.
+Barroso: o formato sintético "tende a garantir-lhes maior estabilidade, na medida em que se abrem mais facilmente à evolução interpretativa, sem necessidade de modificações formais" (BARROSO, 2020). Lenza: as sintéticas "não descem a minúcias, motivo pelo qual são mais duradouras, na medida em que os seus princípios estruturais são interpretados e adequados aos novos anseios pela atividade da Suprema Corte" (LENZA, 2024).
 
-Essa crítica não deve ser descartada. Constituições muito extensas podem realmente produzir conflitos interpretativos, disputas permanentes sobre constitucionalidade e dificuldade de realização material de direitos.
+Leia devagar, porque a frase esconde uma troca. Uma Constituição curta dura mais **porque delega**. Ela sobrevive sem reforma formal justamente por transferir a quem interpreta — sobretudo à sua Corte Suprema — a tarefa de dizer o que o texto significa em cada época. Estabilidade do documento, aqui, é outro nome para mobilidade do sentido.
 
-Mas a experiência recente dos Estados Unidos mostra o outro lado do problema. Uma Constituição sintética depende muito da força dos costumes constitucionais, da autocontenção dos atores políticos, da estabilidade institucional e da interpretação judicial. Quando esses elementos entram em crise, a abertura do texto pode ser usada para ampliar unilateralmente o poder executivo, tensionar direitos e disputar o alcance das instituições.
+A Constituição analítica faz a troca inversa. Ela escreve o parâmetro em vez de delegá-lo. Isso custa caro: texto longo, emendas frequentes, disputa constitucional sobre temas que poderiam ser legais. Mas compra uma coisa: em momentos de conflito, o parâmetro já está escrito, e quem quiser mudá-lo precisa reunir três quintos em dois turnos, em cada Casa, com iniciativa restrita — e não apenas convencer o intérprete do momento.
 
-Em 2025 e 2026, entidades como a American Bar Association e o Brennan Center passaram a registrar forte preocupação com ataques ao rule of law, expansão do poder executivo, questionamentos à revisão judicial, conflitos sobre cidadania, eleições, poderes de emergência e limites institucionais da administração Trump (American Bar Association, 2025a; American Bar Association, 2025b; Brennan Center for Justice, 2026).
+Nenhum dos dois modelos é superior em abstrato. O que o aluno deve levar é a pergunta certa: **o que cada formato entrega a quem, e o que cobra em troca?** A Constituição sintética entrega flexibilidade e cobra dependência do intérprete. A analítica entrega parâmetro explícito e cobra rigidez, extensão e litígio.
 
-A comparação não autoriza uma conclusão simplista. Não se trata de dizer que o modelo brasileiro é superior em tudo, nem que o modelo estadunidense fracassou. O ponto pedagógico é outro: **o grau de detalhamento constitucional importa**. Em momentos de crise, uma Constituição analítica e dirigente pode oferecer parâmetros mais explícitos para defesa de direitos e instituições. Ao mesmo tempo, sua efetividade continua dependendo de tribunais, atores políticos, mobilização social e correlação de forças.
+Vale registrar que essa escolha foi consciente entre nós. José Afonso da Silva, em passagem citada por Moraes, afirma que o Constituinte de 1988 "rejeitou a constituição sintética, que é constituição negativa" e "assumiu o novo texto a característica de constituição-dirigente, enquanto define fins e programa de ação futura" (José Afonso da Silva, citado por MORAES, 2017).
 
-## 6. Classificações São Instrumentos, Não Fim Em Si
+E vale registrar também a crítica, que vem de dentro. Barroso considera que a Constituição brasileira, "sem embargo de suas múltiplas virtudes reais e simbólicas, é — mais do que analítica — casuística no tratamento de diversos temas, regulando-os em pormenor" (BARROSO, 2020). Ser analítica é uma escolha defensável; descer ao Colégio Pedro II é outra conversa.
 
-As classificações constitucionais são úteis quando ajudam a compreender consequências práticas. Elas perdem utilidade quando viram catálogo decorativo.
+## 7. Supremacia: O Que A Sustenta E O Que Ela Exige
 
-É possível classificar Constituições por vários critérios:
+Supremacia constitucional significa que a Constituição ocupa posição superior no ordenamento: leis, atos administrativos e decisões públicas só valem se com ela compatíveis.
 
-- quanto à forma: escrita ou não escrita;
-- quanto à origem: promulgada, outorgada ou pactuada;
-- quanto à estabilidade: rígida, flexível ou semirrígida;
-- quanto à extensão: sintética ou analítica;
-- quanto ao modo de elaboração: dogmática ou histórica;
-- quanto à função histórica: dirigente, compromissória, garantia ou simbólica.
+Dito assim, parece uma afirmação de fé. Barroso mostra que não é: a supremacia **decorre** de fundamentos identificáveis — a posição de preeminência do poder constituinte sobre o poder constituído, a rigidez constitucional, o conteúdo material das normas que a Constituição contém e a sua vocação de permanência (BARROSO, 2020).
 
-O ponto mais importante é sempre perguntar: **o que muda, na prática, quando adotamos uma classificação?**
+Repare no segundo item da lista. **A rigidez é fundamento da supremacia, não sinônimo dela.** Uma Constituição que pudesse ser alterada por lei ordinária não seria superior à lei ordinária: seria uma lei ordinária com nome maior. É por isso que este módulo trata os dois temas juntos, e nessa ordem.
 
-Classificar a Constituição de 1988 como rígida, analítica, dirigente e promulgada, por exemplo, não é mero rótulo. Isso ajuda a compreender seu processo de reforma, sua densidade normativa, sua promessa social e sua relação com a legitimidade democrática.
+Mas há um segundo passo, e ele é decisivo. Afirmar superioridade não produz superioridade. Como diz Barroso, para assegurar a supremacia a ordem jurídica contempla a **jurisdição constitucional**, e parte importante dela é o **controle de constitucionalidade**, destinado a declarar a invalidade e paralisar a eficácia dos atos normativos incompatíveis com a Constituição (BARROSO, 2020).
 
-### Ponto De Tensão
+Aqui o módulo fecha a pergunta que o 2A deixou aberta. Lá vimos que Schmitt e Kelsen disputaram, entre as guerras, quem deve proteger a Constituição, e que a resposta institucional do pós-guerra foi a expansão da Justiça Constitucional. No Brasil, essa resposta está no texto: o art. 102, *caput*, atribui ao Supremo Tribunal Federal, **precipuamente, a guarda da Constituição**, e o inciso I lhe dá, originariamente, a ação direta de inconstitucionalidade e a ação declaratória de constitucionalidade.
 
-Toda classificação simplifica a realidade. Ela ilumina certos aspectos e deixa outros em segundo plano. Por isso, o estudante não deve decorar classificações como se fossem respostas finais. Deve usá-las como instrumentos para pensar efeitos jurídicos, disputas políticas e limites sociais da Constituição.
+Isso tem um efeito que não é neutro, e convém dizê-lo com todas as letras: a supremacia **transforma conflito político em conflito jurídico**. Quando uma disputa chega à Constituição, ela ganha linguagem técnica, critérios de validade e um órgão que decide. Isso pode proteger direitos contra maiorias ocasionais — foi exatamente o argumento do Módulo 1. E pode também deslocar para tribunais decisões que o debate democrático não chegou a tomar. As duas coisas são verdadeiras ao mesmo tempo, e o Direito Constitucional vive dessa ambivalência.
 
-## 7. Supremacia Constitucional
+## 8. Rigidez Em Quatro Números — E Uma Controvérsia
 
-A supremacia constitucional significa que a Constituição ocupa posição superior no ordenamento jurídico.
+Volte à tabela da seção 2. A rigidez da Constituição de 1988 não é uma qualidade abstrata: são quatro exigências que a emenda tem e a lei não tem.
 
-Isso quer dizer que:
+Lenza faz exatamente essa demonstração. A rigidez está no art. 60: o § 2º exige três quintos dos membros de cada Casa, em dois turnos, enquanto a lei ordinária e a complementar são votadas em turno único na Casa revisora (art. 65), com maioria simples (art. 47) e maioria absoluta (art. 69), respectivamente; e a iniciativa do art. 60, I a III, é restrita, ao passo que a do art. 61 é geral (LENZA, 2024).
 
-- as leis devem respeitar a Constituição;
-- os atos administrativos devem respeitar a Constituição;
-- as decisões dos poderes públicos devem respeitar a Constituição;
-- os poderes constituídos só agem validamente dentro dos limites constitucionais.
+Ele acrescenta um dado histórico útil: à exceção da Constituição de 1824, considerada semirrígida, **todas** as Constituições brasileiras foram rígidas, inclusive a de 1988 (LENZA, 2024). Rigidez, entre nós, não é invenção do constituinte de 1987–1988.
 
-Sem supremacia, a Constituição se tornaria apenas um texto político sem força estruturante. Com supremacia, ela se transforma em parâmetro de validade, organização e controle.
+O caso de 1824 merece atenção porque mostra a categoria funcionando. Barroso define semirrígida como aquela em que parte da Constituição — geralmente as normas materialmente constitucionais — só pode ser alterada por procedimento mais difícil, enquanto o restante segue o processo legislativo comum (BARROSO, 2020). Moraes transcreve o dispositivo que produzia esse efeito, o art. 178 da Carta de 1824, segundo o qual era "só Constitucional o que diz respeito aos limites, e attribuições respectivas dos Poderes Politicos, e aos Direitos Politicos, e individuaes dos Cidadãos", podendo o restante ser alterado sem aquelas formalidades (MORAES, 2017). Ou seja: em 1824, a distinção material/formal **era** o critério de alterabilidade. A distinção da seção 4 já teve, no Brasil, consequência procedimental direta.
 
-Da supremacia decorrem temas centrais do Direito Constitucional, como o controle de constitucionalidade e a própria ideia de hierarquia normativa.
+### A Controvérsia: Rígida Ou Super-rígida?
 
-### Relação Com Kelsen
+Agora a divergência que dá substância ao módulo.
 
-A supremacia constitucional prepara a compreensão da pirâmide normativa de Kelsen. Em uma visão hierárquica do ordenamento, normas inferiores retiram validade de normas superiores. A Constituição ocupa o ponto mais alto do direito positivo estatal: leis, decretos, atos administrativos e decisões públicas precisam ser compatíveis com ela.
+**Moraes sustenta que a Constituição de 1988 é super-rígida.** O argumento: em regra ela se altera por processo legislativo diferenciado — o que a torna rígida —, mas, excepcionalmente, em alguns pontos é imutável, por força das cláusulas pétreas do art. 60, § 4º (MORAES, 2017).
 
-Isso ajuda a entender por que a Constituição não pode ser apenas uma declaração política. Se ela é o fundamento de validade do sistema jurídico, precisa ter força normativa superior. Caso contrário, a pirâmide normativa perde sua pedra angular.
+**Lenza recusa a categoria.** Ele registra a posição de Moraes e então observa que ela "não parece ser a posição adotada pelo STF, que tem admitido a alteração de matérias contidas no art. 60, § 4.º, desde que a reforma não tenda a abolir os preceitos ali resguardados e dentro de uma ideia de razoabilidade e ponderação" (LENZA, 2024).
 
-### Leitura Crítica
+A divergência se resolve — ou não se resolve — na leitura de duas palavras do texto constitucional. O art. 60, § 4º, não proíbe emenda **sobre** aquelas matérias; proíbe proposta **tendente a abolir**. Quem lê "imutável" chega em Moraes. Quem lê "não pode caminhar para a supressão, mas pode disciplinar" chega em Lenza.
 
-A supremacia constitucional tem uma dimensão emancipatória: permite controlar abusos, invalidar leis incompatíveis com direitos fundamentais e limitar maiorias ocasionais. Mas também tem uma dimensão política delicada: desloca conflitos sociais para instituições jurídicas, especialmente tribunais.
+Note o que está em jogo, e não é vocabulário. Se as cláusulas pétreas tornam alguns pontos imutáveis, o Congresso não pode legislar sobre eles por emenda, ponto final. Se elas apenas vedam a tendência abolitiva, o Congresso pode emendar e o Supremo julga, caso a caso, se aquela emenda específica caminhou ou não na direção proibida. **A classificação decide quem tem a última palavra e quando.** É esse o sentido de dizer que classificação não é etiqueta.
 
-Isso não é automaticamente bom ou ruim. O ponto é perceber que a supremacia transforma disputas políticas em disputas constitucionais. Quando um conflito chega à Constituição, ele ganha linguagem jurídica, critérios de validade e possibilidade de decisão por órgãos de controle. Essa juridificação pode proteger direitos, mas também pode afastar certas decisões do debate democrático direto.
+> **Uma advertência de método.** Ao recusar a super-rigidez, Lenza menciona um julgado sobre reforma da previdência e taxação de inativos. Este módulo **relata o que Lenza diz** e não afirma nada por conta própria sobre esse julgamento: não conferimos número de processo, ementa nem tese oficial no repositório do Supremo. Se você for usar esse precedente em trabalho ou prova, abra o acórdão. A regra vale para todos nós — a mesma que a Atividade Dirigida 01 cobra de vocês.
 
-## 8. Rigidez Constitucional
+## 9. Classificar A Constituição De 1988: Duas Listas
 
-Rigidez constitucional significa que a Constituição não pode ser modificada do mesmo modo que uma lei ordinária.
+Chegamos ao exercício que o módulo prepara. Como se classifica a Constituição brasileira?
 
-A rigidez funciona como proteção da estabilidade constitucional. Ela dificulta mudanças impulsivas, preserva a identidade do texto constitucional e impõe maior deliberação política para reformas relevantes.
+Depende de quem responde.
 
-No caso brasileiro, a Constituição de 1988 é rígida porque a aprovação de emendas exige procedimento mais gravoso do que o das leis comuns.
+**Moraes** apresenta sete adjetivos: formal, escrita, legal, dogmática, promulgada (democrática, popular), rígida, analítica (MORAES, 2017).
 
-Rigidez, porém, não significa imobilidade. A Constituição pode ser reformada, interpretada e atualizada. O que a rigidez impede é a banalização da mudança constitucional.
+**Lenza** apresenta dezesseis: promulgada, escrita, analítica, formal, dogmática, rígida, reduzida, eclética, pretende ser normativa, principiológica, definitiva, autônoma, garantia, dirigente, social e expansiva (LENZA, 2024).
 
-### Graus De Rigidez
+As duas listas concordam no essencial — promulgada, escrita, formal, dogmática, rígida, analítica — e divergem na extensão do que vale a pena classificar. Nenhuma das duas é "a" classificação da Constituição de 1988. São escolhas sobre quantos critérios têm rendimento.
 
-Nem toda Constituição rígida é rígida do mesmo modo. Há graus diferentes de dificuldade para alteração constitucional.
+O teste de qualidade, para você, é este: **para cada adjetivo, saber dizer uma consequência.** Promulgada remete à legitimidade democrática de origem, ligada ao processo constituinte posterior à ditadura militar. Rígida explica por que a mudança exige três quintos em dois turnos. Analítica explica por que o Colégio Pedro II está no texto. Dirigente explica por que a Constituição fixa objetivos, e não só proibições — foi o art. 3º que lemos no 2A.
 
-Uma Constituição pode exigir maioria qualificada, votação em dois turnos, aprovação por diferentes casas legislativas, participação dos Estados, referendo popular ou limites materiais à reforma.
+Um adjetivo do qual você não consegue extrair consequência alguma é um adjetivo que você decorou, não aprendeu.
 
-No Brasil, a rigidez aparece no procedimento de emenda previsto no art. 60 da Constituição de 1988. A proposta precisa passar por quórum qualificado de três quintos, em dois turnos, em cada Casa do Congresso Nacional. Além disso, há limites circunstanciais e materiais, incluindo as cláusulas pétreas.
+## 10. Ponte Para O Próximo Passo
 
-### Rigidez, Direitos E Segurança Jurídica
+Duas perguntas ficam abertas, e cada uma abre um módulo.
 
-A rigidez constitucional está associada à proteção de direitos fundamentais, à estabilidade institucional e à segurança jurídica.
+A primeira: se existe um poder que faz a Constituição e outro que só pode reformá-la dentro dos limites que ela fixou, **que poder é esse, de onde vem e o que o limita?** É o tema do poder constituinte, originário e derivado, e das cláusulas pétreas como limite material da reforma.
 
-Ela protege direitos fundamentais porque impede que maiorias políticas ocasionais retirem direitos constitucionais com a mesma facilidade com que alteram leis comuns.
+A segunda: se a Constituição é superior e o Supremo é seu guardião, **como exatamente se afasta a lei incompatível?** É o tema do controle de constitucionalidade, que depende de tudo o que se viu aqui — supremacia, rigidez e a distinção entre o que é e o que não é matéria constitucional.
 
-Ela favorece estabilidade institucional porque torna mais previsíveis as regras básicas do jogo político.
+---
 
-Ela produz segurança jurídica porque permite que cidadãos, instituições e poderes públicos saibam que o centro do sistema jurídico não será alterado de forma banal.
+## Estudo Ativo
 
-Sem alguma rigidez, a Constituição corre o risco de ser esvaziada. Se o legislador ordinário pudesse mudar a Constituição sempre que quisesse, a Constituição deixaria de funcionar como limite superior e passaria a depender da vontade política imediata.
+### Atividade Da Aula: Classificar Com Consequência
 
-### Ponto De Tensão
+Em dupla ou trio, preencham o quadro. A coluna que vale é a última.
 
-A rigidez protege a Constituição contra maiorias passageiras. Mas também pode congelar compromissos históricos e dificultar mudanças desejadas por novos sujeitos políticos. Por isso, a rigidez precisa ser compreendida como técnica de estabilidade e como escolha política sobre o grau de abertura do futuro.
+| Adjetivo | Critério a que responde | Consequência prática, em uma frase |
+|---|---|---|
+| Promulgada | | |
+| Escrita | | |
+| Rígida | | |
+| Analítica | | |
+| Dirigente | | |
+| Formal | | |
 
-Em uma leitura crítica, a pergunta é: o que a rigidez protege? Direitos fundamentais? Estrutura democrática? Compromissos sociais? Interesses econômicos constitucionalizados? A resposta depende do conteúdo protegido e da correlação de forças que atua sobre a Constituição.
+Ao final, escolham **um** adjetivo da lista de Lenza que não está na de Moraes e respondam em duas linhas: ele acrescenta alguma consequência, ou só acrescenta uma palavra?
 
-## 9. Aplicação: Como Classificar A Constituição De 1988
+### Caso De Retorno
 
-O exercício do deck propõe classificar a Constituição de 1988 e justificar cada critério com uma consequência prática.
+Retome a emenda da abertura e responda, em um parágrafo por item:
 
-Uma resposta madura deve mostrar que a classificação não é um jogo de etiquetas. Ela serve para explicar efeitos jurídicos e políticos.
+1. Um deputado, sozinho, apresenta a proposta. Ela pode tramitar? Justifique pelo art. 60, I a III, comparando com o art. 61.
+2. A proposta é aprovada por maioria absoluta, em turno único, em cada Casa. Foi aprovada? Justifique pelos arts. 60, § 2º, 47 e 69.
+3. O país está sob estado de defesa decretado na semana anterior. O que muda? Justifique pelo art. 60, § 1º.
+4. A proposta reduz — sem eliminar — uma garantia individual. Segundo Moraes, ela é admissível? E segundo Lenza? Qual leitura do art. 60, § 4º, sustenta cada resposta?
 
-Se a Constituição de 1988 é **promulgada**, isso remete à sua legitimidade democrática de origem, ligada ao processo constituinte posterior à ditadura militar.
+### Questões Para Estudo
 
-Se é **rígida**, isso explica o procedimento especial de emenda e a tentativa de proteger a Constituição contra alterações ordinárias.
+1. Por que a rigidez é apresentada como fundamento da supremacia, e não como sinônimo dela?
+2. O que a expressão "tendente a abolir", no art. 60, § 4º, faz que a palavra "imutável" não faria?
+3. Em que sentido o art. 242, § 2º, é constitucional? Em que sentido não é?
+4. Por que uma Constituição sintética tende a durar mais, e o que ela paga por isso?
+5. O art. 5º, § 3º, embaralha a distinção entre material e formal. Como?
+6. A Constituição de 1824 era semirrígida. Que critério, nela, separava o que exigia procedimento mais difícil?
+7. Se as duas listas de classificação da CF/88 divergem em nove adjetivos, o que isso diz sobre a natureza das classificações?
+8. Chamar o critério de "estabilidade" ou de "alterabilidade" muda o que se está medindo? Explique.
 
-Se é **analítica**, isso ajuda a entender sua grande extensão e a presença de muitos temas detalhados no próprio texto.
+## Treino
 
-Se contém traços **dirigentes**, isso ajuda a compreender por que a Constituição formula objetivos, políticas e tarefas públicas.
+Dez questões objetivas sobre o módulo. Responda antes de conferir: o comentário só aparece depois da sua escolha, e ele explica também por que cada alternativa errada está errada. Estas questões são a base das objetivas da prova da unidade — as da prova serão versões alteradas destas.
 
-Se é **compromissória**, isso ajuda a perceber que a Constituição de 1988 resultou de um pacto amplo, atravessado por forças democráticas, liberais, conservadoras, trabalhistas, empresariais, populares e institucionais.
+#### Questão 1 · A conta da emenda
 
-### Leitura Crítica
+Uma proposta de emenda constitucional é aprovada, em cada Casa do Congresso Nacional, por maioria absoluta dos membros, em turno único de discussão e votação. Sobre esse resultado, é correto afirmar:
 
-A Constituição de 1988 pode ser lida como resposta democrática ao autoritarismo e também como pacto de transição. Ela ampliou direitos, constitucionalizou políticas sociais e prometeu redução de desigualdades. Ao mesmo tempo, preservou estruturas econômicas, institucionais e sociais que limitam a realização integral dessas promessas.
+**A.** A proposta foi aprovada, porque maioria absoluta é quórum mais exigente do que a maioria simples do art. 47.
 
-Essa tensão é central para estudar a Constituição brasileira: ela é normativa, dirigente e democrática, mas sua efetividade depende de disputas políticas permanentes.
+**B.** A proposta não foi aprovada, porque o art. 60, § 2º, exige três quintos dos votos dos membros, em dois turnos, em cada Casa.
 
-## 10. Imagem-Síntese Do Módulo
+**C.** A proposta foi aprovada, porque o art. 65 admite turno único também para emendas.
 
-Uma boa imagem para fixar o módulo é a de uma Constituição colocada no topo de uma estrutura institucional, cercada por engrenagens, caminhos e barreiras.
+**D.** A proposta não foi aprovada, porque emendas exigem unanimidade nas duas Casas.
 
-As engrenagens representam as funções da Constituição.
+**Resposta: B.**
 
-Os caminhos representam suas classificações como instrumentos de leitura.
+O art. 60, § 2º, exige duas coisas cumulativas que a lei não exige: **dois turnos** de discussão e votação em cada Casa e o quórum de **três quintos** dos respectivos membros. Maioria absoluta é o quórum da lei complementar (art. 69), e turno único na Casa revisora é o do processo legislativo comum (art. 65). Aprovar por maioria absoluta em turno único é aprovar uma emenda com o rito de uma lei — e é exatamente isso que a rigidez impede.
 
-As barreiras representam a supremacia e a rigidez, que estabilizam e protegem a ordem constitucional.
+- **A** Confunde os patamares: maioria absoluta é mais exigente que maioria simples, mas ainda é menos do que três quintos, e não supre a exigência dos dois turnos.
+- **C** O art. 65 trata do projeto de lei revisto pela outra Casa; não alcança a emenda, que tem rito próprio no art. 60.
+- **D** Unanimidade não é exigida em nenhuma hipótese do processo legislativo constitucional; a exigência é de três quintos.
 
-Essa imagem ajuda a lembrar que a Constituição não é apenas um texto superior. Ela é também uma tecnologia institucional de organização do poder.
+#### Questão 2 · Quem pode propor
 
-## 11. Como Este Tema Prepara O Próximo Passo
+Um deputado federal, isoladamente, protocola uma proposta de emenda à Constituição. No mesmo dia, protocola um projeto de lei ordinária. Sobre a admissibilidade das duas iniciativas:
 
-Depois de compreender funções, classificações, supremacia e rigidez, torna-se mais fácil estudar poder constituinte.
+**A.** Ambas são regulares, porque a iniciativa parlamentar é ampla nos dois casos.
 
-Isso acontece porque o poder constituinte responde exatamente ao problema da fundação e da mudança da ordem constitucional.
+**B.** Nenhuma é regular, porque parlamentar não tem iniciativa em matéria constitucional nem legal.
 
-Se a Constituição ocupa o centro do sistema e tem procedimento próprio de reforma, então precisamos perguntar:
+**C.** O projeto de lei é regular pelo art. 61, mas a proposta de emenda não, porque o art. 60, I, exige um terço, no mínimo, dos membros da Câmara ou do Senado.
 
-- quem cria a Constituição?
-- quem pode mudá-la?
-- quais limites existem para essa mudança?
-- quem se beneficia da estabilidade constitucional?
-- quem consegue transformar sua demanda social em norma constitucional?
+**D.** A proposta de emenda é regular, e o projeto de lei depende de apoiamento de um terço da Casa.
 
-Essas perguntas conduzem diretamente ao próximo módulo. Elas também retomam o 2A: Lassalle perguntaria quais forças reais sustentam a Constituição; Schmitt perguntaria qual decisão política está em jogo; Kelsen perguntaria como se organiza a validade normativa da mudança constitucional.
+**Resposta: C.**
+
+A iniciativa é a primeira medida da rigidez, e costuma passar despercebida. O art. 61 abre a iniciativa das leis complementares e ordinárias a qualquer membro ou Comissão da Câmara, do Senado ou do Congresso, além do Presidente, do STF, dos Tribunais Superiores, do Procurador-Geral e dos cidadãos. Já o art. 60 fecha o rol para emendas: um terço, no mínimo, dos membros de uma das Casas; o Presidente da República; ou mais da metade das Assembleias Legislativas. Um parlamentar sozinho propõe lei, não emenda.
+
+- **A** Trata os dois ritos como se tivessem a mesma porta de entrada, e é justamente aí que eles se separam.
+- **B** Nega ao parlamentar a iniciativa legislativa que o art. 61 lhe assegura expressamente.
+- **D** Inverte os dois regimes: o apoiamento de um terço é exigência da emenda, não do projeto de lei.
+
+#### Questão 3 · O momento errado
+
+Durante a vigência de estado de defesa decretado no país, o Congresso pretende deliberar sobre proposta de emenda constitucional que já reunia o apoiamento necessário. Nessa situação:
+
+**A.** A deliberação é possível, desde que o quórum de três quintos seja alcançado em dois turnos.
+
+**B.** A deliberação é possível, porque os limites do art. 60 são apenas de conteúdo.
+
+**C.** A Constituição não poderá ser emendada, porque o art. 60, § 1º, veda a emenda na vigência de intervenção federal, estado de defesa ou estado de sítio.
+
+**D.** A deliberação depende de autorização prévia do Supremo Tribunal Federal.
+
+**Resposta: C.**
+
+O art. 60, § 1º, estabelece um limite **circunstancial**: em situações de anormalidade institucional — intervenção federal, estado de defesa e estado de sítio — a Constituição simplesmente não pode ser emendada, por mais votos que a proposta reúna. A lógica é direta: não se reforma a norma superior no exato momento em que as garantias que ela protege estão restringidas.
+
+- **A** O quórum não supre o vício: enquanto durar a circunstância, não há deliberação válida a alcançar.
+- **B** Reduz o art. 60 aos limites materiais do § 4º e ignora os circunstanciais do § 1º e o limite do § 5º.
+- **D** Não existe autorização prévia do STF para tramitação de emenda; o controle, quando ocorre, é posterior e provocado.
+
+#### Questão 4 · Duas palavras que decidem a controvérsia
+
+Uma emenda disciplina — restringindo em parte, sem suprimir — uma garantia individual. Sobre a admissibilidade dessa emenda à luz do art. 60, § 4º, e da doutrina estudada:
+
+**A.** A emenda é inadmissível para todos os autores, porque as cláusulas pétreas tornam a matéria imutável.
+
+**B.** A emenda é admissível para todos os autores, porque cláusula pétrea é orientação política, sem efeito jurídico.
+
+**C.** A resposta depende da leitura do § 4º: quem entende que a norma torna as matérias imutáveis tende a recusá-la, como faz Moraes ao classificar a Constituição como super-rígida; quem lê a vedação como dirigida apenas à proposta tendente a abolir admite a emenda, como registra Lenza.
+
+**D.** A resposta depende apenas do quórum obtido: com três quintos, qualquer matéria pode ser alterada.
+
+**Resposta: C.**
+
+O art. 60, § 4º, não proíbe emenda **sobre** aquelas matérias: proíbe deliberação sobre proposta **tendente a abolir**. Moraes sustenta que a Constituição de 1988 é super-rígida porque, em alguns pontos, é excepcionalmente imutável por força das cláusulas pétreas. Lenza recusa a categoria e observa que essa não parece ser a posição do STF, que tem admitido alteração de matérias do § 4º desde que a reforma não tenda a abolir os preceitos resguardados. A divergência é substantiva: ela decide se o Congresso pode legislar por emenda naquele campo e se cabe ao Supremo avaliar cada caso.
+
+- **A** Fecha a controvérsia em favor de uma das leituras e trata "tendente a abolir" como se fosse "imutável".
+- **B** Esvazia a cláusula pétrea de efeito jurídico, contrariando o texto expresso do § 4º.
+- **D** Ignora que o § 4º é limite de conteúdo, e não de quórum: nenhuma maioria autoriza proposta tendente a abolir.
+
+#### Questão 5 · O Colégio Pedro II
+
+O art. 242, § 2º, da Constituição determina que o Colégio Pedro II, localizado na cidade do Rio de Janeiro, será mantido na órbita federal. Sobre esse dispositivo, é correto afirmar:
+
+**A.** É norma apenas formalmente constitucional: integra o documento e tem hierarquia constitucional, embora a matéria não pertença ao núcleo material clássico.
+
+**B.** Não é norma constitucional, porque trata de assunto administrativo, podendo ser alterado por lei ordinária.
+
+**C.** É norma materialmente constitucional, porque toda norma que consta do texto é, por definição, matéria constitucional.
+
+**D.** É norma inconstitucional, por regular tema estranho à Constituição.
+
+**Resposta: A.**
+
+Barroso usa exatamente esse dispositivo como exemplo de norma apenas formalmente constitucional: tem essa natureza por integrar o documento formal, não pela matéria de que trata. Lenza chega ao mesmo exemplo por outro caminho, ao explicar que Constituições analíticas descem a minúcias que deveriam estar em leis infraconstitucionais. A consequência prática é séria: por estar no texto, esse dispositivo só se altera por emenda — três quintos, dois turnos, iniciativa restrita.
+
+- **B** Confunde a matéria com a hierarquia: por estar no texto constitucional, o dispositivo não se altera por lei ordinária.
+- **C** Inverte os critérios: estar no texto é o critério formal; material é critério de conteúdo.
+- **D** Norma originária da Constituição não é inconstitucional; a crítica cabível é de técnica legislativa, não de validade.
+
+#### Questão 6 · A porta aberta pela EC n. 45
+
+O art. 5º, § 3º, incluído pela Emenda Constitucional n. 45/2004, dispõe que tratados e convenções internacionais sobre direitos humanos aprovados em cada Casa, em dois turnos, por três quintos dos votos, serão equivalentes às emendas constitucionais. Esse dispositivo é relevante para a distinção entre Constituição material e formal porque:
+
+**A.** Extingue a distinção, já que passa a existir um único critério de constitucionalidade.
+
+**B.** Mostra que a fronteira do critério formal deixou de ser estanque: norma que não veio do texto originário pode adquirir estatura de emenda se observar o rito ali previsto.
+
+**C.** Demonstra que o critério material é o único válido no Brasil após 2004.
+
+**D.** Não tem relação com a distinção, por tratar apenas de direito internacional.
+
+**Resposta: B.**
+
+O critério formal é de posição e procedimento. O art. 5º, § 3º, não muda o critério: ele cria uma **segunda porta procedimental** de entrada, com exatamente o mesmo rito da emenda — duas Casas, dois turnos, três quintos. Lenza registra que essa novidade sugere hoje uma perspectiva classificatória mista, e não mais estanque. É por isso que classificar a Constituição quanto ao conteúdo, hoje, exige a ressalva.
+
+- **A** A distinção continua operando; o que mudou foi a forma de ingresso, não a existência de dois critérios.
+- **C** Inverte a conclusão: o dispositivo reforça o peso do procedimento, que é o critério formal.
+- **D** O § 3º trata do estatuto interno do tratado no ordenamento brasileiro, e é precisamente aí que toca a classificação.
+
+#### Questão 7 · O que a Constituição curta compra e o que ela paga
+
+Barroso e Lenza explicam, por caminhos independentes, por que Constituições sintéticas tendem a durar mais. A explicação que os dois oferecem é que o formato sintético:
+
+**A.** Impede reformas, porque textos curtos são mais difíceis de emendar.
+
+**B.** Torna o texto irrelevante, deixando a matéria constitucional inteiramente para a legislação ordinária.
+
+**C.** Abre-se mais facilmente à evolução interpretativa, dispensando modificações formais — o que transfere ao intérprete, sobretudo à Corte Suprema, a tarefa de atualizar o sentido.
+
+**D.** Garante maior efetividade dos direitos sociais do que o formato analítico.
+
+**Resposta: C.**
+
+A durabilidade da Constituição sintética não vem de dificuldade de reforma, e sim de **delegação**. Como o texto fixa princípios em vez de minúcias, ele sobrevive à mudança social por via interpretativa. Isso é uma troca, não uma vantagem pura: estabilidade do documento é outro nome para mobilidade do sentido. A Constituição analítica faz o negócio inverso — escreve o parâmetro em vez de delegá-lo, e paga com extensão, emendas frequentes e litígio.
+
+- **A** Inverte a causa: o que dá durabilidade é a abertura interpretativa, não uma suposta dificuldade maior de emendar.
+- **B** Constituição sintética não deixa de ser Constituição; ela fixa princípios estruturais e delega o detalhamento.
+- **D** Efetividade de direitos sociais depende de orçamento, instituições e correlação de forças, e não decorre do formato do texto.
+
+#### Questão 8 · Rigidez e supremacia não são sinônimos
+
+Segundo a exposição de Barroso adotada no módulo, a supremacia da Constituição decorre de um conjunto de fundamentos. Entre eles está a rigidez constitucional. A relação correta entre os dois conceitos é:
+
+**A.** Rigidez e supremacia são o mesmo fenômeno, descrito por dois nomes.
+
+**B.** A supremacia é um dos fundamentos da rigidez, que dela decorre logicamente.
+
+**C.** A rigidez é um dos fundamentos da supremacia, ao lado da preeminência do poder constituinte sobre o constituído, do conteúdo material das normas e da vocação de permanência.
+
+**D.** Os dois conceitos são independentes: uma Constituição flexível pode ser plenamente suprema.
+
+**Resposta: C.**
+
+Barroso arrola os fundamentos da supremacia: a posição de preeminência do poder constituinte sobre o poder constituído, a rigidez constitucional, o conteúdo material das normas e sua vocação de permanência. A rigidez entra como **fundamento**, e a ordem importa. Uma Constituição alterável pelo mesmo rito da lei ordinária não seria superior à lei ordinária — seria uma lei ordinária com nome maior.
+
+- **A** Suprime a relação de fundamentação entre os dois e apaga a diferença entre posição no ordenamento e dificuldade de alteração.
+- **B** Inverte a ordem: a supremacia é o efeito sustentado, entre outros elementos, pela rigidez.
+- **D** É justamente o que a exposição afasta: sem alguma rigidez, a superioridade se dissolve diante do legislador ordinário.
+
+#### Questão 9 · Quem guarda
+
+O Módulo 2A encerrou com o debate entre Schmitt e Kelsen sobre quem deve proteger a Constituição. No direito brasileiro vigente, a resposta institucional a essa pergunta está:
+
+**A.** No art. 60, § 4º, que confia a guarda da Constituição ao Congresso Nacional por meio das cláusulas pétreas.
+
+**B.** No art. 102, *caput*, que atribui ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe originariamente a ação direta de inconstitucionalidade e a ação declaratória de constitucionalidade.
+
+**C.** No art. 59, que ao listar as espécies normativas define o órgão de controle.
+
+**D.** Em nenhum dispositivo: a guarda da Constituição é construção doutrinária sem base textual.
+
+**Resposta: B.**
+
+A pergunta que a teoria deixou em aberto no 2A tem, aqui, resposta escrita. O art. 102, *caput*, atribui a guarda da Constituição ao Supremo, e o inciso I lhe dá, originariamente, a ação direta de inconstitucionalidade e a ação declaratória de constitucionalidade. É a concretização, no texto de 1988, daquilo que Barroso chama de jurisdição constitucional: o conjunto de mecanismos destinados a fazer prevalecer, pela via judicial, os comandos da Constituição.
+
+- **A** O § 4º fixa limites materiais à reforma; não institui órgão de guarda nem procedimento de controle.
+- **C** O art. 59 arrola as espécies do processo legislativo e nada dispõe sobre competência jurisdicional.
+- **D** A afirmação contraria o texto expresso do art. 102, *caput*.
+
+#### Questão 10 · A lição de 1824
+
+A Constituição de 1824 é classificada como semirrígida. O art. 178 daquela Carta estabelecia que era "só Constitucional o que diz respeito aos limites, e attribuições respectivas dos Poderes Politicos, e aos Direitos Politicos, e individuaes dos Cidadãos", podendo o restante ser alterado sem aquelas formalidades. Esse arranjo demonstra que:
+
+**A.** A distinção entre matéria materialmente e apenas formalmente constitucional já funcionou, no Brasil, como critério do procedimento de alteração.
+
+**B.** A Constituição de 1824 era flexível, já que admitia alteração por lei ordinária.
+
+**C.** O critério material nunca teve consequência procedimental no direito brasileiro.
+
+**D.** A semirrigidez equivale à super-rigidez, por também estabelecer matérias intocáveis.
+
+**Resposta: A.**
+
+Semirrígida é a Constituição em que parte do texto — geralmente as normas materialmente constitucionais — só se altera por procedimento mais difícil, enquanto o restante segue o processo comum. O art. 178 da Carta de 1824 fazia exatamente esse corte, e por isso é o exemplo clássico. A lição para o módulo é direta: a distinção material/formal, que hoje parece classificatória, já foi entre nós o critério que definia quanto esforço político era preciso para mudar cada parte do texto.
+
+- **B** Flexível é a que se altera integralmente pelo rito ordinário; em 1824 apenas parte do texto seguia esse rito.
+- **C** É o oposto do que o art. 178 demonstra.
+- **D** São coisas distintas: a semirrigidez divide o texto em dois ritos; a super-rigidez, na formulação de Moraes, soma ao rito agravado um núcleo tido por imutável.
 
 ## Síntese Para Revisão
 
-- O 2B continua o percurso do Módulo 1 e do 2A: sai do conceito de Constituição e chega ao modo como ela opera.
-- A Constituição cumpre funções de organização, limitação, legitimação, integração e direção política.
-- A distinção entre sentido formal e material ajuda a entender a diversidade interna do texto constitucional.
-- Constituição sintética e Constituição analítica dizem respeito à extensão e ao detalhamento do texto.
-- Constituição dirigente, compromissória e simbólica dizem respeito à função histórica e política do texto.
-- Classificações constitucionais têm valor instrumental, não decorativo.
-- Supremacia constitucional significa posição superior da Constituição no ordenamento.
-- A supremacia constitucional prepara a compreensão da pirâmide normativa de Kelsen.
-- Rigidez constitucional significa procedimento mais exigente para reforma.
-- A rigidez protege direitos fundamentais, estabilidade institucional e segurança jurídica.
-- Supremacia e rigidez protegem a Constituição, mas também deslocam e estabilizam conflitos políticos.
-- A Constituição de 1988 é rígida, promulgada, analítica, compromissória e fortemente dirigente.
-- A efetividade constitucional depende da relação entre texto, instituições, correlação de forças e estrutura social.
+- Classificar não é etiquetar: cada critério corresponde a uma consequência que se mede no texto constitucional.
+- A Constituição cumpre ao mesmo tempo as funções de organizar, limitar, legitimar, integrar e dirigir — e essas funções entram em conflito.
+- **Material** é critério de conteúdo; **formal** é critério de posição e procedimento. Os dois não coincidem: há norma apenas formalmente constitucional dentro do texto e norma materialmente constitucional fora dele.
+- O art. 5º, § 3º, criou uma segunda porta procedimental de ingresso na estatura de emenda, tornando mista a classificação quanto ao conteúdo.
+- A doutrina diverge até no nome do critério de mudança: estabilidade, para Barroso e Moraes; alterabilidade, para Lenza.
+- Uma Constituição **sintética** dura mais porque delega ao intérprete; uma **analítica** escreve o parâmetro e paga com extensão, emenda e litígio.
+- A **rigidez** da CF/88 se mede em quatro exigências que a lei não tem: iniciativa restrita, dois turnos, três quintos e limites de conteúdo.
+- A rigidez é **fundamento** da supremacia, não sinônimo dela; e a supremacia só opera porque existe controle de constitucionalidade.
+- O art. 102, *caput*, atribui ao Supremo, precipuamente, a guarda da Constituição — a resposta brasileira à pergunta que o 2A deixou aberta.
+- Moraes classifica a CF/88 como super-rígida por causa das cláusulas pétreas; Lenza recusa a categoria, apoiado na leitura de "tendente a abolir". A escolha decide quem tem a última palavra, e quando.
 
-## Questões Para Estudo
-
-1. Como o Módulo 2B continua as discussões do Módulo 1 e do Módulo 2A?
-2. Quais são as principais funções da Constituição em uma ordem política moderna?
-3. Qual a diferença entre Constituição em sentido formal e em sentido material?
-4. O que significa dizer que uma Constituição é dirigente?
-5. Qual a diferença entre Constituição sintética e Constituição analítica?
-6. Por que a comparação entre Estados Unidos e Brasil ajuda a entender vantagens e limites de cada modelo?
-7. Por que a supremacia constitucional é indispensável ao Direito Constitucional?
-8. Como a supremacia constitucional prepara a compreensão da pirâmide normativa de Kelsen?
-9. O que a rigidez constitucional protege?
-10. Por que uma Constituição pode ser, ao mesmo tempo, dirigente, compromissória e simbólica?
-11. Como a supremacia constitucional transforma conflitos políticos em conflitos jurídicos?
-12. Em que sentido a rigidez constitucional protege direitos, mas também pode estabilizar compromissos históricos?
-13. Que tensões existem entre a promessa social da Constituição de 1988 e as condições materiais de sua realização?
-
-## Referências Bibliográficas
-
-AMERICAN BAR ASSOCIATION. *ABA condemns remarks questioning legitimacy of courts and judicial review*. Chicago, 11 fev. 2025. Disponível em: https://www.americanbar.org/news/abanews/aba-news-archives/2025/02/aba-statement-re-remarks-questioning-judicial-review/. Acesso em: 24 jul. 2026.
-
-AMERICAN BAR ASSOCIATION. *The ABA supports the rule of law*. 10 fev. 2025. Disponível em: https://www.americanbar.org/news/abanews/aba-news-archives/2025/02/aba-supports-the-rule-of-law/. Acesso em: 24 jul. 2026.
+## Referências
 
 BARROSO, Luís Roberto. *Curso de direito constitucional contemporâneo: os conceitos fundamentais e a construção do novo modelo*. 9. ed. São Paulo: Saraiva Educação, 2020.
 
-BRENNAN CENTER FOR JUSTICE. *Executive Power*. New York, 2026. Disponível em: https://www.brennancenter.org/topics/government-power/executive-power. Acesso em: 24 jul. 2026.
+BRASIL. *Constituição da República Federativa do Brasil de 1988*. Texto compilado. Brasília, DF: Presidência da República, [s.d.]. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm>. Acesso em: 1 set. 2026.
 
-CANOTILHO, José Joaquim Gomes. *Direito constitucional*. 6. ed. rev. Coimbra: Livraria Almedina, 1993.
+LENZA, Pedro. *Coleção Esquematizado®: direito constitucional*. 28. ed. São Paulo: SaraivaJur, 2024.
 
-LENZA, Pedro. *Direito constitucional esquematizado*. 28. ed. São Paulo: SaraivaJur, 2024.
+MORAES, Alexandre de. *Direito constitucional*. 33. ed. rev. e atual. até a EC n. 95, de 15 de dezembro de 2016. São Paulo: Atlas, 2017.
 
-MENDES, Gilmar Ferreira; BRANCO, Paulo Gustavo Gonet. *Curso de direito constitucional*. 13. ed. rev. e atual. São Paulo: Saraiva Educação, 2018.
+---
 
-MORAES, Alexandre de. *Direito constitucional*. 33. ed. rev. e atual. São Paulo: Atlas, 2017.
+*José Afonso da Silva e Paulo Bonavides são discutidos neste módulo a partir das obras acima, que os citam; suas obras não foram consultadas e por isso não figuram nesta lista. O julgado sobre reforma da previdência mencionado por Lenza é relatado como posição registrada por ele, sem conferência de número, ementa ou tese no repositório do Supremo Tribunal Federal.*
+
+*Material elaborado com apoio de Inteligência Artificial Generativa (Claude, modelo Opus 5) para organização e estruturação do texto, elaboração de questões de treino e preparação didática, observadas as diretrizes da Portaria CNPq nº 2.664/2026. A seleção do conteúdo, a leitura e conferência das fontes e a responsabilidade final são do docente.*
