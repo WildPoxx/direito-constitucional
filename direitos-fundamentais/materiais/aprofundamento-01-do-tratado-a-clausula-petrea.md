@@ -8,7 +8,7 @@ professor: Mario Bastos
 unidade: I Unidade
 vinculado_a: Módulo 2 - Teoria Geral dos Direitos Fundamentais
 data: 2026-09-01
-status: publicado — revisão 3 (01/09/2026): contexto histórico da EC 41 e a categoria do regime jurídico
+status: publicado — revisão 4 (01/09/2026): categorias × espécies de cláusula pétrea; conformação × restrição
 uso: leitura de aprofundamento — não é cobrado em questão objetiva; é base para questão discursiva
 tags:
   - direito-constitucional
@@ -205,13 +205,34 @@ inserir no art. 5º ficar eterno, o poder de reforma ganhou pela porta dos fundo
 cláusulas pétreas — e uma maioria conjuntural pode entrincheirar para sempre a sua preferência
 política vestida de "direito individual". É esse abuso que a tese de Mendes e Branco quer evitar.
 
-**Onde as duas se encontram.** A resposta ao abuso não é negar a proteção; é submetê-la ao
-**teste material**, que o Supremo já usa. O que a emenda acrescenta ao catálogo é pétreo se for,
-materialmente, um direito individual — e não é, se for política pública com etiqueta de direito.
-Com esse teste, as duas posições convergem nos resultados e diferem no ponto de partida: uma diz
-"pétreo, salvo se materialmente não for direito individual"; a outra, "não pétreo, salvo se
-explicitar conteúdo originário". Divergem de verdade só no caso raro do direito genuinamente
-novo, sem raiz no texto de 1988.
+**Uma distinção que desfaz boa parte do impasse: categorias e espécies.** A vedação de que o
+poder de reforma "crie cláusulas pétreas" pode significar duas coisas muito diferentes, e a
+doutrina raramente as separa.
+
+Numa leitura, o reformador não pode **ampliar as categorias gerais** do art. 60, § 4º — não pode
+acrescentar um inciso V, criar uma nova classe de matéria protegida ao lado da forma federativa,
+do voto, da separação dos Poderes e dos direitos e garantias individuais. Essa vedação é sólida
+e decorre exatamente do argumento da superioridade do originário: quem fixou a lista é que pode
+alterá-la.
+
+Noutra leitura, muito mais forte, o reformador não poderia fazer surgir **nenhuma espécie nova**
+de direito fundamental que venha a ser cláusula pétrea. É essa segunda leitura que não se
+sustenta — e ela não decorre da primeira. Uma vez que um direito seja fundamental em sentido
+material, ele se aloja **dentro de uma categoria que o constituinte originário já protegeu**.
+Quem o protege, então, não é a emenda que o introduziu: é o originário, através da categoria. Não
+há autolimitação do reformador; há a vontade do originário aplicada a um conteúdo novo. Vedar o
+surgimento de espécies novas equivaleria, no limite, a dizer que a Constituição não pode
+acompanhar as transformações da técnica e da sociedade sem que o que acompanha seja descartável —
+o oposto do que se espera de uma boa Constituição.
+
+**Onde as duas posições se encontram.** Fica de pé a objeção do entrincheiramento, e a resposta a
+ela não é negar a proteção: é submetê-la ao **teste material**, que o Supremo já usa. O que a
+emenda acrescenta ao catálogo é pétreo se for, materialmente, um direito ou garantia individual —
+e não é, se for política pública com etiqueta de direito. Com esse teste, as duas posições
+convergem nos resultados e diferem no ponto de partida: uma diz "pétreo, salvo se materialmente
+não for direito individual"; a outra, "não pétreo, salvo se explicitar conteúdo originário".
+Divergem de verdade só no caso raro do direito genuinamente novo, sem raiz alguma no texto de
+1988.
 
 **Um exemplo que resolve nos dois caminhos.** A EC 115, de 10 de fevereiro de 2022, acrescentou
 ao art. 5º o inciso LXXIX: "é assegurado, nos termos da lei, o direito à proteção dos dados
@@ -418,6 +439,44 @@ não é dizer que o regime pode ser qualquer um — é dizer que a discussão **
 retroatividade para a proporcionalidade, do art. 5º, XXXVI para o art. 60, § 4º, IV. É a mesma
 pergunta da seção anterior, chegando por outro caminho.
 
+### Reformar um regime é restringir um direito?
+
+Falta responder à objeção mais natural: se a reforma piora a posição de quem já estava lá, ela
+não é, materialmente, uma restrição de direito fundamental — e portanto vedada?
+
+Para responder, é preciso ver o que a expressão "restrição de direito fundamental" designa
+tecnicamente. Ela opera em dois planos, e os manuais os tratam sob os nomes de **âmbito de
+proteção**, **conformação e restrição** e **limites dos limites**.
+
+No plano **material**, restringir é reduzir o âmbito de proteção do direito: subtrair-lhe
+condutas, posições ou titulares que ele antes cobria. Não é isso que faz toda norma que toca o
+direito — os autores distinguem **conformação** de **restrição**. Conformar é dar forma ao
+exercício: definir procedimento, requisitos, órgão competente, prazos, modo de cálculo. Nem toda
+lei que organiza um direito o restringe. Restringir, em sentido próprio, é retirar proteção.
+
+No plano **formal**, restringir exige competência, forma e fundamento constitucional — e responde
+aos limites dos limites: núcleo essencial e proporcionalidade. Uma restrição sem fundamento, ou
+que atinja o núcleo, é inconstitucional mesmo quando formalmente perfeita.
+
+Aplique isso à reforma previdenciária. O direito fundamental em jogo é o direito à previdência
+social (art. 6º e art. 201). A emenda que altera alíquota, base de cálculo, requisito de idade ou
+forma de reajuste **não subtrai o direito**: ele continua existindo, exigível, com o mesmo
+titular e o mesmo objeto. O que ela altera é o **regime de custeio e de cálculo** — matéria de
+conformação, e conformação prospectiva. Por isso a reforma de regime não é, por si, restrição de
+direito fundamental no sentido do art. 60, § 4º, IV: ela não toca o âmbito de proteção; toca as
+regras pelas quais o direito se realiza dali em diante.
+
+Três reservas, sem as quais a conclusão vira álibi. **Primeira:** o limite continua sendo o
+núcleo. Uma reforma que reduzisse benefícios a ponto de descaracterizar a proteção previdenciária
+— abaixo do mínimo existencial, por exemplo — deixaria de conformar e passaria a abolir, e aí a
+cláusula pétrea incide. **Segunda:** o que já se consumou não é regime, é direito — a
+aposentadoria concedida, as parcelas devidas, o ato perfeito. **Terceira**, e é a mais importante
+para quem lê criticamente: dizer que a reforma é conformação e não restrição resolve a questão
+dogmática e **abre** a questão política. A mesma operação que legitima o ajuste é o mecanismo
+pelo qual se decide quem paga por ele. Que a resposta jurídica esteja correta não torna a
+distribuição justa, nem dispensa perguntar em favor de quem ela opera. O direito constitucional
+oferece a linguagem para fazer essa pergunta — não a resposta.
+
 Dois corolários. Primeiro, a **vedação ao retrocesso** não é absoluta. O Módulo 2 já a
 apresentou, com Mendes e Branco, como "aspecto polêmico" da vinculação do legislador: obtido
 certo grau de realização de um direito, legislação posterior não poderia revertê-lo sem
@@ -532,4 +591,4 @@ LENZA, Pedro. *Direito constitucional*. São Paulo: Saraiva, 2024. Localizadores
 
 MENDES, Gilmar Ferreira; BRANCO, Paulo Gustavo Gonet. *Curso de direito constitucional*. 13. ed. São Paulo: Saraiva Educação, 2018. Localizadores (páginas do PDF): cláusula pétrea como proteção do núcleo, p. 185; direitos sociais e cláusula pétrea, item 4.6.5, p. 189; criação de novos direitos fundamentais, item 4.6.6, p. 191; direitos previstos em tratados, item 4.6.7, p. 192; concepções filosóficas, item 3, p. 203-205; constitucionalização, item 5.4, p. 214-216; outros direitos decorrentes do regime e de tratados, item 11, p. 253-254; as quatro correntes sobre o status dos tratados, p. 986-989.
 
-**Nota de verificação.** As decisões do Supremo foram conferidas em fontes oficiais ou de referência (LexML, Planalto) quando acessíveis; a ADI 1.946 foi conferida por fonte secundária, com relator e data confirmados na nota 537 de Mendes e Branco; a relatoria e a composição de votos da ADI 3.105, bem como as teses dos Temas 881 e 885, foram conferidas em fontes secundárias de referência. As datas da expulsão dos parlamentares do PT (14-12-2003), da fundação do PSOL (6-6-2004) e do registro definitivo no TSE (15-9-2005) foram conferidas em fontes públicas concordantes, com divergência menor de uma delas quanto ao mês da fundação. **Nenhum inteiro teor foi lido integralmente.** Quem for citar em trabalho acadêmico deve consultar os acórdãos no portal do STF e a paginação impressa das obras doutrinárias.
+**Nota de verificação.** As decisões do Supremo foram conferidas em fontes oficiais ou de referência (LexML, Planalto) quando acessíveis; a ADI 1.946 foi conferida por fonte secundária, com relator e data confirmados na nota 537 de Mendes e Branco; a relatoria e a composição de votos da ADI 3.105, bem como as teses dos Temas 881 e 885, foram conferidas em fontes secundárias de referência. As datas do episódio político de 2003-2004 foram conferidas em fontes públicas. **Nenhum inteiro teor foi lido integralmente.** Quem for citar em trabalho acadêmico deve consultar os acórdãos no portal do STF e a paginação impressa das obras doutrinárias.
