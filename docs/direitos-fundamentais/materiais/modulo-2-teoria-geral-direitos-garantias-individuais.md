@@ -8,7 +8,7 @@ professor: Mario Bastos
 unidade: I Unidade
 aula: Aula 02
 data_aula: 2026-08-17
-status: publicado — revisão 2 (17/08/2026)
+status: publicado — revisão 5 (01/09/2026): âncoras normativas nas objetivas e correção por questão
 tags:
   - direito-constitucional
   - direitos-fundamentais
@@ -100,12 +100,26 @@ autodeterminar. E, se não se pode abrir mão irrevogavelmente de um direito, na
 constitucional acolha: a liberdade de expressão cede ao sigilo profissional; a liberdade de
 professar qualquer fé pode não caber no recinto de uma ordem religiosa específica.
 
-**5. Constitucionalização.** É a característica que separa os dois vocabulários da seção 1:
-direitos fundamentais são os consagrados em preceitos da ordem jurídica de um Estado. E ela
-traz consequência de relevo: essas normas "impõem-se a todos os poderes constituídos, até ao
-poder de reforma da Constituição". É aqui que se ancora o art. 60, § 4º, IV, que veda emenda
-tendente a abolir direitos e garantias individuais. Constitucionalizar não congela — leis e
-políticas podem mudar. O que não se admite é esvaziar o núcleo de proteção.
+**5. Constitucionalização.** É a característica que separa os dois vocabulários da seção 1.
+Repare na formulação exata dos autores, porque ela é mais estreita do que a paráfrase corrente:
+o que eles enunciam é o fato de os direitos **estarem consagrados em preceitos da ordem
+jurídica**, e essa característica "serve de traço divisor entre as expressões direitos
+fundamentais e direitos humanos". Eles acrescentam que a técnica de recepção **varia no direito
+comparado**, e que no Direito brasileiro os direitos fundamentais se definem como direitos
+constitucionais. Ou seja: o critério geral é a positivação numa ordem jurídica concreta; a
+constitucionalização é a forma brasileira dessa positivação.
+
+Isso importa por dois motivos. Primeiro, porque os próprios autores dizem que a distinção não
+põe direitos humanos e direitos fundamentais em esferas estanques — há interação recíproca.
+Segundo, porque a pergunta óbvia — e o que fazer com os tratados de direitos humanos que o
+Congresso internaliza? — tem resposta, e ela está na seção 5 deste material. Trate a
+constitucionalização como divisor de vocabulário, não como fronteira hermética.
+
+Feita a ressalva, a característica traz consequência de relevo: essas normas "impõem-se a todos
+os poderes constituídos, até ao poder de reforma da Constituição". É aqui que se ancora o art.
+60, § 4º, IV, que veda emenda tendente a abolir direitos e garantias individuais.
+Constitucionalizar não congela — leis e políticas podem mudar. O que não se admite é esvaziar o
+núcleo de proteção.
 
 **6. Vinculação dos Poderes Públicos.** Os atos do Legislativo, do Executivo e do Judiciário
 "devem conformidade aos direitos fundamentais e se expõem à invalidade se os desprezarem". A
@@ -158,7 +172,7 @@ fato.
 | 2 | Relatividade / limitabilidade | Não há direitos absolutos. | Qual o fundamento, a finalidade e o controle da restrição? |
 | 3 | Historicidade | Os direitos se afirmam e se transformam nos conflitos. | Que ameaça histórica esta proteção enfrenta hoje? |
 | 4 | Inalienabilidade / indisponibilidade | O consentimento não legitima, por si, a preterição. | Está em jogo o núcleo de autodeterminação ou só o exercício? |
-| 5 | Constitucionalização | Posto na Constituição, impõe-se até ao poder de reforma. | Qual dispositivo o consagra? |
+| 5 | Constitucionalização | Positivado na ordem jurídica; na forma brasileira, posto na Constituição, impõe-se até ao poder de reforma. | Qual dispositivo o consagra — e por qual porta esse direito entrou? |
 | 6 | Vinculação dos Poderes | Os três Poderes devem conformidade, sob pena de invalidade. | Que poder atuou? Houve desconformidade ou omissão? |
 | 7 | Aplicabilidade imediata | Norma preceptiva, não programática. | O efeito depende de lei, procedimento, órgão ou orçamento? |
 | 8 | Irrenunciabilidade | Não exercer não é renunciar. | Houve escolha pontual ou exigência de abandono do direito? |
@@ -235,9 +249,50 @@ internacionais de que o Brasil seja parte. Mendes e Branco tratam disso em capí
 "Outros direitos decorrentes do regime" — e não entre as características, o que faz sentido:
 a abertura é propriedade do catálogo, não de cada direito.
 
-O rol do art. 5º é, portanto, exemplificativo. Abertura não autoriza inventar um direito a
-cada preferência: exige demonstrar o vínculo da pretensão com o texto constitucional, com
-seus princípios ou com tratado pertinente.
+O rol do art. 5º é, portanto, exemplificativo — e isso tem confirmação jurisprudencial, não só
+doutrinária: ao julgar a ADI 939 (Rel. Min. Sydney Sanches, DJ de 18-3-1994), o caso do IPMF, o
+Supremo afirmou que o princípio da anterioridade tributária constitui direito ou garantia
+individual, ainda que inscrito fora do art. 5º. Abertura, porém, não autoriza inventar um
+direito a cada preferência: exige demonstrar o vínculo da pretensão com o texto constitucional,
+com seus princípios ou com tratado pertinente.
+
+### Tratados de direitos humanos: por qual porta entram
+
+O § 2º diz que o catálogo não exclui direitos decorrentes de tratados. Ele não diz **com que
+força** esses direitos entram. Quem responde a isso é o § 3º, acrescentado pela Emenda
+Constitucional n. 45/2004: os tratados e convenções sobre direitos humanos aprovados, em cada
+Casa do Congresso Nacional, em dois turnos, por três quintos dos votos dos respectivos membros,
+**equivalem a emendas constitucionais**.
+
+Mendes e Branco extraem daí uma consequência estreita, e o advérbio é deles: nesses casos, e
+apenas nesses, essas normas gozam de status constitucional. Os tratados aprovados pelo
+procedimento comum ingressam com status infraconstitucional — e o Supremo, depois da EC 45,
+tem-lhes atribuído caráter **supralegal**: acima da lei ordinária, abaixo da Constituição. Antes da
+EC 45, o Tribunal recusou status constitucional a direitos previstos em tratados como o Pacto
+de San José.
+
+Guarde a distinção, porque ela é fina e é cobrada: **internalizar não é constitucionalizar.** Um
+tratado pode valer no Brasil sem estar na Constituição. E é o **rito de aprovação**, não a
+matéria do tratado, que define o status.
+
+**Um aviso de honestidade, porque este é terreno disputado.** Os próprios autores registram
+quatro correntes sobre o status dos tratados de direitos humanos — supraconstitucional,
+constitucional, de lei ordinária e supralegal — e adotam a última. Há corrente respeitável que
+lê o § 2º como cláusula aberta de recepção, atribuindo estatura constitucional automática aos
+tratados de direitos humanos; contra ela pesa o argumento de que, se o § 2º bastasse, o § 3º
+seria supérfluo. Este curso segue a obra de referência e o entendimento do Supremo — e diz que
+segue, em vez de apresentar uma escolha como se fosse consenso.
+
+Isso devolve a pergunta à característica 5, e a resposta é coerente: o que separa os dois
+vocabulários é a positivação numa ordem jurídica concreta, e a constitucionalização é a técnica
+brasileira dessa positivação. Tanto assim que a própria obra admite existirem "direitos
+materialmente fundamentais que estão fora da lista" do catálogo.
+
+*Localizadores, na edição do* Curso de direito constitucional *(13. ed., 2018) usada no curso:
+constitucionalização, p. 214-216; tratados de direitos humanos e a EC 45, p. 192; direitos
+materialmente fundamentais fora da lista, p. 253-254; as quatro correntes sobre o status dos
+tratados, p. 986-989.* **São páginas do arquivo PDF, não da edição impressa** — confira a
+paginação do exemplar antes de citar em trabalho seu.
 
 ## 6. Quem pode invocar
 
@@ -361,6 +416,7 @@ e precariedade tornam uma liberdade formal mais frágil no cotidiano.
 3. Aplicabilidade imediata é característica, não promessa de resultado automático.
 4. Eficácia jurídica e efetividade social são planos distintos.
 5. Direito, garantia e remédio cumprem funções diferentes.
+6. Internalizar um tratado não é constitucionalizá-lo: o rito de aprovação define o status.
 
 ### Recuperação ativa
 
@@ -371,6 +427,7 @@ Responda em até três linhas cada, sem consultar o texto.
 3. Uma decisão administrativa pode punir alguém sem contraditório e ampla defesa? Indique o dispositivo.
 4. Inalienabilidade e irrenunciabilidade dizem a mesma coisa? Se não, o que distingue uma da outra?
 5. Por que "interdependência" não entrou na lista de características deste módulo?
+6. Um tratado de direitos humanos aprovado pelo rito comum tem status constitucional? Justifique.
 
 ## Treino
 
@@ -396,22 +453,26 @@ mais adequada:
 
 #### Questão 2
 
-Sobre as características dos direitos fundamentais, conforme trabalhadas neste módulo,
-assinale a alternativa correta:
+O Congresso Nacional aprova, no mesmo semestre, dois tratados internacionais de direitos
+humanos. O primeiro passa pelo rito do art. 5º, § 3º — dois turnos em cada Casa, três quintos
+dos votos. O segundo é aprovado pelo procedimento comum. Um estudante conclui que, como ambos
+foram internalizados, ambos viraram direitos fundamentais, e que isso desmente a
+constitucionalização como característica. Conforme a obra de referência do curso, assinale a
+alternativa correta:
 
-**A.** A lista de características é fechada e idêntica em todos os autores, o que permite decorá-la com segurança.
+**A.** O estudante tem razão: a internalização, por si só, equipara os dois tratados, e a constitucionalização deixa de operar como critério.
 
-**B.** A constitucionalização é característica dos direitos fundamentais e é o traço que os distingue dos direitos humanos.
+**B.** Ambos adquirem status constitucional, porque o art. 5º, § 2º já incorpora automaticamente ao catálogo os direitos decorrentes de tratados.
 
-**C.** A imprescritibilidade é atributo geral de todos os direitos fundamentais, conforme entendimento pacífico.
+**C.** Nenhum dos dois pode ser invocado internamente, porque direitos humanos e direitos fundamentais ocupam esferas estanques.
 
-**D.** Relatividade e limitabilidade designam características distintas: a primeira trata do conteúdo, a segunda, da forma.
+**D.** Apenas o tratado aprovado pelo rito do art. 5º, § 3º ganha status constitucional; o outro ingressa com status infraconstitucional, ao qual o Supremo tem atribuído caráter supralegal.
 
-**Resposta: B.** Mendes e Branco apresentam a constitucionalização como característica e afirmam que ela "serve de traço divisor entre as expressões direitos fundamentais e direitos humanos". É dela que decorre a imposição a todos os poderes constituídos, até ao poder de reforma.
+**Resposta: D.** A partir da EC 45/2004, os tratados sobre direitos humanos aprovados em dois turnos, por três quintos dos votos, em cada Casa, equivalem a emendas constitucionais — e Mendes e Branco são taxativos: nesses casos, e apenas nesses, essas normas gozam de status constitucional. Os aprovados pelo procedimento comum valem com status infraconstitucional, e o Supremo, depois da EC 45, tem-lhes atribuído caráter supralegal. É o rito de aprovação, não a matéria do tratado, que define o status.
 
-- **A** Contraria o que os próprios autores dizem na abertura do capítulo: fixar características sempre válidas em todo lugar é tarefa complexa, "se é que possível", porque o conteúdo depende da cultura e da história de cada povo. Listas variam entre autores — este módulo mostra três exemplos disso.
-- **C** Afirma como pacífico o que é tese atribuída. A imprescritibilidade vem de José Afonso da Silva, reproduzido por Lenza, e não vale como atributo geral: direito material, pretensão, ação e prazo processual têm tratamento distinto, e a Constituição declara imprescritíveis crimes determinados, não direitos em bloco.
-- **D** Inventa uma distinção que não existe. Lenza escreve "limitabilidade: os direitos fundamentais não são absolutos (relatividade)" — é ele quem faz a equivalência expressa entre os dois nomes. São o mesmo atributo com rótulos diferentes.
+- **A** Confunde internalizar com constitucionalizar. Entrar no ordenamento e entrar na Constituição são operações distintas — e é justamente essa distinção que a característica 5 descreve. A objeção do estudante funcionaria contra uma versão dura do critério; contra o que os autores escrevem, que é um traço divisor entre as expressões, não uma fronteira hermética, ela não se sustenta.
+- **B** Atribui ao § 2º um efeito que ele não produz sozinho. A tese da estatura constitucional automática existe e é levada a sério na doutrina, mas não é a adotada pela obra de referência nem pelo Supremo. Contra ela pesa um argumento simples: se o § 2º bastasse, o § 3º seria supérfluo.
+- **C** Inverte a ressalva expressa dos autores. Eles dizem que a distinção conceitual não coloca direitos humanos e direitos fundamentais em esferas estanques e incomunicáveis: há interação recíproca, e as constituições não raro acolhem em seu catálogo direitos proclamados em declarações internacionais.
 
 #### Questão 3
 
@@ -456,31 +517,31 @@ dos direitos fundamentais, assinale a alternativa correta:
 
 #### Questão 5
 
-Discute-se em audiência pública um projeto que regula o uso de reconhecimento facial por
-empresas em espaços privados abertos ao público. Um participante sustenta que, como a
-Constituição de 1988 não menciona a tecnologia, o assunto é de política pública e não envolve
-direito fundamental. Assinale a alternativa correta:
+Uma rede de lojas passa a usar reconhecimento facial para identificar clientes na entrada, sem
+aviso e sem consentimento. Questionada, sustenta que a Constituição de 1988 não menciona a
+tecnologia e que, por isso, não há direito fundamental a ser invocado: a matéria seria de
+política pública, a ser resolvida por lei futura. Assinale a alternativa correta:
 
-**A.** O participante tem razão: sem previsão expressa da técnica empregada, não há direito fundamental em jogo.
+**A.** A empresa tem razão: sem previsão constitucional expressa da técnica empregada, não há posição jurídica fundamental oponível.
 
-**B.** O caso se resolve pela imprescritibilidade dos direitos fundamentais, que impede o decurso do tempo de afetar posições personalíssimas.
+**B.** A questão só poderá ser enfrentada depois que emenda constitucional inclua a tecnologia no rol do art. 5º.
 
-**C.** A historicidade significa que direitos proclamados em 1988 perdem validade quando surgem tecnologias que seus redatores não previram.
+**C.** A historicidade dos direitos fundamentais implica que direitos proclamados em 1988 perdem eficácia diante de tecnologias que seus redatores não previram.
 
-**D.** A historicidade indica o contrário: os direitos se transformam diante das novas feições do poder, e a inviolabilidade da intimidade e da vida privada já é o ponto de partida da análise.
+**D.** O art. 5º, X, declara invioláveis a intimidade, a vida privada, a honra e a imagem das pessoas: a proteção recai sobre essas posições jurídicas, não sobre a técnica pela qual são atingidas.
 
-**Resposta: D.** Os direitos fazem sentido dentro de um contexto histórico e são impulsionados pelas lutas contra poderes antigos e contra as novas feições do poder. Bobbio, citado por Mendes e Branco: os direitos nascem quando o aumento do poder do homem sobre o homem cria novas ameaças à liberdade do indivíduo. Vigilância digital é exatamente esse tipo de ameaça nova sobre uma proteção já existente.
+**Resposta: D.** O art. 5º, X, declara invioláveis a intimidade, a vida privada, a honra e a imagem das pessoas, assegurado o direito a indenização pelo dano material ou moral decorrente de sua violação. O dispositivo protege posições jurídicas, e o instrumento que as ameaça é indiferente ao âmbito de proteção. A historicidade — característica 3 — explica *por que* é assim: os direitos se afirmam e se transformam diante das novas feições do poder. Mas quem resolve o caso é o dispositivo, não a característica.
 
-- **A** Confunde ausência de menção à tecnologia com ausência de direito. A proteção constitucional recai sobre a posição jurídica — intimidade, vida privada, imagem —, não sobre o instrumento pelo qual ela é ameaçada. Aceitar o argumento significaria deixar sem proteção toda ameaça inventada depois de 1988.
-- **B** Importa um nome do bloco C e ainda o aplica fora de lugar. A imprescritibilidade é tese de José Afonso da Silva, reproduzida por Lenza, e não vale como atributo geral; além disso, o problema do caso não é prazo, é âmbito de proteção diante de uma técnica de vigilância.
-- **C** Transforma historicidade em caducidade. A característica descreve afirmação e transformação dos direitos nos conflitos, com ampliação de proteção diante de ameaças novas; não prevê perda de validade por obsolescência tecnológica. É o oposto do que a citação de Bobbio afirma.
+- **A** Confunde ausência de menção à técnica com ausência de direito. Levada a sério, a tese deixaria fora da Constituição toda ameaça inventada depois de 1988 e transformaria o art. 5º numa lista de instrumentos, quando ele é uma lista de posições jurídicas protegidas.
+- **B** Ignora o art. 5º, § 1º e § 2º. As normas definidoras de direitos e garantias são preceptivas, não programáticas, e o catálogo é aberto. Condicionar a proteção a emenda futura inverte a relação entre Constituição e legislador: é a lei que se move no âmbito dos direitos, não o contrário.
+- **C** Transforma historicidade em caducidade. A característica descreve afirmação e ampliação da proteção diante de ameaças novas; não prevê perda de eficácia por obsolescência tecnológica. É o oposto do que a citação de Bobbio, na obra de referência, afirma.
 
 #### Questão 6
 
 Um contrato de trabalho contém cláusula pela qual o empregado declara renunciar, por todo o
 vínculo, ao direito de manifestar opinião sobre a empresa em qualquer meio, e autoriza o
-monitoramento de suas mensagens pessoais. O empregado assinou o contrato. Assinale a
-alternativa correta:
+monitoramento de suas mensagens pessoais. O empregado assinou o contrato. Conforme a obra de
+referência do curso, assinale a alternativa correta:
 
 **A.** O consentimento resolve a questão: assinado o contrato, não há violação a direito fundamental a examinar.
 
@@ -500,8 +561,8 @@ alternativa correta:
 
 Em debate sobre políticas de igualdade, um expositor afirma que a norma constitucional que
 assegura igualdade é "letra morta", já que a desigualdade material persiste décadas depois de
-1988. Considerando a distinção entre eficácia jurídica e efetividade, assinale a alternativa
-correta:
+1988. Considerando a distinção entre eficácia jurídica e efetividade adotada neste curso, a
+partir de Barroso, assinale a alternativa correta:
 
 **A.** Eficácia jurídica e efetividade são planos distintos: a norma pode fundamentar pretensões e invalidar atos incompatíveis ainda que sua realização social seja incompleta.
 
@@ -519,23 +580,24 @@ correta:
 
 #### Questão 8
 
-Um município deixa de instalar iluminação pública e de manter policiamento em bairro onde se
-repetem agressões contra mulheres. Acionado, sustenta em defesa que os direitos fundamentais
-impõem ao Estado apenas o dever de não agredir. Assinale a alternativa correta:
+Um Estado da Federação deixa de manter policiamento ostensivo em bairro onde se repetem
+agressões contra mulheres, apesar de pedidos reiterados das moradoras. Acionado, sustenta em
+defesa que os direitos fundamentais impõem ao poder público apenas o dever de não agredir, e
+que nada o obriga a agir. Assinale a alternativa correta:
 
 **A.** A defesa está correta: direitos fundamentais são direitos de defesa e se esgotam em deveres de abstenção estatal.
 
-**B.** Só haveria dever de agir se lei ordinária tivesse especificado a política de segurança devida naquele bairro.
+**B.** A defesa não se sustenta: a segurança pública é dever do Estado e cabe às polícias militares a polícia ostensiva e a preservação da ordem pública; ao lado dos direitos de defesa existem direitos a prestação e deveres de proteção.
 
-**C.** O caso é de direito de participação, pois o que se discute é o controle das decisões públicas do município.
+**C.** O caso é de direito de participação, pois o que se discute é o controle das decisões públicas do Estado.
 
-**D.** A defesa desconsidera a índole ambivalente dos direitos e a dimensão objetiva, que gera deveres de proteção independentemente de quem reclama.
+**D.** Só haveria dever de agir se lei ordinária tivesse especificado a política de segurança devida naquele bairro.
 
-**Resposta: D.** As funções não são estanques: Mendes e Branco falam em índole ambivalente, e o exemplo dos próprios autores é o direito à vida, que exige que o Estado não mate arbitrariamente e também que proteja as pessoas contra agressões de terceiros. Na dimensão objetiva, o direito funciona como valor da ordem constitucional e gera deveres de proteção que independem de quem reclama.
+**Resposta: B.** O art. 144, caput, define a segurança pública como dever do Estado, direito e responsabilidade de todos, exercida para a preservação da ordem pública e da incolumidade das pessoas e do patrimônio; o § 5º atribui às polícias militares a polícia ostensiva e a preservação da ordem pública. O dever de agir está no texto. A doutrina apenas nomeia o que a Constituição já impõe: as funções não são estanques — Mendes e Branco falam em índole ambivalente, e o exemplo dos próprios autores é o direito à vida, que exige que o Estado não mate arbitrariamente e também que proteja as pessoas contra agressões de terceiros. **Quanto** policiamento é devido, e com que prioridade, é outra pergunta, e essa admite margem.
 
-- **A** Toma uma função pelo todo. Direitos de defesa, direitos a prestação e direitos de participação convivem no mesmo catálogo, e um mesmo direito pode exigir abstenção e ação. A tese da defesa apagaria os direitos a prestação inteiros.
-- **B** Repete o erro sobre a aplicabilidade imediata e ignora o conteúdo positivo da vinculação. As normas definidoras de direitos são preceptivas, não programáticas, e a vinculação pode tornar imperiosa a atuação do poder público; a inércia legislativa, aliás, é que enseja ação direta de inconstitucionalidade por omissão ou mandado de injunção.
-- **C** Erra a categoria. Participação é influir na formação da vontade política e controlar decisões públicas. O que está em jogo aqui é prestação material — serviços e política de proteção —, ainda que o controle também seja possível por outra via.
+- **A** Toma uma função pelo todo. Direitos de defesa, direitos a prestação e direitos de participação convivem no mesmo catálogo, e um mesmo direito pode exigir abstenção e ação. A tese apagaria os direitos a prestação inteiros — e, no caso, esbarra no texto expresso do art. 144.
+- **C** Erra a categoria. Participação é influir na formação da vontade política e controlar decisões públicas. O que se pede aqui é prestação material — serviço e política de proteção —, ainda que o controle também seja possível por outra via.
+- **D** Inverte a relação entre Constituição e lei. O art. 5º, § 1º, torna preceptivas as normas definidoras de direitos, e o dever do art. 144 não depende de lei que o repita. Reconhecer o dever não resolve, sozinho, qual medida é exigível; mas negar o dever por falta de lei é coisa diferente, e é o que a alternativa faz.
 
 #### Questão 9
 
@@ -552,9 +614,9 @@ socialmente relevante para que exista direito fundamental. Assinale a alternativ
 
 **D.** A questão se resolve pela constitucionalização, característica que restringe os direitos fundamentais ao que está expresso no texto.
 
-**Resposta: C.** O art. 5º, § 2º, determina que os direitos e garantias expressos não excluem outros decorrentes do regime e dos princípios adotados pela Constituição, ou dos tratados internacionais de que o Brasil seja parte. O rol é exemplificativo — e abertura não autoriza inventar um direito a cada preferência.
+**Resposta: C.** O art. 5º, § 2º, determina que os direitos e garantias expressos não excluem outros decorrentes do regime e dos princípios adotados pela Constituição, ou dos tratados internacionais de que o Brasil seja parte. Que o rol seja exemplificativo não é apenas leitura doutrinária: ao julgar a ADI 939 (Rel. Min. Sydney Sanches, DJ de 18-3-1994), o caso do IPMF, o Supremo afirmou que o princípio da anterioridade tributária constitui direito ou garantia individual, embora esteja fora do art. 5º. E abertura não autoriza inventar um direito a cada preferência.
 
-- **A** Desconhece o § 2º, que está no mesmo artigo que o participante invoca como taxativo. A abertura do catálogo é decisão do próprio constituinte originário, e não depende de emenda para operar.
+- **A** Desconhece o § 2º, que está no mesmo artigo invocado como taxativo. A abertura do catálogo é decisão do próprio constituinte originário e não depende de emenda para operar — e o Supremo já reconheceu, na ADI 939, garantia individual situada fora do art. 5º.
 - **B** Converte abertura em licença. Sem a exigência de vínculo demonstrado com o texto, com os princípios ou com tratado, qualquer preferência viraria direito fundamental — e a categoria perderia a função de limitar o poder, que é a razão de existir dela.
 - **D** Força a constitucionalização a dizer o contrário do que diz. Ela identifica os direitos consagrados na ordem jurídica de um Estado e impõe-nos a todos os poderes constituídos, até ao de reforma; não fecha o catálogo. Mendes e Branco, aliás, tratam dos direitos decorrentes do regime em capítulo próprio, e não entre as características.
 
