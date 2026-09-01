@@ -8,7 +8,7 @@ professor: Mario Bastos
 unidade: I Unidade
 aula: Aula 02
 data_aula: 2026-08-17
-status: publicado — revisão 5 (01/09/2026): âncoras normativas nas objetivas e correção por questão
+status: publicado — revisão 6 (01/09/2026): enunciados contextualizados nas objetivas doutrinárias
 tags:
   - direito-constitucional
   - direitos-fundamentais
@@ -110,7 +110,15 @@ constitucionais. Ou seja: o critério geral é a positivação numa ordem juríd
 constitucionalização é a forma brasileira dessa positivação.
 
 Isso importa por dois motivos. Primeiro, porque os próprios autores dizem que a distinção não
-põe direitos humanos e direitos fundamentais em esferas estanques — há interação recíproca.
+põe direitos humanos e direitos fundamentais em esferas estanques — há interação recíproca. E há
+um sinal ainda mais claro de que o "traço divisor" é uma nota de vocabulário para aquele passo, e
+não um critério que os autores apliquem em toda a obra: poucas páginas antes, ao discutir a
+justificação filosófica dos direitos (item 3, p. 203-205 do PDF), eles alternam "direitos
+fundamentais", "direitos humanos" e "direitos do homem" no mesmo parágrafo, e falam em
+"fundamentalidade material dos direitos humanos". A distinção entre direitos humanos e direitos
+fundamentais é, por natureza, plural — filosófica, jurídica e política ao mesmo tempo — e a
+tradição teórica continua a se debruçar sobre ela sem perspectiva de esgotamento. O que este
+curso adota é um recorte declarado, não uma fronteira.
 Segundo, porque a pergunta óbvia — e o que fazer com os tratados de direitos humanos que o
 Congresso internaliza? — tem resposta, e ela está na seção 5 deste material. Trate a
 constitucionalização como divisor de vocabulário, não como fronteira hermética.
@@ -453,11 +461,24 @@ mais adequada:
 
 #### Questão 2
 
-O Congresso Nacional aprova, no mesmo semestre, dois tratados internacionais de direitos
-humanos. O primeiro passa pelo rito do art. 5º, § 3º — dois turnos em cada Casa, três quintos
-dos votos. O segundo é aprovado pelo procedimento comum. Um estudante conclui que, como ambos
-foram internalizados, ambos viraram direitos fundamentais, e que isso desmente a
-constitucionalização como característica. Conforme a obra de referência do curso, assinale a
+Mendes e Branco, ao tratar das características dos direitos fundamentais (*Curso de direito
+constitucional*, 13. ed., item 5.4, p. 215 do PDF usado no curso), escrevem que o fato de os
+direitos estarem "consagrados em preceitos da ordem jurídica" "serve de traço divisor entre as
+expressões direitos fundamentais e direitos humanos" — a segunda ficando reservada às
+pretensões de índole filosófica ou inscritas em documentos internacionais. No mesmo passo,
+ressalvam que as duas esferas não estão "em esferas estanques, incomunicáveis entre si", e que a
+técnica de recepção varia no direito comparado; no Brasil, os direitos fundamentais definem-se
+como direitos constitucionais. Em outro ponto da obra (item 4.6.7, p. 192), tratam do art. 5º,
+§ 3º, introduzido pela EC 45/2004, e do entendimento do Supremo sobre os tratados aprovados
+pelo rito comum.
+
+Considere agora a situação. O Congresso Nacional aprova, no mesmo semestre, dois tratados
+internacionais de direitos humanos. O primeiro passa pelo rito do § 3º — dois turnos em cada
+Casa, três quintos dos votos. O segundo é aprovado pelo procedimento comum. Um estudante
+conclui que, como ambos foram internalizados, ambos viraram direitos fundamentais, e que isso
+desmente o critério dos autores.
+
+Dentro do recorte de Mendes e Branco, e considerando o texto constitucional, assinale a
 alternativa correta:
 
 **A.** O estudante tem razão: a internalização, por si só, equipara os dois tratados, e a constitucionalização deixa de operar como critério.
@@ -468,11 +489,11 @@ alternativa correta:
 
 **D.** Apenas o tratado aprovado pelo rito do art. 5º, § 3º ganha status constitucional; o outro ingressa com status infraconstitucional, ao qual o Supremo tem atribuído caráter supralegal.
 
-**Resposta: D.** A partir da EC 45/2004, os tratados sobre direitos humanos aprovados em dois turnos, por três quintos dos votos, em cada Casa, equivalem a emendas constitucionais — e Mendes e Branco são taxativos: nesses casos, e apenas nesses, essas normas gozam de status constitucional. Os aprovados pelo procedimento comum valem com status infraconstitucional, e o Supremo, depois da EC 45, tem-lhes atribuído caráter supralegal. É o rito de aprovação, não a matéria do tratado, que define o status.
+**Resposta: D.** A partir da EC 45/2004, os tratados sobre direitos humanos aprovados em dois turnos, por três quintos dos votos, em cada Casa, equivalem a emendas constitucionais — e Mendes e Branco são taxativos: nesses casos, e apenas nesses, essas normas gozam de status constitucional. Os aprovados pelo procedimento comum valem com status infraconstitucional, e o Supremo, depois da EC 45, tem-lhes atribuído caráter supralegal. É o rito de aprovação, não a matéria do tratado, que define o status — e é isso que o critério dos autores, lido com as ressalvas que eles mesmos fazem, já dizia.
 
-- **A** Confunde internalizar com constitucionalizar. Entrar no ordenamento e entrar na Constituição são operações distintas — e é justamente essa distinção que a característica 5 descreve. A objeção do estudante funcionaria contra uma versão dura do critério; contra o que os autores escrevem, que é um traço divisor entre as expressões, não uma fronteira hermética, ela não se sustenta.
+- **A** Confunde internalizar com constitucionalizar. Entrar no ordenamento e entrar na Constituição são operações distintas — e é justamente essa distinção que o critério descreve. A objeção do estudante funcionaria contra uma versão dura do critério; contra o que os autores escrevem, um traço divisor entre expressões, com ressalva expressa de que as esferas se comunicam, ela não se sustenta.
 - **B** Atribui ao § 2º um efeito que ele não produz sozinho. A tese da estatura constitucional automática existe e é levada a sério na doutrina, mas não é a adotada pela obra de referência nem pelo Supremo. Contra ela pesa um argumento simples: se o § 2º bastasse, o § 3º seria supérfluo.
-- **C** Inverte a ressalva expressa dos autores. Eles dizem que a distinção conceitual não coloca direitos humanos e direitos fundamentais em esferas estanques e incomunicáveis: há interação recíproca, e as constituições não raro acolhem em seu catálogo direitos proclamados em declarações internacionais.
+- **C** Inverte a ressalva que o próprio enunciado transcreve. Os autores dizem que a distinção conceitual não coloca direitos humanos e direitos fundamentais em esferas estanques e incomunicáveis: há interação recíproca, e as constituições não raro acolhem em seu catálogo direitos proclamados em declarações internacionais.
 
 #### Questão 3
 
@@ -538,45 +559,64 @@ política pública, a ser resolvida por lei futura. Assinale a alternativa corre
 
 #### Questão 6
 
+Mendes e Branco, ao tratar da inalienabilidade (item 5.3, p. 212-213 do PDF usado no curso),
+apontam sua consequência prática: "a preterição de um direito fundamental não estará sempre
+justificada pelo mero fato de o titular do direito nela consentir". Ressalvam, porém, que nem
+todos os direitos fundamentais seriam indisponíveis — apenas os que resguardam a potencialidade
+de a pessoa se autodeterminar — e que "nada impede que o exercício de certos direitos
+fundamentais seja restringido, em prol de uma finalidade acolhida ou tolerada pela ordem
+constitucional": a liberdade de expressão, por exemplo, cede ao dever de não divulgar segredos
+obtidos no trabalho. A tradição didática brasileira acrescenta a irrenunciabilidade: pode haver
+não exercício, nunca renúncia.
+
 Um contrato de trabalho contém cláusula pela qual o empregado declara renunciar, por todo o
 vínculo, ao direito de manifestar opinião sobre a empresa em qualquer meio, e autoriza o
-monitoramento de suas mensagens pessoais. O empregado assinou o contrato. Conforme a obra de
-referência do curso, assinale a alternativa correta:
+monitoramento de suas mensagens pessoais. O empregado assinou o contrato.
+
+Dentro desse recorte, assinale a alternativa correta:
 
 **A.** O consentimento resolve a questão: assinado o contrato, não há violação a direito fundamental a examinar.
 
 **B.** A cláusula é válida quanto à opinião e nula quanto ao monitoramento, porque somente o sigilo é declarado inviolável pela Constituição.
 
-**C.** O consentimento não legitima, por si, a preterição do direito: uma coisa é restringir o exercício com fundamento constitucional, outra é exigir renúncia permanente à posição jurídica.
+**C.** A cláusula vai além da restrição pontual de exercício que os autores admitem: pretende a renúncia permanente à posição jurídica e o acesso a uma esfera protegida, e o consentimento, sozinho, não a legitima.
 
 **D.** Sendo os direitos fundamentais irrenunciáveis, é inconstitucional qualquer restrição à liberdade de expressão dentro de uma relação de trabalho.
 
-**Resposta: C.** A inalienabilidade tem como consequência prática justamente esta: a preterição de um direito fundamental não está sempre justificada pelo simples fato de o titular consentir. E a irrenunciabilidade olha para o ato do titular — o que pode ocorrer é o não exercício do direito, nunca a sua renúncia. Restrições pontuais ao exercício são discutíveis no caso; a exigência de abandono permanente da posição, não.
+**Resposta: C.** O que os autores admitem é a restrição do *exercício* em prol de finalidade acolhida pela ordem constitucional — o exemplo é preciso: não divulgar segredos do trabalho. A cláusula do caso faz outra coisa: exige o abandono permanente da posição jurídica, em qualquer meio e por todo o vínculo, e soma a isso o acesso a mensagens pessoais. É aqui que entra a consequência prática da inalienabilidade: o consentimento não legitima, por si, a preterição do direito. E a irrenunciabilidade olha para o mesmo ponto pelo lado do titular — o que pode ocorrer é o não exercício, nunca a renúncia.
 
-- **A** Toma o consentimento como salvo-conduto. Se bastasse assinar, a inalienabilidade não teria função alguma, e a assimetria de poder que caracteriza a contratação de trabalho ficaria fora do exame jurídico. O consentimento entra na análise; não a encerra.
-- **B** Constrói uma hierarquia que o texto não autoriza. Inviolabilidade é palavra do próprio texto constitucional e aparece sobre várias posições — consciência, sigilo da correspondência —, sem que isso torne as demais disponíveis. Em ambos os casos a pergunta é a mesma: está em jogo o núcleo de autodeterminação ou apenas o exercício?
-- **D** Converte indisponibilidade em absoluto e colide com a relatividade. Nem todos os direitos fundamentais são indisponíveis, e nada impede que o exercício de certos direitos seja restringido em prol de finalidade que a ordem constitucional acolha — o módulo dá o exemplo da liberdade de expressão que cede ao sigilo profissional.
+- **A** Toma o consentimento como salvo-conduto — exatamente a leitura que a frase transcrita no enunciado afasta. Se bastasse assinar, a inalienabilidade não teria função alguma, e a assimetria de poder que caracteriza a contratação de trabalho ficaria fora do exame jurídico. O consentimento entra na análise; não a encerra.
+- **B** Constrói uma hierarquia que o recorte não autoriza. Inviolabilidade é palavra do texto constitucional e aparece sobre várias posições — consciência, sigilo da correspondência —, sem que isso torne as demais disponíveis. Em ambos os casos a pergunta é a mesma: está em jogo o núcleo de autodeterminação ou apenas o exercício?
+- **D** Converte indisponibilidade em absoluto e ignora a ressalva que o enunciado transcreve: nem todos os direitos são indisponíveis, e o exercício pode ser restringido em prol de finalidade acolhida pela ordem constitucional. O próprio exemplo dos autores — o sigilo profissional — é uma restrição válida dentro de uma relação de trabalho.
 
 #### Questão 7
 
+Barroso distingue dois planos (*Curso de direito constitucional contemporâneo*, 9. ed.): a
+**eficácia jurídica**, aptidão da norma para produzir efeitos no sistema — criar deveres,
+invalidar atos incompatíveis, fundamentar pretensões —, e a **efetividade**, realização desses
+efeitos no mundo dos fatos. Registra ainda que os princípios constitucionais operam de três
+modos: fundamentando diretamente uma decisão, orientando a interpretação de outras normas ou
+paralisando a aplicação de ato incompatível — eficácia direta, interpretativa e negativa.
+
 Em debate sobre políticas de igualdade, um expositor afirma que a norma constitucional que
 assegura igualdade é "letra morta", já que a desigualdade material persiste décadas depois de
-1988. Considerando a distinção entre eficácia jurídica e efetividade adotada neste curso, a
-partir de Barroso, assinale a alternativa correta:
+1988.
 
-**A.** Eficácia jurídica e efetividade são planos distintos: a norma pode fundamentar pretensões e invalidar atos incompatíveis ainda que sua realização social seja incompleta.
+Dentro da distinção de Barroso, assinale a alternativa correta:
+
+**A.** O expositor confunde os dois planos: a desigualdade que persiste é déficit de efetividade e não retira da norma a aptidão de fundamentar pretensões e invalidar atos incompatíveis.
 
 **B.** O expositor tem razão: norma cujos efeitos não se realizam no mundo dos fatos é norma sem eficácia jurídica.
 
 **C.** Como a Constituição tem força normativa, a persistência da desigualdade só pode ser explicada por omissão do Judiciário em aplicá-la.
 
-**D.** A distinção não tem consequência prática, porque a eficácia dos princípios constitucionais se limita a orientar a interpretação de outras normas.
+**D.** A eficácia jurídica da norma de igualdade depende de que sua efetividade seja demonstrada caso a caso; até lá, a norma orienta a interpretação, mas não fundamenta pretensões.
 
-**Resposta: A.** Barroso trabalha com dois planos: eficácia jurídica é a aptidão da norma para produzir efeitos no sistema — criar deveres, invalidar atos incompatíveis, fundamentar pretensões —, e efetividade é a realização desses efeitos no mundo dos fatos. Conviver com desigualdade material não prova que a norma seja enfeite.
+**Resposta: A.** A distinção existe para isto. O que o expositor descreve — desigualdade material que persiste — é um problema de efetividade, isto é, de realização dos efeitos no mundo dos fatos. Isso não toca a eficácia jurídica: a norma continua apta a criar deveres, a invalidar atos incompatíveis e a fundamentar pretensões — e é justamente essa aptidão que permite cobrar o que ainda não foi cumprido. Conviver com desigualdade não prova que a norma seja enfeite; revela a tensão entre força normativa, realidade social, escolhas políticas e resistência do que já está posto.
 
-- **B** Colapsa os dois planos num só. Se a validade da norma dependesse de sua realização integral, quase todo o catálogo constitucional seria declarado inexistente — e, ao mesmo tempo, desapareceria o fundamento para exigir o que ainda não foi cumprido.
+- **B** Colapsa os dois planos num só, contra a distinção transcrita no enunciado. Se a validade da norma dependesse de sua realização integral, quase todo o catálogo constitucional seria declarado inexistente — e, ao mesmo tempo, desapareceria o fundamento para exigir o que ainda não foi cumprido.
 - **C** Reduz a um único fator o que o módulo apresenta como tensão entre força normativa, realidade social, escolhas políticas e resistência do que já está posto. Limites fáticos, jurídicos, institucionais e orçamentários existem — devem ser demonstrados no caso concreto, não invocados como desculpa genérica nem descartados em bloco.
-- **D** Empobrece a eficácia dos princípios. Barroso registra três modos de atuação: fundamentar diretamente uma decisão, orientar a interpretação de outras normas e paralisar a aplicação de ato incompatível — eficácia direta, interpretativa e negativa. A interpretativa é uma delas, não o teto.
+- **D** Inverte a ordem dos planos: a eficácia jurídica é atributo da norma, não resultado a ser provado pela efetividade. E reduz a atuação dos princípios ao modo interpretativo, quando o próprio enunciado registra também a eficácia direta e a negativa.
 
 #### Questão 8
 
