@@ -8,7 +8,7 @@ professor: Mario Bastos
 unidade: I Unidade
 aula: Aula 01
 data_aula: 2026-08-10
-status: versão inicial
+status: publicado — revisão 2 (01/09/2026): dez questões no formato de treino interativo
 tags:
   - direito-constitucional
   - direitos-fundamentais
@@ -28,6 +28,19 @@ A pergunta central é simples, mas importante:
 > Como a dignidade da pessoa humana, sendo uma norma constitucional aberta e principiológica, pode funcionar como eixo da Constituição de 1988 sem virar uma frase genérica usada para justificar qualquer decisão?
 
 Essa pergunta orienta todo o módulo.
+
+## Leituras Do Módulo
+
+- **BARROSO, Luís Roberto.** *Neoconstitucionalismo e constitucionalização do Direito.* Leitura
+  complementar obrigatória, para o contexto do neoconstitucionalismo, a força normativa da
+  Constituição e a constitucionalização do Direito. Publicado na *Quaestio Iuris*, licença CC-BY
+  4.0. [Baixar o PDF](../leituras/barroso-neoconstitucionalismo-constitucionalizacao-direito.pdf)
+- **BARROSO, Luís Roberto.** *A dignidade da pessoa humana no direito constitucional
+  contemporâneo.* Fonte central deste módulo. O PDF integral não é hospedado publicamente aqui
+  sem confirmação de licença; a leitura é orientada em aula.
+- **Contraponto crítico.** BELLO, Enzo; BERCOVICI, Gilberto; LIMA, Martonio Mont'Alverne Barreto.
+  *O Fim das Ilusões Constitucionais de 1988?* Crítica nominal à doutrina brasileira da
+  efetividade. [Baixar o PDF](../leituras/bello-bercovici-lima-fim-das-ilusoes-constitucionais-1988.pdf)
 
 ## Planejamento Do Módulo
 
@@ -397,26 +410,209 @@ Por isso, estudar dignidade não é apenas estudar uma palavra bonita. É estuda
 2. Em que situações o Judiciário deve atuar para garantir direitos sociais? Onde estaria o limite dessa atuação?
 3. A Constituição de 1988 é apenas uma Constituição de liberdades ou também uma Constituição de transformação social?
 
-### 4. Questão Objetiva Comentada
+## Treino
 
-**Questão:** Sobre a dignidade da pessoa humana na Constituição de 1988, assinale a alternativa mais adequada.
+#### Questão 1
 
-A. A dignidade da pessoa humana é apenas um valor moral, sem força jurídica direta.  
-B. A dignidade da pessoa humana é princípio constitucional estruturante, previsto como fundamento da República e usado como critério de interpretação dos direitos fundamentais.  
-C. A dignidade da pessoa humana permite ao juiz decidir livremente, sem necessidade de fundamentação constitucional.  
-D. A dignidade da pessoa humana substitui todos os demais direitos fundamentais, tornando desnecessária a leitura do art. 5º.
+Numa audiência sobre condições de um presídio, o representante do Estado sustenta que a
+dignidade da pessoa humana é um valor moral louvável, mas sem força jurídica própria: serviria
+de inspiração ao legislador, não de fundamento para decisão judicial. Assinale a alternativa
+correta:
 
-**Gabarito:** B.
+**A.** O representante tem razão: sem lei que a concretize, a dignidade não produz efeito jurídico.
 
-**Comentário:** A alternativa B é correta porque a dignidade está prevista no art. 1º, III, da CF/88 e funciona como princípio constitucional. Ela orienta a interpretação dos direitos fundamentais, mas não substitui a Constituição nem autoriza decisões sem fundamentação.
+**B.** A dignidade autoriza o juiz a decidir conforme sua própria concepção de justiça, dispensada a fundamentação constitucional.
 
-**Por que as outras estão erradas?**
+**C.** A dignidade está inscrita no art. 1º, III, como fundamento da República: é norma constitucional, e não apenas valor moral, ainda que principiológica e dependente de concretização.
 
-- A alternativa A erra porque reduz a dignidade a valor moral sem força jurídica. Na CF/88, ela é norma constitucional.
-- A alternativa C erra porque a abertura do princípio não autoriza arbítrio judicial. O intérprete deve fundamentar a decisão.
-- A alternativa D erra porque a dignidade não substitui o art. 5º nem os demais direitos; ela ajuda a interpretá-los.
+**D.** A dignidade substitui os demais direitos fundamentais, tornando dispensável a leitura do art. 5º no caso.
 
-### 5. Mini-Roteiro De Resposta Discursiva
+**Resposta: C.** A dignidade nasce como ideia ética, mas o constitucionalismo contemporâneo a juridicizou: no Brasil ela está expressa no art. 1º, III, da CF/88, como fundamento da República. É norma constitucional — princípio, e não regra fechada —, que orienta a interpretação e precisa ser concretizada em diálogo com direitos e situações concretas.
+
+- **A** Confunde principiologia com ausência de eficácia. Princípio é norma; sua abertura significa que o conteúdo se concretiza no caso, não que ele dependa de lei para existir. Aceitar o argumento deixaria sem fundamento constitucional exatamente as situações-limite para as quais a dignidade foi escrita.
+- **B** Inverte o problema. A abertura do princípio aumenta o ônus de fundamentação do intérprete, não o dispensa. Este módulo trata disso ao falar do risco de banalização: princípio usado sem critério vira decoração retórica.
+- **D** Transforma eixo hermenêutico em substituto do catálogo. A dignidade ajuda a interpretar os demais dispositivos; não os revoga nem os torna dispensáveis.
+
+#### Questão 2
+
+Uma proposta de emenda constitucional pretende extinguir determinada política pública de
+fomento cultural e, no mesmo texto, suprimir a garantia do contraditório no processo
+administrativo disciplinar. Assinale a alternativa correta:
+
+**A.** A primeira parte pode tramitar; a segunda esbarra no art. 60, § 4º, IV, por tender a abolir garantia individual.
+
+**B.** Nenhuma das duas pode tramitar, porque emenda não pode alterar matéria constitucional já disciplinada.
+
+**C.** Ambas podem tramitar, porque cláusula pétrea só protege a forma federativa e a separação dos Poderes.
+
+**D.** A segunda parte pode tramitar desde que aprovada por três quintos em dois turnos nas duas Casas.
+
+**Resposta: A.** O art. 60, § 4º, veda a deliberação de proposta de emenda tendente a abolir a forma federativa, o voto direto, secreto, universal e periódico, a separação dos Poderes e os direitos e garantias individuais. Política pública de fomento cultural não é garantia individual: pode ser alterada, extinta ou substituída pelo poder de reforma. O contraditório, ao contrário, é garantia individual — suprimi-lo é exatamente o que a cláusula pétrea impede.
+
+- **B** Confunde rigidez com imutabilidade. A Constituição rígida exige procedimento mais difícil para ser alterada, não proíbe a alteração. Fora das cláusulas pétreas, o poder de reforma opera normalmente.
+- **C** Ignora o inciso IV do § 4º, que inclui expressamente os direitos e garantias individuais entre os limites materiais.
+- **D** Confunde limite formal com limite material. O quórum do art. 60, § 2º, é requisito de aprovação de qualquer emenda; ele não vence a cláusula pétrea. Nenhuma maioria autoriza a deliberação sobre proposta tendente a abolir garantia individual.
+
+#### Questão 3
+
+O Brasil assina uma convenção internacional de direitos humanos. Um estudante afirma que, uma
+vez ratificada, ela automaticamente se torna direito fundamental com estatura constitucional.
+Considerando o texto da Constituição, assinale a alternativa correta:
+
+**A.** O estudante está certo: o art. 4º, II, ao afirmar a prevalência dos direitos humanos, confere estatura constitucional a todo tratado do gênero.
+
+**B.** O estudante está certo, porque o art. 5º, § 2º, incorpora automaticamente ao catálogo os direitos decorrentes de tratados.
+
+**C.** O estudante está errado: tratados de direitos humanos não podem ser invocados no direito interno antes de lei que os regulamente.
+
+**D.** O estudante está errado: o art. 5º, § 2º, garante que o catálogo é aberto, mas é o § 3º que estabelece o rito capaz de conferir ao tratado equivalência a emenda constitucional.
+
+**Resposta: D.** O art. 5º, § 2º, afirma que os direitos e garantias expressos não excluem outros decorrentes do regime, dos princípios adotados pela Constituição ou dos tratados internacionais de que o Brasil seja parte — o catálogo é aberto. Mas é o § 3º, acrescentado pela EC 45/2004, que diz com que força o tratado entra: os aprovados em cada Casa, em dois turnos, por três quintos dos votos, "serão equivalentes às emendas constitucionais". Abertura do catálogo e estatura constitucional são coisas distintas.
+
+- **A** Extrai do art. 4º, II, um efeito que ele não tem. O dispositivo enuncia princípio que rege as relações internacionais da República; não disciplina a hierarquia interna dos tratados.
+- **B** Confunde o § 2º com o § 3º. Se o § 2º já produzisse a incorporação com estatura constitucional, o § 3º seria supérfluo — e a Emenda 45 não teria razão de existir.
+- **C** Vai longe demais no sentido oposto. O tratado ratificado e promulgado ingressa no ordenamento e vincula o Estado brasileiro; o que se discute é a sua posição hierárquica, não a sua existência.
+
+#### Questão 4
+
+Conforme a classificação em dimensões de direitos adotada neste módulo, um estudante sustenta
+que os direitos de segunda dimensão superaram os de primeira, porque o Estado Social teria
+substituído o Estado Liberal. Assinale a alternativa correta:
+
+**A.** O estudante está certo: cada dimensão substitui a anterior, e é isso que a palavra "geração" indica.
+
+**B.** As dimensões se somam historicamente, não se substituem: os direitos de liberdade permanecem, e os sociais acrescentam deveres de prestação ao lado deles.
+
+**C.** A distinção entre dimensões perdeu utilidade, porque todos os direitos fundamentais têm a mesma estrutura normativa.
+
+**D.** Direitos de terceira dimensão, por serem difusos, não podem ser considerados direitos fundamentais.
+
+**Resposta: B.** O módulo adverte que a classificação ajuda, mas deve ser usada com cuidado: é melhor pensar em dimensões que se somam historicamente. A primeira liga-se às liberdades e à limitação do Estado; a segunda, aos direitos sociais e às prestações; a terceira, aos direitos difusos e coletivos. Uma não revoga a outra — o que muda é o repertório de proteções disponível.
+
+- **A** Toma a metáfora da geração ao pé da letra. É precisamente contra essa leitura que o módulo prefere falar em dimensões. Se a segunda substituísse a primeira, a liberdade de expressão teria deixado de ser direito fundamental em algum momento do século XX, o que não ocorreu.
+- **C** Descarta uma distinção útil por um motivo que não procede. As dimensões diferem justamente na estrutura predominante: os de defesa exigem abstenção; os de prestação exigem ação, políticas e recursos.
+- **D** Confunde titularidade difusa com ausência de fundamentalidade. Meio ambiente, patrimônio cultural e desenvolvimento são tratados como direitos fundamentais de terceira dimensão exatamente por não pertencerem a uma pessoa isolada.
+
+#### Questão 5
+
+Um juiz enfrenta caso difícil em que duas normas constitucionais apontam para soluções opostas.
+Conforme a teoria dos princípios como normas, na síntese adotada neste módulo a partir de
+Barroso, Dworkin e Alexy, assinale a alternativa correta:
+
+**A.** Havendo colisão entre princípios, a técnica adequada é a ponderação, com identificação dos direitos em conflito e justificativa pública da solução, preservando tanto quanto possível o núcleo de cada um.
+
+**B.** Como princípios não são normas jurídicas, o juiz deve resolver o caso apenas pelas regras aplicáveis.
+
+**C.** Colisão de princípios se resolve como antinomia de regras: um dos princípios é declarado inválido e retirado do sistema.
+
+**D.** Diante de caso difícil, o juiz decide segundo sua própria concepção de justiça, já que não há resposta jurídica disponível.
+
+**Resposta: A.** Princípios não desaparecem quando entram em conflito: têm peso, orientam a decisão e devem ser realizados na maior medida possível conforme as possibilidades fáticas e jurídicas. Quando colidem, a técnica é ponderar, e a ponderação exige fundamentação, identificação dos direitos em tensão, análise do caso concreto e justificativa pública — não é, como adverte o módulo, "achismo sofisticado".
+
+- **B** Contraria a tese central da seção 8. Dworkin critica exatamente a ideia de um Direito composto apenas por regras reconhecidas por critérios formais, e sustenta que os princípios integram o Direito e vinculam a decisão judicial, sobretudo nos casos difíceis.
+- **C** Aplica a princípios a lógica das regras. Antinomia entre regras resolve-se pela invalidade ou pela exceção; colisão entre princípios resolve-se por peso no caso concreto, sem que o princípio cedente saia do sistema.
+- **D** É a conclusão que Dworkin escreve para refutar. Ausência de regra clara não significa ausência de Direito: o juiz deve argumentar a partir dos princípios que melhor justificam a prática jurídica da comunidade.
+
+#### Questão 6
+
+Numa peça processual, a dignidade da pessoa humana é invocada seis vezes, sempre como reforço
+genérico, sem indicar qual conteúdo do princípio incide no caso. Conforme a leitura deste módulo
+sobre norma aberta, assinale a alternativa correta:
+
+**A.** O uso é adequado: por ser norma aberta, a dignidade dispensa densificação e vale como argumento em qualquer contexto.
+
+**B.** O uso é inadequado porque a dignidade só pode ser invocada quando houver lei ordinária que a regulamente para a hipótese.
+
+**C.** O uso é inadequado porque a dignidade, sendo valor e não norma, não serve de fundamento de decisão judicial.
+
+**D.** O uso é inadequado por banalização: a abertura da norma exige mais densificação, não menos, e um princípio que serve para tudo passa a servir para pouco.
+
+**Resposta: D.** A abertura da dignidade é, ao mesmo tempo, sua força e sua fragilidade. A força está em proteger a pessoa diante de situações que o constituinte não previu; a fragilidade, no risco de subjetivismo e de uso retórico. O módulo é explícito: se a dignidade serve para tudo, ela começa a servir para pouco. É por isso que Barroso propõe um conteúdo mínimo — valor intrínseco, autonomia e valor comunitário —, para que o argumento possa ser controlado.
+
+- **A** Confunde abertura com indeterminação livre. Norma aberta é norma cujo conteúdo se concretiza no caso; a concretização é obrigação do intérprete, não faculdade.
+- **B** Condiciona a eficácia do princípio à lei ordinária, contra o art. 5º, § 1º, e contra a própria noção de princípio constitucional estruturante.
+- **C** Retrocede à premissa que a seção 10.1 afasta: a dignidade nasce como ideia ética, mas está juridicizada no art. 1º, III. É norma, e não apenas valor.
+
+#### Questão 7
+
+Conforme a exposição de Barroso adotada neste módulo, o novo direito constitucional se
+apresenta a partir de três marcos. Assinale a alternativa que os identifica corretamente:
+
+**A.** Marco econômico, marco processual e marco institucional.
+
+**B.** Marco histórico (constitucionalismo do pós-guerra e, no Brasil, a CF/88 e a redemocratização); marco filosófico (pós-positivismo); e marco teórico (força normativa da Constituição, expansão da jurisdição constitucional e nova interpretação constitucional).
+
+**C.** Marco histórico, marco legislativo e marco jurisprudencial, todos posteriores a 1988.
+
+**D.** Marco filosófico, marco econômico e marco sociológico, correspondentes a Kelsen, Schmitt e Lassalle.
+
+**Resposta: B.** São os três marcos que Barroso apresenta: o histórico, o filosófico e o teórico. O pós-positivismo, no marco filosófico, significa a reaproximação entre Direito, ética e valores **sem abandono da legalidade** — não é retorno ao jusnaturalismo nem abandono da lei.
+
+- **A** Substitui os três marcos por categorias que não constam da exposição adotada.
+- **C** Acerta o primeiro e inventa os outros dois, além de restringir indevidamente o marco histórico ao Brasil pós-1988: ele abrange o constitucionalismo europeu do pós-guerra.
+- **D** Mistura dois quadros distintos do módulo. Kelsen, Schmitt e Lassalle respondem à pergunta "o que é uma Constituição?" pelos ângulos jurídico-normativo, político-decisionista e sociológico — matéria da seção 12, não dos marcos de Barroso.
+
+#### Questão 8
+
+Uma pessoa em situação de rua é impedida de entrar num equipamento público sob o argumento de
+que sua aparência incomodaria os demais usuários. Conforme o conteúdo mínimo da dignidade
+proposto por Barroso e adotado neste módulo, assinale a alternativa correta:
+
+**A.** O caso envolve apenas conveniência administrativa, sem dimensão constitucional.
+
+**B.** O caso é de valor comunitário, porque a Administração protege os valores compartilhados dos demais usuários.
+
+**C.** O caso atinge o valor intrínseco: a pessoa tem valor por ser pessoa, e esse valor não depende de renda, aparência, produtividade ou utilidade social.
+
+**D.** O caso é de autonomia, porque a pessoa foi impedida de decidir sobre a própria vida.
+
+**Resposta: C.** Valor intrínseco significa exatamente isto: a pessoa tem valor por ser pessoa, independentemente de renda, produtividade, escolaridade, origem, aparência, comportamento ou utilidade social. É o elemento que se conecta a vida, igualdade, integridade e vedação de discriminação e de tratamento degradante. Impedir o acesso pela aparência instrumentaliza a pessoa em função do conforto alheio.
+
+- **A** Ignora que a dignidade é norma constitucional e vincula a Administração. Conveniência administrativa não é espaço livre de Constituição.
+- **B** Usa o valor comunitário fora de lugar. Ele designa as restrições legítimas impostas em nome de valores sociais compartilhados — e é justamente o elemento sobre o qual pesa o maior risco de moralismo. Invocá-lo para excluir alguém pela aparência é o exemplo do abuso, não da aplicação.
+- **D** Erra o elemento. Autonomia é a capacidade de tomar decisões relevantes sobre a própria vida; aqui não se discute uma escolha da pessoa, e sim o reconhecimento do seu valor por terceiros.
+
+#### Questão 9
+
+Um município aprova, em sua Lei Orgânica, um extenso rol de direitos sociais que nunca são
+implementados por falta de estrutura, orçamento e vontade política. Conforme o quadro teórico da
+seção 12 deste módulo, assinale a alternativa correta:
+
+**A.** A situação ilustra a leitura de Lassalle: a Constituição escrita convive com fatores reais de poder que podem impedir sua realização.
+
+**B.** A situação ilustra a teoria de Kelsen, para quem a validade da norma depende de sua efetividade social.
+
+**C.** A situação ilustra a concepção de Schmitt, porque a Lei Orgânica é decisão política fundamental sobre a unidade política.
+
+**D.** A situação não tem leitura teórica possível, porque as três concepções tratam apenas de Constituições federais.
+
+**Resposta: A.** Lassalle representa, no quadro do módulo, a pergunta pela realidade social: quais forças de fato sustentam ou impedem a Constituição. A ideia de Constituição real como soma dos fatores reais de poder é a que ilumina o descompasso entre direitos escritos e estruturas sociais, econômicas e políticas que impedem sua realização.
+
+- **B** Inverte Kelsen. Ele representa a pergunta pela **validade jurídica** — por que uma norma vale —, com a validade das normas inferiores dependendo da superior e, na teoria pura, da pressuposição de uma norma fundamental. Efetividade social é outro plano.
+- **C** Erra o foco. A perspectiva de Schmitt trata da decisão política fundamental sobre a forma de existência da unidade política — República, Federação, democracia, separação de poderes —, não do fracasso de implementação de um rol de direitos.
+- **D** Restringe indevidamente o alcance das três perspectivas, que são teorias gerais sobre o que é uma Constituição e não se limitam a um nível federativo.
+
+#### Questão 10
+
+Um contrato entre particulares prevê cláusula que autoriza tratamento diferenciado entre
+contratantes em razão da origem regional de cada um. Conforme a ideia de constitucionalização do
+Direito exposta por Barroso e adotada neste módulo, assinale a alternativa correta:
+
+**A.** A cláusula é válida: as normas constitucionais vinculam o Estado, e as relações privadas se regem pela autonomia da vontade e pelo Código Civil.
+
+**B.** A cláusula é inválida porque o Código Civil expressamente proíbe distinções contratuais de qualquer natureza.
+
+**C.** A cláusula deve ser examinada à luz da Constituição: a constitucionalização do Direito significa a irradiação de valores, princípios e regras constitucionais por todo o ordenamento, inclusive nas relações privadas.
+
+**D.** A cláusula só poderia ser questionada depois de lei específica que regulamentasse a igualdade nas relações contratuais.
+
+**Resposta: C.** Constitucionalização do Direito, na exposição adotada, é a irradiação dos valores, princípios e regras constitucionais por todo o ordenamento: a Constituição deixa de ser texto distante e passa a funcionar como parâmetro de interpretação, validade e aplicação das normas. O módulo dá exatamente este exemplo — contrato, política pública ou decisão administrativa não se analisam apenas pela lógica formal do Código ou da conveniência, mas também por igualdade, dignidade, razoabilidade e direitos fundamentais.
+
+- **A** Sustenta uma separação entre público e privado que a constitucionalização do Direito desfaz. É a tese que o próprio conceito foi formulado para superar.
+- **B** Desloca o fundamento para a lei ordinária e ainda exagera o seu conteúdo. O problema da cláusula é constitucional antes de ser legal, e a lei civil não proíbe "distinções de qualquer natureza".
+- **D** Repete o erro de condicionar a eficácia constitucional à intermediação legislativa, contra o art. 5º, § 1º, e contra a ideia de força normativa da Constituição, que é o marco teórico exposto na seção 7.
+
+### 4. Mini-Roteiro De Resposta Discursiva
 
 Tema possível:
 
@@ -430,7 +626,7 @@ Roteiro:
 4. **Cuidado crítico:** dignidade é norma aberta e exige fundamentação para evitar uso retórico ou arbitrário.
 5. **Conclusão:** ela é eixo hermenêutico importante, mas precisa ser usada com critérios jurídicos.
 
-### 6. Tarefa Curta Sobre Barroso
+### 5. Tarefa Curta Sobre Barroso
 
 Leia o texto de Barroso sobre neoconstitucionalismo e constitucionalização do Direito, especialmente as partes sobre força normativa da Constituição, expansão da jurisdição constitucional e nova interpretação constitucional.
 
@@ -477,6 +673,3 @@ LASSALLE, Ferdinand. *A essência da Constituição*. Usar para aprofundar a ide
 
 SARLET, Ingo Wolfgang. *Dignidade da pessoa humana e direitos fundamentais na Constituição Federal de 1988*. Usar para aprofundamento posterior do conceito de dignidade no constitucionalismo brasileiro.
 
-## Nota De Transparência Sobre Uso De IA
-
-Este material fez uso de Inteligência Artificial Generativa (ChatGPT, da OpenAI, e Claude, da Anthropic) para organização e estruturação do texto, revisão de redação e estilo, preparação visual ou adaptação didática e apoio à elaboração de questões e atividades, observadas as diretrizes da Portaria CNPq nº 2.664/2026. A seleção do conteúdo, a conferência das fontes e a responsabilidade final são do docente responsável.
