@@ -8,7 +8,7 @@ professor: Mario Bastos
 unidade: I Unidade
 aula: Aula 02
 data_aula: 2026-08-17
-status: publicado — revisão 7 (01/09/2026): Questão 2 e subseção dos tratados com o regime do RE 466.343
+status: publicado — revisão 8 (01/09/2026): observação final na Questão 2; exemplos do rito comum
 tags:
   - direito-constitucional
   - direitos-fundamentais
@@ -293,7 +293,12 @@ Protocolo Facultativo (Decreto Legislativo 186/2008; Decreto 6.949/2009), o **Tr
 Marraqueche** (DL 261/2015; Decreto 9.522/2018) e a **Convenção Interamericana contra o
 Racismo, a Discriminação Racial e Formas Correlatas de Intolerância** (DL 1/2021; Decreto
 10.932/2022). Os demais — Pacto de San José, Pacto Internacional de Direitos Civis e Políticos e
-os outros aprovados pelo rito comum — valem como normas supralegais.
+os outros aprovados pelo rito comum — valem como normas supralegais. E o rito comum continuou a
+ser usado depois de 2004 mesmo para tratados de direitos humanos: o Protocolo Facultativo à
+Convenção contra a Tortura (Decreto Legislativo 483/2006; Decreto 6.085/2007) e a Convenção
+Internacional para a Proteção de Todas as Pessoas contra o Desaparecimento Forçado (Decreto
+Legislativo 661/2010; Decreto 8.767/2016) entraram assim — os decretos não mencionam o § 3º. A
+escolha do rito é do Congresso, e os decretos não a motivam.
 
 Guarde a distinção, porque ela é fina e é cobrada: **internalizar não é constitucionalizar.** Um
 tratado pode valer no Brasil sem estar na Constituição. E é o **rito de aprovação**, não a
@@ -514,6 +519,8 @@ alternativa correta:
 - **A** Confunde internalizar com constitucionalizar. Entrar no ordenamento e entrar na Constituição são operações distintas — e é justamente essa distinção que o critério descreve. A objeção do estudante funcionaria contra uma versão dura do critério; contra o que os autores escrevem, um traço divisor entre expressões, com ressalva expressa de que as esferas se comunicam, ela não se sustenta.
 - **B** A tese existe e é séria: foi a divergência do Min. Celso de Mello no RE 466.343 — natureza constitucional em razão da matéria —, e Lenza a acompanha. Mas perdeu por 5 votos a 4, e a alternativa erra exatamente ao afirmar que ela prevalece. Contra ela pesa ainda um argumento simples: se o § 2º bastasse, o § 3º seria supérfluo.
 - **C** Inverte a ressalva que o próprio enunciado transcreve. Os autores dizem que a distinção conceitual não coloca direitos humanos e direitos fundamentais em esferas estanques e incomunicáveis: há interação recíproca, e as constituições não raro acolhem em seu catálogo direitos proclamados em declarações internacionais.
+
+**Observação.** O que esta questão expõe é uma consequência do regime brasileiro atual que vale dizer em voz alta: é o Congresso Nacional, ao escolher o rito de tramitação, quem decide se as normas de um tratado de direitos humanos entram no ordenamento com status constitucional — e, portanto, como direitos *formalmente* fundamentais — ou com status supralegal. O rito não muda a matéria. O tratado continua a versar sobre direitos humanos, e é justamente por isso que o Supremo lhe deu posição *supralegal*, e não de lei ordinária: tratados de outra natureza entram com força de lei. Na linguagem de Mendes e Branco, essas normas podem ser direitos *materialmente* fundamentais fora da lista (item 11, p. 253-254 do PDF), sem ser norma constitucional. A diferença prática é precisa: o tratado supralegal vincula o Estado e paralisa a legislação infraconstitucional contrária — foi assim com a prisão do depositário infiel —, mas não serve de parâmetro para declarar uma lei inconstitucional. E a escolha do rito, na prática, não segue a matéria: desde 2004, três tratados de direitos humanos entraram pelo § 3º, enquanto outros, como o Protocolo Facultativo à Convenção contra a Tortura (Decreto Legislativo 483/2006; Decreto 6.085/2007) e a Convenção contra o Desaparecimento Forçado (Decreto Legislativo 661/2010; Decreto 8.767/2016), entraram pelo rito comum.
 
 #### Questão 3
 

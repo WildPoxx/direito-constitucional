@@ -539,6 +539,22 @@ button {
   background: #fdf4f2;
 }
 
+.answer-note {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+.answer-note p {
+  margin: 0 0 8px;
+}
+
+.answer-note p:last-child {
+  margin-bottom: 0;
+}
+
 .report-box {
   min-height: 280px;
   font-family: Consolas, "Courier New", monospace;
