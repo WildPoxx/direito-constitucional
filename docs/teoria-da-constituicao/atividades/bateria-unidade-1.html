@@ -1,0 +1,397 @@
+<title>Bateria de Questões — Unidade I</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --paper:#F4F6F5; --surface:#FFFFFF; --sunk:#EAEEEC;
+  --ink:#16211F; --ink-soft:#46534F; --ink-faint:#71807B;
+  --line:#D2DAD7; --line-strong:#B4C0BC;
+  --accent:#2A5E5B; --accent-soft:rgba(42,94,91,.10);
+  --brass:#8A6A2F; --brass-soft:rgba(138,106,47,.12);
+  --correct:#1C6B4C; --correct-soft:rgba(28,107,76,.10);
+  --wrong:#A33A2E; --wrong-soft:rgba(163,58,46,.09);
+  --shadow:0 1px 2px rgba(22,33,31,.05), 0 8px 24px -12px rgba(22,33,31,.16);
+  --serif:"Spectral",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper:#101816; --surface:#17211F; --sunk:#0C1312;
+  --ink:#E6EDEA; --ink-soft:#A8B6B1; --ink-faint:#7B8A85;
+  --line:#2A3634; --line-strong:#3C4A47;
+  --accent:#6FB3AC; --accent-soft:rgba(111,179,172,.13);
+  --brass:#C7A263; --brass-soft:rgba(199,162,99,.14);
+  --correct:#5FB98D; --correct-soft:rgba(95,185,141,.13);
+  --wrong:#E0796A; --wrong-soft:rgba(224,121,106,.13);
+  --shadow:0 1px 2px rgba(0,0,0,.30), 0 8px 24px -12px rgba(0,0,0,.60);
+} }
+:root[data-theme="dark"] {
+  --paper:#101816; --surface:#17211F; --sunk:#0C1312;
+  --ink:#E6EDEA; --ink-soft:#A8B6B1; --ink-faint:#7B8A85;
+  --line:#2A3634; --line-strong:#3C4A47;
+  --accent:#6FB3AC; --accent-soft:rgba(111,179,172,.13);
+  --brass:#C7A263; --brass-soft:rgba(199,162,99,.14);
+  --correct:#5FB98D; --correct-soft:rgba(95,185,141,.13);
+  --wrong:#E0796A; --wrong-soft:rgba(224,121,106,.13);
+  --shadow:0 1px 2px rgba(0,0,0,.30), 0 8px 24px -12px rgba(0,0,0,.60);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:840px;margin:0 auto;padding:0 24px 96px}
+.head{padding:56px 0 30px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+.head h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,5vw,42px);line-height:1.14;letter-spacing:-.015em;margin:0 0 16px;text-wrap:balance}
+.standfirst{font-family:var(--serif);font-size:18px;line-height:1.55;color:var(--ink-soft);max-width:62ch;margin:0 0 12px}
+.standfirst:last-child{margin-bottom:0}
+.dash{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-bottom:36px}
+.dash-inner{max-width:840px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.stat{display:flex;align-items:baseline;gap:7px}
+.stat-num{font-family:var(--mono);font-size:19px;font-weight:500;font-variant-numeric:tabular-nums}
+.stat-label{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint)}
+.dash-actions{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+.meter{flex-basis:100%;height:3px;background:var(--sunk);border-radius:2px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent);width:0;transition:width .35s ease}
+button{font:inherit;cursor:pointer;border-radius:3px;transition:background .15s,border-color .15s,color .15s}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn{font-size:13px;font-weight:500;padding:7px 14px;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-soft)}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.on{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+.q{background:var(--surface);border:1px solid var(--line);border-radius:4px;box-shadow:var(--shadow);margin-bottom:26px;overflow:hidden;scroll-margin-top:96px}
+.q-head{padding:16px 26px 0;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.q-id{font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
+.chip{font-size:11px;font-weight:500;letter-spacing:.045em;text-transform:uppercase;padding:3px 9px;border-radius:2px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+.chip.b{background:var(--brass-soft);color:var(--brass)}
+.q-body{padding:12px 26px 24px}
+.q-num{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
+.q-enunciado{font-family:var(--serif);font-size:17.5px;line-height:1.58;max-width:68ch}
+.q-enunciado p{margin:0 0 12px}
+.q-enunciado p:last-child{margin-bottom:0}
+.alts{display:flex;flex-direction:column;gap:8px;margin-top:18px}
+.alt{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;width:100%;text-align:left;padding:13px 15px;border:1px solid var(--line);border-left:3px solid var(--line-strong);background:var(--surface);color:var(--ink);font-family:var(--serif);font-size:16.5px;line-height:1.5;border-radius:3px}
+.alt:hover:not(:disabled){border-color:var(--line-strong);background:var(--sunk)}
+.alt:disabled{cursor:default}
+.alt-letter{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--ink-faint);padding-top:3px}
+.alt.picked{border-color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft)}
+.alt.picked .alt-letter{color:var(--accent)}
+.folha{margin-top:32px;padding:22px 24px;background:var(--surface);border:1px solid var(--line);border-radius:4px;box-shadow:var(--shadow)}
+.folha h3{font-family:var(--serif);font-size:20px;margin:0 0 10px}
+.folha textarea{width:100%;min-height:200px;margin-top:12px;padding:14px;font-family:var(--mono);font-size:13px;line-height:1.6;background:var(--sunk);color:var(--ink);border:1px solid var(--line);border-radius:3px;resize:vertical}
+.foot{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;line-height:1.6;color:var(--ink-faint)}
+.foot p{margin:0 0 10px;max-width:70ch}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:620px){.wrap{padding:0 16px 72px}.dash-inner{padding:10px 16px;gap:14px}.q-head,.q-body{padding-left:18px;padding-right:18px}.head{padding-top:40px}}
+@media print{.dash,.dash-actions,.btn{display:none!important}.q{break-inside:avoid;box-shadow:none}body{background:#fff}}
+</style>
+
+<div class="dash">
+  <div class="dash-inner">
+    <div class="stat"><span class="stat-num" id="s-feitas">0</span><span class="stat-label">de 20 respondidas</span></div>
+    <div class="dash-actions">
+      <button class="btn" id="btn-folha">Gerar folha de respostas</button>
+      <button class="btn" id="btn-limpar">Limpar</button>
+    </div>
+    <div class="meter"><i id="m"></i></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="head">
+    <p class="eyebrow">Teoria da Constituição · I Unidade · 2026.2</p>
+    <h1>Bateria de questões da I Unidade</h1>
+    <p class="standfirst">Vinte questões objetivas sobre todo o conteúdo já estudado nesta unidade. As questões <strong>não estão agrupadas por assunto</strong> e não indicam de onde saíram: cada uma é um caso a resolver por conta própria, como em prova.</p>
+    <p class="standfirst">Não há gabarito aqui, e isso é proposital. O objetivo não é você descobrir o acerto agora, e sim <strong>chegar à correção sabendo onde travou</strong>. Cada enunciado traz o contexto necessário: leia com atenção, porque a resposta se constrói a partir do próprio texto da questão.</p>
+    <p class="standfirst">Ao terminar, clique em <strong>Gerar folha de respostas</strong> e guarde o resultado. Suas respostas ficam salvas neste navegador — nada é enviado, e ninguém além de você as vê.</p>
+    <p class="standfirst" style="font-size:16px"><strong>Como a aula funciona.</strong> Primeiro você lê os módulos, com o tempo que o professor indicar. Depois resolve as vinte questões. Na segunda parte da aula, corrigimos juntos, questão a questão, e você traz as dúvidas que anotou.</p>
+  </header>
+
+  <main id="lista"></main>
+
+  <section class="folha" id="folha" hidden>
+    <h3>Sua folha de respostas</h3>
+    <p style="margin:0;font-size:14px;color:var(--ink-faint)">Copie o texto abaixo, ou imprima esta página, e traga para a aula.</p>
+    <textarea id="folha-txt" readonly></textarea>
+  </section>
+
+  <footer class="foot">
+    <p><strong>Se travar numa questão.</strong> Não adivinhe: marque a alternativa que lhe parecer mais defensável, anote a dúvida e traga para a correção. Errar sabendo por que errou vale mais, aqui, do que acertar por eliminação.</p>
+    <p><strong>Fontes.</strong> CF/88, arts. 1º; 2º; 3º; 5º; 6º; 47; 59; 60 e 69. BARROSO, Luís Roberto. <em>Curso de direito constitucional contemporâneo</em>, 9. ed., 2020. CANOTILHO, J. J. Gomes. <em>Direito constitucional</em>, 6. ed., 1993. LENZA, Pedro. <em>Direito constitucional</em>, 28. ed., 2024. MENDES, Gilmar Ferreira; BRANCO, Paulo Gustavo Gonet. <em>Curso de direito constitucional</em>, 13. ed., 2018. MORAES, Alexandre de. <em>Direito constitucional</em>, 33. ed., 2017.</p>
+    <p>Material elaborado com apoio de Inteligência Artificial Generativa (Claude, modelo Opus 5) para organização, redação e preparação didática, observadas as diretrizes da Portaria CNPq nº 2.664/2026. Seleção do conteúdo, leitura das fontes e responsabilidade final são do docente.</p>
+  </footer>
+</div>
+
+<script>
+const QUESTOES = [
+ {
+  "n": 1,
+  "enunciado": "<p>Canotilho registra que, em Roma, as <em>constitutiones principum</em> eram atos normativos do imperador com força de lei. Trata-se de um emprego da palavra “constituição” que designa uma <strong>fonte de direito</strong>, e não o estatuto jurídico fundamental do Estado.</p><p>Comparado ao conceito moderno de Constituição, esse uso romano permite concluir que:</p>",
+  "alts": [
+   "O uso romano é o antecedente direto do conceito moderno, do qual difere apenas pelo grau de desenvolvimento técnico alcançado em cada época.",
+   "O uso romano demonstra que o constitucionalismo moderno já existia no Império Romano, ainda que sob outra terminologia.",
+   "O uso romano designa objeto distinto do conceito moderno: nomeia um ato normativo emanado da autoridade, e não um estatuto que organiza e limita o poder político.",
+   "O uso romano é juridicamente incorreto, devendo ser descartado por não corresponder ao significado consolidado da palavra."
+  ]
+ },
+ {
+  "n": 2,
+  "enunciado": "<p>Democracia importa porque o poder deve estar ligado ao povo, à participação e à possibilidade de alternância. A Constituição cumpre, nesse arranjo, dois papéis que caminham juntos: organiza as regras do jogo democrático — eleições, representação, debate público, divisão de competências e alternância — e protege direitos fundamentais inclusive quando uma maioria circunstancial deseja limitá-los.</p><p>Um governo recém-eleito sustenta que, tendo obtido a maioria dos votos, está autorizado a suprimir o pluralismo político, reunir em si as funções de legislar, executar e julgar, e eliminar garantias processuais.</p><p>Sobre esse raciocínio, é correto afirmar que:</p>",
+  "alts": [
+   "É constitucionalmente insustentável, porque o povo exerce o poder nos termos da Constituição, e os poderes constituídos — inclusive os eleitos — recebem dela a sua competência, não podendo agir como se lhe fossem anteriores.",
+   "É constitucionalmente sustentável, porque o parágrafo único do art. 1º estabelece que todo o poder emana do povo, o que confere à maioria eleitoral a titularidade de poderes ilimitados.",
+   "É constitucionalmente insustentável, porque em um Estado Democrático de Direito cabe exclusivamente ao Poder Judiciário definir o conteúdo das políticas públicas e o alcance dos direitos.",
+   "Não comporta análise jurídica, por se tratar de questão exclusivamente política, a ser resolvida na eleição seguinte pelo próprio eleitorado."
+  ]
+ },
+ {
+  "n": 3,
+  "enunciado": "<p>José Afonso da Silva, em passagem citada por Alexandre de Moraes, afirma que o Constituinte de 1988 “rejeitou a constituição sintética, que é constituição negativa” e que o novo texto “assumiu a característica de constituição-dirigente, enquanto define fins e programa de ação futura”.</p><p>Barroso, por sua vez, considera que a Constituição brasileira, sem embargo de suas múltiplas virtudes reais e simbólicas, é — mais do que analítica — casuística no tratamento de diversos temas, regulando-os em pormenor.</p><p>Sobre a relação entre essas duas afirmações:</p>",
+  "alts": [
+   "São compatíveis e incidem sobre planos distintos: uma descreve a opção do Constituinte por fixar fins e programa de ação futura; a outra critica o grau de detalhamento com que essa opção foi executada em diversos temas.",
+   "São contraditórias: se a Constituição é dirigente, como sustenta José Afonso da Silva, ela não pode ser casuística, como afirma Barroso.",
+   "São equivalentes, uma vez que “dirigente” e “casuística” são sinônimos empregados por autores de escolas diferentes.",
+   "São irrelevantes para a classificação da Constituição de 1988, que se define exclusivamente pelo critério da estabilidade, e não pelo da extensão."
+  ]
+ },
+ {
+  "n": 4,
+  "enunciado": "<p>Na história constitucional inglesa, a limitação do poder desenvolveu-se gradualmente: a Magna Carta de 1215, os conflitos entre monarquia e Parlamento e o <em>Bill of Rights</em> de 1689 são marcos frequentemente lembrados. O resultado histórico mais duradouro foi a centralidade parlamentar e uma tradição constitucional formada por leis, precedentes e convenções, e não por uma única Constituição escrita.</p><p>Sobre o que essa matriz permite concluir:</p>",
+  "alts": [
+   "Que a Inglaterra não desenvolveu constitucionalismo, uma vez que este pressupõe necessariamente Constituição codificada em documento único e solene.",
+   "Que os marcos ingleses instituíram, já no século XVII, democracia com sufrágio universal, o que faz da Inglaterra o primeiro Estado plenamente democrático da história moderna.",
+   "Que a tradição inglesa é irrelevante para o constitucionalismo contemporâneo, por não ter produzido controle judicial de constitucionalidade nos moldes estadunidenses.",
+   "Que a experiência inglesa demonstra que limites constitucionais podem se desenvolver sem Constituição codificada — e, ao mesmo tempo, que conter o monarca não equivale automaticamente a incluir toda a população na decisão política."
+  ]
+ },
+ {
+  "n": 5,
+  "enunciado": "<p>Compare três exigências do processo legislativo na CF/88. O <strong>art. 47</strong> estabelece que, salvo disposição constitucional em contrário, as deliberações de cada Casa serão tomadas por maioria dos votos, presente a maioria absoluta de seus membros. O <strong>art. 69</strong> exige maioria absoluta para a aprovação das leis complementares. O <strong>art. 60, § 2º</strong>, exige três quintos dos votos dos respectivos membros, em dois turnos de discussão e votação em cada Casa.</p><p>Uma proposição é aprovada, em cada Casa, por maioria absoluta dos membros, em turno único.</p><p>Sobre a espécie normativa que pode ter resultado desse procedimento:</p>",
+  "alts": [
+   "Emenda constitucional, lei complementar ou lei ordinária, uma vez que a maioria absoluta satisfaz o quórum mais rigoroso e, por consequência, todos os demais.",
+   "Apenas lei ordinária, uma vez que a maioria absoluta é quórum superior ao exigido pelo art. 47 e, por isso, inadequado à lei complementar.",
+   "Apenas emenda constitucional, pois somente esta admite votação por maioria absoluta em turno único nas duas Casas.",
+   "Lei complementar ou lei ordinária, mas não emenda constitucional, pois esta exige três quintos dos membros e dois turnos em cada Casa."
+  ]
+ },
+ {
+  "n": 6,
+  "enunciado": "<p>A Constituição cumpre várias funções simultaneamente. Ela <strong>organiza</strong>, distribuindo competências e estruturando órgãos; <strong>limita</strong>, impondo freios, garantias e controles; <strong>legitima</strong>, oferecendo fundamento jurídico ao exercício do poder; <strong>integra</strong>, estabelecendo referências comuns que permitem a uma comunidade dividida seguir sendo comunidade; e, em Constituições como a brasileira, <strong>dirige</strong>, fixando tarefas e programas para o futuro.</p><p>Sobre a relação entre essas funções, é correto afirmar que:</p>",
+  "alts": [
+   "Elas se harmonizam necessariamente, uma vez que decorrem de um mesmo texto aprovado por um único poder constituinte, o que exclui contradição interna.",
+   "Elas podem entrar em conflito entre si: a mesma Constituição limita o Estado e exige que ele atue, estabiliza a ordem existente e promete transformá-la — e boa parte das disputas constitucionais é disputa sobre qual função deve prevalecer no caso.",
+   "Elas se sucedem historicamente, de modo que a função de limitar pertence ao constitucionalismo liberal e foi substituída pela função de dirigir no constitucionalismo social.",
+   "A função de dirigir é incompatível com as demais, razão pela qual as Constituições dirigentes são consideradas tecnicamente defeituosas pela doutrina majoritária."
+  ]
+ },
+ {
+  "n": 7,
+  "enunciado": "<p>A concepção normativa contemporânea não escolheu entre a leitura que reduz a Constituição aos fatores reais de poder e a que a isola do mundo dos fatos: fez uma síntese. Essa síntese não permanece no plano da teoria da Constituição — ela reaparece como método.</p><p>Ao tratar da hermenêutica concretizadora, Barroso sustenta que o intérprete precisa considerar tanto “os fatores reais do poder”, na expressão clássica de Lassalle, quanto “a força normativa da Constituição”, com sua pretensão de conformar o ser ao dever-ser constitucional.</p><p>Sobre a consequência dessa formulação para a atividade do intérprete:</p>",
+  "alts": [
+   "A Constituição não pode ser apreendida apenas pelo texto, nem tratada como mero reflexo da realidade, porque é capaz de influir sobre ela — o que obriga o intérprete a considerar os dois planos.",
+   "O intérprete deve apreender a Constituição exclusivamente pelo texto, uma vez que considerar circunstâncias fáticas comprometeria a objetividade da interpretação jurídica.",
+   "O intérprete deve tratar a Constituição como reflexo da realidade social, adaptando o sentido do texto sempre que a correlação de forças se alterar.",
+   "A hermenêutica concretizadora aplica-se somente aos direitos sociais, não alcançando as normas de organização do Estado e de competência."
+  ]
+ },
+ {
+  "n": 8,
+  "enunciado": "<p>Ferdinand Lassalle sustentou que a Constituição real de um país é a soma dos fatores reais do poder, cabendo à Constituição jurídica converter esses fatores em instituições — e que, quando não os exprime, o texto não passa de uma “folha de papel”.</p><p>Mendes e Branco recusam essa perspectiva como base do Direito Constitucional, afirmando que ela “carece de toda perspectiva normativa, não convindo às especulações do Direito Constitucional”.</p><p>O fundamento dessa recusa é que a leitura sociológica, levada às últimas consequências:</p>",
+  "alts": [
+   "Exagera a importância dos fatores econômicos, quando a experiência demonstra que fatores culturais e religiosos são mais determinantes na formação das Constituições.",
+   "Retira do Direito Constitucional objeto próprio, pois, se a Constituição é apenas reflexo da correlação de forças, bastaria estudar economia e ciência política para compreendê-la.",
+   "Contraria o texto expresso do art. 1º da CF/88, que atribui ao povo, e não aos fatores reais de poder, a titularidade do poder político.",
+   "Ignora que os fatores reais de poder foram juridicamente abolidos pelas Constituições democráticas do pós-guerra, que os substituíram por procedimentos institucionais."
+  ]
+ },
+ {
+  "n": 9,
+  "enunciado": "<p>O art. 60, § 5º, da CF/88 dispõe que a matéria constante de proposta de emenda rejeitada ou havida por prejudicada não pode ser objeto de nova proposta na mesma sessão legislativa.</p><p>Em março, uma proposta de emenda constitucional é rejeitada em Plenário. Em setembro do mesmo ano, parlamentares protocolam nova proposta com o mesmo objeto.</p><p>Sobre a admissibilidade dessa segunda proposta:</p>",
+  "alts": [
+   "É admissível, porque o art. 60, § 5º, veda apenas a reapresentação no mesmo semestre, e não na mesma sessão legislativa.",
+   "É admissível, desde que a nova proposta reúna três quintos de subscritores, quórum que supre a vedação temporal.",
+   "É inadmissível, porque a matéria de proposta de emenda rejeitada não pode ser objeto de nova proposta na mesma sessão legislativa, ainda que subscrita por parlamentares diversos.",
+   "É inadmissível em caráter definitivo, uma vez que a rejeição de proposta de emenda impede que a matéria volte a ser apreciada pelo Congresso Nacional em qualquer tempo."
+  ]
+ },
+ {
+  "n": 10,
+  "enunciado": "<p>O constitucionalismo liberal combateu privilégios estamentais, poder pessoal do monarca, censura e arbítrio, e defendeu legalidade, liberdades civis, propriedade, representação e separação de Poderes. Ele também se organizou, porém, em sociedades de mercado marcadas por profundas desigualdades.</p><p>Barroso recorda que o direito privado liberal tomou a propriedade e a liberdade contratual como eixos, e que a percepção crítica da desigualdade material levou à introdução de proteção ao trabalhador, ao consumidor, ao locatário e a outros sujeitos vulneráveis.</p><p>Sobre a relação entre igualdade jurídica e desigualdade material, é correto afirmar que:</p>",
+  "alts": [
+   "A igualdade perante a lei elimina, por si, as diferenças de riqueza, trabalho, raça, gênero e acesso à terra, razão pela qual a proteção legal de sujeitos vulneráveis é juridicamente supérflua.",
+   "A igualdade perante a lei estabelece que os indivíduos devem ser tratados como juridicamente iguais, mas não elimina, sozinha, as desigualdades materiais — e a liberdade de contratar, simétrica no texto, pode ser muito desigual quando uma parte depende materialmente da outra.",
+   "A desigualdade material é matéria estranha ao Direito Constitucional, que se ocupa exclusivamente da organização dos Poderes e das liberdades defensivas contra o Estado.",
+   "O reconhecimento da desigualdade material implica abandonar a igualdade jurídica, substituindo-a por tratamento diferenciado permanente conforme a condição social de cada pessoa."
+  ]
+ },
+ {
+  "n": 11,
+  "enunciado": "<p>A doutrina distingue três dimensões do limite constitucional, que operam em conjunto. A dimensão <strong>material</strong> diz respeito ao conteúdo que o poder não pode violar sem justificar-se perante a Constituição — dignidade, liberdade, igualdade, pluralismo, propriedade e sua função social. A dimensão <strong>orgânica</strong> diz respeito à concentração de funções e à ausência de controles, e tem no art. 2º da CF/88 a sua expressão mais direta. A dimensão <strong>procedimental</strong> diz respeito a decisões tomadas sem forma, defesa, publicidade ou base jurídica adequada.</p><p>Um governo estadual propõe autorizar a ocupação definitiva de imóveis privados sem processo, sem indenização e sem possibilidade de defesa.</p><p>Sobre as dimensões de limite atingidas por essa medida:</p>",
+  "alts": [
+   "As dimensões material e procedimental são atingidas simultaneamente: a medida alcança o conteúdo protegido — propriedade e garantias — e o faz sem forma, defesa ou base jurídica adequada.",
+   "Apenas a dimensão material é atingida, porque o problema se resume à violação do direito de propriedade previsto no art. 5º, XXII.",
+   "Apenas a dimensão procedimental é atingida, porque o vício está na ausência de processo e de defesa, e não no conteúdo da medida.",
+   "Nenhuma dimensão é atingida enquanto a medida for apenas um projeto, já que os limites constitucionais só incidem sobre atos normativos já promulgados."
+  ]
+ },
+ {
+  "n": 12,
+  "enunciado": "<p>O art. 3º da CF/88 estabelece como objetivos fundamentais da República construir uma sociedade livre, justa e solidária, garantir o desenvolvimento nacional, erradicar a pobreza e reduzir as desigualdades sociais e regionais, e promover o bem de todos sem discriminação.</p><p>Uma pessoa ajuíza ação pedindo prestação estatal determinada e fundamenta o pedido exclusivamente no art. 3º, sustentando que o dispositivo lhe assegura, por si, direito subjetivo imediato a qualquer medida que realize aqueles objetivos.</p><p>Sobre esse fundamento, é correto afirmar que:</p>",
+  "alts": [
+   "É suficiente, porque os objetivos fundamentais da República vinculam o Estado e, por isso, geram para qualquer pessoa direito subjetivo imediato a qualquer prestação que os concretize.",
+   "É insuficiente, porque o art. 3º tem natureza meramente retórica e não produz qualquer efeito jurídico sobre a atuação dos poderes públicos.",
+   "É insuficiente como fundamento único, porque o art. 3º fixa objetivos e tarefas que orientam e vinculam a atuação estatal, o que não se confunde com direito subjetivo exigível por pessoa determinada a prestação específica.",
+   "É irrelevante, porque objetivos fundamentais da República só podem ser invocados pelo Ministério Público em ação civil pública."
+  ]
+ },
+ {
+  "n": 13,
+  "enunciado": "<p>A Revolução Francesa colocou em primeiro plano a ruptura com os privilégios do Antigo Regime, a declaração de direitos, a cidadania e a soberania popular. Sua linguagem marcou o constitucionalismo posterior: cidadãos formalmente iguais, direitos declarados, Constituição escrita e poder constituinte.</p><p>Mendes e Branco observam, contudo, que na Europa continental a supremacia do Parlamento e da lei demorou a conviver com a ideia de que o próprio legislador pode estar sujeito à Constituição.</p><p>Sobre o que essa observação corrige:</p>",
+  "alts": [
+   "Corrige a tese de que a Revolução Francesa tenha sido irrelevante para o constitucionalismo, demonstrando que sua contribuição se limitou ao vocabulário jurídico.",
+   "Corrige o entendimento de que a soberania popular seja incompatível com a existência de uma Constituição escrita e de direitos declarados.",
+   "Corrige a ideia de que o Parlamento possa legislar, uma vez que a experiência francesa demonstrou a superioridade do Executivo na proteção dos direitos declarados.",
+   "Corrige a suposição de que revolução, declaração de direitos e Constituição escrita assegurem, por si, o controle efetivo de todos os poderes — inclusive do legislador."
+  ]
+ },
+ {
+  "n": 14,
+  "enunciado": "<p>Mendes e Branco registram que o conceito material de Constituição foi redefinido. Ultrapassado o momento histórico em que a preocupação predominante era conter o poder, o Estado assumiu tarefas diante de desigualdades crescentes e de uma sociedade acentuadamente plural — e, nas palavras dos autores, “o Estado de direito descobriu que lhe é essencial a busca da justiça social”.</p><p>Na formulação de Hesse que eles adotam, a Constituição passa a ser a ordem jurídica fundamental da comunidade, plano estrutural básico orientado por princípios que dão sentido à forma jurídica de uma comunidade.</p><p>A consequência direta dessa redefinição, quanto aos direitos sociais do art. 6º da CF/88, é que eles:</p>",
+  "alts": [
+   "Integram o conteúdo material da Constituição no sentido técnico, deixando de ser tratados como acréscimos externos ao núcleo constitucional clássico.",
+   "Constituem apêndices programáticos acrescentados ao texto constitucional, sem integrar o seu conteúdo material no sentido técnico do termo.",
+   "Substituem os direitos de liberdade como núcleo material da Constituição, que passa a organizar-se exclusivamente em torno das tarefas estatais.",
+   "Perdem natureza constitucional, uma vez que a redefinição do conceito material transferiu a matéria social para a legislação infraconstitucional."
+  ]
+ },
+ {
+  "n": 15,
+  "enunciado": "<p>O art. 59 da CF/88 dispõe que o processo legislativo compreende a elaboração de emendas à Constituição, leis complementares, leis ordinárias, leis delegadas, medidas provisórias, decretos legislativos e resoluções.</p><p>Um estudante conclui, a partir da leitura desse dispositivo, que todas as espécies ali arroladas possuem a mesma hierarquia normativa, já que integram um mesmo processo legislativo.</p><p>Sobre essa conclusão, é correto afirmar que:</p>",
+  "alts": [
+   "Está correta, porque a inclusão das espécies em um mesmo dispositivo constitucional estabelece entre elas relação de paridade hierárquica.",
+   "Está incorreta, porque o art. 59 arrola as espécies que se produzem pelo processo legislativo, sem por isso equipará-las: a emenda incorpora-se ao próprio texto constitucional, enquanto as demais espécies lhe são subordinadas.",
+   "Está incorreta, porque a hierarquia entre as espécies normativas é definida exclusivamente pelo quórum de aprovação, sendo a lei complementar superior à lei ordinária em qualquer matéria.",
+   "Está correta quanto às espécies legislativas e incorreta apenas quanto às resoluções, que possuem natureza administrativa e não integram o ordenamento."
+  ]
+ },
+ {
+  "n": 16,
+  "enunciado": "<p>Barroso sustenta que constitucionalismo significa, em essência, limitação do poder e supremacia da lei, mas adverte que a simples existência de uma Carta escrita não garante esse resultado.</p><p>Considere o seguinte cenário. Um país possui Constituição escrita, solene e amplamente divulgada, que enumera direitos e proclama a separação de Poderes. Na prática, porém, os direitos ali previstos não produzem efeito algum, os órgãos estatais não se controlam reciprocamente e a oposição não consegue atuar.</p><p>À luz da distinção acima, é correto afirmar que esse país:</p>",
+  "alts": [
+   "Vive sob constitucionalismo, porque a existência de uma Constituição escrita que enumera direitos e proclama a separação de Poderes é, por definição, o que caracteriza o fenômeno constitucional.",
+   "Não vive sob constitucionalismo, porque só há constitucionalismo onde a Constituição foi produzida por assembleia constituinte eleita para essa finalidade específica.",
+   "Não vive sob constitucionalismo, porque o texto opera como fachada: sem efetividade dos direitos, sem controles recíprocos e sem atuação da oposição, não há limitação efetiva do poder.",
+   "Vive sob constitucionalismo em sentido formal e sob autoritarismo em sentido material, categorias que a doutrina trata como independentes e igualmente válidas."
+  ]
+ },
+ {
+  "n": 17,
+  "enunciado": "<p>A crítica de inspiração marxista aprofunda o diagnóstico sociológico ao considerar que a ordem jurídica pode ser reduzida a um fator de dominação, que agrega legitimidade à estrutura de poder prevalecente. Barroso, ao apresentá-la, faz uma ressalva expressa: não há em Marx uma teoria acabada do Direito; o que se extrai é a tese de que o Direito é superestrutura correspondente a uma base material formada pelas relações de produção.</p><p>Sobre o alcance dessa ressalva, é correto afirmar que ela:</p>",
+  "alts": [
+   "Invalida a crítica, demonstrando que a análise marxista do Direito não possui rigor suficiente para ser utilizada no estudo constitucional.",
+   "Amplia a crítica, ao sugerir que qualquer análise das relações de produção conduz necessariamente às mesmas conclusões sobre a natureza do Direito.",
+   "É irrelevante para o estudo constitucional, uma vez que a origem intelectual de uma tese não interfere no seu emprego analítico.",
+   "Delimita a crítica sem invalidá-la: indica que se trata de tese sobre a relação entre Direito e base material, e não de teoria jurídica sistematizada por Marx."
+  ]
+ },
+ {
+  "n": 18,
+  "enunciado": "<p>Nos Estados Unidos, a Constituição escrita de 1787 assumiu posição superior à legislação ordinária. A preocupação não era apenas conter o Executivo: era também evitar que o Legislativo, ainda que eleito, ultrapassasse os limites constitucionais. O caso <em>Marbury v. Madison</em>, de 1803, tornou-se símbolo desse arranjo, ao afirmar que uma lei incompatível com a Constituição não deve prevalecer no caso julgado.</p><p>Mendes e Branco explicam que o controle judicial deu <strong>consequência prática</strong> à ideia de supremacia constitucional. Sobre a relação entre supremacia e controle, é correto afirmar que:</p>",
+  "alts": [
+   "A supremacia da Constituição é autoaplicável: uma vez proclamada no texto, ela produz por si a invalidade das leis contrárias, sendo o controle judicial mera formalidade posterior.",
+   "A supremacia só é efetiva se existir mecanismo capaz de afastar os atos que a contrariem; sem esse mecanismo, a superioridade permanece afirmada no texto e inoperante na prática.",
+   "O controle judicial é incompatível com a supremacia constitucional, porque transfere a tribunais não eleitos a última palavra sobre o conteúdo da Constituição.",
+   "Supremacia e controle são sinônimos, de modo que afirmar a superioridade da Constituição já significa, tecnicamente, afirmar a existência de controle de constitucionalidade."
+  ]
+ },
+ {
+  "n": 19,
+  "enunciado": "<p>Leia dois movimentos que o próprio texto constitucional realiza.</p><p>O <strong>art. 1º</strong> não descreve o Brasil que existe: escolhe um tipo de Estado — o Estado Democrático de Direito — e enumera os fundamentos dessa escolha. O <strong>art. 3º</strong> não relata o país real: fixa objetivos, entre eles erradicar a pobreza e reduzir as desigualdades.</p><p>Já o <strong>art. 5º, § 1º</strong> determina que as normas definidoras de direitos e garantias fundamentais têm aplicação imediata, e o <strong>art. 6º</strong> teve o seu rol alterado por emendas constitucionais em 2000, 2010 e 2015.</p><p>Sobre o que esses dois movimentos revelam:</p>",
+  "alts": [
+   "Revelam uma contradição interna do texto de 1988, que precisa ser resolvida pelo intérprete mediante a escolha de um dos dois movimentos como prevalecente.",
+   "Revelam que os arts. 1º e 3º possuem natureza meramente programática, sem força normativa, ao contrário dos arts. 5º e 6º.",
+   "Revelam que a Constituição se apresenta simultaneamente como decisão política sobre o futuro e como norma que se pretende obrigatória no presente, alterável por procedimento jurídico próprio.",
+   "Revelam que a Constituição é essencialmente descritiva, limitando-se a registrar o Estado e a sociedade tais como existiam em 1988."
+  ]
+ },
+ {
+  "n": 20,
+  "enunciado": "<p>O art. 60, § 3º, da CF/88 estabelece que a emenda à Constituição será promulgada pelas Mesas da Câmara dos Deputados e do Senado Federal, com o respectivo número de ordem. O processo legislativo das leis ordinárias e complementares, por sua vez, comporta a fase de sanção ou veto pelo Presidente da República.</p><p>Sobre a diferença entre os dois regimes, é correto afirmar que:</p>",
+  "alts": [
+   "A emenda constitucional depende de sanção presidencial, aplicando-se a ela, por analogia, o regime das leis complementares.",
+   "A emenda constitucional é promulgada pelo Presidente do Supremo Tribunal Federal, a quem cabe atestar a compatibilidade da reforma com as cláusulas pétreas.",
+   "A emenda constitucional dispensa promulgação, entrando em vigor com a proclamação do resultado da votação em segundo turno na Casa revisora.",
+   "A emenda constitucional é promulgada pelas Mesas das duas Casas, sem sanção ou veto presidencial — o que reforça que o poder de reforma é exercido pelo Congresso Nacional, e não em concurso com o Executivo na fase final."
+  ]
+ }
+];
+const LETRAS = ["A","B","C","D"];
+const CHAVE = "tc-bateria-u1-v1";
+let estado = {};
+try { estado = JSON.parse(localStorage.getItem(CHAVE) || "{}"); } catch (e) { estado = {}; }
+
+const lista = document.getElementById("lista");
+QUESTOES.forEach(montar);
+
+function montar(q) {
+  const sec = document.createElement("section");
+  sec.className = "q"; sec.id = "q" + q.n;
+  sec.innerHTML =
+    '<div class="q-body">' +
+      '<span class="q-num">Questão ' + q.n + ' de 20</span>' +
+      '<div class="q-enunciado">' + q.enunciado + '</div>' +
+      '<div class="alts"></div>' +
+    '</div>';
+  const caixa = sec.querySelector(".alts");
+  q.alts.forEach((t, j) => {
+    const b = document.createElement("button");
+    b.className = "alt"; b.type = "button";
+    b.innerHTML = '<span class="alt-letter">' + LETRAS[j] + '</span><span>' + t + '</span>';
+    b.addEventListener("click", () => { estado[q.n] = j; salvar(); pintar(q.n); placar(); });
+    caixa.appendChild(b);
+  });
+  lista.appendChild(sec);
+  pintar(q.n);
+}
+
+function pintar(n) {
+  const sec = document.getElementById("q" + n);
+  sec.querySelectorAll(".alt").forEach((el, j) => {
+    el.classList.toggle("picked", estado[n] === j);
+  });
+}
+
+function salvar() { try { localStorage.setItem(CHAVE, JSON.stringify(estado)); } catch (e) {} }
+
+function placar() {
+  const f = Object.keys(estado).length;
+  document.getElementById("s-feitas").textContent = f;
+  document.getElementById("m").style.width = (f / QUESTOES.length * 100) + "%";
+}
+
+document.getElementById("btn-folha").addEventListener("click", () => {
+  const linhas = ["BATERIA DE QUESTOES - MODULOS 1, 2A e 2B",
+                  "Teoria da Constituicao - I Unidade - 2026.2", "",
+                  "Nome: ______________________________________", ""];
+  QUESTOES.forEach(q => {
+    const r = estado[q.n] === undefined ? "( em branco )" : LETRAS[estado[q.n]];
+    linhas.push("  Questao " + String(q.n).padStart(2, " ") + " ....... " + r);
+  });
+  const f = Object.keys(estado).length;
+  linhas.push("", "Respondidas: " + f + " de " + QUESTOES.length);
+  linhas.push("", "Duvidas que levo para a aula:", "  1.", "  2.", "  3.");
+  const cx = document.getElementById("folha");
+  cx.hidden = false;
+  document.getElementById("folha-txt").value = linhas.join("\n");
+  cx.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+document.getElementById("btn-limpar").addEventListener("click", () => {
+  estado = {}; salvar();
+  QUESTOES.forEach(q => pintar(q.n));
+  placar();
+  document.getElementById("folha").hidden = true;
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+placar();
+</script>
