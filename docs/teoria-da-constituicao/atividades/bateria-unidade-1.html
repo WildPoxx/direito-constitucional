@@ -369,8 +369,8 @@ function placar() {
 }
 
 document.getElementById("btn-folha").addEventListener("click", () => {
-  const linhas = ["BATERIA DE QUESTOES - MODULOS 1, 2A e 2B",
-                  "Teoria da Constituicao - I Unidade - 2026.2", "",
+  const linhas = ["BATERIA DE QUESTOES - I UNIDADE",
+                  "Teoria da Constituicao - 2026.2", "",
                   "Nome: ______________________________________", ""];
   QUESTOES.forEach(q => {
     const r = estado[q.n] === undefined ? "( em branco )" : LETRAS[estado[q.n]];
