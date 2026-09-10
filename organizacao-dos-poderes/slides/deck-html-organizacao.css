@@ -142,3 +142,18 @@ body.hud-off .hud { display: none; }
   body.projecao-segura .gabarito, body.projecao-segura .nota-professor { visibility: visible; }
   body.projecao-segura .choice .correct { border-left-color: var(--accent); font-weight: 750; }
 }
+
+
+/* Acrescentado em 2026-09-10 (Modulo 3): tabelas de 2, 3 e 4 colunas, citacao com fonte e listas.
+   Regras apenas aditivas - nenhum seletor existente foi alterado. */
+.table.cols-2 { grid-template-columns: .9fr 2fr; }
+.table.cols-3 { grid-template-columns: .72fr 1.2fr 1.2fr; }
+.table.cols-4 { grid-template-columns: .8fr 1fr 1fr 1fr; }
+.table.cols-2 div:nth-child(3n) { border-right: 1px solid var(--line); }
+.table.cols-2 div:nth-child(2n) { border-right: none; }
+.table.cols-4 div:nth-child(3n) { border-right: 1px solid var(--line); }
+.table.cols-4 div:nth-child(4n) { border-right: none; }
+.quote .cite { display: block; margin-top: 12px; font-size: 18px; color: var(--accent); font-weight: 700; font-style: normal; }
+.bullets { margin: 26px 0 0; padding-left: 26px; }
+.bullets li { font-size: 22px; line-height: 1.3; margin-bottom: 9px; }
+.slide .quote + .small, .slide .table + .small, .slide .bullets + .small { margin-top: 18px; }
