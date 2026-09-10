@@ -1,0 +1,662 @@
+:root {
+  --paper: #f7f4ee;
+  --paper-warm: #fffaf3;
+  --ink: #1f2933;
+  --muted: #667085;
+  --accent: #255957;
+  --accent-2: #7c2d12;
+  --accent-soft: #c9dfdc;
+  --line: #d8c8b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Aptos", "Inter", "Segoe UI", Arial, sans-serif;
+  background: #24211f;
+  color: var(--ink);
+}
+
+.deck {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  padding: 28px;
+}
+
+.slide {
+  position: relative;
+  width: 1280px;
+  height: 720px;
+  padding: 56px 72px;
+  overflow: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 20px 70px rgba(0, 0, 0, .35);
+}
+
+.slide::after {
+  content: attr(data-slide);
+  position: absolute;
+  right: 72px;
+  bottom: 32px;
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto auto;
+  width: 360px;
+  height: 720px;
+  background: linear-gradient(180deg, rgba(37, 89, 87, .14), rgba(124, 45, 18, .06), rgba(37, 89, 87, 0));
+}
+
+.kicker {
+  margin: 0 0 18px;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--accent);
+}
+
+h1 {
+  max-width: 940px;
+  margin: 0;
+  font-size: 58px;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+h2 {
+  max-width: 1030px;
+  margin: 0 0 28px;
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.lead {
+  max-width: 920px;
+  margin: 28px 0 0;
+  font-size: 30px;
+  line-height: 1.25;
+}
+
+.rule {
+  width: 120px;
+  height: 6px;
+  margin: 30px 0 0;
+  background: var(--accent);
+}
+
+.footer {
+  position: absolute;
+  bottom: 32px;
+  left: 72px;
+  margin: 0;
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--muted);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 42px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 42px;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.box {
+  min-height: 178px;
+  padding: 20px 24px;
+  border-left: 6px solid var(--accent);
+  background: var(--paper-warm);
+}
+
+.box strong {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 28px;
+  line-height: 1.1;
+  color: var(--accent);
+}
+
+.box.alt {
+  border-left-color: var(--accent-2);
+}
+
+.box.alt strong {
+  color: var(--accent-2);
+}
+
+.box.compact {
+  min-height: 112px;
+  padding: 16px 20px;
+}
+
+.box.compact strong {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.box.mini {
+  min-height: 118px;
+  padding: 14px 16px;
+}
+
+.box.mini strong {
+  margin-bottom: 8px;
+  font-size: 21px;
+}
+
+.small {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.mini .small,
+.compact .small {
+  font-size: 19px;
+  line-height: 1.28;
+}
+
+.activity-question {
+  max-width: 990px;
+  margin: 32px 0 0;
+  font-size: 38px;
+  line-height: 1.15;
+  font-weight: 750;
+}
+
+.visual-layout {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 36px;
+  align-items: stretch;
+  margin-top: 30px;
+}
+
+.stack {
+  display: grid;
+  gap: 18px;
+}
+
+.quote {
+  margin-top: 42px;
+  padding: 30px 34px;
+  border: 2px solid var(--line);
+  background: rgba(255, 250, 243, .72);
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: .8fr 1fr 1.15fr;
+  border: 2px solid var(--line);
+  background: var(--paper-warm);
+  margin-top: 34px;
+}
+
+.table div {
+  min-height: 86px;
+  padding: 16px 18px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.table div:nth-child(3n) {
+  border-right: none;
+}
+
+.table .head {
+  min-height: 54px;
+  font-weight: 750;
+  color: var(--accent);
+  background: rgba(37, 89, 87, .08);
+}
+
+.choice {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.choice div {
+  padding: 12px 16px;
+  background: var(--paper-warm);
+  border-left: 5px solid var(--line);
+  font-size: 21px;
+  line-height: 1.22;
+}
+
+.choice .correct {
+  border-left-color: var(--accent);
+  font-weight: 750;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  background: var(--paper-warm);
+  color: var(--accent);
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.notice {
+  margin-top: 28px;
+  padding: 18px 22px;
+  border-left: 6px solid var(--accent-2);
+  background: rgba(124, 45, 18, .08);
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.schedule {
+  display: grid;
+  grid-template-columns: 145px 1.05fr 1.25fr;
+  border: 2px solid var(--line);
+  background: var(--paper-warm);
+  margin-top: 26px;
+}
+
+.schedule.four {
+  grid-template-columns: 140px 1fr 1.2fr .8fr;
+}
+
+.schedule div {
+  min-height: 52px;
+  padding: 10px 12px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.schedule.thin div {
+  min-height: 44px;
+  padding: 8px 11px;
+  font-size: 17px;
+}
+
+.schedule div:nth-child(3n) {
+  border-right: none;
+}
+
+.schedule.four div:nth-child(3n) {
+  border-right: 1px solid var(--line);
+}
+
+.schedule.four div:nth-child(4n) {
+  border-right: none;
+}
+
+.schedule .head {
+  min-height: 44px;
+  font-weight: 750;
+  color: var(--accent);
+  background: rgba(37, 89, 87, .08);
+}
+
+.source-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.source-list div {
+  padding: 14px 18px;
+  border-left: 5px solid var(--accent);
+  background: var(--paper-warm);
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.source-list strong {
+  color: var(--accent);
+}
+
+.micro {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.image-slot {
+  min-height: 376px;
+  padding: 24px;
+  border: 2px dashed var(--accent-soft);
+  background:
+    linear-gradient(135deg, rgba(37, 89, 87, .09), rgba(255, 250, 243, .82)),
+    var(--paper-warm);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.image-slot-label {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--accent);
+}
+
+.image-prompt {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #344054;
+}
+
+@media (max-width: 1320px) {
+  .deck {
+    align-items: flex-start;
+  }
+
+  .slide {
+    transform: scale(calc((100vw - 56px) / 1280));
+    transform-origin: top left;
+    margin-bottom: calc((720px * ((100vw - 56px) / 1280)) - 720px);
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .deck {
+    display: block;
+    padding: 0;
+  }
+
+  .slide {
+    page-break-after: always;
+    box-shadow: none;
+  }
+}
+
+/* ==========================================================
+   Camada de regência de tempo e modo apresentador
+   Adicionada em 09/08/2026. Nada foi removido do bloco acima.
+   ========================================================== */
+
+.slide {
+  scroll-margin-top: 24px;
+}
+
+/* Faixa superior de bloco e horário-alvo */
+.block-band {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 34px;
+  padding: 0 72px;
+  background: rgba(37, 89, 87, .10);
+  border-bottom: 1px solid var(--line);
+  font-size: 17px;
+  font-weight: 750;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.block-band .clock {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.block-band .opt {
+  padding: 2px 10px;
+  background: rgba(124, 45, 18, .14);
+  border: 1px solid rgba(124, 45, 18, .35);
+  color: var(--accent-2);
+  letter-spacing: .03em;
+}
+
+/* Slides com faixa precisam de respiro no topo */
+.slide.banded {
+  padding-top: 74px;
+}
+
+.slide.banded.title {
+  padding-top: 56px;
+}
+
+/* Lâmina opcional: corte ao vivo sem prejuízo do núcleo */
+.slide.optional {
+  background:
+    repeating-linear-gradient(135deg, rgba(124, 45, 18, .035) 0 18px, rgba(124, 45, 18, 0) 18px 36px),
+    var(--paper);
+}
+
+.slide.optional .block-band {
+  background: rgba(124, 45, 18, .09);
+  color: var(--accent-2);
+}
+
+body.hide-optional .slide.optional {
+  display: none;
+}
+
+/* HUD do professor: relógio real contra horário-alvo */
+.hud {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: rgba(31, 41, 51, .92);
+  color: #f7f4ee;
+  font-family: "Aptos", "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .4);
+}
+
+.hud .hud-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hud .hud-label {
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #9fb3b1;
+}
+
+.hud .hud-value {
+  font-size: 17px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.hud .hud-value.late {
+  color: #f4a58a;
+}
+
+.hud .hud-value.ahead {
+  color: #8fd3c8;
+}
+
+.hud .hud-help {
+  max-width: 210px;
+  font-size: 11px;
+  line-height: 1.35;
+  color: #9fb3b1;
+}
+
+body.hud-off .hud {
+  display: none;
+}
+
+@media print {
+  .hud {
+    display: none;
+  }
+
+  .slide.optional {
+    background: #fff;
+  }
+}
+
+/* Ajuste fino para lâminas densas com faixa de bloco */
+.slide.tight h2 {
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+.slide.tight .schedule {
+  margin-top: 16px;
+}
+
+/* A faixa de bloco fica acima do painel decorativo das lâminas-título */
+.block-band {
+  z-index: 3;
+}
+
+.title::before {
+  z-index: 0;
+}
+
+/* Marcas do professor: tecla M oculta para projeção limpa */
+body.sem-marcas .block-band .opt {
+  display: none;
+}
+
+body.sem-marcas .slide.optional {
+  background: var(--paper);
+}
+
+body.sem-marcas .slide.optional .block-band {
+  background: rgba(37, 89, 87, .10);
+  color: var(--accent);
+}
+
+/* Nas lâminas-título, o painel decorativo começa abaixo da faixa de bloco */
+.slide.title.banded::before {
+  top: 34px;
+  height: 686px;
+}
+
+
+/* ==========================================================
+   Camada de projeção segura
+   Acrescentada em 09/08/2026 para a aula de 10/08/2026.
+   Nada foi removido: todas as regras acima continuam valendo.
+   Só vale para decks que declaram <body class="projecao-segura">,
+   por isso os decks v1 continuam se comportando como antes.
+   ========================================================== */
+
+/* 1. Gabarito oculto por padrão. Tecla G revela. */
+body.projecao-segura .choice .correct {
+  border-left-color: var(--line);
+  font-weight: 400;
+}
+
+body.projecao-segura.mostrar-gabarito .choice .correct {
+  border-left-color: var(--accent);
+  font-weight: 750;
+}
+
+body.projecao-segura .gabarito {
+  visibility: hidden;
+}
+
+body.projecao-segura.mostrar-gabarito .gabarito {
+  visibility: visible;
+}
+
+/* 2. Notas de bastidor ocultas por padrão. Tecla N revela. */
+body.projecao-segura .nota-professor,
+body.projecao-segura .image-prompt {
+  visibility: hidden;
+}
+
+body.projecao-segura.mostrar-notas .nota-professor,
+body.projecao-segura.mostrar-notas .image-prompt {
+  visibility: visible;
+}
+
+/* 3. Citação lateral ocupando a coluna inteira no layout de duas colunas */
+body.projecao-segura .visual-layout > .quote {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  align-self: stretch;
+}
+
+/* 4. O painel do professor ganhou duas teclas: precisa de mais largura */
+body.projecao-segura .hud .hud-help {
+  max-width: 300px;
+}
+
+/* 5. Na impressão em PDF, gabarito e notas saem visíveis (cópia do professor) */
+@media print {
+  body.projecao-segura .gabarito,
+  body.projecao-segura .nota-professor,
+  body.projecao-segura .image-prompt {
+    visibility: visible;
+  }
+
+  body.projecao-segura .choice .correct {
+    border-left-color: var(--accent);
+    font-weight: 750;
+  }
+}
