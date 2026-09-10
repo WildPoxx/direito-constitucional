@@ -13,7 +13,7 @@
   function parseBlock(source) {
     const answer = source.match(/\*\*Resposta:\s*([A-D])\.\*\*\s*([\s\S]*)$/);
     const options = [...source.matchAll(/\*\*([A-D])\.\*\*\s*([\s\S]*?)(?=(?:\s{2,}\n?\*\*[A-D]\.\*)|\n\n\*\*Resposta:|$)/g)];
-    const stem = source.split(/\*\*A\.\*\*/)[0].trim();
+    const stem = source.split(/\*\*A\.\*\*/)[0].replace(/^#{2,4} .*$/m, '').trim();
     if (!answer || options.length !== 4) return null;
     return {
       stem,
@@ -23,13 +23,8 @@
     };
   }
 
-  // A secao de treino aceita uma questao (padrao antigo) ou varias em sequencia.
-  function makeQuiz(markdown) {
-    const section = markdown.match(/### Quest(?:ão Objetiva Comentada|ões Objetivas Comentadas)\s+([\s\S]*?)\s+### Roteiro De Resposta Discursiva/);
-    if (!section) return { markdown, quizzes: [] };
-    const region = section[1].trim();
-
-    // Cada questao termina no paragrafo iniciado por **Resposta: X.**
+  // Quebra uma regiao de treino em questoes: cada uma termina no paragrafo **Resposta: X.**
+  function splitQuestions(region) {
     const boundaries = [...region.matchAll(/\*\*Resposta:\s*[A-D]\.\*\*/g)];
     const chunks = [];
     let start = 0;
@@ -39,12 +34,38 @@
       chunks.push(region.slice(start, end).trim());
       start = end;
     });
+    return chunks.map(parseBlock).filter(Boolean);
+  }
 
-    const quizzes = chunks.map(parseBlock).filter(Boolean);
-    if (!quizzes.length) return { markdown, quizzes: [] };
+  // Dois formatos aceitos:
+  //  (a) legado — uma secao "### Questao(oes) Objetiva(s) Comentada(s)" ate "### Roteiro De Resposta Discursiva";
+  //  (b) modular — varias secoes "### Treino N — titulo", cada uma no fim do seu topico.
+  // O formato (b) e renderizado no lugar em que aparece, e nao no fim do texto.
+  function makeQuizzes(markdown) {
+    const panels = [];
+    let working = markdown;
+
+    // Sem a flag m: aqui $ precisa significar fim do texto, e nao fim de linha.
+    const treinos = [...working.matchAll(/\n### (Treino[^\n]*)\n([\s\S]*?)(?=\n#{2,3} |$)/g)];
+    if (treinos.length) {
+      treinos.forEach((match) => {
+        const questions = splitQuestions(match[2].trim());
+        if (!questions.length) return;
+        const index = panels.length;
+        panels.push({ title: match[1].trim(), questions });
+        working = working.replace(match[0], `<div class="module-quiz-slot" data-slot="${index}"></div>\n\n`);
+      });
+      if (panels.length) return { markdown: working, panels };
+    }
+
+    const legacy = working.match(/### Quest(?:ão Objetiva Comentada|ões Objetivas Comentadas)\s+([\s\S]*?)\s+### Roteiro De Resposta Discursiva/);
+    if (!legacy) return { markdown, panels: [] };
+    const questions = splitQuestions(legacy[1].trim());
+    if (!questions.length) return { markdown, panels: [] };
+    panels.push({ title: null, questions });
     return {
-      markdown: markdown.replace(section[0], '<div class="module-quiz-slot"></div>\n\n### Roteiro De Resposta Discursiva'),
-      quizzes
+      markdown: working.replace(legacy[0], '<div class="module-quiz-slot" data-slot="0"></div>\n\n### Roteiro De Resposta Discursiva'),
+      panels
     };
   }
 
@@ -55,7 +76,7 @@
     while (i < lines.length) {
       const line = lines[i];
       if (!line.trim()) { i++; continue; }
-      if (line === '<div class="module-quiz-slot"></div>') { result.push(line); i++; continue; }
+      if (/^<div class="module-quiz-slot"/.test(line)) { result.push(line); i++; continue; }
       if (/^#{1,3} /.test(line)) {
         const [, hashes, title] = line.match(/^(#{1,3})\s+(.+)$/);
         const level = hashes.length;
@@ -89,36 +110,41 @@
     return result.join('\n');
   }
 
-  function insertQuiz(quizzes) {
-    const slot = document.querySelector('.module-quiz-slot');
-    if (!slot || !quizzes.length) return;
-    const many = quizzes.length > 1;
-    const titulo = many ? `Treino objetivo — ${quizzes.length} questões` : 'Questão objetiva';
-    const cards = quizzes.map((quiz, index) => {
-      const name = `module-question-${index + 1}`;
-      const rotulo = many ? `Questão ${index + 1} de ${quizzes.length}` : 'Escolha uma alternativa';
-      return `<fieldset class="question-card interactive-question" data-question="${index + 1}"><legend>${rotulo}</legend><p class="question-stem">${inline(quiz.stem)}</p><div class="options-list">${quiz.options.map((option) => `<label class="option-row"><input type="radio" name="${name}" value="${option.key}"><span><strong>${option.key}.</strong> ${inline(option.text)}</span></label>`).join('')}</div><div class="quiz-feedback" hidden aria-live="polite"></div></fieldset>`;
-    }).join('');
-    slot.outerHTML = `<section class="quiz-panel" aria-labelledby="titulo-treino"><h2 id="titulo-treino">${titulo}</h2>${many ? '<p>Responda uma de cada vez. O comentário aparece assim que você marcar a alternativa.</p>' : ''}${cards}</section>`;
+  function insertQuizzes(panels) {
+    panels.forEach((panel, slotIndex) => {
+      const slot = document.querySelector(`.module-quiz-slot[data-slot="${slotIndex}"]`);
+      if (!slot) return;
+      const quizzes = panel.questions;
+      const many = quizzes.length > 1;
+      const titulo = panel.title || (many ? `Treino objetivo — ${quizzes.length} questões` : 'Questão objetiva');
+      const tituloId = `titulo-treino-${slotIndex}`;
+      const cards = quizzes.map((quiz, index) => {
+        const name = `module-question-${slotIndex}-${index + 1}`;
+        const rotulo = many ? `Questão ${index + 1} de ${quizzes.length}` : 'Escolha uma alternativa';
+        return `<fieldset class="question-card interactive-question" data-panel="${slotIndex}" data-question="${index + 1}"><legend>${rotulo}</legend><p class="question-stem">${inline(quiz.stem)}</p><div class="options-list">${quiz.options.map((option) => `<label class="option-row"><input type="radio" name="${name}" value="${option.key}"><span><strong>${option.key}.</strong> ${inline(option.text)}</span></label>`).join('')}</div><div class="quiz-feedback" hidden aria-live="polite"></div></fieldset>`;
+      }).join('');
+      slot.outerHTML = `<section class="quiz-panel" aria-labelledby="${tituloId}"><h2 id="${tituloId}">${titulo}</h2>${many ? '<p>Responda uma de cada vez. O comentário aparece assim que você marcar a alternativa.</p>' : ''}${cards}</section>`;
 
-    document.querySelectorAll('.interactive-question').forEach((card, index) => {
-      const quiz = quizzes[index];
-      card.querySelectorAll('input[type="radio"]').forEach((input) => input.addEventListener('change', (event) => {
-        const feedback = card.querySelector('.quiz-feedback');
-        const correct = event.target.value === quiz.answer;
-        feedback.hidden = false;
-        feedback.className = `quiz-feedback ${correct ? 'is-correct' : 'is-wrong'}`;
-        feedback.innerHTML = `<p><strong>${correct ? 'Resposta correta.' : 'Ainda não.'}</strong> ${correct ? inline(quiz.explanation) : `A alternativa correta é <strong>${quiz.answer}</strong>. ${inline(quiz.explanation)}`}</p>`;
-      }));
+      document.querySelectorAll(`.interactive-question[data-panel="${slotIndex}"]`).forEach((card) => {
+        const quiz = quizzes[Number(card.dataset.question) - 1];
+        if (!quiz) return;
+        card.querySelectorAll('input[type="radio"]').forEach((input) => input.addEventListener('change', (event) => {
+          const feedback = card.querySelector('.quiz-feedback');
+          const correct = event.target.value === quiz.answer;
+          feedback.hidden = false;
+          feedback.className = `quiz-feedback ${correct ? 'is-correct' : 'is-wrong'}`;
+          feedback.innerHTML = `<p><strong>${correct ? 'Resposta correta.' : 'Ainda não.'}</strong> ${correct ? inline(quiz.explanation) : `A alternativa correta é <strong>${quiz.answer}</strong>. ${inline(quiz.explanation)}`}</p>`;
+        }));
+      });
     });
   }
 
   fetch(main.dataset.moduleSource)
     .then((response) => { if (!response.ok) throw new Error('Falha ao carregar o material.'); return response.text(); })
     .then((raw) => {
-      const prepared = makeQuiz(raw);
+      const prepared = makeQuizzes(raw);
       main.innerHTML = `${markdownToHtml(prepared.markdown)}<section class="ai-disclosure compact"><h2>Nota de transparência sobre uso de IA</h2><p>Este material fez uso de Inteligência Artificial Generativa (Codex, da OpenAI) para organização e estruturação do texto, revisão de redação e estilo, revisão de coerência e consistência argumentativa, preparação visual ou adaptação didática e apoio à elaboração de questões e atividades, observadas as diretrizes da Portaria CNPq nº 2.664/2026. A seleção do conteúdo, a conferência das fontes e a responsabilidade final são do docente responsável.</p></section>`;
-      insertQuiz(prepared.quizzes);
+      insertQuizzes(prepared.panels);
       document.querySelector('[data-module-status]').textContent = 'Material carregado.';
     })
     .catch(() => { main.innerHTML = '<section class="notice"><strong>Não foi possível carregar este material.</strong> Atualize a página ou tente novamente mais tarde.</section>'; });
