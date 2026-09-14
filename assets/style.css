@@ -204,6 +204,14 @@ h3 {
   background: #fbfbf9;
 }
 
+.module-content blockquote p {
+  margin: 0 0 10px;
+}
+
+.module-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 .module-content hr {
   margin: 30px 0;
   border: 0;
