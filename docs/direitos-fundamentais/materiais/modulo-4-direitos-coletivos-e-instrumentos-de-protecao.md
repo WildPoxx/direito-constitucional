@@ -256,98 +256,43 @@ sindicatos, entidades de classe e associações com pelo menos um ano de funcion
 
 ---
 
-## 5. Os instrumentos, como consequência
+## 5. Quem vai a juízo, e a que título
 
-Agora que a titularidade está posta, os instrumentos deixam de ser uma lista para decorar e
-passam a ser respostas a perguntas diferentes.
+Uma coletividade não assina procuração. Reconhecer que existe uma posição protegida sem titular
+determinado só tem consequência prática se alguém puder levá-la a juízo — e a Constituição
+resolve isso nomeando legitimados, um a um, para cada situação.
 
-### 5.1 Mandado de segurança coletivo — art. 5º, LXX
+| Quem | Dispositivo | A que título |
+|---|---|---|
+| O cidadão, individualmente | art. 5º, LXXIII | Em nome próprio, na defesa do interesse público |
+| Entidade associativa | art. 5º, XXI | **Representação** — exige autorização expressa |
+| Partido, sindicato, entidade de classe, associação com mais de um ano | art. 5º, LXX | **Substituição** — dispensa autorização |
+| Sindicato | art. 8º, III | Defesa dos direitos e interesses **da categoria**, e não apenas dos filiados |
+| Comunidades e organizações indígenas | art. 232 | Em nome próprio, com intervenção obrigatória do Ministério Público |
+| Ministério Público | arts. 127 e 129, III e V | Na defesa de interesses sociais e indisponíveis, difusos e coletivos |
 
-**Pergunta a que responde:** há direito líquido e certo, de membros de um grupo, violado por ato
-ilegal ou abuso de poder de autoridade?
+A porta pela qual cada um entra tem nome — habeas corpus, mandado de segurança individual e
+coletivo, mandado de injunção, habeas data, ação popular, e ainda a ação civil pública, que não
+é remédio constitucional em sentido estrito. **Cada uma dessas portas tem requisitos próprios de
+cabimento, e é disso que trata o Módulo 5.** Aqui interessa apenas o que você já consegue
+responder: quem é o titular, quem pode ir por ele, e se vai representando ou substituindo.
 
-Mendes e Branco insistem que o MS coletivo "não se trata de nova modalidade de ação
-constitucional, ao lado do mandado de segurança tradicional, mas de forma diversa de legitimação
-processual *ad causam*" (p. 668). Ou seja: tudo o que vale para o mandado de segurança
-individual continua valendo — exige-se direito líquido e certo, com prova pré-constituída, e o
-que muda é **quem** impetra. Daí a consequência que derruba muita gente: "simples interesses,
-que não configuram direitos, não legitimam a válida utilização do mandado de segurança
-coletivo".
+Duas advertências que valem para todas elas.
 
-Os autores registram ainda que o Supremo entende que o **Estado-membro não tem legitimação**
-para impetrar MS coletivo contra a União em defesa de supostos interesses da população residente
-na unidade federada — o ente federativo não é órgão de representação ou de gestão de interesse
-da população (p. 672).
+A primeira: o mandado de segurança coletivo **não é uma ação nova**. Mendes e Branco são
+categóricos — ele "não se trata de nova modalidade de ação constitucional, ao lado do mandado de
+segurança tradicional, mas de forma diversa de legitimação processual *ad causam*" (p. 668). Tudo
+o que vale para o writ individual continua valendo; o que muda é quem impetra.
 
-### 5.2 Ação popular — art. 5º, LXXIII
+A segunda: a ação civil pública **não pertence a esta família**. Ela está no art. 129, III, entre
+as funções institucionais do Ministério Público, e não no art. 5º; sua legitimidade não é do
+titular do direito, mas de órgãos e entidades arrolados em lei; e ela não protege posição
+individual de quem a propõe. Mendes e Branco a tratam em item separado dos writs (p. 686). É
+instrumento de tutela coletiva, e é assim que você deve classificá-la numa prova.
 
-**Pergunta a que responde:** um ato lesivo ao patrimônio público, à moralidade administrativa, ao
-meio ambiente ou ao patrimônio histórico e cultural precisa ser anulado?
-
-O dispositivo diz "qualquer cidadão", e a palavra é técnica. Mendes e Branco explicam que a ação
-popular "é um instrumento típico da cidadania e somente pode ser proposta pelo cidadão, aqui
-entendido como aquele que não apresente pendências no que concerne às obrigações cívicas,
-militares e eleitorais que, por lei, sejam exigíveis" (p. 686). Cidadão, aqui, é o eleitor em
-dia — o que exclui a pessoa jurídica, o estrangeiro e quem não tem título regular. É o único
-instrumento deste módulo cuja legitimidade é **do indivíduo**, e não de uma entidade.
-
-Duas outras marcas: o autor é isento de custas judiciais e do ônus da sucumbência, salvo
-comprovada má-fé — a Constituição quis baratear o controle popular; e a ação é regulada pela Lei
-n. 4.717/1965. Os autores a descrevem como instrumento de defesa de interesse público que "não
-tem em vista primacialmente a defesa de posições individuais", embora as decisões nela tomadas
-possam refletir sobre posições subjetivas.
-
-> **Nota de procedência.** As Leis n. 4.717/1965 e n. 7.347/1985 não foram abertas no texto
-> oficial para este módulo. O que se afirma sobre elas vem do relato de Mendes e Branco,
-> pp. 686-687 do PDF.
-
-### 5.3 Ação civil pública — art. 129, III
-
-**Pergunta a que responde:** um interesse difuso ou coletivo — patrimônio público e social, meio
-ambiente, consumidor, bens de valor artístico, histórico, turístico, paisagístico, ordem
-econômica — precisa de tutela judicial?
-
-O art. 129, III, atribui ao Ministério Público promover "o inquérito civil e a ação civil
-pública, para a proteção do patrimônio público e social, do meio ambiente e de outros interesses
-difusos e coletivos". Mas — e aqui está o erro mais comum — **a ação civil pública não é
-exclusiva do Ministério Público**. Segundo Mendes e Branco, têm legitimidade "o Ministério
-Público, as pessoas jurídicas de direito público, as empresas públicas e sociedades de economia
-mista, as associações constituídas há pelo menos um ano, nos termos da lei civil, que incluam
-entre as suas finalidades institucionais a proteção de interesses difusos ou coletivos" (p. 687,
-remetendo ao art. 5º da Lei n. 7.347/85).
-
-O que o art. 129, III, faz é atribuir ao MP essa função; não lhe dá monopólio.
-
-### 5.4 Mandado de injunção coletivo — art. 5º, LXXI e Lei n. 13.300/2016
-
-**Pergunta a que responde:** a falta de norma regulamentadora está inviabilizando o exercício de
-um direito constitucional por todo um grupo?
-
-O art. 5º, LXXI, prevê o mandado de injunção sem adjetivo. A forma coletiva veio com a Lei n.
-13.300/2016, cujo art. 12 legitima o Ministério Público, o partido político com representação no
-Congresso Nacional, as entidades sindicais, de classe e associativas com pelo menos um ano, e a
-Defensoria Pública. O parágrafo único esclarece que os direitos protegidos são os pertencentes
-"indistintamente, a uma coletividade indeterminada de pessoas ou determinada por grupo" — ou
-seja, a lei acomoda tanto o difuso quanto o coletivo em sentido estrito.
-
-### 5.5 Um ponto que está em disputa
-
-Nem tudo aqui é assentado, e vale você saber disso antes da prova.
-
-O art. 5º, LXX, *a*, legitima o **partido político** a impetrar mandado de segurança coletivo. O
-art. 21, parágrafo único, da Lei n. 12.016/2009 menciona direitos coletivos e individuais
-homogêneos e **não menciona** os difusos. A pergunta é se um partido pode usar o writ para
-defender interesse difuso — por exemplo, um partido de programa ambiental contra ato lesivo ao
-meio ambiente.
-
-Mendes e Branco registram que a leitura restritiva "vem sendo criticada com excelentes
-argumentos", citando Teori Zavascki, Leonardo José Carneiro, José Afonso da Silva e Alexandre de
-Moraes (pp. 669-670). O próprio Gilmar Mendes escreve em primeira pessoa: "tenho por cabível a
-utilização do mandado de segurança coletivo pelos partidos políticos, para a defesa de
-interesses difusos, ligados a suas finalidades institucionais" (p. 671).
-
-**Isto é ponto disputado, e por isso não será cobrado em questão objetiva.** É excelente material
-para questão discursiva — e o roteiro ao fim deste módulo usa exatamente isso.
+> **Onde o nome da ação entra.** No fim, sempre. Um aluno que começa a resposta por "cabe mandado
+> de segurança" já perdeu a chance de mostrar que identificou o titular, o bem e o vínculo — que
+> é o que a questão está medindo.
 
 ---
 
@@ -398,11 +343,9 @@ e não no começo.
 3. **Quem pode ir a juízo, e a que título?** Cidadão, entidade associativa, sindicato, partido,
    Ministério Público, Defensoria — e, decisivamente: **representando** (precisa de autorização)
    ou **substituindo** (não precisa)?
-4. **Qual instrumento responde à pergunta do caso?** Anulação de ato lesivo ao patrimônio
-   público, moralidade, ambiente ou patrimônio cultural → ação popular. Direito líquido e certo
-   de membros de grupo violado por autoridade → mandado de segurança coletivo. Interesse difuso
-   ou coletivo em geral → ação civil pública. Falta de norma regulamentadora travando o
-   exercício de direito por um grupo → mandado de injunção coletivo.
+4. **Qual é a porta, e por que ela?** Aqui entra o nome do instrumento — e só aqui. Neste
+   módulo basta identificar o legitimado e o título pelo qual ele age; os requisitos de
+   cabimento de cada remédio são matéria do Módulo 5.
 
 ---
 
@@ -419,10 +362,11 @@ Passe o caso pelos quatro passos. E responda, por escrito:
 - Quantas pretensões diferentes há aqui, e de que categorias?
 - O risco de desabamento sobre a calçada é difuso, coletivo ou individual homogêneo? E a vaga na
   creche para cada criança da lista?
-- Uma associação de moradores constituída há oito meses pode propor ação civil pública? Qual
-  dispositivo você consulta para responder?
-- O sobrepreço no contrato comporta ação popular? Quem, concretamente, poderia propô-la — e o
-  que essa pessoa precisa comprovar sobre si mesma antes de qualquer coisa?
+- A associação de moradores do bairro pretende ir a juízo pelas famílias da lista de espera.
+  Ela age representando ou substituindo? Qual dispositivo decide isso, e o que ela precisa reunir
+  antes de ajuizar em cada uma das duas hipóteses?
+- Se em vez da associação fosse o Ministério Público, mudaria a natureza das pretensões em jogo?
+  E se fosse um morador sozinho?
 
 ---
 
@@ -436,8 +380,8 @@ Passe o caso pelos quatro passos. E responda, por escrito:
   as comunidades indígenas (art. 232), a categoria profissional (art. 8º, III).
 - **Representar exige autorização; substituir, não.** Art. 5º, XXI, e art. 5º, LXX, são regimes
   diferentes no mesmo artigo. Súmulas 629 e 630 do STF.
-- **O instrumento vem por último**, como resposta à pergunta do caso — nunca como ponto de
-  partida.
+- **O instrumento vem por último.** Neste módulo, a pergunta que se responde é quem vai a juízo
+  e a que título; o cabimento de cada remédio é o Módulo 5.
 - **O limite é o postulado antiutilitarista:** coletivizar a tutela amplia o acesso; não
   transforma o indivíduo em meio para metas coletivas.
 
@@ -449,10 +393,11 @@ Responda sem consultar o texto. Depois confira.
    uma frase?
 2. Por que uma associação não precisa de autorização em assembleia para impetrar mandado de
    segurança coletivo, mas precisa para representar filiados com base no art. 5º, XXI?
-3. Uma empresa pode propor ação popular? Justifique pelo dispositivo.
+3. O art. 8º, III, fala em direitos e interesses "da categoria". Por que essa palavra é mais
+   larga do que "dos filiados"?
 4. O que o art. 225 tem de tão característico de um direito difuso? Aponte três marcas na
    própria redação.
-5. Por que o mandado de segurança coletivo não serve para "simples interesses"?
+5. Por que a ação civil pública não é remédio constitucional em sentido estrito?
 
 ---
 
@@ -536,55 +481,53 @@ Assinale a alternativa correta.
 
 #### Questão 4
 
-Um partido político sem representação no Congresso Nacional, uma sociedade empresária e um
-eleitor em situação regular pretendem, cada um por sua via, questionar judicialmente contrato
-administrativo firmado por prefeitura com sobrepreço apontado pelo Tribunal de Contas. O art. 5º,
-LXXIII, da Constituição dispõe que "qualquer cidadão é parte legítima para propor ação popular
-que vise a anular ato lesivo ao patrimônio público ou de entidade de que o Estado participe, à
-moralidade administrativa, ao meio ambiente e ao patrimônio histórico e cultural".
+Um turista estrangeiro, sem residência no Brasil, tem sua bagagem apreendida por agente público
+sem qualquer ato fundamentado e pretende reagir judicialmente. Alega-se que o art. 5º, *caput*,
+da Constituição assegura os direitos "aos brasileiros e aos estrangeiros residentes no País".
+Mendes e Branco recusam a leitura literal: "o respeito devido à dignidade de todos os homens não
+se excepciona pelo fator meramente circunstancial da nacionalidade"; anotam, porém, que os
+direitos políticos pressupõem a nacionalidade brasileira e que os direitos sociais tendem a ser
+compreendidos como não inclusivos do estrangeiro sem residência no País.
 
-Assinale a alternativa correta quanto à legitimidade para a ação popular.
+Com base nesse recorte, assinale a alternativa correta.
 
-**A.** Apenas o eleitor em situação regular é parte legítima, pois "cidadão", no dispositivo, designa quem está no gozo dos direitos políticos, o que exclui a pessoa jurídica.
+**A.** O estrangeiro não residente é titular dos direitos individuais que decorrem da dignidade da pessoa humana, ainda que não o seja dos direitos políticos nem, em regra, dos direitos sociais, que supõem vínculo com o País.
 
-**B.** Os três são partes legítimas, pois a expressão "qualquer cidadão" foi empregada em sentido amplo, abrangendo pessoas físicas e jurídicas interessadas na moralidade administrativa.
+**B.** O estrangeiro não residente não é titular de direito fundamental algum enquanto permanecer nessa condição, pois a titularidade decorre do vínculo de residência exigido expressamente pelo art. 5º, *caput*, da Constituição.
 
-**C.** Apenas a sociedade empresária é parte legítima, por ser a única com capacidade econômica para suportar as custas do processo até o desfecho.
+**C.** O estrangeiro não residente é titular de todos os direitos do art. 5º e também dos direitos políticos e sociais, uma vez que a dignidade da pessoa humana, sendo indivisível, não comporta gradação conforme a nacionalidade do titular.
 
-**D.** Apenas o partido político é parte legítima, por ser o veículo constitucional típico do controle da moralidade administrativa, independentemente de representação no Congresso.
+**D.** A titularidade do estrangeiro não residente depende de reciprocidade prevista em tratado firmado pelo Brasil com o Estado de sua nacionalidade, sem o que a proteção constitucional não lhe alcança.
 
-**Resposta: A.** A ação popular é instrumento típico da cidadania e, segundo Mendes e Branco, somente pode ser proposta pelo cidadão, entendido como aquele sem pendências quanto às obrigações cívicas, militares e eleitorais legalmente exigíveis. Pessoa jurídica não vota e, por isso, não é cidadã no sentido do dispositivo.
+**Resposta: A.** O recorte transcrito faz exatamente essa separação: recusa que a nacionalidade, como fator circunstancial, exclua a titularidade, e ao mesmo tempo ressalva os direitos que pressupõem vínculo político ou residência. É no campo dos direitos individuais que a proteção do não residente pesa mais.
 
-- **B** Toma "cidadão" como sinônimo de "qualquer pessoa". O texto constitucional emprega o termo em sentido técnico, ligado ao exercício dos direitos políticos, e é isso que restringe o rol.
-- **C** Inverte o desenho do instituto. O art. 5º, LXXIII, isenta o autor de custas judiciais e do ônus da sucumbência, salvo comprovada má-fé, justamente para que a capacidade econômica não seja filtro de acesso.
-- **D** Confunde os instrumentos. A legitimidade de partido político com representação no Congresso é prevista para o mandado de segurança coletivo (art. 5º, LXX, *a*), não para a ação popular.
+- **B** Adota a leitura literal que o próprio recorte rejeita, e ignora que a dignidade é reconhecida a todos os homens, não apenas aos residentes.
+- **C** Ignora a ressalva expressa do recorte quanto aos direitos políticos e sociais. Reconhecer titularidade ampla não significa igualar todos os direitos independentemente do vínculo com o País.
+- **D** Introduz uma condição de reciprocidade que nem o art. 5º, *caput*, nem o recorte transcrito estabelecem. A proteção decorre da dignidade, não de acordo entre Estados.
 
 #### Questão 5
 
-Uma associação de defesa do consumidor, constituída há três anos e com previsão estatutária de
-proteção a interesses difusos e coletivos, pretende ajuizar ação civil pública contra prática
-comercial lesiva. Questiona-se sua legitimidade, sob o argumento de que o art. 129, III, da
-Constituição atribui ao Ministério Público promover "o inquérito civil e a ação civil pública,
-para a proteção do patrimônio público e social, do meio ambiente e de outros interesses difusos
-e coletivos".
+Um sindicato ajuíza demanda em favor de trabalhadores que exercem a atividade abrangida pela
+categoria, incluindo alguns que não são filiados à entidade. A parte contrária sustenta que a
+atuação só poderia alcançar os associados. O art. 8º, III, da Constituição dispõe que "ao
+sindicato cabe a defesa dos direitos e interesses coletivos ou individuais da categoria,
+inclusive em questões judiciais ou administrativas".
 
 Assinale a alternativa correta.
 
-**A.** A associação não tem legitimidade, porque o art. 129, III, ao arrolar a ação civil pública entre as funções institucionais do Ministério Público, conferiu-lhe exclusividade na propositura, restando aos demais interessados apenas representar ao órgão.
+**A.** A tese da parte contrária procede, pois o dispositivo restringe a atuação sindical aos filiados, únicos vinculados à entidade por relação jurídica base apta a justificar a substituição.
 
-**B.** A associação não tem legitimidade, porque a ação civil pública se destina exclusivamente à tutela do meio ambiente e do patrimônio público, devendo os interesses dos consumidores ser veiculados por ação popular ou por demandas individuais.
+**B.** A tese da parte contrária procede quanto aos direitos individuais e é improcedente quanto aos coletivos, pois o dispositivo autoriza a defesa de direitos individuais somente em favor dos associados da entidade.
 
-**C.** A associação tem legitimidade, mas somente se obtiver autorização expressa dos consumidores atingidos pela prática, aplicando-se à tutela coletiva o regime de representação do art. 5º, XXI, da Constituição.
+**C.** A tese da parte contrária é improcedente, mas o sindicato precisará juntar autorização expressa de cada trabalhador não filiado, por aplicação do art. 5º, XXI, da Constituição às hipóteses de atuação sindical.
 
-**D.** A associação tem legitimidade, porque o art. 129, III, atribui a função ao Ministério Público sem lhe dar exclusividade: também figuram entre os legitimados as pessoas jurídicas de direito público, as empresas estatais e as associações com mais de um ano.
+**D.** A tese da parte contrária é improcedente, pois o dispositivo atribui ao sindicato a defesa dos direitos e interesses da categoria — universo mais amplo que o dos filiados — e alcança tanto os coletivos quanto os individuais.
 
-**Resposta: D.** Segundo Mendes e Branco, remetendo ao art. 5º da Lei n. 7.347/85, o rol de legitimados é plural. O art. 129, III, arrola a ação civil pública entre as funções institucionais do Ministério Público; não a transforma em monopólio seu.
+**Resposta: D.** O texto emprega "da categoria", e não "dos associados", e abrange expressamente direitos coletivos e individuais. O recorte da atuação é a categoria profissional, não o quadro de filiados.
 
-- **A** Lê no dispositivo uma exclusividade que ele não afirma. Atribuir uma função a um órgão não significa vedá-la a outros legitimados previstos em lei.
-- **B** Restringe a ação civil pública ao tema ambiental. O próprio art. 129, III, menciona patrimônio público e social, meio ambiente e "outros interesses difusos e coletivos", e a prática forense a emprega largamente em matéria de consumo.
-- **C** Aplica à ação civil pública o regime de representação do art. 5º, XXI. A legitimidade da associação na tutela coletiva é autônoma e decorre da lei e do estatuto, não de autorização individual dos atingidos.
-
-*Observação: as Leis n. 7.347/85 e n. 4.717/65 não foram consultadas no texto oficial para este módulo; o que se afirma sobre elas reproduz o relato de Mendes e Branco, pp. 686-687 do PDF.*
+- **A** Substitui a palavra do dispositivo por outra. O art. 8º, III, não diz "filiados", e a categoria é definida pela atividade exercida, não pelo ato de filiação.
+- **B** Cria uma divisão que o texto não faz: ele autoriza a defesa de direitos "coletivos ou individuais" sem distinguir o universo de beneficiários conforme a espécie.
+- **C** Transplanta para a atuação sindical a exigência de autorização expressa do art. 5º, XXI, que rege a representação por entidades associativas, e não a defesa da categoria pelo sindicato.
 
 #### Questão 6
 
@@ -718,33 +661,39 @@ Assinale a alternativa correta.
 
 ## Roteiro de resposta discursiva
 
-**Enunciado.** O art. 5º, LXX, *a*, da Constituição legitima partido político com representação
-no Congresso Nacional a impetrar mandado de segurança coletivo. O art. 21, parágrafo único, da
-Lei n. 12.016/2009 refere-se à tutela de direitos coletivos e individuais homogêneos, sem
-mencionar os difusos. Discuta se um partido político pode impetrar mandado de segurança coletivo
-para defender interesse difuso ligado ao seu programa — por exemplo, um partido de programa
-ambiental contra ato do Poder Executivo lesivo ao meio ambiente.
+**Enunciado.** Uma entidade de classe impetra mandado de segurança coletivo em favor de seus
+associados, na qualidade de substituta processual, sem consultá-los — como a Súmula 629 do STF
+lhe permite. No curso do processo, celebra com a autoridade um acordo que assegura o direito à
+maior parte da categoria, mas abre mão da pretensão de um grupo minoritário de associados, que
+nunca foi ouvido e que discorda. Discuta a validade dessa renúncia, considerando a distinção
+entre representação e substituição processual e o limite que a dignidade humana impõe à tutela
+coletiva.
 
 **O que a resposta precisa ter:**
 
-1. **Delimitar o conflito entre as fontes.** De um lado, a previsão constitucional, redigida sem
-   restrição quanto ao objeto; de outro, a lei ordinária, que enumera categorias e não menciona a
-   difusa. Nomear o problema: pode a lei restringir o alcance de uma garantia constitucional?
-2. **Expor a leitura restritiva** e o que a sustenta: o texto expresso do art. 21, parágrafo
-   único, e o risco de conferir legitimidade universal aos partidos.
-3. **Expor a leitura ampliativa** e quem a adota. Mendes e Branco registram a crítica de Teori
-   Zavascki, Leonardo José Carneiro, José Afonso da Silva e Alexandre de Moraes; o próprio Gilmar
-   Mendes se posiciona pelo cabimento, desde que haja elo com as finalidades institucionais do
-   partido.
-4. **Apresentar o critério limitador** que a corrente ampliativa propõe — a pertinência com a
-   finalidade partidária — e avaliar se ele é suficiente para evitar a legitimidade universal.
-5. **Tomar posição e sustentá-la**, reconhecendo que o ponto é disputado. Não é exigido que você
-   adote uma das correntes; é exigido que a posição adotada seja justificada e que a divergência
-   seja exposta com honestidade.
+1. **Explicar por que a entidade estava legitimada sem autorização.** O art. 5º, LXX, institui
+   legitimação extraordinária; a Súmula 629 do STF dispensa a autorização dos associados. Não é
+   irregularidade — é o regime.
+2. **Distinguir legitimidade de disponibilidade.** Poder ir a juízo em nome próprio na defesa de
+   direito alheio não é o mesmo que poder dispor desse direito. A resposta tem de nomear essa
+   diferença, que é o nó do caso.
+3. **Mobilizar o limite constitucional.** Barroso extrai do valor intrínseco um postulado
+   antiutilitarista: o homem é fim em si mesmo, "e não como um meio para a realização de metas
+   coletivas". Transportar isso para o processo coletivo é leitura deste curso, e você deve dizer
+   que é — mas o argumento é legítimo: o ganho da maioria não é, por si, razão para sacrificar o
+   direito de quem não foi ouvido.
+4. **Enfrentar o contra-argumento.** Se cada associado puder bloquear o acordo, a tutela coletiva
+   perde a utilidade que a justifica. Uma boa resposta não ignora esse custo; ela propõe onde
+   traçar a linha — por exemplo, distinguindo o que a entidade pode transigir do que permanece
+   indisponível, ou preservando a via individual de quem discordou.
+5. **Concluir com posição sustentada.** Não há gabarito fechado. Exige-se que a conclusão decorra
+   dos passos anteriores e que o estatuto de cada afirmação esteja claro: o que é texto
+   normativo, o que é súmula, o que é leitura do curso.
 
-**O que derruba a nota:** tratar o ponto como pacífico; atribuir a Mendes e Branco uma posição
-única, quando eles relatam a controvérsia e tomam partido declaradamente; invocar precedente do
-STF sem número e sem tese; começar a resposta pelo nome da ação em vez de pelo problema.
+**O que derruba a nota:** tratar a falta de autorização como vício, quando o enunciado já explica
+que não é; afirmar que a entidade pode tudo porque é substituta processual, sem enfrentar o
+limite; atribuir a Barroso uma tese sobre processo coletivo que ele não formulou; começar pela
+ação em vez do problema.
 
 ---
 
@@ -787,11 +736,11 @@ BRASIL. *Lei n. 13.300, de 23 de junho de 2016*. Disciplina o processo e o julga
 mandados de injunção individual e coletivo. Disponível em: [planalto.gov.br/.../l13300.htm](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13300.htm).
 Acesso em: 14 set. 2026.
 
-**Nota de procedência.** As Leis n. 4.717/1965 e n. 7.347/1985 são mencionadas neste módulo a
-partir do relato de Mendes e Branco (pp. 686-687 do PDF), não tendo sido consultadas em seu texto
-oficial. As Súmulas 227 do STJ e 629 e 630 do STF aparecem na transcrição feita pelos mesmos
-autores. Nenhum acórdão foi lido em inteiro teor para este módulo; por isso nenhuma questão de
-treino se apoia em precedente judicial.
+**Nota de procedência.** As Súmulas 227 do STJ e 629 e 630 do STF aparecem neste módulo na
+transcrição feita por Mendes e Branco, nas páginas indicadas. Nenhum acórdão foi lido em inteiro
+teor; por isso nenhuma questão de treino se apoia em precedente judicial. Os requisitos de
+cabimento de cada remédio constitucional, e a legislação que os disciplina, são tratados no
+Módulo 5.
 
 ---
 
