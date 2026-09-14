@@ -8,7 +8,7 @@ professor: Mario Bastos
 unidade: I Unidade
 modulo: 5
 data_aula: 2026-09-28
-status: publicado — revisão 1 (14/09/2026)
+status: publicado — revisão 2 (14/09/2026)
 tags:
   - direito-constitucional
   - direitos-fundamentais
@@ -38,9 +38,10 @@ As três sofreram uma ilegalidade. As três querem ir a juízo. E **as três pre
 diferentes** — porque o que define a escolha não é a gravidade do problema nem a urgência de
 quem procura, mas **o bem jurídico atingido**.
 
-O Módulo 4 terminou com uma advertência: o nome da ação vem por último. Este módulo é o "por
-último". Aqui você finalmente aprende as portas — e aprende, sobretudo, a não errar de porta, que
-é o que custa o caso.
+Este módulo ensina as portas — e ensina, sobretudo, a não errar de porta, que é o que custa o
+caso. Ele é autossuficiente: nada aqui pressupõe módulo que você ainda não tenha visto. O Módulo
+4, que vem em seguida, aprofunda a **titularidade coletiva** — de quem são os direitos difusos,
+coletivos e individuais homogêneos — e retoma as ações coletivas por esse outro ângulo.
 
 ---
 
@@ -91,10 +92,9 @@ autores.
 **Segunda: a ação civil pública.** Ela não é remédio constitucional em sentido estrito — não está
 no catálogo do art. 5º, sua legitimidade não pertence ao titular do direito e ela não protege
 posição individual de quem a propõe. Mendes e Branco a tratam em item apartado dos writs, junto
-com a ação popular e os processos objetivos de controle (p. 685). É por isso que o Módulo 4 disse
-que ela não pertence à família dos remédios. **As duas afirmações convivem:** ela não é remédio
+com a ação popular e os processos objetivos de controle (p. 685). **As duas afirmações convivem:** ela não é remédio
 constitucional do art. 5º, e é ação constitucional autônoma, com objeto, legitimados e rito
-próprios. São perguntas diferentes.
+próprios. São perguntas diferentes, e o Módulo 4 volta ao tema pelo lado da titularidade.
 
 **Terceira observação, sobre a assimetria dos coletivos.** O mandado de segurança coletivo tem
 **inciso próprio** na Constituição (LXX). O mandado de injunção coletivo **não tem**: a
@@ -141,17 +141,17 @@ do instituto.
 ### 2.3 Quem impetra e quem é protegido
 
 O titular do direito é a pessoa natural cuja locomoção está em risco — o **paciente**. Mas o
-**impetrante** pode ser outra pessoa. Mendes e Branco registram que, nos termos do art. 654,
-*caput*, do Código de Processo Penal, o habeas corpus pode ser impetrado "por qualquer pessoa,
-advogado ou não, em seu favor ou de outrem, bem como pelo Ministério Público", de modo que "as
-condições de titular do direito de habeas corpus (paciente) e impetrante não são necessariamente
-coincidentes" (p. 656).
+**impetrante** pode ser outra pessoa. O art. 654, *caput*, do Código de Processo Penal é literal:
+"o habeas corpus poderá ser impetrado por **qualquer pessoa**, em seu favor ou de outrem, bem como
+pelo Ministério Público". Mendes e Branco glosam o dispositivo acrescentando "advogado ou não", e
+concluem que "as condições de titular do direito de habeas corpus (paciente) e impetrante não são
+necessariamente coincidentes" (p. 656).
 
-Não é formalidade menor: a mãe do preso, o vizinho, o colega podem impetrar. E a Constituição
-torna a ação **gratuita** (art. 5º, LXXVII).
+Não é formalidade menor: a mãe do preso, o vizinho, o colega podem impetrar, sem advogado. E a
+Constituição torna a ação **gratuita** (art. 5º, LXXVII).
 
-**Pessoa jurídica não pode ser paciente.** Como visto no Módulo 4, empresa não se locomove, logo
-não tem locomoção a ser cerceada — o Supremo já afastou o writ mesmo em crimes ambientais, nos
+**Pessoa jurídica não pode ser paciente.** Empresa não se locomove, logo não tem locomoção a ser
+cerceada — o Supremo já afastou o writ mesmo em crimes ambientais, nos
 quais se admite responsabilidade penal da pessoa jurídica (p. 256).
 
 ### 2.4 Contra particular, e em caráter coletivo
@@ -167,6 +167,32 @@ segurança", mas anotam **precedentes em sentido contrário**, inclusive julgado
 Tribunal de Justiça afastando o cabimento (p. 641). Repare que é por isso que o habeas corpus
 coletivo **não** figura entre as dez ações deste módulo: diferentemente dos dois mandados, ele não
 tem inciso próprio nem lei que o discipline. **Ponto disputado: não cai em objetiva.**
+
+### 2.5 O que o Código de Processo Penal acrescenta
+
+A Constituição dá o desenho; o rito está nos arts. 647 a 667 do CPP. Três dispositivos importam
+para este curso.
+
+**Art. 647 — uma ressalva que a Constituição não tem.** "Dar-se-á habeas corpus sempre que alguém
+sofrer ou se achar na iminência de sofrer violência ou coação ilegal na sua liberdade de ir e vir,
+**salvo nos casos de punição disciplinar**." A ressalva final dialoga com o art. 142, § 2º, da
+Constituição, que veda o habeas corpus em relação a punições disciplinares militares. A leitura
+que prevaleceu é que o writ não discute o **mérito** da punição, mas alcança seus **pressupostos
+de legalidade** — competência, hierarquia, pena suscetível de ser aplicada e regularidade do
+procedimento. Mendes e Branco dedicam item próprio ao ponto (p. 647).
+
+**Art. 648 — as sete hipóteses de coação ilegal.** É a lista mais cobrável do instituto, e vale
+decorar a lógica, não o número: a coação é ilegal (I) quando não houver justa causa; (II) quando
+alguém estiver preso por mais tempo do que determina a lei; (III) quando quem ordenar a coação não
+tiver competência para fazê-lo; (IV) quando houver cessado o motivo que autorizou a coação;
+(V) quando não for alguém admitido a prestar fiança, nos casos em que a lei a autoriza; (VI) quando
+o processo for manifestamente nulo; (VII) quando extinta a punibilidade.
+
+Repare que nem todas tratam de prisão já ocorrida: várias descrevem vícios do processo que se
+projetam sobre a liberdade. É por isso que o habeas corpus serve, na prática, para trancar ação
+penal ou inquérito manifestamente nulos.
+
+**Art. 654 — quem impetra**, já transcrito acima.
 
 ---
 
@@ -223,6 +249,32 @@ razão para a preservação da Súmula 266/STF, pelo menos na sua expressão lit
 **Isso é posição doutrinária dos autores, não o estado da jurisprudência**, e por isso fica fora
 do treino.
 
+### 3.3 O que a Lei n. 12.016/2009 acrescenta
+
+**Art. 5º — três hipóteses em que não se concede a segurança.** "Não se concederá mandado de
+segurança quando se tratar: I - de ato do qual caiba recurso administrativo com efeito suspensivo,
+independentemente de caução; II - de decisão judicial da qual caiba recurso com efeito suspensivo;
+III - de decisão judicial transitada em julgado."
+
+As três têm a mesma lógica: **existe outro caminho capaz de suspender o ato**, ou o ato já se
+tornou definitivo. O mandado de segurança é via de urgência, não atalho para quem perdeu prazo nem
+recurso extra contra coisa julgada. Mendes e Branco anotam que a doutrina interpreta o inciso I de
+modo a compatibilizá-lo com a proteção judicial efetiva: a falta de interesse só ocorre quando o
+recurso administrativo puder, de fato, impugnar eficazmente o ato (p. 638).
+
+**Art. 7º, § 2º — matérias em que a liminar é vedada.** Não se concede medida liminar "que tenha
+por objeto a compensação de créditos tributários, a entrega de mercadorias e bens provenientes do
+exterior, a reclassificação ou equiparação de servidores públicos e a concessão de aumento ou a
+extensão de vantagens ou pagamento de qualquer natureza". São restrições de conteúdo econômico, e
+o próprio texto oficial do Planalto traz a remissão "Vide ADIN 4296" — sinal de que foram
+questionadas no Supremo.
+
+> **Nota de procedência.** O julgamento da **ADI 4296** não foi consultado para este módulo. As
+> restrições dos arts. 7º, § 2º, e 22 são apresentadas na redação legal vigente no Planalto, sem
+> afirmação sobre o que o Supremo decidiu a respeito. Nenhuma questão de treino se apoia nelas.
+
+**Art. 23 — o prazo**, já tratado acima.
+
 ---
 
 ## 4. Mandado de segurança coletivo — art. 5º, LXX
@@ -232,12 +284,33 @@ do treino.
 > associação legalmente constituída e em funcionamento há pelo menos um ano, em defesa dos
 > interesses de seus membros ou associados.
 
-O Módulo 4 tratou da **legitimação**: por que a entidade age em nome próprio na defesa de direito
-alheio, por que não precisa de autorização dos associados, o que dizem as Súmulas 629 e 630. Isso
-é pré-requisito e não se repete aqui. Esta seção trata do que é próprio do **writ**.
+### 4.1 Representar não é substituir
 
-**O que muda, e o que não muda.** Muda quem impetra. **Não muda nada mais.** Mendes e Branco são
-categóricos: "os princípios básicos que regem o mandado de segurança individual informam e
+Compare dois dispositivos do mesmo artigo. O **art. 5º, XXI**, diz que as entidades associativas,
+"**quando expressamente autorizadas**", têm legitimidade para **representar** seus filiados. O
+**art. 5º, LXX**, acima transcrito, não exige autorização nenhuma.
+
+Mendes e Branco explicam o que os separa: "diferentemente da hipótese contemplada pelo art. 5º,
+XXI, que trata de **representação processual**, a legitimidade das organizações sindicais,
+entidades de classe e associações, para impetração do mandado de segurança coletivo, é
+extraordinária, consistindo em típico caso de **substituição processual**" (p. 668).
+
+Na **representação**, a entidade age *em nome do filiado* e precisa de autorização expressa. Na
+**substituição processual**, ela age *em nome próprio, defendendo direito alheio*, e não precisa
+de autorização de ninguém. Por isso a **Súmula 629** do Supremo, que os autores transcrevem,
+assenta que "a impetração de mandado de segurança coletivo por entidade de classe em favor dos
+associados independe da autorização destes"; e a **Súmula 630** acrescenta que "a entidade de
+classe tem legitimação para o mandado de segurança ainda quando a pretensão veiculada interesse
+apenas a uma parte da respectiva categoria" (p. 672).
+
+> **Um erro de prova que nasce daqui.** Diante de uma associação que impetra mandado de segurança
+> coletivo sem ter reunido assembleia, o aluno desatento responde que falta legitimidade porque o
+> art. 5º, XXI, exige autorização expressa. Está aplicando o dispositivo errado: o XXI rege a
+> representação; o LXX rege a substituição. São regimes distintos no mesmo artigo.
+
+### 4.2 O que muda, e o que não muda
+
+Muda quem impetra. **Não muda nada mais.** Mendes e Branco são categóricos: "os princípios básicos que regem o mandado de segurança individual informam e
 condicionam, no plano jurídico-processual, a utilização do writ mandamental coletivo" (p. 668).
 Continua sendo necessário direito líquido e certo, com prova documental pré-constituída, e
 continua sendo necessário ato de autoridade.
@@ -262,6 +335,35 @@ Moraes (p. 669-670); o próprio Gilmar Mendes escreve em primeira pessoa: "tenho
 utilização do mandado de segurança coletivo pelos partidos políticos, para a defesa de interesses
 difusos, ligados a suas finalidades institucionais" (p. 671). É excelente matéria de discursiva.
 
+### 4.3 O que a Lei n. 12.016/2009 acrescenta
+
+**Art. 21 — o que a lei diz e o que a Constituição não diz.** O dispositivo repete os legitimados
+do art. 5º, LXX, mas acrescenta duas exigências ao partido político que não estão no texto
+constitucional: ele age "na defesa de seus interesses legítimos relativos a seus integrantes ou à
+finalidade partidária". E fecha, quanto às entidades, com a fórmula já conhecida: em defesa de
+"direitos líquidos e certos da totalidade, ou de parte, dos seus membros ou associados, na forma
+dos seus estatutos e desde que pertinentes às suas finalidades, **dispensada, para tanto,
+autorização especial**".
+
+O **parágrafo único** define o objeto, e é dele que nasce a controvérsia da seção anterior: os
+direitos protegidos podem ser (I) **coletivos**, "os transindividuais, de natureza indivisível, de
+que seja titular grupo ou categoria de pessoas ligadas entre si ou com a parte contrária por uma
+relação jurídica básica"; e (II) **individuais homogêneos**, "os decorrentes de origem comum e da
+atividade ou situação específica da totalidade ou de parte dos associados ou membros do
+impetrante". **Os difusos não aparecem.**
+
+**Art. 22 — a coisa julgada não alcança quem está fora.** "No mandado de segurança coletivo, a
+sentença fará coisa julgada limitadamente aos membros do grupo ou categoria substituídos pelo
+impetrante." E o § 1º resolve a convivência com as ações individuais: o writ coletivo "não induz
+litispendência para as ações individuais, mas os efeitos da coisa julgada não beneficiarão o
+impetrante a título individual se não requerer a desistência de seu mandado de segurança no prazo
+de **30 (trinta) dias** a contar da ciência comprovada da impetração da segurança coletiva".
+
+Traduzindo: quem já tem o seu processo individual precisa **escolher**. Se quiser aproveitar o
+resultado do coletivo, desiste do individual em trinta dias; se não desistir, fica preso ao
+próprio processo. É a solução legal para o problema que o Módulo 4 discute pelo lado da
+titularidade — o indivíduo não é absorvido pelo grupo sem que ele próprio decida.
+
 ---
 
 ## 5. Mandado de injunção individual — art. 5º, LXXI
@@ -273,23 +375,64 @@ difusos, ligados a suas finalidades institucionais" (p. 671). É excelente maté
 O pressuposto é **a omissão**, e é isso que o distingue de todos os outros. Nos demais há um ato
 ilegal a combater; aqui há um vazio — a norma que deveria existir e não existe.
 
-Duas consequências práticas.
-
-**Não serve contra lei ruim.** Se a norma existe e o interessado a considera injusta, insuficiente
-ou mal redigida, não há omissão: há inconformidade com o conteúdo. O caminho é outro.
-
 **Não serve para qualquer direito.** O dispositivo delimita: direitos e liberdades
 constitucionais, e prerrogativas inerentes à **nacionalidade, à soberania e à cidadania**.
 
 Mendes e Branco o descrevem como "instrumento do processo constitucional voltado para a defesa de
 direitos subjetivos em face de omissão do legislador ou de outro órgão incumbido de poder
-regulatório", e assinalam o par que a Constituição de 1988 montou: ao lado do mandado de
-injunção, destinado à defesa de direitos individuais contra a omissão, um **sistema de controle
-abstrato da omissão** no art. 103, § 2º (p. 682).
+regulatório", e assinalam o par que a Constituição de 1988 montou: ao lado do mandado de injunção,
+destinado à defesa de direitos individuais contra a omissão, um **sistema de controle abstrato da
+omissão** no art. 103, § 2º (p. 682).
 
 Guarde a diferença, porque é questão certa: o **mandado de injunção é concreto** e serve a quem
 está sendo prejudicado; a **ação direta de inconstitucionalidade por omissão é objetiva** e serve
 à ordem constitucional como um todo.
+
+### 5.1 Omissão total e omissão parcial: o que a lei resolveu
+
+Aqui está o ponto em que a leitura apressada do art. 5º, LXXI, induz a erro. A Constituição fala em
+"falta de norma regulamentadora", e é tentador concluir que, existindo alguma norma, o mandado de
+injunção estaria excluído. **Não é o que a lei diz.**
+
+O art. 2º da Lei n. 13.300/2016 é expresso:
+
+> Conceder-se-á mandado de injunção sempre que a **falta total ou parcial** de norma
+> regulamentadora torne inviável o exercício dos direitos e liberdades constitucionais e das
+> prerrogativas inerentes à nacionalidade, à soberania e à cidadania.
+>
+> Parágrafo único. Considera-se **parcial** a regulamentação quando forem **insuficientes** as
+> normas editadas pelo órgão legislador competente.
+
+Ou seja: **norma insuficiente é omissão**, e comporta mandado de injunção. A fronteira, portanto,
+não passa entre "existe norma" e "não existe norma". Ela passa em outro lugar:
+
+| Situação | Cabe mandado de injunção? |
+|---|---|
+| Nenhuma norma foi editada | **Sim** — omissão total (art. 2º, *caput*) |
+| Há norma, mas ela é insuficiente e o exercício do direito continua inviável | **Sim** — omissão parcial (art. 2º, parágrafo único) |
+| Há norma suficiente, e o interessado discorda do conteúdo, considera-a injusta ou preferiria outra solução | **Não** — o que existe é inconformidade com o mérito, não omissão |
+
+O teste prático é este: **o direito está sendo exercido?** Se a regulamentação, tal como está,
+ainda torna inviável o exercício, há omissão — total ou parcial. Se o direito pode ser exercido e
+a discussão é sobre *como* a lei o desenhou, o caminho é outro.
+
+### 5.2 O que a decisão pode fazer
+
+O art. 8º da Lei n. 13.300/2016 responde à pergunta que o texto constitucional deixou em aberto
+por quase trinta anos: reconhecida a mora legislativa, a injunção é deferida para **(I)** determinar
+prazo razoável para que o impetrado edite a norma; e **(II)** estabelecer as condições em que se
+dará o exercício do direito, ou as condições em que o interessado poderá promover ação própria,
+caso a mora não seja suprida no prazo.
+
+O **parágrafo único** dispensa a fixação de prazo quando o impetrado já tiver descumprido prazo
+estabelecido em mandado de injunção anterior — a lei aprendeu com a experiência de decisões que
+só notificavam o legislador e nada mudavam.
+
+**Os efeitos, em regra, são entre as partes.** O art. 9º estabelece eficácia subjetiva limitada às
+partes, produzindo efeitos até o advento da norma. Mas o § 1º permite conferir eficácia **ultra
+partes ou erga omnes** "quando isso for inerente ou indispensável ao exercício do direito"; e o
+§ 2º autoriza estender os efeitos a casos análogos por decisão monocrática do relator, depois do
+trânsito em julgado.
 
 ---
 
@@ -319,8 +462,18 @@ todas as letras. É regra do regime coletivo, e não exceção concedida a um wr
 
 **O alcance está definido no parágrafo único:** os direitos protegidos são os pertencentes
 "indistintamente, a uma coletividade indeterminada de pessoas ou determinada por grupo". A lei
-acomoda, portanto, tanto a titularidade **difusa** quanto a **coletiva em sentido estrito**, nas
-categorias que você estudou no Módulo 4.
+acomoda, portanto, tanto a titularidade **difusa** — pessoas indeterminadas, ligadas por
+circunstância de fato — quanto a **coletiva em sentido estrito** — grupo ou categoria unido por
+uma relação jurídica base. Essas categorias vêm do art. 81, parágrafo único, do Código de Defesa
+do Consumidor, e são o assunto do Módulo 4.
+
+**A coisa julgada segue a mesma lógica do mandado de segurança coletivo.** O art. 13 dispõe que a
+sentença "fará coisa julgada limitadamente às pessoas integrantes da coletividade, do grupo, da
+classe ou da categoria substituídos pelo impetrante", ressalvada a possibilidade de eficácia
+*ultra partes* ou *erga omnes* do art. 9º, §§ 1º e 2º. E o parágrafo único repete a regra da
+escolha: o mandado de injunção coletivo não induz litispendência em relação aos individuais, mas
+os efeitos da coisa julgada não beneficiarão quem tiver impetração individual em curso e não
+desistir dela.
 
 ---
 
@@ -345,6 +498,32 @@ privadas**, como os serviços de proteção ao crédito e as listagens de mala d
 A ação é **gratuita** (art. 5º, LXXVII) e pressupõe uma **fase extrajudicial**: primeiro se pede
 ao órgão ou entidade que detém o banco; o habeas data vem depois da recusa ou do silêncio
 (p. 685).
+
+### 7.1 O que a Lei n. 9.507/1997 acrescenta
+
+**Uma terceira finalidade que a Constituição não tem.** O art. 5º, LXXII, prevê duas: conhecer e
+retificar. O art. 7º da lei prevê **três**, acrescentando a hipótese (III) "para a anotação nos
+assentamentos do interessado, de contestação ou explicação sobre dado verdadeiro mas justificável
+e que esteja sob pendência judicial ou amigável".
+
+É uma solução elegante para o caso em que o dado **está correto** e, ainda assim, prejudica: a
+anotação não apaga o registro, mas obriga que ele passe a ser lido com a explicação do titular ao
+lado. Guarde: o habeas data não serve só para corrigir o que é falso; serve também para
+contextualizar o que é verdadeiro e está sob disputa.
+
+**A fase administrativa tem prazos, e eles são a prova da inicial.** O art. 2º manda apresentar o
+requerimento ao depositário do banco de dados, que o defere ou indefere **em 48 horas**,
+comunicando a decisão ao requerente **em 24 horas**. E o art. 8º, parágrafo único, exige que a
+petição inicial seja instruída com prova da recusa **ou do decurso** de mais de **dez dias** sem
+decisão, quanto ao acesso; e de mais de **quinze dias**, quanto à retificação e à anotação.
+
+Por isso o habeas data é a única das dez ações em que você precisa saber que **existe uma etapa
+antes do juiz** e que a prova dessa etapa é requisito da inicial. Quem vai direto ao Judiciário
+sem ter pedido à entidade não tem o que juntar.
+
+**A gratuidade é dupla.** O art. 21 é mais generoso do que o art. 5º, LXXVII, da Constituição: são
+gratuitos "o procedimento administrativo para acesso a informações e retificação de dados e para
+anotação de justificação, **bem como a ação de habeas data**".
 
 Mendes e Branco fazem ainda um diagnóstico crítico que vale para a discussão em sala: concebido
 para dar acesso aos arquivos do regime militar, o habeas data "acabou por se constituir em
@@ -380,6 +559,32 @@ constituinte: o controle popular da Administração não pode depender da capaci
 quem o exerce. A ação é regulada pela Lei n. 4.717/1965, e os autores a descrevem como instrumento
 de defesa de interesse público que "não tem em vista primacialmente a defesa de posições
 individuais", embora as decisões nela tomadas possam refletir sobre posições subjetivas (p. 686).
+
+### 8.1 O que a Lei n. 4.717/1965 acrescenta
+
+**Como se prova que se é cidadão.** O art. 1º, § 3º, resolve na prática o que a Constituição diz
+em abstrato: "a prova da cidadania, para ingresso em juízo, será feita com o **título eleitoral**,
+ou com documento que a ele corresponda". É o documento que se junta à inicial — e é por isso que
+pessoa jurídica não propõe ação popular: não há título eleitoral a apresentar.
+
+**O cidadão pode requerer certidões para montar o caso.** O § 4º do mesmo artigo autoriza o autor
+a requerer às entidades as certidões e informações que julgar necessárias para instruir a inicial.
+Repare no encaixe: o **direito de certidão** do art. 5º, XXXIV, *b*, é o instrumento que viabiliza
+a ação popular. As dez vias deste módulo conversam entre si.
+
+**O Ministério Público entra, mas com um lado vedado.** O art. 6º, § 4º, determina que o MP
+acompanhe a ação, apresse a produção da prova e promova a responsabilidade dos infratores, sendo
+lhe "vedado, **em qualquer hipótese**, assumir a defesa do ato impugnado ou dos seus autores". E o
+§ 5º faculta a qualquer cidadão habilitar-se como litisconsorte ou assistente do autor.
+
+**A coisa julgada é erga omnes, com uma ressalva que se repete na ação civil pública.** O art. 18
+dispõe que a sentença "terá eficácia de coisa julgada oponível *erga omnes*, **exceto no caso de
+haver sido a ação julgada improcedente por deficiência de prova**; neste caso, qualquer cidadão
+poderá intentar outra ação com idêntico fundamento, valendo-se de nova prova".
+
+A lógica vale a pena entender, porque é o desenho geral do processo coletivo brasileiro: **a
+derrota por falta de prova não tranca a porta para os demais.** Quem perdeu não pode prejudicar
+quem nem sequer participou.
 
 ---
 
@@ -426,6 +631,54 @@ pelo legislador ordinário, restringindo-a em excesso.
 > que se afirma sobre ele reproduz o relato de Mendes e Branco, pp. 687-689 do PDF. Por isso o
 > caso não é objeto de questão objetiva, e sim material de discussão em sala.
 
+### 9.1 O que a Lei n. 7.347/1985 acrescenta
+
+**O rol de legitimados tem um nome que a nossa fonte doutrinária não menciona.** O art. 5º, na
+redação dada pela Lei n. 11.448/2007, arrola: **I** o Ministério Público; **II** a **Defensoria
+Pública**; **III** a União, os Estados, o Distrito Federal e os Municípios; **IV** a autarquia,
+empresa pública, fundação ou sociedade de economia mista; **V** a associação que, cumulativamente,
+esteja constituída há pelo menos um ano nos termos da lei civil **e** inclua entre suas finalidades
+institucionais a proteção dos bens tutelados.
+
+> **Correção a uma fonte do curso.** A lista que Mendes e Branco apresentam na p. 687 do PDF
+> **omite a Defensoria Pública**, incluída no rol pela Lei n. 11.448/2007. O dado foi conferido no
+> texto oficial da lei, no Planalto. Quando a fonte doutrinária e o texto legal divergirem,
+> prevalece o texto legal — e é isso que você deve responder numa prova.
+
+E o § 1º acrescenta a regra que fecha o arranjo: o Ministério Público, **se não intervier no
+processo como parte, atuará obrigatoriamente como fiscal da lei**. Em toda ação civil pública o MP
+está presente, ou como autor, ou como fiscal.
+
+**O objeto é mais largo do que o art. 129, III sugere.** O art. 1º arrola oito hipóteses de dano:
+meio ambiente; consumidor; bens e direitos de valor artístico, estético, histórico, turístico e
+paisagístico; qualquer outro interesse difuso ou coletivo; infração da ordem econômica; ordem
+urbanística; **honra e dignidade de grupos raciais, étnicos ou religiosos**; e patrimônio público e
+social. Repare que os três últimos entraram por leis posteriores — 2001, 2014 e 2014 —, o que
+mostra um instituto em expansão.
+
+**E há uma vedação expressa que costuma ser cobrada.** O parágrafo único do art. 1º estabelece que
+"não será cabível ação civil pública para veicular pretensões que envolvam **tributos,
+contribuições previdenciárias, o Fundo de Garantia do Tempo de Serviço** — FGTS" e outros fundos
+de natureza institucional cujos beneficiários podem ser individualmente determinados.
+
+**O inquérito civil e as certidões.** O art. 8º dá ao interessado o direito de requerer às
+autoridades as certidões e informações necessárias à inicial, a serem fornecidas em **quinze
+dias**; e o § 1º atribui ao Ministério Público o poder de instaurar **inquérito civil**, sob sua
+presidência, requisitando certidões, informações, exames ou perícias. O inquérito civil é do MP;
+os demais legitimados contam com o direito de certidão.
+
+**A coisa julgada, e uma controvérsia declarada.** O art. 16 dispõe que a sentença "fará coisa
+julgada *erga omnes*, **nos limites da competência territorial do órgão prolator**, exceto se o
+pedido for julgado improcedente por insuficiência de provas" — hipótese em que qualquer legitimado
+pode repropor com nova prova. A ressalva final é a mesma da ação popular. Já a limitação
+territorial é objeto de crítica doutrinária intensa e de discussão no Supremo; **não foi conferida
+neste módulo e não é objeto de questão objetiva**.
+
+**Um freio contra o uso abusivo.** O art. 17 prevê que, em caso de litigância de má-fé, a
+associação autora e seus diretores respondem solidariamente por honorários e pelo **décuplo das
+custas**. Compare com a ação popular, em que a má-fé apenas afasta a isenção: aqui a sanção é
+agravada, porque a associação age institucionalmente.
+
 ---
 
 ## 10. Os dois remédios que não vão a juízo — art. 5º, XXXIV
@@ -458,6 +711,17 @@ esclarecimento de situações de interesse pessoal. A segunda é mais larga do q
 não precisa estar em litígio para pedir certidão sobre sua própria situação. Também independe do
 pagamento de taxas.
 
+E há prazo. A **Lei n. 9.051/1995** determina, no art. 1º, que as certidões para defesa de
+direitos e esclarecimento de situações, requeridas a órgãos da administração direta e indireta da
+União, dos Estados, do Distrito Federal e dos Municípios, "deverão ser expedidas no prazo
+**improrrogável de quinze dias**, contado do registro do pedido no órgão expedidor". O art. 2º
+exige, em contrapartida, que o requerente faça constar "esclarecimentos relativos aos fins e razões
+do pedido".
+
+Quinze dias é o mesmo prazo do art. 8º da Lei da Ação Civil Pública. Não é coincidência: certidão é
+a matéria-prima documental de quase todas as outras vias — inclusive do mandado de segurança, que
+exige prova pré-constituída, e da ação popular, cujo art. 1º, § 4º, remete expressamente a ela.
+
 ---
 
 ## 11. Como escolher: quatro perguntas, nesta ordem
@@ -476,22 +740,22 @@ pagamento de taxas.
    bem é difuso ou coletivo e quem age é órgão ou entidade com função de zelar por ele, **ação
    civil pública**.
 
-| Ação | Dispositivo | Bem protegido | Quem age | Gratuito? |
-|---|---|---|---|---|
-| Habeas corpus | LXVIII | Liberdade de locomoção | Qualquer pessoa, por quem quer que seja | Sim (LXXVII) |
-| MS individual | LXIX | Direito líquido e certo, residual | O titular | Não |
-| MS coletivo | LXX | Direito líquido e certo de membros do grupo | Partido, sindicato, entidade de classe, associação com mais de um ano | Não |
-| MI individual | LXXI | Direito travado por falta de norma | O prejudicado | Não |
-| MI coletivo | Lei 13.300, art. 12 | O mesmo, em favor de coletividade ou grupo | MP, partido, entidades, Defensoria | Não |
-| Habeas data | LXXII | Dados pessoais do impetrante | O próprio titular dos dados | Sim (LXXVII) |
-| Ação popular | LXXIII | Patrimônio público, moralidade, ambiente, patrimônio cultural | O cidadão eleitor | Isento, salvo má-fé |
-| Ação civil pública | art. 129, III | Interesses difusos e coletivos | MP, entes públicos, estatais, associações com mais de um ano | Não |
-| Petição | XXXIV, *a* | Direitos em geral, perante a Administração | Qualquer pessoa | Sim |
-| Certidão | XXXIV, *b* | Defesa de direitos e situação pessoal | Qualquer pessoa | Sim |
+| Ação | Constituição | Lei própria | Bem protegido | Quem age | Gratuito? |
+|---|---|---|---|---|---|
+| Habeas corpus | LXVIII | CPP, arts. 647-667 | Liberdade de locomoção | Qualquer pessoa, por quem quer que seja | Sim (LXXVII) |
+| MS individual | LXIX | Lei 12.016/2009 | Direito líquido e certo, residual | O titular | Não |
+| MS coletivo | LXX | Lei 12.016/2009, arts. 21-22 | Direito líquido e certo de membros do grupo | Partido, sindicato, entidade de classe, associação com mais de um ano | Não |
+| MI individual | LXXI | Lei 13.300/2016 | Direito travado por omissão total ou parcial | O prejudicado | Não |
+| MI coletivo | — | Lei 13.300/2016, arts. 12-13 | O mesmo, em favor de coletividade ou grupo | MP, partido, entidades, Defensoria | Não |
+| Habeas data | LXXII | Lei 9.507/1997 | Dados pessoais do impetrante | O próprio titular dos dados | Sim (LXXVII e art. 21 da lei) |
+| Ação popular | LXXIII | Lei 4.717/1965 | Patrimônio público, moralidade, ambiente, patrimônio cultural | O cidadão eleitor | Isento, salvo má-fé |
+| Ação civil pública | art. 129, III | Lei 7.347/1985 | Interesses difusos e coletivos | MP, Defensoria, entes públicos, estatais, associações com mais de um ano | Não |
+| Petição | XXXIV, *a* | — | Direitos em geral, perante a Administração | Qualquer pessoa | Sim |
+| Certidão | XXXIV, *b* | Lei 9.051/1995 (15 dias) | Defesa de direitos e situação pessoal | Qualquer pessoa | Sim |
 
 ---
 
-## 12. Os cinco erros que derrubam
+## 12. Os erros que derrubam
 
 1. **Usar habeas corpus para proteger outro direito.** A doutrina brasileira do habeas corpus
    acabou em 1926. Se a locomoção não está em jogo, a porta é outra.
@@ -500,10 +764,13 @@ pagamento de taxas.
    coletivo.
 3. **Esquecer a subsidiariedade.** O próprio LXIX exclui o que cabe em habeas corpus ou habeas
    data. Quem pede MS para obter dado pessoal errou de porta.
-4. **Usar mandado de injunção contra lei que existe.** O pressuposto é a omissão, não a
-   insatisfação.
+4. **Confundir omissão parcial com discordância de conteúdo.** Norma insuficiente **é** omissão,
+   e cabe mandado de injunção (Lei n. 13.300/2016, art. 2º, parágrafo único). O que não cabe é
+   usar o writ contra norma suficiente de que se discorda.
 5. **Tratar a ação civil pública como monopólio do Ministério Público** — e "qualquer cidadão", na
    ação popular, como "qualquer pessoa".
+6. **Ir direto ao juiz no habeas data.** A inicial precisa de prova da recusa, ou do decurso dos
+   prazos do art. 8º, parágrafo único, da Lei n. 9.507/1997.
 
 ---
 
@@ -558,10 +825,14 @@ Responda sem consultar. Depois confira.
 2. Um particular pode figurar no polo passivo de um habeas corpus? Dê o exemplo do módulo.
 3. O que torna um direito "líquido e certo"? E isso muda no mandado de segurança coletivo?
 4. Qual a diferença entre mandado de injunção e ação direta de inconstitucionalidade por omissão?
-5. Por que o mandado de injunção coletivo não entra na contagem feita a partir do texto
+5. Existe norma sobre o seu direito, mas você continua sem conseguir exercê-lo. Cabe mandado de
+   injunção? Responda pelo art. 2º da Lei n. 13.300/2016.
+6. Por que o mandado de injunção coletivo não entra na contagem feita a partir do texto
    constitucional?
-6. Um banco de dados de empresa privada pode ser alvo de habeas data? Qual é o critério?
-7. Quais das dez vias são gratuitas, e por qual dispositivo?
+7. Um banco de dados de empresa privada pode ser alvo de habeas data? Qual é o critério?
+8. O que você precisa juntar à inicial de um habeas data, e por quê?
+9. Quais das dez vias são gratuitas, e por qual dispositivo?
+10. A Defensoria Pública pode propor ação civil pública? Desde quando, e por qual lei?
 
 ---
 
@@ -594,10 +865,10 @@ Assinale a alternativa correta.
 #### Questão 2
 
 Preso em flagrante, um indivíduo não tem advogado constituído. Sua irmã, que não é bacharel em
-Direito, pretende impetrar habeas corpus em favor dele. Mendes e Branco registram que, nos termos
-do art. 654, *caput*, do Código de Processo Penal, o habeas corpus pode ser impetrado "por
-qualquer pessoa, advogado ou não, em seu favor ou de outrem, bem como pelo Ministério Público",
-de modo que "as condições de titular do direito de habeas corpus (paciente) e impetrante não são
+Direito, pretende impetrar habeas corpus em favor dele. O art. 654, *caput*, do Código de Processo
+Penal dispõe que "o habeas corpus poderá ser impetrado por qualquer pessoa, em seu favor ou de
+outrem, bem como pelo Ministério Público". Mendes e Branco anotam, a partir desse dispositivo, que
+"as condições de titular do direito de habeas corpus (paciente) e impetrante não são
 necessariamente coincidentes".
 
 Assinale a alternativa correta.
@@ -610,7 +881,7 @@ Assinale a alternativa correta.
 
 **D.** A irmã não pode impetrar, pois o Ministério Público detém legitimidade exclusiva para o habeas corpus quando o paciente não constitui advogado, cabendo a ela apenas representar ao órgão.
 
-**Resposta: A.** É exatamente o que o recorte transcrito afirma: qualquer pessoa, advogado ou não, pode impetrar em favor de outrem, e por isso paciente e impetrante podem ser pessoas diferentes.
+**Resposta: A.** O dispositivo transcrito admite a impetração por qualquer pessoa, em favor de outrem, sem exigir habilitação profissional — e é por isso que paciente e impetrante podem ser pessoas diferentes.
 
 - **B** Aplica ao habeas corpus a exigência geral de capacidade postulatória, que o art. 654 do CPP afasta para este writ, precisamente por ser instrumento de proteção urgente da liberdade.
 - **C** Exige procuração numa hipótese em que a lei admite a impetração por qualquer pessoa, independentemente de autorização do paciente, que muitas vezes está impossibilitado de outorgá-la.
@@ -668,28 +939,31 @@ Assinale a alternativa correta.
 
 #### Questão 5
 
-Categoria profissional tem direito assegurado pela Constituição cujo exercício depende de lei
-regulamentadora nunca editada. Em situação distinta, outra categoria considera que a lei existente
-sobre seu direito é insuficiente e mal redigida. Ambas cogitam de mandado de injunção, previsto no
-art. 5º, LXXI, cabível "sempre que a falta de norma regulamentadora torne inviável o exercício dos
-direitos e liberdades constitucionais e das prerrogativas inerentes à nacionalidade, à soberania e
-à cidadania".
+Categoria profissional tem direito assegurado pela Constituição que continua inviável na prática:
+foi editada lei sobre o tema, mas ela regula apenas parte do que era necessário, e o exercício do
+direito segue impossível. Outra categoria, em situação distinta, tem o direito plenamente
+regulamentado e exercível, mas considera que a lei escolheu a solução errada e preferiria outro
+desenho. O art. 2º da Lei n. 13.300/2016 dispõe que se concederá mandado de injunção "sempre que a
+falta total ou parcial de norma regulamentadora torne inviável o exercício dos direitos e
+liberdades constitucionais e das prerrogativas inerentes à nacionalidade, à soberania e à
+cidadania", considerando-se parcial a regulamentação "quando forem insuficientes as normas
+editadas pelo órgão legislador competente".
 
 Assinale a alternativa correta.
 
-**A.** O mandado de injunção é cabível apenas na primeira situação, pois seu pressuposto é a ausência de norma regulamentadora, e não a discordância quanto ao conteúdo de norma existente.
+**A.** O mandado de injunção é cabível na primeira situação, por configurar omissão parcial, e incabível na segunda, em que há norma suficiente e o que se alega é discordância quanto ao conteúdo.
 
-**B.** O mandado de injunção é cabível nas duas situações, pois a norma insuficiente equivale, para fins constitucionais, à norma inexistente, configurando omissão parcial sanável pela mesma via.
+**B.** O mandado de injunção é incabível nas duas situações, pois em ambas existe norma editada, e o dispositivo constitucional condiciona a ordem à falta de norma regulamentadora.
 
-**C.** O mandado de injunção é incabível nas duas situações, pois a omissão legislativa só pode ser enfrentada por ação direta de inconstitucionalidade por omissão, de competência exclusiva do Supremo Tribunal Federal.
+**C.** O mandado de injunção é cabível nas duas situações, pois o art. 2º equipara à omissão qualquer regulamentação que o interessado repute inadequada, inclusive quanto ao mérito da solução legislativa.
 
-**D.** O mandado de injunção é cabível apenas na segunda situação, pois, inexistindo norma alguma, não há parâmetro normativo que permita ao Judiciário definir o modo de exercício do direito.
+**D.** O mandado de injunção é cabível apenas na segunda situação, pois a insuficiência da norma se resolve por interpretação judicial no caso concreto, ao passo que a inadequação da solução legislativa exige pronunciamento em sede injuncional.
 
-**Resposta: A.** O dispositivo condiciona a ordem à "falta de norma regulamentadora". Existindo norma, ainda que criticável, o que há é inconformidade com o conteúdo, e o caminho é outro.
+**Resposta: A.** O critério do dispositivo é a **inviabilidade do exercício**, e não a existência de norma. Regulamentação insuficiente é omissão parcial e comporta a ordem; norma suficiente de que se discorda é inconformidade com o mérito, e não omissão.
 
-- **B** Equipara norma insuficiente a norma inexistente sem apoio no texto do inciso, que fala em falta de norma. A insatisfação com o conteúdo não converte a lei existente em vazio normativo.
-- **C** Ignora que a Constituição montou dois instrumentos distintos para a omissão: o mandado de injunção, voltado à defesa de direito subjetivo do prejudicado, e a ação direta por omissão do art. 103, § 2º, de natureza objetiva.
-- **D** Inverte o pressuposto do instituto, que existe precisamente para as hipóteses em que a norma regulamentadora não veio.
+- **B** Lê o art. 5º, LXXI, sem o art. 2º da lei, que expressamente estendeu a ordem à falta **parcial** de norma. A existência de alguma regulamentação não afasta, por si só, o cabimento.
+- **C** Vai longe demais no sentido oposto: o parágrafo único define omissão parcial pela **insuficiência** das normas editadas, e não pela discordância do interessado quanto à solução adotada.
+- **D** Inverte as duas hipóteses e ainda atribui à via injuncional a função de rever o mérito de norma existente, que não lhe cabe.
 
 #### Questão 6
 
@@ -889,20 +1163,42 @@ de injunção individual e coletivo. Disponível em:
 [planalto.gov.br/.../l13300.htm](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13300.htm).
 Acesso em: 14 set. 2026.
 
-**Nota de procedência.** A Constituição e as Leis n. 9.507/1997, n. 12.016/2009 e n. 13.300/2016
-foram conferidas no texto oficial do Planalto, nos dispositivos citados. As Leis n. 4.717/1965 e
-n. 7.347/1985 e o art. 654 do Código de Processo Penal **não** foram abertos; o que se afirma
-sobre eles reproduz o relato de Mendes e Branco, nas páginas indicadas. As Súmulas 266 e 632 do
-Supremo Tribunal Federal aparecem na transcrição feita pelos mesmos autores, e o RE 631.111/GO é
-relatado por eles; nenhum acórdão foi lido em inteiro teor, e por isso nenhuma questão de treino
-se apoia em precedente judicial. O texto oficial do art. 23 da Lei n. 12.016/2009 traz remissão à
-ADI 4296, cujo julgamento não foi consultado — por isso o prazo de 120 dias é apresentado na
-redação legal, sem afirmação sobre eventual pronunciamento do Supremo a seu respeito.
+BRASIL. *Decreto-Lei n. 3.689, de 3 de outubro de 1941*. Código de Processo Penal — arts. 647,
+648 e 654. Disponível em:
+[planalto.gov.br/.../del3689compilado.htm](https://www.planalto.gov.br/ccivil_03/decreto-lei/del3689compilado.htm).
+Acesso em: 14 set. 2026.
 
-**Correção de uma imprecisão da fonte.** Mendes e Branco atribuem ao *art. 1º* da Lei n.
-9.507/1997 a definição de banco de dados "de caráter público" (p. 683). Conferido no texto oficial,
-o art. 1º foi **vetado**; a definição consta do seu **parágrafo único**. Este módulo cita a
-localização correta.
+BRASIL. *Lei n. 4.717, de 29 de junho de 1965*. Regula a ação popular. Disponível em:
+[planalto.gov.br/.../l4717.htm](https://www.planalto.gov.br/ccivil_03/leis/l4717.htm).
+Acesso em: 14 set. 2026.
+
+BRASIL. *Lei n. 7.347, de 24 de julho de 1985*. Disciplina a ação civil pública. Disponível em:
+[planalto.gov.br/.../l7347compilada.htm](https://www.planalto.gov.br/ccivil_03/leis/l7347compilada.htm).
+Acesso em: 14 set. 2026.
+
+BRASIL. *Lei n. 9.051, de 18 de maio de 1995*. Dispõe sobre a expedição de certidões para defesa
+de direitos e esclarecimento de situações. Disponível em:
+[planalto.gov.br/.../l9051.htm](https://www.planalto.gov.br/ccivil_03/leis/l9051.htm).
+Acesso em: 14 set. 2026.
+
+**Nota de procedência.** Todos os dispositivos legais citados neste módulo — Constituição, Código
+de Processo Penal e Leis n. 4.717/1965, 7.347/1985, 9.051/1995, 9.507/1997, 12.016/2009 e
+13.300/2016 — foram conferidos no texto oficial do Planalto em 14 de setembro de 2026. As Súmulas
+266, 629, 630 e 632 do Supremo Tribunal Federal aparecem na transcrição feita por Mendes e Branco,
+e o RE 631.111/GO é relatado por eles; **nenhum acórdão foi lido em inteiro teor**, e por isso
+nenhuma questão de treino se apoia em precedente judicial. Os textos oficiais do art. 7º, § 2º, do
+art. 22 e do art. 23 da Lei n. 12.016/2009 trazem remissão à **ADI 4296**, cujo julgamento não foi
+consultado — esses dispositivos são apresentados na redação legal publicada, sem afirmação sobre o
+que o Supremo decidiu a respeito, e ficam fora do treino. A limitação territorial da coisa julgada
+do art. 16 da Lei n. 7.347/1985 é objeto de controvérsia não conferida neste módulo, e também fica
+fora do treino.
+
+**Duas correções às fontes doutrinárias.** Primeira: Mendes e Branco atribuem ao *art. 1º* da Lei
+n. 9.507/1997 a definição de banco de dados "de caráter público" (p. 683); conferido no texto
+oficial, o art. 1º foi **vetado**, e a definição consta do seu **parágrafo único**. Segunda: a
+lista de legitimados à ação civil pública que os autores apresentam na p. 687 **omite a Defensoria
+Pública**, incluída no art. 5º, II, da Lei n. 7.347/1985 pela Lei n. 11.448/2007. Nos dois casos o
+módulo segue o texto legal.
 
 **Sobre o recorte de dez ações.** A organização deste módulo em dez ações autônomas é opção
 didática do curso, adotada por decisão do professor. A doutrina majoritária conta cinco ou sete, e
