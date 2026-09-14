@@ -7,7 +7,7 @@ turma: 3º semestre
 professor: Mario Bastos
 unidade: I Unidade
 modulo: 5
-data_aula: 2026-09-28
+data_aula: 2026-09-14
 status: publicado — revisão 2 (14/09/2026)
 tags:
   - direito-constitucional
