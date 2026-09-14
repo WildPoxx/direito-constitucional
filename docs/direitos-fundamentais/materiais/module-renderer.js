@@ -100,6 +100,7 @@
     while (i < linhas.length) {
       const linha = linhas[i];
       if (!linha.trim()) { i++; continue; }
+      if (/^([-*_])\1{2,}$/.test(linha.trim())) { saida.push('<hr>'); i++; continue; }
       if (/^<div class="module-quiz-slot"/.test(linha)) { saida.push(linha); i++; continue; }
       if (/^#{1,4} /.test(linha)) {
         const [, cerquilhas, titulo] = linha.match(/^(#{1,4})\s+(.+)$/);
@@ -116,7 +117,19 @@
         saida.push(`<div class="table-wrap"><table><thead><tr>${cabecalho.map((c) => `<th>${inline(c)}</th>`).join('')}</tr></thead><tbody>${corpo.map((l) => `<tr>${l.map((c) => `<td>${inline(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`);
         continue;
       }
-      if (/^> /.test(linha)) { saida.push(`<blockquote>${inline(linha.slice(2))}</blockquote>`); i++; continue; }
+      if (/^> /.test(linha)) {
+        const paragrafos = [];
+        let atual = [];
+        while (i < linhas.length && /^>(\s|$)/.test(linhas[i])) {
+          const conteudo = linhas[i].replace(/^>\s?/, '').trim();
+          if (!conteudo) { if (atual.length) { paragrafos.push(atual.join(' ')); atual = []; } }
+          else { atual.push(conteudo); }
+          i++;
+        }
+        if (atual.length) paragrafos.push(atual.join(' '));
+        saida.push(`<blockquote>${paragrafos.map((p) => `<p>${inline(p)}</p>`).join('')}</blockquote>`);
+        continue;
+      }
       if (/^[-*] /.test(linha)) {
         const itens = [];
         while (i < linhas.length && /^[-*] /.test(linhas[i])) {
