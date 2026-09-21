@@ -582,7 +582,7 @@ Leiam a situação e respondam.
 | Rigidez e supremacia distinguidas com apoio em dispositivo; originário e derivado diferenciados nos três planos pedidos | 0,7 |
 | Hierarquia do tratado corretamente identificada e consequência prática explicada | 0,5 |
 
-Descontos: entrega fora do formato pedido — arquivo que não é PDF ou DOCX, ausência de nomes e turma no cabeçalho, assunto do e-mail fora do padrão — desconto de 0,1, uma única vez. **Norma, dispositivo ou julgado inexistente zera o item em que aparecer.** Resposta correta sem indicar a regra que a sustenta perde metade do item.
+Descontos: entrega fora do formato pedido — folha sem os nomes completos e a turma no cabeçalho, resposta fora do campo correspondente à questão — desconto de 0,1, uma única vez. **Norma, dispositivo ou julgado inexistente zera o item em que aparecer.** Resposta correta sem indicar a regra que a sustenta perde metade do item.
 
 **Plano honesto vale mais que plano de fachada.** Se a equipe não chegar a uma classificação com segurança, escreva qual foi a dúvida e por quê: dúvida declarada e fundamentada vale nota; dúvida escondida atrás de um adjetivo solto, não.
 
