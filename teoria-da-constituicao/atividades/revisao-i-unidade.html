@@ -11,15 +11,23 @@
     .aviso-gabarito .rotulo{display:block;margin-bottom:10px;font-family:Arial,Helvetica,sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#255957}
     .aviso-gabarito p{margin:0 0 10px}
     .aviso-gabarito p:last-child{margin-bottom:0}
-    .faixa{font-size:.85rem;font-weight:600;color:var(--muted, #667085);margin-left:10px}
     .questao{margin:26px 0;padding:22px 26px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
     .questao h3{margin:0 0 14px;font-size:1.18rem;line-height:1.3}
     .questao .qnum{display:inline-block;margin-right:10px;padding:3px 10px;border-radius:4px;background:var(--accent);color:#fff;font-size:.82rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;vertical-align:2px}
     .questao p{margin:0 0 12px;line-height:1.55}
-    .alts{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
-    .alt{display:flex;gap:12px;margin:0 0 10px}
+    .alts{margin-top:14px;border-top:1px solid var(--line);padding-top:14px;display:grid;gap:8px}
+    .alt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;padding:10px 12px;border:1.5px solid var(--line);border-radius:8px;background:transparent;cursor:pointer;font:inherit;line-height:1.5;color:inherit}
+    .alt:hover{border-color:var(--accent)}
     .alt .letra{flex:0 0 auto;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;border:1.5px solid var(--accent);border-radius:50%;font-weight:700;color:var(--accent);font-size:.9rem}
-    @media print{.site-header,.site-footer{display:none}}
+    .alt.marcada{border-color:var(--accent);background:rgba(124,45,18,.06)}
+    .alt.marcada .letra{background:var(--accent);color:#fff}
+    .marcacao{margin:10px 0 0;font-size:.88rem;color:var(--muted,#667085)}
+    .painel-relatorio{position:sticky;bottom:0;z-index:5;margin-top:30px;padding:14px 20px;border:1px solid var(--line);border-radius:10px 10px 0 0;background:var(--surface);box-shadow:0 -6px 24px rgba(0,0,0,.08);display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .painel-relatorio .contagem{font-weight:700;color:var(--accent);margin-right:auto}
+    .painel-relatorio button{padding:9px 16px;border:1.5px solid var(--accent);border-radius:8px;background:var(--accent);color:#fff;font:inherit;font-weight:600;cursor:pointer}
+    .painel-relatorio button.secundario{background:transparent;color:var(--accent)}
+    #saida-relatorio{display:none;margin:26px 0;padding:20px 24px;border:1px solid var(--line);border-radius:8px;background:var(--surface);white-space:pre-wrap;font-family:ui-monospace,Consolas,monospace;font-size:.86rem;line-height:1.5}
+    @media print{.site-header,.site-footer,.painel-relatorio{display:none}}
   </style>
 </head>
 <body>
@@ -39,14 +47,14 @@
     <section class="hero compact-hero">
       <span class="tag">Revisão Geral · I Unidade · aula de 29/09</span>
       <h1>Vinte questões para a revisão da prova</h1>
-      <p>Todo o conteúdo cobrável da I Unidade — Módulos 1, 2A e 2B — em vinte questões objetivas, que serão resolvidas e comentadas em sala, na aula de 29/09, conduzida pelo professor.</p>
+      <p>Todo o conteúdo cobrável da I Unidade em vinte questões objetivas, que serão resolvidas e comentadas em sala, na aula de 29/09, conduzida pelo professor.</p>
     </section>
 
     <section class="aviso-gabarito">
       <span class="rotulo">Como esta página funciona</span>
-      <p><strong>Esta página não traz o gabarito — de propósito.</strong> As respostas serão construídas em sala, questão por questão, na aula de 29/09. Antes disso, o exercício que vale é o de tentar responder com a Constituição aberta e o módulo ao lado, e anotar em quais questões ficou a dúvida.</p>
-      <p><strong>A prova de 06/10 sai daqui.</strong> Dez das vinte questões abaixo — 5 do Módulo 2B, 3 do 2A e 2 do Módulo 1 — serão levadas à prova em versão alterada: o contexto muda, a ordem das alternativas muda e a alternativa correta muda de lugar. Quem decorar letras vai errar; quem entender a razão de cada resposta, não.</p>
-      <p>A prova terá <strong>10 questões objetivas de 0,5 ponto e 1 questão discursiva de 1,0 ponto</strong>, somando os 6,0 da Avaliação Processual. Cobra apenas o conteúdo efetivamente trabalhado.</p>
+      <p><strong>Esta página não traz o gabarito — de propósito.</strong> As respostas serão construídas em sala, questão por questão, na aula de 29/09. Antes disso, o exercício que vale é tentar responder com a Constituição aberta e os módulos ao lado.</p>
+      <p><strong>Marque as suas respostas aqui mesmo.</strong> Clique na alternativa escolhida em cada questão e, ao final, gere o seu relatório de respostas — para levar à aula e conferir, questão a questão, durante a resolução. O relatório registra apenas o que <em>você</em> marcou: a correção acontece em sala.</p>
+      <p><strong>A prova de 06/10 sai daqui.</strong> Dez das vinte questões abaixo serão levadas à prova em versão alterada: o contexto muda, a ordem das alternativas muda e a alternativa correta muda de lugar. Quem decorar letras vai errar; quem entender a razão de cada resposta, não. A prova terá <strong>10 questões objetivas de 0,5 ponto e 1 questão discursiva de 1,0 ponto</strong>.</p>
     </section>
 
     <section>
@@ -54,14 +62,13 @@
       <ul class="info-list">
         <li><strong>Quando:</strong> aula de <strong>29/09</strong>, no horário normal, em sala.</li>
         <li><strong>O que é:</strong> resolução comentada das vinte questões, conduzida pelo professor. Não vale ponto — vale prova.</li>
-        <li><strong>O que trazer:</strong> a Constituição (impressa ou no celular) e as anotações de leitura dos módulos.</li>
-        <li><strong>Como se preparar:</strong> tente responder às vinte antes da aula. Marque as que dividirem a sua equipe de estudo: são essas que rendem mais na discussão.</li>
+        <li><strong>O que trazer:</strong> a Constituição (impressa ou no celular), as anotações — e o seu relatório de respostas.</li>
+        <li><strong>Material de estudo:</strong> <a href="../materiais/modulo-1-constitucionalismo-moderno.html">Módulo 1</a> · <a href="../materiais/modulo-2a-conceitos-e-sentidos-de-constituicao.html">Módulo 2A</a> · <a href="../materiais/modulo-2b-funcoes-classificacoes-supremacia-e-rigidez.html">Módulo 2B</a>.</li>
       </ul>
     </section>
 
     <section>
-      <h2>Módulo 1 · Constitucionalismo e Direito Constitucional <span class="faixa">Questões 1 a 4</span></h2>
-      <p class="intro">Constitucionalismo como limitação do poder; as três dimensões do limite; as matrizes inglesa, estadunidense e francesa; as camadas liberal, social e democrática. <a href="../materiais/modulo-1-constitucionalismo-moderno.html">Reler o módulo</a>.</p>
+      <h2>As vinte questões</h2>
     <article class="questao" id="q1">
       <h3><span class="qnum">Questão 1</span> A eleição como cheque em branco</h3>
       <p>Um prefeito eleito com 68% dos votos válidos anuncia três medidas: dissolver por decreto o
@@ -70,12 +77,13 @@ administrativos contra multas aplicadas pela própria prefeitura; e ocupar imóv
 para obras, sem processo nem indenização. Questionado, responde: "recebi da maioria o mandato
 para governar sem amarras". À luz do que o parágrafo único do art. 1º da Constituição dispõe
 sobre o exercício do poder, a resposta juridicamente correta é:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> O prefeito está certo: em uma democracia, a vontade da maioria eleitoral é a fonte última do Direito, e os limites constitucionais cedem diante dela.</p>
-        <p class="alt"><span class="letra">B</span> O prefeito está errado apenas na terceira medida, porque a propriedade é o único dos bens atingidos que tem proteção constitucional expressa.</p>
-        <p class="alt"><span class="letra">C</span> O prefeito está certo quanto às duas primeiras medidas, de natureza administrativa, e errado na terceira, que depende de lei federal.</p>
-        <p class="alt"><span class="letra">D</span> O prefeito está errado nas três: o povo é o titular do poder, mas o exerce, por representantes ou diretamente, <strong>nos termos da Constituição</strong> — a eleição confere legitimidade democrática, não poder sem limites.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 1">
+        <button type="button" class="alt" data-q="1" data-l="A"><span class="letra">A</span><span class="texto">O prefeito está certo: em uma democracia, a vontade da maioria eleitoral é a fonte última do Direito, e os limites constitucionais cedem diante dela.</span></button>
+        <button type="button" class="alt" data-q="1" data-l="B"><span class="letra">B</span><span class="texto">O prefeito está errado apenas na terceira medida, porque a propriedade é o único dos bens atingidos que tem proteção constitucional expressa.</span></button>
+        <button type="button" class="alt" data-q="1" data-l="C"><span class="letra">C</span><span class="texto">O prefeito está certo quanto às duas primeiras medidas, de natureza administrativa, e errado na terceira, que depende de lei federal.</span></button>
+        <button type="button" class="alt" data-q="1" data-l="D"><span class="letra">D</span><span class="texto">O prefeito está errado nas três: o povo é o titular do poder, mas o exerce, por representantes ou diretamente, nos termos da Constituição — a eleição confere legitimidade democrática, não poder sem limites.</span></button>
       </div>
+      <p class="marcacao" id="m1">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q2">
       <h3><span class="qnum">Questão 2</span> Três medidas, três dimensões</h3>
@@ -87,23 +95,25 @@ governo; (ii) decreto pelo qual o governador passa a nomear e destituir livremen
 conselheiros do tribunal que fiscaliza suas contas; (iii) demolição de imóveis irregulares sem
 notificação nem oportunidade de defesa. A correspondência correta entre ato e dimensão
 predominantemente violada é:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> (i) material; (ii) orgânica; (iii) procedimental.</p>
-        <p class="alt"><span class="letra">B</span> (i) procedimental; (ii) material; (iii) orgânica.</p>
-        <p class="alt"><span class="letra">C</span> (i) orgânica; (ii) procedimental; (iii) material.</p>
-        <p class="alt"><span class="letra">D</span> (i) material; (ii) procedimental; (iii) orgânica.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 2">
+        <button type="button" class="alt" data-q="2" data-l="A"><span class="letra">A</span><span class="texto">(i) material; (ii) orgânica; (iii) procedimental.</span></button>
+        <button type="button" class="alt" data-q="2" data-l="B"><span class="letra">B</span><span class="texto">(i) procedimental; (ii) material; (iii) orgânica.</span></button>
+        <button type="button" class="alt" data-q="2" data-l="C"><span class="letra">C</span><span class="texto">(i) orgânica; (ii) procedimental; (iii) material.</span></button>
+        <button type="button" class="alt" data-q="2" data-l="D"><span class="letra">D</span><span class="texto">(i) material; (ii) procedimental; (iii) orgânica.</span></button>
       </div>
+      <p class="marcacao" id="m2">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q3">
       <h3><span class="qnum">Questão 3</span> Três matrizes, três aprendizados</h3>
       <p>Sobre as três matrizes históricas do constitucionalismo moderno apresentadas no módulo, é
 correto afirmar que:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> A matriz inglesa produziu a primeira Constituição escrita e rígida da modernidade, da qual as demais derivaram.</p>
-        <p class="alt"><span class="letra">B</span> A matriz francesa instituiu, desde a Revolução, o controle judicial das leis, depois copiado pelos Estados Unidos em Marbury v. Madison.</p>
-        <p class="alt"><span class="letra">C</span> A matriz inglesa desenvolveu limites ao poder sem Constituição codificada em documento único; a estadunidense associou Constituição escrita, supremacia e controle judicial de constitucionalidade; a francesa pôs em primeiro plano a ruptura com o Antigo Regime, a declaração de direitos e a soberania popular — mas a primazia do Parlamento e da lei retardou, na Europa, o controle jurídico do legislador.</p>
-        <p class="alt"><span class="letra">D</span> As três matrizes são estágios sucessivos de um mesmo processo: a experiência inglesa evoluiu para a estadunidense, e esta para a francesa, cada uma corrigindo a anterior.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 3">
+        <button type="button" class="alt" data-q="3" data-l="A"><span class="letra">A</span><span class="texto">A matriz inglesa produziu a primeira Constituição escrita e rígida da modernidade, da qual as demais derivaram.</span></button>
+        <button type="button" class="alt" data-q="3" data-l="B"><span class="letra">B</span><span class="texto">A matriz francesa instituiu, desde a Revolução, o controle judicial das leis, depois copiado pelos Estados Unidos em Marbury v. Madison.</span></button>
+        <button type="button" class="alt" data-q="3" data-l="C"><span class="letra">C</span><span class="texto">A matriz inglesa desenvolveu limites ao poder sem Constituição codificada em documento único; a estadunidense associou Constituição escrita, supremacia e controle judicial de constitucionalidade; a francesa pôs em primeiro plano a ruptura com o Antigo Regime, a declaração de direitos e a soberania popular — mas a primazia do Parlamento e da lei retardou, na Europa, o controle jurídico do legislador.</span></button>
+        <button type="button" class="alt" data-q="3" data-l="D"><span class="letra">D</span><span class="texto">As três matrizes são estágios sucessivos de um mesmo processo: a experiência inglesa evoluiu para a estadunidense, e esta para a francesa, cada uma corrigindo a anterior.</span></button>
       </div>
+      <p class="marcacao" id="m3">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q4">
       <h3><span class="qnum">Questão 4</span> O que a igualdade formal não resolve</h3>
@@ -111,17 +121,14 @@ correto afirmar que:</p>
 capazes, que trocam livremente prestações. Um deles, porém, depende daquele contrato para
 comer; o outro, não. O Módulo 1 usa situações assim para explicar a passagem do
 constitucionalismo liberal às camadas social e democrática. Segundo essa reconstrução:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> A camada social substituiu a liberal: os direitos de liberdade e a propriedade perderam estatuto constitucional com o advento dos direitos sociais.</p>
-        <p class="alt"><span class="letra">B</span> A igualdade perante a lei, conquista liberal decisiva contra o privilégio e o arbítrio, não elimina por si as desigualdades materiais; por isso o constitucionalismo posterior acrescentou direitos sociais, deveres estatais e função social da propriedade — camadas que convivem, em tensão, no texto de 1988.</p>
-        <p class="alt"><span class="letra">C</span> A desigualdade material entre contratantes é problema econômico, externo à Constituição, que se limita a garantir a liberdade de contratar.</p>
-        <p class="alt"><span class="letra">D</span> A Constituição de 1988 optou pela camada democrática pura, abandonando tanto a proteção liberal da propriedade quanto os direitos sociais.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 4">
+        <button type="button" class="alt" data-q="4" data-l="A"><span class="letra">A</span><span class="texto">A camada social substituiu a liberal: os direitos de liberdade e a propriedade perderam estatuto constitucional com o advento dos direitos sociais.</span></button>
+        <button type="button" class="alt" data-q="4" data-l="B"><span class="letra">B</span><span class="texto">A igualdade perante a lei, conquista liberal decisiva contra o privilégio e o arbítrio, não elimina por si as desigualdades materiais; por isso o constitucionalismo posterior acrescentou direitos sociais, deveres estatais e função social da propriedade — camadas que convivem, em tensão, no texto de 1988.</span></button>
+        <button type="button" class="alt" data-q="4" data-l="C"><span class="letra">C</span><span class="texto">A desigualdade material entre contratantes é problema econômico, externo à Constituição, que se limita a garantir a liberdade de contratar.</span></button>
+        <button type="button" class="alt" data-q="4" data-l="D"><span class="letra">D</span><span class="texto">A Constituição de 1988 optou pela camada democrática pura, abandonando tanto a proteção liberal da propriedade quanto os direitos sociais.</span></button>
       </div>
+      <p class="marcacao" id="m4">Nenhuma alternativa marcada.</p>
     </article>
-    </section>
-    <section>
-      <h2>Módulo 2A · Conceito e Sentidos de Constituição <span class="faixa">Questões 5 a 10</span></h2>
-      <p class="intro">Os sentidos sociológico, político e jurídico-normativo; validade e eficácia; material e formal; a concepção normativa contemporânea. <a href="../materiais/modulo-2a-conceitos-e-sentidos-de-constituicao.html">Reler o módulo</a>.</p>
     <article class="questao" id="q5">
       <h3><span class="qnum">Questão 5</span> Três frases, três teorias</h3>
       <p>Num debate sobre a fila de cirurgias da rede pública, três pessoas se pronunciam. A
@@ -130,12 +137,13 @@ campanha não quiser, ele não sai do papel". A <strong>segunda</strong>: "o que
 país decidiu ser um Estado social; essa decisão funda tudo". A <strong>terceira</strong>: "cumprida ou não,
 a norma é válida, porque ocupa o topo do ordenamento; validade não se mede por estatística de
 cumprimento". As falas correspondem, respectivamente, aos sentidos:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Sociológico (Lassalle), político (Schmitt) e jurídico-normativo (Kelsen).</p>
-        <p class="alt"><span class="letra">B</span> Político (Schmitt), sociológico (Lassalle) e jurídico-normativo (Kelsen).</p>
-        <p class="alt"><span class="letra">C</span> Jurídico-normativo (Kelsen), político (Schmitt) e sociológico (Lassalle).</p>
-        <p class="alt"><span class="letra">D</span> Sociológico (Lassalle), jurídico-normativo (Kelsen) e político (Schmitt).</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 5">
+        <button type="button" class="alt" data-q="5" data-l="A"><span class="letra">A</span><span class="texto">Sociológico (Lassalle), político (Schmitt) e jurídico-normativo (Kelsen).</span></button>
+        <button type="button" class="alt" data-q="5" data-l="B"><span class="letra">B</span><span class="texto">Político (Schmitt), sociológico (Lassalle) e jurídico-normativo (Kelsen).</span></button>
+        <button type="button" class="alt" data-q="5" data-l="C"><span class="letra">C</span><span class="texto">Jurídico-normativo (Kelsen), político (Schmitt) e sociológico (Lassalle).</span></button>
+        <button type="button" class="alt" data-q="5" data-l="D"><span class="letra">D</span><span class="texto">Sociológico (Lassalle), jurídico-normativo (Kelsen) e político (Schmitt).</span></button>
       </div>
+      <p class="marcacao" id="m5">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q6">
       <h3><span class="qnum">Questão 6</span> Revogação por desuso</h3>
@@ -143,12 +151,13 @@ cumprimento". As falas correspondem, respectivamente, aos sentidos:</p>
 desuso, dos direitos sociais que o Estado comprovadamente não consegue prestar". Sustenta que
 "norma que não se cumpre há trinta anos já não é norma". Do ponto de vista da concepção
 jurídico-normativa exposta no módulo, a premissa do parlamentar:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Está correta, porque a eficácia social contínua é requisito de permanência da norma no ordenamento.</p>
-        <p class="alt"><span class="letra">B</span> Está correta em parte: a norma permanece válida, mas apenas como recomendação política, sem exigibilidade.</p>
-        <p class="alt"><span class="letra">C</span> Está errada, porque somente o Supremo Tribunal Federal pode declarar a revogação de norma constitucional.</p>
-        <p class="alt"><span class="letra">D</span> Está errada, porque confunde eficácia com validade: a norma constitucional vale pela posição que ocupa no ordenamento, e o descumprimento reiterado é exatamente a situação em que ela mais precisa servir de parâmetro exigível — como confirma o art. 5º, § 1º.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 6">
+        <button type="button" class="alt" data-q="6" data-l="A"><span class="letra">A</span><span class="texto">Está correta, porque a eficácia social contínua é requisito de permanência da norma no ordenamento.</span></button>
+        <button type="button" class="alt" data-q="6" data-l="B"><span class="letra">B</span><span class="texto">Está correta em parte: a norma permanece válida, mas apenas como recomendação política, sem exigibilidade.</span></button>
+        <button type="button" class="alt" data-q="6" data-l="C"><span class="letra">C</span><span class="texto">Está errada, porque somente o Supremo Tribunal Federal pode declarar a revogação de norma constitucional.</span></button>
+        <button type="button" class="alt" data-q="6" data-l="D"><span class="letra">D</span><span class="texto">Está errada, porque confunde eficácia com validade: a norma constitucional vale pela posição que ocupa no ordenamento, e o descumprimento reiterado é exatamente a situação em que ela mais precisa servir de parâmetro exigível — como confirma o art. 5º, § 1º.</span></button>
       </div>
+      <p class="marcacao" id="m6">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q7">
       <h3><span class="qnum">Questão 7</span> O que sobra para o Direito</h3>
@@ -158,12 +167,13 @@ social, diante de um direito descumprido, discute dois caminhos: apenas pressão
 que texto não vale nada", ou ação judicial fundada no art. 5º, § 1º. Considerado o recorte
 doutrinário citado, a razão pela qual a leitura sociológica <strong>não pode ser a base exclusiva</strong> do
 Direito Constitucional é:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Ela descreve mal a realidade: os fatores reais de poder não influenciam a efetividade das normas constitucionais.</p>
-        <p class="alt"><span class="letra">B</span> Ela é politicamente conservadora, porque foi formulada para defender as instituições do império alemão.</p>
-        <p class="alt"><span class="letra">C</span> Se a Constituição fosse só reflexo da correlação de forças, o Direito Constitucional ficaria sem objeto próprio e sem função normativa — e a própria crítica social perderia o instrumento jurídico com que exigir alguma coisa, como o art. 5º, § 1º.</p>
-        <p class="alt"><span class="letra">D</span> Ela foi integralmente superada: os fatores reais de poder deixaram de existir nas democracias constitucionais contemporâneas.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 7">
+        <button type="button" class="alt" data-q="7" data-l="A"><span class="letra">A</span><span class="texto">Ela descreve mal a realidade: os fatores reais de poder não influenciam a efetividade das normas constitucionais.</span></button>
+        <button type="button" class="alt" data-q="7" data-l="B"><span class="letra">B</span><span class="texto">Ela é politicamente conservadora, porque foi formulada para defender as instituições do império alemão.</span></button>
+        <button type="button" class="alt" data-q="7" data-l="C"><span class="letra">C</span><span class="texto">Se a Constituição fosse só reflexo da correlação de forças, o Direito Constitucional ficaria sem objeto próprio e sem função normativa — e a própria crítica social perderia o instrumento jurídico com que exigir alguma coisa, como o art. 5º, § 1º.</span></button>
+        <button type="button" class="alt" data-q="7" data-l="D"><span class="letra">D</span><span class="texto">Ela foi integralmente superada: os fatores reais de poder deixaram de existir nas democracias constitucionais contemporâneas.</span></button>
       </div>
+      <p class="marcacao" id="m7">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q8">
       <h3><span class="qnum">Questão 8</span> O fracasso que não é</h3>
@@ -171,12 +181,13 @@ Direito Constitucional é:</p>
 contradiz a Constituição todos os dias, então o Direito Constitucional fracassou como campo de
 estudo — norma que convive com o seu descumprimento é norma derrotada". Segundo a formulação de
 Barroso adotada no módulo, essa conclusão:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Está correta: a persistência da distância entre norma e realidade demonstra a vitória da leitura de Lassalle.</p>
-        <p class="alt"><span class="letra">B</span> Está errada: a tensão permanente entre norma e realidade não é o fracasso do Direito Constitucional, é o que o <strong>constitui</strong> — dela derivam as suas possibilidades e os seus limites; se norma e realidade coincidissem, nada haveria a aplicar, e se nunca se tocassem, nada haveria a estudar.</p>
-        <p class="alt"><span class="letra">C</span> Está errada, porque no Brasil a realidade já se conformou integralmente ao texto constitucional.</p>
-        <p class="alt"><span class="letra">D</span> Está correta, mas apenas para os direitos sociais, que não integram o conteúdo material da Constituição.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 8">
+        <button type="button" class="alt" data-q="8" data-l="A"><span class="letra">A</span><span class="texto">Está correta: a persistência da distância entre norma e realidade demonstra a vitória da leitura de Lassalle.</span></button>
+        <button type="button" class="alt" data-q="8" data-l="B"><span class="letra">B</span><span class="texto">Está errada: a tensão permanente entre norma e realidade não é o fracasso do Direito Constitucional, é o que o constitui — dela derivam as suas possibilidades e os seus limites; se norma e realidade coincidissem, nada haveria a aplicar, e se nunca se tocassem, nada haveria a estudar.</span></button>
+        <button type="button" class="alt" data-q="8" data-l="C"><span class="letra">C</span><span class="texto">Está errada, porque no Brasil a realidade já se conformou integralmente ao texto constitucional.</span></button>
+        <button type="button" class="alt" data-q="8" data-l="D"><span class="letra">D</span><span class="texto">Está correta, mas apenas para os direitos sociais, que não integram o conteúdo material da Constituição.</span></button>
       </div>
+      <p class="marcacao" id="m8">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q9">
       <h3><span class="qnum">Questão 9</span> Apêndice ou conteúdo</h3>
@@ -186,12 +197,13 @@ conteúdo material de uma Constituição, que se esgota em organizar o poder e d
 liberdades". Confrontada com a redefinição do conceito material registrada por Mendes e Branco
 — a Constituição como ordem jurídica fundamental da comunidade, na fórmula de Hesse —, a
 afirmação do expositor é:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Compatível: o conceito material clássico nunca foi revisto pela doutrina adotada no curso.</p>
-        <p class="alt"><span class="letra">B</span> Compatível, porque a distinção material/formal implica que tudo o que entrou por emenda é apenas formalmente constitucional.</p>
-        <p class="alt"><span class="letra">C</span> Incompatível: ultrapassado o momento em que conter o poder era a preocupação exclusiva, o Estado assumiu tarefas diante da desigualdade e do pluralismo — e os direitos sociais passaram a integrar o próprio conteúdo material da Constituição.</p>
-        <p class="alt"><span class="letra">D</span> Incompatível, porque a distinção entre sentido material e sentido formal deixou de existir no constitucionalismo contemporâneo.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 9">
+        <button type="button" class="alt" data-q="9" data-l="A"><span class="letra">A</span><span class="texto">Compatível: o conceito material clássico nunca foi revisto pela doutrina adotada no curso.</span></button>
+        <button type="button" class="alt" data-q="9" data-l="B"><span class="letra">B</span><span class="texto">Compatível, porque a distinção material/formal implica que tudo o que entrou por emenda é apenas formalmente constitucional.</span></button>
+        <button type="button" class="alt" data-q="9" data-l="C"><span class="letra">C</span><span class="texto">Incompatível: ultrapassado o momento em que conter o poder era a preocupação exclusiva, o Estado assumiu tarefas diante da desigualdade e do pluralismo — e os direitos sociais passaram a integrar o próprio conteúdo material da Constituição.</span></button>
+        <button type="button" class="alt" data-q="9" data-l="D"><span class="letra">D</span><span class="texto">Incompatível, porque a distinção entre sentido material e sentido formal deixou de existir no constitucionalismo contemporâneo.</span></button>
       </div>
+      <p class="marcacao" id="m9">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q10">
       <h3><span class="qnum">Questão 10</span> Um nome que já é um critério</h3>
@@ -199,29 +211,27 @@ afirmação do expositor é:</p>
 órgãos do poder, mas não consagra garantias da liberdade nem adota divisão de poderes. Segundo
 o <strong>conceito ideal de constituição</strong> que Canotilho atribui a Schmitt — imposto com o triunfo do
 movimento constitucional no início do século XIX —, esse documento:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> É Constituição em sentido pleno, porque forma escrita e solenidade bastam ao conceito ideal.</p>
-        <p class="alt"><span class="letra">B</span> Não corresponde ao conceito ideal, que reserva o nome ao documento escrito que consagre garantias da liberdade e adote a divisão de poderes — distinção que fundou a separação oitocentista entre Estados constitucionais e não constitucionais, e que mostra que chamar um texto de "Constituição" já é aplicar um critério de valor.</p>
-        <p class="alt"><span class="letra">C</span> Não é Constituição em nenhum sentido possível, porque documento sem direitos é juridicamente inexistente.</p>
-        <p class="alt"><span class="letra">D</span> É Constituição em sentido material, mas não em sentido formal, porque lhe falta o procedimento constituinte adequado.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 10">
+        <button type="button" class="alt" data-q="10" data-l="A"><span class="letra">A</span><span class="texto">É Constituição em sentido pleno, porque forma escrita e solenidade bastam ao conceito ideal.</span></button>
+        <button type="button" class="alt" data-q="10" data-l="B"><span class="letra">B</span><span class="texto">Não corresponde ao conceito ideal, que reserva o nome ao documento escrito que consagre garantias da liberdade e adote a divisão de poderes — distinção que fundou a separação oitocentista entre Estados constitucionais e não constitucionais, e que mostra que chamar um texto de "Constituição" já é aplicar um critério de valor.</span></button>
+        <button type="button" class="alt" data-q="10" data-l="C"><span class="letra">C</span><span class="texto">Não é Constituição em nenhum sentido possível, porque documento sem direitos é juridicamente inexistente.</span></button>
+        <button type="button" class="alt" data-q="10" data-l="D"><span class="letra">D</span><span class="texto">É Constituição em sentido material, mas não em sentido formal, porque lhe falta o procedimento constituinte adequado.</span></button>
       </div>
+      <p class="marcacao" id="m10">Nenhuma alternativa marcada.</p>
     </article>
-    </section>
-    <section>
-      <h2>Módulo 2B · Classificações, Supremacia, Rigidez e Poder Constituinte <span class="faixa">Questões 11 a 20</span></h2>
-      <p class="intro">As classificações das Constituições; supremacia e rigidez; quóruns; tratados de direitos humanos; poder constituinte originário e derivado. <a href="../materiais/modulo-2b-funcoes-classificacoes-supremacia-e-rigidez.html">Reler o módulo</a>.</p>
     <article class="questao" id="q11">
       <h3><span class="qnum">Questão 11</span> O plebiscito que legitima — ou aparenta</h3>
       <p>Em um país fictício, o chefe do Executivo, após dissolver o parlamento, outorga um texto
 constitucional redigido por seus assessores e, seis meses depois, submete-o a referendo, no
 qual o eleitorado pode apenas aprovar ou rejeitar o documento pronto. O texto é aprovado.
 Quanto à origem, essa Constituição classifica-se como:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Promulgada, porque a aprovação popular no referendo equivale à eleição de uma assembleia constituinte.</p>
-        <p class="alt"><span class="letra">B</span> Pactuada, porque resultou de acordo entre o Executivo e o eleitorado.</p>
-        <p class="alt"><span class="letra">C</span> Outorgada pura, porque a consulta posterior é juridicamente irrelevante para a classificação.</p>
-        <p class="alt"><span class="letra">D</span> Cesarista, porque o texto foi imposto e depois ratificado por consulta popular em que o eleitor não delibera sobre o conteúdo — participação ratificadora, não deliberativa.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 11">
+        <button type="button" class="alt" data-q="11" data-l="A"><span class="letra">A</span><span class="texto">Promulgada, porque a aprovação popular no referendo equivale à eleição de uma assembleia constituinte.</span></button>
+        <button type="button" class="alt" data-q="11" data-l="B"><span class="letra">B</span><span class="texto">Pactuada, porque resultou de acordo entre o Executivo e o eleitorado.</span></button>
+        <button type="button" class="alt" data-q="11" data-l="C"><span class="letra">C</span><span class="texto">Outorgada pura, porque a consulta posterior é juridicamente irrelevante para a classificação.</span></button>
+        <button type="button" class="alt" data-q="11" data-l="D"><span class="letra">D</span><span class="texto">Cesarista, porque o texto foi imposto e depois ratificado por consulta popular em que o eleitor não delibera sobre o conteúdo — participação ratificadora, não deliberativa.</span></button>
       </div>
+      <p class="marcacao" id="m11">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q12">
       <h3><span class="qnum">Questão 12</span> O que falta ao Reino Unido</h3>
@@ -229,12 +239,13 @@ Quanto à origem, essa Constituição classifica-se como:</p>
 Parliament Acts —, todas alteráveis pelo Parlamento pelo mesmo rito de qualquer lei. Sobre o
 que essa experiência ensina a respeito da relação entre <strong>forma</strong> e <strong>alterabilidade</strong>, é
 correto afirmar:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Ao Reino Unido não falta norma constitucional — falta documento único e rito agravado; sem hierarquia formal, não há como exigir procedimento especial de mudança, e é por isso que a Constituição britânica é classificada como flexível.</p>
-        <p class="alt"><span class="letra">B</span> O Reino Unido não possui Constituição, pois Constituição não escrita é uma contradição em termos.</p>
-        <p class="alt"><span class="letra">C</span> A Constituição britânica é rígida, porque suas normas históricas gozam de imunidade costumeira contra alteração parlamentar.</p>
-        <p class="alt"><span class="letra">D</span> A flexibilidade britânica decorre de uma escolha do Poder Judiciário, que se recusa a controlar a constitucionalidade das leis.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 12">
+        <button type="button" class="alt" data-q="12" data-l="A"><span class="letra">A</span><span class="texto">Ao Reino Unido não falta norma constitucional — falta documento único e rito agravado; sem hierarquia formal, não há como exigir procedimento especial de mudança, e é por isso que a Constituição britânica é classificada como flexível.</span></button>
+        <button type="button" class="alt" data-q="12" data-l="B"><span class="letra">B</span><span class="texto">O Reino Unido não possui Constituição, pois Constituição não escrita é uma contradição em termos.</span></button>
+        <button type="button" class="alt" data-q="12" data-l="C"><span class="letra">C</span><span class="texto">A Constituição britânica é rígida, porque suas normas históricas gozam de imunidade costumeira contra alteração parlamentar.</span></button>
+        <button type="button" class="alt" data-q="12" data-l="D"><span class="letra">D</span><span class="texto">A flexibilidade britânica decorre de uma escolha do Poder Judiciário, que se recusa a controlar a constitucionalidade das leis.</span></button>
       </div>
+      <p class="marcacao" id="m12">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q13">
       <h3><span class="qnum">Questão 13</span> A Constituição que serve ao poder</h3>
@@ -242,12 +253,13 @@ correto afirmar:</p>
 catálogo de direitos e separação de Poderes no papel. Na prática, o texto não limita quem
 governa: serve para dar aparência jurídica ao exercício do poder por quem já o detém. Na
 classificação ontológica de Loewenstein adotada pelo módulo, essa Constituição é:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Nominal, porque pretende sinceramente limitar o poder, mas as condições sociais ainda não o permitem.</p>
-        <p class="alt"><span class="letra">B</span> Semântica, porque, em vez de limitar o poder, é instrumentalizada para legitimar quem já o exerce — o exemplo brasileiro apontado pelo módulo é a Carta de 1937.</p>
-        <p class="alt"><span class="letra">C</span> Normativa, porque a existência de catálogo de direitos e separação de Poderes basta para a normatividade.</p>
-        <p class="alt"><span class="letra">D</span> Flexível, porque o critério ontológico mede o grau de dificuldade de alteração do texto.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 13">
+        <button type="button" class="alt" data-q="13" data-l="A"><span class="letra">A</span><span class="texto">Nominal, porque pretende sinceramente limitar o poder, mas as condições sociais ainda não o permitem.</span></button>
+        <button type="button" class="alt" data-q="13" data-l="B"><span class="letra">B</span><span class="texto">Semântica, porque, em vez de limitar o poder, é instrumentalizada para legitimar quem já o exerce — o exemplo brasileiro apontado pelo módulo é a Carta de 1937.</span></button>
+        <button type="button" class="alt" data-q="13" data-l="C"><span class="letra">C</span><span class="texto">Normativa, porque a existência de catálogo de direitos e separação de Poderes basta para a normatividade.</span></button>
+        <button type="button" class="alt" data-q="13" data-l="D"><span class="letra">D</span><span class="texto">Flexível, porque o critério ontológico mede o grau de dificuldade de alteração do texto.</span></button>
       </div>
+      <p class="marcacao" id="m13">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q14">
       <h3><span class="qnum">Questão 14</span> Trezentos e cinco não bastam</h3>
@@ -255,24 +267,26 @@ classificação ontológica de Loewenstein adotada pelo módulo, essa Constitui�
 No mesmo dia, um projeto de lei complementar é aprovado com 260 votos, e um projeto de lei
 ordinária, com 230 votos, presente a maioria absoluta dos deputados. Considerando que a Câmara
 tem 513 membros, é correto afirmar que:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Os três foram aprovados, pois todos superaram a maioria absoluta de 257 votos.</p>
-        <p class="alt"><span class="letra">B</span> A PEC foi aprovada, porque 305 votos superam os três quintos dos presentes na sessão.</p>
-        <p class="alt"><span class="letra">C</span> A PEC foi rejeitada, porque três quintos dos membros da Câmara são 308 votos, e o quórum do art. 60, § 2º, incide sobre os membros, não sobre os presentes; a lei complementar (260 ≥ 257, art. 69) e a lei ordinária (art. 47) foram aprovadas.</p>
-        <p class="alt"><span class="letra">D</span> A PEC e a lei complementar foram rejeitadas, porque ambas exigem três quintos dos membros.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 14">
+        <button type="button" class="alt" data-q="14" data-l="A"><span class="letra">A</span><span class="texto">Os três foram aprovados, pois todos superaram a maioria absoluta de 257 votos.</span></button>
+        <button type="button" class="alt" data-q="14" data-l="B"><span class="letra">B</span><span class="texto">A PEC foi aprovada, porque 305 votos superam os três quintos dos presentes na sessão.</span></button>
+        <button type="button" class="alt" data-q="14" data-l="C"><span class="letra">C</span><span class="texto">A PEC foi rejeitada, porque três quintos dos membros da Câmara são 308 votos, e o quórum do art. 60, § 2º, incide sobre os membros, não sobre os presentes; a lei complementar (260 ≥ 257, art. 69) e a lei ordinária (art. 47) foram aprovadas.</span></button>
+        <button type="button" class="alt" data-q="14" data-l="D"><span class="letra">D</span><span class="texto">A PEC e a lei complementar foram rejeitadas, porque ambas exigem três quintos dos membros.</span></button>
       </div>
+      <p class="marcacao" id="m14">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q15">
       <h3><span class="qnum">Questão 15</span> O mesmo Congresso, dois modos de decidir</h3>
       <p>O mesmo Congresso Nacional aprova, na mesma semana, uma lei ordinária e uma emenda
 constitucional. Sobre a relação entre esses dois atos e a Constituição, a formulação correta,
 nos termos do módulo, é:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> A supremacia é a posição da Constituição no ordenamento — norma que fundamenta a validade das demais —, e a rigidez é o procedimento que a protege: iniciativa restrita, dois turnos, três quintos e limites materiais; sem o rito agravado, a lei posterior alteraria o texto constitucional e a superioridade se dissolveria.</p>
-        <p class="alt"><span class="letra">B</span> Supremacia e rigidez são sinônimos: toda Constituição suprema é rígida, e toda Constituição rígida é efetivamente suprema.</p>
-        <p class="alt"><span class="letra">C</span> A rigidez decorre da supremacia: por ser a norma mais importante, a Constituição é automaticamente mais difícil de alterar, independentemente de previsão procedimental.</p>
-        <p class="alt"><span class="letra">D</span> A supremacia decorre do conteúdo da Constituição: normas materialmente constitucionais são superiores ainda que fora do texto constitucional.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 15">
+        <button type="button" class="alt" data-q="15" data-l="A"><span class="letra">A</span><span class="texto">A supremacia é a posição da Constituição no ordenamento — norma que fundamenta a validade das demais —, e a rigidez é o procedimento que a protege: iniciativa restrita, dois turnos, três quintos e limites materiais; sem o rito agravado, a lei posterior alteraria o texto constitucional e a superioridade se dissolveria.</span></button>
+        <button type="button" class="alt" data-q="15" data-l="B"><span class="letra">B</span><span class="texto">Supremacia e rigidez são sinônimos: toda Constituição suprema é rígida, e toda Constituição rígida é efetivamente suprema.</span></button>
+        <button type="button" class="alt" data-q="15" data-l="C"><span class="letra">C</span><span class="texto">A rigidez decorre da supremacia: por ser a norma mais importante, a Constituição é automaticamente mais difícil de alterar, independentemente de previsão procedimental.</span></button>
+        <button type="button" class="alt" data-q="15" data-l="D"><span class="letra">D</span><span class="texto">A supremacia decorre do conteúdo da Constituição: normas materialmente constitucionais são superiores ainda que fora do texto constitucional.</span></button>
       </div>
+      <p class="marcacao" id="m15">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q16">
       <h3><span class="qnum">Questão 16</span> Rígida no papel, reformável na prática</h3>
@@ -281,12 +295,13 @@ dois terços — e proclama, em artigo expresso, sua superioridade sobre todas a
 porém, nenhum órgão com competência para invalidar leis que a contrariem: a verificação de
 compatibilidade cabe ao próprio parlamento que as aprovou. Sobre esse arranjo, a análise
 correta, nos termos do módulo, é:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> A superioridade está garantida, porque o rito agravado impede juridicamente a aprovação de leis inconstitucionais.</p>
-        <p class="alt"><span class="letra">B</span> O arranjo é logicamente impossível: toda Constituição rígida institui, por definição, controle de constitucionalidade.</p>
-        <p class="alt"><span class="letra">C</span> A Constituição é flexível, porque a ausência de controle equivale à ausência de rito agravado.</p>
-        <p class="alt"><span class="letra">D</span> A Constituição é rígida, mas sua supremacia tende a não ser efetiva: afirmar superioridade não produz superioridade, e sem um órgão distinto do legislador para confrontar a lei com o texto, nada obriga a Constituição a prevalecer no caso de conflito.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 16">
+        <button type="button" class="alt" data-q="16" data-l="A"><span class="letra">A</span><span class="texto">A superioridade está garantida, porque o rito agravado impede juridicamente a aprovação de leis inconstitucionais.</span></button>
+        <button type="button" class="alt" data-q="16" data-l="B"><span class="letra">B</span><span class="texto">O arranjo é logicamente impossível: toda Constituição rígida institui, por definição, controle de constitucionalidade.</span></button>
+        <button type="button" class="alt" data-q="16" data-l="C"><span class="letra">C</span><span class="texto">A Constituição é flexível, porque a ausência de controle equivale à ausência de rito agravado.</span></button>
+        <button type="button" class="alt" data-q="16" data-l="D"><span class="letra">D</span><span class="texto">A Constituição é rígida, mas sua supremacia tende a não ser efetiva: afirmar superioridade não produz superioridade, e sem um órgão distinto do legislador para confrontar a lei com o texto, nada obriga a Constituição a prevalecer no caso de conflito.</span></button>
       </div>
+      <p class="marcacao" id="m16">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q17">
       <h3><span class="qnum">Questão 17</span> O tratado entre a lei e a Constituição</h3>
@@ -296,12 +311,13 @@ constitucional —, o entendimento de que tais tratados, quando <strong>não</st
 art. 5º, § 3º, têm hierarquia <strong>supralegal</strong>. Considere que um advogado invoca o Pacto de San
 José da Costa Rica, ratificado em 1992, contra a legislação que disciplinava a prisão civil do
 depositário infiel. <strong>De acordo com o entendimento que prevaleceu</strong>, o efeito do tratado é:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Revogar o art. 5º, LXVII, da Constituição, que admite a prisão do depositário infiel.</p>
-        <p class="alt"><span class="letra">B</span> Situar-se acima da lei ordinária e abaixo da Constituição: o tratado não revoga o dispositivo constitucional, mas torna inaplicável a legislação que dava efetividade àquela prisão — que, sem base legal, deixou de existir na prática, como consolidou a Súmula Vinculante 25.</p>
-        <p class="alt"><span class="letra">C</span> Valer como lei ordinária, podendo ser afastado por qualquer lei posterior que discipline a matéria.</p>
-        <p class="alt"><span class="letra">D</span> Valer como emenda constitucional, porque todo tratado de direitos humanos ratificado pelo Brasil adquire automaticamente essa estatura.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 17">
+        <button type="button" class="alt" data-q="17" data-l="A"><span class="letra">A</span><span class="texto">Revogar o art. 5º, LXVII, da Constituição, que admite a prisão do depositário infiel.</span></button>
+        <button type="button" class="alt" data-q="17" data-l="B"><span class="letra">B</span><span class="texto">Situar-se acima da lei ordinária e abaixo da Constituição: o tratado não revoga o dispositivo constitucional, mas torna inaplicável a legislação que dava efetividade àquela prisão — que, sem base legal, deixou de existir na prática, como consolidou a Súmula Vinculante 25.</span></button>
+        <button type="button" class="alt" data-q="17" data-l="C"><span class="letra">C</span><span class="texto">Valer como lei ordinária, podendo ser afastado por qualquer lei posterior que discipline a matéria.</span></button>
+        <button type="button" class="alt" data-q="17" data-l="D"><span class="letra">D</span><span class="texto">Valer como emenda constitucional, porque todo tratado de direitos humanos ratificado pelo Brasil adquire automaticamente essa estatura.</span></button>
       </div>
+      <p class="marcacao" id="m17">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q18">
       <h3><span class="qnum">Questão 18</span> A segunda porta</h3>
@@ -309,12 +325,13 @@ depositário infiel. <strong>De acordo com o entendimento que prevaleceu</strong
 humanos aprovados, em cada Casa do Congresso, em dois turnos, por três quintos dos votos dos
 respectivos membros, serão equivalentes às emendas constitucionais. Sobre esse mecanismo, é
 correto afirmar que:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Ele rebaixou os tratados de direitos humanos anteriores a 2004, que perderam validade até nova aprovação pelo rito especial.</p>
-        <p class="alt"><span class="letra">B</span> Ele se aplica a qualquer tratado internacional, inclusive comerciais e tributários, desde que aprovado pelo quórum qualificado.</p>
-        <p class="alt"><span class="letra">C</span> Ele criou uma segunda porta de ingresso na estatura constitucional, com a mesma fechadura do art. 60, § 2º — mesmo quórum, mesmos turnos, mesmas Casas —, e foi percorrido pela Convenção sobre os Direitos das Pessoas com Deficiência (2007) e pelo Tratado de Marraqueche (2013): normas com equivalência de emenda que integram a ordem constitucional sem estar no texto da Constituição.</p>
-        <p class="alt"><span class="letra">D</span> Ele transfere ao Presidente da República a competência para atribuir estatura constitucional aos tratados que ratificar.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 18">
+        <button type="button" class="alt" data-q="18" data-l="A"><span class="letra">A</span><span class="texto">Ele rebaixou os tratados de direitos humanos anteriores a 2004, que perderam validade até nova aprovação pelo rito especial.</span></button>
+        <button type="button" class="alt" data-q="18" data-l="B"><span class="letra">B</span><span class="texto">Ele se aplica a qualquer tratado internacional, inclusive comerciais e tributários, desde que aprovado pelo quórum qualificado.</span></button>
+        <button type="button" class="alt" data-q="18" data-l="C"><span class="letra">C</span><span class="texto">Ele criou uma segunda porta de ingresso na estatura constitucional, com a mesma fechadura do art. 60, § 2º — mesmo quórum, mesmos turnos, mesmas Casas —, e foi percorrido pela Convenção sobre os Direitos das Pessoas com Deficiência (2007) e pelo Tratado de Marraqueche (2013): normas com equivalência de emenda que integram a ordem constitucional sem estar no texto da Constituição.</span></button>
+        <button type="button" class="alt" data-q="18" data-l="D"><span class="letra">D</span><span class="texto">Ele transfere ao Presidente da República a competência para atribuir estatura constitucional aos tratados que ratificar.</span></button>
       </div>
+      <p class="marcacao" id="m18">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q19">
       <h3><span class="qnum">Questão 19</span> A assembleia que não deve obediência</h3>
@@ -322,32 +339,135 @@ correto afirmar que:</p>
 outra Constituição brasileira. Um jurista objeta: "essa assembleia será juridicamente inválida
 se não observar os limites do art. 60, § 4º, da Constituição de 1988". Nos termos da teoria do
 poder constituinte exposta no módulo, a objeção:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Procede: as cláusulas pétreas vinculam qualquer poder constituinte, inclusive o originário, por serem direito suprapositivo.</p>
-        <p class="alt"><span class="letra">B</span> Procede em parte: a nova assembleia deve observar apenas os limites formais do art. 60, não os materiais.</p>
-        <p class="alt"><span class="letra">C</span> Não procede, porque o art. 60, § 4º, só protege a forma federativa de Estado, e não os demais conteúdos.</p>
-        <p class="alt"><span class="letra">D</span> Não procede juridicamente: o poder constituinte originário é inicial, juridicamente ilimitado e incondicionado perante a ordem anterior — os limites do art. 60 vinculam o poder <strong>derivado</strong>, que a Constituição instituiu; o que condiciona o originário é de outra natureza: política, histórica e social.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 19">
+        <button type="button" class="alt" data-q="19" data-l="A"><span class="letra">A</span><span class="texto">Procede: as cláusulas pétreas vinculam qualquer poder constituinte, inclusive o originário, por serem direito suprapositivo.</span></button>
+        <button type="button" class="alt" data-q="19" data-l="B"><span class="letra">B</span><span class="texto">Procede em parte: a nova assembleia deve observar apenas os limites formais do art. 60, não os materiais.</span></button>
+        <button type="button" class="alt" data-q="19" data-l="C"><span class="letra">C</span><span class="texto">Não procede, porque o art. 60, § 4º, só protege a forma federativa de Estado, e não os demais conteúdos.</span></button>
+        <button type="button" class="alt" data-q="19" data-l="D"><span class="letra">D</span><span class="texto">Não procede juridicamente: o poder constituinte originário é inicial, juridicamente ilimitado e incondicionado perante a ordem anterior — os limites do art. 60 vinculam o poder derivado, que a Constituição instituiu; o que condiciona o originário é de outra natureza: política, histórica e social.</span></button>
       </div>
+      <p class="marcacao" id="m19">Nenhuma alternativa marcada.</p>
     </article>
     <article class="questao" id="q20">
       <h3><span class="qnum">Questão 20</span> Quem escreve a Constituição do Estado</h3>
       <p>Uma Assembleia Legislativa estadual se declara "constituinte" para elaborar a nova Constituição
 do seu Estado, observados os princípios da Constituição Federal. Sobre a natureza desse poder e
 suas espécies vizinhas, é correto afirmar que:</p>
-      <div class="alts">
-        <p class="alt"><span class="letra">A</span> Trata-se do poder constituinte derivado <strong>decorrente</strong> (art. 25 da CF/88 e art. 11 do ADCT), que permite aos Estados elaborar suas próprias Constituições dentro dos princípios da Federal — e que não se confunde nem com o derivado <strong>reformador</strong> (que altera a própria CF/88 pelo rito do art. 60) nem com o derivado <strong>revisor</strong> (a revisão do art. 3º do ADCT, de exercício único, já realizada e exaurida).</p>
-        <p class="alt"><span class="letra">B</span> Trata-se de poder constituinte originário estadual, juridicamente ilimitado dentro do território do Estado.</p>
-        <p class="alt"><span class="letra">C</span> Trata-se do poder derivado revisor, que os Estados podem exercer a cada cinco anos por maioria absoluta.</p>
-        <p class="alt"><span class="letra">D</span> Trata-se do poder derivado reformador, porque toda alteração de texto constitucional, federal ou estadual, segue o art. 60.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 20">
+        <button type="button" class="alt" data-q="20" data-l="A"><span class="letra">A</span><span class="texto">Trata-se do poder constituinte derivado decorrente (art. 25 da CF/88 e art. 11 do ADCT), que permite aos Estados elaborar suas próprias Constituições dentro dos princípios da Federal — e que não se confunde nem com o derivado reformador (que altera a própria CF/88 pelo rito do art. 60) nem com o derivado revisor (a revisão do art. 3º do ADCT, de exercício único, já realizada e exaurida).</span></button>
+        <button type="button" class="alt" data-q="20" data-l="B"><span class="letra">B</span><span class="texto">Trata-se de poder constituinte originário estadual, juridicamente ilimitado dentro do território do Estado.</span></button>
+        <button type="button" class="alt" data-q="20" data-l="C"><span class="letra">C</span><span class="texto">Trata-se do poder derivado revisor, que os Estados podem exercer a cada cinco anos por maioria absoluta.</span></button>
+        <button type="button" class="alt" data-q="20" data-l="D"><span class="letra">D</span><span class="texto">Trata-se do poder derivado reformador, porque toda alteração de texto constitucional, federal ou estadual, segue o art. 60.</span></button>
       </div>
+      <p class="marcacao" id="m20">Nenhuma alternativa marcada.</p>
     </article>
     </section>
 
-    <section class="aviso-gabarito">
-      <span class="rotulo">Depois da aula</span>
-      <p>O caminho de estudo entre 29/09 e 06/10: refazer estas vinte questões sem consulta, conferir cada resposta pela explicação dada em sala, e reler no módulo as seções das questões erradas. As questões de treino publicadas ao fim dos Módulos 2A e 2B — estas com gabarito comentado — completam a preparação.</p>
-    </section>
+    <pre id="saida-relatorio" aria-live="polite"></pre>
+
+    <div class="painel-relatorio">
+      <span class="contagem" id="contagem">0 de 20 respondidas</span>
+      <button type="button" id="btn-relatorio">Gerar meu relatório</button>
+      <button type="button" class="secundario" id="btn-baixar">Baixar TXT</button>
+      <button type="button" class="secundario" id="btn-limpar">Limpar marcações</button>
+    </div>
   </main>
   <footer class="site-footer">Material de apoio da disciplina Teoria da Constituição. Elaborado com apoio de IA generativa (Portaria CNPq nº 2.664/2026); seleção de conteúdo, conferência e responsabilidade do docente.</footer>
+
+  <script>
+  (function () {
+    var TOTAL = 20;
+    var CHAVE = "revisao-tdc-i-unidade-respostas";
+    var TITULOS = [
+    "A eleição como cheque em branco",
+    "Três medidas, três dimensões",
+    "Três matrizes, três aprendizados",
+    "O que a igualdade formal não resolve",
+    "Três frases, três teorias",
+    "Revogação por desuso",
+    "O que sobra para o Direito",
+    "O fracasso que não é",
+    "Apêndice ou conteúdo",
+    "Um nome que já é um critério",
+    "O plebiscito que legitima — ou aparenta",
+    "O que falta ao Reino Unido",
+    "A Constituição que serve ao poder",
+    "Trezentos e cinco não bastam",
+    "O mesmo Congresso, dois modos de decidir",
+    "Rígida no papel, reformável na prática",
+    "O tratado entre a lei e a Constituição",
+    "A segunda porta",
+    "A assembleia que não deve obediência",
+    "Quem escreve a Constituição do Estado"
+    ];
+    var respostas = {};
+
+    function salvar() {
+      try { localStorage.setItem(CHAVE, JSON.stringify(respostas)); } catch (e) {}
+    }
+    function carregar() {
+      try {
+        var s = localStorage.getItem(CHAVE);
+        if (s) respostas = JSON.parse(s) || {};
+      } catch (e) { respostas = {}; }
+    }
+    function atualizar() {
+      var n = Object.keys(respostas).length;
+      document.getElementById("contagem").textContent = n + " de " + TOTAL + " respondidas";
+      for (var q = 1; q <= TOTAL; q++) {
+        var m = document.getElementById("m" + q);
+        if (m) m.textContent = respostas[q] ? "Sua marcação: alternativa " + respostas[q] + "." : "Nenhuma alternativa marcada.";
+      }
+      document.querySelectorAll(".alt").forEach(function (b) {
+        b.classList.toggle("marcada", respostas[b.dataset.q] === b.dataset.l);
+      });
+    }
+    function textoRelatorio() {
+      var agora = new Date();
+      var linhas = [];
+      linhas.push("RELATORIO DE RESPOSTAS — Revisao Geral da I Unidade");
+      linhas.push("Teoria da Constituicao — DIRBN.02 — FBBR 2026.2");
+      linhas.push("Gerado em: " + agora.toLocaleString("pt-BR"));
+      linhas.push("Respondidas: " + Object.keys(respostas).length + " de " + TOTAL);
+      linhas.push("");
+      for (var q = 1; q <= TOTAL; q++) {
+        linhas.push("Questao " + q + " — " + TITULOS[q - 1] + ": " + (respostas[q] ? respostas[q] : "sem resposta"));
+      }
+      linhas.push("");
+      linhas.push("Este relatorio registra apenas as SUAS respostas. O gabarito sera");
+      linhas.push("construido em sala, na aula de 29/09 — leve este registro e confira");
+      linhas.push("questao a questao durante a resolucao.");
+      return linhas.join("\n");
+    }
+    document.querySelectorAll(".alt").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var q = b.dataset.q, l = b.dataset.l;
+        if (respostas[q] === l) { delete respostas[q]; } else { respostas[q] = l; }
+        salvar(); atualizar();
+      });
+    });
+    document.getElementById("btn-relatorio").addEventListener("click", function () {
+      var out = document.getElementById("saida-relatorio");
+      out.textContent = textoRelatorio();
+      out.style.display = "block";
+      out.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    document.getElementById("btn-baixar").addEventListener("click", function () {
+      var blob = new Blob([textoRelatorio()], { type: "text/plain;charset=utf-8" });
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "minhas-respostas-revisao-i-unidade.txt";
+      document.body.appendChild(a); a.click();
+      setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    });
+    document.getElementById("btn-limpar").addEventListener("click", function () {
+      if (!confirm("Apagar todas as marcações desta página?")) return;
+      respostas = {};
+      try { localStorage.removeItem(CHAVE); } catch (e) {}
+      document.getElementById("saida-relatorio").style.display = "none";
+      atualizar();
+    });
+    carregar(); atualizar();
+  })();
+  </script>
 </body>
 </html>
