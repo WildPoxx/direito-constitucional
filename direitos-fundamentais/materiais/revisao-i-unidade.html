@@ -3,33 +3,406 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Revisão da I Unidade | Direito Constitucional</title>
+  <title>Revisão da I Unidade - 20 questões | Direitos Fundamentais</title>
   <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    /* escopo local desta página — a folha compartilhada não é alterada */
+    .aviso-gabarito{margin:34px 0 10px;padding:24px 28px;border:2px solid #255957;border-radius:8px;background:#eef5f4}
+    .aviso-gabarito .rotulo{display:block;margin-bottom:10px;font-family:Arial,Helvetica,sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#255957}
+    .aviso-gabarito p{margin:0 0 10px}
+    .aviso-gabarito p:last-child{margin-bottom:0}
+    .questao{margin:26px 0;padding:22px 26px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+    .questao h3{margin:0 0 14px;font-size:1.18rem;line-height:1.3}
+    .questao .qnum{display:inline-block;margin-right:10px;padding:3px 10px;border-radius:4px;background:var(--accent);color:#fff;font-size:.82rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;vertical-align:2px}
+    .questao p{margin:0 0 12px;line-height:1.55}
+    .alts{margin-top:14px;border-top:1px solid var(--line);padding-top:14px;display:grid;gap:8px}
+    .alt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;padding:10px 12px;border:1.5px solid var(--line);border-radius:8px;background:transparent;cursor:pointer;font:inherit;line-height:1.5;color:inherit}
+    .alt:hover{border-color:var(--accent)}
+    .alt .letra{flex:0 0 auto;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;border:1.5px solid var(--accent);border-radius:50%;font-weight:700;color:var(--accent);font-size:.9rem}
+    .alt.marcada{border-color:var(--accent);background:rgba(124,45,18,.06)}
+    .alt.marcada .letra{background:var(--accent);color:#fff}
+    .marcacao{margin:10px 0 0;font-size:.88rem;color:var(--muted,#667085)}
+    .painel-relatorio{position:sticky;bottom:0;z-index:5;margin-top:30px;padding:14px 20px;border:1px solid var(--line);border-radius:10px 10px 0 0;background:var(--surface);box-shadow:0 -6px 24px rgba(0,0,0,.08);display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .painel-relatorio .contagem{font-weight:700;color:var(--accent);margin-right:auto}
+    .painel-relatorio button{padding:9px 16px;border:1.5px solid var(--accent);border-radius:8px;background:var(--accent);color:#fff;font:inherit;font-weight:600;cursor:pointer}
+    .painel-relatorio button.secundario{background:transparent;color:var(--accent)}
+    #saida-relatorio{display:none;margin:26px 0;padding:20px 24px;border:1px solid var(--line);border-radius:8px;background:var(--surface);white-space:pre-wrap;font-family:ui-monospace,Consolas,monospace;font-size:.86rem;line-height:1.5}
+    @media print{.site-header,.site-footer,.painel-relatorio{display:none}}
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
       <div class="brand"><strong>Prof. Mario Bastos</strong><span>Direito Constitucional</span></div>
-      <nav aria-label="Navegação principal"><a href="../../">Início</a><a href="../">Direitos Fundamentais</a><a href="../../documentos-institucionais/">Documentos e leituras</a><a href="../../privacidade.html">Privacidade</a></nav>
+      <nav aria-label="Navegação principal">
+        <a href="../../">Início</a>
+        <a href="../">Direitos Fundamentais</a>
+        <a href="../../documentos-institucionais/">Documentos e leituras</a>
+        <a href="../../privacidade.html">Privacidade</a>
+      </nav>
     </div>
   </header>
-  <main class="module-page">
+
+  <main>
     <section class="hero compact-hero">
-      <span class="tag">Revisão · I Unidade · 28/09/2026</span>
-      <h1>Revisão da I Unidade</h1>
-      <p>Vinte questões objetivas, organizadas pelos módulos da disciplina, para a aula de revisão de 28 de setembro.</p>
+      <span class="tag">Revisão · I Unidade · aula de 28/09</span>
+      <h1>Vinte questões para a revisão da I Unidade</h1>
+      <p>Vinte questões objetivas que serão resolvidas e comentadas em sala, na aula de 28/09, conduzida pelo professor.</p>
     </section>
-    <section class="notice"><strong>Como usar:</strong> resolva as questões antes da aula e anote a alternativa que você escolheu em cada uma, com uma linha dizendo por quê. A correção e o comentário de cada alternativa serão feitos em sala, questão por questão. Esta página não traz gabarito.</section>
-    <div class="module-layout">
-      <aside class="toc-card">
-        <h2>Nesta revisão</h2>
-        <p data-module-status>Carregando material…</p>
-        <nav class="toc-links" aria-label="Sumário"></nav>
-      </aside>
-      <article class="module-content" data-module-source="revisao-i-unidade.md?v=20260923a"></article>
+
+    <section class="aviso-gabarito">
+      <span class="rotulo">Como esta página funciona</span>
+      <p><strong>Esta página não traz o gabarito — de propósito.</strong> As respostas serão construídas em sala, questão por questão, na aula de 28/09. Antes disso, o exercício que vale é tentar responder com a Constituição aberta e os módulos ao lado.</p>
+      <p><strong>Marque as suas respostas aqui mesmo.</strong> Clique na alternativa escolhida em cada questão e, ao final, gere o seu relatório de respostas — para levar à aula e conferir, questão a questão, durante a resolução. O relatório registra apenas o que <em>você</em> marcou: a correção acontece em sala.</p>
+    </section>
+
+    <section>
+      <h2>O essencial</h2>
+      <ul class="info-list">
+        <li><strong>Quando:</strong> aula de <strong>28/09</strong>, no horário normal, em sala.</li>
+        <li><strong>O que é:</strong> resolução comentada das vinte questões, conduzida pelo professor.</li>
+        <li><strong>O que trazer:</strong> a Constituição (impressa ou no celular), as anotações — e o seu relatório de respostas.</li>
+        <li><strong>Material de estudo:</strong> <a href="modulo-1-dignidade-principios-efetividade-constitucional.html">Módulo 1</a> · <a href="modulo-2-teoria-geral-direitos-garantias-individuais.html">Módulo 2</a> · <a href="modulo-3-autonomia-limites-e-colisoes.html">Módulo 3</a> · <a href="modulo-4-direitos-coletivos-e-instrumentos-de-protecao.html">Módulo 4</a> · <a href="modulo-5-remedios-constitucionais.html">Módulo 5</a>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>As vinte questões</h2>
+    <article class="questao" id="q1">
+      <h3><span class="qnum">Questão 1</span></h3>
+      <p>Em ação sobre as condições de um abrigo municipal para pessoas idosas, a Procuradoria do Município sustenta que a dignidade da pessoa humana, mencionada na Constituição, é diretriz ética dirigida ao legislador. Enquanto não houver lei municipal dizendo o que ela exige de um abrigo, argumenta, não cabe ao juiz invocá-la como fundamento de decisão.</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 1">
+        <button type="button" class="alt" data-q="1" data-l="A"><span class="letra">A</span><span class="texto">A Procuradoria tem razão, porque um princípio constitucional só passa a vincular quando a lei define o comportamento que ele exige em cada tipo de situação.</span></button>
+        <button type="button" class="alt" data-q="1" data-l="B"><span class="letra">B</span><span class="texto">A Procuradoria não tem razão, porque a dignidade está no art. 1º, III, como fundamento da República: é norma constitucional, ainda que aberta e dependente de concretização.</span></button>
+        <button type="button" class="alt" data-q="1" data-l="C"><span class="letra">C</span><span class="texto">A Procuradoria não tem razão, porque a dignidade, sendo fundamento da República, autoriza o juiz a decidir segundo sua própria convicção de justiça, sem outra fundamentação.</span></button>
+        <button type="button" class="alt" data-q="1" data-l="D"><span class="letra">D</span><span class="texto">A Procuradoria não tem razão, porque a dignidade, como fundamento de todos os direitos, torna dispensável examinar os demais dispositivos constitucionais e legais aplicáveis ao abrigo.</span></button>
+      </div>
+      <p class="marcacao" id="m1">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q2">
+      <h3><span class="qnum">Questão 2</span></h3>
+      <p>Uma proposta de emenda à Constituição reúne duas medidas. A primeira extingue um programa federal de bolsas de pesquisa. A segunda permite que processos administrativos disciplinares sejam julgados sem que o servidor acusado seja ouvido. O art. 60, § 4º, da Constituição dispõe que não será objeto de deliberação a proposta de emenda tendente a abolir, entre outros, "os direitos e garantias individuais" (inciso IV).</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 2">
+        <button type="button" class="alt" data-q="2" data-l="A"><span class="letra">A</span><span class="texto">As duas medidas podem ser deliberadas, porque as cláusulas pétreas protegem apenas a forma federativa do Estado e a separação dos Poderes, e não programas nem procedimentos.</span></button>
+        <button type="button" class="alt" data-q="2" data-l="B"><span class="letra">B</span><span class="texto">Nenhuma das duas medidas pode ser deliberada, porque matéria que já tem disciplina no texto constitucional não pode ser alterada por emenda.</span></button>
+        <button type="button" class="alt" data-q="2" data-l="C"><span class="letra">C</span><span class="texto">A segunda medida pode ser deliberada, desde que a proposta seja aprovada em dois turnos, por três quintos dos votos, em cada Casa do Congresso.</span></button>
+        <button type="button" class="alt" data-q="2" data-l="D"><span class="letra">D</span><span class="texto">A primeira medida pode ser deliberada; a segunda, não, porque suprimir a oitiva do acusado tende a abolir garantia individual, protegida pelo art. 60, § 4º, IV.</span></button>
+      </div>
+      <p class="marcacao" id="m2">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q3">
+      <h3><span class="qnum">Questão 3</span></h3>
+      <p>Num seminário, uma palestrante afirma que toda convenção de direitos humanos ratificada pelo Brasil passa a valer, automaticamente, como norma constitucional. Um estudante lhe pergunta qual dispositivo da Constituição sustenta essa afirmação.</p>
+      <p>Considerando o texto constitucional, assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 3">
+        <button type="button" class="alt" data-q="3" data-l="A"><span class="letra">A</span><span class="texto">A afirmação não se sustenta: o art. 5º, § 2º, abre o catálogo a direitos de tratados, mas é o § 3º que prevê o rito pelo qual o tratado passa a equivaler a emenda constitucional.</span></button>
+        <button type="button" class="alt" data-q="3" data-l="B"><span class="letra">B</span><span class="texto">A afirmação se sustenta, porque o art. 4º, II, ao fixar a prevalência dos direitos humanos nas relações internacionais, dá estatura constitucional a todo tratado dessa matéria.</span></button>
+        <button type="button" class="alt" data-q="3" data-l="C"><span class="letra">C</span><span class="texto">A afirmação se sustenta, porque o art. 5º, § 2º, ao dizer que os direitos expressos não excluem os decorrentes de tratados, incorpora-os ao texto com a mesma hierarquia dos demais.</span></button>
+        <button type="button" class="alt" data-q="3" data-l="D"><span class="letra">D</span><span class="texto">A afirmação não se sustenta, porque tratado internacional não produz efeito algum no direito brasileiro enquanto não houver lei ordinária que reproduza o seu conteúdo.</span></button>
+      </div>
+      <p class="marcacao" id="m3">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q4">
+      <h3><span class="qnum">Questão 4</span></h3>
+      <p>Um posto de saúde municipal passa a atender catadores de material reciclável apenas no fim do expediente, depois de todos os demais usuários, com o argumento de que "o cheiro do trabalho deles incomoda a sala de espera".</p>
+      <p>Na síntese adotada no Módulo 1, Barroso propõe que a dignidade tem um conteúdo mínimo formado por três elementos: o <strong>valor intrínseco</strong> — a pessoa tem valor por ser pessoa, independentemente de renda, ocupação, aparência ou utilidade social; a <strong>autonomia</strong> — a capacidade de tomar as decisões relevantes sobre a própria vida; e o <strong>valor comunitário</strong> — as restrições legítimas que a vida em comum impõe em nome de valores sociais compartilhados.</p>
+      <p>Com base nesse recorte, assinale a alternativa que identifica o elemento atingido de modo mais direto.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 4">
+        <button type="button" class="alt" data-q="4" data-l="A"><span class="letra">A</span><span class="texto">O valor comunitário, porque o posto de saúde protege o conforto compartilhado dos demais usuários da sala de espera, que é um valor social legítimo.</span></button>
+        <button type="button" class="alt" data-q="4" data-l="B"><span class="letra">B</span><span class="texto">O valor intrínseco, porque o tratamento subordina o acesso ao serviço à ocupação da pessoa, como se o valor dela dependesse do trabalho que exerce.</span></button>
+        <button type="button" class="alt" data-q="4" data-l="C"><span class="letra">C</span><span class="texto">A autonomia, porque os catadores ficam impedidos de escolher o horário em que preferem ser atendidos pelo serviço público de saúde.</span></button>
+        <button type="button" class="alt" data-q="4" data-l="D"><span class="letra">D</span><span class="texto">Nenhum dos três, porque a ordem de atendimento num serviço público é matéria de organização administrativa, sem dimensão constitucional.</span></button>
+      </div>
+      <p class="marcacao" id="m4">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q5">
+      <h3><span class="qnum">Questão 5</span></h3>
+      <p>Um farmacêutico tem o registro profissional cassado pelo conselho regional da categoria, ao fim de um processo em que não foi intimado da acusação nem teve oportunidade de apresentar defesa.</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 5">
+        <button type="button" class="alt" data-q="5" data-l="A"><span class="letra">A</span><span class="texto">A cassação pode violar o contraditório e a ampla defesa, que alcançam não só o processo judicial, mas também o processo administrativo conduzido pelo conselho.</span></button>
+        <button type="button" class="alt" data-q="5" data-l="B"><span class="letra">B</span><span class="texto">O caso não tem dimensão constitucional, porque o processo ético-disciplinar de um conselho profissional é regido apenas pelo seu regimento interno e pela lei da categoria.</span></button>
+        <button type="button" class="alt" data-q="5" data-l="C"><span class="letra">C</span><span class="texto">Como o livre exercício profissional é direito fundamental, a cassação de registro é inconstitucional em qualquer hipótese, haja ou não processo regular.</span></button>
+        <button type="button" class="alt" data-q="5" data-l="D"><span class="letra">D</span><span class="texto">A aplicabilidade imediata dos direitos fundamentais impede que o conselho aplique sanção por ato próprio, exigindo sempre decisão judicial prévia.</span></button>
+      </div>
+      <p class="marcacao" id="m5">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q6">
+      <h3><span class="qnum">Questão 6</span></h3>
+      <p>Na mesma semana, acontecem duas coisas. Uma pesquisadora argentina, em visita de dez dias a um congresso no Brasil, é detida por agentes sem ordem judicial e sem estar em flagrante. E uma cooperativa agrícola, multada por um órgão ambiental, pretende impetrar habeas corpus, alegando que a multa ameaça a "liberdade de atuação" da entidade. O <em>caput</em> do art. 5º assegura os direitos fundamentais "aos brasileiros e aos estrangeiros residentes no País".</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 6">
+        <button type="button" class="alt" data-q="6" data-l="A"><span class="letra">A</span><span class="texto">Nenhuma das duas pode invocar a proteção do art. 5º, porque o caput nomeia apenas brasileiros e estrangeiros residentes, e essa enumeração é taxativa.</span></button>
+        <button type="button" class="alt" data-q="6" data-l="B"><span class="letra">B</span><span class="texto">As duas podem impetrar habeas corpus, porque a universalidade dos direitos fundamentais assegura a todos os titulares, pessoas físicas ou jurídicas, exatamente o mesmo conjunto de direitos.</span></button>
+        <button type="button" class="alt" data-q="6" data-l="C"><span class="letra">C</span><span class="texto">A pesquisadora pode impetrar habeas corpus; a cooperativa, como pessoa jurídica, é titular dos direitos compatíveis com sua natureza, e a locomoção não é um deles.</span></button>
+        <button type="button" class="alt" data-q="6" data-l="D"><span class="letra">D</span><span class="texto">A pesquisadora só pode impetrar habeas corpus se houver tratado de reciprocidade entre o Brasil e a Argentina que estenda a proteção aos visitantes.</span></button>
+      </div>
+      <p class="marcacao" id="m6">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q7">
+      <h3><span class="qnum">Questão 7</span></h3>
+      <p>Um aplicativo de transporte instala câmeras com gravação de áudio dentro dos veículos e passa a analisar, por algoritmo, as conversas dos passageiros para lhes oferecer publicidade direcionada, sem informá-los. Diante das reclamações, a empresa responde que a Constituição de 1988 não trata de aplicativos nem de análise por algoritmo e que, por isso, nenhum direito fundamental estaria em jogo.</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 7">
+        <button type="button" class="alt" data-q="7" data-l="A"><span class="letra">A</span><span class="texto">A empresa tem razão, porque sem previsão constitucional expressa da técnica empregada não existe posição jurídica fundamental que o passageiro possa opor.</span></button>
+        <button type="button" class="alt" data-q="7" data-l="B"><span class="letra">B</span><span class="texto">A empresa não tem razão, porque o art. 5º, X, protege a intimidade e a vida privada como posições jurídicas, qualquer que seja a técnica pela qual venham a ser atingidas.</span></button>
+        <button type="button" class="alt" data-q="7" data-l="C"><span class="letra">C</span><span class="texto">A empresa não tem razão, mas a proteção do passageiro depende de emenda que inclua expressamente os aplicativos de transporte no rol do art. 5º.</span></button>
+        <button type="button" class="alt" data-q="7" data-l="D"><span class="letra">D</span><span class="texto">A empresa tem razão, porque a historicidade dos direitos fundamentais faz que direitos escritos em 1988 percam eficácia diante de tecnologias que o constituinte não podia prever.</span></button>
+      </div>
+      <p class="marcacao" id="m7">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q8">
+      <h3><span class="qnum">Questão 8</span></h3>
+      <p>Mendes e Branco, ao tratar da inalienabilidade (item 5.3, p. 212-213 do PDF usado no curso), apontam sua consequência prática: "a preterição de um direito fundamental não estará sempre justificada pelo mero fato de o titular do direito nela consentir". Ressalvam, porém, que nem todos os direitos fundamentais seriam indisponíveis — apenas os que resguardam a potencialidade de a pessoa se autodeterminar — e que "nada impede que o exercício de certos direitos fundamentais seja restringido, em prol de uma finalidade acolhida ou tolerada pela ordem constitucional".</p>
+      <p>Uma academia de ginástica condiciona a matrícula à assinatura de um termo pelo qual o aluno renuncia, por prazo indeterminado, a fazer qualquer reclamação pública sobre o estabelecimento, e autoriza a academia a examinar as fotos e mensagens do celular dele sempre que suspeitar de dano a algum equipamento. O aluno assinou.</p>
+      <p>Dentro desse recorte, assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 8">
+        <button type="button" class="alt" data-q="8" data-l="A"><span class="letra">A</span><span class="texto">A assinatura resolve a questão: houve manifestação de vontade livre, e não resta violação a direito fundamental a examinar.</span></button>
+        <button type="button" class="alt" data-q="8" data-l="B"><span class="letra">B</span><span class="texto">O termo é válido quanto às reclamações e nulo quanto ao celular, porque apenas o sigilo das comunicações é declarado inviolável pela Constituição.</span></button>
+        <button type="button" class="alt" data-q="8" data-l="C"><span class="letra">C</span><span class="texto">Por serem irrenunciáveis os direitos fundamentais, é inválida qualquer cláusula contratual que restrinja, ainda que de forma pontual e por finalidade legítima, a liberdade de expressão de quem a assina.</span></button>
+        <button type="button" class="alt" data-q="8" data-l="D"><span class="letra">D</span><span class="texto">O termo vai além da restrição pontual que os autores admitem: pretende renúncia duradoura à posição jurídica e acesso a esfera protegida, que o consentimento não legitima.</span></button>
+      </div>
+      <p class="marcacao" id="m8">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q9">
+      <h3><span class="qnum">Questão 9</span></h3>
+      <p>Barroso distingue dois planos: a <strong>eficácia jurídica</strong>, aptidão da norma para produzir efeitos no sistema — criar deveres, invalidar atos incompatíveis, fundamentar pretensões —, e a <strong>efetividade</strong>, a realização desses efeitos no mundo dos fatos.</p>
+      <p>Numa audiência pública sobre acessibilidade, um vereador afirma que as normas constitucionais de igualdade e de não discriminação são "decorativas", porque pessoas com deficiência continuam sem conseguir entrar em vários prédios públicos da cidade.</p>
+      <p>Dentro da distinção de Barroso, assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 9">
+        <button type="button" class="alt" data-q="9" data-l="A"><span class="letra">A</span><span class="texto">O vereador tem razão, porque uma norma cujos efeitos não se realizam no mundo dos fatos é, por isso mesmo, norma desprovida de eficácia jurídica.</span></button>
+        <button type="button" class="alt" data-q="9" data-l="B"><span class="letra">B</span><span class="texto">A eficácia jurídica dessas normas depende de que sua efetividade seja demonstrada em cada caso concreto; até lá, elas apenas orientam a interpretação, mas não fundamentam pretensões.</span></button>
+        <button type="button" class="alt" data-q="9" data-l="C"><span class="letra">C</span><span class="texto">O vereador confunde os planos: as barreiras que persistem são déficit de efetividade e não retiram da norma a aptidão de fundamentar pretensões e invalidar atos contrários.</span></button>
+        <button type="button" class="alt" data-q="9" data-l="D"><span class="letra">D</span><span class="texto">Como a Constituição tem força normativa, a persistência das barreiras só pode ser explicada pela omissão do Poder Judiciário em aplicar as normas de igualdade.</span></button>
+      </div>
+      <p class="marcacao" id="m9">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q10">
+      <h3><span class="qnum">Questão 10</span></h3>
+      <p>Usuários de uma estação de trem metropolitano, onde se repetem assaltos com violência no período noturno, pedem ao Estado reforço de policiamento ostensivo. O Estado responde que os direitos fundamentais impõem ao poder público apenas o dever de não agredir as pessoas, e que nada o obriga a agir. O art. 144 da Constituição dispõe que a segurança pública, "dever do Estado, direito e responsabilidade de todos, é exercida para a preservação da ordem pública e da incolumidade das pessoas e do patrimônio".</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 10">
+        <button type="button" class="alt" data-q="10" data-l="A"><span class="letra">A</span><span class="texto">A resposta não se sustenta: a segurança pública é dever do Estado, e, ao lado dos deveres de abstenção, os direitos fundamentais impõem deveres de proteção e de prestação.</span></button>
+        <button type="button" class="alt" data-q="10" data-l="B"><span class="letra">B</span><span class="texto">A resposta está correta, porque os direitos fundamentais são essencialmente direitos de defesa e se esgotam na obrigação de o Estado não interferir na esfera de liberdade de cada indivíduo.</span></button>
+        <button type="button" class="alt" data-q="10" data-l="C"><span class="letra">C</span><span class="texto">O caso é de direito de participação, porque o que os usuários pretendem, em última análise, é influir nas decisões do Estado sobre a política de segurança.</span></button>
+        <button type="button" class="alt" data-q="10" data-l="D"><span class="letra">D</span><span class="texto">Só haveria dever de agir se lei ordinária tivesse fixado o número de policiais que cada estação do sistema de transporte deve receber.</span></button>
+      </div>
+      <p class="marcacao" id="m10">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q11">
+      <h3><span class="qnum">Questão 11</span></h3>
+      <p>A teoria dos direitos fundamentais costuma resumir um problema central em duas afirmações. Primeira: os direitos fundamentais <strong>não são absolutos</strong> — podem sofrer restrições. Segunda: as próprias restrições <strong>têm limites</strong>, chamados de "limites dos limites" — precisam ter fundamento na Constituição, perseguir finalidade legítima, ser adequadas e necessárias a essa finalidade e preservar o núcleo essencial do direito.</p>
+      <p>Numa discussão entre colegas, um deles sustenta: "se nenhum direito fundamental é absoluto, então qualquer restrição prevista em lei é constitucional".</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 11">
+        <button type="button" class="alt" data-q="11" data-l="A"><span class="letra">A</span><span class="texto">O colega está certo, porque essa é exatamente a consequência prática de os direitos fundamentais não serem absolutos.</span></button>
+        <button type="button" class="alt" data-q="11" data-l="B"><span class="letra">B</span><span class="texto">O colega está errado, porque restrição a direito fundamental só pode ser feita por emenda constitucional, e nunca por lei ordinária ou por ato da Administração.</span></button>
+        <button type="button" class="alt" data-q="11" data-l="C"><span class="letra">C</span><span class="texto">O colega está certo quanto às restrições criadas por lei, e errado apenas quanto às criadas por ato da Administração.</span></button>
+        <button type="button" class="alt" data-q="11" data-l="D"><span class="letra">D</span><span class="texto">O colega está errado: da relatividade decorre que a restrição é possível, não que seja válida — a validade depende de ela respeitar os limites dos limites.</span></button>
+      </div>
+      <p class="marcacao" id="m11">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q12">
+      <h3><span class="qnum">Questão 12</span></h3>
+      <p>Um dos testes aplicados a medidas que restringem direitos é o da <strong>adequação</strong>. Na formulação citada por Mendes e Branco, "o meio é adequado se, com a sua utilização, o evento pretendido pode ser alcançado". Só se a medida passar nesse teste examina-se, em seguida, se ela é <strong>necessária</strong> — isto é, se não havia outro meio igualmente eficaz e menos restritivo.</p>
+      <p>Uma prefeitura proíbe as feiras de artesanato na orla aos domingos, com o objetivo declarado de reduzir os furtos a banhistas. Relatórios da própria guarda municipal mostram que os furtos se concentram na faixa de areia, durante a semana, e não guardam relação com a presença das feiras.</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 12">
+        <button type="button" class="alt" data-q="12" data-l="A"><span class="letra">A</span><span class="texto">A medida é válida, porque reduzir furtos é finalidade legítima, e uma finalidade legítima basta, por si, para validar a restrição imposta aos feirantes.</span></button>
+        <button type="button" class="alt" data-q="12" data-l="B"><span class="letra">B</span><span class="texto">A medida deve ser examinada apenas no teste da necessidade, porque a adequação se presume sempre que a finalidade declarada pela prefeitura é legítima.</span></button>
+        <button type="button" class="alt" data-q="12" data-l="C"><span class="letra">C</span><span class="texto">Se os dados mostram que o meio não alcança o fim, a medida falha já no teste da adequação, sem que seja preciso chegar ao exame da necessidade.</span></button>
+        <button type="button" class="alt" data-q="12" data-l="D"><span class="letra">D</span><span class="texto">A medida é válida, porque restringe apenas uma atividade econômica, e atividades econômicas não recebem a proteção dos direitos fundamentais.</span></button>
+      </div>
+      <p class="marcacao" id="m12">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q13">
+      <h3><span class="qnum">Questão 13</span></h3>
+      <p>O Código de Defesa do Consumidor (Lei n. 8.078/1990, art. 81, parágrafo único) define três categorias de interesses que podem ser defendidos coletivamente, e a prática jurídica estende essas definições, por convenção consolidada, à tutela de outros bens coletivos:</p>
+      <ul><li><strong>difusos:</strong> "os transindividuais, de natureza indivisível, de que sejam titulares pessoas indeterminadas e ligadas por circunstâncias de fato";</li><li><strong>coletivos:</strong> "os transindividuais, de natureza indivisível de que seja titular grupo, categoria ou classe de pessoas ligadas entre si ou com a parte contrária por uma relação jurídica base";</li><li><strong>individuais homogêneos:</strong> "os decorrentes de origem comum".</li></ul>
+      <p>Uma mineradora derruba, sem licença, a mata que protege a nascente de um rio que abastece várias cidades da região.</p>
+      <p>Com base nessas definições, assinale a alternativa correta quanto à natureza do interesse na preservação da nascente.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 13">
+        <button type="button" class="alt" data-q="13" data-l="A"><span class="letra">A</span><span class="texto">Individual homogêneo, porque cada morador das cidades abastecidas poderá calcular o prejuízo que sofrer, e todos os prejuízos terão a mesma origem.</span></button>
+        <button type="button" class="alt" data-q="13" data-l="B"><span class="letra">B</span><span class="texto">Difuso, porque a nascente é bem indivisível e os titulares são pessoas indeterminadas, ligadas apenas pela circunstância de fato de dependerem daquela água.</span></button>
+        <button type="button" class="alt" data-q="13" data-l="C"><span class="letra">C</span><span class="texto">Coletivo em sentido estrito, porque os moradores das cidades abastecidas formam grupo delimitado pela localização geográfica, que funciona como relação jurídica base.</span></button>
+        <button type="button" class="alt" data-q="13" data-l="D"><span class="letra">D</span><span class="texto">Não há interesse transindividual enquanto nenhum morador comprovar dano pessoal, porque sem lesão a pessoa determinada não há posição jurídica protegida.</span></button>
+      </div>
+      <p class="marcacao" id="m13">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q14">
+      <h3><span class="qnum">Questão 14</span></h3>
+      <p>Retome as três definições do art. 81, parágrafo único, do Código de Defesa do Consumidor, transcritas na questão anterior.</p>
+      <p>Uma operadora de telefonia passa a cobrar de todos os clientes com contrato vigente uma "taxa de manutenção de rede" que os contratos não preveem. Um instituto de defesa do consumidor quer discutir em juízo a validade da cobrança para todos os contratos; paralelamente, alguns clientes querem receber de volta o que cada um já pagou.</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 14">
+        <button type="button" class="alt" data-q="14" data-l="A"><span class="letra">A</span><span class="texto">As duas pretensões são individuais homogêneas, porque ambas decorrem da mesma origem comum — a cobrança instituída pela operadora —, que é o critério do inciso III.</span></button>
+        <button type="button" class="alt" data-q="14" data-l="B"><span class="letra">B</span><span class="texto">As duas pretensões são difusas, porque a cobrança alcança indistintamente todos os clientes e não se sabe, de antemão, quem se beneficiará da decisão judicial.</span></button>
+        <button type="button" class="alt" data-q="14" data-l="C"><span class="letra">C</span><span class="texto">A validade da cobrança é individual homogênea, e a restituição é coletiva em sentido estrito, porque é o pedido de devolução que reúne os clientes perante a operadora.</span></button>
+        <button type="button" class="alt" data-q="14" data-l="D"><span class="letra">D</span><span class="texto">A validade da cobrança é coletiva em sentido estrito, pois é indivisível e os clientes se ligam à operadora pelo contrato; a restituição é individual homogênea.</span></button>
+      </div>
+      <p class="marcacao" id="m14">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q15">
+      <h3><span class="qnum">Questão 15</span></h3>
+      <p>Um comerciante tem o alvará de funcionamento de sua loja cassado por ato do prefeito, sem processo e sem qualquer fundamentação. Ele pretende impetrar habeas corpus, invocando o art. 5º, LXVIII, da Constituição, segundo o qual se concede a ordem "sempre que alguém sofrer ou se achar ameaçado de sofrer violência ou coação em sua liberdade de locomoção, por ilegalidade ou abuso de poder".</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 15">
+        <button type="button" class="alt" data-q="15" data-l="A"><span class="letra">A</span><span class="texto">O habeas corpus não é cabível, porque o dispositivo circunscreve a ordem à liberdade de locomoção, e a ilegalidade que atinge outro direito, ainda que evidente, reclama via diversa.</span></button>
+        <button type="button" class="alt" data-q="15" data-l="B"><span class="letra">B</span><span class="texto">O habeas corpus é cabível, porque a chamada doutrina brasileira do habeas corpus, incorporada ao texto atual, autoriza a ordem contra qualquer ilegalidade, seja qual for o direito atingido.</span></button>
+        <button type="button" class="alt" data-q="15" data-l="C"><span class="letra">C</span><span class="texto">O habeas corpus é cabível na modalidade preventiva, porque a cassação impede o comerciante de ingressar no próprio estabelecimento e, com isso, restringe o seu direito de ir e vir.</span></button>
+        <button type="button" class="alt" data-q="15" data-l="D"><span class="letra">D</span><span class="texto">O habeas corpus não é cabível, porque a ordem só pode ser dirigida contra autoridade policial ou judiciária, e o ato impugnado partiu do chefe do Executivo municipal.</span></button>
+      </div>
+      <p class="marcacao" id="m15">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q16">
+      <h3><span class="qnum">Questão 16</span></h3>
+      <p>Um empresário é inabilitado numa licitação por não apresentar um documento que o edital não exigia. Ele tem cópia do edital, da ata da sessão e da decisão de inabilitação, e quer reagir com rapidez. O art. 5º, LXIX, da Constituição concede mandado de segurança "para proteger direito líquido e certo, não amparado por habeas corpus ou habeas data, quando o responsável pela ilegalidade ou abuso de poder for autoridade pública ou agente de pessoa jurídica no exercício de atribuições do Poder Público".</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 16">
+        <button type="button" class="alt" data-q="16" data-l="A"><span class="letra">A</span><span class="texto">O mandado de segurança é incabível, porque participar de licitação é mera expectativa de vir a contratar, e uma expectativa não se qualifica como direito líquido e certo.</span></button>
+        <button type="button" class="alt" data-q="16" data-l="B"><span class="letra">B</span><span class="texto">O mandado de segurança é cabível: há ato de autoridade, a situação não é amparada por habeas corpus nem por habeas data, e os fatos estão provados por documentos.</span></button>
+        <button type="button" class="alt" data-q="16" data-l="C"><span class="letra">C</span><span class="texto">O mandado de segurança é cabível, mas só depois de esgotados os recursos administrativos, porque a Constituição condiciona o acesso ao Judiciário a essa exaustão.</span></button>
+        <button type="button" class="alt" data-q="16" data-l="D"><span class="letra">D</span><span class="texto">O mandado de segurança é incabível, porque verificar se a exigência era razoável demanda perícia, e a prova pericial é incompatível com o seu rito sumário.</span></button>
+      </div>
+      <p class="marcacao" id="m16">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q17">
+      <h3><span class="qnum">Questão 17</span></h3>
+      <p>Um sindicato de professores impetra mandado de segurança coletivo pedindo que o Estado conceda à categoria um adicional que considera merecido, sem apontar norma que o preveja nem documento que comprove direito já existente. Mendes e Branco anotam que "os princípios básicos que regem o mandado de segurança individual informam e condicionam, no plano jurídico-processual, a utilização do writ mandamental coletivo", e que "simples interesses, que não configuram direitos, não legitimam a válida utilização do mandado de segurança coletivo".</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 17">
+        <button type="button" class="alt" data-q="17" data-l="A"><span class="letra">A</span><span class="texto">A impetração é válida, porque na forma coletiva a exigência de direito líquido e certo é substituída pela pertinência temática entre o pedido e as finalidades do sindicato.</span></button>
+        <button type="button" class="alt" data-q="17" data-l="B"><span class="letra">B</span><span class="texto">A impetração é válida, porque a Súmula 629 do Supremo, ao dispensar a autorização dos filiados, dispensa também a prova documental do direito que se invoca.</span></button>
+        <button type="button" class="alt" data-q="17" data-l="C"><span class="letra">C</span><span class="texto">A impetração não se sustenta, porque a forma coletiva muda apenas quem impetra, e continua exigido direito líquido e certo, que simples interesse da categoria não satisfaz.</span></button>
+        <button type="button" class="alt" data-q="17" data-l="D"><span class="letra">D</span><span class="texto">A impetração não se sustenta, mas por outra razão: sindicatos não têm legitimidade para o mandado de segurança coletivo, reservado pelo art. 5º, LXX, aos partidos políticos.</span></button>
+      </div>
+      <p class="marcacao" id="m17">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q18">
+      <h3><span class="qnum">Questão 18</span></h3>
+      <p>A Lei n. 13.300/2016, no art. 2º, dispõe que se concederá mandado de injunção "sempre que a falta total ou parcial de norma regulamentadora torne inviável o exercício dos direitos e liberdades constitucionais e das prerrogativas inerentes à nacionalidade, à soberania e à cidadania", considerando-se parcial a regulamentação "quando forem insuficientes as normas editadas pelo órgão legislador competente".</p>
+      <p>Considere duas situações. Na primeira, uma lei regulamenta direito que a Constituição assegura a certa categoria de servidores, mas deixa de disciplinar como ele se exerce, e nenhum pedido consegue ser atendido. Na segunda, outra categoria recebe normalmente um benefício plenamente regulamentado, mas considera injusta a base de cálculo escolhida pelo legislador.</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 18">
+        <button type="button" class="alt" data-q="18" data-l="A"><span class="letra">A</span><span class="texto">O mandado de injunção é incabível nas duas situações, porque em ambas existe norma editada, e o art. 5º, LXXI, condiciona a ordem à falta de norma regulamentadora.</span></button>
+        <button type="button" class="alt" data-q="18" data-l="B"><span class="letra">B</span><span class="texto">O mandado de injunção é cabível nas duas situações, porque o art. 2º equipara à omissão qualquer regulamentação que o interessado considere inadequada, até no mérito.</span></button>
+        <button type="button" class="alt" data-q="18" data-l="C"><span class="letra">C</span><span class="texto">O mandado de injunção é cabível apenas na segunda situação, porque a insuficiência da norma se resolve por interpretação judicial, e a escolha legislativa exige ordem injuncional.</span></button>
+        <button type="button" class="alt" data-q="18" data-l="D"><span class="letra">D</span><span class="texto">O mandado de injunção é cabível na primeira situação, em que a omissão parcial inviabiliza o exercício, e não na segunda, em que a norma é suficiente e a queixa é de mérito.</span></button>
+      </div>
+      <p class="marcacao" id="m18">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q19">
+      <h3><span class="qnum">Questão 19</span></h3>
+      <p>Um motorista descobre que uma empresa privada, que vende a transportadoras relatórios sobre o histórico de condutores, registra contra ele um acidente que nunca aconteceu. Ele quer saber o que consta a seu respeito e corrigir o registro. A empresa alega que o habeas data só alcança bancos de dados do governo. O parágrafo único do art. 1º da Lei n. 9.507/1997 considera de caráter público "todo registro ou banco de dados contendo informações que sejam ou que possam ser transmitidas a terceiros ou que não sejam de uso privativo do órgão ou entidade produtora ou depositária das informações".</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 19">
+        <button type="button" class="alt" data-q="19" data-l="A"><span class="letra">A</span><span class="texto">A alegação procede, porque o art. 5º, LXXII, restringe o habeas data a registros de entidades governamentais, e a lei ordinária não poderia ampliar essa garantia.</span></button>
+        <button type="button" class="alt" data-q="19" data-l="B"><span class="letra">B</span><span class="texto">A alegação procede quanto à correção e não quanto ao conhecimento, porque retificar dado mantido em cadastro privado exige ação de rito comum.</span></button>
+        <button type="button" class="alt" data-q="19" data-l="C"><span class="letra">C</span><span class="texto">A alegação não procede: a Constituição alcança registros governamentais ou de caráter público, e a lei define caráter público pela transmissão a terceiros.</span></button>
+        <button type="button" class="alt" data-q="19" data-l="D"><span class="letra">D</span><span class="texto">A alegação não procede, mas o motorista terá de demonstrar interesse público na divulgação dos dados para equiparar o banco privado a um registro governamental.</span></button>
+      </div>
+      <p class="marcacao" id="m19">Nenhuma alternativa marcada.</p>
+    </article>
+    <article class="questao" id="q20">
+      <h3><span class="qnum">Questão 20</span></h3>
+      <p>Três pessoas pretendem, cada uma, propor ação popular para anular a doação de um terreno do município a uma empresa, feita sem licitação e por valor irrisório: uma associação de moradores; uma professora aposentada, eleitora em dia com a Justiça Eleitoral; e um estudante de dezessete anos que ainda não tirou o título de eleitor. O art. 5º, LXXIII, dispõe que "qualquer cidadão é parte legítima para propor ação popular que vise a anular ato lesivo ao patrimônio público ou de entidade de que o Estado participe, à moralidade administrativa, ao meio ambiente e ao patrimônio histórico e cultural, ficando o autor, salvo comprovada má-fé, isento de custas judiciais e do ônus da sucumbência".</p>
+      <p>Assinale a alternativa correta.</p>
+      <div class="alts" role="group" aria-label="Alternativas da questão 20">
+        <button type="button" class="alt" data-q="20" data-l="A"><span class="letra">A</span><span class="texto">Apenas a professora pode propor a ação, porque "cidadão", no dispositivo, designa quem está no gozo dos direitos políticos, o que exclui a pessoa jurídica e quem não se alistou.</span></button>
+        <button type="button" class="alt" data-q="20" data-l="B"><span class="letra">B</span><span class="texto">Os três podem propor a ação, porque "qualquer cidadão" foi usado em sentido amplo e alcança toda pessoa, física ou jurídica, que tenha interesse na regularidade da Administração.</span></button>
+        <button type="button" class="alt" data-q="20" data-l="C"><span class="letra">C</span><span class="texto">Nenhum dos três pode propor a ação, porque anular ato lesivo ao patrimônio do município é objeto de ação civil pública, que é privativa do Ministério Público.</span></button>
+        <button type="button" class="alt" data-q="20" data-l="D"><span class="letra">D</span><span class="texto">Apenas a associação pode propor a ação, porque só uma entidade organizada suporta os custos do processo, e a isenção do dispositivo alcança apenas as custas iniciais.</span></button>
+      </div>
+      <p class="marcacao" id="m20">Nenhuma alternativa marcada.</p>
+    </article>
+    </section>
+
+    <pre id="saida-relatorio" aria-live="polite"></pre>
+
+    <div class="painel-relatorio">
+      <span class="contagem" id="contagem">0 de 20 respondidas</span>
+      <button type="button" id="btn-relatorio">Gerar meu relatório</button>
+      <button type="button" class="secundario" id="btn-baixar">Baixar TXT</button>
+      <button type="button" class="secundario" id="btn-limpar">Limpar marcações</button>
     </div>
   </main>
-  <footer class="site-footer">Material de apoio da disciplina Direito Constitucional - Direitos Fundamentais e Organização do Estado.</footer>
-  <script src="module-renderer.js?v=20260914"></script>
+  <footer class="site-footer">Material de apoio da disciplina Direito Constitucional - Direitos Fundamentais e Organização do Estado. Elaborado com apoio de IA generativa (Portaria CNPq nº 2.664/2026); seleção de conteúdo, conferência e responsabilidade do docente.</footer>
+
+  <script>
+  (function () {
+    var TOTAL = 20;
+    var CHAVE = "revisao-ddf-i-unidade-respostas";
+        var respostas = {};
+
+    function salvar() {
+      try { localStorage.setItem(CHAVE, JSON.stringify(respostas)); } catch (e) {}
+    }
+    function carregar() {
+      try {
+        var s = localStorage.getItem(CHAVE);
+        if (s) respostas = JSON.parse(s) || {};
+      } catch (e) { respostas = {}; }
+    }
+    function atualizar() {
+      var n = Object.keys(respostas).length;
+      document.getElementById("contagem").textContent = n + " de " + TOTAL + " respondidas";
+      for (var q = 1; q <= TOTAL; q++) {
+        var m = document.getElementById("m" + q);
+        if (m) m.textContent = respostas[q] ? "Sua marcação: alternativa " + respostas[q] + "." : "Nenhuma alternativa marcada.";
+      }
+      document.querySelectorAll(".alt").forEach(function (b) {
+        b.classList.toggle("marcada", respostas[b.dataset.q] === b.dataset.l);
+      });
+    }
+    function textoRelatorio() {
+      var agora = new Date();
+      var linhas = [];
+      linhas.push("RELATORIO DE RESPOSTAS — Revisao Geral da I Unidade");
+      linhas.push("Direitos Fundamentais e Organizacao do Estado — DIRAN.03 — FBBR 2026.2");
+      linhas.push("Gerado em: " + agora.toLocaleString("pt-BR"));
+      linhas.push("Respondidas: " + Object.keys(respostas).length + " de " + TOTAL);
+      linhas.push("");
+      for (var q = 1; q <= TOTAL; q++) {
+        linhas.push("Questao " + q + ": " + (respostas[q] ? respostas[q] : "sem resposta"));
+      }
+      linhas.push("");
+      linhas.push("Este relatorio registra apenas as SUAS respostas. O gabarito sera");
+      linhas.push("construido em sala, na aula de 28/09 — leve este registro e confira");
+      linhas.push("questao a questao durante a resolucao.");
+      return linhas.join("\n");
+    }
+    document.querySelectorAll(".alt").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var q = b.dataset.q, l = b.dataset.l;
+        respostas[q] = l;
+        salvar(); atualizar();
+      });
+    });
+    document.getElementById("btn-relatorio").addEventListener("click", function () {
+      var out = document.getElementById("saida-relatorio");
+      out.textContent = textoRelatorio();
+      out.style.display = "block";
+      out.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    document.getElementById("btn-baixar").addEventListener("click", function () {
+      var blob = new Blob([textoRelatorio()], { type: "text/plain;charset=utf-8" });
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "minhas-respostas-revisao-i-unidade.txt";
+      document.body.appendChild(a); a.click();
+      setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    });
+    document.getElementById("btn-limpar").addEventListener("click", function () {
+      if (!confirm("Apagar todas as marcações desta página?")) return;
+      respostas = {};
+      try { localStorage.removeItem(CHAVE); } catch (e) {}
+      document.getElementById("saida-relatorio").style.display = "none";
+      atualizar();
+    });
+    carregar(); atualizar();
+  })();
+  </script>
 </body>
 </html>
