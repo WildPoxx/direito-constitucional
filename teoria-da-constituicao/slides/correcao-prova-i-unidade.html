@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Correção Comentada — Prova I Unidade — Teoria da Constituição DIRBN.02</title>
+  <style>
+:root { --paper:#f7f4ee; --paper-warm:#fffaf3; --ink:#1f2933; --muted:#667085; --accent:#7c2d12; --accent-soft:#e7d0c2; --line:#d8c8b8; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:"Aptos","Inter","Segoe UI",Arial,sans-serif; background:#27221f; color:var(--ink); }
+.deck { display:flex; flex-direction:column; gap:28px; align-items:center; padding:28px; }
+.slide { position:relative; width:1280px; height:720px; padding:56px 72px; overflow:hidden; background:var(--paper); color:var(--ink); box-shadow:0 20px 70px rgba(0,0,0,.35); }
+.slide::after { content:attr(data-slide); position:absolute; right:72px; bottom:32px; font-size:18px; color:var(--muted); }
+.title { display:flex; flex-direction:column; justify-content:center; }
+.title::before { content:""; position:absolute; inset:0 0 auto auto; width:360px; height:720px; background:linear-gradient(180deg,rgba(124,45,18,.12),rgba(124,45,18,0)); }
+.kicker { margin:0 0 18px; font-size:22px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--accent); }
+h1 { max-width:940px; margin:0; font-size:58px; line-height:1.05; letter-spacing:0; }
+h2 { max-width:1000px; margin:0 0 28px; font-size:42px; line-height:1.1; letter-spacing:0; }
+.lead { max-width:920px; margin:28px 0 0; font-size:30px; line-height:1.25; }
+.rule { width:120px; height:6px; margin:30px 0 0; background:var(--accent); }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:42px; }
+.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:42px; }
+.box { min-height:178px; padding:20px 24px; border-left:6px solid var(--accent); background:var(--paper-warm); }
+.box strong { display:block; margin-bottom:14px; font-size:28px; line-height:1.1; color:var(--accent); }
+.box.compact { min-height:112px; padding:16px 20px; }
+.box.compact strong { margin-bottom:8px; font-size:24px; }
+.box.compact .small { font-size:19px; line-height:1.28; }
+.small { margin:0; font-size:22px; line-height:1.35; }
+.footer { position:absolute; bottom:32px; left:72px; margin:0; max-width:860px; font-size:18px; line-height:1.3; color:var(--muted); }
+.visual-layout { display:grid; grid-template-columns:1.05fr .95fr; gap:36px; align-items:stretch; margin-top:30px; }
+.stack { display:grid; gap:18px; }
+.image-slot { min-height:376px; padding:24px; border:2px dashed var(--accent-soft); background:linear-gradient(135deg,rgba(124,45,18,.08),rgba(255,250,243,.82)),var(--paper-warm); display:flex; flex-direction:column; justify-content:flex-end; }
+.image-slot-label { margin:0 0 12px; font-size:18px; font-weight:750; text-transform:uppercase; letter-spacing:.06em; color:var(--accent); }
+.image-prompt { margin:0; font-size:18px; line-height:1.3; color:#344054; }
+.activity-question { max-width:980px; margin:32px 0 0; font-size:38px; line-height:1.15; font-weight:750; }
+@media (max-width:1320px) { .deck { align-items:flex-start; } .slide { transform:scale(calc((100vw - 56px)/1280)); transform-origin:top left; margin-bottom:calc((720px * ((100vw - 56px)/1280)) - 720px); } }
+@media print { body { background:#fff; } .deck { display:block; padding:0; } .slide { page-break-after:always; box-shadow:none; } }
+
+/* ==========================================================
+   CAMADA DE REGÊNCIA DE TEMPO, PROJEÇÃO SEGURA E LAYOUT DENSO
+   Acrescentada em 11/08/2026 para o Deck da Aula 01.
+   NADA foi removido do bloco acima: os decks dos Módulos 1 a 8,
+   de julho de 2026, continuam abrindo exatamente como antes.
+   As regras de projeção segura (gabarito e notas ocultos) só
+   valem para decks que declaram <body class="projecao-segura">.
+   ========================================================== */
+
+:root {
+  --accent-2: #255957;
+  --accent-2-soft: #c9dfdc;
+}
+
+.slide { scroll-margin-top: 24px; }
+
+/* --- Caixas: variante secundária e variante mínima --- */
+.box.alt { border-left-color: var(--accent-2); }
+.box.alt strong { color: var(--accent-2); }
+.box.mini { min-height: 118px; padding: 14px 16px; }
+.box.mini strong { margin-bottom: 8px; font-size: 21px; }
+.box.mini .small { font-size: 19px; line-height: 1.28; }
+
+/* --- Grade de cinco colunas (incisos do art. 1º) --- */
+.grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-top: 34px; }
+
+/* --- Tabela de três colunas --- */
+.table { display: grid; grid-template-columns: .8fr 1fr 1.15fr; border: 2px solid var(--line); background: var(--paper-warm); margin-top: 34px; }
+.table div { min-height: 86px; padding: 16px 18px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 20px; line-height: 1.25; }
+.table div:nth-child(3n) { border-right: none; }
+.table .head { min-height: 54px; font-weight: 750; color: var(--accent); background: rgba(124, 45, 18, .08); }
+.table.duas { grid-template-columns: 1fr 1.35fr; }
+.table.duas div:nth-child(3n) { border-right: 1px solid var(--line); }
+.table.duas div:nth-child(2n) { border-right: none; }
+
+/* --- Citação em bloco --- */
+.quote { margin-top: 42px; padding: 30px 34px; border: 2px solid var(--line); background: rgba(255, 250, 243, .72); font-size: 32px; line-height: 1.25; }
+.quote.compacta { margin-top: 24px; padding: 22px 26px; font-size: 25px; line-height: 1.3; }
+
+/* --- Alternativas de questão objetiva --- */
+.choice { display: grid; gap: 12px; margin-top: 24px; }
+.choice div { padding: 12px 16px; background: var(--paper-warm); border-left: 5px solid var(--line); font-size: 21px; line-height: 1.22; }
+.choice .correct { border-left-color: var(--accent); font-weight: 750; }
+
+/* --- Etiquetas, avisos, cronograma e lista de fontes --- */
+.tag-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.tag { display: inline-flex; align-items: center; min-height: 42px; padding: 8px 14px; border: 1px solid var(--line); background: var(--paper-warm); color: var(--accent); font-size: 19px; font-weight: 750; }
+.notice { margin-top: 28px; padding: 18px 22px; border-left: 6px solid var(--accent-2); background: rgba(37, 89, 87, .08); font-size: 22px; line-height: 1.3; }
+.schedule { display: grid; grid-template-columns: 145px 1.05fr 1.25fr; border: 2px solid var(--line); background: var(--paper-warm); margin-top: 26px; }
+.schedule.four { grid-template-columns: 140px 1fr 1.2fr .8fr; }
+.schedule div { min-height: 52px; padding: 10px 12px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 18px; line-height: 1.22; }
+.schedule.thin div { min-height: 44px; padding: 8px 11px; font-size: 17px; }
+.schedule div:nth-child(3n) { border-right: none; }
+.schedule.four div:nth-child(3n) { border-right: 1px solid var(--line); }
+.schedule.four div:nth-child(4n) { border-right: none; }
+.schedule .head { min-height: 44px; font-weight: 750; color: var(--accent); background: rgba(124, 45, 18, .08); }
+.source-list { display: grid; gap: 14px; margin-top: 30px; }
+.source-list div { padding: 14px 18px; border-left: 5px solid var(--accent); background: var(--paper-warm); font-size: 21px; line-height: 1.25; }
+.source-list strong { color: var(--accent); }
+
+/* --- Texto miúdo de rodapé interno --- */
+.micro { margin: 10px 0 0; color: var(--muted); font-size: 17px; line-height: 1.25; }
+
+/* --- Faixa superior de bloco e horário-alvo --- */
+.block-band { position: absolute; top: 0; left: 0; right: 0; z-index: 3; display: flex; align-items: center; gap: 14px; height: 34px; padding: 0 72px; background: rgba(124, 45, 18, .10); border-bottom: 1px solid var(--line); font-size: 17px; font-weight: 750; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+.block-band .clock { margin-left: auto; font-variant-numeric: tabular-nums; color: var(--muted); }
+.block-band .opt { padding: 2px 10px; background: rgba(37, 89, 87, .14); border: 1px solid rgba(37, 89, 87, .35); color: var(--accent-2); letter-spacing: .03em; }
+
+.slide.banded { padding-top: 74px; }
+.slide.banded.title { padding-top: 56px; }
+.title::before { z-index: 0; }
+.slide.title.banded::before { top: 34px; height: 686px; }
+
+/* --- Lâmina opcional: corte ao vivo sem prejuízo do núcleo --- */
+.slide.optional { background: repeating-linear-gradient(135deg, rgba(37, 89, 87, .035) 0 18px, rgba(37, 89, 87, 0) 18px 36px), var(--paper); }
+.slide.optional .block-band { background: rgba(37, 89, 87, .10); color: var(--accent-2); }
+body.hide-optional .slide.optional { display: none; }
+
+/* --- Marcas do professor: tecla M limpa para projeção neutra --- */
+body.sem-marcas .block-band .opt { display: none; }
+body.sem-marcas .slide.optional { background: var(--paper); }
+body.sem-marcas .slide.optional .block-band { background: rgba(124, 45, 18, .10); color: var(--accent); }
+
+/* --- Ajuste fino para lâminas densas --- */
+.slide.tight h2 { font-size: 38px; margin-bottom: 14px; }
+.slide.tight .schedule { margin-top: 16px; }
+.slide.tight .grid-3, .slide.tight .grid-2 { margin-top: 26px; }
+.slide.tight .table { margin-top: 20px; }
+
+/* --- Painel do professor: relógio real contra horário-alvo --- */
+.hud { position: fixed; left: 18px; bottom: 18px; z-index: 50; display: flex; align-items: center; gap: 16px; padding: 10px 16px; border-radius: 4px; background: rgba(31, 41, 51, .92); color: #f7f4ee; font-family: "Aptos", "Inter", "Segoe UI", Arial, sans-serif; font-size: 15px; line-height: 1.2; box-shadow: 0 8px 30px rgba(0, 0, 0, .4); }
+.hud .hud-item { display: flex; flex-direction: column; gap: 2px; }
+.hud .hud-label { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #c9b5a6; }
+.hud .hud-value { font-size: 17px; font-weight: 750; font-variant-numeric: tabular-nums; }
+.hud .hud-value.late { color: #f4a58a; }
+.hud .hud-value.ahead { color: #8fd3c8; }
+.hud .hud-help { max-width: 300px; font-size: 11px; line-height: 1.35; color: #c9b5a6; }
+body.hud-off .hud { display: none; }
+
+/* --- Projeção segura: gabarito e notas escondidos até a tecla --- */
+body.projecao-segura .choice .correct { border-left-color: var(--line); font-weight: 400; }
+body.projecao-segura.mostrar-gabarito .choice .correct { border-left-color: var(--accent); font-weight: 750; }
+body.projecao-segura .gabarito { visibility: hidden; }
+body.projecao-segura.mostrar-gabarito .gabarito { visibility: visible; }
+body.projecao-segura .nota-professor, body.projecao-segura .image-prompt { visibility: hidden; }
+body.projecao-segura.mostrar-notas .nota-professor, body.projecao-segura.mostrar-notas .image-prompt { visibility: visible; }
+body.projecao-segura .visual-layout > .quote { display: flex; align-items: center; margin-top: 0; align-self: stretch; }
+
+/* --- Impressão: o PDF é a cópia do professor --- */
+@media print {
+  .hud { display: none; }
+  .slide.optional { background: #fff; }
+  body.projecao-segura .gabarito,
+  body.projecao-segura .nota-professor,
+  body.projecao-segura .image-prompt { visibility: visible; }
+  body.projecao-segura .choice .correct { border-left-color: var(--accent); font-weight: 750; }
+}
+
+/* Variante compacta da tabela, para quadros de cinco ou mais linhas */
+.table.compacta div { min-height: 60px; padding: 11px 16px; font-size: 19px; line-height: 1.22; }
+.table.compacta .head { min-height: 46px; }
+
+/* Declaração de uso de IAG em exposição eletrônica (Portaria CNPq 2.664/2026, art. 9º, I, "c") */
+.declaracao-iag { margin: 30px 0 0; max-width: 940px; font-size: 16px; line-height: 1.32; color: var(--muted); }
+
+/* Aperto adicional em lâminas .tight densas (só afeta quem declara .tight) */
+.slide.tight .box { min-height: 148px; }
+.slide.tight .notice { margin-top: 18px; padding: 14px 20px; }
+.slide.tight .micro { margin-top: 8px; }
+
+/* Ênfase dentro do corpo da caixa não deve virar bloco (o .box strong é o título) */
+.box .small strong, .box .small em { display: inline; margin: 0; font-size: inherit; line-height: inherit; color: inherit; }
+.box .small strong { font-weight: 750; }
+.slide.tight .source-list { margin-top: 18px; gap: 10px; }
+.slide.tight .source-list div { padding: 10px 16px; font-size: 19px; line-height: 1.24; }
+.slide.tight .declaracao-iag { margin-top: 16px; font-size: 15px; }
+
+  </style>
+</head>
+<body class="projecao-segura" data-bloco="Correção da I Unidade" data-fim="21:40">
+  <main class="deck" aria-label="Correção comentada da prova da I Unidade de Teoria da Constituição">
+
+    <section class="slide title banded" data-slide="1/87" data-alvo="18:30">
+      <div class="block-band"><span>Correção · abertura</span><span class="clock">alvo 18:30</span></div>
+      <p class="kicker">Teoria da Constituição · DIRBN.02</p>
+      <h1>Prova Regular da I Unidade — correção comentada</h1>
+      <p class="lead">As dez objetivas e as quatro discursivas da prova de 06/10, com a resposta, o porquê de cada alternativa, a resposta-modelo das discursivas e o barema de correção.</p>
+      <div class="rule"></div>
+      <p class="footer">Correção da prova de 06/10/2026 · I Unidade · Módulos 1, 2A e 2B.</p>
+    </section>
+    <section class="slide banded" data-slide="2/87" data-alvo="18:32">
+      <div class="block-band"><span>Correção · operação</span><span class="clock">alvo 18:32</span></div>
+      <p class="kicker">Como seguir a correção</p>
+      <h2>A numeração é a da Prova A; quem fez a B acompanha pela correspondência</h2>
+      <div class="grid-3">
+        <div class="box"><strong>1 · Releia</strong><p class="small">Cada objetiva aparece primeiro como estava na prova. Antes da resposta, refaça o raciocínio.</p></div>
+        <div class="box"><strong>2 · Confira</strong><p class="small">A lâmina das alternativas destaca a correta. Em seguida vêm o fundamento e o erro de cada alternativa.</p></div>
+        <div class="box alt"><strong>3 · Prova B</strong><p class="small">As objetivas são as mesmas, em outra ordem e com outras letras. Cada lâmina indica o número e a letra na Prova B.</p></div>
+      </div>
+      <p class="footer">Setas avançam · F tela cheia · G gabarito · H oculta o painel.</p>
+    </section>
+    <section class="slide banded" data-slide="3/87" data-alvo="18:34">
+      <div class="block-band"><span>Correção · esquema</span><span class="clock">alvo 18:34</span></div>
+      <p class="kicker">Esquema da correção</p>
+      <h2>Dez objetivas e quatro discursivas</h2>
+      <div class="grid-3">
+        <div class="box"><strong>Objetivas 1 a 5</strong><p class="small">Dimensões do limite · três matrizes do constitucionalismo · concepções clássicas · validade e eficácia · conceito ideal.</p><p class="micro">Módulos 1 e 2A · 0,4 ponto cada.</p></div>
+        <div class="box"><strong>Objetivas 6 a 10</strong><p class="small">Origem · rigidez e princípio majoritário · rigidez sem controle · democracia e jurisdição constitucional · poder constituinte.</p><p class="micro">Módulo 2B; a 09 retoma também o Módulo 1 · 0,4 ponto cada.</p></div>
+        <div class="box alt"><strong>Discursivas</strong><p class="small">Prova A: rigidez e Kelsen · emenda inconstitucional e jurisdição constitucional. Prova B: os dois eixos da Constituição · escrita e não escrita.</p><p class="micro">1,0 ponto cada · barema de três critérios.</p></div>
+      </div>
+      <p class="footer">Total da prova: 6,0 pontos — 10 objetivas de 0,4 e 2 discursivas de 1,0.</p>
+    </section>
+    <section class="slide banded" data-slide="4/87" data-alvo="18:37">
+      <div class="block-band"><span>Bloco 1 · Objetivas</span><span class="clock">alvo 18:37</span></div>
+      <p class="kicker">Bloco 1</p>
+      <h2>As questões objetivas</h2>
+      <p class="lead">Dez questões, cinco alternativas cada. A correta aparece com a tecla G; as lâminas seguintes explicam o porquê de cada alternativa.</p>
+      <div class="rule"></div>
+    </section>
+    <section class="slide banded" data-slide="5/87" data-alvo="18:39">
+      <div class="block-band"><span>Bloco 1 · Gabarito</span><span class="clock">alvo 18:39</span></div>
+      <p class="kicker">Gabarito preenchido</p>
+      <h2>Prova A</h2>
+      <svg viewBox="0 0 1136 430" width="1136" height="430" role="img" aria-label="Gabarito preenchido da Prova A" font-family="Arial, Helvetica, sans-serif"><text x="0" y="30" font-size="26" font-weight="700" fill="#1f2933" text-decoration="underline">GABARITO — PROVA A:</text><text x="0" y="68" font-size="22" font-weight="700" fill="#1f2933">Marcação correta:</text><circle cx="208" cy="61" r="11" fill="#1f2933"/><rect x="0" y="96" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="190" y1="96" x2="190" y2="162" stroke="#1f2933" stroke-width="2"/><text x="18" y="138" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 01</text><circle cx="232" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="232" y="137" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="304" cy="129" r="25" fill="#1f2933"/><text x="304" y="137" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">B</text><circle cx="376" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="376" y="137" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="448" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="448" y="137" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="520" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="520" y="137" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="0" y="162" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="190" y1="162" x2="190" y2="228" stroke="#1f2933" stroke-width="2"/><text x="18" y="204" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 02</text><circle cx="232" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="232" y="203" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="304" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="304" y="203" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="376" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="376" y="203" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="448" cy="195" r="25" fill="#1f2933"/><text x="448" y="203" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">D</text><circle cx="520" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="520" y="203" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="0" y="228" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="190" y1="228" x2="190" y2="294" stroke="#1f2933" stroke-width="2"/><text x="18" y="270" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 03</text><circle cx="232" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="232" y="269" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="304" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="304" y="269" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="376" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="376" y="269" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="448" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="448" y="269" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="520" cy="261" r="25" fill="#1f2933"/><text x="520" y="269" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">E</text><rect x="0" y="294" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="190" y1="294" x2="190" y2="360" stroke="#1f2933" stroke-width="2"/><text x="18" y="336" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 04</text><circle cx="232" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="232" y="335" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="304" cy="327" r="25" fill="#1f2933"/><text x="304" y="335" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">B</text><circle cx="376" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="376" y="335" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="448" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="448" y="335" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="520" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="520" y="335" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="0" y="360" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="190" y1="360" x2="190" y2="426" stroke="#1f2933" stroke-width="2"/><text x="18" y="402" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 05</text><circle cx="232" cy="393" r="25" fill="#1f2933"/><text x="232" y="401" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">A</text><circle cx="304" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="304" y="401" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="376" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="376" y="401" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="448" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="448" y="401" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="520" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="520" y="401" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="574" y="96" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="764" y1="96" x2="764" y2="162" stroke="#1f2933" stroke-width="2"/><text x="592" y="138" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 06</text><circle cx="806" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="806" y="137" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="878" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="878" y="137" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="950" cy="129" r="25" fill="#1f2933"/><text x="950" y="137" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">C</text><circle cx="1022" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1022" y="137" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="1094" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1094" y="137" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="574" y="162" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="764" y1="162" x2="764" y2="228" stroke="#1f2933" stroke-width="2"/><text x="592" y="204" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 07</text><circle cx="806" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="806" y="203" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="878" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="878" y="203" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="950" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="950" y="203" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="1022" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1022" y="203" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="1094" cy="195" r="25" fill="#1f2933"/><text x="1094" y="203" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">E</text><rect x="574" y="228" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="764" y1="228" x2="764" y2="294" stroke="#1f2933" stroke-width="2"/><text x="592" y="270" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 08</text><circle cx="806" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="806" y="269" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="878" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="878" y="269" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="950" cy="261" r="25" fill="#1f2933"/><text x="950" y="269" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">C</text><circle cx="1022" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1022" y="269" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="1094" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1094" y="269" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="574" y="294" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="764" y1="294" x2="764" y2="360" stroke="#1f2933" stroke-width="2"/><text x="592" y="336" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 09</text><circle cx="806" cy="327" r="25" fill="#1f2933"/><text x="806" y="335" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">A</text><circle cx="878" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="878" y="335" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="950" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="950" y="335" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="1022" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1022" y="335" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="1094" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1094" y="335" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="574" y="360" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="764" y1="360" x2="764" y2="426" stroke="#1f2933" stroke-width="2"/><text x="592" y="402" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 10</text><circle cx="806" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="806" y="401" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="878" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="878" y="401" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="950" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="950" y="401" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="1022" cy="393" r="25" fill="#1f2933"/><text x="1022" y="401" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">D</text><circle cx="1094" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1094" y="401" font-size="22" fill="#1f2933" text-anchor="middle">E</text></svg>
+      <p class="footer">É a numeração que guia a correção. Quem fez a Prova B usa a lâmina seguinte.</p>
+    </section>
+    <section class="slide banded" data-slide="6/87" data-alvo="18:41">
+      <div class="block-band"><span>Bloco 1 · Gabarito</span><span class="clock">alvo 18:41</span></div>
+      <p class="kicker">Gabarito preenchido</p>
+      <h2>Prova B</h2>
+      <svg viewBox="0 0 1136 430" width="1136" height="430" role="img" aria-label="Gabarito preenchido da Prova B" font-family="Arial, Helvetica, sans-serif"><text x="0" y="30" font-size="26" font-weight="700" fill="#1f2933" text-decoration="underline">GABARITO — PROVA B:</text><text x="0" y="68" font-size="22" font-weight="700" fill="#1f2933">Marcação correta:</text><circle cx="208" cy="61" r="11" fill="#1f2933"/><rect x="0" y="96" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="190" y1="96" x2="190" y2="162" stroke="#1f2933" stroke-width="2"/><text x="18" y="138" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 01</text><circle cx="232" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="232" y="137" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="304" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="304" y="137" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="376" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="376" y="137" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="448" cy="129" r="25" fill="#1f2933"/><text x="448" y="137" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">D</text><circle cx="520" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="520" y="137" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="0" y="162" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="190" y1="162" x2="190" y2="228" stroke="#1f2933" stroke-width="2"/><text x="18" y="204" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 02</text><circle cx="232" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="232" y="203" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="304" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="304" y="203" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="376" cy="195" r="25" fill="#1f2933"/><text x="376" y="203" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">C</text><circle cx="448" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="448" y="203" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="520" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="520" y="203" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="0" y="228" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="190" y1="228" x2="190" y2="294" stroke="#1f2933" stroke-width="2"/><text x="18" y="270" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 03</text><circle cx="232" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="232" y="269" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="304" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="304" y="269" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="376" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="376" y="269" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="448" cy="261" r="25" fill="#1f2933"/><text x="448" y="269" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">D</text><circle cx="520" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="520" y="269" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="0" y="294" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="190" y1="294" x2="190" y2="360" stroke="#1f2933" stroke-width="2"/><text x="18" y="336" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 04</text><circle cx="232" cy="327" r="25" fill="#1f2933"/><text x="232" y="335" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">A</text><circle cx="304" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="304" y="335" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="376" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="376" y="335" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="448" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="448" y="335" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="520" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="520" y="335" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="0" y="360" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="190" y1="360" x2="190" y2="426" stroke="#1f2933" stroke-width="2"/><text x="18" y="402" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 05</text><circle cx="232" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="232" y="401" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="304" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="304" y="401" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="376" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="376" y="401" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="448" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="448" y="401" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="520" cy="393" r="25" fill="#1f2933"/><text x="520" y="401" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">E</text><rect x="574" y="96" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="764" y1="96" x2="764" y2="162" stroke="#1f2933" stroke-width="2"/><text x="592" y="138" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 06</text><circle cx="806" cy="129" r="25" fill="#1f2933"/><text x="806" y="137" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">A</text><circle cx="878" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="878" y="137" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="950" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="950" y="137" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="1022" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1022" y="137" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="1094" cy="129" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1094" y="137" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="574" y="162" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="764" y1="162" x2="764" y2="228" stroke="#1f2933" stroke-width="2"/><text x="592" y="204" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 07</text><circle cx="806" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="806" y="203" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="878" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="878" y="203" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="950" cy="195" r="25" fill="#1f2933"/><text x="950" y="203" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">C</text><circle cx="1022" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1022" y="203" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="1094" cy="195" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1094" y="203" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="574" y="228" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="764" y1="228" x2="764" y2="294" stroke="#1f2933" stroke-width="2"/><text x="592" y="270" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 08</text><circle cx="806" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="806" y="269" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="878" cy="261" r="25" fill="#1f2933"/><text x="878" y="269" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">B</text><circle cx="950" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="950" y="269" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="1022" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1022" y="269" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="1094" cy="261" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1094" y="269" font-size="22" fill="#1f2933" text-anchor="middle">E</text><rect x="574" y="294" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="764" y1="294" x2="764" y2="360" stroke="#1f2933" stroke-width="2"/><text x="592" y="336" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 09</text><circle cx="806" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="806" y="335" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="878" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="878" y="335" font-size="22" fill="#1f2933" text-anchor="middle">B</text><circle cx="950" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="950" y="335" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="1022" cy="327" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1022" y="335" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="1094" cy="327" r="25" fill="#1f2933"/><text x="1094" y="335" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">E</text><rect x="574" y="360" width="562" height="66" fill="#fffaf3" stroke="#1f2933" stroke-width="2"/><line x1="764" y1="360" x2="764" y2="426" stroke="#1f2933" stroke-width="2"/><text x="592" y="402" font-size="24" font-weight="700" fill="#1f2933" text-decoration="underline">Questão 10</text><circle cx="806" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="806" y="401" font-size="22" fill="#1f2933" text-anchor="middle">A</text><circle cx="878" cy="393" r="25" fill="#1f2933"/><text x="878" y="401" font-size="22" font-weight="700" fill="#fffaf3" text-anchor="middle">B</text><circle cx="950" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="950" y="401" font-size="22" fill="#1f2933" text-anchor="middle">C</text><circle cx="1022" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1022" y="401" font-size="22" fill="#1f2933" text-anchor="middle">D</text><circle cx="1094" cy="393" r="25" fill="none" stroke="#1f2933" stroke-width="2"/><text x="1094" y="401" font-size="22" fill="#1f2933" text-anchor="middle">E</text></svg>
+      <p class="footer">Mesmas questões da Prova A, em outra ordem e com as alternativas embaralhadas. Cada lâmina indica a correspondência.</p>
+    </section>
+    <section class="slide banded" data-slide="7/87" data-alvo="18:43">
+      <div class="block-band"><span>Módulo 1 · objetiva 01 de 10</span><span class="clock">alvo 18:43</span></div>
+      <p class="kicker">Prova A: questão 01 · Prova B: questão 05 · o enunciado</p>
+      <h2>Dimensões do limite constitucional</h2>
+      <p class="small">A doutrina costuma distinguir três dimensões do limite constitucional ao poder: material (conteúdos que o poder não pode violar), orgânica (vedação à concentração de funções e à ausência de controles) e procedimental (decisões tomadas sem forma, sem defesa ou sem base jurídica adequada). Considere três atos de uma prefeitura:</p>
+      <p class="small">(i) resolução que transfere ao próprio prefeito o julgamento das contas da prefeitura, retirando esse julgamento da Câmara Municipal;</p>
+      <p class="small">(ii) cassação da licença de um feirante por ato do secretário, sem notificação, sem motivação e sem prazo para recurso;</p>
+      <p class="small">(iii) lei municipal que proíbe a distribuição de panfletos de partidos de oposição.</p>
+      <p class="small">A correspondência correta entre cada ato e a dimensão predominantemente violada é:</p>
+      <p class="footer">Prova A: questão 01 · Prova B: questão 05. Na Prova B, as alternativas estão em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="8/87" data-alvo="18:45">
+      <div class="block-band"><span>Módulo 1 · objetiva 01 de 10</span><span class="clock">alvo 18:45</span></div>
+      <p class="kicker">Prova A: questão 01 · Prova B: questão 05 · alternativas</p>
+      <h2>Dimensões do limite constitucional</h2>
+      <div class="choice">
+        <div><strong>A.</strong> (i) material; (ii) orgânica; (iii) procedimental.</div>
+        <div class="correct"><strong>B.</strong> (i) orgânica; (ii) procedimental; (iii) material.</div>
+        <div><strong>C.</strong> (i) orgânica; (ii) material; (iii) procedimental.</div>
+        <div><strong>D.</strong> (i) procedimental; (ii) orgânica; (iii) material.</div>
+        <div><strong>E.</strong> (i) procedimental; (ii) material; (iii) orgânica.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 05, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="9/87" data-alvo="18:47">
+      <div class="block-band"><span>Módulo 1 · objetiva 01 de 10</span><span class="clock">alvo 18:47</span></div>
+      <p class="kicker">Prova A: questão 01 · Prova B: questão 05 · resposta</p>
+      <h2>Resposta: B na Prova A · E na Prova B</h2>
+      <div class="notice"><strong>B.</strong> (i) orgânica; (ii) procedimental; (iii) material.</div>
+      <p class="small">Tirar da Câmara o julgamento das contas e entregá-lo ao próprio julgado destrói o controle recíproco: a violação é orgânica. Cassar a licença sem notificação, sem motivação e sem recurso é vício de forma e de defesa: procedimental. Proibir panfletos da oposição atinge o conteúdo protegido, o pluralismo e a liberdade de expressão: material.</p>
+      <p class="footer">Base: Módulo 1 — as três dimensões da limitação do poder: material, orgânica e procedimental.</p>
+    </section>
+    <section class="slide banded" data-slide="10/87" data-alvo="18:50">
+      <div class="block-band"><span>Módulo 1 · objetiva 01 de 10</span><span class="clock">alvo 18:50</span></div>
+      <p class="kicker">Prova A: questão 01 · Prova B: questão 05 · alternativa por alternativa</p>
+      <h2>Onde cada uma acerta ou erra</h2>
+      <div class="source-list">
+        <div><strong>A</strong> — Troca as três. Concentrar no prefeito o julgamento das próprias contas é problema de estrutura, e não de conteúdo; a cassação sem defesa é vício de rito; a censura à oposição, de conteúdo.</div>
+        <div><strong>✓ B</strong> — Correta.</div>
+        <div><strong>C</strong> — Acerta o primeiro ato e inverte os outros dois: a cassação sem notificação, motivação ou recurso é vício de rito (procedimental); a proibição dos panfletos atinge conteúdo protegido (material).</div>
+        <div><strong>D</strong> — Acerta o terceiro ato e inverte os dois primeiros: retirar da Câmara o julgamento das contas é vício orgânico; cassar a licença sem defesa é vício procedimental.</div>
+        <div><strong>E</strong> — Erra as três correspondências: nenhum dos atos está ligado à dimensão que ele de fato viola.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="11/87" data-alvo="18:52">
+      <div class="block-band"><span>Módulo 1 · objetiva 02 de 10</span><span class="clock">alvo 18:52</span></div>
+      <p class="kicker">Prova A: questão 02 · Prova B: questão 08 · o enunciado</p>
+      <h2>Constitucionalismo moderno: as três matrizes e o elemento comum</h2>
+      <p class="small">Em sentido rigoroso, o constitucionalismo é um fenômeno da modernidade política. A doutrina costuma identificar nele três matrizes — a inglesa, a estadunidense e a francesa —, cada uma associada a elementos teóricos que o direito constitucional incorporou. Sobre essas matrizes e o que as une, é correto afirmar que:</p>
+      <p class="footer">Prova A: questão 02 · Prova B: questão 08. Na Prova B, as alternativas estão em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="12/87" data-alvo="18:54">
+      <div class="block-band"><span>Módulo 1 · objetiva 02 de 10</span><span class="clock">alvo 18:54</span></div>
+      <p class="kicker">Prova A: questão 02 · Prova B: questão 08 · alternativas (A a C)</p>
+      <h2>Constitucionalismo moderno: as três matrizes e o elemento comum</h2>
+      <div class="choice">
+        <div><strong>A.</strong> Na Inglaterra, uma Constituição escrita e rígida passou a prevalecer sobre as leis do Parlamento; nos Estados Unidos, a supremacia do Congresso sobre o texto constitucional afastou o controle judicial das leis; na França, a ruptura com o Antigo Regime fundou a ordem na soberania nacional e nos direitos declarados. Em comum, a figura do cidadão, com direitos oponíveis a um poder que se quer limitado.</div>
+        <div><strong>B.</strong> Na Inglaterra, a Coroa foi contida pelo Parlamento por declarações de direitos sucessivas; nos Estados Unidos, a nova ordem exigiu demolir uma aristocracia interna de privilégios, e a proteção dos direitos ficou confiada apenas à lei ordinária do Congresso; na França, bastou romper com um poder externo, e a Revolução entregou aos juízes o controle das leis. Em comum, o cidadão titular de direitos diante de um Estado de poder limitado.</div>
+        <div><strong>C.</strong> Na Inglaterra, o Parlamento limitou a Coroa por uma sequência de declarações de direitos; nos Estados Unidos, a Constituição escrita passou a valer acima das leis e consolidou a separação do poder colonial; na França, a Revolução restaurou as liberdades das antigas cartas medievais do reino. Em comum, a continuidade de uma tradição antiga de limites ao poder, sem nova figura política ou jurídica moderna.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 08, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="13/87" data-alvo="18:56">
+      <div class="block-band"><span>Módulo 1 · objetiva 02 de 10</span><span class="clock">alvo 18:56</span></div>
+      <p class="kicker">Prova A: questão 02 · Prova B: questão 08 · alternativas (D a E)</p>
+      <h2>Constitucionalismo moderno: as três matrizes e o elemento comum</h2>
+      <div class="choice">
+        <div class="correct"><strong>D.</strong> Na Inglaterra, o Parlamento conteve a Coroa por uma série de declarações de direitos; nos Estados Unidos, a Constituição escrita, superior às leis, fundou uma ordem nova ao romper com o poder colonial; na França, por outro lado, exigiu-se uma ruptura interna radical com o Antigo Regime, em nome da soberania nacional. Em comum, os três consolidaram a figura do cidadão titular de direitos diante de um Estado de poder limitado.</div>
+        <div><strong>E.</strong> Na Inglaterra, a limitação da Coroa foi obra de um documento único, solene e rígido; nos Estados Unidos, a Constituição escrita prevaleceu sobre as leis e deu forma à ordem nascida da ruptura colonial; na França, a ruptura com o Antigo Regime afirmou a soberania nacional. Em comum, o documento escrito, que por si só basta para caracterizar uma Constituição, com ou sem direitos declarados.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 08, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="14/87" data-alvo="18:58">
+      <div class="block-band"><span>Módulo 1 · objetiva 02 de 10</span><span class="clock">alvo 18:58</span></div>
+      <p class="kicker">Prova A: questão 02 · Prova B: questão 08 · resposta</p>
+      <h2>Resposta: D na Prova A · B na Prova B</h2>
+      <div class="notice"><strong>D.</strong> Na Inglaterra, o Parlamento conteve a Coroa por uma série de declarações de direitos; nos Estados Unidos, a Constituição escrita, superior às leis, fundou uma ordem nova ao romper com o poder colonial; na França, por outro lado, exigiu-se uma ruptura interna radical com o Antigo Regime, em nome da soberania nacional. Em comum, os três consolidaram a figura do cidadão titular de direitos diante de um Estado de poder limitado.</div>
+      <p class="small">Cada matriz legou um elemento. A inglesa, a limitação do poder régio pelo Parlamento, por declarações de direitos sucessivas, sem documento único. A estadunidense, a Constituição escrita como norma superior às leis, que funda uma ordem nova rompendo com um poder externo. A francesa, a ruptura interna com o Antigo Regime, em nome da soberania nacional e dos direitos declarados. O elemento comum é moderno: o cidadão titular de direitos diante de um Estado de poder limitado.</p>
+      <p class="footer">Base: Módulo 1 — as matrizes inglesa, estadunidense e francesa do constitucionalismo moderno.</p>
+    </section>
+    <section class="slide banded" data-slide="15/87" data-alvo="19:01">
+      <div class="block-band"><span>Módulo 1 · objetiva 02 de 10</span><span class="clock">alvo 19:01</span></div>
+      <p class="kicker">Prova A: questão 02 · Prova B: questão 08 · alternativa por alternativa (A a C)</p>
+      <h2>Onde cada uma acerta ou erra</h2>
+      <div class="source-list">
+        <div><strong>A</strong> — Inverte Inglaterra e Estados Unidos: a Constituição escrita e rígida, superior às leis, é a marca estadunidense; a supremacia do Parlamento, sem controle judicial das leis, é a inglesa.</div>
+        <div><strong>B</strong> — Inverte o contraste entre as duas revoluções: foi a França que precisou demolir por dentro a ordem estamental; os Estados Unidos fundaram a nova ordem rompendo com um poder externo. Inverte também o controle das leis: judicial nos Estados Unidos; na França, primado da lei e desconfiança dos juízes.</div>
+        <div><strong>C</strong> — A Revolução Francesa rompeu com o passado, não o restaurou. E o constitucionalismo é fenômeno moderno: ter antecedentes antigos ou medievais não o torna continuação deles.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="16/87" data-alvo="19:03">
+      <div class="block-band"><span>Módulo 1 · objetiva 02 de 10</span><span class="clock">alvo 19:03</span></div>
+      <p class="kicker">Prova A: questão 02 · Prova B: questão 08 · alternativa por alternativa (D e E)</p>
+      <h2>Onde cada uma acerta ou erra</h2>
+      <div class="source-list">
+        <div><strong>✓ D</strong> — Correta.</div>
+        <div><strong>E</strong> — A Inglaterra é justamente o exemplo de limitação do poder sem documento único. E documento escrito sem garantia de direitos não basta para haver Constituição no sentido moderno (é o que mostra o conceito ideal, na objetiva 05).</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="17/87" data-alvo="19:05">
+      <div class="block-band"><span>Módulo 2A · objetiva 03 de 10</span><span class="clock">alvo 19:05</span></div>
+      <p class="kicker">Prova A: questão 03 · Prova B: questão 01 · o enunciado</p>
+      <h2>As três concepções clássicas de Constituição</h2>
+      <p class="small">Considere três afirmações sobre o que é uma Constituição:</p>
+      <p class="small">(1) “A Constituição de um país é a soma dos fatores reais de poder que nele atuam; o texto escrito que não os exprime é mera folha de papel”.</p>
+      <p class="small">(2) “A Constituição é a decisão política fundamental sobre o modo e a forma de existência de uma comunidade política”.</p>
+      <p class="small">(3) “A Constituição é a norma superior do ordenamento jurídico, fundamento de validade de todas as demais normas”.</p>
+      <p class="small">As três afirmações correspondem, respectivamente, às concepções de:</p>
+      <p class="footer">Prova A: questão 03 · Prova B: questão 01. Na Prova B, as alternativas estão em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="18/87" data-alvo="19:07">
+      <div class="block-band"><span>Módulo 2A · objetiva 03 de 10</span><span class="clock">alvo 19:07</span></div>
+      <p class="kicker">Prova A: questão 03 · Prova B: questão 01 · alternativas</p>
+      <h2>As três concepções clássicas de Constituição</h2>
+      <div class="choice">
+        <div><strong>A.</strong> Schmitt (política), Lassalle (sociológica) e Kelsen (jurídica).</div>
+        <div><strong>B.</strong> Kelsen (jurídica), Schmitt (política) e Lassalle (sociológica).</div>
+        <div><strong>C.</strong> Lassalle (sociológica), Kelsen (jurídica) e Schmitt (política).</div>
+        <div><strong>D.</strong> Schmitt (política), Kelsen (jurídica) e Lassalle (sociológica).</div>
+        <div class="correct"><strong>E.</strong> Lassalle (sociológica), Schmitt (política) e Kelsen (jurídica).</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 01, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="19/87" data-alvo="19:09">
+      <div class="block-band"><span>Módulo 2A · objetiva 03 de 10</span><span class="clock">alvo 19:09</span></div>
+      <p class="kicker">Prova A: questão 03 · Prova B: questão 01 · resposta</p>
+      <h2>Resposta: E na Prova A · D na Prova B</h2>
+      <div class="notice"><strong>E.</strong> Lassalle (sociológica), Schmitt (política) e Kelsen (jurídica).</div>
+      <p class="small">A primeira afirmação reduz a Constituição aos fatores reais de poder: é a concepção sociológica, de Lassalle. A segunda a funda numa decisão política sobre o modo e a forma de existência da comunidade: é a concepção política, de Schmitt. A terceira a define pela posição no ordenamento, como fundamento de validade das demais normas: é a concepção jurídica, de Kelsen.</p>
+      <p class="footer">Base: Módulo 2A — as concepções sociológica, política e jurídica de Constituição.</p>
+    </section>
+    <section class="slide banded" data-slide="20/87" data-alvo="19:12">
+      <div class="block-band"><span>Módulo 2A · objetiva 03 de 10</span><span class="clock">alvo 19:12</span></div>
+      <p class="kicker">Prova A: questão 03 · Prova B: questão 01 · alternativa por alternativa</p>
+      <h2>Onde cada uma acerta ou erra</h2>
+      <div class="source-list">
+        <div><strong>A</strong> — Troca as duas primeiras: “folha de papel” e “fatores reais de poder” são de Lassalle; “decisão política fundamental” é de Schmitt.</div>
+        <div><strong>B</strong> — Inverte a primeira e a terceira: é Kelsen quem define a Constituição pelo fundamento de validade; os fatores reais de poder são de Lassalle.</div>
+        <div><strong>C</strong> — Acerta a primeira e troca as outras duas: a decisão política fundamental é de Schmitt; o fundamento de validade, de Kelsen.</div>
+        <div><strong>D</strong> — Erra as três atribuições.</div>
+        <div><strong>✓ E</strong> — Correta.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="21/87" data-alvo="19:14">
+      <div class="block-band"><span>Módulo 2A · objetiva 04 de 10</span><span class="clock">alvo 19:14</span></div>
+      <p class="kicker">Prova A: questão 04 · Prova B: questão 07 · o enunciado</p>
+      <h2>Validade e eficácia na concepção jurídico-normativa</h2>
+      <p class="small">Em um debate, afirma-se que “uma norma constitucional descumprida há décadas perde a validade pelo desuso, porque norma que não se cumpre já não é norma”. Do ponto de vista da concepção jurídico-normativa de Constituição, essa afirmação:</p>
+      <p class="footer">Prova A: questão 04 · Prova B: questão 07. Na Prova B, as alternativas estão em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="22/87" data-alvo="19:16">
+      <div class="block-band"><span>Módulo 2A · objetiva 04 de 10</span><span class="clock">alvo 19:16</span></div>
+      <p class="kicker">Prova A: questão 04 · Prova B: questão 07 · alternativas (A a C)</p>
+      <h2>Validade e eficácia na concepção jurídico-normativa</h2>
+      <div class="choice">
+        <div><strong>A.</strong> Procede em parte, porque a norma continua válida, mas apenas como recomendação política dirigida ao administrador público.</div>
+        <div class="correct"><strong>B.</strong> Não procede, porque confunde eficácia com validade: a norma vale pela posição no ordenamento, não pelo grau em que é cumprida.</div>
+        <div><strong>C.</strong> Procede, porque a eficácia social contínua é requisito para que uma norma permaneça integrando o ordenamento jurídico.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 07, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="23/87" data-alvo="19:18">
+      <div class="block-band"><span>Módulo 2A · objetiva 04 de 10</span><span class="clock">alvo 19:18</span></div>
+      <p class="kicker">Prova A: questão 04 · Prova B: questão 07 · alternativas (D a E)</p>
+      <h2>Validade e eficácia na concepção jurídico-normativa</h2>
+      <div class="choice">
+        <div><strong>D.</strong> Não procede, porque só uma decisão do Supremo Tribunal Federal poderia declarar extinto, pelo desuso, um dever constitucional.</div>
+        <div><strong>E.</strong> Procede, porque para a concepção jurídico-normativa a validade de uma norma se mede pelo grau de obediência que ela obtém.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 07, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="24/87" data-alvo="19:20">
+      <div class="block-band"><span>Módulo 2A · objetiva 04 de 10</span><span class="clock">alvo 19:20</span></div>
+      <p class="kicker">Prova A: questão 04 · Prova B: questão 07 · resposta</p>
+      <h2>Resposta: B na Prova A · C na Prova B</h2>
+      <div class="notice"><strong>B.</strong> Não procede, porque confunde eficácia com validade: a norma vale pela posição no ordenamento, não pelo grau em que é cumprida.</div>
+      <p class="small">Para a concepção jurídico-normativa, o Direito é dever-ser: a validade da norma decorre da sua posição no escalonamento normativo, e não do grau em que é cumprida. Se descumprir revogasse, bastaria descumprir para revogar, e a Constituição perderia a função de parâmetro contra o poder do momento.</p>
+      <p class="footer">Base: Módulo 2A — a concepção jurídica de Constituição e a distinção entre ser e dever-ser.</p>
+    </section>
+    <section class="slide banded" data-slide="25/87" data-alvo="19:22">
+      <div class="block-band"><span>Módulo 2A · objetiva 04 de 10</span><span class="clock">alvo 19:22</span></div>
+      <p class="kicker">Prova A: questão 04 · Prova B: questão 07 · alternativa por alternativa</p>
+      <h2>Onde cada uma acerta ou erra</h2>
+      <div class="source-list">
+        <div><strong>A</strong> — Dizer que a norma continua válida, mas como mera recomendação, esvazia a normatividade que a concepção jurídica afirma.</div>
+        <div><strong>✓ B</strong> — Correta.</div>
+        <div><strong>C</strong> — É exatamente a confusão entre eficácia e validade que a separação entre ser e dever-ser nega.</div>
+        <div><strong>D</strong> — Desloca o problema para a competência: não existe extinção por desuso a ser declarada por órgão algum.</div>
+        <div><strong>E</strong> — Atribui à concepção jurídico-normativa o oposto do que ela sustenta: ali, validade não se mede por obediência.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="26/87" data-alvo="19:25">
+      <div class="block-band"><span>Módulo 2A · objetiva 05 de 10</span><span class="clock">alvo 19:25</span></div>
+      <p class="kicker">Prova A: questão 05 · Prova B: questão 10 · o enunciado</p>
+      <h2>Conceito ideal de constituição</h2>
+      <p class="small">Com o triunfo do movimento constitucional, no início do século XIX, firmou-se o chamado conceito ideal de constituição. Considere um documento solene e escrito, intitulado “Constituição”, que reúne em uma só autoridade os poderes de legislar, administrar e julgar e não enuncia direito algum dos governados. À luz desse conceito ideal, o documento:</p>
+      <p class="footer">Prova A: questão 05 · Prova B: questão 10. Na Prova B, as alternativas estão em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="27/87" data-alvo="19:27">
+      <div class="block-band"><span>Módulo 2A · objetiva 05 de 10</span><span class="clock">alvo 19:27</span></div>
+      <p class="kicker">Prova A: questão 05 · Prova B: questão 10 · alternativas</p>
+      <h2>Conceito ideal de constituição</h2>
+      <div class="choice">
+        <div class="correct"><strong>A.</strong> Não atende ao conceito, porque, embora escrito, não consagra garantias da liberdade nem adota a divisão de poderes.</div>
+        <div><strong>B.</strong> Atende ao conceito, porque organiza os órgãos do poder, o que basta para caracterizá-lo como Constituição material.</div>
+        <div><strong>C.</strong> Não atende ao conceito, porque um documento imposto por quem governa nunca pode receber o nome de Constituição.</div>
+        <div><strong>D.</strong> Não atende ao conceito, porque, embora adote a divisão de poderes, não foi aprovado por uma assembleia eleita.</div>
+        <div><strong>E.</strong> Atende ao conceito, porque a forma escrita e a solenidade do documento bastam para caracterizar uma Constituição.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 10, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="28/87" data-alvo="19:29">
+      <div class="block-band"><span>Módulo 2A · objetiva 05 de 10</span><span class="clock">alvo 19:29</span></div>
+      <p class="kicker">Prova A: questão 05 · Prova B: questão 10 · resposta</p>
+      <h2>Resposta: A na Prova A · B na Prova B</h2>
+      <div class="notice"><strong>A.</strong> Não atende ao conceito, porque, embora escrito, não consagra garantias da liberdade nem adota a divisão de poderes.</div>
+      <p class="small">O conceito ideal, firmado com o triunfo do movimento constitucional, exige três coisas: forma escrita, garantias da liberdade e divisão de poderes. O documento do enunciado só tem a primeira. É a ideia que atravessa a unidade: Constituição, no sentido moderno, é garantia de direitos e limitação do poder.</p>
+      <p class="footer">Base: Módulo 2A — o conceito ideal de constituição, que Canotilho (1993) registra a partir de Schmitt.</p>
+    </section>
+    <section class="slide banded" data-slide="29/87" data-alvo="19:31">
+      <div class="block-band"><span>Módulo 2A · objetiva 05 de 10</span><span class="clock">alvo 19:31</span></div>
+      <p class="kicker">Prova A: questão 05 · Prova B: questão 10 · alternativa por alternativa</p>
+      <h2>Onde cada uma acerta ou erra</h2>
+      <div class="source-list">
+        <div><strong>✓ A</strong> — Correta.</div>
+        <div><strong>B</strong> — Mistura critérios e ignora que organizar os órgãos do poder não basta ao conceito ideal.</div>
+        <div><strong>C</strong> — O conceito ideal não traz requisito de origem: o documento falha pelo conteúdo, não por quem o impôs.</div>
+        <div><strong>D</strong> — Descreve mal o documento, que concentra os poderes, e acrescenta um requisito de origem que o conceito não tem.</div>
+        <div><strong>E</strong> — Elimina justamente os dois requisitos substantivos do conceito: as garantias da liberdade e a divisão de poderes.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="30/87" data-alvo="19:33">
+      <div class="block-band"><span>Módulo 2B · objetiva 06 de 10</span><span class="clock">alvo 19:33</span></div>
+      <p class="kicker">Prova A: questão 06 · Prova B: questão 03 · o enunciado</p>
+      <h2>Classificação quanto à origem</h2>
+      <p class="small">Quanto à origem, as Constituições se classificam em promulgadas, outorgadas, cesaristas e pactuadas. Uma Constituição redigida por ordem do chefe de governo e, depois de pronta, submetida a plebiscito, no qual os eleitores podem apenas aprová-la ou rejeitá-la por inteiro, classifica-se como:</p>
+      <p class="footer">Prova A: questão 06 · Prova B: questão 03. Na Prova B, as alternativas estão em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="31/87" data-alvo="19:36">
+      <div class="block-band"><span>Módulo 2B · objetiva 06 de 10</span><span class="clock">alvo 19:36</span></div>
+      <p class="kicker">Prova A: questão 06 · Prova B: questão 03 · alternativas</p>
+      <h2>Classificação quanto à origem</h2>
+      <div class="choice">
+        <div><strong>A.</strong> Promulgada, porque a aprovação em plebiscito equivale à deliberação de uma assembleia constituinte eleita.</div>
+        <div><strong>B.</strong> Pactuada, porque resulta de um acordo entre o chefe de governo e o eleitorado, que aceitou o texto proposto.</div>
+        <div class="correct"><strong>C.</strong> Cesarista, porque o texto é imposto e depois ratificado em consulta na qual o povo não delibera o conteúdo.</div>
+        <div><strong>D.</strong> Outorgada pura, porque a consulta posterior é juridicamente irrelevante para a classificação quanto à origem.</div>
+        <div><strong>E.</strong> Promulgada, porque toda Constituição aprovada pelo voto popular, direto ou indireto, tem origem democrática.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 03, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="32/87" data-alvo="19:38">
+      <div class="block-band"><span>Módulo 2B · objetiva 06 de 10</span><span class="clock">alvo 19:38</span></div>
+      <p class="kicker">Prova A: questão 06 · Prova B: questão 03 · resposta</p>
+      <h2>Resposta: C na Prova A · D na Prova B</h2>
+      <div class="notice"><strong>C.</strong> Cesarista, porque o texto é imposto e depois ratificado em consulta na qual o povo não delibera o conteúdo.</div>
+      <p class="small">Cesarista é a Constituição imposta por quem governa e depois submetida a plebiscito ou referendo. A participação popular é ratificadora, não deliberativa: o eleitor diz sim ou não a um texto pronto. A consulta serve menos para legitimar do que para aparentar legitimidade.</p>
+      <p class="footer">Base: Módulo 2B — classificação quanto à origem: promulgada, outorgada, cesarista e pactuada.</p>
+    </section>
+    <section class="slide banded" data-slide="33/87" data-alvo="19:40">
+      <div class="block-band"><span>Módulo 2B · objetiva 06 de 10</span><span class="clock">alvo 19:40</span></div>
+      <p class="kicker">Prova A: questão 06 · Prova B: questão 03 · alternativa por alternativa</p>
+      <h2>Onde cada uma acerta ou erra</h2>
+      <div class="source-list">
+        <div><strong>A</strong> — Promulgada é a Constituição elaborada por assembleia eleita para esse fim. Ratificar um texto pronto não é deliberar sobre ele.</div>
+        <div><strong>B</strong> — Pactuada pressupõe duas forças políticas que negociam o conteúdo do texto, o que não houve.</div>
+        <div><strong>✓ C</strong> — Correta.</div>
+        <div><strong>D</strong> — É justamente a consulta posterior que desloca a espécie de outorgada para cesarista.</div>
+        <div><strong>E</strong> — Confunde qualquer voto com deliberação constituinte: o que importa é se o povo decide o conteúdo.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="34/87" data-alvo="19:42">
+      <div class="block-band"><span>Módulo 2B · objetiva 07 de 10</span><span class="clock">alvo 19:42</span></div>
+      <p class="kicker">Prova A: questão 07 · Prova B: questão 06 · o enunciado</p>
+      <h2>Rigidez, supremacia e princípio majoritário</h2>
+      <p class="small">Quanto à alterabilidade, a Constituição rígida é aquela que só pode ser modificada por procedimento mais difícil do que o exigido para as leis comuns. No Parlamento bicameral de uma república federativa, uma coalizão que detém a maioria absoluta das cadeiras aprova sem dificuldade as leis ordinárias, que exigem maioria simples, e as leis complementares, que exigem maioria absoluta. Não consegue, porém, aprovar uma proposta de emenda constitucional, que exige três quintos dos votos, em dois turnos, em cada Casa. Um líder da coalizão protesta: “Se temos a maioria, a Constituição não pode impedir a maioria de governar”. Considerada a relação entre rigidez constitucional, supremacia da Constituição e princípio majoritário, é correto afirmar que:</p>
+      <p class="footer">Prova A: questão 07 · Prova B: questão 06. Na Prova B, as alternativas estão em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="35/87" data-alvo="19:44">
+      <div class="block-band"><span>Módulo 2B · objetiva 07 de 10</span><span class="clock">alvo 19:44</span></div>
+      <p class="kicker">Prova A: questão 07 · Prova B: questão 06 · alternativas (A a C)</p>
+      <h2>Rigidez, supremacia e princípio majoritário</h2>
+      <div class="choice">
+        <div><strong>A.</strong> O protesto procede: a rigidez se satisfaz com a maioria absoluta dos membros, a mesma exigida para as leis complementares, e exigir mais do que isso subverte o princípio majoritário que legitima a democracia.</div>
+        <div><strong>B.</strong> O protesto não procede, porque a Constituição rígida é imutável: nenhuma maioria, simples, absoluta ou qualificada, pode alterar o seu texto sem que se convoque uma nova Assembleia Nacional Constituinte.</div>
+        <div><strong>C.</strong> O protesto procede em parte: a rigidez decorre da importância do conteúdo constitucional, e não do procedimento, de modo que a coalizão pode alterar por lei complementar as normas constitucionais de menor relevância.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 06, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="36/87" data-alvo="19:47">
+      <div class="block-band"><span>Módulo 2B · objetiva 07 de 10</span><span class="clock">alvo 19:47</span></div>
+      <p class="kicker">Prova A: questão 07 · Prova B: questão 06 · alternativas (D a E)</p>
+      <h2>Rigidez, supremacia e princípio majoritário</h2>
+      <div class="choice">
+        <div><strong>D.</strong> O protesto procede: a diferença de quórum é apenas formal, e uma lei aprovada pela maioria absoluta, que representa a vontade popular do momento, pode alterar o texto da Constituição rígida.</div>
+        <div class="correct"><strong>E.</strong> O protesto não procede: ao exigir maioria qualificada, superior às maiorias das leis, a rigidez põe a Constituição fora do alcance da maioria ocasional, fundamenta sua supremacia e protege os direitos das minorias.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 06, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="37/87" data-alvo="19:49">
+      <div class="block-band"><span>Módulo 2B · objetiva 07 de 10</span><span class="clock">alvo 19:49</span></div>
+      <p class="kicker">Prova A: questão 07 · Prova B: questão 06 · resposta</p>
+      <h2>Resposta: E na Prova A · A na Prova B</h2>
+      <div class="notice"><strong>E.</strong> O protesto não procede: ao exigir maioria qualificada, superior às maiorias das leis, a rigidez põe a Constituição fora do alcance da maioria ocasional, fundamenta sua supremacia e protege os direitos das minorias.</div>
+      <p class="small">Rigidez é procedimento: a Constituição só muda por rito mais difícil que o das leis, com maioria qualificada, superior à simples (leis ordinárias) e à absoluta (leis complementares). Isso a põe fora do alcance da maioria parlamentar do momento, fundamenta sua posição superior e protege os direitos das minorias. É o caráter contramajoritário do constitucionalismo: a Constituição limita a maioria para que a democracia não se torne ditadura da maioria.</p>
+      <p class="footer">Base: Módulo 2B — classificação quanto à alterabilidade, supremacia e rigidez; Módulo 1 — o caráter contramajoritário.</p>
+    </section>
+    <section class="slide banded" data-slide="38/87" data-alvo="19:51">
+      <div class="block-band"><span>Módulo 2B · objetiva 07 de 10</span><span class="clock">alvo 19:51</span></div>
+      <p class="kicker">Prova A: questão 07 · Prova B: questão 06 · alternativa por alternativa</p>
+      <h2>Onde cada uma acerta ou erra</h2>
+      <div class="source-list">
+        <div><strong>A</strong> — Confunde o quórum da reforma com o da lei complementar e trata o limite contramajoritário como ofensa à democracia.</div>
+        <div><strong>B</strong> — Confunde rígida com imutável: a rigidez dificulta a mudança, não a proíbe. A emenda existe justamente para isso.</div>
+        <div><strong>C</strong> — Tira a rigidez do procedimento, que é exatamente o que a define, e inventa uma reforma constitucional por lei.</div>
+        <div><strong>D</strong> — Esvazia a diferença de quórum: se a lei pudesse alterar o texto, a Constituição seria flexível e deixaria de ser superior.</div>
+        <div><strong>✓ E</strong> — Correta.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="39/87" data-alvo="19:53">
+      <div class="block-band"><span>Módulo 2B · objetiva 08 de 10</span><span class="clock">alvo 19:53</span></div>
+      <p class="kicker">Prova A: questão 08 · Prova B: questão 09 · o enunciado</p>
+      <h2>Rigidez sem controle: supremacia e força normativa prejudicadas</h2>
+      <p class="small">Segundo o quanto determinado no próprio texto constitucional de determinado país, a Constituição só pode ser emendada por três quintos dos membros de cada Casa do parlamento, em dois turnos, e proclama, em artigo próprio, ser a “lei suprema da nação”. O mesmo texto, porém, não admite qualquer tipo de controle jurisdicional sobre os atos do Poder Legislativo, tampouco do Executivo, sob pena de se violar “a estrita separação de poderes da República”, e a única instância que examina a compatibilidade das leis com a Constituição é uma comissão formada pelos próprios parlamentares, não havendo controle jurisdicional competente para garantir a aplicação da norma. Diante desse cenário, é correto afirmar que:</p>
+      <p class="footer">Prova A: questão 08 · Prova B: questão 09. Na Prova B, as alternativas estão em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="40/87" data-alvo="19:55">
+      <div class="block-band"><span>Módulo 2B · objetiva 08 de 10</span><span class="clock">alvo 19:55</span></div>
+      <p class="kicker">Prova A: questão 08 · Prova B: questão 09 · alternativas (A a C)</p>
+      <h2>Rigidez sem controle: supremacia e força normativa prejudicadas</h2>
+      <div class="choice">
+        <div><strong>A.</strong> A Constituição é flexível, porque a ausência de controle jurisdicional equivale, na prática, à ausência de procedimento agravado de reforma, de modo que o texto pode ser alterado como qualquer lei comum.</div>
+        <div><strong>B.</strong> A Constituição é semirrígida, porque parte da proteção do texto cabe ao procedimento agravado de reforma e a outra parte cabe à comissão de parlamentares que examina a compatibilidade das leis com a Constituição.</div>
+        <div class="correct"><strong>C.</strong> Embora possua rigidez, quanto à capacidade de reforma, a supremacia constitucional e a força normativa da Constituição ficam prejudicadas pela ausência de controle jurisdicional capaz de garantir sua efetividade.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 09, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="41/87" data-alvo="19:57">
+      <div class="block-band"><span>Módulo 2B · objetiva 08 de 10</span><span class="clock">alvo 19:57</span></div>
+      <p class="kicker">Prova A: questão 08 · Prova B: questão 09 · alternativas (D a E)</p>
+      <h2>Rigidez sem controle: supremacia e força normativa prejudicadas</h2>
+      <div class="choice">
+        <div><strong>D.</strong> A Constituição não é rígida nem suprema, porque uma Constituição só pode ser considerada rígida quando institui um órgão jurisdicional encarregado de controlar a compatibilidade das leis com o seu texto.</div>
+        <div><strong>E.</strong> A Constituição é rígida e sua supremacia está plenamente assegurada, porque o procedimento agravado de reforma impede, por si só, que o parlamento aprove leis contrárias ao texto constitucional.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 09, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="42/87" data-alvo="20:00">
+      <div class="block-band"><span>Módulo 2B · objetiva 08 de 10</span><span class="clock">alvo 20:00</span></div>
+      <p class="kicker">Prova A: questão 08 · Prova B: questão 09 · resposta</p>
+      <h2>Resposta: C na Prova A · E na Prova B</h2>
+      <div class="notice"><strong>C.</strong> Embora possua rigidez, quanto à capacidade de reforma, a supremacia constitucional e a força normativa da Constituição ficam prejudicadas pela ausência de controle jurisdicional capaz de garantir sua efetividade.</div>
+      <p class="small">O procedimento agravado de reforma e a supremacia proclamada existem. Falta o que torna a supremacia efetiva: um controle jurisdicional capaz de afastar a lei incompatível. Quem confere a validade da lei é quem a fez, e afirmar superioridade não produz superioridade. A rigidez fundamenta a supremacia; o controle é o que a faz valer.</p>
+      <p class="footer">Base: Módulo 2B — supremacia, rigidez e a função do controle de constitucionalidade.</p>
+    </section>
+    <section class="slide banded" data-slide="43/87" data-alvo="20:02">
+      <div class="block-band"><span>Módulo 2B · objetiva 08 de 10</span><span class="clock">alvo 20:02</span></div>
+      <p class="kicker">Prova A: questão 08 · Prova B: questão 09 · alternativa por alternativa</p>
+      <h2>Onde cada uma acerta ou erra</h2>
+      <div class="source-list">
+        <div><strong>A</strong> — Confunde os planos: o rito agravado existe, e por isso a Constituição é rígida.</div>
+        <div><strong>B</strong> — Semirrígida é a Constituição em que só parte do texto exige rito agravado; isso nada tem a ver com quem controla as leis.</div>
+        <div><strong>✓ C</strong> — Correta.</div>
+        <div><strong>D</strong> — Rigidez não depende de controle judicial: são peças distintas.</div>
+        <div><strong>E</strong> — O rito agravado disciplina a reforma do texto; não impede leis contrárias a ele. Para isso serve o controle.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="44/87" data-alvo="20:04">
+      <div class="block-band"><span>Módulos 1 e 2B · objetiva 09 de 10</span><span class="clock">alvo 20:04</span></div>
+      <p class="kicker">Prova A: questão 09 · Prova B: questão 02 · o enunciado</p>
+      <h2>Constitucionalismo, democracia e jurisdição constitucional</h2>
+      <p class="small">Em debate público, um parlamentar afirma: “Numa democracia, quem decide é a maioria. Um tribunal composto por juízes não eleitos não pode invalidar uma lei aprovada pelos representantes do povo”. Sobre essa afirmação, considerada a relação entre constitucionalismo e democracia, é correto afirmar que:</p>
+      <p class="footer">Prova A: questão 09 · Prova B: questão 02. Na Prova B, as alternativas estão em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="45/87" data-alvo="20:06">
+      <div class="block-band"><span>Módulos 1 e 2B · objetiva 09 de 10</span><span class="clock">alvo 20:06</span></div>
+      <p class="kicker">Prova A: questão 09 · Prova B: questão 02 · alternativas (A a C)</p>
+      <h2>Constitucionalismo, democracia e jurisdição constitucional</h2>
+      <div class="choice">
+        <div class="correct"><strong>A.</strong> Não procede: a Constituição organiza a democracia e protege direitos até contra maiorias ocasionais, e o controle das leis garante esse limite.</div>
+        <div><strong>B.</strong> Procede, porque a vontade da maioria eleita é a fonte última do Direito, e os limites constitucionais cedem diante de lei aprovada por ela.</div>
+        <div><strong>C.</strong> Procede em parte: o tribunal pode examinar a lei, mas deve aplicá-la sempre que tiver sido aprovada por maioria qualificada no Parlamento.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 02, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="46/87" data-alvo="20:08">
+      <div class="block-band"><span>Módulos 1 e 2B · objetiva 09 de 10</span><span class="clock">alvo 20:08</span></div>
+      <p class="kicker">Prova A: questão 09 · Prova B: questão 02 · alternativas (D a E)</p>
+      <h2>Constitucionalismo, democracia e jurisdição constitucional</h2>
+      <div class="choice">
+        <div><strong>D.</strong> Não procede, porque numa democracia constitucional os juízes são os titulares da soberania e decidem segundo a própria convicção de justiça.</div>
+        <div><strong>E.</strong> Não procede, porque o controle judicial das leis só se justifica nos países sem Constituição escrita, onde não há outra forma de proteger direitos.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 02, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="47/87" data-alvo="20:11">
+      <div class="block-band"><span>Módulos 1 e 2B · objetiva 09 de 10</span><span class="clock">alvo 20:11</span></div>
+      <p class="kicker">Prova A: questão 09 · Prova B: questão 02 · resposta</p>
+      <h2>Resposta: A na Prova A · C na Prova B</h2>
+      <div class="notice"><strong>A.</strong> Não procede: a Constituição organiza a democracia e protege direitos até contra maiorias ocasionais, e o controle das leis garante esse limite.</div>
+      <p class="small">Democracia não se reduz à vontade ocasional da maioria. A Constituição organiza as regras do jogo democrático e protege direitos inclusive contra maiorias circunstanciais; do contrário, haveria uma ditadura da maioria. Os poderes constituídos, inclusive os eleitos, recebem sua competência da Constituição, e o controle de constitucionalidade é o que faz esse limite valer. Isso não torna os juízes donos da política.</p>
+      <p class="footer">Base: Módulo 1 — constitucionalismo e democracia; Módulo 2B — supremacia e controle de constitucionalidade.</p>
+    </section>
+    <section class="slide banded" data-slide="48/87" data-alvo="20:13">
+      <div class="block-band"><span>Módulos 1 e 2B · objetiva 09 de 10</span><span class="clock">alvo 20:13</span></div>
+      <p class="kicker">Prova A: questão 09 · Prova B: questão 02 · alternativa por alternativa</p>
+      <h2>Onde cada uma acerta ou erra</h2>
+      <div class="source-list">
+        <div><strong>✓ A</strong> — Correta.</div>
+        <div><strong>B</strong> — É a tese que o constitucionalismo nega: a eleição dá legitimidade, não poder ilimitado.</div>
+        <div><strong>C</strong> — O tamanho da maioria que aprovou a lei não a torna compatível com a Constituição.</div>
+        <div><strong>D</strong> — Troca uma soberania pela outra: o tribunal aplica a Constituição, não a própria convicção de justiça.</div>
+        <div><strong>E</strong> — Inverte a relação: o controle das leis pressupõe uma Constituição superior à lei, normalmente escrita e rígida.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="49/87" data-alvo="20:15">
+      <div class="block-band"><span>Módulo 2B · objetiva 10 de 10</span><span class="clock">alvo 20:15</span></div>
+      <p class="kicker">Prova A: questão 10 · Prova B: questão 04 · o enunciado</p>
+      <h2>Poder constituinte originário e poder derivado</h2>
+      <p class="small">Suponha que, depois de grave crise institucional, seja eleita uma Assembleia Nacional Constituinte com mandato para elaborar nova Constituição, e que o texto aprovado substitua a federação por um Estado unitário. Um jurista sustenta que o novo texto é inválido, porque a Constituição até então vigente vedava proposta de emenda tendente a abolir a forma federativa de Estado. Nos termos da teoria do poder constituinte, o novo texto:</p>
+      <p class="footer">Prova A: questão 10 · Prova B: questão 04. Na Prova B, as alternativas estão em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="50/87" data-alvo="20:17">
+      <div class="block-band"><span>Módulo 2B · objetiva 10 de 10</span><span class="clock">alvo 20:17</span></div>
+      <p class="kicker">Prova A: questão 10 · Prova B: questão 04 · alternativas</p>
+      <h2>Poder constituinte originário e poder derivado</h2>
+      <div class="choice">
+        <div><strong>A.</strong> É válido, porque o poder originário, além de juridicamente ilimitado, não sofre condicionamento político ou histórico algum.</div>
+        <div><strong>B.</strong> É inválido, porque a Assembleia, embora exerça poder originário, deve respeitar os limites materiais da Constituição anterior.</div>
+        <div><strong>C.</strong> É inválido, porque a forma federativa é cláusula pétrea, e as cláusulas pétreas vinculam qualquer poder constituinte.</div>
+        <div class="correct"><strong>D.</strong> É válido, porque o poder originário é inicial e juridicamente ilimitado; a vedação às emendas vincula só o poder derivado.</div>
+        <div><strong>E.</strong> É válido, porque a forma federativa é matéria de organização do Estado, e as cláusulas pétreas só protegem direitos.</div>
+      </div>
+      <p class="footer">Letras na ordem da Prova A. Na Prova B, esta é a questão 04, com as alternativas em outra ordem.</p>
+    </section>
+    <section class="slide banded" data-slide="51/87" data-alvo="20:19">
+      <div class="block-band"><span>Módulo 2B · objetiva 10 de 10</span><span class="clock">alvo 20:19</span></div>
+      <p class="kicker">Prova A: questão 10 · Prova B: questão 04 · resposta</p>
+      <h2>Resposta: D na Prova A · A na Prova B</h2>
+      <div class="notice"><strong>D.</strong> É válido, porque o poder originário é inicial e juridicamente ilimitado; a vedação às emendas vincula só o poder derivado.</div>
+      <p class="small">A vedação às emendas é obra do poder originário dirigida ao poder que só pode reformar. Uma nova Assembleia Constituinte exerce poder originário: inicial, autônomo e juridicamente ilimitado perante a ordem que substitui, ainda que politicamente condicionado. A cláusula pétrea vincula quem reforma, não quem funda.</p>
+      <p class="footer">Base: Módulo 2B, parte III, retomado no Módulo 3 — natureza e limites do poder constituinte originário.</p>
+    </section>
+    <section class="slide banded" data-slide="52/87" data-alvo="20:21">
+      <div class="block-band"><span>Módulo 2B · objetiva 10 de 10</span><span class="clock">alvo 20:21</span></div>
+      <p class="kicker">Prova A: questão 10 · Prova B: questão 04 · alternativa por alternativa</p>
+      <h2>Onde cada uma acerta ou erra</h2>
+      <div class="source-list">
+        <div><strong>A</strong> — Chega à validade por uma premissa falsa: o poder originário é juridicamente ilimitado, mas politicamente condicionado.</div>
+        <div><strong>B</strong> — O poder originário não deve obediência jurídica à Constituição que vem substituir.</div>
+        <div><strong>C</strong> — A cláusula pétrea vincula quem reforma, não quem funda uma nova ordem.</div>
+        <div><strong>✓ D</strong> — Correta.</div>
+        <div><strong>E</strong> — Chega à validade por uma premissa falsa: a forma federativa também é cláusula pétrea. O novo texto vale porque o poder é originário.</div>
+      </div>
+    </section>
+    <section class="slide banded" data-slide="53/87" data-alvo="20:24">
+      <div class="block-band"><span>Bloco 2 · Discursivas</span><span class="clock">alvo 20:24</span></div>
+      <p class="kicker">Bloco 2</p>
+      <h2>As questões discursivas</h2>
+      <p class="lead">Na Prova A e na Prova B, as discursivas são diferentes. Para cada uma: o enunciado, uma resposta-modelo comentada trecho a trecho e o barema que orientou a correção.</p>
+      <div class="rule"></div>
+    </section>
+    <section class="slide banded" data-slide="54/87" data-alvo="20:26">
+      <div class="block-band"><span>Discursivas · o barema</span><span class="clock">alvo 20:26</span></div>
+      <p class="kicker">Como o barema funciona</p>
+      <h2>Três critérios somando 1,0 ponto, com crédito pleno, parcial ou zero</h2>
+      <div class="grid-3">
+        <div class="box"><strong>Critérios</strong><p class="small">Cada critério corresponde a um elemento que o enunciado pede. A nota da questão é a soma dos três.</p></div>
+        <div class="box"><strong>Gradação</strong><p class="small">Em cada critério: crédito pleno se o elemento está completo; parcial se está incompleto ou só afirmado, sem explicação; zero se falta ou está errado.</p></div>
+        <div class="box alt"><strong>Observações</strong><p class="small">Cada questão tem observações próprias: erros que zeram um critério e casos que ficam no crédito parcial.</p></div>
+      </div>
+      <div class="notice">Avaliam-se <strong>raciocínio e exposição</strong>. Não se exige estrutura formal de resposta nem citação de dispositivo; citação correta não acrescenta ponto, e norma ou dado inventado zera o critério em que aparecer.</div>
+    </section>
+    <section class="slide banded" data-slide="55/87" data-alvo="20:28">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova A · Questão 11</span><span class="clock">alvo 20:28</span></div>
+      <p class="kicker">Prova A · Questão 11 · o enunciado</p>
+      <h2>Constituição rígida, topo do ordenamento e Kelsen</h2>
+      <p class="small">Quanto à alterabilidade, as Constituições se classificam em rígidas, semirrígidas e flexíveis. Explique o que caracteriza a Constituição rígida e a importância dessa característica para posicionar a Constituição no topo do ordenamento jurídico, considerando ainda nessa análise a teoria normativa de Kelsen.</p>
+      <p class="footer">1,0 ponto · três elementos pedidos, um por critério do barema.</p>
+    </section>
+    <section class="slide banded" data-slide="56/87" data-alvo="20:30">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova A · Questão 11</span><span class="clock">alvo 20:30</span></div>
+      <p class="kicker">Prova A · Questão 11 · o que a questão pede</p>
+      <h2>Três elementos, três critérios</h2>
+      <div class="grid-3"><div class="box compact"><strong>1</strong><p class="small">O que caracteriza a Constituição rígida.</p></div><div class="box compact"><strong>2</strong><p class="small">Por que a rigidez põe a Constituição no topo do ordenamento.</p></div><div class="box compact"><strong>3</strong><p class="small">Como a teoria normativa de Kelsen explica essa posição.</p></div></div>
+      <p class="footer">A resposta-modelo a seguir trata dos três, nessa ordem. Cada trecho vem marcado com o critério que atende.</p>
+    </section>
+    <section class="slide banded" data-slide="57/87" data-alvo="20:32">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova A · Questão 11</span><span class="clock">alvo 20:32</span></div>
+      <p class="kicker">Prova A · Questão 11 · resposta-modelo · trecho 1 de 3</p>
+      <h2>Critério 1 (0,3)</h2>
+      <div class="box"><p class="small">Rígida é a Constituição que só pode ser alterada por um procedimento mais difícil do que o exigido para as leis comuns — iniciativa restrita, quórum qualificado, mais de um turno de votação, às vezes limites materiais que nem a reforma pode ultrapassar. Distingue-se da flexível, que se altera pelo mesmo rito da lei, e da semirrígida, em que apenas parte do texto exige rito agravado (caso da Carta de 1824, art. 178). Rígida não é imutável: a rigidez não impede a mudança, torna-a mais difícil que a da lei.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Define a rigidez pelo procedimento agravado e a contrasta com a flexível. A semirrígida e o exemplo de 1824 enriquecem a resposta, mas não são exigidos.</div>
+    </section>
+    <section class="slide banded" data-slide="58/87" data-alvo="20:35">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova A · Questão 11</span><span class="clock">alvo 20:35</span></div>
+      <p class="kicker">Prova A · Questão 11 · resposta-modelo · trecho 2 de 3</p>
+      <h2>Critério 2 (0,4)</h2>
+      <div class="box"><p class="small">É a rigidez que sustenta a posição superior da Constituição. Se a lei comum pudesse alterá-la, a lei posterior prevaleceria sobre o texto constitucional, e não haveria diferença de hierarquia entre os dois: a Constituição seria só mais uma lei.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Explica a relação, e não apenas a afirma: sem rito agravado, a lei posterior alteraria a Constituição, e a diferença de hierarquia desapareceria.</div>
+    </section>
+    <section class="slide banded" data-slide="59/87" data-alvo="20:37">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova A · Questão 11</span><span class="clock">alvo 20:37</span></div>
+      <p class="kicker">Prova A · Questão 11 · resposta-modelo · trecho 3 de 3</p>
+      <h2>Critério 3 (0,3)</h2>
+      <div class="box"><p class="small">A teoria normativa de Kelsen explica essa arquitetura: o ordenamento é um sistema escalonado, em que cada norma retira seu fundamento de validade de uma norma superior, que regula como ela é produzida e limita o seu conteúdo; no topo do direito positivo está a Constituição. A lei que a contraria não encontra fundamento de validade. A rigidez é a garantia procedimental dessa posição: impede que o legislador ordinário alcance a norma que o fundamenta.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Traz o escalonamento e a ideia de fundamento de validade — não só a imagem da pirâmide — e liga a rigidez à proteção dessa posição.</div>
+    </section>
+    <section class="slide banded" data-slide="60/87" data-alvo="20:39">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova A · Questão 11</span><span class="clock">alvo 20:39</span></div>
+      <p class="kicker">Prova A · Questão 11 · barema</p>
+      <h2>Barema de correção — 1,0 ponto</h2>
+      <div class="table"><div class="head">Critério · peso</div><div class="head">Crédito pleno</div><div class="head">Crédito parcial</div><div><strong>1. O que é a Constituição rígida</strong><br>0,3 ponto</div><div>Define rigidez como alteração por procedimento mais difícil que o da lei, distinguindo-a da flexível (e, se possível, da semirrígida).</div><div>0,15 se define de modo vago ou sem contraste com a flexível.</div><div><strong>2. Rigidez e topo do ordenamento</strong><br>0,4 ponto</div><div>Explica que, sem rito agravado, a lei posterior alteraria a Constituição e desapareceria a diferença de hierarquia; a rigidez garante a posição superior.</div><div>0,2 se afirma a relação sem explicá-la.</div></div>
+    </section>
+    <section class="slide banded" data-slide="61/87" data-alvo="20:41">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova A · Questão 11</span><span class="clock">alvo 20:41</span></div>
+      <p class="kicker">Prova A · Questão 11 · barema (continuação)</p>
+      <h2>Barema de correção — 1,0 ponto</h2>
+      <div class="table"><div class="head">Critério · peso</div><div class="head">Crédito pleno</div><div class="head">Crédito parcial</div><div><strong>3. A teoria normativa de Kelsen</strong><br>0,3 ponto</div><div>Ordenamento escalonado; a Constituição como fundamento de validade das demais normas; lei contrária sem fundamento de validade.</div><div>0,15 se menciona Kelsen ou a “pirâmide” sem explicar o fundamento de validade.</div></div>
+    </section>
+    <section class="slide banded" data-slide="62/87" data-alvo="20:43">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova A · Questão 11</span><span class="clock">alvo 20:43</span></div>
+      <p class="kicker">Prova A · Questão 11 · como aplicar o barema</p>
+      <h2>Observações de correção</h2>
+      <div class="source-list"><div>Não se exige a noção de norma fundamental.</div><div>Confundir Constituição rígida com Constituição imutável não pontua o critério 1.</div><div>Reduzir Kelsen a uma “pirâmide” desenhada, sem a ideia de fundamento de validade, fica no crédito parcial do critério 3.</div><div>Não se exige estrutura formal de resposta nem citação de dispositivo; norma ou dado inventado zera o critério em que aparecer.</div></div>
+    </section>
+    <section class="slide banded" data-slide="63/87" data-alvo="20:46">
+      <div class="block-band"><span>Módulo 2B · Prova A · Questão 12</span><span class="clock">alvo 20:46</span></div>
+      <p class="kicker">Prova A · Questão 12 · o enunciado</p>
+      <h2>Emenda inconstitucional, jurisdição constitucional e neoconstitucionalismo</h2>
+      <p class="small">Na Constituição de 1988, a proposta de emenda “será discutida e votada em cada Casa do Congresso Nacional, em dois turnos, considerando-se aprovada se obtiver, em ambos, três quintos dos votos dos respectivos membros” (art. 60, § 2º), e não será objeto de deliberação a proposta “tendente a abolir” a forma federativa de Estado, o voto direto, secreto, universal e periódico, a separação dos Poderes e os direitos e garantias individuais (art. 60, § 4º). Explique por que uma emenda constitucional, mesmo aprovada pelo Congresso Nacional, pode ser declarada inconstitucional. Explique também a importância da jurisdição constitucional — o controle de constitucionalidade exercido por órgão distinto do legislador — para a efetividade da supremacia da Constituição, no cenário do neoconstitucionalismo, em que a Constituição passa a ser compreendida como norma jurídica dotada de força normativa, e não apenas como documento político.</p>
+      <p class="footer">1,0 ponto · três elementos pedidos, um por critério do barema.</p>
+    </section>
+    <section class="slide banded" data-slide="64/87" data-alvo="20:48">
+      <div class="block-band"><span>Módulo 2B · Prova A · Questão 12</span><span class="clock">alvo 20:48</span></div>
+      <p class="kicker">Prova A · Questão 12 · o que a questão pede</p>
+      <h2>Três elementos, três critérios</h2>
+      <div class="grid-3"><div class="box compact"><strong>1</strong><p class="small">Por que uma emenda aprovada pelo Congresso pode ser inconstitucional.</p></div><div class="box compact"><strong>2</strong><p class="small">Por que a jurisdição constitucional é necessária à efetividade da supremacia.</p></div><div class="box compact"><strong>3</strong><p class="small">O que muda no cenário do neoconstitucionalismo.</p></div></div>
+      <p class="footer">A resposta-modelo a seguir trata dos três, nessa ordem. Cada trecho vem marcado com o critério que atende.</p>
+    </section>
+    <section class="slide banded" data-slide="65/87" data-alvo="20:50">
+      <div class="block-band"><span>Módulo 2B · Prova A · Questão 12</span><span class="clock">alvo 20:50</span></div>
+      <p class="kicker">Prova A · Questão 12 · resposta-modelo · trecho 1 de 3</p>
+      <h2>Critério 1 (0,3)</h2>
+      <div class="box"><p class="small">A emenda é obra do poder constituinte derivado reformador, que a própria Constituição instituiu: é poder constituído, e não originário. Por isso só vale se observar o procedimento fixado no texto (dois turnos, três quintos dos membros de cada Casa) e os limites que a Constituição lhe impõe. Emenda aprovada fora do rito, ou tendente a abolir uma das matérias do § 4º — as chamadas cláusulas pétreas —, é inconstitucional: o poder de reformar a Constituição não inclui o poder de destruir a identidade da Constituição que o criou.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Explica por que os limites alcançam a emenda: ela é obra de poder instituído e limitado. Não basta repetir os limites transcritos no enunciado.</div>
+    </section>
+    <section class="slide banded" data-slide="66/87" data-alvo="20:52">
+      <div class="block-band"><span>Módulo 2B · Prova A · Questão 12</span><span class="clock">alvo 20:52</span></div>
+      <p class="kicker">Prova A · Questão 12 · resposta-modelo · trecho 2 de 3</p>
+      <h2>Critério 2 (0,4)</h2>
+      <div class="box"><p class="small">A supremacia da Constituição só é efetiva se houver quem a faça valer contra os atos dos poderes constituídos. Sem controle, quem faz a lei julgaria a validade da própria lei, e a superioridade proclamada no texto ficaria à mercê da maioria parlamentar do momento. A jurisdição constitucional — o controle de constitucionalidade exercido por órgão distinto do legislador; no Brasil, com o STF como guarda da Constituição — torna a hierarquia exigível: a norma incompatível, inclusive a emenda, pode ser afastada.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Mostra por que o controle é necessário: sem órgão distinto do legislador, a supremacia é só proclamada. Mencionar o STF sem essa explicação fica no crédito parcial.</div>
+    </section>
+    <section class="slide banded" data-slide="67/87" data-alvo="20:54">
+      <div class="block-band"><span>Módulo 2B · Prova A · Questão 12</span><span class="clock">alvo 20:54</span></div>
+      <p class="kicker">Prova A · Questão 12 · resposta-modelo · trecho 3 de 3</p>
+      <h2>Critério 3 (0,3)</h2>
+      <div class="box"><p class="small">No constitucionalismo do pós-guerra, a Constituição deixa de ser apenas documento político de organização do poder e passa a ser norma jurídica, com força normativa, aplicada pelos juízes. Nesse cenário, associado ao neoconstitucionalismo, a jurisdição constitucional ganha centralidade como instância que protege os direitos fundamentais e os limites do poder inclusive contra maiorias ocasionais. Não se trata de substituir a democracia pelos juízes, mas de garantir as regras e os direitos que tornam a democracia possível.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Relaciona força normativa e jurisdição constitucional, sem atribuir aos juízes soberania sobre a política.</div>
+    </section>
+    <section class="slide banded" data-slide="68/87" data-alvo="20:56">
+      <div class="block-band"><span>Módulo 2B · Prova A · Questão 12</span><span class="clock">alvo 20:56</span></div>
+      <p class="kicker">Prova A · Questão 12 · barema</p>
+      <h2>Barema de correção — 1,0 ponto</h2>
+      <div class="table"><div class="head">Critério · peso</div><div class="head">Crédito pleno</div><div class="head">Crédito parcial</div><div><strong>1. Por que a emenda pode ser inconstitucional</strong><br>0,3 ponto</div><div>A emenda é obra do poder derivado, instituído e limitado; vale só se respeitar o rito e os limites materiais transcritos no enunciado.</div><div>0,15 se menciona os limites materiais sem explicar por que limitam a emenda.</div><div><strong>2. Jurisdição constitucional e efetividade da supremacia</strong><br>0,4 ponto</div><div>Sem órgão distinto do legislador capaz de afastar a norma incompatível, a supremacia é só proclamada; o controle torna a hierarquia exigível, inclusive contra emendas.</div><div>0,2 se menciona o STF ou o controle sem explicar por que ele é necessário à supremacia.</div></div>
+    </section>
+    <section class="slide banded" data-slide="69/87" data-alvo="20:59">
+      <div class="block-band"><span>Módulo 2B · Prova A · Questão 12</span><span class="clock">alvo 20:59</span></div>
+      <p class="kicker">Prova A · Questão 12 · barema (continuação)</p>
+      <h2>Barema de correção — 1,0 ponto</h2>
+      <div class="table"><div class="head">Critério · peso</div><div class="head">Crédito pleno</div><div class="head">Crédito parcial</div><div><strong>3. Neoconstitucionalismo</strong><br>0,3 ponto</div><div>Constituição como norma jurídica dotada de força normativa, aplicada pelo Judiciário; proteção de direitos e dos limites do poder inclusive contra maiorias.</div><div>0,15 se repete o enunciado sem relacionar força normativa e jurisdição constitucional.</div></div>
+    </section>
+    <section class="slide banded" data-slide="70/87" data-alvo="21:01">
+      <div class="block-band"><span>Módulo 2B · Prova A · Questão 12</span><span class="clock">alvo 21:01</span></div>
+      <p class="kicker">Prova A · Questão 12 · como aplicar o barema</p>
+      <h2>Observações de correção</h2>
+      <div class="source-list"><div>Não se exige citar autores nem julgados.</div><div>Afirmar que emenda constitucional nunca pode ser declarada inconstitucional zera o critério 1.</div><div>Atribuir aos juízes soberania sobre a política, ou decisão segundo convicção própria de justiça, fica no crédito parcial do critério 3.</div><div>Não se exige estrutura formal de resposta nem citação de dispositivo; norma ou dado inventado zera o critério em que aparecer.</div></div>
+    </section>
+    <section class="slide banded" data-slide="71/87" data-alvo="21:03">
+      <div class="block-band"><span>Módulos 1 e 2A · Prova B · Questão 11</span><span class="clock">alvo 21:03</span></div>
+      <p class="kicker">Prova B · Questão 11 · o enunciado</p>
+      <h2>Os dois eixos da noção moderna de Constituição</h2>
+      <p class="small">Segundo o art. 16 da Declaração dos Direitos do Homem e do Cidadão, de 1789, “toda sociedade em que não esteja assegurada a garantia dos direitos nem determinada a separação dos poderes não tem Constituição”. Explique quais são os dois eixos que esse texto identifica como constitutivos da noção moderna de Constituição e por que um depende do outro.</p>
+      <p class="footer">1,0 ponto · três elementos pedidos, um por critério do barema.</p>
+    </section>
+    <section class="slide banded" data-slide="72/87" data-alvo="21:05">
+      <div class="block-band"><span>Módulos 1 e 2A · Prova B · Questão 11</span><span class="clock">alvo 21:05</span></div>
+      <p class="kicker">Prova B · Questão 11 · o que a questão pede</p>
+      <h2>Três elementos, três critérios</h2>
+      <div class="grid-3"><div class="box compact"><strong>1</strong><p class="small">Quais são os dois eixos que o art. 16 identifica.</p></div><div class="box compact"><strong>2</strong><p class="small">Por que um eixo depende do outro.</p></div><div class="box compact"><strong>3</strong><p class="small">O que isso diz da noção moderna de Constituição.</p></div></div>
+      <p class="footer">A resposta-modelo a seguir trata dos três, nessa ordem. Cada trecho vem marcado com o critério que atende.</p>
+    </section>
+    <section class="slide banded" data-slide="73/87" data-alvo="21:07">
+      <div class="block-band"><span>Módulos 1 e 2A · Prova B · Questão 11</span><span class="clock">alvo 21:07</span></div>
+      <p class="kicker">Prova B · Questão 11 · resposta-modelo · trecho 1 de 3</p>
+      <h2>Critério 1 (0,3)</h2>
+      <div class="box"><p class="small">O art. 16 identifica dois eixos. O primeiro é a garantia dos direitos: a Constituição moderna reconhece direitos fundamentais aos indivíduos e os protege contra o próprio Estado. O segundo é a organização do poder segundo a separação dos poderes: o Estado é estruturado de modo que as funções de legislar, executar e julgar não se concentrem nas mesmas mãos, com controles recíprocos que limitam cada uma delas.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Identifica e explica os dois eixos. A separação dos poderes aparece com a sua função de limitar o poder, e não como simples divisão de tarefas.</div>
+    </section>
+    <section class="slide banded" data-slide="74/87" data-alvo="21:10">
+      <div class="block-band"><span>Módulos 1 e 2A · Prova B · Questão 11</span><span class="clock">alvo 21:10</span></div>
+      <p class="kicker">Prova B · Questão 11 · resposta-modelo · trecho 2 de 3</p>
+      <h2>Critério 2 (0,4)</h2>
+      <div class="box"><p class="small">Os dois eixos dependem um do outro. Direitos só estão garantidos se o poder estiver organizado e limitado: onde quem legisla também executa e julga, nada impede que a mesma autoridade suprima os direitos que declarou. E a organização do poder só tem sentido constitucional porque existe para garantir direitos: uma estrutura de poder sem direitos a proteger é mera organização da dominação, não Constituição no sentido moderno.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Explica a dependência nos dois sentidos: sem limitação do poder, os direitos ficam à mercê de quem concentra as funções; sem direitos, a organização perde o sentido.</div>
+    </section>
+    <section class="slide banded" data-slide="75/87" data-alvo="21:12">
+      <div class="block-band"><span>Módulos 1 e 2A · Prova B · Questão 11</span><span class="clock">alvo 21:12</span></div>
+      <p class="kicker">Prova B · Questão 11 · resposta-modelo · trecho 3 de 3</p>
+      <h2>Critério 3 (0,3)</h2>
+      <div class="box"><p class="small">É por isso que o constitucionalismo se define como a limitação do poder em favor dos direitos — e por isso uma Constituição escrita que não limita o poder nem garante direitos não realiza o constitucionalismo.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Liga os eixos à noção moderna de Constituição e mostra que o texto escrito, sem eles, não basta.</div>
+    </section>
+    <section class="slide banded" data-slide="76/87" data-alvo="21:14">
+      <div class="block-band"><span>Módulos 1 e 2A · Prova B · Questão 11</span><span class="clock">alvo 21:14</span></div>
+      <p class="kicker">Prova B · Questão 11 · barema</p>
+      <h2>Barema de correção — 1,0 ponto</h2>
+      <div class="table"><div class="head">Critério · peso</div><div class="head">Crédito pleno</div><div class="head">Crédito parcial</div><div><strong>1. Os dois eixos</strong><br>0,3 ponto</div><div>Garantia de direitos fundamentais; organização do Estado com separação dos poderes e limitação do poder.</div><div>0,15 se identifica só um eixo, ou os dois sem explicá-los.</div><div><strong>2. A dependência recíproca</strong><br>0,4 ponto</div><div>Sem limitação do poder, os direitos ficam à mercê de quem concentra as funções; sem direitos a garantir, a organização do poder perde o sentido constitucional.</div><div>0,2 se explica a dependência em um só sentido.</div></div>
+    </section>
+    <section class="slide banded" data-slide="77/87" data-alvo="21:16">
+      <div class="block-band"><span>Módulos 1 e 2A · Prova B · Questão 11</span><span class="clock">alvo 21:16</span></div>
+      <p class="kicker">Prova B · Questão 11 · barema (continuação)</p>
+      <h2>Barema de correção — 1,0 ponto</h2>
+      <div class="table"><div class="head">Critério · peso</div><div class="head">Crédito pleno</div><div class="head">Crédito parcial</div><div><strong>3. A noção moderna de Constituição</strong><br>0,3 ponto</div><div>Relaciona os eixos ao constitucionalismo como limitação do poder; ou mostra que texto escrito sem esses eixos não basta.</div><div>0,15 se faz menção genérica a “limitar o poder”.</div></div>
+    </section>
+    <section class="slide banded" data-slide="78/87" data-alvo="21:18">
+      <div class="block-band"><span>Módulos 1 e 2A · Prova B · Questão 11</span><span class="clock">alvo 21:18</span></div>
+      <p class="kicker">Prova B · Questão 11 · como aplicar o barema</p>
+      <h2>Observações de correção</h2>
+      <div class="source-list"><div>Aceita-se terminologia própria (dimensões material e orgânica; limites ao poder; conceito ideal de Constituição).</div><div>Não se exige citar autores nem o contexto histórico da Revolução Francesa.</div><div>Tratar a separação dos poderes apenas como “divisão de tarefas”, sem a função de limitar o poder, fica no crédito parcial do critério 1.</div><div>Não se exige estrutura formal de resposta nem citação de dispositivo; norma ou dado inventado zera o critério em que aparecer.</div></div>
+    </section>
+    <section class="slide banded" data-slide="79/87" data-alvo="21:21">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova B · Questão 12</span><span class="clock">alvo 21:21</span></div>
+      <p class="kicker">Prova B · Questão 12 · o enunciado</p>
+      <h2>Constituição escrita, não escrita e alteração pelo rito das leis</h2>
+      <p class="small">Quanto à forma, as Constituições se classificam em escritas e não escritas. Com base na noção moderna de Constituição, explique o que diferencia uma da outra e o que permite reconhecer como Constituição um conjunto de normas que não está reunido em um documento único. Explique também o que significa, para a hierarquia das normas e para a proteção dos direitos, uma Constituição poder ser alterada pelo mesmo procedimento das leis comuns.</p>
+      <p class="footer">1,0 ponto · três elementos pedidos, um por critério do barema.</p>
+    </section>
+    <section class="slide banded" data-slide="80/87" data-alvo="21:23">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova B · Questão 12</span><span class="clock">alvo 21:23</span></div>
+      <p class="kicker">Prova B · Questão 12 · o que a questão pede</p>
+      <h2>Três elementos, três critérios</h2>
+      <div class="grid-3"><div class="box compact"><strong>1</strong><p class="small">O que diferencia a Constituição escrita da não escrita.</p></div><div class="box compact"><strong>2</strong><p class="small">O que permite reconhecer uma Constituição sem documento único.</p></div><div class="box compact"><strong>3</strong><p class="small">O que significa a Constituição poder ser alterada como lei comum.</p></div></div>
+      <p class="footer">A resposta-modelo a seguir trata dos três, nessa ordem. Cada trecho vem marcado com o critério que atende.</p>
+    </section>
+    <section class="slide banded" data-slide="81/87" data-alvo="21:25">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova B · Questão 12</span><span class="clock">alvo 21:25</span></div>
+      <p class="kicker">Prova B · Questão 12 · resposta-modelo · trecho 1 de 3</p>
+      <h2>Critério 1 (0,3)</h2>
+      <div class="box"><p class="small">Constituição escrita é aquela cujas normas estão reunidas em um documento único e solene, produzido de uma vez e identificável por uma data. Não escrita — ou costumeira — é aquela cujas normas estão dispersas em cartas de direitos, leis, decisões judiciais, costumes e convenções políticas, formadas ao longo do tempo. Não escrita não significa sem textos escritos: muitas de suas normas são leis; o que falta é o documento único que as reúna e as coloque acima das demais.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Diferencia as duas pelo documento único, e não pela existência ou falta de texto escrito.</div>
+    </section>
+    <section class="slide banded" data-slide="82/87" data-alvo="21:27">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova B · Questão 12</span><span class="clock">alvo 21:27</span></div>
+      <p class="kicker">Prova B · Questão 12 · resposta-modelo · trecho 2 de 3</p>
+      <h2>Critério 2 (0,4)</h2>
+      <div class="box"><p class="small">O que permite reconhecer uma Constituição sem documento único é o seu conteúdo, e não a sua forma: as normas que organizam e limitam o poder e garantem direitos — os dois eixos da noção moderna — são materialmente constitucionais onde quer que estejam. A Constituição não se confunde com o documento que eventualmente a contém.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Usa o critério material: são constitucionais as normas que organizam e limitam o poder e garantem direitos. O exemplo do Reino Unido é valorizado, não exigido.</div>
+    </section>
+    <section class="slide banded" data-slide="83/87" data-alvo="21:29">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova B · Questão 12</span><span class="clock">alvo 21:29</span></div>
+      <p class="kicker">Prova B · Questão 12 · resposta-modelo · trecho 3 de 3</p>
+      <h2>Critério 3 (0,3)</h2>
+      <div class="box"><p class="small">Quando a Constituição pode ser alterada pelo mesmo procedimento das leis comuns (Constituição flexível), não há hierarquia formal entre ela e a lei: a lei posterior modifica a norma constitucional anterior. Não há, assim, norma superior a invocar contra o legislador, nem parâmetro para controle de constitucionalidade. A proteção dos direitos passa a depender da maioria parlamentar do momento e da força das convenções e da cultura política, e não de uma norma superior exigível.</p></div>
+      <div class="notice"><strong>Por que atende:</strong> Aponta as três consequências: sem hierarquia formal, sem parâmetro de controle, direitos dependentes da maioria do momento. O termo “flexível” não é exigido.</div>
+    </section>
+    <section class="slide banded" data-slide="84/87" data-alvo="21:31">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova B · Questão 12</span><span class="clock">alvo 21:31</span></div>
+      <p class="kicker">Prova B · Questão 12 · barema</p>
+      <h2>Barema de correção — 1,0 ponto</h2>
+      <div class="table"><div class="head">Critério · peso</div><div class="head">Crédito pleno</div><div class="head">Crédito parcial</div><div><strong>1. Escrita e não escrita</strong><br>0,3 ponto</div><div>Documento único e solene, de um lado; normas dispersas em leis, costumes, convenções e decisões, de outro.</div><div>0,15 se a diferença é apresentada como “ter ou não ter texto escrito”.</div><div><strong>2. O que permite reconhecer a não escrita</strong><br>0,4 ponto</div><div>Critério de conteúdo (material): normas que organizam e limitam o poder e garantem direitos são constitucionais onde quer que estejam.</div><div>0,2 se afirma que existe Constituição sem explicar pelo que ela se reconhece.</div></div>
+    </section>
+    <section class="slide banded" data-slide="85/87" data-alvo="21:34">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova B · Questão 12</span><span class="clock">alvo 21:34</span></div>
+      <p class="kicker">Prova B · Questão 12 · barema (continuação)</p>
+      <h2>Barema de correção — 1,0 ponto</h2>
+      <div class="table"><div class="head">Critério · peso</div><div class="head">Crédito pleno</div><div class="head">Crédito parcial</div><div><strong>3. Alteração pelo rito das leis</strong><br>0,3 ponto</div><div>Sem hierarquia formal entre Constituição e lei; sem parâmetro de controle; direitos dependentes da maioria do momento.</div><div>0,15 se aponta só uma dessas consequências.</div></div>
+    </section>
+    <section class="slide banded" data-slide="86/87" data-alvo="21:36">
+      <div class="block-band"><span>Módulos 2A e 2B · Prova B · Questão 12</span><span class="clock">alvo 21:36</span></div>
+      <p class="kicker">Prova B · Questão 12 · como aplicar o barema</p>
+      <h2>Observações de correção</h2>
+      <div class="source-list"><div>O exemplo do Reino Unido é valorizado, mas não exigido.</div><div>Afirmar que um país sem documento único não tem Constituição zera o critério 2.</div><div>Não se exige o termo “flexível”, desde que a ideia esteja correta.</div><div>Não se exige estrutura formal de resposta nem citação de dispositivo; norma ou dado inventado zera o critério em que aparecer.</div></div>
+    </section>
+    <section class="slide banded" data-slide="87/87" data-alvo="21:38">
+      <div class="block-band"><span>Correção · gabarito</span><span class="clock">alvo 21:38</span></div>
+      <p class="kicker">Gabarito das objetivas</p>
+      <h2>As dez objetivas, nas duas versões</h2>
+      <div class="grid-2"><div class="schedule thin"><div class="head">Questão</div><div class="head">Prova A</div><div class="head">Prova B</div><div>01</div><div class="gabarito">B</div><div class="gabarito">D</div><div>02</div><div class="gabarito">D</div><div class="gabarito">C</div><div>03</div><div class="gabarito">E</div><div class="gabarito">D</div><div>04</div><div class="gabarito">B</div><div class="gabarito">A</div><div>05</div><div class="gabarito">A</div><div class="gabarito">E</div></div><div class="schedule thin"><div class="head">Questão</div><div class="head">Prova A</div><div class="head">Prova B</div><div>06</div><div class="gabarito">C</div><div class="gabarito">A</div><div>07</div><div class="gabarito">E</div><div class="gabarito">C</div><div>08</div><div class="gabarito">C</div><div class="gabarito">B</div><div>09</div><div class="gabarito">A</div><div class="gabarito">E</div><div>10</div><div class="gabarito">D</div><div class="gabarito">B</div></div></div>
+      <p class="footer">As letras aparecem com a tecla G. Cada objetiva vale 0,4 ponto.</p>
+    </section>
+
+    <section class="slide banded" data-slide="Transparência" data-alvo="21:40">
+      <div class="block-band"><span>Transparência</span><span class="clock">alvo 21:40</span></div>
+      <p class="kicker">Transparência</p>
+      <h2>Declaração de uso de IA generativa</h2>
+      <p class="declaracao-iag">Este deck, as questões da prova e as respostas-modelo foram elaborados com apoio de Inteligência Artificial Generativa (Claude, da Anthropic), sob direção docente, observadas as diretrizes da Portaria CNPq nº 2.664/2026. O conteúdo apoia-se nos Módulos 1, 2A e 2B publicados na página da disciplina e na bibliografia neles indicada.</p>
+      <p class="declaracao-iag">A seleção do conteúdo, a conferência das fontes, a correção das provas e a responsabilidade final são do docente.</p>
+    </section>
+
+    </main>
+
+  <div class="hud" id="hud" aria-hidden="true">
+    <div class="hud-item"><span class="hud-label">Lâmina</span><span class="hud-value" id="hud-slide">1/88</span></div>
+    <div class="hud-item"><span class="hud-label">Alvo</span><span class="hud-value" id="hud-alvo">18:30</span></div>
+    <div class="hud-item"><span class="hud-label">Agora</span><span class="hud-value" id="hud-agora">--:--</span></div>
+    <div class="hud-item"><span class="hud-label">Ritmo</span><span class="hud-value" id="hud-delta">-</span></div>
+    <p class="hud-help">setas navegam · F tela cheia · G gabarito · O oculta opcionais · M limpa tudo · H oculta este painel</p>
+  </div>
+
+  <script>
+    (function () {
+      var slides = [].slice.call(document.querySelectorAll('.slide'));
+      var hudSlide = document.getElementById('hud-slide');
+      var hudAlvo = document.getElementById('hud-alvo');
+      var hudAgora = document.getElementById('hud-agora');
+      var hudDelta = document.getElementById('hud-delta');
+      var atual = 0;
+
+      function visiveis() { return slides.filter(function (slide) { return slide.offsetParent !== null; }); }
+      function minutos(valor) { var partes = (valor || '').split(':'); return partes.length === 2 ? (+partes[0] * 60) + (+partes[1]) : null; }
+      function atualizarHud(slide, indice, total) {
+        if (!slide) return;
+        var alvo = slide.getAttribute('data-alvo') || '--:--';
+        var agora = new Date();
+        var diferenca = minutos(alvo) === null ? null : (agora.getHours() * 60 + agora.getMinutes()) - minutos(alvo);
+        hudSlide.textContent = (indice + 1) + '/' + total;
+        hudAlvo.textContent = alvo;
+        hudAgora.textContent = ('0' + agora.getHours()).slice(-2) + ':' + ('0' + agora.getMinutes()).slice(-2);
+        hudDelta.className = 'hud-value';
+        if (diferenca === null) hudDelta.textContent = '-';
+        else if (diferenca > 2) { hudDelta.textContent = '+' + diferenca + ' min'; hudDelta.classList.add('late'); }
+        else if (diferenca < -2) { hudDelta.textContent = diferenca + ' min'; hudDelta.classList.add('ahead'); }
+        else hudDelta.textContent = 'em dia';
+      }
+      function irPara(indice) {
+        var lista = visiveis();
+        if (!lista.length) return;
+        atual = Math.max(0, Math.min(lista.length - 1, indice));
+        lista[atual].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        atualizarHud(lista[atual], atual, lista.length);
+      }
+      function slideNaTela() {
+        var lista = visiveis(); var melhor = lista[0]; var distancia = Infinity;
+        lista.forEach(function (slide) { var valor = Math.abs(slide.getBoundingClientRect().top); if (valor < distancia) { distancia = valor; melhor = slide; } });
+        return melhor;
+      }
+      document.addEventListener('keydown', function (evento) {
+        var tecla = evento.key;
+        if (tecla === 'ArrowRight' || tecla === 'ArrowDown' || tecla === 'PageDown' || tecla === ' ') { evento.preventDefault(); irPara(atual + 1); }
+        else if (tecla === 'ArrowLeft' || tecla === 'ArrowUp' || tecla === 'PageUp') { evento.preventDefault(); irPara(atual - 1); }
+        else if (tecla === 'Home') { evento.preventDefault(); irPara(0); }
+        else if (tecla === 'End') { evento.preventDefault(); irPara(visiveis().length - 1); }
+        else if (tecla === 'f' || tecla === 'F') { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen && document.documentElement.requestFullscreen(); }
+        else if (tecla === 'g' || tecla === 'G') document.body.classList.toggle('mostrar-gabarito');
+        else if (tecla === 'n' || tecla === 'N') document.body.classList.toggle('mostrar-notas');
+        else if (tecla === 'h' || tecla === 'H') document.body.classList.toggle('hud-off');
+        else if (tecla === 'o' || tecla === 'O') { var referencia = slideNaTela(); document.body.classList.toggle('hide-optional'); var lista = visiveis(); var novoIndice = lista.indexOf(referencia); irPara(novoIndice < 0 ? Math.min(atual, lista.length - 1) : novoIndice); }
+        else if (tecla === 'm' || tecla === 'M') { document.body.classList.toggle('sem-marcas'); document.body.classList.remove('mostrar-gabarito', 'mostrar-notas'); }
+      });
+      if ('IntersectionObserver' in window) {
+        var observador = new IntersectionObserver(function (entradas) {
+          entradas.forEach(function (entrada) { if (entrada.isIntersecting) { var lista = visiveis(); var indice = lista.indexOf(entrada.target); if (indice >= 0) { atual = indice; atualizarHud(entrada.target, indice, lista.length); } } });
+        }, { threshold: .55 });
+        slides.forEach(function (slide) { observador.observe(slide); });
+      }
+      setInterval(function () { var lista = visiveis(); atualizarHud(lista[Math.min(atual, lista.length - 1)], Math.min(atual, lista.length - 1), lista.length); }, 20000);
+      irPara(0);
+    }());
+  </script>
+</body>
+</html>
