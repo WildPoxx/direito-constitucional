@@ -77,8 +77,8 @@
       const line = lines[i];
       if (!line.trim()) { i++; continue; }
       if (/^<div class="module-quiz-slot"/.test(line)) { result.push(line); i++; continue; }
-      if (/^#{1,3} /.test(line)) {
-        const [, hashes, title] = line.match(/^(#{1,3})\s+(.+)$/);
+      if (/^#{1,4} /.test(line)) {
+        const [, hashes, title] = line.match(/^(#{1,4})\s+(.+)$/);
         const level = hashes.length;
         result.push(`<h${level}${level === 2 ? ` id="${slug(title)}"` : ''}>${inline(title)}</h${level}>`);
         i++; continue;
@@ -104,7 +104,7 @@
         result.push(`<ol>${items.join('')}</ol>`); continue;
       }
       const paragraph = [line]; i++;
-      while (i < lines.length && lines[i].trim() && !/^#{1,3} |^\||^> |^[-*] |^\d+\. /.test(lines[i])) { paragraph.push(lines[i]); i++; }
+      while (i < lines.length && lines[i].trim() && !/^#{1,4} |^\||^> |^[-*] |^\d+\. /.test(lines[i])) { paragraph.push(lines[i]); i++; }
       result.push(`<p>${inline(paragraph.join(' ')).replace(/  /g, '<br>')}</p>`);
     }
     return result.join('\n');
