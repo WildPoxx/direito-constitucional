@@ -6,6 +6,7 @@ unidade: I Unidade
 modulo: 5
 versao: v1 - o processo legislativo (arts. 59 a 69)
 status: aguardando-revisao-docente
+atualizacao: 2026-10-22 - secao 5.1 (emenda constitucional) ampliada para a aula de 23/10; 2026-10-23 - campos do § 4º e principios sensiveis
 data: 2026-09-18
 fonte-normativa: CF/88, Título IV, Capítulo I, Seção VIII, arts. 59 a 69; correlatos, arts. 47, 48, 49, 51, 52, 57, 84, VIII e XXVI, 167, § 3º
 tags:
@@ -560,27 +561,112 @@ O bloco anterior descreveu o caminho da lei ordinária, que é o modelo. Este bl
 
 ### 5.1. Emenda Constitucional
 
-É o produto do **poder constituinte derivado reformador**. E, ao contrário do originário, esse poder é **condicionado**: submete-se a limitações expressas — formais, circunstanciais e materiais — e implícitas.
+A emenda é a única espécie normativa que produz norma de **estatura constitucional**. É o produto do **poder constituinte derivado reformador**: o poder de alterar a Constituição nos termos que ela própria estabelece. Ao contrário do poder originário, ele é **jurídico, condicionado e limitado**. Não cria uma ordem nova; altera a existente, dentro do caminho e das fronteiras que ela fixou. É isso que faz da Constituição de 1988 uma Constituição **rígida**: mudá-la exige mais do que mudar uma lei.
 
-**Limitações formais:**
+A doutrina distingue três manifestações do poder derivado. O **reformador** atua por emenda (art. 60). O **decorrente** é o dos Estados-membros, que se auto-organizam por suas Constituições (art. 25). O **revisor** foi previsto uma única vez, no art. 3º do ADCT: cinco anos depois da promulgação, em sessão unicameral e por maioria absoluta. Dele resultaram as seis emendas constitucionais de revisão, de 1994, e ele não se repete.
+
+**O mapa das limitações.** O poder reformador encontra quatro ordens de limites:
+
+| Limitação | Onde está | O que protege |
+|---|---|---|
+| **Formal** | art. 60, I a III, e §§ 2º, 3º e 5º | O caminho: quem propõe, quantos turnos, que quórum, quem promulga, quando se pode repropor |
+| **Circunstancial** | art. 60, § 1º | O momento: não se emenda a Constituição sob crise |
+| **Material** | art. 60, § 4º | O conteúdo: as cláusulas pétreas |
+| **Implícita** | construção doutrinária | O próprio sistema de reforma e a titularidade do poder constituinte |
+
+#### Limitações formais
 
 | Elemento | Regra |
 |---|---|
-| **Iniciativa** | 1/3, no mínimo, dos membros da Câmara **ou** do Senado; Presidente da República; **mais da metade das Assembleias Legislativas**, manifestando-se cada uma pela maioria relativa de seus membros |
-| **Quórum** | **3/5** dos votos dos respectivos membros, em **cada Casa**, em **dois turnos** |
+| **Iniciativa** | 1/3, no mínimo, dos membros da Câmara (171 Deputados) **ou** do Senado (27 Senadores); Presidente da República; **mais da metade das Assembleias Legislativas**, manifestando-se cada uma pela maioria relativa de seus membros |
+| **Quórum e turnos** | **3/5** dos votos dos respectivos membros — 308 Deputados e 49 Senadores —, em **cada Casa**, em **dois turnos** |
 | **Sanção e veto** | **Não há.** Aprovada, a PEC segue direto à promulgação |
 | **Promulgação** | Pelas **Mesas da Câmara e do Senado**, com o respectivo número de ordem |
-| **Irrepetibilidade** | Matéria de PEC rejeitada ou havida por prejudicada **não pode** ser objeto de nova apresentação na **mesma sessão legislativa** — regra mais rígida que a das leis, que admitem repropositura por maioria absoluta |
+| **Irrepetibilidade** | Matéria de PEC rejeitada ou havida por prejudicada **não pode** ser objeto de nova proposta na **mesma sessão legislativa** |
 
-Cabe emenda parlamentar a uma PEC, desde que subscrita por no mínimo um terço dos parlamentares e respeitadas as vedações. E, se uma Casa modifica o texto aprovado pela outra, a matéria **volta** à Casa iniciadora — daí a técnica da **PEC paralela**, pela qual se promulga a parte não modificada e a parte alterada retorna como se fosse nova proposta.
+Três observações decidem a maior parte das questões.
 
-**Limitações circunstanciais** — a Constituição **não pode ser emendada** na vigência de:
+**O rol de legitimados é taxativo.** O Supremo Tribunal Federal, os Tribunais Superiores e o Procurador-Geral da República têm iniciativa de certas leis, mas **não** de emenda. O texto federal também não prevê iniciativa popular de PEC; parte da doutrina a admite por interpretação sistemática, mas a regra escrita é a do art. 60, I a III.
+
+**O texto tem de ser o mesmo nas duas Casas.** Se uma Casa altera substancialmente o que a outra aprovou, a matéria **volta** à Casa iniciadora. Daí a técnica da **PEC paralela**: promulga-se a parte aprovada por ambas e a parte alterada retorna como nova proposta. O Supremo já suspendeu dispositivo de emenda promulgado sem a aprovação exigida pelo rito (ADI 2.135-MC). Cabe emenda parlamentar a uma PEC, desde que subscrita, no mínimo, por um terço dos membros da Casa.
+
+**A irrepetibilidade da PEC é absoluta.** A sessão legislativa corresponde ao ano — de 2 de fevereiro a 17 de julho e de 1º de agosto a 22 de dezembro (art. 57) —, e o recesso de julho não abre nova sessão. A regra é mais rígida que a das leis: projeto de lei rejeitado pode voltar na mesma sessão se assim propuser a maioria absoluta de qualquer das Casas (art. 67). Para a PEC, nem isso.
+
+Na prática, o caminho regimental é este: na Câmara, a PEC passa pela Comissão de Constituição e Justiça, que examina a **admissibilidade**, depois por uma **comissão especial**, que examina o mérito, e vai ao Plenário em dois turnos; no Senado, passa pela CCJ e vai ao Plenário, também em dois turnos. Os regimentos exigem um intervalo entre os turnos.
+
+#### Limitações circunstanciais
+
+A Constituição **não pode ser emendada** na vigência de:
 
 - intervenção federal;
 - estado de defesa;
 - estado de sítio.
 
-**Limitações materiais** são as cláusulas pétreas, estudadas em Teoria da Constituição: forma federativa de Estado, voto direto, secreto, universal e periódico, separação dos Poderes e direitos e garantias individuais.
+A razão é a mesma nos três casos: reformar a Constituição exige normalidade institucional e liberdade de deliberação. A limitação vale para todo o país, **ainda que a crise seja localizada** — uma intervenção em um único Estado, ou um estado de defesa restrito a locais determinados, basta para impedir que se vote e se promulgue a emenda.
+
+#### Limitações materiais: as cláusulas pétreas
+
+Não será objeto de deliberação a proposta de emenda **tendente a abolir** (art. 60, § 4º):
+
+| Inciso | Cláusula pétrea |
+|---|---|
+| I | a forma federativa de Estado |
+| II | o voto direto, secreto, universal e periódico |
+| III | a separação dos Poderes |
+| IV | os direitos e garantias individuais |
+
+Duas leituras do Supremo dão a medida dessa proteção.
+
+**"Tendente a abolir" não significa intocável.** O que se protege é o **núcleo essencial** de cada princípio, não a redação literal dos dispositivos: uma emenda pode alterar o regime de um tema protegido desde que não o esvazie (ADI 2.024).
+
+**Direitos e garantias individuais não estão só no art. 5º.** Na ADI 939 (1993), o Supremo declarou inconstitucional, em parte, a Emenda Constitucional nº 3/1993, que criou o IPMF, porque ela afastava a **anterioridade tributária** — garantia individual do contribuinte situada fora do art. 5º. Foi a primeira vez que uma emenda aprovada pelo rito do art. 60 foi declarada inconstitucional.
+
+E o que **não** é cláusula pétrea também cai em prova. A **obrigatoriedade** do voto não está no § 4º, II, que protege o voto direto, secreto, universal e periódico: pode ser alterada por emenda. A **forma republicana** e o **sistema presidencialista** não constam do § 4º; o plebiscito de 1993 os manteve, e a doutrina diverge sobre se seriam limites implícitos.
+
+#### Os campos do § 4º, um a um
+
+O teste é sempre o mesmo: a emenda **esvazia o núcleo** do princípio protegido, ou apenas reorganiza o seu regime?
+
+| Campo | O que se protege | Tenderia a abolir | Não basta para abolir |
+|---|---|---|---|
+| **I · Federação** | Autonomia de Estados, DF e Municípios (auto-organização, autogoverno, autoadministração); repartição de competências e receitas; indissolubilidade do vínculo (art. 1º) | Permitir a secessão; extinguir os Municípios como entes federados; concentrar na União a arrecadação a ponto de deixar os entes sem receita própria | Transferir uma competência pontual ou ajustar a partilha de um tributo, sem esvaziar a autonomia |
+| **II · Voto** | Voto direto, secreto, universal e periódico — e só esses quatro atributos | Eleição indireta para Presidente fora do art. 81, § 1º; voto aberto; exigir renda ou escolaridade para votar; suprimir eleições ou prorrogar mandatos indefinidamente | Voto facultativo; nova idade mínima para concorrer; nova duração de mandatos futuros, sem eternizá-los |
+| **III · Separação dos Poderes** | Independência e harmonia (art. 2º); funções típicas de cada Poder; garantias da magistratura (art. 95) | Permitir ao Executivo dissolver o Congresso; submeter decisões judiciais ao Executivo; suprimir a vitaliciedade ou a irredutibilidade dos juízes | Redesenhar órgãos e controles sem subordinar um Poder a outro |
+| **IV · Direitos e garantias individuais (art. 5º)** | Liberdades, devido processo legal, remédios constitucionais | Pena de morte fora da guerra declarada (art. 5º, XLVII, "a"); supressão do habeas corpus; lei penal retroativa em prejuízo do réu | Regular o exercício de um direito sem atingir seu núcleo (ADI 2.024) |
+| **V · Direitos individuais fora do art. 5º** | Garantias individuais espalhadas pelo texto | Afastar a anterioridade tributária (ADI 939) ou aplicar mudança eleitoral à eleição que ocorra em até um ano (ADI 3.685) | — |
+
+Três decisões ajudam a calibrar. Na **ADI 939** (1993), além da anterioridade, a **imunidade recíproca** (art. 150, VI, "a") foi tratada como garantia da Federação. Na **ADI 3.367** (2005), o Supremo manteve o **Conselho Nacional de Justiça**, criado pela EC nº 45/2004: um órgão de controle administrativo do Judiciário, composto em maioria por membros do próprio Judiciário, não fere a separação dos Poderes. Na **ADI 3.685** (2006), a **anterioridade eleitoral** do art. 16 foi tratada como garantia individual do cidadão-eleitor, e a EC nº 52/2006 não pôde valer para a eleição daquele ano.
+
+Há **zonas de debate**: se os direitos sociais e a maioridade penal (art. 228) são cláusulas pétreas, a doutrina diverge.
+
+#### Para não confundir: princípios constitucionais sensíveis
+
+Os **princípios sensíveis** do art. 34, VII, não são uma segunda lista de cláusulas pétreas. Têm outra função: se um **Estado** os viola, cabe **intervenção federal**, mediante representação do Procurador-Geral da República provida pelo STF (art. 36, III). A cláusula pétrea limita o **poder reformador**; o princípio sensível limita os **Estados-membros**.
+
+| Princípio sensível (art. 34, VII) | Campo do § 4º com que dialoga |
+|---|---|
+| a) forma republicana, sistema representativo e regime democrático | II · Voto (a forma republicana é sensível, mas não é cláusula pétrea expressa) |
+| b) direitos da pessoa humana | IV e V · Direitos e garantias individuais |
+| c) autonomia municipal | I · Federação |
+| d) prestação de contas da administração pública, direta e indireta | III · Controle entre os Poderes (arts. 70 a 75) |
+| e) aplicação do mínimo exigido da receita em saúde e educação | Dever financeiro dos entes; sem campo correspondente |
+
+A ponte entre os dois institutos está no § 1º do art. 60: decretada a intervenção federal, inclusive por violação de princípio sensível, **nenhuma emenda pode ser votada**, qualquer que seja o seu conteúdo.
+
+#### Limitações implícitas
+
+A doutrina majoritária reconhece limites que o texto não escreve, mas que decorrem da lógica do sistema: não se pode, por emenda, alterar o **titular** do poder constituinte nem **suprimir ou flexibilizar o próprio art. 60** — a chamada vedação da dupla revisão. Se o reformador pudesse mudar as regras da reforma, primeiro abolindo as cláusulas pétreas e depois o que elas protegiam, os limites não valeriam nada.
+
+#### O controle da emenda
+
+A emenda pode ser controlada em dois momentos.
+
+**Preventivo, durante a tramitação.** O Supremo admite **mandado de segurança impetrado por parlamentar** contra a tramitação de PEC tendente a abolir cláusula pétrea ou que desrespeite o procedimento constitucional: o parlamentar tem direito a não participar de deliberação vedada pela Constituição (MS 20.257, 1980; reafirmado no MS 32.033, 2013). É controle excepcional, restrito a esses vícios.
+
+**Repressivo, depois da promulgação.** A emenda promulgada é norma constitucional derivada e pode ser objeto de ação direta de inconstitucionalidade quando viola os limites do art. 60 — como se viu na ADI 939.
+
+> **Síntese da seção.** A emenda é a espécie em que a forma protege a própria Constituição. Quem pode propor, quantas vezes se vota, sob que circunstâncias e sobre o quê: cada uma dessas regras existe para impedir que uma maioria ocasional desfaça, por dentro, o pacto que a criou.
+
 
 ### 5.2. Lei Complementar E Lei Ordinária
 
