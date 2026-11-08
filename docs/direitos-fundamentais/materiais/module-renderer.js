@@ -43,7 +43,7 @@
     partes.forEach((parte, indice) => {
       const titulo = parte.split('\n')[0].trim();
       const corpo = parte.slice(parte.indexOf('\n') + 1);
-      const marcaResposta = corpo.match(/\*\*Resposta:\s*([A-D])\.\*\*/);
+      const marcaResposta = corpo.match(/\*\*Resposta:\s*([A-E])\.\*\*/);
       if (!marcaResposta) return;
       const antes = corpo.slice(0, marcaResposta.index);
       const depois = corpo.slice(marcaResposta.index + marcaResposta[0].length);
@@ -52,18 +52,18 @@
       if (primeiraAlt < 0) return;
       const enunciado = antes.slice(0, primeiraAlt).trim();
       const alternativas = [...antes.slice(primeiraAlt).matchAll(
-        /\*\*([A-D])\.\*\*\s*([\s\S]*?)(?=\n\s*\n\*\*[A-D]\.\*\*|$)/g
+        /\*\*([A-E])\.\*\*\s*([\s\S]*?)(?=\n\s*\n\*\*[A-E]\.\*\*|$)/g
       )].map((m) => ({ chave: m[1], texto: m[2].trim() }));
-      if (alternativas.length !== 4) return;
+      if (alternativas.length < 4 || alternativas.length > 5) return; // aceita 4 (módulos antigos) ou 5 (padrão de 25/09/2026)
 
       const porAlternativa = {};
-      [...depois.matchAll(/^- \*\*([A-D])\*\*\s*([\s\S]*?)(?=\n- \*\*[A-D]\*\*|$)/gm)]
+      [...depois.matchAll(/^- \*\*([A-E])\*\*\s*([\s\S]*?)(?=\n- \*\*[A-E]\*\*|$)/gm)]
         .forEach((m) => { porAlternativa[m[1]] = m[2].trim(); });
-      const geral = depois.split(/\n- \*\*[A-D]\*\*/)[0].trim();
+      const geral = depois.split(/\n- \*\*[A-E]\*\*/)[0].trim();
       // Observação opcional: tudo o que vier depois do último comentário por alternativa.
       const linhasDepois = depois.split('\n');
       let ultimoComentario = -1;
-      linhasDepois.forEach((l, k) => { if (/^- \*\*[A-D]\*\*/.test(l)) ultimoComentario = k; });
+      linhasDepois.forEach((l, k) => { if (/^- \*\*[A-E]\*\*/.test(l)) ultimoComentario = k; });
       const nota = ultimoComentario >= 0 ? linhasDepois.slice(ultimoComentario + 1).join('\n').trim() : '';
 
       questoes.push({
@@ -217,7 +217,7 @@
       return marcado ? marcado.value : null;
     };
 
-    // Comentario completo de uma questao: veredito da escolha + as quatro alternativas.
+    // Comentario completo de uma questao: veredito da escolha + todas as alternativas.
     function detalhar(q) {
       const escolha = escolhida(q.id);
       const acertou = escolha === q.correta;
