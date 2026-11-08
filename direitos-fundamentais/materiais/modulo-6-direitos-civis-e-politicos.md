@@ -8,7 +8,7 @@ professor: Mario Bastos
 unidade: II Unidade
 modulo: 6
 data_aula: 2026-11-09
-status: publicado para revisão docente — revisão 1 (26/10/2026)
+status: publicado — revisão 2 (08/11/2026): padrão de citação, referências, treino com cinco alternativas
 tags:
   - direito-constitucional
   - direitos-fundamentais
@@ -49,8 +49,6 @@ Ao final do módulo, você deve ser capaz de:
 - distinguir condição de elegibilidade de inelegibilidade, e perda de suspensão de direitos políticos;
 - resolver os seis episódios do caso de Rosa.
 
-**Aviso sobre o texto normativo.** Os dispositivos constitucionais transcritos neste módulo foram conferidos com a transcrição que a doutrina usada faz deles, não diretamente com o texto oficial do Planalto. Antes de qualquer prova, confira no texto oficial, que é a única versão que vale.
-
 ---
 
 ## 1. Por que "civis e políticos"
@@ -79,33 +77,33 @@ O levantamento que serve de base a este módulo percorreu o Título II inteiro e
 | Direitos políticos | arts. 14 a 16 | art. 60, § 4º, II (voto como cláusula pétrea) |
 | Partidos políticos | art. 17 | — |
 
-Repare em duas coisas. A primeira: **a liberdade de imprensa está fora do Título II**, no capítulo da comunicação social, e nem por isso é menos fundamental. É o § 2º do art. 5º funcionando — o catálogo é aberto, como você viu no Módulo 2. A segunda: **o direito à proteção de dados pessoais é o mais novo do catálogo**, incluído pela Emenda Constitucional n. 115/2022. A edição do manual de referência que usamos (Mendes e Branco, 2018) é anterior a ela; por isso, nesse ponto, o módulo se apoia em Lenza (2024).
+Repare em duas coisas. A primeira: **a liberdade de imprensa está fora do Título II**, no capítulo da comunicação social, e nem por isso é menos fundamental. É o § 2º do art. 5º funcionando: o catálogo é aberto. A segunda: **o direito à proteção de dados pessoais é o mais novo do catálogo**, incluído pela Emenda Constitucional n. 115/2022.
 
 ### 1.2 Núcleo essencial: a pergunta que acompanha cada direito
 
 No Módulo 3, o núcleo essencial apareceu como o quinto passo do roteiro: depois da restrição, o que sobrou do direito? Neste módulo, essa pergunta acompanha cada direito estudado. Antes, é preciso saber de onde ela vem e por que é controvertida.
 
-**A origem.** A ideia está escrita no art. 19, II, da Lei Fundamental alemã de 1949, que, na tradução transcrita por Mendes e Branco, estabelece que "em nenhum caso poderá ser um direito fundamental violado em sua essência" (2018, p. 313). Foi uma reação aos abusos do nacional-socialismo e à experiência de Weimar, em que a lei podia esvaziar os direitos que dizia apenas regular (p. 313–314). A Constituição brasileira não tem cláusula equivalente. Mas, para Mendes e Branco, a ideia de um núcleo essencial "decorre do próprio modelo garantístico utilizado pelo constituinte" e é reforçada pela proibição de emendas tendentes a abolir direitos e garantias individuais (art. 60, § 4º, IV) (p. 318).
+**A origem.** A ideia está escrita no art. 19, II, da Lei Fundamental alemã de 1949, que, na tradução transcrita por Mendes e Branco, estabelece que "em nenhum caso poderá ser um direito fundamental violado em sua essência" (2018). Foi uma reação aos abusos do nacional-socialismo e à experiência de Weimar, em que a lei podia esvaziar os direitos que dizia apenas regular. A Constituição brasileira não tem cláusula equivalente. Mas, para Mendes e Branco, a ideia de um núcleo essencial "decorre do próprio modelo garantístico utilizado pelo constituinte" e é reforçada pela proibição de emendas tendentes a abolir direitos e garantias individuais (art. 60, § 4º, IV).
 
-**Duas perguntas, quatro teorias.** A doutrina não se entende sobre o que é esse núcleo, e as posições se organizam em torno de duas perguntas (Mendes; Branco, 2018, p. 314–317; Barroso, 2020, cap. V, item VII.3):
+**Duas perguntas, quatro teorias.** A doutrina não se entende sobre o que é esse núcleo, e as posições se organizam em torno de duas perguntas (Mendes; Branco, 2018; Barroso, 2020):
 
 | Pergunta | Uma resposta | A outra resposta |
 |---|---|---|
 | O núcleo pode ser definido de antemão? | **Teoria absoluta:** sim. Cada direito tem um miolo fixo, que nenhuma lei pode atingir, qualquer que seja a situação. | **Teoria relativa:** não. O núcleo só se revela no caso concreto, pela ponderação entre o fim da restrição e o meio usado — isto é, pela proporcionalidade. |
 | O que exatamente se protege? | **Teoria subjetiva:** a posição de cada titular do direito. | **Teoria objetiva:** o direito como instituição do ordenamento, ainda que uma pessoa determinada seja duramente atingida. |
 
-Cada lado tem sua fraqueza, e o manual as nomeia: a teoria absoluta pode virar uma "fórmula vazia", porque é difícil demonstrar em abstrato qual seria esse mínimo; a teoria relativa pode conferir uma "flexibilidade exagerada" aos direitos, que deixariam de funcionar como limites firmes (p. 316). Mendes e Branco registram, por isso, a fórmula conciliadora de Hesse: a proporcionalidade protege contra restrições arbitrárias e, ao mesmo tempo, contra a lesão ao núcleo, porque não se limita a ajustar o meio ao fim — exige também que a finalidade seja harmonizada com o direito afetado (p. 316).
+Cada lado tem sua fraqueza, e o manual as nomeia: a teoria absoluta pode virar uma "fórmula vazia", porque é difícil demonstrar em abstrato qual seria esse mínimo; a teoria relativa pode conferir uma "flexibilidade exagerada" aos direitos, que deixariam de funcionar como limites firmes. Mendes e Branco registram, por isso, a fórmula conciliadora de Hesse: a proporcionalidade protege contra restrições arbitrárias e, ao mesmo tempo, contra a lesão ao núcleo, porque não se limita a ajustar o meio ao fim — exige também que a finalidade seja harmonizada com o direito afetado.
 
-**A posição de Barroso.** Barroso trata do tema no *Curso de direito constitucional contemporâneo* (2020, cap. V, item VII.3) e toma partido. Para ele, o núcleo essencial "corresponde à parcela mínima do direito fundamental que não pode ser suprimida", mas a teoria absoluta não resiste aos fatos: a própria Constituição admite que um direito seja eliminado em sua essência em certas situações — a vida, diante da pena de morte em caso de guerra declarada; a liberdade de ir e vir, diante da pena de reclusão; a propriedade, diante da desapropriação. Por isso, ele adere à **teoria relativa**: o núcleo "pode ser esboçado em abstrato, mas só pode ser definido concretamente", e a garantia do núcleo "termina sendo a exigência de justificação adequada para a restrição".
+**A posição de Barroso.** Barroso trata do tema no *Curso de direito constitucional contemporâneo* (2020) e toma partido. Para ele, o núcleo essencial "corresponde à parcela mínima do direito fundamental que não pode ser suprimida", mas a teoria absoluta não resiste aos fatos: a própria Constituição admite que um direito seja eliminado em sua essência em certas situações — a vida, diante da pena de morte em caso de guerra declarada; a liberdade de ir e vir, diante da pena de reclusão; a propriedade, diante da desapropriação. Por isso, ele adere à **teoria relativa**: o núcleo "pode ser esboçado em abstrato, mas só pode ser definido concretamente", e a garantia do núcleo "termina sendo a exigência de justificação adequada para a restrição".
 
-Barroso conserva, porém, um uso firme do conceito: **o legislador não pode fixar, de modo permanente, a prevalência de um direito sobre outro**. O exemplo dele é o das biografias, em que o Código Civil, ao exigir autorização prévia do biografado, subordinou a liberdade de expressão aos direitos da personalidade e criou, nas palavras do seu voto, uma "hierarquização fixa entre direitos constitucionais" (cap. V, item VII.3). Voltaremos ao caso na seção 2.4.
+Barroso conserva, porém, um uso firme do conceito: **o legislador não pode fixar, de modo permanente, a prevalência de um direito sobre outro**. O exemplo dele é o das biografias, em que o Código Civil, ao exigir autorização prévia do biografado, subordinou a liberdade de expressão aos direitos da personalidade e criou, nas palavras do seu voto, uma "hierarquização fixa entre direitos constitucionais".
 
-**Dois exemplos brasileiros.** Mendes e Branco mostram que a ideia já operava na jurisprudência do STF antes de ter nome. Na Representação n. 930, julgada sob a Constituição de 1967/69, o Ministro Rodrigues Alckmin perguntou: "Que adiantaria afirmar 'livre' o exercício de qualquer profissão, se a lei ordinária tivesse o poder de restringir tal exercício, a seu critério e alvitre [...]?" (p. 318). E, no HC 82.959, o Tribunal entendeu que o regime integralmente fechado para todos os condenados por crimes hediondos atingia o núcleo do direito à individualização da pena — conclusão que, segundo os autores, vale "independentemente da doutrina que se pretenda adotar", absoluta ou relativa (p. 319–320). É uma lição útil: nos casos extremos, as teorias convergem; a divergência aparece nos casos intermediários.
+**Dois exemplos brasileiros.** Mendes e Branco mostram que a ideia já operava na jurisprudência do STF antes de ter nome. Na Representação n. 930, julgada sob a Constituição de 1967/69, o Ministro Rodrigues Alckmin perguntou: "Que adiantaria afirmar 'livre' o exercício de qualquer profissão, se a lei ordinária tivesse o poder de restringir tal exercício, a seu critério e alvitre [...]?". E, no HC 82.959, o Tribunal entendeu que o regime integralmente fechado para todos os condenados por crimes hediondos atingia o núcleo do direito à individualização da pena — conclusão que, segundo os autores, vale "independentemente da doutrina que se pretenda adotar", absoluta ou relativa. É uma lição útil: nos casos extremos, as teorias convergem; a divergência aparece nos casos intermediários.
 
 **Como o núcleo e a jurisprudência aparecem neste módulo.** Ao fim do estudo de cada direito há um quadro **Núcleo e jurisprudência**, com duas partes:
 
 1. **O núcleo.** Quando um autor o formula, a fonte é indicada. Quando a formulação é deste curso, isso é dito. Em todos os casos, leia o núcleo à maneira de Barroso: como um esboço em abstrato, que orienta a interpretação e que só o caso concreto confirma.
-2. **As decisões.** As principais decisões do STF sobre o alcance daquele direito, como relatadas por Mendes e Branco (2018) e por Pedro Lenza (2024), com a página do PDF. Lenza é a fonte das decisões posteriores a 2018. Nenhum acórdão foi lido em inteiro teor: as decisões são citadas "segundo" os autores, e o ano indicado é o informado por eles.
+2. **As decisões.** As principais decisões do STF sobre o alcance daquele direito, como relatadas por Mendes e Branco (2018) e por Lenza (2024).
 
 Você não precisa decorar números de processos. Precisa saber **o que o Tribunal decidiu e por quê**, porque é isso que mostra onde está, na prática, a fronteira de cada direito.
 
@@ -121,9 +119,9 @@ Comece pelo texto:
 >
 > Art. 5º, IX — é livre a expressão da atividade intelectual, artística, científica e de comunicação, independentemente de censura ou licença;
 
-O âmbito de proteção é largo. Gonet Branco ensina que a liberdade de expressão abrange toda mensagem, toda opinião, todo juízo de valor, "sobre qualquer assunto ou sobre qualquer pessoa", tenha ou não valor, seja ou não importante (Mendes; Branco, 2018, p. 389–391). Inclui a comunicação **não verbal** — um gesto, uma roupa, uma performance, uma bandeira queimada. Inclui também o direito de **não** se expressar: ninguém é obrigado a manifestar opinião (p. 392). O que fica de fora é a violência: agredir alguém não é forma de comunicação protegida, ainda que o agressor pretenda "dizer" algo com isso.
+O âmbito de proteção é largo. Gonet Branco ensina que a liberdade de expressão abrange toda mensagem, toda opinião, todo juízo de valor, "sobre qualquer assunto ou sobre qualquer pessoa", tenha ou não valor, seja ou não importante (Mendes; Branco, 2018). Inclui a comunicação **não verbal** — um gesto, uma roupa, uma performance, uma bandeira queimada. Inclui também o direito de **não** se expressar: ninguém é obrigado a manifestar opinião. O que fica de fora é a violência: agredir alguém não é forma de comunicação protegida, ainda que o agressor pretenda "dizer" algo com isso.
 
-Por que proteger tanto? A doutrina reúne vários fundamentos, que não se excluem (p. 390):
+Por que proteger tanto? A doutrina reúne vários fundamentos, que não se excluem:
 
 - **a busca da verdade** — o confronto livre de ideias é o melhor método de separar o acerto do erro;
 - **a realização pessoal** — exprimir-se é parte de ser pessoa, e calar alguém é diminuí-lo;
@@ -133,7 +131,7 @@ Por que proteger tanto? A doutrina reúne vários fundamentos, que não se exclu
 
 O quarto fundamento é o que mais importa para o caso de Rosa. A frase central do manual é esta:
 
-> "A liberdade de expressão, enquanto direito fundamental, tem, sobretudo, um caráter de pretensão a que o Estado não exerça censura." (Mendes; Branco, 2018, p. 391)
+> "A liberdade de expressão, enquanto direito fundamental, tem, sobretudo, um caráter de pretensão a que o Estado não exerça censura." (Mendes; Branco, 2018)
 
 E o manual completa: não é o Estado que decide quais opiniões são válidas; essa tarefa cabe ao público a que a mensagem se dirige.
 
@@ -143,16 +141,16 @@ E o manual completa: não é o Estado que decide quais opiniões são válidas; 
 
 A distinção mais importante desta seção é **temporal**.
 
-- **Censura** é o controle **prévio** do conteúdo pelo poder público. O manual a define como "ação inibitória realizada pelos Poderes Públicos, centrada sobre o conteúdo de uma mensagem" (p. 392). Proibir a censura é impedir que ideias e fatos tenham de passar pelo crivo do Estado **antes** de serem divulgados.
+- **Censura** é o controle **prévio** do conteúdo pelo poder público. O manual a define como "ação inibitória realizada pelos Poderes Públicos, centrada sobre o conteúdo de uma mensagem". Proibir a censura é impedir que ideias e fatos tenham de passar pelo crivo do Estado **antes** de serem divulgados.
 - **Responsabilidade** é o que vem **depois**: quem abusou da liberdade responde civil e penalmente pelo dano que causou.
 
 A Constituição proíbe a primeira e garante a segunda. O art. 220 diz que a manifestação do pensamento "não sofrerá qualquer restrição, observado o disposto nesta Constituição", e o seu § 2º veda "toda e qualquer censura de natureza política, ideológica e artística". Ao mesmo tempo, o art. 5º, V, assegura "o direito de resposta, proporcional ao agravo, além da indenização por dano material, moral ou à imagem", e o inciso X garante indenização pela violação da honra e da imagem.
 
 A proibição de censura, portanto, **não é uma licença para ofender sem consequência**. É uma regra sobre o **momento** e o **agente** do controle: o Estado não filtra antes; o Judiciário, provocado por quem se sentiu lesado, pode responsabilizar depois.
 
-**O direito de resposta** merece atenção. Ele não é punição: é um **desagravo proporcional**, que dá ao ofendido o mesmo espaço e alcance que teve a ofensa, e pode ser cumulado com indenização (p. 395–396). Do ponto de vista da liberdade de expressão, ele tem uma vantagem sobre a indenização: em vez de silenciar, **acrescenta** uma voz ao debate.
+**O direito de resposta** não é punição: é um **desagravo proporcional**, que dá ao ofendido o mesmo espaço e alcance que teve a ofensa, e pode ser cumulado com indenização. Do ponto de vista da liberdade de expressão, ele tem uma vantagem sobre a indenização: em vez de silenciar, **acrescenta** uma voz ao debate.
 
-**E a retirada judicial do conteúdo?** Aqui está o ponto mais difícil da seção. Uma ordem judicial que manda retirar um vídeo do ar, ou que impede uma publicação antes que ela aconteça, não é tecnicamente censura (não vem da Administração, vem do juiz, a pedido de alguém que alega lesão a direito). Mas tem **efeito parecido**: a mensagem deixa de circular. Por isso, a doutrina discute se é legítima a tutela judicial **preventiva** ou se a resposta adequada é sempre a reparação posterior. O manual registra as duas posições e admite a tutela preventiva em casos excepcionais, com ônus argumentativo pesado para quem a pede (p. 408–410). Para este curso, a regra prática é: **a retirada é exceção, exige demonstração concreta de lesão grave e não se justifica pelo simples desconforto com a crítica.**
+**E a retirada judicial do conteúdo?** Aqui está o ponto mais difícil da seção. Uma ordem judicial que manda retirar um vídeo do ar, ou que impede uma publicação antes que ela aconteça, não é tecnicamente censura (não vem da Administração, vem do juiz, a pedido de alguém que alega lesão a direito). Mas tem **efeito parecido**: a mensagem deixa de circular. Por isso, a doutrina discute se é legítima a tutela judicial **preventiva** ou se a resposta adequada é sempre a reparação posterior. O manual registra as duas posições e admite a tutela preventiva em casos excepcionais, com ônus argumentativo pesado para quem a pede. Para este curso, a regra prática é: **a retirada é exceção, exige demonstração concreta de lesão grave e não se justifica pelo simples desconforto com a crítica.**
 
 ### 2.3 Imprensa e comunicação social
 
@@ -162,13 +160,13 @@ A imprensa é o exemplo clássico da liberdade de expressão, e a Constituição
 
 Repare na técnica do dispositivo. Ele proíbe o embaraço à liberdade de imprensa, mas manda observar os incisos IV (vedação do anonimato), V (direito de resposta), X (intimidade, vida privada, honra e imagem), XIII (qualificações profissionais) e XIV (sigilo da fonte). Ou seja: **os próprios limites da imprensa estão enumerados no texto que a protege.**
 
-Três observações que a doutrina destaca (Mendes; Branco, 2018, p. 392–400):
+Três observações que a doutrina destaca (Mendes; Branco, 2018):
 
-1. **O destinatário da liberdade de imprensa é, sobretudo, o Estado.** Ela protege o veículo contra o poder público, e não o jornalista contra o dono do jornal: o manual não vê razão para uma "liberdade de imprensa *interna corporis*", que permitisse ao repórter impor pautas ao veículo (p. 393). Mas o jornalista não pode ser obrigado a escrever contra as próprias convicções e pode romper o contrato, sem ônus, se discordar da linha editorial — o que o direito francês chama de *clause de conscience* (p. 394).
+1. **O destinatário da liberdade de imprensa é, sobretudo, o Estado.** Ela protege o veículo contra o poder público, e não o jornalista contra o dono do jornal: o manual não vê razão para uma "liberdade de imprensa *interna corporis*", que permitisse ao repórter impor pautas ao veículo. Mas o jornalista não pode ser obrigado a escrever contra as próprias convicções e pode romper o contrato, sem ônus, se discordar da linha editorial — o que o direito francês chama de *clause de conscience*.
 2. **A concentração da mídia também ameaça a liberdade.** Por isso, o art. 220, § 5º, proíbe que os meios de comunicação social sejam objeto de monopólio ou oligopólio. A liberdade de expressão tem uma dimensão coletiva: a sociedade tem interesse em ouvir muitas vozes, e não poucas.
-3. **Segundo Mendes e Branco, o STF entendeu que a Lei de Imprensa de 1967 não foi recepcionada pela Constituição de 1988 (ADPF 130)** e que a exigência de diploma de jornalismo para o exercício da profissão é incompatível com a liberdade de expressão (RE 511.961). Voltaremos a este último caso ao tratar da liberdade de profissão.
+3. **Segundo Mendes e Branco, o STF entendeu que a Lei de Imprensa de 1967 não foi recepcionada pela Constituição de 1988 (ADPF 130)** e que a exigência de diploma de jornalismo para o exercício da profissão é incompatível com a liberdade de expressão (RE 511.961).
 
-**Classificação indicativa.** O Estado pode classificar programas de rádio e televisão por faixa etária (art. 220, § 3º, I, e art. 21, XVI), mas, segundo Mendes e Branco, a classificação é **indicativa**: informa pais e espectadores, e não autoriza o Estado a punir a emissora que exibe o programa fora do horário sugerido (ADI 2.404, p. 400–401). Se autorizasse, seria censura com outro nome.
+**Classificação indicativa.** O Estado pode classificar programas de rádio e televisão por faixa etária (art. 220, § 3º, I, e art. 21, XVI), mas, segundo Mendes e Branco, a classificação é **indicativa**: informa pais e espectadores, e não autoriza o Estado a punir a emissora que exibe o programa fora do horário sugerido (ADI 2.404). Se autorizasse, seria censura com outro nome.
 
 ### 2.4 Os limites da liberdade de expressão
 
@@ -178,16 +176,16 @@ Nenhum direito fundamental é absoluto, e você já sabe disso desde o Módulo 3
 
 **Limites por colisão.** São os mais frequentes e os mais difíceis. Surgem quando a expressão de alguém atinge outro direito fundamental — a honra, a intimidade, a imagem, a igualdade. A doutrina oferece alguns critérios para resolver essas colisões, que você deve saber usar:
 
-- **Verdade como dever de cautela, e não como certeza.** Não se exige do jornalista ou do cidadão que só divulgue o que é comprovadamente verdadeiro; exige-se que tenha agido com diligência, apoiado em fonte séria. O erro de boa-fé, cometido por quem checou, pode ser tolerado; a mentira deliberada, ou a negligência grosseira com a verdade, não (p. 404–406).
-- **Relevância social do assunto.** A divulgação é tanto mais protegida quanto mais o assunto interessa à vida coletiva. O manual distingue o **interesse público** (o que a sociedade precisa saber para se governar) do **interesse do público** (a curiosidade, o mexerico). "Não é qualquer assunto de interesse do público", diz o texto, que justifica a divulgação (p. 406).
-- **Crítica a agentes públicos.** Quem exerce função pública está mais exposto à crítica, e a crítica dura, mesmo injusta, é parte do jogo democrático. O manual registra que, segundo o STF, declarações inadmissíveis em outros contextos tendem a ser toleradas na disputa eleitoral, "em que a linguagem contundente se insere no próprio fervor da refrega" (p. 403).
-- **Expressão simbólica e defesa de mudança da lei.** Defender publicamente a mudança de uma lei não é fazer apologia de crime. Segundo Mendes e Branco, foi com esse fundamento que o STF considerou legítimas as manifestações pela descriminalização da maconha (ADPF 187 e ADI 4.274, p. 397).
-- **Humor e sátira.** A charge e a sátira exageram por natureza; julgá-las pelo critério literal da verdade seria proibi-las. Segundo o manual, o STF suspendeu normas que restringiam o humor sobre candidatos em período eleitoral (ADI 4.451, p. 407).
-- **Biografias.** Segundo Mendes e Branco, o STF afastou a exigência de autorização prévia do biografado para a publicação de biografias (ADI 4.815, p. 392), sem prejuízo da responsabilização por abusos.
+- **Verdade como dever de cautela, e não como certeza.** Não se exige do jornalista ou do cidadão que só divulgue o que é comprovadamente verdadeiro; exige-se que tenha agido com diligência, apoiado em fonte séria. O erro de boa-fé, cometido por quem checou, pode ser tolerado; a mentira deliberada, ou a negligência grosseira com a verdade, não.
+- **Relevância social do assunto.** A divulgação é tanto mais protegida quanto mais o assunto interessa à vida coletiva. O manual distingue o **interesse público** (o que a sociedade precisa saber para se governar) do **interesse do público** (a curiosidade, o mexerico). "Não é qualquer assunto de interesse do público", diz o texto, que justifica a divulgação.
+- **Crítica a agentes públicos.** Quem exerce função pública está mais exposto à crítica, e a crítica dura, mesmo injusta, é parte do jogo democrático. O manual registra que, segundo o STF, declarações inadmissíveis em outros contextos tendem a ser toleradas na disputa eleitoral, "em que a linguagem contundente se insere no próprio fervor da refrega".
+- **Expressão simbólica e defesa de mudança da lei.** Defender publicamente a mudança de uma lei não é fazer apologia de crime. Segundo Mendes e Branco, foi com esse fundamento que o STF considerou legítimas as manifestações pela descriminalização da maconha (ADPF 187 e ADI 4.274).
+- **Humor e sátira.** A charge e a sátira exageram por natureza; julgá-las pelo critério literal da verdade seria proibi-las. Segundo o manual, o STF suspendeu normas que restringiam o humor sobre candidatos em período eleitoral (ADI 4.451).
+- **Biografias.** Segundo Mendes e Branco, o STF afastou a exigência de autorização prévia do biografado para a publicação de biografias (ADI 4.815), sem prejuízo da responsabilização por abusos.
 
 **O limite que não se discute: o discurso de ódio.** Há um ponto em que a ponderação brasileira se afasta, por exemplo, da tradição norte-americana:
 
-> "Por outro lado, o discurso de ódio, entre nós, não é tolerado." (Mendes; Branco, 2018, p. 403)
+> "Por outro lado, o discurso de ódio, entre nós, não é tolerado." (Mendes; Branco, 2018)
 
 Segundo o manual, o STF assentou, no julgamento do HC 82.424, que incitar a discriminação racial por meio de ideias antissemitas configura crime de racismo e não é protegido pela liberdade de expressão. O fundamento é a **igualdade** e a **dignidade**: o discurso de ódio não se limita a ofender; ele nega ao outro a condição de igual e, com isso, procura expulsá-lo do próprio debate. Uma liberdade que serve à convivência não pode proteger a mensagem que tem por fim destruí-la.
 
@@ -195,21 +193,21 @@ Segundo o manual, o STF assentou, no julgamento do HC 82.424, que incitar a disc
 
 **Núcleo e jurisprudência — liberdade de expressão e de imprensa.**
 
-*Núcleo.* Mendes e Branco dizem que a liberdade de expressão tem, "sobretudo", o caráter de pretensão a que o Estado não exerça censura (p. 391). Daí a formulação deste curso: o núcleo é a **proibição de controle prévio do conteúdo pelo poder público**. Lenza registra, com apoio em Sarlet, que restrições só se admitem por lei ou por decisão judicial, "vedada toda e qualquer censura administrativa", e sempre com respeito à proporcionalidade e ao núcleo essencial dos direitos em conflito (Lenza, 2024, p. 1835); e, com apoio em Barroso, que a posição preferencial da liberdade de expressão implica a "absoluta excepcionalidade da proibição prévia de publicações" (p. 1834 e nota na p. 2617).
+*Núcleo.* Mendes e Branco dizem que a liberdade de expressão tem, "sobretudo", o caráter de pretensão a que o Estado não exerça censura. Daí a formulação deste curso: o núcleo é a **proibição de controle prévio do conteúdo pelo poder público**. Lenza registra, com apoio em Sarlet, que restrições só se admitem por lei ou por decisão judicial, "vedada toda e qualquer censura administrativa", e sempre com respeito à proporcionalidade e ao núcleo essencial dos direitos em conflito (Lenza, 2024); e, com apoio em Barroso, que a posição preferencial da liberdade de expressão implica a "absoluta excepcionalidade da proibição prévia de publicações".
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| ADPF 130 (2009) | A Lei de Imprensa de 1967 não foi recepcionada pela Constituição de 1988. | Lenza, p. 1833–1834; Mendes e Branco, p. 400 |
-| RE 511.961 (2009) | O diploma de jornalismo não pode ser exigido; as liberdades de expressão e de imprensa só podem ser restringidas por lei em hipóteses excepcionais. | Lenza, p. 1833–1835 |
-| HC 82.424 (2003) | Publicar obras antissemitas é crime de racismo; a liberdade de expressão não protege a incitação ao ódio. Vencido o Min. Marco Aurélio. | Lenza, p. 1836–1837; Mendes e Branco, p. 403 |
-| RHC 146.303 (2018) | A incitação ao ódio público contra denominações religiosas e seus seguidores não está protegida pela liberdade de expressão. | Lenza, p. 1838 |
-| ADPF 187 e ADI 4.274 (2011) | Marcha da maconha: defender publicamente a descriminalização não é apologia nem incitação ao crime. | Lenza, p. 1839–1840; Mendes e Branco, p. 397 |
-| ADI 2.404 | A classificação indicativa é meramente indicativa e não se confunde com licença prévia. | Lenza, p. 1833; Mendes e Branco, p. 400–401 |
-| RE 898.450 (2016, tema 838) | Tatuagem não pode, por si, impedir o acesso a cargo público, salvo conteúdo que viole valores constitucionais. | Lenza, p. 1841 |
-| ADI 4.451 (2010; liminar referendada em 2018) | São inconstitucionais as restrições da lei eleitoral ao humor sobre candidatos. | Lenza, p. 1857–1858; Mendes e Branco, p. 407 |
-| ADI 4.815 (2015) | Biografias: é inexigível a autorização prévia do biografado, ressalvados o direito de resposta e a indenização. | Lenza, p. 1858; Barroso, cap. V, VII.3 |
-| Rcl 38.782 (2020) | Caso do especial de Natal do "Porta dos Fundos": proibir conteúdo só em casos excepcionalíssimos, como discurso de ódio ou incitação à violência; sátira a símbolos religiosos é crítica, não intolerância. | Lenza, p. 1832–1833 |
-| RE 1.010.606 (2021) | "É incompatível com a Constituição a ideia de um direito ao esquecimento"; os excessos de divulgação são examinados caso a caso. | Lenza, p. 1858–1859 |
+| ADPF 130 (2009) | A Lei de Imprensa de 1967 não foi recepcionada pela Constituição de 1988. | Lenza (2024); Mendes e Branco (2018) |
+| RE 511.961 (2009) | O diploma de jornalismo não pode ser exigido; as liberdades de expressão e de imprensa só podem ser restringidas por lei em hipóteses excepcionais. | Lenza (2024) |
+| HC 82.424 (2003) | Publicar obras antissemitas é crime de racismo; a liberdade de expressão não protege a incitação ao ódio. Vencido o Min. Marco Aurélio. | Lenza (2024); Mendes e Branco (2018) |
+| RHC 146.303 (2018) | A incitação ao ódio público contra denominações religiosas e seus seguidores não está protegida pela liberdade de expressão. | Lenza (2024) |
+| ADPF 187 e ADI 4.274 (2011) | Marcha da maconha: defender publicamente a descriminalização não é apologia nem incitação ao crime. | Lenza (2024); Mendes e Branco (2018) |
+| ADI 2.404 | A classificação indicativa é meramente indicativa e não se confunde com licença prévia. | Lenza (2024); Mendes e Branco (2018) |
+| RE 898.450 (2016, tema 838) | Tatuagem não pode, por si, impedir o acesso a cargo público, salvo conteúdo que viole valores constitucionais. | Lenza (2024) |
+| ADI 4.451 (2010; liminar referendada em 2018) | São inconstitucionais as restrições da lei eleitoral ao humor sobre candidatos. | Lenza (2024); Mendes e Branco (2018) |
+| ADI 4.815 (2015) | Biografias: é inexigível a autorização prévia do biografado, ressalvados o direito de resposta e a indenização. | Lenza (2024); Barroso (2020) |
+| Rcl 38.782 (2020) | Caso do especial de Natal do "Porta dos Fundos": proibir conteúdo só em casos excepcionalíssimos, como discurso de ódio ou incitação à violência; sátira a símbolos religiosos é crítica, não intolerância. | Lenza (2024) |
+| RE 1.010.606 (2021) | "É incompatível com a Constituição a ideia de um direito ao esquecimento"; os excessos de divulgação são examinados caso a caso. | Lenza (2024) |
 
 ### 2.5 Consciência, crença e religião
 
@@ -219,36 +217,36 @@ Segundo o manual, o STF assentou, no julgamento do HC 82.424, que incitar a disc
 
 **Consciência é mais amplo que crença.** A liberdade de consciência protege as convicções da pessoa sobre o certo e o errado, religiosas ou não. A liberdade de crença protege a adesão (ou a recusa) a uma fé. O ateu e o agnóstico estão protegidos tanto quanto o fiel.
 
-A liberdade religiosa tem, segundo a doutrina, três dimensões (Mendes; Branco, 2018, p. 461): a liberdade de **crença** (crer ou não crer, mudar de religião); a liberdade de **culto** (praticar ritos, em público ou em privado); e a liberdade de **organização religiosa** (fundar igrejas e organizá-las sem interferência do Estado).
+A liberdade religiosa tem, segundo a doutrina, três dimensões (Mendes; Branco, 2018): a liberdade de **crença** (crer ou não crer, mudar de religião); a liberdade de **culto** (praticar ritos, em público ou em privado); e a liberdade de **organização religiosa** (fundar igrejas e organizá-las sem interferência do Estado).
 
-**A escusa de consciência.** O inciso VIII é uma das normas mais engenhosas do catálogo. Ele permite que alguém se recuse a cumprir uma obrigação legal geral por motivo de consciência — o exemplo histórico é o serviço militar —, mas condiciona isso a uma **prestação alternativa**. O art. 143, § 1º, aplica a regra ao serviço militar: às Forças Armadas cabe atribuir serviço alternativo a quem alegar imperativo de consciência. O manual chama a atenção para a estrutura da norma: a escusa é uma exceção que **confirma** a regra de que todos devem cumprir as obrigações gerais; quem recusa a obrigação **e** a alternativa sofre a consequência prevista no art. 15, IV — a perda dos direitos políticos, que veremos na seção 7 (p. 456–459).
+**A escusa de consciência.** O inciso VIII é uma das normas mais engenhosas do catálogo. Ele permite que alguém se recuse a cumprir uma obrigação legal geral por motivo de consciência — o exemplo histórico é o serviço militar —, mas condiciona isso a uma **prestação alternativa**. O art. 143, § 1º, aplica a regra ao serviço militar: às Forças Armadas cabe atribuir serviço alternativo a quem alegar imperativo de consciência. O manual chama a atenção para a estrutura da norma: a escusa é uma exceção que **confirma** a regra de que todos devem cumprir as obrigações gerais; quem recusa a obrigação **e** a alternativa sofre a consequência prevista no art. 15, IV — a perda dos direitos políticos (seção 7).
 
 **O Estado laico.** O art. 19, I, proíbe a União, os Estados, o Distrito Federal e os Municípios de estabelecer cultos ou igrejas, subvencioná-los, embaraçar-lhes o funcionamento ou manter com eles relações de dependência ou aliança, "ressalvada, na forma da lei, a colaboração de interesse público". Duas frases do manual resumem a posição brasileira:
 
-> "O Estado brasileiro não é confessional, mas tampouco é ateu [...]." (Mendes; Branco, 2018, p. 462)
+> "O Estado brasileiro não é confessional, mas tampouco é ateu [...]." (Mendes; Branco, 2018)
 >
-> "A laicidade do Estado não significa, por certo, inimizade com a fé." (p. 463)
+> "A laicidade do Estado não significa, por certo, inimizade com a fé."
 
-Laicidade, portanto, é **neutralidade**, e não hostilidade. O Estado não adota religião, não favorece uma em detrimento de outra e não persegue nenhuma; mas pode reconhecer o fenômeno religioso — tanto que a Constituição imuniza os templos de impostos (art. 150, VI, *b*), assegura assistência religiosa nas entidades de internação coletiva (art. 5º, VII) e prevê ensino religioso de matrícula facultativa nas escolas públicas (art. 210, § 1º). Segundo Mendes e Branco, o STF admitiu que esse ensino tenha natureza confessional, desde que facultativo (ADI 4.439, p. 462).
+Laicidade, portanto, é **neutralidade**, e não hostilidade. O Estado não adota religião, não favorece uma em detrimento de outra e não persegue nenhuma; mas pode reconhecer o fenômeno religioso — tanto que a Constituição imuniza os templos de impostos (art. 150, VI, *b*), assegura assistência religiosa nas entidades de internação coletiva (art. 5º, VII) e prevê ensino religioso de matrícula facultativa nas escolas públicas (art. 210, § 1º). Segundo Mendes e Branco, o STF admitiu que esse ensino tenha natureza confessional, desde que facultativo (ADI 4.439).
 
-**O limite.** A liberdade religiosa não é pretexto para a prática de ilícitos. O exemplo clássico é o curandeirismo, crime contra a saúde pública (art. 284 do Código Penal). Sob a Constituição de 1988, segundo Lenza, o tema "ainda não chegou ao STF", e os tribunais estaduais vêm examinando os casos concretos um a um (2024, p. 1851). O precedente que Mendes e Branco registram (RHC 62.240, p. 463) é anterior a 1988 e vale como registro histórico, não como jurisprudência atual. O critério, de todo modo, é o mesmo de sempre: a crença é intangível; a **conduta** que nela se apoia pode ser limitada quando atinge direitos de terceiros.
+**O limite.** A liberdade religiosa não é pretexto para a prática de ilícitos. O exemplo clássico é o curandeirismo, crime contra a saúde pública (art. 284 do Código Penal). Sob a Constituição de 1988, segundo Lenza, o tema "ainda não chegou ao STF", e os tribunais estaduais vêm examinando os casos concretos um a um (2024). O precedente que Mendes e Branco registram (RHC 62.240) é anterior a 1988 e vale como registro histórico, não como jurisprudência atual. O critério, de todo modo, é o mesmo de sempre: a crença é intangível; a **conduta** que nela se apoia pode ser limitada quando atinge direitos de terceiros.
 
 **Núcleo e jurisprudência — consciência, crença e religião.**
 
-*Núcleo.* Formulação deste curso: o núcleo é o **foro íntimo** — ninguém pode ser obrigado a crer ou a deixar de crer, nem punido ou privado de direitos pela crença que tem (art. 5º, VIII, primeira parte). O que se restringe é a conduta exterior. O STF deu ao limite da restrição uma fórmula que serve a todo o módulo: "Deve-se evitar que a tutela de um valor constitucional relevante aniquile o exercício de um direito fundamental" (RE 494.601, segundo Lenza, 2024, p. 1856).
+*Núcleo.* Formulação deste curso: o núcleo é o **foro íntimo** — ninguém pode ser obrigado a crer ou a deixar de crer, nem punido ou privado de direitos pela crença que tem (art. 5º, VIII, primeira parte). O que se restringe é a conduta exterior. O STF deu ao limite da restrição uma fórmula que serve a todo o módulo: "Deve-se evitar que a tutela de um valor constitucional relevante aniquile o exercício de um direito fundamental" (RE 494.601, segundo Lenza, 2024).
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| ADI 4.439 (2017, 6 x 5) | O ensino religioso nas escolas públicas pode ser confessional, porque a matrícula é facultativa. Vencido o Min. Barroso, que propunha garantias adicionais, como alternativa pedagógica a quem não cursar. | Lenza, p. 1845–1847; Mendes e Branco, p. 462 |
-| ADI 5.258 (2021) | É inconstitucional lei que obriga escolas e bibliotecas públicas a manter exemplar de livro religioso (laicidade e isonomia). | Lenza, p. 1848 |
-| RE 494.601 (2019) | É constitucional a lei de proteção animal que, para resguardar a liberdade religiosa, permite o sacrifício ritual de animais em cultos de matriz africana. | Lenza, p. 1855–1856 |
-| RE 611.874 (2020, tema 386) e ARE 1.099.099 (2020, tema 1.021) | Por escusa religiosa, candidatos em concurso e servidores podem ter data ou critério alternativo, desde que haja razoabilidade, igualdade e nenhum ônus desproporcional à Administração. | Lenza, p. 1854–1855 |
-| STA 389 | ENEM 2009: mantida a data da prova, sem dia alternativo para sabatistas, com aplicação após as 18h para os candidatos que guardam o sábado, mantidos isolados até lá. | Lenza, p. 1854; Mendes e Branco, p. 462 |
-| RE 325.822 | A imunidade dos templos abrange patrimônio, renda e serviços ligados às finalidades essenciais da entidade. | Lenza, p. 1853; Mendes e Branco, p. 461 |
-| RE 562.351 (2012) | A maçonaria não é religião e não tem imunidade de IPTU. | Lenza, p. 1853–1854 |
-| ADO 26 e MI 4.733 | Homofobia e transfobia enquadradas como racismo, ressalvada a liberdade religiosa de pregar, desde que sem discurso de ódio. | Lenza, p. 1843–1844 |
+| ADI 4.439 (2017, 6 x 5) | O ensino religioso nas escolas públicas pode ser confessional, porque a matrícula é facultativa. Vencido o Min. Barroso, que propunha garantias adicionais, como alternativa pedagógica a quem não cursar. | Lenza (2024); Mendes e Branco (2018) |
+| ADI 5.258 (2021) | É inconstitucional lei que obriga escolas e bibliotecas públicas a manter exemplar de livro religioso (laicidade e isonomia). | Lenza (2024) |
+| RE 494.601 (2019) | É constitucional a lei de proteção animal que, para resguardar a liberdade religiosa, permite o sacrifício ritual de animais em cultos de matriz africana. | Lenza (2024) |
+| RE 611.874 (2020, tema 386) e ARE 1.099.099 (2020, tema 1.021) | Por escusa religiosa, candidatos em concurso e servidores podem ter data ou critério alternativo, desde que haja razoabilidade, igualdade e nenhum ônus desproporcional à Administração. | Lenza (2024) |
+| STA 389 | ENEM 2009: mantida a data da prova, sem dia alternativo para sabatistas, com aplicação após as 18h para os candidatos que guardam o sábado, mantidos isolados até lá. | Lenza (2024); Mendes e Branco (2018) |
+| RE 325.822 | A imunidade dos templos abrange patrimônio, renda e serviços ligados às finalidades essenciais da entidade. | Lenza (2024); Mendes e Branco (2018) |
+| RE 562.351 (2012) | A maçonaria não é religião e não tem imunidade de IPTU. | Lenza (2024) |
+| ADO 26 e MI 4.733 | Homofobia e transfobia enquadradas como racismo, ressalvada a liberdade religiosa de pregar, desde que sem discurso de ódio. | Lenza (2024) |
 
-Ficam pendentes no STF, segundo Lenza: a recusa de transfusão de sangue por Testemunhas de Jeová (ADPF 618 e RE 1.212.272) e os crucifixos em repartições públicas (ARE 1.249.095, tema 1.086) (p. 1851–1853).
+Ficam pendentes no STF, segundo Lenza: a recusa de transfusão de sangue por Testemunhas de Jeová (ADPF 618 e RE 1.212.272) e os crucifixos em repartições públicas (ARE 1.249.095, tema 1.086).
 
 ---
 
@@ -266,13 +264,13 @@ A liberdade de locomoção é o direito de ir, vir e ficar. Ela é a base de qua
 
 **Núcleo e jurisprudência — locomoção.**
 
-*Núcleo.* Formulação deste curso: ninguém é privado da liberdade de ir e vir senão em flagrante delito ou por ordem escrita e fundamentada de autoridade judiciária (art. 5º, LXI), e nunca por banimento (art. 5º, XLVII, *d*). Lenza não registra, no item sobre locomoção, decisão específica do STF (2024, p. 1882): a jurisprudência relevante está no habeas corpus, estudado no Módulo 5. Um ponto de contato com a reunião aparece logo abaixo: segundo Lenza, no RE 806.339 o Min. Barroso ressalvou que o poder público pode impedir o bloqueio integral de uma via para assegurar a locomoção de todos (p. 1884).
+*Núcleo.* Formulação deste curso: ninguém é privado da liberdade de ir e vir senão em flagrante delito ou por ordem escrita e fundamentada de autoridade judiciária (art. 5º, LXI), e nunca por banimento (art. 5º, XLVII, *d*). Lenza não registra, no item sobre locomoção, decisão específica do STF (2024): a jurisprudência relevante está no habeas corpus, estudado no Módulo 5. Um ponto de contato com a reunião aparece logo abaixo: segundo Lenza, no RE 806.339 o Min. Barroso ressalvou que o poder público pode impedir o bloqueio integral de uma via para assegurar a locomoção de todos.
 
 ### 3.2 Reunião
 
 > Art. 5º, XVI — todos podem reunir-se pacificamente, sem armas, em locais abertos ao público, independentemente de autorização, desde que não frustrem outra reunião anteriormente convocada para o mesmo local, sendo apenas exigido prévio aviso à autoridade competente;
 
-Gonet Branco define a reunião como "um direito individual, mas de exercício coletivo" (Mendes; Branco, 2018, p. 431). Cada pessoa é titular; ninguém o exerce sozinho. O manual decompõe o direito em elementos (p. 431–434):
+Gonet Branco define a reunião como "um direito individual, mas de exercício coletivo" (Mendes; Branco, 2018). Cada pessoa é titular; ninguém o exerce sozinho. O manual decompõe o direito em elementos:
 
 | Elemento | O que exige |
 |---|---|
@@ -285,21 +283,21 @@ Gonet Branco define a reunião como "um direito individual, mas de exercício co
 
 O ponto que mais cai em prova e mais se erra na vida real é o **aviso prévio**:
 
-> "O prévio aviso é apenas o anúncio do exercício de um direito. Trata-se de uma comunicação, e não de um pedido de permissão." (Mendes; Branco, 2018, p. 435)
+> "O prévio aviso é apenas o anúncio do exercício de um direito. Trata-se de uma comunicação, e não de um pedido de permissão." (Mendes; Branco, 2018)
 
-O aviso serve para que o poder público organize o trânsito, a segurança e evite que duas reuniões se frustrem mutuamente no mesmo lugar. Ele **não** dá à autoridade o poder de escolher quais reuniões acontecem. O manual reconhece que a falta do aviso pode comprometer a proteção de outros bens e levar o legislador a prever sanções administrativas para os organizadores (p. 437); o que ela não faz é transformar o aviso em licença. Em 2020, segundo Lenza, o STF foi além: decidiu que a falta de notificação formal não torna, por si só, a reunião ilegal, porque o aviso se cumpre com qualquer informação que permita ao poder público organizar o espaço (RE 806.339; Lenza, 2024, p. 1884).
+O aviso serve para que o poder público organize o trânsito, a segurança e evite que duas reuniões se frustrem mutuamente no mesmo lugar. Ele **não** dá à autoridade o poder de escolher quais reuniões acontecem. O manual reconhece que a falta do aviso pode comprometer a proteção de outros bens e levar o legislador a prever sanções administrativas para os organizadores; o que ela não faz é transformar o aviso em licença. Em 2020, segundo Lenza, o STF foi além: decidiu que a falta de notificação formal não torna, por si só, a reunião ilegal, porque o aviso se cumpre com qualquer informação que permita ao poder público organizar o espaço (RE 806.339; Lenza, 2024).
 
-**Voltando a Rosa (episódio 4).** A nota da prefeitura ("sem autorização prévia, não haverá ato") inverte a Constituição. Rosa não precisa de autorização; precisa avisar. Se avisou, e se o ato é pacífico, sem armas, em local aberto e não frustra outra reunião já convocada para a praça, ele está protegido. A prefeitura pode, à vista do aviso, propor ajustes razoáveis de horário ou de trajeto; não pode proibir. E se proibir? A garantia adequada, segundo o manual, é o **mandado de segurança**, e não o habeas corpus — a menos que haja ameaça concreta de prisão dos manifestantes, caso em que a liberdade de locomoção também está em jogo (p. 439).
+**Voltando a Rosa (episódio 4).** A nota da prefeitura ("sem autorização prévia, não haverá ato") inverte a Constituição. Rosa não precisa de autorização; precisa avisar. Se avisou, e se o ato é pacífico, sem armas, em local aberto e não frustra outra reunião já convocada para a praça, ele está protegido. A prefeitura pode, à vista do aviso, propor ajustes razoáveis de horário ou de trajeto; não pode proibir. E se proibir? A garantia adequada, segundo o manual, é o **mandado de segurança**, e não o habeas corpus — a menos que haja ameaça concreta de prisão dos manifestantes, caso em que a liberdade de locomoção também está em jogo.
 
 **Núcleo e jurisprudência — reunião.**
 
-*Núcleo.* Lenza formula o ponto central em termos de núcleo: "a exigência de prévia e formal autorização esvaziaria o direito fundamental de reunião" (2024, p. 1883). O núcleo, portanto, é a **ausência de licença**: o poder público é informado, não consultado.
+*Núcleo.* Lenza formula o ponto central em termos de núcleo: "a exigência de prévia e formal autorização esvaziaria o direito fundamental de reunião" (2024). O núcleo, portanto, é a **ausência de licença**: o poder público é informado, não consultado.
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| RE 806.339 (2020, 6 x 5) | O aviso prévio se satisfaz com informação que permita ao poder público zelar para que a reunião seja pacífica e não frustre outra; "a inexistência de notificação não torna a reunião ilegal" (voto do Min. Fachin). | Lenza, p. 1884 |
-| ADI 1.969 (2007) | É inconstitucional o decreto que proibia carros de som em manifestações na Esplanada dos Ministérios: medida inadequada, desnecessária e desproporcional. | Lenza, p. 1885; Mendes e Branco, p. 402 |
-| ADPF 187 (2011) | A reunião é "direito-meio" da manifestação do pensamento. Parâmetros fixados: reunião pacífica, sem armas, previamente noticiada, sem incitação ao consumo de drogas e sem participação de crianças e adolescentes. | Lenza, p. 1839–1840, 1885 |
+| RE 806.339 (2020, 6 x 5) | O aviso prévio se satisfaz com informação que permita ao poder público zelar para que a reunião seja pacífica e não frustre outra; "a inexistência de notificação não torna a reunião ilegal" (voto do Min. Fachin). | Lenza (2024) |
+| ADI 1.969 (2007) | É inconstitucional o decreto que proibia carros de som em manifestações na Esplanada dos Ministérios: medida inadequada, desnecessária e desproporcional. | Lenza (2024); Mendes e Branco (2018) |
+| ADPF 187 (2011) | A reunião é "direito-meio" da manifestação do pensamento. Parâmetros fixados: reunião pacífica, sem armas, previamente noticiada, sem incitação ao consumo de drogas e sem participação de crianças e adolescentes. | Lenza (2024) |
 
 ### 3.3 Associação
 
@@ -315,28 +313,28 @@ A associação é a reunião que dura: um grupo que se organiza de modo estável
 >
 > XXI — as entidades associativas, quando expressamente autorizadas, têm legitimidade para representar seus filiados judicial ou extrajudicialmente;
 
-Lidos juntos, os incisos desenham cinco faculdades (Mendes; Branco, 2018, p. 439–447): **criar** associação sem pedir licença; **aderir** a uma já existente; **sair** dela; **não se associar**; e **auto-organizar-se**, isto é, a associação define seus estatutos sem interferência estatal.
+Lidos juntos, os incisos desenham cinco faculdades (Mendes; Branco, 2018): **criar** associação sem pedir licença; **aderir** a uma já existente; **sair** dela; **não se associar**; e **auto-organizar-se**, isto é, a associação define seus estatutos sem interferência estatal.
 
 Dois limites expressos: os **fins** devem ser lícitos, e é vedado o caráter **paramilitar**. E uma garantia de procedimento que você deve memorizar pela lógica, não pelo número: **dissolver** uma associação é a medida mais grave, e por isso exige decisão judicial **transitada em julgado**; **suspender** suas atividades é medida provisória, e basta decisão judicial, ainda que não definitiva. Em nenhum dos casos a Administração pode agir sozinha.
 
-A liberdade de **não** se associar também é levada a sério. Segundo Mendes e Branco, o STF declarou inconstitucionais leis que tornavam obrigatória a filiação a determinadas entidades como condição para exercer atividade (ADI 3.464 e ADI 3.587, p. 449).
+A liberdade de **não** se associar também é levada a sério. Segundo Mendes e Branco, o STF declarou inconstitucionais leis que tornavam obrigatória a filiação a determinadas entidades como condição para exercer atividade (ADI 3.464 e ADI 3.587).
 
-**A associação diante do sócio: eficácia horizontal.** A autonomia da associação inclui escolher e excluir sócios. Mas essa autonomia tem limite quando a associação exclui alguém sem ouvi-lo. Segundo o manual, o STF decidiu, no RE 201.819, que a exclusão de sócio de entidade privada exige respeito ao contraditório e à ampla defesa (p. 453). É um exemplo de **eficácia horizontal** dos direitos fundamentais — a aplicação desses direitos nas relações entre particulares, que você viu nos Módulos 2 e 3.
+**A associação diante do sócio: eficácia horizontal.** A autonomia da associação inclui escolher e excluir sócios. Mas essa autonomia tem limite quando a associação exclui alguém sem ouvi-lo. Segundo o manual, o STF decidiu, no RE 201.819, que a exclusão de sócio de entidade privada exige respeito ao contraditório e à ampla defesa. É um exemplo de **eficácia horizontal** dos direitos fundamentais — a aplicação desses direitos nas relações entre particulares.
 
 **Voltando a Rosa (episódio 5).** A associação de pais pode excluir sócios segundo o seu estatuto. Mas expulsar Rosa numa reunião para a qual ela não foi chamada, sem lhe dar oportunidade de defesa, é decisão vulnerável. O fundamento não é que a associação esteja proibida de excluir; é que a exclusão, quando produz efeitos relevantes sobre a pessoa, precisa de um procedimento mínimo.
 
-**Representação e substituição.** O inciso XXI exige **autorização expressa** dos filiados para que a entidade os represente. No Módulo 4 você viu a diferença entre esse regime (representação, em nome dos filiados) e o do mandado de segurança coletivo do inciso LXX (substituição processual, em nome próprio, sem autorização — Súmula 629 do STF). Se precisar, volte ao Módulo 4, seção 4.
+**Representação e substituição.** O inciso XXI exige **autorização expressa** dos filiados para que a entidade os represente. Esse regime (representação, em nome dos filiados) difere do mandado de segurança coletivo do inciso LXX (substituição processual, em nome próprio, sem autorização — Súmula 629 do STF), examinado no Módulo 4.
 
 **Núcleo e jurisprudência — associação.**
 
-*Núcleo.* Formulação deste curso, a partir dos incisos XVIII a XX: criar associação **sem licença**; não ter a associação dissolvida **senão por juiz, em decisão definitiva**; e não ser obrigado **a entrar nem a ficar**. Lenza resume a dissolução na mesma linha: "A única forma de se dissolver compulsoriamente uma associação já constituída será mediante decisão judicial transitada em julgado" (2024, p. 1886).
+*Núcleo.* Formulação deste curso, a partir dos incisos XVIII a XX: criar associação **sem licença**; não ter a associação dissolvida **senão por juiz, em decisão definitiva**; e não ser obrigado **a entrar nem a ficar**. Lenza resume a dissolução na mesma linha: "A única forma de se dissolver compulsoriamente uma associação já constituída será mediante decisão judicial transitada em julgado" (2024).
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| ADI 3.464 e ADI 3.587 | São inconstitucionais leis que tornam a filiação a entidade privada requisito para exercer atividade ou receber benefício. | Mendes e Branco, p. 449 |
-| RE 201.819 | A exclusão de sócio de entidade privada exige contraditório e ampla defesa (eficácia horizontal). | Mendes e Branco, p. 453 |
-| RE 573.232 (2014) | Autorização genérica no estatuto não basta para a representação do inciso XXI; só os associados que autorizaram expressamente podem executar o título obtido. | Lenza, p. 1886 |
-| RE 612.043 (2017, tema 499) | Na ação coletiva proposta por associação em representação, a coisa julgada alcança os filiados residentes na área do órgão julgador e listados na inicial. | Lenza, p. 1886–1887 |
+| ADI 3.464 e ADI 3.587 | São inconstitucionais leis que tornam a filiação a entidade privada requisito para exercer atividade ou receber benefício. | Mendes e Branco (2018) |
+| RE 201.819 | A exclusão de sócio de entidade privada exige contraditório e ampla defesa (eficácia horizontal). | Mendes e Branco (2018) |
+| RE 573.232 (2014) | Autorização genérica no estatuto não basta para a representação do inciso XXI; só os associados que autorizaram expressamente podem executar o título obtido. | Lenza (2024) |
+| RE 612.043 (2017, tema 499) | Na ação coletiva proposta por associação em representação, a coisa julgada alcança os filiados residentes na área do órgão julgador e listados na inicial. | Lenza (2024) |
 
 A diferença entre representação (inciso XXI) e substituição processual (inciso LXX) foi estudada no Módulo 4.
 
@@ -346,7 +344,7 @@ A diferença entre representação (inciso XXI) e substituição processual (inc
 
 A liberdade de profissão tem **reserva legal qualificada**: a lei pode restringi-la, mas só para exigir **qualificações profissionais**. Não pode, por exemplo, reservar uma profissão a determinado grupo por motivos alheios à qualificação.
 
-E quando a exigência de qualificação é legítima? Segundo Mendes e Branco, a regra é a liberdade, e a exigência se justifica quando o exercício da profissão por quem não tem a qualificação traz **risco a terceiros** (p. 394 e nota na p. 2550). O manual compara três casos do STF:
+E quando a exigência de qualificação é legítima? Segundo Mendes e Branco, a regra é a liberdade, e a exigência se justifica quando o exercício da profissão por quem não tem a qualificação traz **risco a terceiros**. O manual compara três casos do STF:
 
 | Profissão | Exigência | Resultado, segundo o manual | Razão |
 |---|---|---|---|
@@ -358,15 +356,15 @@ O critério, repare, é o do Módulo 3: **adequação e necessidade**. A exigên
 
 **Núcleo e jurisprudência — profissão.**
 
-*Núcleo.* É o exemplo clássico da teoria, e veio da própria jurisprudência: a liberdade de profissão perderia o sentido se a lei pudesse restringi-la "a seu critério e alvitre" (Rep. 930, segundo Mendes e Branco, p. 318). Lenza propõe o critério para o limite: a atuação do legislador deve ser "restrita apenas ao indispensável" para proteger valores como a segurança, a saúde e a ordem pública (2024, p. 1878). O núcleo, portanto, é a **regra da liberdade**: a exigência de qualificação é exceção e precisa justificar-se pelo risco a terceiros.
+*Núcleo.* É o exemplo clássico da teoria, e veio da própria jurisprudência: a liberdade de profissão perderia o sentido se a lei pudesse restringi-la "a seu critério e alvitre" (Rep. 930, segundo Mendes e Branco (2018)). Lenza propõe o critério para o limite: a atuação do legislador deve ser "restrita apenas ao indispensável" para proteger valores como a segurança, a saúde e a ordem pública (2024). O núcleo, portanto, é a **regra da liberdade**: a exigência de qualificação é exceção e precisa justificar-se pelo risco a terceiros.
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| Rep. 930 (sob a Constituição de 1967/69) | A liberdade de profissão não fica ao livre critério do legislador. | Mendes e Branco, p. 318 |
-| RE 603.583 (2011) | O Exame de Ordem é constitucional. | Lenza, p. 1877; Mendes e Branco, nota na p. 2550 |
-| RE 511.961 (2009) | O diploma de jornalismo não pode ser exigido. | Lenza, p. 1877–1878 |
-| RE 414.426 (2011) | É inconstitucional exigir inscrição de músico em conselho profissional: não há "potencial lesivo na atividade". | Lenza, p. 1878; Mendes e Branco, nota na p. 2550 |
-| ADI 3.870 (2019) | No voto do Min. Alexandre de Moraes, a regulamentação só se justifica quando a atividade possa "atingir negativamente a esfera pública de outros indivíduos". | Lenza, p. 1878 |
+| Rep. 930 (sob a Constituição de 1967/69) | A liberdade de profissão não fica ao livre critério do legislador. | Mendes e Branco (2018) |
+| RE 603.583 (2011) | O Exame de Ordem é constitucional. | Lenza (2024); Mendes e Branco (2018) |
+| RE 511.961 (2009) | O diploma de jornalismo não pode ser exigido. | Lenza (2024) |
+| RE 414.426 (2011) | É inconstitucional exigir inscrição de músico em conselho profissional: não há "potencial lesivo na atividade". | Lenza (2024); Mendes e Branco (2018) |
+| ADI 3.870 (2019) | No voto do Min. Alexandre de Moraes, a regulamentação só se justifica quando a atividade possa "atingir negativamente a esfera pública de outros indivíduos". | Lenza (2024) |
 
 ---
 
@@ -376,40 +374,40 @@ O critério, repare, é o do Módulo 3: **adequação e necessidade**. A exigên
 
 > Art. 5º, X — são invioláveis a intimidade, a vida privada, a honra e a imagem das pessoas, assegurado o direito a indenização pelo dano material ou moral decorrente de sua violação;
 
-A doutrina costuma distinguir **vida privada** de **intimidade** como dois círculos concêntricos: a vida privada abrange as relações pessoais, familiares e profissionais que a pessoa não expõe ao público; a intimidade é o núcleo mais restrito, o das relações mais próximas e dos segredos (Mendes; Branco, 2018, p. 411). Para fins práticos, o que importa é a ideia central que o manual destaca:
+A doutrina costuma distinguir **vida privada** de **intimidade** como dois círculos concêntricos: a vida privada abrange as relações pessoais, familiares e profissionais que a pessoa não expõe ao público; a intimidade é o núcleo mais restrito, o das relações mais próximas e dos segredos (Mendes; Branco, 2018). Para fins práticos, o que importa é a ideia central que o manual destaca:
 
-> "No âmago do direito à privacidade está o controle de informações sobre si mesmo." (Mendes; Branco, 2018, p. 413)
+> "No âmago do direito à privacidade está o controle de informações sobre si mesmo." (Mendes; Branco, 2018)
 
 Privacidade, então, não é só "ser deixado em paz". É **decidir quem sabe o quê sobre mim**. Essa ideia vai reaparecer, adiante, na proteção de dados.
 
-**Os limites da privacidade.** Como a liberdade de expressão, a privacidade não é absoluta. Os critérios para decidir quando cede são, em boa parte, os mesmos da seção 2.4, vistos do outro lado (p. 415–419):
+**Os limites da privacidade.** Como a liberdade de expressão, a privacidade não é absoluta. Os critérios para decidir quando cede são, em boa parte, os mesmos da seção 2.4, vistos do outro lado:
 
 - **Consentimento.** Quem expõe voluntariamente um aspecto da própria vida reduz, nessa medida, a proteção sobre ele.
 - **Figura pública.** Quem exerce função pública ou busca notoriedade tem a vida privada mais exposta — mas só **naquilo que se relaciona com a função ou com a notoriedade**. O governador tem a agenda oficial exposta; não tem a vida dos filhos exposta.
 - **Interesse público, e não interesse do público.** De novo a distinção. A divulgação de fato privado só se justifica se o fato importa à vida coletiva.
 
-Segundo Mendes e Branco, o STF entendeu legítima a divulgação, em sítio oficial, do nome dos servidores públicos e da respectiva remuneração (ARE 652.777): a remuneração paga com dinheiro público é informação de interesse coletivo, e o servidor não pode opor a ela a sua privacidade (p. 419–420). Repare que a decisão diz respeito à **remuneração ligada ao cargo**, e não a qualquer dado do servidor.
+Segundo Mendes e Branco, o STF entendeu legítima a divulgação, em sítio oficial, do nome dos servidores públicos e da respectiva remuneração (ARE 652.777): a remuneração paga com dinheiro público é informação de interesse coletivo, e o servidor não pode opor a ela a sua privacidade. Repare que a decisão diz respeito à **remuneração ligada ao cargo**, e não a qualquer dado do servidor.
 
 **Voltando a Rosa (episódio 2).** Rosa tornou-se, por vontade própria, conhecida pelo vídeo. Isso a expõe à **crítica** sobre o que ela disse. Não expõe seu endereço, a fachada de sua casa e os nomes de seus filhos, que nada têm a ver com a merenda. Não há interesse público nessas informações; há, quando muito, interesse do público — e, na prática, há intimidação. Além disso, o perfil era anônimo, o que encontra a vedação do art. 5º, IV. E a identificação do responsável, um assessor parlamentar, agrava a situação, porque aproxima a conduta do próprio poder que Rosa criticava.
 
 **Núcleo e jurisprudência — intimidade e vida privada.**
 
-*Núcleo.* Mendes e Branco o formulam diretamente: "No âmago do direito à privacidade está o controle de informações sobre si mesmo" (p. 413). "Âmago" é, aqui, sinônimo de núcleo.
+*Núcleo.* Mendes e Branco o formulam diretamente: "No âmago do direito à privacidade está o controle de informações sobre si mesmo". "Âmago" é, aqui, sinônimo de núcleo.
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| ARE 652.777 (2015, tema 483) | É legítima a publicação, em sítio oficial, dos nomes dos servidores e de sua remuneração. | Lenza, nota na p. 2622; Mendes e Branco, p. 419–420 |
-| ADI 4.815 (2015) | Biografias não autorizadas: a intimidade do biografado se protege por resposta e indenização, não por censura prévia. | Lenza, p. 1858 |
-| RE 1.010.606 (2021) | Não existe, no direito brasileiro, um direito ao esquecimento; abusos na divulgação de fatos passados são examinados caso a caso. | Lenza, p. 1858–1859 |
-| AI 578.858-AgR (2009) e RE 630.944-AgR (2011) | A gravação de conversa feita por um dos interlocutores, sem o conhecimento do outro, não é prova ilícita quando não há causa legal de sigilo. O tema é do inciso X, não do XII. | Lenza, p. 1866, 1876 |
+| ARE 652.777 (2015, tema 483) | É legítima a publicação, em sítio oficial, dos nomes dos servidores e de sua remuneração. | Lenza (2024); Mendes e Branco (2018) |
+| ADI 4.815 (2015) | Biografias não autorizadas: a intimidade do biografado se protege por resposta e indenização, não por censura prévia. | Lenza (2024) |
+| RE 1.010.606 (2021) | Não existe, no direito brasileiro, um direito ao esquecimento; abusos na divulgação de fatos passados são examinados caso a caso. | Lenza (2024) |
+| AI 578.858-AgR (2009) e RE 630.944-AgR (2011) | A gravação de conversa feita por um dos interlocutores, sem o conhecimento do outro, não é prova ilícita quando não há causa legal de sigilo. O tema é do inciso X, não do XII. | Lenza (2024) |
 
-Pendente no STF, segundo Lenza: a revista íntima de visitantes em presídios (ARE 959.620) (p. 1865).
+Pendente no STF, segundo Lenza: a revista íntima de visitantes em presídios (ARE 959.620).
 
 ### 4.2 A casa
 
 > Art. 5º, XI — a casa é asilo inviolável do indivíduo, ninguém nela podendo penetrar sem consentimento do morador, salvo em caso de flagrante delito ou desastre, ou para prestar socorro, ou, durante o dia, por determinação judicial;
 
-**"Casa" em sentido amplo.** Para fins constitucionais, casa não é só a residência. É todo compartimento habitado, ou não aberto ao público, onde alguém exerce atividade pessoal ou profissional. Segundo Mendes e Branco, o STF já estendeu a proteção a escritórios profissionais e a quarto de hotel ocupado (p. 424–425).
+**"Casa" em sentido amplo.** Para fins constitucionais, casa não é só a residência. É todo compartimento habitado, ou não aberto ao público, onde alguém exerce atividade pessoal ou profissional. Segundo Mendes e Branco, o STF já estendeu a proteção a escritórios profissionais e a quarto de hotel ocupado.
 
 **As hipóteses de ingresso sem consentimento** são quatro, e o texto as divide em dois grupos:
 
@@ -422,24 +420,24 @@ Pendente no STF, segundo Lenza: a revista íntima de visitantes em presídios (A
 
 E o que é "dia"? O manual adota o critério físico:
 
-> "Corresponde ao conceito de dia todas as horas compreendidas entre o nascer e o pôr do sol." (Mendes; Branco, 2018, p. 427)
+> "Corresponde ao conceito de dia todas as horas compreendidas entre o nascer e o pôr do sol." (Mendes; Branco, 2018)
 
-Duas exigências adicionais que o manual registra: o mandado deve ser **individualizado** — "A cada casa deve corresponder uma ordem singular" (p. 428), de modo que não vale um mandado genérico para todas as casas de uma rua; e, no flagrante de crime permanente (como a guarda de droga), segundo Mendes e Branco o STF exigiu, no RE 603.616, que o ingresso sem mandado se apoie em **fundadas razões**, justificadas depois, sob pena de ilicitude da prova (p. 426).
+Duas exigências adicionais que o manual registra: o mandado deve ser **individualizado** — "A cada casa deve corresponder uma ordem singular", de modo que não vale um mandado genérico para todas as casas de uma rua; e, no flagrante de crime permanente (como a guarda de droga), segundo Mendes e Branco o STF exigiu, no RE 603.616, que o ingresso sem mandado se apoie em **fundadas razões**, justificadas depois, sob pena de ilicitude da prova.
 
 **Voltando a Rosa (episódio 3).** Os policiais tinham mandado judicial — mas entraram às dez da noite. O mandado autoriza o ingresso **durante o dia**; à noite, só com consentimento de Rosa ou nas hipóteses de flagrante, desastre ou socorro. Nada indica que houvesse flagrante. O ingresso foi inconstitucional, e as provas eventualmente colhidas nele são ilícitas (art. 5º, LVI). Repare que isso não diz nada sobre a legitimidade da investigação em si: o desvio de merenda pode e deve ser investigado. O que a Constituição regula é **como**.
 
 **Núcleo e jurisprudência — inviolabilidade da casa.**
 
-*Núcleo.* Segundo Lenza, o STF consagrou "a excepcionalidade das hipóteses e a necessidade de eficácia total da garantia constitucional" (2024, p. 1870). Formulação deste curso: o núcleo é que **ninguém entra na casa alheia sem consentimento, salvo nas hipóteses do próprio inciso XI**, e o ônus de demonstrar a hipótese é de quem entrou.
+*Núcleo.* Segundo Lenza, o STF consagrou "a excepcionalidade das hipóteses e a necessidade de eficácia total da garantia constitucional" (2024). Formulação deste curso: o núcleo é que **ninguém entra na casa alheia sem consentimento, salvo nas hipóteses do próprio inciso XI**, e o ônus de demonstrar a hipótese é de quem entrou.
 
-Uma nota sobre o conceito de "dia": Mendes e Branco adotam o critério do nascer ao pôr do sol (p. 427); Lenza registra também o critério das 6h às 18h e propõe combiná-los (p. 1869). Em qualquer dos dois, as 22h do caso de Rosa são noite.
+Uma nota sobre o conceito de "dia": Mendes e Branco adotam o critério do nascer ao pôr do sol; Lenza registra também o critério das 6h às 18h e propõe combiná-los. Em qualquer dos dois, as 22h do caso de Rosa são noite.
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| RHC 90.376 (2007) e HC 82.788 (2005) | O conceito de casa é amplo e inclui quarto de hotel ocupado. | Lenza, p. 1869; Mendes e Branco, p. 425 |
-| RE 603.616 (2015, tema 280) | A entrada forçada sem mandado, mesmo à noite, só é lícita com fundadas razões, justificadas depois, de que há flagrante delito na casa. | Lenza, p. 1869–1870; Mendes e Branco, p. 426 |
-| STJ, HC 598.051 (2021) | O Superior Tribunal de Justiça fixou que o consentimento do morador deve ser livre e provado pelo Estado, inclusive com registro audiovisual. | Lenza, p. 1870–1871 |
-| RE 1.342.077 (2021, decisão monocrática) | O Min. Alexandre de Moraes afastou a exigência de registro audiovisual imposta pelo STJ, por violação da separação de poderes. O Plenário ainda não se pronunciou. | Lenza, p. 1871 |
+| RHC 90.376 (2007) e HC 82.788 (2005) | O conceito de casa é amplo e inclui quarto de hotel ocupado. | Lenza (2024); Mendes e Branco (2018) |
+| RE 603.616 (2015, tema 280) | A entrada forçada sem mandado, mesmo à noite, só é lícita com fundadas razões, justificadas depois, de que há flagrante delito na casa. | Lenza (2024); Mendes e Branco (2018) |
+| STJ, HC 598.051 (2021) | O Superior Tribunal de Justiça fixou que o consentimento do morador deve ser livre e provado pelo Estado, inclusive com registro audiovisual. | Lenza (2024) |
+| RE 1.342.077 (2021, decisão monocrática) | O Min. Alexandre de Moraes afastou a exigência de registro audiovisual imposta pelo STJ, por violação da separação de poderes. O Plenário ainda não se pronunciou. | Lenza (2024) |
 
 ### 4.3 Os sigilos
 
@@ -447,45 +445,45 @@ Uma nota sobre o conceito de "dia": Mendes e Branco adotam o critério do nascer
 
 Leia o inciso com atenção à expressão "no último caso". A ressalva expressa se refere às **comunicações telefônicas**, cuja interceptação depende de três requisitos cumulativos: **ordem judicial**; **hipóteses e forma previstas em lei** (a Lei n. 9.296/1996); e **finalidade penal** (investigação criminal ou instrução processual penal). Fora do processo penal, não há interceptação telefônica.
 
-Isso não significa que os demais sigilos sejam absolutos. A doutrina admite que também possam ser restringidos, em casos excepcionais, pela via da proporcionalidade (Mendes; Branco, 2018, p. 429).
+Isso não significa que os demais sigilos sejam absolutos. A doutrina admite que também possam ser restringidos, em casos excepcionais, pela via da proporcionalidade (Mendes; Branco, 2018).
 
 **Comunicação de dados não é dado armazenado.** Esta é a distinção mais importante da seção, e o manual a registra com base na jurisprudência do STF:
 
-> "[...] o sigilo garantido pelo art. 5º, XII, da CF refere-se apenas à comunicação de dados, e não aos dados em si mesmos." (Mendes; Branco, 2018, p. 429)
+> "[...] o sigilo garantido pelo art. 5º, XII, da CF refere-se apenas à comunicação de dados, e não aos dados em si mesmos." (Mendes; Branco, 2018)
 
 O inciso XII protege a **comunicação** enquanto ela ocorre — a mensagem em trânsito. Os dados já armazenados (num computador apreendido, por exemplo) não estão protegidos pelo inciso XII, mas pela proteção geral da intimidade (inciso X) e, hoje, também pelo inciso LXXIX. Na prática, isso significa que o acesso a eles também exige justificação; muda o fundamento, não a necessidade de controle.
 
-**O sigilo bancário** não está expressamente no art. 5º, mas a doutrina e a jurisprudência o extraem da proteção à intimidade e aos dados. A pergunta que importa é **quem pode afastá-lo**. Segundo Mendes e Branco (p. 420–423), o quadro jurisprudencial é o seguinte:
+**O sigilo bancário** não está expressamente no art. 5º, mas a doutrina e a jurisprudência o extraem da proteção à intimidade e aos dados. A pergunta que importa é **quem pode afastá-lo**. Segundo Mendes e Branco, o quadro jurisprudencial é o seguinte:
 
 | Quem | Pode afastar o sigilo bancário? |
 |---|---|
 | Juiz | sim, por decisão fundamentada |
-| Comissão Parlamentar de Inquérito | sim, por deliberação fundamentada (ela tem poderes de investigação próprios das autoridades judiciais, art. 58, § 3º); segundo Lenza, as CPIs federais, estaduais e distritais, mas não as municipais (2024, p. 1862–1863) |
-| Receita Federal | sim, nos termos da LC n. 105/2001, com transferência do sigilo, e não quebra (RE 601.314, tema 225, e ADIs 2.386, 2.390, 2.397 e 2.859, todos de 2016, segundo Lenza, p. 1860–1862) |
-| Ministério Público | em regra, não, sem ordem judicial (RE 215.301), com exceção para recursos públicos (MS 21.729; RHC 133.118). Mas pode receber da Receita e da Unidade de Inteligência Financeira, sem autorização judicial prévia, relatórios e dados já obtidos legitimamente (RE 1.055.941, tema 990, 2019, segundo Lenza, p. 1861–1863) |
+| Comissão Parlamentar de Inquérito | sim, por deliberação fundamentada (ela tem poderes de investigação próprios das autoridades judiciais, art. 58, § 3º); segundo Lenza, as CPIs federais, estaduais e distritais, mas não as municipais (2024) |
+| Receita Federal | sim, nos termos da LC n. 105/2001, com transferência do sigilo, e não quebra (RE 601.314, tema 225, e ADIs 2.386, 2.390, 2.397 e 2.859, todos de 2016, segundo Lenza (2024)) |
+| Ministério Público | em regra, não, sem ordem judicial (RE 215.301), com exceção para recursos públicos (MS 21.729; RHC 133.118). Mas pode receber da Receita e da Unidade de Inteligência Financeira, sem autorização judicial prévia, relatórios e dados já obtidos legitimamente (RE 1.055.941, tema 990, 2019, segundo Lenza (2024)) |
 | Tribunal de Contas da União | em regra, não (MS 22.801), com exceção para operações com recursos públicos do BNDES (MS 33.340) |
 
 Você não precisa decorar os números dos julgados; precisa entender a **lógica**: o sigilo cede diante de órgãos com poder jurisdicional ou equiparado, ou quando o dinheiro em causa é público.
 
 **Núcleo e jurisprudência — sigilos.**
 
-*Núcleo.* Formulação deste curso: o núcleo do inciso XII é a **comunicação em trânsito**; a interceptação telefônica só é possível com os três requisitos cumulativos do texto. Lenza lembra que a garantia alcança as comunicações privadas por e-mail, aplicativos e redes sociais (2024, p. 1876).
+*Núcleo.* Formulação deste curso: o núcleo do inciso XII é a **comunicação em trânsito**; a interceptação telefônica só é possível com os três requisitos cumulativos do texto. Lenza lembra que a garantia alcança as comunicações privadas por e-mail, aplicativos e redes sociais (2024).
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| HC 87.654 (2006) | Os sigilos fiscal e bancário são desdobramentos do direito à intimidade e à vida privada. | Lenza, p. 1859 |
-| RE 389.808 (2010) → RE 601.314 (2016, tema 225) | Virada de entendimento: em 2010, a quebra pelo Fisco exigia juiz; em 2016, o STF passou a ver no acesso da Receita uma transferência do sigilo, e não uma quebra. | Lenza, p. 1859–1862 |
-| RE 1.055.941 (2019, tema 990) | É constitucional o compartilhamento de relatórios da UIF e da íntegra da fiscalização da Receita com os órgãos de persecução penal, sem autorização judicial prévia, por comunicações formais e com sigilo. | Lenza, p. 1861–1863 |
-| MS 21.729 (1995) e MS 33.340 (2015) | Operações com recursos públicos não estão cobertas pelo sigilo bancário. | Lenza, p. 1861; Mendes e Branco, p. 420–423 |
-| RE 418.416 e HC 91.867 | O inciso XII protege a comunicação de dados, não os dados armazenados. | Mendes e Branco, p. 429 |
+| HC 87.654 (2006) | Os sigilos fiscal e bancário são desdobramentos do direito à intimidade e à vida privada. | Lenza (2024) |
+| RE 389.808 (2010) → RE 601.314 (2016, tema 225) | Virada de entendimento: em 2010, a quebra pelo Fisco exigia juiz; em 2016, o STF passou a ver no acesso da Receita uma transferência do sigilo, e não uma quebra. | Lenza (2024) |
+| RE 1.055.941 (2019, tema 990) | É constitucional o compartilhamento de relatórios da UIF e da íntegra da fiscalização da Receita com os órgãos de persecução penal, sem autorização judicial prévia, por comunicações formais e com sigilo. | Lenza (2024) |
+| MS 21.729 (1995) e MS 33.340 (2015) | Operações com recursos públicos não estão cobertas pelo sigilo bancário. | Lenza (2024); Mendes e Branco (2018) |
+| RE 418.416 e HC 91.867 | O inciso XII protege a comunicação de dados, não os dados armazenados. | Mendes e Branco (2018) |
 
-Pendentes no STF, segundo Lenza: o sigilo de dados em aplicativos de mensagem e o Marco Civil da Internet (ADI 5.527 e ADPF 403) (p. 1835, 1877).
+Pendentes no STF, segundo Lenza: o sigilo de dados em aplicativos de mensagem e o Marco Civil da Internet (ADI 5.527 e ADPF 403).
 
 ### 4.4 Proteção de dados pessoais
 
 > Art. 5º, LXXIX — é assegurado, nos termos da lei, o direito à proteção dos dados pessoais, inclusive nos meios digitais;
 
-Este é o direito mais novo do catálogo, incluído pela Emenda Constitucional n. 115/2022. Segundo Lenza (2024, p. 1963 do PDF), ele já era reconhecido como direito fundamental implícito pelo STF antes da emenda (ADI 6.387 MC-Ref) e já contava com disciplina legal na Lei Geral de Proteção de Dados (Lei n. 13.709/2018); a emenda o tornou expresso. A mesma emenda atribuiu à União a competência para organizar e fiscalizar a proteção e o tratamento de dados pessoais (art. 21, XXVI) e a competência privativa para legislar sobre o tema (art. 22, XXX).
+Este é o direito mais novo do catálogo, incluído pela Emenda Constitucional n. 115/2022. Segundo Lenza (2024), ele já era reconhecido como direito fundamental implícito pelo STF antes da emenda (ADI 6.387 MC-Ref) e já contava com disciplina legal na Lei Geral de Proteção de Dados (Lei n. 13.709/2018); a emenda o tornou expresso. A mesma emenda atribuiu à União a competência para organizar e fiscalizar a proteção e o tratamento de dados pessoais (art. 21, XXVI) e a competência privativa para legislar sobre o tema (art. 22, XXX).
 
 Por que um direito novo, se já existia a intimidade? Porque o problema mudou de escala. A intimidade clássica protege o segredo; a proteção de dados protege a pessoa diante do **tratamento** de informações que, isoladas, podem nem ser secretas — nome, endereço, CPF, hábitos de consumo, localização —, mas que, cruzadas e armazenadas em massa, permitem vigiar, classificar e discriminar. É a ideia de "controle de informações sobre si mesmo", da seção 4.1, levada para a era digital.
 
@@ -493,9 +491,9 @@ Por que um direito novo, se já existia a intimidade? Porque o problema mudou de
 
 **Núcleo e jurisprudência — proteção de dados.**
 
-*Núcleo.* Formulação deste curso: o núcleo é o **controle da pessoa sobre o tratamento de seus dados** — saber que dados existem, para que são usados e com quem são compartilhados. É o "controle de informações sobre si mesmo" (Mendes e Branco, p. 413) projetado para o tratamento em massa.
+*Núcleo.* Formulação deste curso: o núcleo é o **controle da pessoa sobre o tratamento de seus dados** — saber que dados existem, para que são usados e com quem são compartilhados. É o "controle de informações sobre si mesmo" (Mendes e Branco (2018)) projetado para o tratamento em massa.
 
-A jurisprudência ainda é escassa. Lenza menciona a ADI 6.387 MC-Ref como o precedente que reconheceu o direito antes da EC n. 115/2022, sem descrever o caso (2024, p. 1963), e registra como pendentes a ADI 5.527 e a ADPF 403 (p. 1835, 1877).
+A jurisprudência ainda é escassa. Lenza menciona a ADI 6.387 MC-Ref como o precedente que reconheceu o direito antes da EC n. 115/2022, sem descrever o caso (2024), e registra como pendentes a ADI 5.527 e a ADPF 403.
 
 ### 4.5 O avesso da privacidade: o direito de saber
 
@@ -503,19 +501,19 @@ A Constituição protege o segredo do indivíduo, mas exige a **transparência**
 
 > Art. 5º, XXXIII — todos têm direito a receber dos órgãos públicos informações de seu interesse particular, ou de interesse coletivo ou geral, que serão prestadas no prazo da lei, sob pena de responsabilidade, ressalvadas aquelas cujo sigilo seja imprescindível à segurança da sociedade e do Estado;
 
-A regra se inverte: para o indivíduo, a privacidade é a regra e a exposição é a exceção; para o poder público, a **publicidade** é a regra (art. 37, *caput*) e o sigilo é a exceção, que deve ser justificada. A Lei de Acesso à Informação (Lei n. 12.527/2011) regulamenta o inciso. E, quando a informação procurada diz respeito à própria pessoa, a garantia processual específica é o **habeas data** (art. 5º, LXXII), que você viu no Módulo 5.
+A regra se inverte: para o indivíduo, a privacidade é a regra e a exposição é a exceção; para o poder público, a **publicidade** é a regra (art. 37, *caput*) e o sigilo é a exceção, que deve ser justificada. A Lei de Acesso à Informação (Lei n. 12.527/2011) regulamenta o inciso. E, quando a informação procurada diz respeito à própria pessoa, a garantia processual específica é o **habeas data** (art. 5º, LXXII), examinado no Módulo 5.
 
 Rosa, aliás, poderia ter usado esse direito antes de gravar o vídeo: pedir à Secretaria de Educação os contratos de fornecimento da merenda e as notas de entrega. É o mesmo ciclo da seção 1: o acesso à informação alimenta a expressão, que alimenta a participação.
 
 **Núcleo e jurisprudência — acesso à informação.**
 
-*Núcleo.* O STF o formulou como regra de ônus: "A publicidade é a regra, o sigilo, a excepcional exceção" (ADPF 129, voto do Min. Fachin, segundo Lenza, 2024, p. 1879). Quanto mais intenso o sigilo, mais forte deve ser a justificativa.
+*Núcleo.* O STF o formulou como regra de ônus: "A publicidade é a regra, o sigilo, a excepcional exceção" (ADPF 129, voto do Min. Fachin, segundo Lenza, 2024). Quanto mais intenso o sigilo, mais forte deve ser a justificativa.
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| ADPF 129 (2019, 6 x 5) | Restringir o acesso a informações públicas exige previsão legal, finalidade de proteção da intimidade ou da segurança nacional, necessidade e proporcionalidade. | Lenza, p. 1879 |
-| ARE 652.777 (2015, tema 483) | A remuneração dos servidores pode ser divulgada nominalmente. | Lenza, nota na p. 2622 |
-| Súmula Vinculante 44 e RE 348.494 (2003) | O exame psicotécnico em concurso depende de lei e não pode ter critérios sigilosos. | Lenza, p. 1881 |
+| ADPF 129 (2019, 6 x 5) | Restringir o acesso a informações públicas exige previsão legal, finalidade de proteção da intimidade ou da segurança nacional, necessidade e proporcionalidade. | Lenza (2024) |
+| ARE 652.777 (2015, tema 483) | A remuneração dos servidores pode ser divulgada nominalmente. | Lenza (2024) |
+| Súmula Vinculante 44 e RE 348.494 (2003) | O exame psicotécnico em concurso depende de lei e não pode ter critérios sigilosos. | Lenza (2024) |
 
 ---
 
@@ -552,7 +550,7 @@ Todos os direitos que vimos até aqui são, em regra, de qualquer pessoa — bra
 
 ### 6.1 Conceito e espécies
 
-> "É a nacionalidade que efetiva tal conexão e faz com que uma pessoa integre dada comunidade política." (Mendes; Branco, 2018, p. 1119)
+> "É a nacionalidade que efetiva tal conexão e faz com que uma pessoa integre dada comunidade política." (Mendes; Branco, 2018)
 
 A "conexão" a que o manual se refere é o vínculo político e pessoal entre o Estado e o indivíduo. Todo Estado tem território, soberania e povo; a nacionalidade é o critério que define **quem é o povo**.
 
@@ -573,7 +571,7 @@ O art. 12, I, prevê três hipóteses:
 | *b* | *ius sanguinis* + serviço | nascidos no estrangeiro, de pai ou mãe brasileiros, **desde que qualquer deles esteja a serviço do Brasil** |
 | *c* | *ius sanguinis* + registro ou opção | nascidos no estrangeiro, de pai ou mãe brasileiros, desde que **registrados em repartição brasileira competente** ou que **venham a residir no Brasil e optem**, depois de atingida a maioridade, pela nacionalidade brasileira |
 
-A ressalva da alínea *a* tem uma razão de cortesia internacional: o filho do diplomata estrangeiro nascido em Brasília não é brasileiro nato, porque os pais estão aqui a serviço de outro Estado. A alínea *c* teve a redação atual dada pela Emenda Constitucional n. 54/2007, que restabeleceu o registro consular como forma de aquisição. Quanto à opção, segundo Mendes e Branco o STF a trata como condição que, uma vez realizada, produz efeitos desde o nascimento (p. 1122–1124).
+A ressalva da alínea *a* tem uma razão de cortesia internacional: o filho do diplomata estrangeiro nascido em Brasília não é brasileiro nato, porque os pais estão aqui a serviço de outro Estado. A alínea *c* teve a redação atual dada pela Emenda Constitucional n. 54/2007, que restabeleceu o registro consular como forma de aquisição. Quanto à opção, segundo Mendes e Branco o STF a trata como condição que, uma vez realizada, produz efeitos desde o nascimento.
 
 ### 6.3 Quem é brasileiro naturalizado
 
@@ -597,7 +595,7 @@ A regra é a **igualdade**. Só a própria Constituição pode distinguir, e ela
 
 ### 6.5 Perda da nacionalidade: o que mudou com a EC n. 131/2023
 
-Este é um ponto em que o manual de referência (2018) está **desatualizado**. A Emenda Constitucional n. 131/2023 reescreveu o § 4º do art. 12. Segundo Lenza (2024, p. 2102 do PDF), a comparação é esta:
+A Emenda Constitucional n. 131/2023 reescreveu o § 4º do art. 12. Segundo Lenza (2024), a comparação é esta:
 
 | | Redação original (1988) | Redação da EC n. 131/2023 |
 |---|---|---|
@@ -607,29 +605,29 @@ Este é um ponto em que o manual de referência (2018) está **desatualizado**. 
 
 Duas mudanças de fundo:
 
-- **No inciso I**, saiu uma expressão aberta e perigosa ("atividade nociva ao interesse nacional"), que, como observa a doutrina citada por Lenza, dava margem a perseguição de quem pensasse diferente do governo de turno. Entraram hipóteses mais objetivas. **Continua indispensável a sentença judicial transitada em julgado**: segundo Lenza, o STF já havia afirmado, no RMS 27.840, que a perda da nacionalidade não pode ser declarada por ato administrativo (p. 2102–2105).
+- **No inciso I**, saiu uma expressão aberta e perigosa ("atividade nociva ao interesse nacional"), que, como observa a doutrina citada por Lenza, dava margem a perseguição de quem pensasse diferente do governo de turno. Entraram hipóteses mais objetivas. **Continua indispensável a sentença judicial transitada em julgado**: segundo Lenza, o STF já havia afirmado, no RMS 27.840, que a perda da nacionalidade não pode ser declarada por ato administrativo.
 - **No inciso II**, a aquisição de outra nacionalidade **deixou de ser causa de perda** da brasileira. Hoje, o brasileiro só perde a nacionalidade por essa via se **pedir expressamente**, e o pedido deve ser negado se o deixar sem nacionalidade alguma (apátrida).
 
 **Voltando a Rosa (episódio 6).** O adversário erra duas vezes. Primeiro, a naturalizada **pode** ser candidata a vereadora: o cargo não está entre os privativos de brasileiro nato, e a regra é a igualdade (art. 12, § 2º). Segundo, a hipótese de "atividade nociva ao interesse nacional" **não existe mais** desde a EC n. 131/2023 — e, mesmo quando existia, exigia sentença judicial transitada em julgado. Criticar o secretário de Educação não é fraude no processo de naturalização nem atentado contra a ordem constitucional; é exercício da liberdade de expressão, que a ordem constitucional protege.
 
 **Núcleo e jurisprudência — nacionalidade.**
 
-*Núcleo.* Lenza parte da Declaração Universal dos Direitos Humanos, cujo art. XV assegura a toda pessoa o direito a uma nacionalidade e proíbe que alguém seja arbitrariamente dela privado; por isso, para ele, a apatridia é "intolerável" (2024, p. 2104). Formulação deste curso: o núcleo é **não ser privado arbitrariamente da nacionalidade nem ficar sem nenhuma** — daí a exigência de sentença judicial para a perda e a ressalva da apatridia no novo § 4º, II.
+*Núcleo.* Lenza parte da Declaração Universal dos Direitos Humanos, cujo art. XV assegura a toda pessoa o direito a uma nacionalidade e proíbe que alguém seja arbitrariamente dela privado; por isso, para ele, a apatridia é "intolerável" (2024). Formulação deste curso: o núcleo é **não ser privado arbitrariamente da nacionalidade nem ficar sem nenhuma** — daí a exigência de sentença judicial para a perda e a ressalva da apatridia no novo § 4º, II.
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| Ext 890 (2004) | O § 1º do art. 12 (português equiparado) é "hipótese excepcional de quase nacionalidade" e não opera de modo imediato: depende de requerimento do interessado. | Lenza, p. 2072 |
-| Ext 541 (1991) e Ext 934-QO (2004) | Extradição de naturalizado: a hipótese do crime comum anterior à naturalização tem eficácia plena; a do tráfico depende de lei. | Lenza, p. 2077 |
-| Súmula 421 e Ext 1.201 (2011) | Ser casado com brasileira ou ter filho brasileiro não impede a extradição. | Lenza, p. 2084 |
-| RE 608.898 (2020, tema 373) | É vedada a expulsão de estrangeiro cujo filho brasileiro foi reconhecido ou adotado depois do fato, se comprovadas a guarda e a dependência econômica. | Lenza, p. 2098 |
-| RMS 27.840 | A perda da nacionalidade só pode ser declarada por sentença judicial transitada em julgado, nunca por ato administrativo. | Lenza, p. 2105–2106 |
-| MS 33.864 (2016) e Ext 1.462 (2017) | Sob a regra anterior à EC n. 131/2023, brasileira nata que se naturalizou norte-americana perdeu a nacionalidade brasileira e pôde ser extraditada. Pela regra atual, a aquisição de outra nacionalidade não acarretaria a perda. | Lenza, p. 2107–2109 |
+| Ext 890 (2004) | O § 1º do art. 12 (português equiparado) é "hipótese excepcional de quase nacionalidade" e não opera de modo imediato: depende de requerimento do interessado. | Lenza (2024) |
+| Ext 541 (1991) e Ext 934-QO (2004) | Extradição de naturalizado: a hipótese do crime comum anterior à naturalização tem eficácia plena; a do tráfico depende de lei. | Lenza (2024) |
+| Súmula 421 e Ext 1.201 (2011) | Ser casado com brasileira ou ter filho brasileiro não impede a extradição. | Lenza (2024) |
+| RE 608.898 (2020, tema 373) | É vedada a expulsão de estrangeiro cujo filho brasileiro foi reconhecido ou adotado depois do fato, se comprovadas a guarda e a dependência econômica. | Lenza (2024) |
+| RMS 27.840 | A perda da nacionalidade só pode ser declarada por sentença judicial transitada em julgado, nunca por ato administrativo. | Lenza (2024) |
+| MS 33.864 (2016) e Ext 1.462 (2017) | Sob a regra anterior à EC n. 131/2023, brasileira nata que se naturalizou norte-americana perdeu a nacionalidade brasileira e pôde ser extraditada. Pela regra atual, a aquisição de outra nacionalidade não acarretaria a perda. | Lenza (2024) |
 
 ---
 
 ## 7. Direitos políticos
 
-> "Os direitos políticos formam a base do regime democrático." (Mendes; Branco, 2018, p. 1146)
+> "Os direitos políticos formam a base do regime democrático." (Mendes; Branco, 2018)
 
 Direitos políticos são os direitos de **participar da formação da vontade do Estado**: votar, ser votado, propor leis, ser consultado em plebiscito ou referendo, fiscalizar. Quem os possui é **cidadão** em sentido técnico — palavra que, no direito constitucional, tem sentido mais estreito que na linguagem comum.
 
@@ -645,7 +643,7 @@ Três palavras que parecem sinônimas e não são:
 
 O voto, diz a Constituição, é **direto** (o eleitor escolhe o representante, sem intermediários), **secreto** (ninguém precisa revelar em quem votou, o que protege o eleitor contra pressão), **igual** (cada voto tem o mesmo peso) e **periódico** (os mandatos têm prazo). O voto direto, secreto, universal e periódico é **cláusula pétrea** (art. 60, § 4º, II). Repare: o que é cláusula pétrea é o voto, e não a sua **obrigatoriedade** — uma emenda poderia, em tese, tornar o voto facultativo.
 
-Além do voto, o art. 14 prevê três formas de **participação direta** (regulamentadas pela Lei n. 9.709/1998): o **plebiscito** (consulta **prévia** ao ato legislativo ou administrativo), o **referendo** (consulta **posterior**, para confirmar ou rejeitar o ato) e a **iniciativa popular** de leis. A Lei da Ficha Limpa (LC n. 135/2010), lembra o manual, nasceu de iniciativa popular (p. 1184).
+Além do voto, o art. 14 prevê três formas de **participação direta** (regulamentadas pela Lei n. 9.709/1998): o **plebiscito** (consulta **prévia** ao ato legislativo ou administrativo), o **referendo** (consulta **posterior**, para confirmar ou rejeitar o ato) e a **iniciativa popular** de leis. A Lei da Ficha Limpa (LC n. 135/2010), lembra o manual, nasceu de iniciativa popular.
 
 ### 7.2 Capacidade eleitoral ativa: quem vota
 
@@ -681,7 +679,7 @@ Para ser candidato, é preciso preencher **todas** as condições de elegibilida
   - **Militares** (§ 8º): regras próprias de afastamento ou agregação.
   - **Legais** (§ 9º): a lei complementar pode criar outras inelegibilidades para proteger a probidade administrativa, a moralidade para o exercício do mandato, considerada a vida pregressa do candidato, e a normalidade e legitimidade das eleições contra o abuso de poder. É a LC n. 64/1990, alterada pela LC n. 135/2010 (Lei da Ficha Limpa).
 
-Sobre a Ficha Limpa, guarde a tese central que o manual registra: segundo Mendes e Branco, o STF declarou a lei constitucional (ADC 29, ADC 30 e ADI 4.578) e afirmou que **inelegibilidade não é pena**. É uma condição para o exercício do mandato, de modo que alcançar fatos anteriores à lei não ofende a irretroatividade da lei penal (p. 1193–1194). Segundo Lenza, o Tribunal reafirmou a tese depois: os oito anos de inelegibilidade aplicam-se a condenações anteriores à lei (RE 929.670, 2018) e contam-se integralmente após o cumprimento da pena (ADI 6.630, 2022) (2024, p. 2142–2144).
+Sobre a Ficha Limpa, guarde a tese central que o manual registra: segundo Mendes e Branco, o STF declarou a lei constitucional (ADC 29, ADC 30 e ADI 4.578) e afirmou que **inelegibilidade não é pena**. É uma condição para o exercício do mandato, de modo que alcançar fatos anteriores à lei não ofende a irretroatividade da lei penal. Segundo Lenza, o Tribunal reafirmou a tese depois: os oito anos de inelegibilidade aplicam-se a condenações anteriores à lei (RE 929.670, 2018) e contam-se integralmente após o cumprimento da pena (ADI 6.630, 2022) (2024).
 
 ### 7.4 Perda e suspensão: nunca cassação
 
@@ -689,9 +687,9 @@ Sobre a Ficha Limpa, guarde a tese central que o manual registra: segundo Mendes
 
 A primeira frase é uma resposta à história: **cassação** é a retirada dos direitos políticos por ato discricionário do poder, sem processo, como ocorreu às centenas durante a ditadura militar. A Constituição a proíbe. Só existem **perda** e **suspensão**, nas hipóteses taxativas do artigo.
 
-> "A referência à perda sugere definitividade da decisão, a suspensão remete à temporariedade." (Mendes; Branco, 2018, p. 1203)
+> "A referência à perda sugere definitividade da decisão, a suspensão remete à temporariedade." (Mendes; Branco, 2018)
 
-O texto do art. 15 não diz qual hipótese é de perda e qual é de suspensão; essa classificação é doutrinária. Segundo o manual (p. 1203):
+O texto do art. 15 não diz qual hipótese é de perda e qual é de suspensão; essa classificação é doutrinária. Segundo o manual:
 
 | Perda (definitiva) | Suspensão (temporária) |
 |---|---|
@@ -699,7 +697,7 @@ O texto do art. 15 não diz qual hipótese é de perda e qual é de suspensão; 
 | perda da nacionalidade por outra causa (implícita) | condenação criminal transitada em julgado, enquanto durarem os efeitos (III) |
 | recusa da obrigação geral **e** da prestação alternativa (IV) | improbidade administrativa (V) |
 
-Sobre o inciso IV, o manual chama a atenção para um detalhe: a redação literal é "defeituosa", porque fala em recusa de cumprir obrigação **ou** prestação alternativa, quando o art. 5º, VIII, só autoriza a consequência para quem recusa **ambas** (p. 1203). Quem alega imperativo de consciência e cumpre a prestação alternativa não perde nada.
+Sobre o inciso IV, o manual chama a atenção para um detalhe: a redação literal é "defeituosa", porque fala em recusa de cumprir obrigação **ou** prestação alternativa, quando o art. 5º, VIII, só autoriza a consequência para quem recusa **ambas**. Quem alega imperativo de consciência e cumpre a prestação alternativa não perde nada.
 
 A distinção tem consequência prática: a suspensão cessa com o fim da causa (cumprida a pena, por exemplo, os direitos voltam), ao passo que a perda não se desfaz pelo simples passar do tempo. Repare, ainda, que a classificação do quadro foi feita pelo manual antes da EC n. 131/2023, que mudou as hipóteses de perda da nacionalidade (seção 6.5) e passou a admitir, no novo § 5º do art. 12, que quem renunciou à nacionalidade originária a readquira, nos termos da lei.
 
@@ -707,26 +705,26 @@ A distinção tem consequência prática: a suspensão cessa com o fim da causa 
 
 > Art. 16 — A lei que alterar o processo eleitoral entrará em vigor na data de sua publicação, não se aplicando à eleição que ocorra até um ano da data de sua vigência.
 
-É o princípio da **anterioridade** (ou anualidade) eleitoral. A lei que muda o processo eleitoral pode entrar em vigor imediatamente, mas só se **aplica** às eleições que ocorram mais de um ano depois. O fundamento é a segurança jurídica e a igualdade de chances: quem está no poder não pode mudar as regras do jogo às vésperas da partida, sabendo a quem a mudança favorece. Segundo Mendes e Branco, o STF reconheceu nessa regra uma garantia individual do eleitor e do candidato — um "devido processo legal eleitoral" — e, por isso, cláusula pétrea (ADI 3.685), e, com base nela, afastou a aplicação da Lei da Ficha Limpa às eleições de 2010 (RE 633.703) (p. 1287–1300).
+É o princípio da **anterioridade** (ou anualidade) eleitoral. A lei que muda o processo eleitoral pode entrar em vigor imediatamente, mas só se **aplica** às eleições que ocorram mais de um ano depois. O fundamento é a segurança jurídica e a igualdade de chances: quem está no poder não pode mudar as regras do jogo às vésperas da partida, sabendo a quem a mudança favorece. Segundo Mendes e Branco, o STF reconheceu nessa regra uma garantia individual do eleitor e do candidato — um "devido processo legal eleitoral" — e, por isso, cláusula pétrea (ADI 3.685), e, com base nela, afastou a aplicação da Lei da Ficha Limpa às eleições de 2010 (RE 633.703).
 
 **Núcleo e jurisprudência — direitos políticos.**
 
-*Núcleo.* Lenza o formula diretamente: "Como núcleo dos direitos políticos tem-se o direito de sufrágio" (2024, p. 2123), isto é, votar e ser votado. A Constituição protege esse núcleo de três modos: o voto direto, secreto, universal e periódico é cláusula pétrea — "e não o voto obrigatório" (p. 2127); a cassação é proibida (art. 15); e a regra eleitoral não muda a menos de um ano do pleito (art. 16).
+*Núcleo.* Lenza o formula diretamente: "Como núcleo dos direitos políticos tem-se o direito de sufrágio" (2024), isto é, votar e ser votado. A Constituição protege esse núcleo de três modos: o voto direto, secreto, universal e periódico é cláusula pétrea — "e não o voto obrigatório"; a cassação é proibida (art. 15); e a regra eleitoral não muda a menos de um ano do pleito (art. 16).
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| ADI 5.889 (2020) | O voto impresso é inconstitucional, por pôr em risco o sigilo e a liberdade do voto. | Lenza, p. 2127 |
-| ADI 4.467 (2020) | A falta do título de eleitor não impede o voto de quem apresenta documento oficial com foto. | Lenza, p. 2124 |
-| RE 637.485 (2012) | "Prefeito itinerante": a vedação da segunda reeleição vale mesmo em outro município; mudanças de jurisprudência do TSE durante o processo eleitoral só valem para pleitos seguintes. | Lenza, p. 2132–2133 |
-| Súmula 6 do TSE e RE 344.882 (2003) | Cônjuge e parentes podem concorrer à sucessão se o titular, reelegível, afastou-se definitivamente até seis meses antes do pleito. | Lenza, p. 2134 |
-| Súmula Vinculante 18 e RE 758.461 (2014, tema 678) | A separação ou o divórcio no curso do mandato não afastam a inelegibilidade reflexa; a morte do cônjuge, sim. | Lenza, p. 2134–2135 |
-| ADPF 144 (2008) | O § 9º do art. 14 não é autoaplicável: sem lei complementar, a "vida pregressa" não gerava inelegibilidade. | Lenza, p. 2139 |
-| RE 633.703 (2011, 6 x 5) | A Lei da Ficha Limpa não se aplicou às eleições de 2010, por força do art. 16. | Lenza, p. 2141–2142; Mendes e Branco, p. 1294 |
-| ADCs 29 e 30 e ADI 4.578 (2012) | A Lei da Ficha Limpa é constitucional e alcança fatos anteriores; inelegibilidade não é pena. | Lenza, p. 2142; Mendes e Branco, p. 1193–1194 |
-| RE 929.670 (2018) e ADI 6.630 (2022) | Os oito anos aplicam-se a condenações anteriores à lei e contam-se integralmente após o cumprimento da pena. | Lenza, p. 2142–2144 |
-| RE 601.182 (2019, tema 370) | A suspensão do art. 15, III, é automática e vale mesmo quando a pena de prisão é substituída por restritiva de direitos. | Lenza, p. 2146 |
-| RE 1.282.553 (2023, tema 1.190) | A suspensão dos direitos políticos não impede a nomeação e a posse em concurso público, se o cargo for compatível com a infração. | Lenza, p. 2146–2147 |
-| ADI 3.685 (2006) | O art. 16 é garantia oponível até a emenda constitucional. | Lenza, p. 2166–2167; Mendes e Branco, p. 1288 |
+| ADI 5.889 (2020) | O voto impresso é inconstitucional, por pôr em risco o sigilo e a liberdade do voto. | Lenza (2024) |
+| ADI 4.467 (2020) | A falta do título de eleitor não impede o voto de quem apresenta documento oficial com foto. | Lenza (2024) |
+| RE 637.485 (2012) | "Prefeito itinerante": a vedação da segunda reeleição vale mesmo em outro município; mudanças de jurisprudência do TSE durante o processo eleitoral só valem para pleitos seguintes. | Lenza (2024) |
+| Súmula 6 do TSE e RE 344.882 (2003) | Cônjuge e parentes podem concorrer à sucessão se o titular, reelegível, afastou-se definitivamente até seis meses antes do pleito. | Lenza (2024) |
+| Súmula Vinculante 18 e RE 758.461 (2014, tema 678) | A separação ou o divórcio no curso do mandato não afastam a inelegibilidade reflexa; a morte do cônjuge, sim. | Lenza (2024) |
+| ADPF 144 (2008) | O § 9º do art. 14 não é autoaplicável: sem lei complementar, a "vida pregressa" não gerava inelegibilidade. | Lenza (2024) |
+| RE 633.703 (2011, 6 x 5) | A Lei da Ficha Limpa não se aplicou às eleições de 2010, por força do art. 16. | Lenza (2024); Mendes e Branco (2018) |
+| ADCs 29 e 30 e ADI 4.578 (2012) | A Lei da Ficha Limpa é constitucional e alcança fatos anteriores; inelegibilidade não é pena. | Lenza (2024); Mendes e Branco (2018) |
+| RE 929.670 (2018) e ADI 6.630 (2022) | Os oito anos aplicam-se a condenações anteriores à lei e contam-se integralmente após o cumprimento da pena. | Lenza (2024) |
+| RE 601.182 (2019, tema 370) | A suspensão do art. 15, III, é automática e vale mesmo quando a pena de prisão é substituída por restritiva de direitos. | Lenza (2024) |
+| RE 1.282.553 (2023, tema 1.190) | A suspensão dos direitos políticos não impede a nomeação e a posse em concurso público, se o cargo for compatível com a infração. | Lenza (2024) |
+| ADI 3.685 (2006) | O art. 16 é garantia oponível até a emenda constitucional. | Lenza (2024); Mendes e Branco (2018) |
 
 ---
 
@@ -742,7 +740,7 @@ Leia o *caput* como você leu o inciso XVII do art. 5º: há uma **liberdade** (
 
 O § 1º do art. 17 assegura aos partidos **autonomia** para definir sua estrutura interna e seu funcionamento. O § 2º lhes dá personalidade jurídica de direito privado, adquirida na forma da lei civil, com registro dos estatutos no Tribunal Superior Eleitoral. Mas a autonomia tem um limite que decorre da própria função do partido:
 
-> "[...] a democracia de partidos postula a democracia no partido." (Mendes; Branco, 2018, p. 1220, retomando Canotilho)
+> "[...] a democracia de partidos postula a democracia no partido." (Canotilho apud Mendes; Branco, 2018)
 
 Um partido que mediasse a relação entre a sociedade e o Estado sem praticar, ele próprio, a democracia interna — escolhendo candidatos e dirigentes por vontade de um só — esvaziaria a democracia por dentro.
 
@@ -750,10 +748,10 @@ Um partido que mediasse a relação entre a sociedade e o Estado sem praticar, e
 
 Se o eleitor vota num candidato que muda de partido logo depois da posse, de quem é o mandato — do eleito ou do partido? A resposta depende do **sistema eleitoral**.
 
-- No **sistema proporcional** (deputados e vereadores), o voto é computado primeiro para o partido, que define quantas cadeiras recebe; só depois se verifica quais candidatos as ocupam. Por isso, segundo Mendes e Branco, o STF entendeu, nos MS 26.602, 26.603 e 26.604, que **o mandato pertence ao partido**, e quem se desfilia sem justa causa o perde (p. 1222–1230).
+- No **sistema proporcional** (deputados e vereadores), o voto é computado primeiro para o partido, que define quantas cadeiras recebe; só depois se verifica quais candidatos as ocupam. Por isso, segundo Mendes e Branco, o STF entendeu, nos MS 26.602, 26.603 e 26.604, que **o mandato pertence ao partido**, e quem se desfilia sem justa causa o perde.
 - No **sistema majoritário** (Presidente, Governador, Prefeito, Senador), o voto vai para a pessoa. Segundo o manual, o STF afastou a perda do mandato por desfiliação nesse sistema (ADI 5.081).
 
-A Emenda Constitucional n. 111/2021, posterior ao manual, levou a regra para o texto. Segundo Lenza (2024, p. 2175 e 2180 do PDF), o § 6º do art. 17 passou a dispor:
+A Emenda Constitucional n. 111/2021, posterior ao manual, levou a regra para o texto. Segundo Lenza (2024), o § 6º do art. 17 passou a dispor:
 
 > Art. 17, § 6º — Os Deputados Federais, os Deputados Estaduais, os Deputados Distritais e os Vereadores que se desligarem do partido pelo qual tenham sido eleitos perderão o mandato, salvo nos casos de anuência do partido ou de outras hipóteses de justa causa estabelecidas em lei, não computada, em qualquer caso, a migração de partido para fins de distribuição de recursos do fundo partidário ou de outros fundos públicos e de acesso gratuito ao rádio e à televisão.
 
@@ -763,23 +761,23 @@ Repare em três coisas: o dispositivo só alcança os cargos **proporcionais**; 
 
 Dois temas recentes, que você deve conhecer em linhas gerais:
 
-- **Financiamento.** Segundo Mendes e Branco, o STF declarou inconstitucionais as doações de **pessoas jurídicas** a campanhas e partidos (ADI 4.650), por entender que comprometiam a igualdade política (p. 1249–1257). Desde então, o financiamento combina recursos públicos (fundo partidário e fundo especial de financiamento de campanha) e doações de pessoas físicas.
-- **Participação de mulheres e de pessoas negras.** Segundo Lenza, a EC n. 111/2021 determinou que, de 2022 a 2030, os votos dados a candidatas mulheres e a candidatos negros para a Câmara dos Deputados contem em dobro na distribuição do fundo partidário e do fundo eleitoral; e a EC n. 117/2022 reservou às candidaturas femininas no mínimo 30% do fundo eleitoral e do tempo de propaganda gratuita (2024, p. 2188–2189).
+- **Financiamento.** Segundo Mendes e Branco, o STF declarou inconstitucionais as doações de **pessoas jurídicas** a campanhas e partidos (ADI 4.650), por entender que comprometiam a igualdade política. Desde então, o financiamento combina recursos públicos (fundo partidário e fundo especial de financiamento de campanha) e doações de pessoas físicas.
+- **Participação de mulheres e de pessoas negras.** Segundo Lenza, a EC n. 111/2021 determinou que, de 2022 a 2030, os votos dados a candidatas mulheres e a candidatos negros para a Câmara dos Deputados contem em dobro na distribuição do fundo partidário e do fundo eleitoral; e a EC n. 117/2022 reservou às candidaturas femininas no mínimo 30% do fundo eleitoral e do tempo de propaganda gratuita (2024).
 - **Cláusula de desempenho.** A Emenda Constitucional n. 97/2017 condicionou o acesso ao fundo partidário e ao tempo gratuito de rádio e televisão a um desempenho eleitoral mínimo, exigido de forma gradual, e vedou as **coligações** nas eleições proporcionais. A finalidade é reduzir a fragmentação partidária, que dificulta a formação de maiorias e a responsabilização dos partidos pelo eleitor.
 
 **Núcleo e jurisprudência — partidos políticos.**
 
-*Núcleo.* Mendes e Branco, com Canotilho: "a democracia de partidos postula a democracia no partido" (p. 1220). O STF disse o mesmo pelo outro lado ao julgar a "candidatura nata": "cabe ao candidato submeter-se à vontade coletiva do partido, e não o contrário" (ADI 2.530, segundo Lenza, 2024, p. 2154). O núcleo, para este curso, é a **liberdade de criar partidos e de organizá-los democraticamente**, nos limites do *caput* do art. 17.
+*Núcleo.* Mendes e Branco, com Canotilho: "a democracia de partidos postula a democracia no partido". O STF disse o mesmo pelo outro lado ao julgar a "candidatura nata": "cabe ao candidato submeter-se à vontade coletiva do partido, e não o contrário" (ADI 2.530, segundo Lenza, 2024). O núcleo, para este curso, é a **liberdade de criar partidos e de organizá-los democraticamente**, nos limites do *caput* do art. 17.
 
 | Decisão | O que o STF decidiu | Fonte |
 |---|---|---|
-| ADI 2.530 (2021) | É inconstitucional a "candidatura nata", que dava ao detentor de mandato o direito de ser indicado pelo partido para as eleições seguintes. | Lenza, p. 2152–2154 |
-| ADIs 1.351 e 1.354 | A cláusula de barreira criada por lei ordinária (Lei n. 9.096/1995) é inconstitucional; a exigência de desempenho veio depois, por emenda (EC n. 97/2017). | Lenza, p. 2156 |
-| MS 26.602, 26.603 e 26.604 (2007) | No sistema proporcional, quem troca de partido sem justa causa perde o mandato. | Lenza, p. 2172–2173; Mendes e Branco, p. 1224 |
-| ADI 5.081 (2015) e Súmula 67 do TSE | A perda do mandato por troca de partido não se aplica ao sistema majoritário. | Lenza, p. 2174–2175; Mendes e Branco, p. 1230 |
-| ADI 4.650 (2015) | São inconstitucionais as doações de pessoas jurídicas a campanhas e partidos. | Lenza, p. 2183–2184; Mendes e Branco, p. 1249 |
-| ADI 5.394 (2018) | São inconstitucionais as doações ocultas, sem individualização dos doadores. | Lenza, p. 2185–2186 |
-| ADI 7.021 MC-Ref (2022) | As federações partidárias (Lei n. 14.208/2021), que atuam "como se fosse uma única agremiação partidária", são constitucionais; o voto do relator as distingue das antigas coligações proporcionais, que permitiam fraudar a vontade do eleitor. | Lenza, p. 2170–2171 |
+| ADI 2.530 (2021) | É inconstitucional a "candidatura nata", que dava ao detentor de mandato o direito de ser indicado pelo partido para as eleições seguintes. | Lenza (2024) |
+| ADIs 1.351 e 1.354 | A cláusula de barreira criada por lei ordinária (Lei n. 9.096/1995) é inconstitucional; a exigência de desempenho veio depois, por emenda (EC n. 97/2017). | Lenza (2024) |
+| MS 26.602, 26.603 e 26.604 (2007) | No sistema proporcional, quem troca de partido sem justa causa perde o mandato. | Lenza (2024); Mendes e Branco (2018) |
+| ADI 5.081 (2015) e Súmula 67 do TSE | A perda do mandato por troca de partido não se aplica ao sistema majoritário. | Lenza (2024); Mendes e Branco (2018) |
+| ADI 4.650 (2015) | São inconstitucionais as doações de pessoas jurídicas a campanhas e partidos. | Lenza (2024); Mendes e Branco (2018) |
+| ADI 5.394 (2018) | São inconstitucionais as doações ocultas, sem individualização dos doadores. | Lenza (2024) |
+| ADI 7.021 MC-Ref (2022) | As federações partidárias (Lei n. 14.208/2021), que atuam "como se fosse uma única agremiação partidária", são constitucionais; o voto do relator as distingue das antigas coligações proporcionais, que permitiam fraudar a vontade do eleitor. | Lenza (2024) |
 
 ---
 
@@ -857,19 +855,22 @@ Uma emissora de rádio comunitária anuncia que transmitirá, na semana seguinte
 
 Assinale a alternativa correta.
 
-**A.** O decreto é válido, porque a verificação prévia da exatidão das informações protege a honra dos agentes públicos, e a Constituição assegura indenização por dano moral e à imagem.
+**A.** O decreto é válido, porque a verificação prévia da exatidão das informações protege a honra dos agentes públicos, que a Constituição também resguarda.
 
-**B.** O decreto é inconstitucional, porque submete o conteúdo a controle prévio do poder público; abusos se resolvem depois, por resposta e indenização.
+**B.** O decreto só é inconstitucional quanto à multa, porque a submissão prévia sem sanção é forma legítima de cooperação entre a emissora e a Administração.
 
-**C.** O decreto é inconstitucional apenas quanto à multa, porque a submissão prévia, sem sanção, é forma legítima de cooperação entre a emissora e a Administração.
+**C.** O decreto é válido, porque a vedação constitucional alcança só a censura política, ideológica e artística, e não a conferência de exatidão de notícias.
 
-**D.** O decreto é válido, porque a vedação constitucional alcança apenas a censura de natureza política, ideológica e artística, e não a verificação da exatidão de informações.
+**D.** O decreto é inconstitucional, porque submete o conteúdo a controle prévio do poder público; abusos se resolvem depois, por resposta e indenização.
 
-**Resposta: B.** O decreto submete o conteúdo ao crivo da Administração antes da divulgação, o que caracteriza censura. A Constituição desloca o controle para depois da publicação e para outra via: o ofendido pode exigir resposta proporcional e indenização.
+**E.** O decreto é válido se for convertido em lei municipal, porque a reserva legal permite condicionar previamente a divulgação de informações jornalísticas.
+
+**Resposta: D.** O decreto submete o conteúdo ao crivo da Administração antes da divulgação, o que caracteriza censura. A Constituição desloca o controle para depois da publicação e para outra via: o ofendido pode exigir resposta proporcional e indenização.
 
 - **A** Confunde a proteção da honra, que a Constituição assegura por mecanismos posteriores, com autorização para controle prévio. A garantia de indenização pressupõe que a manifestação já ocorreu.
-- **C** A submissão prévia é o próprio núcleo da censura; a multa apenas a torna coercitiva. Sem ela, o decreto continuaria a condicionar a divulgação ao exame estatal do conteúdo.
-- **D** "Verificar a exatidão" de reportagens sobre contratos da prefeitura, por órgão da própria prefeitura, é controle de natureza política. Além disso, o *caput* do art. 220 veda qualquer restrição não prevista na Constituição.
+- **B** A submissão prévia é o próprio núcleo da censura; a multa apenas a torna coercitiva. Sem ela, o decreto continuaria a condicionar a divulgação ao exame estatal do conteúdo.
+- **C** "Verificar a exatidão" de reportagens sobre contratos da prefeitura, por órgão da própria prefeitura, é controle de natureza política. Além disso, o *caput* do art. 220 veda qualquer restrição não prevista na Constituição.
+- **E** Trocar o decreto por lei não muda a natureza da medida. O art. 220, § 1º, proíbe que qualquer lei embarace a liberdade de informação jornalística, e o § 2º veda a censura em si, venha ela de ato administrativo ou de lei.
 
 #### Questão 2
 
@@ -877,19 +878,22 @@ Um grupo de moradores convoca, pelas redes sociais, um protesto pacífico na pra
 
 Assinale a alternativa correta.
 
-**A.** A prefeitura agiu corretamente, porque o prévio aviso tem por finalidade justamente permitir que a autoridade competente avalie a conveniência do ato e decida se ele pode ocorrer.
+**A.** A prefeitura agiu corretamente, porque o prévio aviso existe justamente para que a autoridade avalie a conveniência do ato e decida se ele pode ocorrer.
 
-**B.** O protesto só poderá ocorrer se os organizadores obtiverem ordem judicial que supra a autorização negada, já que o aviso não foi aceito pela autoridade.
+**B.** A negativa é ineficaz: o aviso é comunicação do exercício de um direito, e não pedido de licença; atendidos os demais requisitos, o ato pode ocorrer.
 
-**C.** A reunião está protegida apenas se tiver finalidade de interesse coletivo, cabendo à prefeitura verificar previamente se essa finalidade está presente.
+**C.** O protesto só poderá ocorrer se os organizadores obtiverem ordem judicial que supra a autorização negada, já que o aviso não foi aceito pela autoridade.
 
-**D.** A negativa é ineficaz, porque o aviso é mera comunicação do exercício de um direito, e não pedido de licença; atendidos os demais requisitos, o protesto pode ocorrer.
+**D.** A reunião só está protegida se tiver finalidade de interesse coletivo, cabendo à prefeitura verificar previamente se essa finalidade está presente no ato.
 
-**Resposta: D.** O dispositivo dispensa expressamente a autorização e exige só o aviso. A doutrina o define como comunicação, e não pedido de permissão: serve para que a autoridade organize o espaço e evite a frustração de outra reunião, e não para escolher quais reuniões ocorrem.
+**E.** A negativa é válida, porque o protesto na praça central afeta a locomoção de terceiros, e a liberdade de locomoção prevalece sobre o direito de reunião.
+
+**Resposta: B.** O dispositivo dispensa expressamente a autorização e exige só o aviso. A doutrina o define como comunicação, e não pedido de permissão: serve para que a autoridade organize o espaço e evite a frustração de outra reunião, e não para escolher quais reuniões ocorrem.
 
 - **A** Atribui ao aviso a função de licença, exatamente o que o texto exclui com a expressão "independentemente de autorização".
-- **B** Inverte o ônus. Os moradores não precisam suprir uma autorização que a Constituição não exige; se a prefeitura impedir o ato, é ela quem pratica ilegalidade, impugnável por mandado de segurança.
-- **C** Cria requisito inexistente. O texto exige reunião pacífica, sem armas, em local aberto e com aviso; não submete a finalidade do ato a exame prévio da autoridade.
+- **C** Inverte o ônus. Os moradores não precisam suprir uma autorização que a Constituição não exige; se a prefeitura impedir o ato, é ela quem pratica ilegalidade, impugnável por mandado de segurança.
+- **D** Cria requisito inexistente. O texto exige reunião pacífica, sem armas, em local aberto e com aviso; não submete a finalidade do ato a exame prévio da autoridade.
+- **E** Não há prevalência abstrata entre os dois direitos. A própria Constituição já conciliou a reunião com o uso do espaço pelo aviso prévio; o conflito concreto se resolve com ajustes de horário ou trajeto, não com a proibição do ato.
 
 #### Questão 3
 
@@ -897,19 +901,22 @@ Lei estadual autoriza a Secretaria de Segurança Pública a dissolver, por ato a
 
 Assinale a alternativa correta.
 
-**A.** A dissolução é inconstitucional, porque só o Judiciário pode dissolver associações compulsoriamente, e por decisão transitada em julgado.
+**A.** A dissolução é válida se houver prova de que os protestos perturbaram a ordem, porque a liberdade de associação só alcança associações de fins lícitos.
 
-**B.** A dissolução é válida se houver prova de que os protestos perturbaram a ordem, porque a liberdade de associação só alcança associações de fins lícitos.
+**B.** A dissolução é válida, porque a lei estadual exige motivação do ato, e uma motivação adequada supre a exigência constitucional de decisão judicial.
 
-**C.** A dissolução é válida, porque a lei estadual exige motivação do ato, e a motivação supre a exigência de decisão judicial.
+**C.** A dissolução é inconstitucional apenas porque deveria ter sido precedida de suspensão das atividades, medida que a Administração pode decretar.
 
-**D.** A dissolução é inconstitucional apenas porque deveria ter sido precedida de suspensão das atividades, medida que a Administração pode adotar por ato próprio.
+**D.** A dissolução é válida, porque a associação perdeu a proteção constitucional ao organizar protestos, atividade política própria dos partidos.
 
-**Resposta: A.** O inciso XIX reserva ao Judiciário tanto a dissolução quanto a suspensão compulsórias e, para a dissolução, que é a medida mais grave e definitiva, exige ainda o trânsito em julgado. Nenhuma lei pode atribuir essa competência à Administração.
+**E.** A dissolução é inconstitucional, porque só o Judiciário pode dissolver associações compulsoriamente, e por decisão transitada em julgado.
 
-- **B** Mistura dois planos. A licitude dos fins é requisito da proteção, mas quem decide se os fins são ilícitos, para efeito de dissolução, é o juiz, em decisão definitiva — não o Secretário.
-- **C** Motivação é requisito de todo ato administrativo; não transforma o ato administrativo em decisão judicial.
-- **D** Também a suspensão depende de decisão judicial, segundo o mesmo inciso. A Administração não pode adotar nenhuma das duas medidas por ato próprio.
+**Resposta: E.** O inciso XIX reserva ao Judiciário tanto a dissolução quanto a suspensão compulsórias e, para a dissolução, que é a medida mais grave e definitiva, exige ainda o trânsito em julgado. Nenhuma lei pode atribuir essa competência à Administração.
+
+- **A** Mistura dois planos. A licitude dos fins é requisito da proteção, mas quem decide se os fins são ilícitos, para efeito de dissolução, é o juiz, em decisão definitiva, e não o Secretário.
+- **B** Motivação é requisito de todo ato administrativo; não transforma o ato administrativo em decisão judicial.
+- **C** Também a suspensão depende de decisão judicial, segundo o mesmo inciso. A Administração não pode adotar nenhuma das duas medidas por ato próprio.
+- **D** Organizar protestos é fim lícito e não é monopólio dos partidos. A associação de moradores continua protegida pelo inciso XVII, e a reunião que ela organiza, pelo inciso XVI.
 
 #### Questão 4
 
@@ -917,19 +924,22 @@ No curso de investigação sobre desvio de verbas, um juiz expede mandado de bus
 
 Assinale a alternativa correta.
 
-**A.** O ingresso é válido, porque havia determinação judicial, e a existência de mandado afasta a exigência de consentimento do morador em qualquer horário.
+**A.** O ingresso é inconstitucional: a ordem judicial só autoriza a entrada de dia; à noite, só com consentimento ou em flagrante, desastre ou socorro.
 
-**B.** O ingresso é válido, desde que o mandado indique expressamente a autorização para cumprimento noturno, em razão da gravidade do crime investigado.
+**B.** O ingresso é válido, porque havia determinação judicial, e a existência de mandado afasta a exigência de consentimento do morador em qualquer horário.
 
-**C.** O ingresso é inconstitucional, porque a determinação judicial só autoriza a entrada durante o dia; à noite, só seria possível com consentimento ou em flagrante, desastre ou socorro.
+**C.** O ingresso é válido, desde que o mandado autorize expressamente o cumprimento noturno, em razão da gravidade do crime que está sendo investigado.
 
-**D.** O ingresso é inconstitucional, porque a residência de servidor público investigado por crime contra a Administração só pode ser objeto de busca com autorização do Tribunal competente.
+**D.** O ingresso é inconstitucional, porque servidor investigado por crime contra a Administração só pode ser alvo de busca autorizada por tribunal.
 
-**Resposta: C.** O inciso XI separa as hipóteses: flagrante, desastre e socorro autorizam o ingresso a qualquer hora; a ordem judicial, só durante o dia. Às 21h, sem consentimento e sem flagrante, o mandado não legitima a entrada, e a prova eventualmente obtida é ilícita.
+**E.** O ingresso é válido, porque às 21h ainda não começou o repouso noturno, e é esse o critério que define o período em que o mandado pode ser cumprido.
 
-- **A** Ignora a cláusula temporal, que no texto se liga especificamente à determinação judicial ("durante o dia, por determinação judicial").
-- **B** O juiz não pode afastar, por decisão, um limite que a própria Constituição impõe ao seu poder de ordenar a busca.
-- **D** Cria uma prerrogativa de foro inexistente. A condição de servidora municipal não desloca a competência para a ordem de busca a nenhum tribunal.
+**Resposta: A.** O inciso XI separa as hipóteses: flagrante, desastre e socorro autorizam o ingresso a qualquer hora; a ordem judicial, só durante o dia. Às 21h, sem consentimento e sem flagrante, o mandado não legitima a entrada, e a prova eventualmente obtida é ilícita.
+
+- **B** Ignora a cláusula temporal, que no texto se liga especificamente à determinação judicial ("durante o dia, por determinação judicial").
+- **C** O juiz não pode afastar, por decisão, um limite que a própria Constituição impõe ao seu poder de ordenar a busca.
+- **D** Cria uma prerrogativa de foro inexistente. A condição de servidora municipal não desloca para nenhum tribunal a competência para ordenar a busca.
+- **E** Usa um critério que o enunciado não adota. O dia, para esse fim, vai do nascer ao pôr do sol; às 21h já é noite, qualquer que seja o horário de repouso.
 
 #### Questão 5
 
@@ -937,19 +947,22 @@ Numa investigação criminal, a polícia apreende, com ordem judicial, o computa
 
 Com base nessa orientação, assinale a alternativa correta.
 
-**A.** Houve violação do inciso XII, porque a Constituição só admite exceção ao sigilo das comunicações telefônicas, e arquivos de computador não são comunicações telefônicas.
+**A.** Houve violação do inciso XII, porque a Constituição só admite exceção ao sigilo das comunicações telefônicas, e arquivos de computador não são telefonemas.
 
-**B.** Não se aplica o inciso XII, que protege a comunicação em curso; os arquivos estão protegidos pela intimidade, e o acesso foi autorizado pelo juiz.
+**B.** Não houve violação de direito algum, porque dados armazenados em computador não gozam de proteção constitucional, já que não constituem comunicação.
 
-**C.** Não houve violação de nenhum direito, porque dados armazenados em computador não gozam de qualquer proteção constitucional, por não serem comunicação.
+**C.** Não se aplica o inciso XII, que protege a comunicação em curso; os arquivos estão protegidos pela intimidade, e o acesso foi autorizado pelo juiz.
 
-**D.** Houve violação do inciso XII, porque a apreensão de computador equivale à interceptação de comunicação de dados e só poderia ocorrer na forma da lei das interceptações telefônicas.
+**D.** Houve violação do inciso XII, porque apreender computador equivale a interceptar comunicação de dados, o que só se admite na forma da lei de interceptações.
 
-**Resposta: B.** Pela orientação transcrita, o inciso XII protege a comunicação de dados, isto é, a mensagem em trânsito. Os arquivos armazenados não estão fora da Constituição: estão protegidos pela intimidade e pela proteção de dados pessoais, e, por isso, o acesso exige justificação, que no caso veio da ordem judicial.
+**E.** Houve violação, porque o sigilo de dados é absoluto: ao contrário das comunicações telefônicas, ele não admite exceção, nem mesmo por ordem judicial.
+
+**Resposta: C.** Pela orientação transcrita, o inciso XII protege a comunicação de dados, isto é, a mensagem em trânsito. Os arquivos armazenados não estão fora da Constituição: estão protegidos pela intimidade e pela proteção de dados pessoais, e, por isso, o acesso exige justificação, que no caso veio da ordem judicial.
 
 - **A** Parte de premissa que a própria orientação afasta: se os dados armazenados não estão no âmbito do inciso XII, a ausência de exceção expressa para eles não gera violação desse inciso.
-- **C** Vai longe demais. Sair do inciso XII não significa sair da Constituição; a intimidade (inciso X) e a proteção de dados (inciso LXXIX) continuam a incidir.
+- **B** Vai longe demais. Sair do inciso XII não significa sair da Constituição; a intimidade (inciso X) e a proteção de dados (inciso LXXIX) continuam a incidir.
 - **D** Equipara institutos que a orientação distingue. Interceptar é captar a comunicação enquanto ocorre; apreender um computador é acessar o que já foi armazenado.
+- **E** Lê a falta de exceção expressa como proteção absoluta. Além de o caso não envolver comunicação em curso, nenhum direito fundamental é absoluto, e os demais sigilos podem ceder em casos excepcionais.
 
 #### Questão 6
 
@@ -957,19 +970,22 @@ Convocado para compor mesa receptora de votos, um eleitor recusa-se a servir, al
 
 Assinale a alternativa correta.
 
-**A.** O eleitor pode ser privado de seus direitos políticos, porque recusou tanto a obrigação geral quanto a prestação alternativa; a consequência decorre da dupla recusa, e não da crença.
+**A.** O eleitor não pode sofrer consequência alguma, porque a liberdade de crença é inviolável e prevalece sobre qualquer obrigação legal com ela conflitante.
 
-**B.** O eleitor não pode sofrer nenhuma consequência, porque a liberdade de crença é inviolável e, por isso, prevalece sobre qualquer obrigação legal que com ela conflite.
+**B.** O eleitor pode ser privado dos direitos políticos, porque recusou a obrigação e a alternativa; a consequência decorre da dupla recusa, e não da crença.
 
-**C.** O eleitor perderia os direitos políticos mesmo que tivesse cumprido a prestação alternativa, porque a simples recusa da obrigação geral já configura a hipótese do art. 15, IV.
+**C.** O eleitor perderia os direitos políticos mesmo que tivesse cumprido a prestação alternativa, porque basta a recusa da obrigação a todos imposta.
 
-**D.** O eleitor pode ser privado de seus direitos políticos em razão de sua crença, porque a Constituição admite restringir direitos de quem professa convicções incompatíveis com o processo eleitoral.
+**D.** O eleitor pode ser privado dos direitos políticos por professar convicções incompatíveis com o processo eleitoral, como admite a Constituição.
 
-**Resposta: A.** O art. 5º, VIII, só autoriza a privação de direitos quando há dupla recusa: da obrigação geral e da prestação alternativa. O fundamento da consequência é o descumprimento de deveres comuns a todos, e não o conteúdo da crença.
+**E.** O eleitor só pode sofrer multa eleitoral, porque a perda ou suspensão dos direitos políticos exige condenação criminal transitada em julgado.
 
-- **B** A inviolabilidade protege a crença, não a dispensa incondicional de deveres. A própria Constituição prevê a prestação alternativa como forma de conciliar a convicção com a obrigação.
+**Resposta: B.** O art. 5º, VIII, só autoriza a privação de direitos quando há dupla recusa: da obrigação geral e da prestação alternativa. O fundamento da consequência é o descumprimento de deveres comuns a todos, e não o conteúdo da crença.
+
+- **A** A inviolabilidade protege a crença, não a dispensa incondicional de deveres. A própria Constituição prevê a prestação alternativa como forma de conciliar a convicção com a obrigação.
 - **C** Ignora a estrutura cumulativa do art. 5º, VIII, ao qual o art. 15, IV, remete. A doutrina observa que a redação literal do art. 15, IV, é defeituosa justamente por sugerir que bastaria uma das recusas.
 - **D** Inverte o sentido do inciso VIII, cuja primeira parte proíbe exatamente a privação de direitos por motivo de crença ou convicção.
+- **E** A condenação criminal é só uma das hipóteses do art. 15 (inciso III). A recusa da obrigação e da alternativa é hipótese autônoma (inciso IV), que dispensa processo penal.
 
 #### Questão 7
 
@@ -979,37 +995,43 @@ Assinale a alternativa correta.
 
 **A.** Ana não poderia sequer exercer o mandato de deputada federal, porque a Câmara dos Deputados integra a linha sucessória da Presidência da República.
 
-**B.** Ana pode presidir a Câmara dos Deputados, porque, sendo originária de país de língua portuguesa, recebe tratamento equiparado ao do brasileiro nato.
+**B.** Ana pode presidir a Câmara, porque, sendo originária de país de língua portuguesa, recebe tratamento equiparado ao do brasileiro nato.
 
 **C.** Ana não pode disputar o Senado, porque a Presidência do Senado é privativa de brasileiro nato e todo senador pode vir a ocupá-la.
 
-**D.** Ana pode ser deputada e senadora, mas não pode presidir a Câmara dos Deputados, cargo que a Constituição reserva expressamente ao brasileiro nato.
+**D.** Ana pode ser deputada e senadora, mas não pode presidir a Câmara dos Deputados, cargo que a Constituição reserva ao brasileiro nato.
 
-**Resposta: D.** A regra é a igualdade entre natos e naturalizados, e as exceções são apenas as previstas na Constituição. O § 3º reserva aos natos a **presidência** de cada Casa, e não o mandato de deputado ou de senador.
+**E.** Ana pode presidir a Câmara, porque a lei não pode distinguir natos e naturalizados, e essa vedação alcança também a eleição para a Mesa.
+
+**Resposta: D.** A regra é a igualdade entre natos e naturalizados, e as exceções são apenas as previstas na Constituição. O § 3º reserva aos natos a presidência de cada Casa, e não o mandato de deputado ou de senador.
 
 - **A** O que integra a linha sucessória é o cargo de Presidente da Câmara, não o de deputado. Estender a restrição ao mandato criaria distinção não prevista, vedada pelo § 2º.
-- **B** O tratamento facilitado aos originários de países de língua portuguesa refere-se aos requisitos da naturalização (art. 12, II, *a*); não transforma o naturalizado em nato. A equiparação do § 1º é outra coisa e vale só para portugueses com residência permanente — e, mesmo ela, ressalva os casos previstos na Constituição.
+- **B** O tratamento facilitado aos originários de países de língua portuguesa refere-se aos requisitos da naturalização (art. 12, II, *a*); não transforma o naturalizado em nato. A equiparação do § 1º vale só para portugueses com residência permanente e ressalva os casos previstos na Constituição.
 - **C** Raciocina por extensão, como se a restrição ao cargo de Presidente do Senado alcançasse todos os que poderiam vir a ocupá-lo. As exceções à igualdade são taxativas e não se ampliam por analogia.
+- **E** Lê só a primeira parte do § 2º. A vedação de distinção dirige-se à lei e ressalva "os casos previstos nesta Constituição" — e o § 3º é justamente um desses casos.
 
 #### Questão 8
 
-Considere a redação atual do art. 12, § 4º, da Constituição, dada pela Emenda Constitucional n. 131/2023: "Será declarada a perda da nacionalidade do brasileiro que: I — tiver cancelada sua naturalização, por sentença judicial, em virtude de fraude relacionada ao processo de naturalização ou de atentado contra a ordem constitucional e o Estado Democrático; II — fizer pedido expresso de perda da nacionalidade brasileira perante autoridade brasileira competente, ressalvadas situações que acarretem apatridia".
+Considere a redação atual do art. 12, § 4º, da Constituição, dada pela Emenda Constitucional n. 131/2023: "Será declarada a perda da nacionalidade do brasileiro que: I — tiver cancelada sua naturalização, por sentença judicial, em virtude de fraude relacionada ao processo de naturalização ou de atentado contra a ordem constitucional e o Estado Democrático; II — fizer pedido expresso de perda da nacionalidade brasileira perante autoridade brasileira competente, ressalvadas situações que acarretem apatridia". O § 5º, acrescentado pela mesma emenda, dispõe: "A renúncia da nacionalidade, nos termos do inciso II do § 4º deste artigo, não impede o interessado de readquirir sua nacionalidade brasileira originária, nos termos da lei".
 
 Assinale a alternativa correta.
 
-**A.** Brasileiro nato que adquire voluntariamente a nacionalidade portuguesa perde a brasileira, salvo se a lei portuguesa lhe reconhecer nacionalidade originária.
+**A.** Brasileira nata sem outra nacionalidade que pede expressamente a perda da nacionalidade brasileira deve ter o pedido negado pela autoridade.
 
-**B.** Brasileiro naturalizado que publica críticas reiteradas ao governo federal pode ter a naturalização cancelada por ato do Ministro da Justiça, por atentado contra a ordem constitucional.
+**B.** Brasileiro nato que adquire a nacionalidade portuguesa perde a brasileira, salvo se a lei portuguesa lhe reconhecer nacionalidade originária.
 
-**C.** Brasileira nata residente no exterior, sem outra nacionalidade, que pede expressamente a perda da nacionalidade brasileira, deve ter o pedido negado.
+**C.** Brasileiro naturalizado que publica críticas reiteradas ao governo pode ter a naturalização cancelada por ato do Ministro da Justiça.
 
-**D.** Brasileiro naturalizado que comete qualquer crime, depois da naturalização, perde a nacionalidade, por força do inciso I, desde que a condenação transite em julgado.
+**D.** Brasileiro naturalizado que comete qualquer crime depois da naturalização perde a nacionalidade, desde que a condenação transite em julgado.
 
-**Resposta: C.** O inciso II admite a perda por pedido expresso, mas ressalva as situações que acarretem apatridia. Sem outra nacionalidade, a requerente ficaria apátrida, e o pedido deve ser indeferido.
+**E.** Brasileiro nato que renunciou à nacionalidade perante a autoridade competente não pode readquiri-la, porque a renúncia é definitiva.
 
-- **A** Reproduz a regra anterior à emenda. Pela redação atual, a aquisição de outra nacionalidade, por si só, não acarreta a perda da brasileira; só o pedido expresso o faz.
-- **B** Erra duas vezes: crítica ao governo é exercício da liberdade de expressão, não atentado contra a ordem constitucional; e o cancelamento exige sentença judicial, não ato administrativo.
+**Resposta: A.** O inciso II admite a perda por pedido expresso, mas ressalva as situações que acarretem apatridia. Sem outra nacionalidade, a requerente ficaria apátrida, e o pedido deve ser indeferido.
+
+- **B** Reproduz a regra anterior à emenda. Pela redação atual, a aquisição de outra nacionalidade, por si só, não acarreta a perda da brasileira; só o pedido expresso o faz.
+- **C** Erra duas vezes: crítica ao governo é exercício da liberdade de expressão, não atentado contra a ordem constitucional; e o cancelamento exige sentença judicial, não ato administrativo.
 - **D** O inciso I não fala em "qualquer crime", mas em hipóteses específicas: fraude no processo de naturalização ou atentado contra a ordem constitucional e o Estado Democrático.
+- **E** Contraria o § 5º transcrito no enunciado: a renúncia feita nos termos do inciso II não impede que o interessado readquira a nacionalidade brasileira originária, nos termos da lei.
 
 #### Questão 9
 
@@ -1017,19 +1039,22 @@ Carlos é prefeito do Município X, no primeiro mandato, e pretende disputar a r
 
 Assinale a alternativa correta.
 
-**A.** Beatriz é inelegível para vereadora no Município X; Daniel, irmão de Carlos, pode candidatar-se no Município Y, que está fora do território de jurisdição do titular.
+**A.** Beatriz e Daniel são inelegíveis, porque a inelegibilidade reflexa alcança o cônjuge e os parentes até o segundo grau do prefeito em qualquer circunscrição.
 
-**B.** Beatriz e Daniel são inelegíveis, porque a inelegibilidade reflexa alcança o cônjuge e os parentes até o segundo grau do prefeito em qualquer circunscrição eleitoral do país.
+**B.** Beatriz pode candidatar-se, porque a inelegibilidade reflexa alcança apenas cargos do Poder Executivo, e o de vereador integra o Poder Legislativo.
 
-**C.** Beatriz pode candidatar-se, porque a inelegibilidade reflexa alcança apenas cargos do Poder Executivo, e o cargo de vereador integra o Poder Legislativo.
+**C.** Beatriz pode candidatar-se, porque Carlos também será candidato à reeleição, e a ressalva final do dispositivo afasta a inelegibilidade nesse caso.
 
-**D.** Beatriz pode candidatar-se, porque Carlos também será candidato, à reeleição, e a ressalva final do dispositivo afasta a inelegibilidade nesse caso.
+**D.** Daniel é inelegível em Y, porque é parente de Carlos em segundo grau, e Beatriz pode concorrer em X, porque o cônjuge não é parente consanguíneo.
 
-**Resposta: A.** A inelegibilidade reflexa atinge o cônjuge e os parentes até o segundo grau **no território de jurisdição do titular**. Beatriz, cônjuge, pretende concorrer no próprio Município X; Daniel, parente em segundo grau, concorre em outro município, onde Carlos não exerce jurisdição.
+**E.** Beatriz é inelegível para vereadora no Município X; Daniel, irmão de Carlos, pode concorrer no Município Y, fora da jurisdição do titular.
 
-- **B** Ignora a limitação territorial expressa no início do dispositivo ("no território de jurisdição do titular").
-- **C** O texto não distingue entre cargos do Executivo e do Legislativo: alcança qualquer candidatura do cônjuge e dos parentes no território de jurisdição do titular.
-- **D** Lê mal a ressalva. Ela beneficia o **parente** que já é titular de mandato e concorre à própria reeleição; Beatriz nunca exerceu mandato, e a reeleição de Carlos é irrelevante para a ressalva.
+**Resposta: E.** A inelegibilidade reflexa atinge o cônjuge e os parentes até o segundo grau no território de jurisdição do titular. Beatriz, cônjuge, pretende concorrer no próprio Município X; Daniel, parente em segundo grau, concorre em outro município, onde Carlos não exerce jurisdição.
+
+- **A** Ignora a limitação territorial expressa no início do dispositivo ("no território de jurisdição do titular").
+- **B** O texto não distingue entre cargos do Executivo e do Legislativo: alcança qualquer candidatura do cônjuge e dos parentes no território de jurisdição do titular.
+- **C** Lê mal a ressalva. Ela beneficia o parente que já é titular de mandato e concorre à própria reeleição; Beatriz nunca exerceu mandato, e a reeleição de Carlos é irrelevante para a ressalva.
+- **D** Troca os dois casos. O cônjuge está expressamente no dispositivo, ao lado dos parentes; e Daniel concorre fora do território de jurisdição de Carlos, onde a inelegibilidade não alcança.
 
 #### Questão 10
 
@@ -1037,19 +1062,22 @@ Eleita deputada estadual pelo Partido A, Joana desfilia-se no segundo ano do man
 
 Assinale a alternativa correta.
 
-**A.** Joana e Pedro perdem o mandato, porque a fidelidade partidária vale para todos os cargos eletivos, já que a filiação partidária é condição de elegibilidade.
+**A.** Joana e Pedro perdem o mandato, porque a fidelidade partidária vale para todos os cargos eletivos, já que a filiação é condição de elegibilidade.
 
-**B.** Joana não perde o mandato, porque a perda só ocorre se a desfiliação se der no primeiro ano, mas o Partido B não poderá contar com ela para fins de fundo partidário.
+**B.** Joana não perde o mandato, porque a perda só ocorre se a desfiliação se der no primeiro ano, e o Partido B não contará com ela para o fundo.
 
-**C.** Joana não perde o mandato, porque a Constituição assegura a liberdade de associação, e ninguém pode ser compelido a permanecer associado.
+**C.** Joana perde o mandato, porque o dispositivo alcança os deputados estaduais e não houve anuência nem justa causa; ele não se aplica a senadores.
 
-**D.** Joana perde o mandato, porque o dispositivo alcança os deputados estaduais e não houve anuência nem justa causa; o dispositivo não se aplica a senadores.
+**D.** Joana não perde o mandato, porque a Constituição assegura a liberdade de associação, e ninguém pode ser compelido a permanecer associado.
 
-**Resposta: D.** O § 6º enumera os cargos alcançados, todos do sistema proporcional, e só afasta a perda nos casos de anuência ou justa causa legal. Pedro, senador, eleito pelo sistema majoritário, está fora da enumeração.
+**E.** Pedro perde o mandato e Joana não, porque o mandato majoritário pertence ao partido, e o proporcional, ao candidato que obteve os votos.
+
+**Resposta: C.** O § 6º enumera os cargos alcançados, todos do sistema proporcional, e só afasta a perda nos casos de anuência ou justa causa legal. Pedro, senador, eleito pelo sistema majoritário, está fora da enumeração.
 
 - **A** Estende a regra a cargos que o texto não menciona. Ser filiado é condição para concorrer; não implica que o mandato majoritário pertença ao partido.
 - **B** O dispositivo não estabelece limite temporal no curso do mandato. A regra sobre recursos do fundo partidário existe, mas é acessória à perda, e não alternativa a ela.
-- **C** A liberdade de não permanecer associado é preservada: Joana pode sair do partido. O que a Constituição estabelece é a consequência dessa saída para o mandato obtido pelo sistema proporcional.
+- **D** A liberdade de não permanecer associado é preservada: Joana pode sair do partido. O que a Constituição estabelece é a consequência dessa saída para o mandato obtido pelo sistema proporcional.
+- **E** Inverte a lógica do dispositivo. No sistema proporcional o voto é computado primeiro para o partido, e é por isso que o § 6º alcança deputados e vereadores, e não senadores.
 
 ---
 
@@ -1085,17 +1113,17 @@ Traga por escrito para a aula do Módulo 7.
 
 O texto complementar [Do tratado à cláusula pétrea](aprofundamento-01-do-tratado-a-clausula-petrea.html) discute a abertura do catálogo de direitos fundamentais, que explica por que a liberdade de imprensa, embora fora do Título II, e a proteção de dados, incluída por emenda, são direitos fundamentais. Não é cobrado em questão objetiva; é base para discursiva.
 
-Sobre o núcleo essencial, leia Mendes e Branco (2018, p. 312–320) e Barroso (2020, cap. V, item VII.3). Os dois textos são curtos e, lidos juntos, mostram as duas posições do debate.
+Sobre o núcleo essencial, leia Mendes e Branco (2018) e Barroso (2020). Os dois textos são curtos e, lidos juntos, mostram as duas posições do debate.
 
-No manual de referência, os capítulos sobre liberdade de expressão, privacidade, reunião e associação, e liberdade religiosa (Mendes; Branco, 2018, p. 388–466) e sobre nacionalidade, direitos políticos e partidos (p. 1119–1257) aprofundam cada seção deste módulo. Para as mudanças trazidas pelas Emendas n. 111/2021, 115/2022 e 131/2023 e para a jurisprudência posterior a 2018, use Lenza (2024, p. 1829–1887 para as liberdades e a privacidade; p. 2060–2191 para nacionalidade, direitos políticos e partidos).
+No manual de referência, os capítulos sobre liberdade de expressão, privacidade, reunião e associação, e liberdade religiosa (Mendes; Branco, 2018) e sobre nacionalidade, direitos políticos e partidos aprofundam cada seção deste módulo. Para as mudanças trazidas pelas Emendas n. 111/2021, 115/2022 e 131/2023 e para a jurisprudência posterior a 2018, use Lenza (2024).
 
 ---
 
 ## Referências
 
-BARROSO, Luís Roberto. *Curso de direito constitucional contemporâneo: os conceitos fundamentais e a construção do novo modelo*. 9. ed. São Paulo: Saraiva Educação, 2020. E-book (EPUB) consultado no acervo da disciplina; citado por capítulo e item, por não ter paginação fixa.
+BARROSO, Luís Roberto. *Curso de direito constitucional contemporâneo: os conceitos fundamentais e a construção do novo modelo*. 9. ed. São Paulo: Saraiva Educação, 2020.
 
-BRASIL. *Constituição da República Federativa do Brasil de 1988*. Disponível em: [planalto.gov.br/.../constituicao.htm](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm). [Conferência no texto oficial pendente.]
+BRASIL. *Constituição da República Federativa do Brasil de 1988*. Disponível em: [planalto.gov.br/.../constituicao.htm](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm).
 
 BRASIL. *Decreto n. 592, de 6 de julho de 1992*. Promulga o Pacto Internacional sobre Direitos Civis e Políticos.
 
@@ -1111,11 +1139,11 @@ BRASIL. *Lei n. 13.709, de 14 de agosto de 2018*. Lei Geral de Proteção de Dad
 
 BRASIL. *Lei Complementar n. 64, de 18 de maio de 1990*, com as alterações da *Lei Complementar n. 135, de 4 de junho de 2010* (Lei da Ficha Limpa).
 
-LENZA, Pedro. *Direito constitucional*. 28. ed. São Paulo: SaraivaJur, 2024. (Coleção Esquematizado). E-book consultado no acervo da disciplina; páginas citadas conforme a paginação do PDF.
+LENZA, Pedro. *Direito constitucional*. 28. ed. São Paulo: SaraivaJur, 2024. (Coleção Esquematizado).
 
-MENDES, Gilmar Ferreira; BRANCO, Paulo Gustavo Gonet. *Curso de direito constitucional*. 13. ed. rev. e atual. São Paulo: Saraiva Educação, 2018. Exemplar em PDF consultado no acervo da disciplina; páginas citadas conforme a paginação do PDF.
+MENDES, Gilmar Ferreira; BRANCO, Paulo Gustavo Gonet. *Curso de direito constitucional*. 13. ed. rev. e atual. São Paulo: Saraiva Educação, 2018.
 
-**Nota de procedência.** Todos os julgados do STF mencionados neste módulo aparecem na exposição de Mendes e Branco (2018) ou de Lenza (2024), nas páginas indicadas, e são citados "segundo" esses autores; os anos são os informados por eles. As formulações de núcleo essencial atribuídas a um autor estão com a página; as demais estão declaradas como formulação deste curso. Nenhum acórdão foi lido em inteiro teor; por isso nenhuma questão de treino se apoia em precedente judicial como fundamento único — quando uma orientação jurisprudencial é necessária, ela vem transcrita no enunciado. Os pontos alterados pelas Emendas Constitucionais n. 111/2021, 115/2022 e 131/2023 não constam da edição de 2018 do manual e foram conferidos em Lenza (2024).
+**Nota de procedência.** Os julgados do STF são apresentados como relatados por Mendes e Branco (2018) e por Lenza (2024); anos e placares das decisões por maioria apertada foram conferidos em notícias do STF e na imprensa jurídica especializada. Nenhuma questão de treino se apoia em precedente judicial como fundamento único: quando uma orientação jurisprudencial é necessária, ela vem transcrita no enunciado. Os dispositivos constitucionais foram conferidos no texto compilado da Constituição; os arts. 143 e 220 e os dispositivos alterados pelas Emendas Constitucionais n. 111/2021, 115/2022 e 131/2023, na transcrição de Mendes e Branco (2018) e de Lenza (2024). As formulações de núcleo essencial atribuídas a um autor indicam a fonte; as demais estão declaradas como formulação deste curso.
 
 ---
 
