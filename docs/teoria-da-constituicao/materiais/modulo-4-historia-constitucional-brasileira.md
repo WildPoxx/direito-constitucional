@@ -10,7 +10,8 @@ deck: "Deck HTML - Módulo 4 - História Constitucional Brasileira.html"
 tema: "As oito Constituições brasileiras, de 1824 a 1988; a Constituinte de 1987–1988; a CF/88 como Constituição analítica, dirigente, compromissória e híbrida"
 status: versão autoral no padrão novo — aguarda revisão docente
 data: 2026-10-27
-aula: 27/10/2026
+aula: 10/11/2026
+atualizado: 2026-11-09 (base econômica, dependência e patrimonialismo nos tópicos 2 e 3)
 tags:
   - direito-constitucional
   - teoria-da-constituicao
@@ -34,7 +35,7 @@ Ao fim de cada tópico há um **treino** com duas ou três questões objetivas d
 
 ## Ao Final Deste Módulo, Você Deve Ser Capaz De
 
-1. situar cada uma das oito Constituições brasileiras no regime político que a produziu, dizendo o que ela criou e o que ela conservou;
+1. situar cada uma das oito Constituições brasileiras no regime político e na base econômica que a produziram, dizendo o que ela criou e o que ela conservou;
 2. distinguir **ruptura formal** — troca do texto constitucional — de **transformação material** — mudança na estrutura social e na distribuição do poder;
 3. aplicar às Constituições brasileiras o vocabulário dos módulos anteriores: outorga e promulgação, rigidez e semirrigidez, supremacia, poder originário;
 4. explicar por que 1937 e 1967/69 mostram que **Constituição** e **constitucionalismo** não são a mesma coisa;
@@ -108,6 +109,8 @@ Duas advertências sobre a tabela. A primeira: as colunas de origem e de alterab
 ### Uma cadeia, não uma lista
 
 Há ainda um último cuidado de método. Cada Constituição brasileira é, ao mesmo tempo, **resposta** à que a antecedeu e **herança** para a que a sucedeu. 1891 se escreve contra 1824; 1934, contra o liberalismo oligárquico de 1891; 1937 liquida 1934; 1946 restaura o que 1937 suprimira; 1967 se escreve contra a experiência de 1946; e 1988 responde, quase artigo por artigo, ao regime de 1964. Ao fim de cada tópico, por isso, há uma seção sobre **o que o texto herdou e o que deixou**. É ela que transforma a lista de datas em uma linha de raciocínio.
+
+Ao lado da política, duas dimensões completam a leitura de cada texto: a **base econômica** que o sustentava, com o lugar do país na economia mundial, e a **forma do Estado** que o aplicava. Os tópicos 2 e 3 mostram as duas em ação no Império e na Primeira República.
 
 ### Treino do tópico 1
 
@@ -216,6 +219,18 @@ A Constituição de 1824 continha, por influência das Revoluções Americana e 
 
 É aqui que a leitura crítica precisa ser feita com cuidado, e não com indignação retrospectiva. O ponto não é que os constituintes de 1824 eram hipócritas. O ponto é **estrutural**: o texto de 1824 mostra que a forma jurídica do liberalismo — Constituição escrita, separação de poderes, declaração de direitos — é compatível com uma base material escravista. Liberalismo constitucional e democracia social não são a mesma coisa, e o Brasil de 1824 é a demonstração disso.
 
+### Um Estado herdado e uma economia dependente
+
+A explicação de 1824 não se completa sem a base econômica e sem o Estado que aplicava a Carta.
+
+A economia do Império era exportadora e escravista, e estava ligada ao centro do capitalismo industrial da época, a Inglaterra. O vínculo vinha de antes da Independência: pelo tratado de 1810, as mercadorias inglesas passaram a pagar 15% de direitos alfandegários, menos que os 16% cobrados das portuguesas. Faoro (2012) resume o resultado: o capitalismo industrial, "conduzido hegemonicamente pela Inglaterra", fizera da ex-colônia "um elo internacional" de um movimento econômico irreversível. A Independência não desfez esse vínculo.
+
+A dependência tinha, porém, uma forma própria. Para Faoro (2012), ela é inegável, mas não colonial: é "uma dependência por via do Estado", acompanhada por uma camada dirigente que participava das vantagens do comércio exterior e, por vezes, procurava corrigir-lhe o rumo. A economia dependente funcionava sob a orientação do Tesouro e de quem o controlava.
+
+Essa camada dirigente é o centro da tese de Faoro (2012) sobre o **patrimonialismo**. O Estado brasileiro herdou do português uma estrutura em que um **estamento burocrático** se apropria do poder político e governa a partir dele, com autonomia em relação às classes econômicas, e em que a economia se organiza como **capitalismo politicamente orientado**, dependente das concessões e da direção do poder público. Essa estrutura não nasce da dependência britânica: vem de Portugal e se recompõe em contato com o capitalismo industrial, do qual adota "a técnica, as máquinas, as empresas, sem aceitar-lhe a alma". O próprio autor declara que não segue a linha de Max Weber, apesar do parentesco, e que se afasta do marxismo ortodoxo ao sustentar a autonomia de uma camada de poder em relação à base econômica (Faoro, 2012).
+
+Lida assim, a Carta de 1824 é a forma constitucional de um arranjo preciso: proprietários escravistas na base, um Estado centralizado que vivia do comércio exterior e o dirigia, e o capital inglês como interlocutor dominante. O Poder Moderador e o sufrágio censitário ganham sentido dentro desse arranjo. Faoro (2012) chama a Carta de "Constituição puramente nominal", a mesma qualificação que daria à de 1891.
+
 ### O que 1824 herdou e o que deixou
 
 A Carta de 1824 não respondia a uma Constituição anterior brasileira, mas ao momento da Independência e ao medo, partilhado pelo Imperador e pelas elites proprietárias, de duas coisas ao mesmo tempo: o liberalismo radical da Constituinte que fora dissolvida e a fragmentação territorial que atingira a América espanhola. O Poder Moderador e o unitarismo são as respostas institucionais a esses dois medos — concentrar a decisão e manter o território unido.
@@ -270,6 +285,29 @@ O art. 178 distinguia matéria constitucional — limites e atribuições dos po
 - **C** Flexível seria a Constituição inteiramente alterável por lei comum. Em 1824 isso valia só para o que não fosse matéria constitucional.
 - **E** O critério estava no próprio texto do art. 178, e não na vontade do Imperador; o Moderador não tinha a atribuição de qualificar a matéria.
 
+#### Questão 6 · Uma dependência por via do Estado
+
+Sobre a base econômica do Império e a forma do Estado que aplicava a Carta de 1824, considerando a leitura apresentada no módulo, é correto afirmar:
+
+**A.** o vínculo com o capitalismo industrial inglês era real, mas passava pelo Estado, e o patrimonialismo vinha da tradição portuguesa.
+
+**B.** a dependência em relação à Inglaterra era colonial, e o patrimonialismo surgiu no Brasil como efeito direto dessa subordinação.
+
+**C.** a economia do Império era autônoma, porque a Independência rompeu os laços comerciais com a Inglaterra fixados pelo tratado de 1810.
+
+**D.** o patrimonialismo surgiu com a República, quando as oligarquias estaduais se apropriaram do Estado criado pela Constituição de 1891.
+
+**E.** a Carta de 1824 foi plenamente normativa, porque o Poder Moderador limitava de fato o poder da camada dirigente sobre o comércio.
+
+**Resposta: A.**
+
+O Império estava ligado ao capitalismo industrial conduzido pela Inglaterra desde o tratado de 1810, mas a dependência tinha forma própria: passava pelo Estado e por uma camada dirigente que participava das vantagens do comércio exterior. O patrimonialismo não nasce dessa dependência; vem da tradição do Estado português e se recompõe em contato com o capitalismo industrial.
+
+- **B** A dependência era inegável, mas não colonial; e o patrimonialismo preexiste a ela, com origem no Estado português.
+- **C** A Independência não desfez o vínculo com a Inglaterra, que seguiu como interlocutor econômico dominante.
+- **D** O patrimonialismo é herança do Estado português, anterior ao Império; não nasce com a República.
+- **E** A Carta de 1824 é lida como nominal: o texto não limitava efetivamente o poder.
+
 ## 3. 1891: A República Que Trocou A Forma
 
 ### Uma República sem o povo
@@ -290,11 +328,25 @@ As mudanças foram estruturais e reais:
 
 Dois itens dessa lista atravessam o curso. A rigidez com cláusula pétrea, estudada nos Módulos 2B e 3, nasce aqui, e com ela a ideia de que há matérias que nem a reforma pode alcançar. E o controle judicial difuso de constitucionalidade, herança americana, chega ao Brasil em 1891 e permanece até hoje, ao lado do controle concentrado que 1988 ampliaria.
 
+### O modelo americano a serviço dos proprietários
+
+A escolha do modelo norte-americano não foi apenas técnica. Carvalho (1990) identifica três modelos de república em disputa no fim do século XIX: o americano, liberal; o jacobino, de inspiração francesa e com apelo à participação popular direta; e o positivista, inspirado em Comte. O americano convinha aos proprietários rurais, ex-senhores de escravos: definia o interesse público como soma de interesses individuais, dispensava a ampla participação popular e oferecia a solução federalista, que era o que mais importava aos republicanos de São Paulo, Minas Gerais e Rio Grande do Sul. Foi esse modelo, "em boa parte vitorioso na Constituição de 1891" (Carvalho, 1990), que deu forma ao texto.
+
+Dois dispositivos mostram a quem ele servia. O art. 9º, 1º, deu aos Estados a competência exclusiva para tributar a exportação de mercadorias de sua própria produção: num país cuja riqueza vinha do café, o principal tributo da economia exportadora ficou nas mãos dos Estados produtores. O art. 70, § 1º, excluiu os analfabetos do alistamento eleitoral. A República eliminou o voto censitário, mas a exigência de alfabetização, introduzida em 1881, bastava para conter o eleitorado: a participação, em torno de 10% da população antes de 1881, caiu para menos de 1% com a eleição direta e chegou a apenas cerca de 2% na eleição presidencial de 1894 (Carvalho, 1987). A exclusão era mais grave porque a Constituição republicana retirou do governo a obrigação de oferecer instrução primária, que constava do texto imperial.
+
+A dependência externa mudou de feição sem desaparecer. O modelo institucional era norte-americano, mas o crédito continuava em Londres: o *funding loan* de 1898, negociado em plena crise cambial, foi, para Faoro (2012), o instrumento da reorganização financeira da República "sob a hegemonia política e econômica de São Paulo".
+
+O modelo americano também não era o dos militares que derrubaram a Monarquia. A agitação que levou ao 15 de novembro veio dos jovens oficiais positivistas formados por Benjamin Constant Botelho de Magalhães, professor da Escola Militar, que não se confunde com o pensador francês do Poder Moderador (Carvalho, 2005). A Constituição de 1891 foi, em boa medida, a vitória do projeto liberal dos proprietários sobre o projeto positivista.
+
 ### E ainda assim, o coronelismo
 
 Essa lista é longa e é verdadeira. E ainda assim a Primeira República é, com razão, lembrada como o período do coronelismo, do voto de cabresto e da política dos governadores. Barroso, citado por Lenza (2024), aponta os dois aspectos mais graves da ruína da República Velha: **o domínio das oligarquias e a fraude eleitoral institucionalizada**.
 
 Como conciliar as duas coisas? Pela distinção da abertura do módulo. O federalismo, que no papel descentraliza, deu autonomia a elites regionais que não precisavam prestar contas a um eleitorado ampliado — porque o eleitorado não foi ampliado. O poder local das oligarquias controlava o voto e, pelo voto, o Estado.
+
+Leal (2012) dá a esse arranjo o nome preciso. O coronelismo não era o poder absoluto do senhor de terras, mas "sobretudo um compromisso, uma troca de proveitos entre o poder público, progressivamente fortalecido, e a decadente influência social dos chefes locais", e não se explica sem a estrutura agrária que lhe servia de base. Os chefes locais davam apoio eleitoral aos governadores e deles recebiam o apoio necessário para montar as oligarquias municipais. O mesmo compromisso se repetia acima: a "política dos governadores", inaugurada por Campos Sales, foi "mais o reconhecimento de um fato consumado" do que uma invenção (Leal, 2012), e, por analogia, havia uma "política dos coronéis" entre Estados e municípios. Por isso o conceito de Leal (2012) é o de um **sistema**, que ligava coronéis, governadores e o Presidente da República. O federalismo de 1891 cresceu à custa do município.
+
+A leitura de Leal complementa a de Faoro sem coincidir com ela. Faoro (2012) explica a Primeira República pela permanência de um Estado patrimonial; Leal (2012), por um compromisso historicamente datado entre o poder público e os proprietários de terra, próprio de um regime representativo com eleitorado rural dependente.
 
 ### A lição metodológica
 
@@ -302,13 +354,13 @@ Guarde a lição, porque ela vale para todo o módulo: **1891 mudou quase tudo n
 
 ### O que 1891 herdou e o que deixou
 
-1891 é uma resposta direta a 1824: onde havia Moderador, tripartição; onde havia unitarismo, federação; onde havia monarquia e religião oficial, República e laicidade. Classificada pelos critérios do Módulo 2B, é uma Constituição promulgada, rígida e liberal — e, pelo critério da correspondência com a realidade, nominal: o federalismo e o regime representativo existiam no texto e eram desmentidos pela fraude e pelo coronelismo.
+1891 é uma resposta direta a 1824: onde havia Moderador, tripartição; onde havia unitarismo, federação; onde havia monarquia e religião oficial, República e laicidade. Classificada pelos critérios do Módulo 2B, é uma Constituição promulgada, rígida e liberal — e, pelo critério da correspondência com a realidade, nominal: o federalismo e o regime representativo existiam no texto e eram desmentidos pela fraude e pelo coronelismo. Faoro (2012) chega à mesma conclusão: a Carta tinha "caráter puramente nominal", incapaz de limitar o poder.
 
 O legado é desigual. A arquitetura institucional permaneceu: o Supremo Tribunal Federal, o controle difuso, o habeas corpus, a federação e a técnica da cláusula pétrea chegam até 1988. O que não permaneceu foi o pacto oligárquico, que a crise de 1929 e a Revolução de 1930 desmontaram. A Constituição seguinte se escreveria contra o liberalismo excludente de 1891, e não contra as suas instituições.
 
 ### Treino do tópico 3
 
-#### Questão 6 · O que 1891 rompeu e o que não rompeu
+#### Questão 7 · O que 1891 rompeu e o que não rompeu
 
 A Constituição de 1891 extinguiu o Poder Moderador, adotou a tripartição de poderes, substituiu o unitarismo pelo federalismo e a monarquia pela República. Ainda assim, a Primeira República é lembrada pelo domínio das oligarquias e pela fraude eleitoral institucionalizada. Considerando esses dois conjuntos de informação, a leitura correta é:
 
@@ -331,7 +383,7 @@ Mudança de forma de Estado e de governo é mudança formal; ampliação do corp
 - **D** Erra o dado técnico: semirrígida foi a de 1824 (art. 178). A de 1891 era rígida (art. 90), com cláusula pétrea.
 - **E** 1891 extinguiu o Poder Moderador e adotou a tripartição (art. 15); a política dos governadores foi prática, não instituto constitucional.
 
-#### Questão 7 · A primeira cláusula pétrea
+#### Questão 8 · A primeira cláusula pétrea
 
 O art. 90 da Constituição de 1891 instituiu procedimento agravado de reforma e vedou propostas tendentes a abolir a forma republicano-federativa ou a igualdade de representação dos Estados no Senado. Em relação às categorias estudadas nos Módulos 2B e 3, esse dispositivo mostra que a Constituição de 1891 era:
 
@@ -353,6 +405,29 @@ Rigidez é a exigência de procedimento mais difícil que o da lei para alterar 
 - **C** Semirrígida foi 1824, que deixava parte do texto à lei comum. Em 1891 todo o texto exigia o rito agravado.
 - **D** A Constituição de 1891 foi efetivamente reformada em 1926. A cláusula pétrea protege um núcleo, não o texto inteiro.
 - **E** 1891 foi promulgada por assembleia, e a cláusula pétrea não tem relação com a origem do texto: está também em 1988.
+
+#### Questão 9 · O modelo americano e os proprietários
+
+A Constituição de 1891 deu aos Estados a competência exclusiva para tributar a exportação de mercadorias de sua própria produção (art. 9º, 1º) e excluiu os analfabetos do alistamento eleitoral (art. 70, § 1º). Considerando esses dispositivos e o contexto da Primeira República, é correto afirmar que:
+
+**A.** a exclusão dos analfabetos foi irrelevante, porque a população brasileira de 1891 era majoritariamente alfabetizada e votava em massa.
+
+**B.** o imposto de exportação para os Estados enfraqueceu os produtores de café, que passaram a depender das transferências da União.
+
+**C.** o federalismo pôs o imposto do café nas mãos dos Estados produtores, e a alfabetização exigida manteve o eleitorado em torno de 2%.
+
+**D.** os dois dispositivos vieram do projeto positivista dos militares, que pretendiam ampliar a participação popular por meio da República.
+
+**E.** os dois dispositivos foram copiados da Constituição dos Estados Unidos, sem relação com os interesses econômicos das elites brasileiras.
+
+**Resposta: C.**
+
+O modelo norte-americano convinha aos proprietários rurais. O art. 9º, 1º, entregou aos Estados produtores o tributo sobre a exportação, isto é, sobre o café; o art. 70, § 1º, manteve a exigência de alfabetização, que bastava para conter o eleitorado. A participação chegou a apenas cerca de 2% da população na eleição presidencial de 1894.
+
+- **A** A maioria da população era analfabeta; a exigência de alfabetização foi justamente o filtro que manteve o eleitorado mínimo.
+- **B** O imposto de exportação fortaleceu os Estados produtores, que passaram a arrecadar sobre a própria riqueza exportada.
+- **D** O projeto positivista foi, em boa medida, derrotado em 1891; o texto seguiu o modelo liberal, sem ampliar a participação.
+- **E** A escolha do modelo atendia aos interesses dos proprietários; o imposto de exportação dos Estados não vem do texto norte-americano.
 
 # Parte II — O Século Das Rupturas
 
@@ -407,7 +482,7 @@ O legado de 1937 é duplo, e convém não simplificá-lo. Como modelo político,
 
 ### Treino do tópico 4
 
-#### Questão 8 · Weimar e o corporativismo no mesmo texto
+#### Questão 10 · Weimar e o corporativismo no mesmo texto
 
 A Constituição de 1934 incorporou, sob influência da Constituição alemã de 1919, direitos sociais e a perspectiva de um Estado social. No mesmo texto, parte da Câmara dos Deputados era eleita por organizações profissionais, numa representação classista de inspiração corporativista. Sobre essa convivência, é correto afirmar:
 
@@ -430,7 +505,7 @@ A Constituição de 1934 é o ponto de entrada do Brasil no constitucionalismo s
 - **C** Nega dados do texto, que constitucionalizou direitos trabalhistas e criou remédios inéditos. A curta duração se explica pelo golpe de 1937.
 - **D** Não há essa previsão. A disputa entre as duas vias não foi resolvida pelo texto, mas pelo golpe que o derrubou.
 
-#### Questão 9 · Constituição não é constitucionalismo
+#### Questão 11 · Constituição não é constitucionalismo
 
 Sobre a Carta de 1937, sabe-se que o plebiscito previsto no art. 187 nunca ocorreu; que o Parlamento dissolvido pelo art. 178 nunca se instalou, legislando o Presidente por decretos-leis; que o art. 96, parágrafo único, permitia tornar sem efeito a decisão judicial de inconstitucionalidade; e que o estado de emergência do art. 186 durou até 1945. A conclusão teoricamente correta é:
 
@@ -453,7 +528,7 @@ Havia texto constitucional vigente, com numeração, artigos e aparência de ord
 - **D** A Carta vigorou de 1937 a 1945, com efeitos intensos; a ausência do plebiscito foi mais uma promessa descumprida, não condição de vigência.
 - **E** Inverte a lição: o que 1937 aplicou foi a vontade do governante, e a ausência de controle efetivo é precisamente a marca do autoritarismo.
 
-#### Questão 10 · A decisão que o Parlamento podia desfazer
+#### Questão 12 · A decisão que o Parlamento podia desfazer
 
 O art. 96, parágrafo único, da Carta de 1937 permitia que uma lei declarada inconstitucional pelo Judiciário fosse submetida novamente ao Parlamento, que, confirmando-a por dois terços, tornaria sem efeito a decisão do tribunal. Como o Parlamento nunca se instalou, a palavra final ficava com o Presidente. À luz da relação entre supremacia e controle de constitucionalidade, esse mecanismo:
 
@@ -527,7 +602,7 @@ O legado de 1967/69 para 1988 é a relação mais importante deste módulo, e el
 
 ### Treino do tópico 5
 
-#### Questão 11 · O que 1946 restabeleceu
+#### Questão 13 · O que 1946 restabeleceu
 
 A Constituição de 1946, promulgada por Assembleia Constituinte instalada em fevereiro daquele ano, inspirou-se nas ideias liberais de 1891 e nas ideias sociais de 1934. Assinale a alternativa que reúne apenas itens efetivamente previstos em 1946:
 
@@ -550,7 +625,7 @@ Todos os itens da alternativa correta estão no texto de 1946. O mandado de segu
 - **D** A Justiça Eleitoral vem de 1932 e 1934; o mandado de injunção é criação de 1988. Só o terceiro item corresponde a 1946.
 - **E** O habeas data é criação de 1988, e o voto direto para todos os cargos não corresponde ao texto de 1946. O conjunto não se sustenta.
 
-#### Questão 12 · A rigidez que o regime reduziu
+#### Questão 14 · A rigidez que o regime reduziu
 
 Em 1977, com o Congresso dissolvido, o governo editou o chamado Pacote de Abril. Entre as medidas, reduziu-se de dois terços para maioria absoluta o quórum de aprovação de emenda constitucional. Com o vocabulário do Módulo 2B, a leitura correta dessa medida é:
 
@@ -573,7 +648,7 @@ Rigidez é a exigência de procedimento mais difícil para alterar a Constituiç
 - **C** Supremacia é a posição hierárquica da Constituição; rigidez é o procedimento agravado para modificá-la. O quórum é elemento de rigidez.
 - **E** A emenda continuou exigindo procedimento próprio e quórum de maioria absoluta; a rigidez diminuiu, mas o texto não ficou à mercê da lei ordinária.
 
-#### Questão 13 · Uma emenda que era outra Carta
+#### Questão 15 · Uma emenda que era outra Carta
 
 Em 17 de outubro de 1969, com o Congresso fechado, uma Junta Militar baixou a Emenda Constitucional n. 1 à Constituição de 1967, que reescreveu amplamente o texto. Considerando o que o Módulo 3 estabeleceu sobre poder originário e poder derivado, a leitura mais adequada desse ato é:
 
@@ -675,7 +750,7 @@ A tabela mostra a ruptura. Mas a relação entre 1967 e 1988 não se esgota nela
 
 ### Treino do tópico 6
 
-#### Questão 14 · A Sistematização e o Plenário
+#### Questão 16 · A Sistematização e o Plenário
 
 Rejeitado o anteprojeto da Comissão Arinos, a Constituinte de 1987–1988 trabalhou sem texto-base, em Comissões Temáticas, Comissão de Sistematização e Plenário. Na Sistematização prevaleceu um texto "à esquerda do Plenário", nacionalista e de ampla proteção aos trabalhadores; em Plenário, as forças liberal-conservadoras do Centrão impuseram mudanças substantivas. Esse relato ilumina, sobretudo, que a Constituição de 1988 é:
 
@@ -698,7 +773,7 @@ O relato mostra o compromisso sendo formado: um projeto deslocado à esquerda do
 - **D** A supremacia decorre da posição hierárquica da Constituição e do controle que a garante, não do embate interno da Constituinte.
 - **E** O texto foi votado e promulgado pela Assembleia eleita; a reação do Centrão se deu no Plenário, pelo voto, o que é a marca da promulgação.
 
-#### Questão 15 · A emenda que perdeu e a campanha que venceu
+#### Questão 17 · A emenda que perdeu e a campanha que venceu
 
 Em 25 de abril de 1984, a emenda que restabelecia a eleição direta para Presidente recebeu 298 votos favoráveis, mas não alcançou os 320 necessários. Meses antes, a campanha das Diretas Já havia levado milhões de pessoas às ruas. Sobre o papel da campanha na transição que levaria à Constituinte, é correto afirmar que ela:
 
@@ -721,7 +796,7 @@ A derrota da emenda no Congresso não foi derrota política. A mobilização des
 - **D** Tancredo foi eleito indiretamente, pelo Colégio Eleitoral; a eleição direta para Presidente só voltaria em 1989.
 - **E** A Constituinte foi convocada justamente porque a democratização exigia uma nova ordem, e não apenas uma emenda à Carta de 1967.
 
-#### Questão 16 · Uma Assembleia conservadora e uma Constituição cidadã
+#### Questão 18 · Uma Assembleia conservadora e uma Constituição cidadã
 
 A Assembleia eleita em 1986 era majoritariamente de centro e de centro-direita, e os partidos de esquerda somavam poucas cadeiras. Ainda assim, ela produziu a Constituição mais democrática e socialmente avançada da história do país. A explicação mais adequada para esse aparente paradoxo é:
 
@@ -812,7 +887,7 @@ O resultado é um sistema em que o mesmo juiz de primeira instância pode deixar
 
 ### Treino do tópico 7
 
-#### Questão 17 · Garantia, balanço e dirigente
+#### Questão 19 · Garantia, balanço e dirigente
 
 Uma tipologia corrente distingue a Constituição-garantia, que protege a liberdade limitando o poder; a Constituição-balanço, que registra um estágio já alcançado das relações de poder; e a Constituição-dirigente, que estabelece um plano para dirigir a evolução política, com normas programáticas. Considerando o art. 3º da CF/88 — construir uma sociedade livre, justa e solidária, erradicar a pobreza, reduzir as desigualdades —, é correto afirmar:
 
@@ -835,7 +910,7 @@ Leia os verbos do art. 3º: construir, garantir, erradicar, reduzir, promover. S
 - **D** A tipologia não depende do grau de eficácia de cada norma, e a discussão sobre eficácia não retira do art. 3º o caráter de norma de fins.
 - **E** O art. 3º não descreve nem protege o existente: aponta para a transformação. Juntar balanço e garantia é errar duas vezes.
 
-#### Questão 18 · Presença não é irradiação
+#### Questão 20 · Presença não é irradiação
 
 Uma delimitação corrente da expressão "constitucionalização do Direito" exclui do conceito o simples fato de a Constituição incorporar temas de ramos infraconstitucionais e o reserva ao efeito expansivo das normas constitucionais, cujo conteúdo se irradia por todo o sistema jurídico, condicionando a validade e o sentido das demais normas. Qual situação caracteriza o fenômeno nesse sentido?
 
@@ -858,7 +933,7 @@ A delimitação separa presença de irradiação. A alternativa correta descreve
 - **C** Descreve controle de constitucionalidade por vício formal, que existe desde 1891 e é pressuposto do fenômeno, não a sua manifestação.
 - **E** Mover uma regra para o texto constitucional sem alterá-la é, de novo, presença; não há irradiação sobre o sentido de outras normas.
 
-#### Questão 19 · A constituição dirigente invertida
+#### Questão 21 · A constituição dirigente invertida
 
 Uma corrente crítica sustenta que se acusa a Constituição de 1988 de "amarrar" a política e produzir ingovernabilidade apenas pelos dispositivos de políticas públicas e direitos sociais, enquanto a imposição, por emenda e por lei, de políticas de ajuste fiscal nunca é tratada como amarra equivalente. A expressão "constituição dirigente invertida", nessa crítica, designa:
 
@@ -899,7 +974,7 @@ A segunda é metodológica, e vale para o curso inteiro: **a Constituição não
 
 ### Treino do tópico 8
 
-#### Questão 20 · O que a transição negociada deixou de pé
+#### Questão 22 · O que a transição negociada deixou de pé
 
 A Lei n. 6.683/1979, editada sob o regime militar, anistiou os autores de crimes políticos ou conexos praticados entre 1961 e 1979. Em 2008, ajuizou-se a ADPF 153, sustentando que a lei não poderia, à luz da Constituição de 1988, alcançar agentes estatais responsáveis por tortura. Em 2010, o Supremo julgou a arguição improcedente, por maioria. Sobre o significado do julgamento para a compreensão da Constituição de 1988, é correto afirmar:
 
@@ -922,7 +997,7 @@ A Constituição de 1988 foi ruptura democrática e, ao mesmo tempo, produto de 
 - **C** A ADPF é o instrumento de controle concentrado de normas anteriores à Constituição, e foi exatamente esse exame que se realizou.
 - **E** A convivência com a Lei da Anistia resultou de uma interpretação do Supremo, e não de subordinação da Constituinte à ordem anterior.
 
-#### Questão 21 · Uma cláusula pétrea com memória
+#### Questão 23 · Uma cláusula pétrea com memória
 
 O art. 60, § 4º, II, da Constituição de 1988 proíbe deliberação sobre proposta de emenda tendente a abolir o voto direto, secreto, universal e periódico. Nenhuma Constituição brasileira anterior havia protegido o voto dessa forma. Lida à luz da história constitucional, essa escolha da Constituinte:
 
@@ -963,8 +1038,8 @@ Três questões discursivas, para treinar a escrita. Responda cada uma em até q
 
 - Estudar história constitucional é estudar a distância entre o texto, o regime político e a estrutura social — não decorar datas.
 - O Brasil teve oito Constituições desde 1824; a mais duradoura, com 65 anos, foi a menos democrática.
-- **1824**: outorgada após a dissolução da Constituinte; Poder Moderador (arts. 10 e 98); semirrígida (art. 178); sufrágio censitário; escravidão até 1888. Liberalismo formal sem democracia social.
-- **1891**: República, federalismo, presidencialismo, laicidade, STF, rigidez com cláusula pétrea (art. 90), habeas corpus constitucionalizado — e coronelismo, voto restrito e fraude eleitoral. Ruptura formal com continuidade oligárquica.
+- **1824**: outorgada após a dissolução da Constituinte; Poder Moderador (arts. 10 e 98); semirrígida (art. 178); sufrágio censitário; escravidão até 1888. Economia exportadora ligada ao capitalismo industrial inglês, numa dependência "por via do Estado"; Estado patrimonial de origem portuguesa. Liberalismo formal sem democracia social.
+- **1891**: República, federalismo, presidencialismo, laicidade, STF, rigidez com cláusula pétrea (art. 90), habeas corpus constitucionalizado — e coronelismo, voto restrito e fraude eleitoral. Modelo americano a serviço dos proprietários: imposto de exportação para os Estados (art. 9º), exclusão dos analfabetos (art. 70) e cerca de 2% da população votando em 1894. Coronelismo como compromisso e como sistema. Ruptura formal com continuidade oligárquica.
 - **1934**: entrada no constitucionalismo social por influência de Weimar; direitos trabalhistas, voto feminino e secreto, mandado de segurança e ação popular — junto com a representação classista de matriz corporativista. Durou três anos.
 - **1937**: a "Polaca"; plebiscito do art. 187 nunca realizado; Parlamento nunca instalado; art. 96, parágrafo único, permitia desfazer decisão de inconstitucionalidade; censura prévia; greve proibida. Constituição sem constitucionalismo.
 - **1946**: redemocratização; restabelece mandado de segurança e ação popular; inafastabilidade do controle jurisdicional (art. 141, § 4º); direito de greve (art. 158); partidos políticos constitucionalizados (art. 141, § 13).
@@ -989,9 +1064,21 @@ BELLO, Enzo; BERCOVICI, Gilberto; LIMA, Martonio Mont'Alverne Barreto. O fim das
 
 BRASIL. *Constituição Política do Imperio do Brazil, de 25 de março de 1824*. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao24.htm>.
 
+BRASIL. *Constituição da República dos Estados Unidos do Brazil, de 24 de fevereiro de 1891*. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao91.htm>.
+
 BRASIL. *Constituição da República Federativa do Brasil de 1988*. Brasília, DF: Presidência da República. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm>.
 
 BRASIL. Supremo Tribunal Federal. *Arguição de Descumprimento de Preceito Fundamental n. 153/DF*. Relator: Min. Eros Grau. Tribunal Pleno, julgado em 29 abr. 2010, acórdão publicado no DJe de 6 ago. 2010.
+
+CARVALHO, José Murilo de. *A formação das almas: o imaginário da República no Brasil*. São Paulo: Companhia das Letras, 1990.
+
+CARVALHO, José Murilo de. *Forças Armadas e política no Brasil*. 2. ed. Rio de Janeiro: Jorge Zahar, 2005.
+
+CARVALHO, José Murilo de. *Os bestializados: o Rio de Janeiro e a República que não foi*. São Paulo: Companhia das Letras, 1987.
+
+FAORO, Raymundo. *Os donos do poder: formação do patronato político brasileiro*. 5. ed. São Paulo: Globo, 2012.
+
+LEAL, Victor Nunes. *Coronelismo, enxada e voto: o município e o regime representativo no Brasil*. 7. ed. São Paulo: Companhia das Letras, 2012.
 
 LENZA, Pedro. *Direito constitucional esquematizado*. 28. ed. São Paulo: SaraivaJur, 2024.
 
@@ -1011,7 +1098,8 @@ WHITAKER, Chico. A cada dez anos, um passo. *Le Monde Diplomatique Brasil*, São
 2. Os dados da ADPF 153 (data do julgamento, relator, vencidos e publicação) foram conferidos no portal do Supremo Tribunal Federal em 07/09/2026. O inteiro teor do acórdão não foi lido para este módulo. A condenação do Brasil pela Corte Interamericana de Direitos Humanos no caso Gomes Lund, frequentemente contraposta à ADPF 153, não foi conferida na fonte oficial e por isso não é descrita aqui.
 3. O art. 178 da Constituição de 1824 é transcrito na grafia original do texto oficial.
 4. Dados da transição e da Constituinte. Votação da emenda Dante de Oliveira (25/04/1984: 298 a favor, 65 contra, 3 abstenções, 113 ausentes; necessários 320) e comício do Anhangabaú: reportagem de *Congresso em Foco* de 25/04/2026. Composição partidária da Assembleia (PMDB 303, PFL 135, PDS 38, PDT 26, PTB 18, PT 16, PL 7, PDC 6, PCB 3, PCdoB 3, PSB 2, PSC 1, PMB 1; total 559, de 13 partidos): levantamento corrente, confirmado quanto ao total e ao número de partidos em material da Fundação Fernando Henrique Cardoso. Emendas populares (122, com cerca de 12 milhões de assinaturas; exigência de 30 mil eleitores e três entidades): Fundação FHC e artigo de Chico Whitaker no *Le Monde Diplomatique Brasil* (2009). Os números foram conferidos nessas fontes em 27/10/2026; para estudo aprofundado da Constituinte, a obra de referência é PILATTI, Adriano. *A Constituinte de 1987-1988: progressistas, conservadores, ordem econômica e regras do jogo*. Rio de Janeiro: Lumen Juris, 2008 (não consultada para este módulo).
-5. As colunas de finalidade e de correspondência com a realidade da tabela do tópico 1 são leituras propostas pelo módulo a partir dos critérios do Módulo 2B; só a classificação de 1937 como semântica e a de 1988 como "pretende ser normativa" vêm diretamente das obras de referência.
+5. As colunas de finalidade e de correspondência com a realidade da tabela do tópico 1 são leituras propostas pelo módulo a partir dos critérios do Módulo 2B; só a classificação de 1937 como semântica e a de 1988 como "pretende ser normativa" vêm diretamente das obras de referência. A leitura de 1824 e de 1891 como nominais converge com Faoro (2012), que qualifica as duas Cartas como "puramente nominais".
 6. Este módulo reescreve no padrão atual a versão de 07/09/2026, preservando as passagens conferidas na ficha de leitura do módulo; a ponte para o módulo seguinte foi refeita, porque o poder constituinte (Módulo 3) já foi estudado.
+7. A base econômica, a dependência externa e o patrimonialismo, nos tópicos 2 e 3, foram acrescentados em 09/11/2026 a partir de Faoro (2012), Leal (2012) e Carvalho (1987; 1990; 2005), nos exemplares do acervo do docente. Há edições mais recentes: *Os donos do poder* (Companhia das Letras, 2021), *Os bestializados* (Companhia das Letras, 2019), *A formação das almas* (Companhia das Letras) e *Forças Armadas e política no Brasil* (Todavia, 2019). As citações foram conferidas nos exemplares indicados nas Referências; o de *Os bestializados* é uma impressão de 2004. Os dados de participação eleitoral (Carvalho, 1987) e a passagem sobre os modelos de república (Carvalho, 1990) foram conferidos em exemplares digitalizados. Os arts. 9º, 1º, e 70, § 1º, da Constituição de 1891 foram conferidos no texto original.
 
 *Material elaborado com apoio de Inteligência Artificial Generativa (Claude, da Anthropic) para organização e estruturação do texto, elaboração de questões de treino e preparação didática, observadas as diretrizes da Portaria CNPq nº 2.664/2026. A seleção do conteúdo, a leitura e conferência das fontes e a responsabilidade final são do docente.*
