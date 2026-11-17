@@ -11,7 +11,7 @@ tema: "As oito Constituições brasileiras, de 1824 a 1988; a Constituinte de 19
 status: versão autoral no padrão novo — aguarda revisão docente
 data: 2026-10-27
 aula: 10/11/2026
-atualizado: 2026-11-09 (base econômica, dependência e patrimonialismo nos tópicos 2 e 3)
+atualizado: 2026-11-17 (Forças Armadas nas Constituições e art. 142, tópico 8; antes, 2026-11-09: base econômica, dependência e patrimonialismo nos tópicos 2 e 3)
 tags:
   - direito-constitucional
   - teoria-da-constituicao
@@ -972,6 +972,26 @@ A primeira lição é jurídica: a transição brasileira foi **negociada**, e a
 
 A segunda é metodológica, e vale para o curso inteiro: **a Constituição não decide sozinha**. O art. 5º, XLIII, e o art. 3º estão no mesmo texto que o Supremo interpretou; a interpretação que prevaleceu foi uma entre as que o texto comportava. Quem estuda Direito Constitucional pelo texto isolado não consegue explicar por que a decisão foi essa e não outra.
 
+### Um segundo caso: do "essencialmente obediente" ao art. 142
+
+A Lei da Anistia mostra a continuidade pelo lado da interpretação. Há um segundo caso que a mostra pelo próprio texto: o lugar das Forças Armadas nas Constituições brasileiras.
+
+A Carta de 1824 resolveu a questão numa frase. O art. 147 dispunha: "A Força Militar é essencialmente obediente; jamais se poderá reunir, sem que lhe seja ordenado pela Autoridade legitima." Carvalho (2005) mostra que, no Segundo Reinado, a fórmula correspondia à prática: os ministros militares eram quase sempre civis, e a Câmara e o Senado controlavam o orçamento, o recrutamento e o efetivo.
+
+Tudo mudou com a República, e mudou, sustenta Carvalho (2005), não por causa da República, mas pela maneira como ela foi proclamada: por um levante militar contra o governo. O art. 14 da Constituição de 1891 manteve a palavra "obediente", mas acrescentou "dentro dos limites da lei" e obrigou a força armada a "sustentar as instituições constitucionaes". A ressalva, pensada para conter o Executivo, parecia dar aos militares o poder de julgar a legalidade dos atos do governo. Nas palavras do autor, a República criou o que a Constituição imperial buscara a todo custo evitar: "uma força armada deliberante". O mesmo artigo destinou as forças de terra e mar à "manutenção das leis no interior", uma função de polícia que o Império não lhes atribuía.
+
+Nos anos 1930, a ideia ganhou doutrina. Carvalho (2005) encontra no pensamento de Góes Monteiro, um dos mentores do Exército na era Vargas, a primeira formulação sistemática da "ideologia do poder moderador das Forças Armadas": a intervenção na política deixava de ser obra de oficiais isolados, como a dos tenentes, para ser obra da organização militar como tal, conduzida pelo seu Estado-Maior. Repare no nome. O Poder Moderador de 1824 cabia ao Imperador e estava escrito na Constituição. Extinto em 1891, o papel de árbitro acima dos poderes passou a ser reivindicado, fora do texto, por quem tinha as armas.
+
+A fórmula atravessou as Constituições seguintes, democráticas e autoritárias, com variações de redação que dizem muito sobre cada regime.
+
+> **Pista de pesquisa.** Em cada Constituição, procure o artigo que define a destinação das forças armadas e compare três coisas: a quem elas devem obediência; se garantem os poderes "constitucionais" ou os poderes "constituídos"; e se a garantia "da lei e da ordem" aparece, e sob que condição. Uma das Cartas troca a garantia dos poderes pela obediência a uma única pessoa; outra, de um regime de fato, troca uma única palavra, e a troca muda tudo.
+
+Na Constituinte, o tema foi dos mais disputados. Carvalho (2005) registra que a Comissão Afonso Arinos propôs três mudanças: voltar a falar em poderes "constitucionais", e não "constituídos"; retirar a expressão "dentro dos limites da lei"; e tirar das Forças Armadas a garantia da lei e da ordem, que, segundo o autor, as transformara aos poucos em "polícia de luxo". Os ministros militares insistiram na manutenção do texto então vigente. O resultado é o art. 142: as Forças Armadas, organizadas "sob a autoridade suprema do Presidente da República", destinam-se "à defesa da Pátria, à garantia dos poderes constitucionais e, por iniciativa de qualquer destes, da lei e da ordem". Compare o art. 142 com as três propostas e verifique, você mesmo, quais prevaleceram e qual não.
+
+Depois de 1988, a leitura de que o art. 142 autorizaria as Forças Armadas a arbitrar conflitos entre os Poderes, como uma espécie de poder moderador militar, voltou ao debate público. Em 8 de abril de 2024, o Supremo Tribunal Federal, no julgamento da ADI 6.457, relator o Ministro Luiz Fux, afastou essa leitura por unanimidade: a missão institucional das Forças Armadas não inclui o exercício de poder moderador entre o Executivo, o Legislativo e o Judiciário, e a garantia dos poderes constitucionais não admite o emprego da força militar por um Poder contra outro.
+
+O caso tem a estrutura da Anistia, com o sinal trocado. Lá, a continuidade veio da interpretação; aqui, veio do texto, e foi a interpretação que a conteve.
+
 ### Treino do tópico 8
 
 #### Questão 22 · O que a transição negociada deixou de pé
@@ -1045,6 +1065,7 @@ Três questões discursivas, para treinar a escrita. Responda cada uma em até q
 - **1946**: redemocratização; restabelece mandado de segurança e ação popular; inafastabilidade do controle jurisdicional (art. 141, § 4º); direito de greve (art. 158); partidos políticos constitucionalizados (art. 141, § 13).
 - **1967 e EC n. 1/69**: forma jurídica do autoritarismo; 1967 votada, mas materialmente outorgada; AI-5 excluiu de apreciação judicial os atos nele fundados; a EC n. 1/69, formalmente emenda, foi materialmente nova Carta; o Pacote de Abril de 1977 reduziu o quórum de emenda de dois terços para maioria absoluta.
 - **1988**: convocada pela EC n. 26/1985; Congresso constituinte de 559 membros, sem texto-base depois de rejeitado o anteprojeto da Comissão Arinos; Comissões Temáticas, Sistematização e Plenário; projeto "à esquerda do Plenário" na Sistematização, reação do Centrão em Plenário; 245 artigos e 70 disposições transitórias.
+- **Forças Armadas nas Constituições**: 1824 "essencialmente obediente" (art. 147); 1891 "dentro dos limites da lei" e garantia das leis no interior (art. 14), depois de uma República proclamada por levante militar; nos anos 1930, a "ideologia do poder moderador das Forças Armadas"; na Constituinte, a garantia da lei e da ordem foi mantida, condicionada à iniciativa de um dos poderes (art. 142). Em 2024, o STF afastou, por unanimidade, a leitura do art. 142 como poder moderador militar (ADI 6.457).
 - **Diretas Já**: a emenda Dante de Oliveira perdeu na Câmara em 25/04/1984 (faltaram 22 votos), mas a campanha tirou do regime o controle da sucessão; Tancredo venceu no Colégio Eleitoral com o compromisso de convocar a Constituinte.
 - **Assembleia conservadora, Constituição cidadã**: maioria de centro e de direita, esquerda pequena; o resultado combina um PMDB que não era bloco, um processo que começou nas subcomissões, a entrada organizada da sociedade (emendas populares), uma reação conservadora forte mas tardia e seletiva e o custo político de parecer herdeiro do regime. O preço foi remeter muitas decisões para "a forma da lei".
 - **1988 responde a 1964** quase ponto a ponto (AI-5 → art. 5º, XXXV; tortura → art. 5º, III e XLIII; Pacote de Abril → art. 60, § 2º; eleições indiretas → art. 60, § 4º, II), mas nasce de dentro da ordem de 1967 (EC n. 26/1985, Anistia, decreto-lei → medida provisória).
@@ -1067,6 +1088,18 @@ BRASIL. *Constituição Política do Imperio do Brazil, de 25 de março de 1824*
 BRASIL. *Constituição da República dos Estados Unidos do Brazil, de 24 de fevereiro de 1891*. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao91.htm>.
 
 BRASIL. *Constituição da República Federativa do Brasil de 1988*. Brasília, DF: Presidência da República. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm>.
+
+BRASIL. *Constituição da República dos Estados Unidos do Brasil, de 16 de julho de 1934*. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao34.htm>.
+
+BRASIL. *Constituição dos Estados Unidos do Brasil, de 10 de novembro de 1937*. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao37.htm>.
+
+BRASIL. *Constituição dos Estados Unidos do Brasil, de 18 de setembro de 1946*. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao46.htm>.
+
+BRASIL. *Constituição da República Federativa do Brasil de 1967*. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/constituicao67.htm>.
+
+BRASIL. *Emenda Constitucional n. 1, de 17 de outubro de 1969*. Disponível em: <https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc_anterior1988/emc01-69.htm>.
+
+BRASIL. Supremo Tribunal Federal. *Ação Direta de Inconstitucionalidade n. 6.457/DF*. Relator: Min. Luiz Fux. Tribunal Pleno, julgamento concluído em 8 abr. 2024.
 
 BRASIL. Supremo Tribunal Federal. *Arguição de Descumprimento de Preceito Fundamental n. 153/DF*. Relator: Min. Eros Grau. Tribunal Pleno, julgado em 29 abr. 2010, acórdão publicado no DJe de 6 ago. 2010.
 
@@ -1101,5 +1134,6 @@ WHITAKER, Chico. A cada dez anos, um passo. *Le Monde Diplomatique Brasil*, São
 5. As colunas de finalidade e de correspondência com a realidade da tabela do tópico 1 são leituras propostas pelo módulo a partir dos critérios do Módulo 2B; só a classificação de 1937 como semântica e a de 1988 como "pretende ser normativa" vêm diretamente das obras de referência. A leitura de 1824 e de 1891 como nominais converge com Faoro (2012), que qualifica as duas Cartas como "puramente nominais".
 6. Este módulo reescreve no padrão atual a versão de 07/09/2026, preservando as passagens conferidas na ficha de leitura do módulo; a ponte para o módulo seguinte foi refeita, porque o poder constituinte (Módulo 3) já foi estudado.
 7. A base econômica, a dependência externa e o patrimonialismo, nos tópicos 2 e 3, foram acrescentados em 09/11/2026 a partir de Faoro (2012), Leal (2012) e Carvalho (1987; 1990; 2005), nos exemplares do acervo do docente. Há edições mais recentes: *Os donos do poder* (Companhia das Letras, 2021), *Os bestializados* (Companhia das Letras, 2019), *A formação das almas* (Companhia das Letras) e *Forças Armadas e política no Brasil* (Todavia, 2019). As citações foram conferidas nos exemplares indicados nas Referências; o de *Os bestializados* é uma impressão de 2004. Os dados de participação eleitoral (Carvalho, 1987) e a passagem sobre os modelos de república (Carvalho, 1990) foram conferidos em exemplares digitalizados. Os arts. 9º, 1º, e 70, § 1º, da Constituição de 1891 foram conferidos no texto original.
+8. A seção "Um segundo caso: do 'essencialmente obediente' ao art. 142", no tópico 8, foi acrescentada em 17/11/2026. Os arts. 147 (1824) e 14 (1891) foram conferidos na publicação original disponível na Legislação Informatizada da Câmara dos Deputados, e o art. 142 no texto vigente da Constituição. As passagens de Carvalho (2005) estão nos ensaios "Militares e civis" e "Os militares, a Constituinte e a democracia" e no capítulo sobre as Forças Armadas no período de 1930 a 1945. O resultado da ADI 6.457 foi conferido em reportagem sobre o encerramento do julgamento; o inteiro teor do acórdão não foi lido. Os artigos das Constituições de 1934, 1937, 1946, 1967 e da EC n. 1/1969 sobre as forças armadas ficam, de propósito, como pesquisa do estudante.
 
 *Material elaborado com apoio de Inteligência Artificial Generativa (Claude, da Anthropic) para organização e estruturação do texto, elaboração de questões de treino e preparação didática, observadas as diretrizes da Portaria CNPq nº 2.664/2026. A seleção do conteúdo, a leitura e conferência das fontes e a responsabilidade final são do docente.*
