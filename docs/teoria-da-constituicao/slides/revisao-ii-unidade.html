@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teoria da Constituição — Revisão da II Unidade</title>
+  <link rel="stylesheet" href="deck-html-teoria.css">
+  <style>
+  /* ajustes locais deste deck (a folha compartilhada não é alterada) */
+  .fala-layout { display: grid; gap: 40px; align-items: stretch; height: 560px; margin-top: 0; }
+  .fala-layout.foto-esq { grid-template-columns: 1fr 1.9fr; }
+  .fala-layout.foto-dir { grid-template-columns: 1.9fr 1fr; }
+  .fala-layout.foto-esq .fala-foto { order: -1; }
+  .fala-layout.foto-dir .fala-foto { order: 2; }
+  .fala-texto { display: flex; flex-direction: column; justify-content: center; }
+  .fala-texto h2 { font-size: 40px; line-height: 1.12; margin: 0 0 18px; }
+  .fala-texto .kicker { margin-bottom: 12px; }
+  .fala-foto { margin: 0; position: relative; height: 100%; overflow: hidden; border: 2px solid var(--line); }
+  .fala-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .fala-foto figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 5px 10px; font-size: 13px; color: #fff; background: rgba(0, 0, 0, .55); }
+  .fala-texto .source-list { display: grid; gap: 12px; margin-top: 4px; }
+  .fala-texto .source-list div { font-size: 21px; line-height: 1.28; padding: 12px 16px; }
+  .fala-texto .notice { margin-top: 18px; font-size: 21px; padding: 14px 18px; }
+  .fala-texto .quote.compacta { margin-top: 6px; font-size: 22px; padding: 16px 20px; }
+  .fechamento { font-size: 30px; line-height: 1.3; margin: 6px 0 0; font-weight: 650; color: var(--ink); }
+  .table.quatro { grid-template-columns: .9fr 1fr 1fr 1.25fr; }
+  .table.quatro div:nth-child(3n) { border-right: 1px solid var(--line); }
+  .table.quatro div:nth-child(4n) { border-right: none; }
+  .table.compacta.mini div { min-height: 48px; padding: 9px 14px; font-size: 18px; }
+  .slide.quiz .kicker { margin-bottom: 8px; font-size: 20px; }
+  .slide.quiz h2 { font-size: 30px; line-height: 1.15; margin-bottom: 8px; }
+  .slide.quiz .quote.compacta { margin-top: 10px; padding: 14px 18px; font-size: 21px; line-height: 1.28; }
+  .slide.quiz .choice { margin-top: 12px; gap: 8px; }
+  .slide.quiz .choice div { padding: 8px 14px; font-size: 19px; line-height: 1.22; }
+  .slide.quiz .notice.gabarito { margin-top: 10px; padding: 10px 16px; font-size: 17px; line-height: 1.26; }
+  .creditos { columns: 2; column-gap: 34px; margin-top: 16px; font-size: 14.5px; line-height: 1.3; color: var(--ink); }
+  .creditos p { margin: 0 0 7px; break-inside: avoid; }
+  .passos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 30px; }
+  /* gabarito por toque: vale no celular, onde não há tecla G */
+  body.projecao-segura .slide.quiz.revela .gabarito { visibility: visible; }
+  body.projecao-segura .slide.quiz.revela .choice .correct { border-left-color: var(--accent); font-weight: 750; }
+  .slide.quiz { cursor: pointer; }
+  .dica-gabarito { display: none; }
+  @media (max-width: 820px) {
+    .fala-layout { display: block; height: auto; }
+    .fala-foto { height: 230px; margin-bottom: 16px; }
+    .fala-texto h2 { font-size: 26px; }
+    .fechamento { font-size: 20px; }
+    .passos { grid-template-columns: 1fr; }
+    .table.quatro, .table { overflow-x: auto; }
+    .creditos { columns: 1; }
+    .dica-gabarito { display: block; margin: 10px 0 0; font-size: 15px; color: var(--muted); }
+  }
+
+  </style>
+  <style>.slide.quiz .choice div{font-size:18px;padding:7px 14px}.slide.quiz .quote.compacta{font-size:20px}.creditos{font-size:12.5px!important;line-height:1.25!important}.creditos p{margin:0 0 5px!important}</style>
+</head>
+<body class="projecao-segura" data-bloco="Revisão II Unidade">
+  <main class="deck" aria-label="Deck de revisão da II Unidade de Teoria da Constituição">
+    <section class="slide title banded" data-slide="1/54">
+      <div class="block-band"><span>Revisão · II Unidade</span></div>
+      <p class="kicker">Teoria da Constituição · DIRBN.02 · 2026.2 · II Unidade</p>
+<h1>Revisão para a prova da II Unidade</h1>
+<p class="lead">Os conceitos que a prova cobra, um a um: o que cada um diz, como aparece num caso e como responder.</p>
+<div class="rule"></div>
+<p class="declaracao-iag">* Material elaborado com apoio de Inteligência Artificial Generativa — Claude (Anthropic) — para estruturação das lâminas e redação das questões simuladas. Fontes conferidas e responsabilidade integral do professor.</p>
+<p class="footer">FBBR — Direito — 2º semestre, Turma B — Prof. Mario Bastos — aula de 01/12/2026.</p>
+    </section>
+    <section class="slide banded tight" data-slide="2/54">
+      <div class="block-band"><span>Revisão · combinados</span></div>
+      <p class="kicker">Antes de começar</p>
+<h2>Como é a prova</h2>
+<div class="grid-3">
+<div class="box mini"><strong>Terça-feira, 08/12</strong><p class="small">No horário da aula. Individual, sem consulta, valendo 6,0.</p></div>
+<div class="box mini alt"><strong>É cumulativa</strong><p class="small">Cai a I Unidade (Módulos 1, 2A e 2B) e, com peso maior, a II Unidade (Módulos 3, 4 e 5).</p></div>
+<div class="box mini"><strong>Doze questões</strong><p class="small">Dez objetivas de 0,4, com cinco alternativas (A a E). Duas discursivas de 1,0.</p></div>
+</div>
+<div class="notice">Regra de hoje: <strong>vocês respondem primeiro, discutimos depois, e só então aparece o gabarito.</strong> As questões simuladas parecem as da prova, mas não são iguais.</div>
+    </section>
+    <section class="slide banded tight" data-slide="3/54">
+      <div class="block-band"><span>Revisão · esquema</span></div>
+      <p class="kicker">Esquema</p>
+<h2>O caminho de hoje acompanha a prova</h2>
+<div class="grid-2"><div class="table duas compacta mini"><div class="head">Bloco</div><div class="head">Conceito</div><div><strong>1</strong></div><div>Constituição e constitucionalismo</div><div><strong>2</strong></div><div>Escrita e não escrita</div><div><strong>3</strong></div><div>Origem: cesarista</div><div><strong>4</strong></div><div>Rigidez e supremacia</div><div><strong>5</strong></div><div>Sentidos de Constituição</div><div><strong>6</strong></div><div>Normas originárias</div></div><div class="table duas compacta mini"><div class="head">Bloco</div><div class="head">Conceito</div><div><strong>7</strong></div><div>Originário × derivado</div><div><strong>8</strong></div><div>Limitação circunstancial</div><div><strong>9</strong></div><div>Do Poder Moderador ao art. 142</div><div><strong>10</strong></div><div>1891 e 1937</div><div><strong>11</strong></div><div>Preâmbulo</div><div><strong>12</strong></div><div>ADCT</div></div></div>
+<p class="micro">Blocos 1 a 5: I Unidade. Blocos 6 a 12: II Unidade. Em cada bloco: o conceito, o desenvolvimento, a ideia para levar e uma questão simulada.</p>
+    </section>
+    <section class="slide banded" data-slide="4/54">
+      <div class="block-band"><span>1 · Constituição e constitucionalismo</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q1a.jpg" alt="Declaração dos Direitos do Homem e do Cidadão, 1789" style="object-position: 50% 40%"><figcaption>Declaração dos Direitos do Homem e do Cidadão, 1789 · Localcosmos · CC0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Questão 1 · Módulo 1</p><h2>Ter um documento não é ter Constituição</h2><div class="source-list">
+<div><strong>A fórmula de 1789:</strong> a sociedade sem garantia de direitos nem separação de poderes não tem Constituição.</div><div><strong>O nome não basta:</strong> assembleia, solenidade e texto único dizem respeito à forma; o que define a Constituição moderna é limitar o poder.</div><div><strong>O teste:</strong> quem manda está sujeito a regras? Há direitos que o cidadão pode opor ao governo?</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="5/54">
+      <div class="block-band"><span>1 · Constituição e constitucionalismo</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>Documento constitucional × constitucionalismo</h2>
+<div class="table compacta">
+<div class="head">Critério</div><div class="head">Só documento</div><div class="head">Constituição em sentido moderno</div>
+<div>Poder</div><div>Concentrado num órgão ou pessoa</div><div>Dividido e controlado (separação de poderes)</div><div>Cidadão</div><div>Sem direitos oponíveis ao governo</div><div>Titular de direitos que limitam o governo</div><div>Função do texto</div><div>Dar forma ao poder de quem manda</div><div>Limitar o poder e proteger a liberdade</div><div>Exemplo</div><div>A Carta de 1937, no Brasil (Módulo 4)</div><div>A Constituição de 1988</div>
+</div>
+<p class="micro">Mendes e Branco (2018), retomando a Declaração de 1789; Módulo 1.</p>
+    </section>
+    <section class="slide banded" data-slide="6/54">
+      <div class="block-band"><span>1 · Constituição e constitucionalismo</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q1b.jpg" alt="Montesquieu, retrato do século XVIII" style="object-position: 50% 30%"><figcaption>Montesquieu, retrato do século XVIII · After Jacques-Antoine Dassier · Public domain · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">Constituição, no sentido moderno, é a que limita o poder.</p>
+<div class="notice">Por isso se diz que 1937 foi <strong>Constituição sem constitucionalismo</strong>: tinha o documento, não tinha a limitação.</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="7/54">
+      <div class="block-band"><span>1 · Constituição e constitucionalismo</span></div>
+      <p class="kicker">Questão simulada 1</p><h2>Um texto chamado Constituição</h2><div class="quote compacta">Em Norvânia, o rei promulga uma “Carta Constitucional” de 300 artigos que lhe dá o poder de fazer leis, governar e demitir juízes. O texto não prevê direitos dos súditos.</div><div class="choice"><div>A. Norvânia tem Constituição moderna, porque o documento é escrito, extenso e foi promulgado pela autoridade máxima do país.</div><div>B. Norvânia não tem Constituição nem em sentido formal, porque documento outorgado pelo rei não pode receber esse nome.</div><div class="correct">C. Norvânia tem um documento chamado Constituição, mas não tem Constituição moderna, porque o texto não limita o poder.</div><div>D. Norvânia tem Constituição moderna, porque a separação de poderes é exigência restrita aos países de forma republicana.</div><div>E. Norvânia tem Constituição moderna, desde que um tribunal independente seja criado depois para controlar as leis do rei.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>C</strong>. <b>A</b> Extensão e escrita são forma, não limitação. <b>B</b> Há Constituição em sentido formal: existe o documento. <b>D</b> A separação de poderes não é exclusividade republicana. <b>E</b> O problema é o conteúdo do texto, não a falta de um tribunal.</p>
+    </section>
+    <section class="slide banded" data-slide="8/54">
+      <div class="block-band"><span>2 · Escrita e não escrita</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q2a.jpg" alt="Magna Carta, 1215 (British Library)" style="object-position: 50% 50%"><figcaption>Magna Carta, 1215 (British Library) · Original authors were the barons and King John of England. U · Public domain · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Questão 2 · Módulo 2B</p><h2>Não escrita não quer dizer “feita só de costumes”</h2><div class="source-list">
+<div><strong>Escrita:</strong> normas reunidas num documento único e solene.</div><div><strong>Não escrita:</strong> normas espalhadas em vários documentos, leis, decisões e convenções.</div><div><strong>O detalhe que derruba:</strong> boa parte da Constituição não escrita está em textos escritos, como a Magna Carta e o Bill of Rights.</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="9/54">
+      <div class="block-band"><span>2 · Escrita e não escrita</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>O que decide a forma é a organização, não a tinta</h2>
+<div class="table compacta">
+<div class="head"></div><div class="head">Escrita</div><div class="head">Não escrita</div>
+<div>Como as normas se organizam</div><div>Num documento único</div><div>Em várias fontes dispersas</div><div>Tem textos escritos?</div><div>Sim, o documento</div><div>Sim, vários: cartas, leis, decisões</div><div>Tem costumes e convenções?</div><div>Pode ter, ao lado do texto</div><div>Sim, ao lado dos textos</div><div>Exemplo</div><div>Brasil, 1988</div><div>Reino Unido</div><div>Erro da I Unidade</div><div>—</div><div>Dizer que ela é “feita só de costumes”</div>
+</div>
+<p class="micro">Módulo 2B, seção 2; registro da correção da prova da I Unidade (20/10).</p>
+    </section>
+    <section class="slide banded" data-slide="10/54">
+      <div class="block-band"><span>2 · Escrita e não escrita</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q2b.jpg" alt="Palácio de Westminster, Londres" style="object-position: 50% 60%"><figcaption>Palácio de Westminster, Londres · Diliff · CC BY-SA 2.5 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">Pergunte: as normas estão reunidas num documento único?</p>
+<div class="notice">Se não estão, a Constituição é <strong>não escrita</strong>, mesmo que quase tudo nela esteja em papel.</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="11/54">
+      <div class="block-band"><span>2 · Escrita e não escrita</span></div>
+      <p class="kicker">Questão simulada 2</p><h2>O reino sem código</h2><div class="quote compacta">Na Lusávia, as regras sobre o Parlamento estão em leis de 1701 e 1911; os direitos, numa carta medieval e numa lei de 1998; o papel do premiê, em convenções nunca escritas. Não há documento único.</div><div class="choice"><div>A. A Constituição da Lusávia é escrita, porque quase todas as suas normas estão em leis e documentos escritos e publicados.</div><div>B. A Lusávia não tem Constituição, porque normas espalhadas em leis comuns não podem ser consideradas constitucionais.</div><div>C. A Constituição da Lusávia é não escrita só na parte das convenções; as leis e a carta formam uma Constituição escrita.</div><div class="correct">D. A Constituição da Lusávia é não escrita, porque as normas não estão num documento único, embora muitas sejam escritas.</div><div>E. A Constituição da Lusávia é não escrita, porque é formada exclusivamente pelos costumes políticos do seu povo.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>D</strong>. <b>A</b> Ter textos escritos não torna a Constituição escrita. <b>B</b> Normas sobre o poder e os direitos são constitucionais onde estiverem. <b>C</b> A forma se diz da Constituição inteira, não por partes. <b>E</b> É o erro da I Unidade: há leis e cartas escritas.</p>
+    </section>
+    <section class="slide banded" data-slide="12/54">
+      <div class="block-band"><span>3 · Origem: cesarista</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q3a.jpg" alt="Napoleão em seu gabinete, por Jacques-Louis David (1812)" style="object-position: 50% 30%"><figcaption>Napoleão em seu gabinete, por Jacques-Louis David (1812) · Jacques-Louis David · Public domain · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Questão 3 · Módulo 2B</p><h2>Cesarista: o povo só diz sim ou não</h2><div class="source-list">
+<div><strong>Outorgada:</strong> imposta por quem governa, sem participação popular.</div><div><strong>Cesarista:</strong> imposta por quem governa e depois submetida a plebiscito ou referendo.</div><div><strong>Promulgada:</strong> elaborada por representantes eleitos para isso, que deliberam sobre o conteúdo.</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="13/54">
+      <div class="block-band"><span>3 · Origem: cesarista</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>Quatro origens, uma pergunta: quem escreveu e quem decidiu?</h2>
+<div class="table compacta">
+<div class="head">Origem</div><div class="head">Quem escreve</div><div class="head">Papel do povo</div>
+<div>Outorgada</div><div>Quem governa</div><div>Nenhum</div><div>Cesarista</div><div>Quem governa</div><div>Ratifica depois, sem deliberar sobre o conteúdo</div><div>Promulgada</div><div>Assembleia eleita</div><div>Elege os constituintes, que deliberam</div><div>Pactuada</div><div>Duas forças em compromisso (ex.: rei e parlamento)</div><div>Variável</div>
+</div>
+<p class="micro">Módulo 2B, seção 3. Nome: Napoleão Bonaparte e Napoleão III usaram o plebiscito para ratificar textos próprios.</p>
+    </section>
+    <section class="slide banded" data-slide="14/54">
+      <div class="block-band"><span>3 · Origem: cesarista</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q3b.jpg" alt="Urna de votação" style="object-position: 50% 50%"><figcaption>Urna de votação · Jebulon · CC0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">O que separa a cesarista da promulgada não é haver voto, é o momento e a função do voto.</p>
+<div class="notice">Voto depois, num texto pronto, é <strong>ratificação</strong>. Foi a questão de menos acerto entre as de classificação na I Unidade (30%).</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="15/54">
+      <div class="block-band"><span>3 · Origem: cesarista</span></div>
+      <p class="kicker">Questão simulada 3</p><h2>O general e o referendo</h2><div class="quote compacta">Após um golpe, um general nomeia três ministros para redigir a nova Constituição de Teravia. O texto é submetido a referendo, sem possibilidade de emendas, e aprovado por 70% dos votantes.</div><div class="choice"><div>A. Promulgada, porque o referendo, com ampla aprovação, equivale à deliberação de uma assembleia eleita pelo povo.</div><div>B. Pactuada, porque o texto nasceu do acordo entre o general e os três ministros encarregados de redigi-lo.</div><div>C. Outorgada, porque nenhuma consulta posterior ao povo altera a classificação de uma Constituição quanto à origem.</div><div>D. Promulgada, porque o povo exerceu diretamente a soberania, sem a intermediação de representantes eleitos.</div><div class="correct">E. Cesarista, porque o referendo só ratificou um texto imposto, sem que o povo deliberasse sobre o seu conteúdo.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>E</strong>. <b>A</b> Referendo de texto pronto não é deliberação. <b>B</b> Ministros nomeados pelo general não são parte autônoma de um pacto. <b>C</b> A consulta posterior é o que distingue a cesarista. <b>D</b> Dizer sim a um texto pronto não é deliberar.</p>
+    </section>
+    <section class="slide banded" data-slide="16/54">
+      <div class="block-band"><span>4 · Rigidez e supremacia</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q4a.jpg" alt="Supremo Tribunal Federal, Brasília" style="object-position: 50% 50%"><figcaption>Supremo Tribunal Federal, Brasília · Agência Senado from Brasilia, Brazil · CC BY 2.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Questão 4 · Módulo 2B</p><h2>Rigidez não basta: supremacia exige controle</h2><div class="source-list">
+<div><strong>Rigidez:</strong> é o procedimento de reforma mais difícil que o da lei.</div><div><strong>Supremacia:</strong> é a posição da Constituição no topo, como fundamento de validade das demais normas.</div><div><strong>O elo que falta:</strong> sem um órgão capaz de afastar a lei incompatível, a supremacia fica só proclamada.</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="17/54">
+      <div class="block-band"><span>4 · Rigidez e supremacia</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>Três ideias que andam juntas, mas não se confundem</h2>
+<div class="table compacta">
+<div class="head">Ideia</div><div class="head">O que é</div><div class="head">Onde está em 1988</div>
+<div>Rigidez</div><div>Reforma por rito agravado</div><div>Art. 60, § 2º: dois turnos, três quintos, em cada Casa</div><div>Supremacia</div><div>Constituição como fundamento de validade</div><div>Lei contrária é inválida</div><div>Controle</div><div>Órgão que afasta a lei incompatível</div><div>Art. 102: o STF guarda a Constituição; juízes no caso concreto</div><div>Sem controle</div><div>Rígida, mas com supremacia enfraquecida</div><div>Leis contrárias continuam sendo aplicadas</div>
+</div>
+<p class="micro">Módulo 2B, seções 19 e 20; Barroso (2020).</p>
+    </section>
+    <section class="slide banded" data-slide="18/54">
+      <div class="block-band"><span>4 · Rigidez e supremacia</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q4b.jpg" alt="Hans Kelsen, busto na Universidade de Viena" style="object-position: 50% 40%"><figcaption>Hans Kelsen, busto na Universidade de Viena · Hubertl · CC BY-SA 4.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">Afirmar superioridade não produz superioridade.</p>
+<div class="notice">Foi a questão de <strong>24% de acerto</strong> na I Unidade: muitos acharam que a rigidez, sozinha, impede a lei contrária de produzir efeitos.</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="19/54">
+      <div class="block-band"><span>4 · Rigidez e supremacia</span></div>
+      <p class="kicker">Questão simulada 4</p><h2>A Constituição sem guardião</h2><div class="quote compacta">A Constituição de Ardália exige três quintos de cada Casa para ser emendada. Nenhum tribunal pode deixar de aplicar lei contrária a ela, e várias leis inconstitucionais seguem em vigor.</div><div class="choice"><div class="correct">A. É rígida, mas a sua supremacia fica enfraquecida, porque não há controle capaz de afastar as leis incompatíveis.</div><div>B. É flexível, porque as leis inconstitucionais continuam valendo, o que equivale a reformar o texto por lei comum.</div><div>C. É rígida e plenamente suprema, porque o quórum de três quintos basta para impedir os efeitos das leis contrárias.</div><div>D. É semirrígida, porque uma parte do texto muda por emenda e a outra parte muda pelas leis aprovadas no Parlamento.</div><div>E. Perdeu a condição de Constituição, porque norma descumprida perde automaticamente a sua validade jurídica.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>A</strong>. <b>B</b> Alterabilidade olha o rito de reforma previsto, não o descumprimento. <b>C</b> É o erro central: rigidez sem controle não garante supremacia. <b>D</b> Semirrígida é a que distingue matérias no próprio texto (1824). <b>E</b> Descumprimento não é invalidade.</p>
+    </section>
+    <section class="slide banded" data-slide="20/54">
+      <div class="block-band"><span>5 · Sentidos de Constituição</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q5a.jpg" alt="Ferdinand Lassalle" style="object-position: 50% 25%"><figcaption>Ferdinand Lassalle · Unknown authorUnknown author · Public domain · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Discursiva 11 (Prova A) · Módulo 2A</p><h2>Folha de papel ou norma que obriga?</h2><div class="source-list">
+<div><strong>Sociológico:</strong> a Constituição real é a soma dos fatores reais de poder; o texto que não os exprime é folha de papel.</div><div><strong>Jurídico-normativo:</strong> a Constituição é norma, fundamento de validade das demais; vale mesmo quando descumprida.</div><div><strong>Força normativa:</strong> o texto é condicionado pela realidade, mas também a ordena.</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="21/54">
+      <div class="block-band"><span>5 · Sentidos de Constituição</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>Como responder a quem diz que a Constituição é “só papel”</h2>
+<div class="table duas compacta">
+<div class="head">Passo</div><div class="head">O que dizer</div>
+<div>1. Reconheça a concepção</div><div>É a leitura sociológica: manda quem tem força</div><div>2. Dê razão ao diagnóstico</div><div>A distância entre texto e realidade tem causas reais: orçamento, prioridades, poder de pressão</div><div>3. Mostre o erro da conclusão</div><div>Descumprir não é invalidar: validade e eficácia são planos distintos</div><div>4. Feche com a força normativa</div><div>A norma continua obrigando e é o instrumento para cobrar o direito</div>
+</div>
+<p class="micro">Módulo 2A; registro da correção da I Unidade: avaliam-se raciocínio e exposição.</p>
+    </section>
+    <section class="slide banded" data-slide="22/54">
+      <div class="block-band"><span>5 · Sentidos de Constituição</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q5b.jpg" alt="Unidade Básica de Saúde, Porto Alegre" style="object-position: 50% 50%"><figcaption>Unidade Básica de Saúde, Porto Alegre · Eugenio Hansen, OFS · CC BY-SA 2.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">O diagnóstico pode estar certo; a conclusão de que a Constituição não vale, não.</p>
+<div class="notice">Na discursiva, faça os <strong>dois movimentos</strong>: onde a fala acerta e onde ela erra.</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="23/54">
+      <div class="block-band"><span>5 · Sentidos de Constituição</span></div>
+      <p class="kicker">Questão simulada 5</p><h2>O direito que “não pegou”</h2><div class="quote compacta">Num debate sobre falta de vagas em creches, um líder comunitário diz: “O art. 208 garante creche, mas quem manda aqui são os donos do dinheiro. A Constituição é papel; só a pressão resolve.”</div><div class="choice"><div>A. Ele está certo nas duas partes: a norma que não se cumpre perde a validade e deixa de obrigar o poder público.</div><div>B. Ele está errado nas duas partes: a Constituição se realiza sozinha, e a falta de vagas não tem causa política.</div><div class="correct">C. Ele acerta no diagnóstico, mas erra na conclusão: descumprir não tira a validade da norma, que segue obrigando.</div><div>D. Ele erra no diagnóstico, mas acerta na conclusão: a Constituição só vale quando os fatores reais de poder a aceitam.</div><div>E. Ele acerta, porque a concepção normativa ensina que a norma constitucional só vale se for efetivamente cumprida.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>C</strong>. <b>A</b> Validade não depende de cumprimento. <b>B</b> A distância entre norma e realidade tem causas reais. <b>D</b> Inverte: o diagnóstico é o que a fala acerta. <b>E</b> A concepção normativa diz o contrário: a norma vale mesmo descumprida.</p>
+    </section>
+    <section class="slide banded" data-slide="24/54">
+      <div class="block-band"><span>6 · Normas originárias</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q6a.jpg" alt="Assembleia Nacional Constituinte, 1987–1988" style="object-position: 50% 50%"><figcaption>Assembleia Nacional Constituinte, 1987–1988 · Senado Federal · CC BY 2.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Questão 5 · Módulo 3</p><h2>Norma originária não se controla; emenda, sim</h2><div class="source-list">
+<div><strong>Normas originárias:</strong> as que vieram da Constituinte de 1987–1988, no texto de 05/10/1988.</div><div><strong>Não há hierarquia entre elas:</strong> nenhuma é “inconstitucional” diante de outra; conflitos aparentes se resolvem por interpretação.</div><div><strong>Emenda é diferente:</strong> obra do poder derivado, pode ser objeto de controle.</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="25/54">
+      <div class="block-band"><span>6 · Normas originárias</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>O que o STF decidiu</h2>
+<div class="table compacta">
+<div class="head">Caso</div><div class="head">O pedido</div><div class="head">O que prevaleceu</div>
+<div>ADI 815 (1996)</div><div>Declarar inconstitucionais os limites de deputados por Estado (art. 45)</div><div>Não conhecida: não há hierarquia entre normas originárias</div><div>ADI 4.097 (2008)</div><div>Declarar inconstitucional a inelegibilidade dos analfabetos (art. 14, § 4º)</div><div>Indeferida pelo mesmo fundamento</div><div>ADI 939 (Módulo 2B)</div><div>Atacar uma emenda constitucional</div><div>Emenda derrubada por violar cláusula pétrea</div>
+</div>
+<p class="micro">Módulo 3, seção 6; Barroso (2020); Mendes e Branco (2018).</p>
+    </section>
+    <section class="slide banded" data-slide="26/54">
+      <div class="block-band"><span>6 · Normas originárias</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q6b.jpg" alt="A Justiça, de Alfredo Ceschiatti, diante do STF" style="object-position: 50% 40%"><figcaption>A Justiça, de Alfredo Ceschiatti, diante do STF · Dasfour2022 · CC BY-SA 4.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">O STF guarda a Constituição; não fiscaliza o constituinte originário.</p>
+<div class="notice">Cláusula pétrea limita o <strong>poder derivado</strong>. Não cria normas originárias “superiores” às outras.</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="27/54">
+      <div class="block-band"><span>6 · Normas originárias</span></div>
+      <p class="kicker">Questão simulada 6</p><h2>Um artigo original contra outro</h2><div class="quote compacta">Uma associação pede ao STF que declare inconstitucional um parágrafo do texto original de 1988, por contrariar o princípio da igualdade, que também está no texto original.</div><div class="choice"><div>A. O pedido pode ser acolhido, porque normas protegidas por cláusula pétrea são superiores às demais normas originárias.</div><div class="correct">B. O pedido não pode ser acolhido, porque não há hierarquia entre normas originárias, e o STF não controla o originário.</div><div>C. O pedido pode ser acolhido, porque a guarda da Constituição permite ao STF corrigir escolhas da Constituinte de 1988.</div><div>D. O pedido não pode ser acolhido só porque associações nunca podem propor ação perante o Supremo Tribunal Federal.</div><div>E. O pedido pode ser acolhido, se o parágrafo tiver sido aprovado na Constituinte por menos de três quintos dos votos.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>B</strong>. <b>A</b> Proteção por cláusula pétrea não cria hierarquia. <b>C</b> É o que o STF recusou na ADI 815. <b>D</b> O fundamento é a impossibilidade do pedido, não quem o propõe. <b>E</b> O quórum do art. 60 vale para emendas, não para a Constituinte.</p>
+    </section>
+    <section class="slide banded" data-slide="28/54">
+      <div class="block-band"><span>7 · Originário × derivado</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q7a.jpg" alt="Promulgação da Constituição, 05/10/1988" style="object-position: 50% 50%"><figcaption>Promulgação da Constituição, 05/10/1988 · Agência Brasil · CC BY 3.0 br · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Discursiva 12 (Prova A) · Módulo 3</p><h2>O Congresso não é a Constituinte</h2><div class="source-list">
+<div><strong>Poder originário:</strong> do povo; inicial, autônomo, juridicamente ilimitado. Feita a Constituição, fica em latência.</div><div><strong>Poder derivado reformador:</strong> do Congresso; criado pela Constituição e limitado pelo art. 60.</div><div><strong>Erro recorrente da I Unidade:</strong> confundir o Congresso Nacional com a Assembleia Nacional Constituinte.</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="29/54">
+      <div class="block-band"><span>7 · Originário × derivado</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>Por que uma “constituinte exclusiva” convocada por emenda não se sustenta</h2>
+<div class="table duas compacta">
+<div class="head">Argumento</div><div class="head">Explicação</div>
+<div>O Congresso é poder constituído</div><div>Não pode invocar o originário para escapar do art. 60</div><div>Não há momento constituinte</div><div>O originário só sai da latência numa ruptura</div><div>Constituinte “parcial” contraria o originário</div><div>Um poder ilimitado não se manifesta por tema</div><div>Limites implícitos</div><div>Não se muda o titular do poder reformador nem o rito da reforma</div><div>O caminho possível</div><div>Proposta de emenda, eventualmente submetida a referendo</div>
+</div>
+<p class="micro">Módulo 3, seções 4, 6 e 14; o episódio de 2013 está na seção 6.</p>
+    </section>
+    <section class="slide banded" data-slide="30/54">
+      <div class="block-band"><span>7 · Originário × derivado</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q7b.jpg" alt="Congresso Nacional, Brasília" style="object-position: 50% 50%"><figcaption>Congresso Nacional, Brasília · Agência Senado from Brasilia, Brazil · CC BY 2.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">Quem reforma não refunda.</p>
+<div class="notice">O Congresso pode <strong>emendar</strong> a Constituição, nos limites do art. 60. Não pode criar quem a refaça.</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="31/54">
+      <div class="block-band"><span>7 · Originário × derivado</span></div>
+      <p class="kicker">Questão simulada 7</p><h2>A assembleia para um só tema</h2><div class="quote compacta">Uma PEC prevê que uma assembleia eleita apenas para a reforma tributária poderá aprovar mudanças na Constituição por maioria absoluta, em turno único, sem os limites do art. 60.</div><div class="choice"><div>A. É válida, porque a assembleia seria eleita pelo povo, titular do poder constituinte, e poderia exercê-lo por tema.</div><div>B. É válida, desde que a PEC que convoca a assembleia seja aprovada por três quintos, em dois turnos, em cada Casa.</div><div>C. É inválida apenas porque a iniciativa de convocar assembleia constituinte cabe privativamente ao Presidente.</div><div>D. É válida, porque o poder originário é permanente e pode ser chamado pelo Congresso sempre que houver crise.</div><div class="correct">E. É inválida, porque o Congresso, poder constituído, não pode criar órgão que altere a Constituição fora do art. 60.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>E</strong>. <b>A</b> O originário não se manifesta por tema nem é convocado pelo poder constituído. <b>B</b> Cumprir o rito não autoriza mudar o rito (limite implícito). <b>C</b> Não há iniciativa privativa de emenda; o vício é outro. <b>D</b> Permanência é latência, não convocação a qualquer tempo.</p>
+    </section>
+    <section class="slide banded" data-slide="32/54">
+      <div class="block-band"><span>8 · Limitação circunstancial</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q8a.jpg" alt="Palácio Guanabara, sede do governo do Rio de Janeiro" style="object-position: 50% 50%"><figcaption>Palácio Guanabara, sede do governo do Rio de Janeiro · Rzpguimaraes · CC BY-SA 3.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Questão 6 · Módulo 3</p><h2>Em crise institucional, a Constituição não se emenda</h2><div class="source-list">
+<div><strong>Art. 60, § 1º:</strong> a Constituição não pode ser emendada na vigência de intervenção federal, estado de defesa ou estado de sítio.</div><div><strong>A razão:</strong> nessas situações, a liberdade de quem reforma pode estar comprometida.</div><div><strong>Vale para qualquer tema:</strong> a proibição não depende do assunto da emenda nem do Estado envolvido.</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="33/54">
+      <div class="block-band"><span>8 · Limitação circunstancial</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>O mapa das limitações ao poder de reforma</h2>
+<div class="table compacta">
+<div class="head">Limitação</div><div class="head">O que proíbe ou exige</div><div class="head">Onde</div>
+<div>Formal</div><div>Iniciativa restrita, dois turnos, três quintos, promulgação pelas Mesas</div><div>Art. 60, I a III, §§ 2º, 3º e 5º</div><div>Circunstancial</div><div>Emendar durante intervenção federal, estado de defesa ou de sítio</div><div>Art. 60, § 1º</div><div>Material</div><div>Proposta tendente a abolir as cláusulas pétreas</div><div>Art. 60, § 4º</div><div>Temporal</div><div>Emendar durante certo prazo</div><div>Não existe em 1988; só em 1824 (art. 174)</div>
+</div>
+<p class="micro">Módulo 3, seção 10; Moraes (2017); Lenza (2024).</p>
+    </section>
+    <section class="slide banded" data-slide="34/54">
+      <div class="block-band"><span>8 · Limitação circunstancial</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q8b.jpg" alt="Plenário da Câmara dos Deputados" style="object-position: 50% 50%"><figcaption>Plenário da Câmara dos Deputados · Kayo Magalhães/Câmara dos Deputados · CC BY 3.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">Primeiro se encerra a situação excepcional; depois se vota a emenda.</p>
+<div class="notice">Não confunda: a Constituição de 1988 <strong>não tem limitação temporal</strong> expressa.</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="35/54">
+      <div class="block-band"><span>8 · Limitação circunstancial</span></div>
+      <p class="kicker">Questão simulada 8</p><h2>A emenda no estado de defesa</h2><div class="quote compacta">Durante estado de defesa decretado em parte do território, o Senado vota, em segundo turno, uma PEC sobre a carreira da magistratura.</div><div class="choice"><div>A. A votação é regular, porque a limitação circunstancial só se aplica à intervenção federal, e não ao estado de defesa.</div><div>B. A votação é regular, porque o estado de defesa atinge só uma parte do território e não alcança o Congresso Nacional.</div><div>C. A votação viola limitação temporal, porque a Constituição proíbe emendas nos cinco anos seguintes a cada crise.</div><div class="correct">D. A votação viola limitação circunstancial: a Constituição não pode ser emendada na vigência de estado de defesa.</div><div>E. A votação viola cláusula pétrea, porque a carreira da magistratura integra a separação de poderes do art. 60, § 4º.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>D</strong>. <b>A</b> O § 1º menciona as três situações. <b>B</b> A proibição é geral enquanto durar a situação. <b>C</b> Não há limitação temporal em 1988. <b>E</b> Confunde limitação circunstancial com material.</p>
+    </section>
+    <section class="slide banded" data-slide="36/54">
+      <div class="block-band"><span>9 · Do Poder Moderador ao art. 142</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q9a.jpg" alt="Dom Pedro I, por Simplício Rodrigues de Sá" style="object-position: 50% 25%"><figcaption>Dom Pedro I, por Simplício Rodrigues de Sá · Simplício Rodrigues de Sá · Public domain · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Questão 7 e Discursiva 12 (Prova B) · Módulo 4</p><h2>O Moderador estava no texto; o “poder moderador” militar, não</h2><div class="source-list">
+<div><strong>1824, arts. 10 e 98:</strong> quatro poderes; o Moderador, “chave de toda a organisação Politica”, cabia ao Imperador.</div><div><strong>Semirrigidez, art. 178:</strong> só o que tratava de poderes e direitos exigia reforma agravada; o resto mudava por lei.</div><div><strong>1891 em diante:</strong> o Moderador é extinto; a ideia de um árbitro acima dos poderes passa a ser reivindicada, fora do texto, pelos militares.</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="37/54">
+      <div class="block-band"><span>9 · Do Poder Moderador ao art. 142</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>A linha que vai de 1824 a 2024</h2>
+<div class="table duas compacta">
+<div class="head">Momento</div><div class="head">O que aconteceu</div>
+<div>1824</div><div>Força militar “essencialmente obediente” (art. 147); Moderador com o Imperador</div><div>1891</div><div>República proclamada por levante militar; obediência “dentro dos limites da lei” (art. 14)</div><div>Anos 1930</div><div>Primeira formulação sistemática da “ideologia do poder moderador das Forças Armadas”</div><div>1988</div><div>Art. 142: defesa da Pátria, garantia dos poderes constitucionais e, por iniciativa de qualquer deles, da lei e da ordem</div><div>2024</div><div>ADI 6.457, unânime: o art. 142 não dá às Forças Armadas poder moderador entre os Poderes</div>
+</div>
+<p class="micro">Módulo 4, tópicos 2 e 8; Carvalho (2005); STF, ADI 6.457.</p>
+    </section>
+    <section class="slide banded" data-slide="38/54">
+      <div class="block-band"><span>9 · Do Poder Moderador ao art. 142</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q9b.jpg" alt="Desfile de 7 de Setembro, Esplanada dos Ministérios" style="object-position: 50% 40%"><figcaption>Desfile de 7 de Setembro, Esplanada dos Ministérios · Agência Brasília from Brasília, Brasil · CC BY 2.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">Garantir os poderes não é arbitrar entre eles.</p>
+<div class="notice">Na discursiva: explique o Moderador de 1824, mostre que ele não existe em 1988 e cite a decisão do STF.</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="39/54">
+      <div class="block-band"><span>9 · Do Poder Moderador ao art. 142</span></div>
+      <p class="kicker">Questão simulada 9</p><h2>As faixas na praça</h2><div class="quote compacta">Durante um conflito entre o Congresso e o Presidente, manifestantes pedem que as Forças Armadas “exerçam o poder moderador do art. 142” e decidam qual dos dois tem razão.</div><div class="choice"><div>A. O pedido tem base no art. 142, porque garantir os poderes constitucionais inclui decidir qual deles tem razão.</div><div class="correct">B. O pedido é incompatível: o art. 142 não autoriza as Forças Armadas a arbitrar conflitos entre os Poderes.</div><div>C. O pedido tem base no art. 142, porque esse artigo transferiu às Forças Armadas o Poder Moderador do Imperador de 1824.</div><div>D. O pedido só seria incompatível se o conflito envolvesse o Judiciário; entre Executivo e Legislativo, ele é admitido.</div><div>E. O pedido tem base no art. 142, desde que a atuação militar seja solicitada pelo Presidente, comandante supremo.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>B</strong>. <b>A</b> Garantir não é arbitrar. <b>C</b> O Moderador foi extinto em 1891; o art. 142 não o recriou. <b>D</b> A decisão do STF não distingue o Poder envolvido. <b>E</b> A garantia não admite o uso da força de um Poder contra outro.</p>
+    </section>
+    <section class="slide banded" data-slide="40/54">
+      <div class="block-band"><span>10 · 1891 e 1937</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q10a.jpg" alt="Proclamação da República, por Benedito Calixto (1893)" style="object-position: 50% 50%"><figcaption>Proclamação da República, por Benedito Calixto (1893) · Benedito Calixto · Public domain · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Questão 8 e Discursiva 11 (Prova B) · Módulos 4 e 2A</p><h2>Nominal não é semântica</h2><div class="source-list">
+<div><strong>Normativa:</strong> a realidade se ajusta ao texto.</div><div><strong>Nominal:</strong> o texto pretende limitar o poder, mas a realidade ainda não o acompanha: promessa não cumprida.</div><div><strong>Semântica:</strong> o texto nem pretende limitar; dá forma jurídica a quem já manda.</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="41/54">
+      <div class="block-band"><span>10 · 1891 e 1937</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>Duas Constituições, dois diagnósticos</h2>
+<div class="table compacta">
+<div class="head"></div><div class="head">1891</div><div class="head">1937</div>
+<div>Origem</div><div>Promulgada</div><div>Outorgada (plebiscito previsto, nunca feito)</div><div>O que mudou</div><div>Forma de Estado e de governo: República, federação, fim do Moderador</div><div>Fechou o Congresso; governo por decretos-leis</div><div>O que ficou</div><div>Quem mandava: voto restrito (art. 70), cerca de 2% votando em 1894, coronelismo</div><div>—</div><div>Pretendia limitar o poder?</div><div>Sim</div><div>Não: organizava a concentração</div><div>Classificação</div><div>Nominal</div><div>Semântica</div>
+</div>
+<p class="micro">Módulo 4, tópicos 1, 3 e 4; Módulo 2A (classificação quanto à correspondência com a realidade).</p>
+    </section>
+    <section class="slide banded" data-slide="42/54">
+      <div class="block-band"><span>10 · 1891 e 1937</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q10b.jpg" alt="Getúlio Vargas, retrato oficial" style="object-position: 50% 25%"><figcaption>Getúlio Vargas, retrato oficial · Desconhecido. Colorida por Djalma Gomes Netto. · Public domain · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">Rupturas formais, continuidades materiais.</p>
+<div class="notice">1891 mudou a <strong>forma</strong>; quem mandava continuou mandando. 1937 nem prometeu limitar o poder.</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="43/54">
+      <div class="block-band"><span>10 · 1891 e 1937</span></div>
+      <p class="kicker">Questão simulada 10</p><h2>A República de poucos</h2><div class="quote compacta">Uma Constituição cria a República e a federação, separa Estado e Igreja e institui um tribunal de cúpula. Ao mesmo tempo, exclui os analfabetos do voto, e só uma pequena fração da população vota nas eleições seguintes.</div><div class="choice"><div class="correct">A. É nominal, porque pretende limitar o poder, mas a realidade não o acompanha, e quem mandava continua mandando.</div><div>B. É normativa, porque a criação de um tribunal de cúpula basta para que a realidade passe a se ajustar ao texto.</div><div>C. É semântica, porque o texto servia apenas para disfarçar uma ditadura e nunca pretendeu limitar o poder político.</div><div>D. Não houve ruptura alguma, porque a forma de Estado e de governo permaneceu igual à do regime anterior.</div><div>E. É normativa, porque a federação e a separação entre Estado e Igreja ampliaram de imediato a participação popular.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>A</strong>. <b>C</b> Semântica é a que nem pretende limitar (1937). <b>B</b> Instituições no papel não bastam. <b>D</b> A forma mudou de fato. <b>E</b> A exclusão eleitoral desmente a participação ampliada.</p>
+    </section>
+    <section class="slide banded" data-slide="44/54">
+      <div class="block-band"><span>11 · Preâmbulo</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q11a.jpg" alt="Constituição de 1988, edição de bolso" style="object-position: 50% 50%"><figcaption>Constituição de 1988, edição de bolso · República Federativa do Brasil · Public domain · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Questão 9 · Módulo 5</p><h2>O preâmbulo orienta, mas não obriga sozinho</h2><div class="source-list">
+<div><strong>ADI 2.076 (Acre):</strong> o preâmbulo “não se situa no âmbito do Direito, mas no domínio da política”.</div><div><strong>Consequências:</strong> não cria direitos nem deveres, não é de reprodução obrigatória e não é parâmetro de controle.</div><div><strong>Mas não é inútil:</strong> é vetor de interpretação dos princípios que estão no corpo da Constituição.</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="45/54">
+      <div class="block-band"><span>11 · Preâmbulo</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>Três teses e a que prevaleceu</h2>
+<div class="table compacta">
+<div class="head">Tese</div><div class="head">O que sustenta</div><div class="head">Situação</div>
+<div>Irrelevância jurídica</div><div>O preâmbulo está no domínio da política</div><div>Adotada pelo STF na ADI 2.076</div><div>Plena eficácia</div><div>Tem a mesma força das demais normas</div><div>Não prevaleceu</div><div>Relevância indireta</div><div>Participa da Constituição sem se confundir com o articulado</div><div>Posição intermediária</div><div>Na prática</div><div>Não há inconstitucionalidade por violar o preâmbulo por si</div><div>Viola-se o princípio positivado no corpo do texto</div>
+</div>
+<p class="micro">Módulo 5, tópico 3; Lenza (2024); Mendes e Branco (2018).</p>
+    </section>
+    <section class="slide banded" data-slide="46/54">
+      <div class="block-band"><span>11 · Preâmbulo</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q11b.jpg" alt="Palácio Rio Branco, Rio Branco (AC)" style="object-position: 50% 50%"><figcaption>Palácio Rio Branco, Rio Branco (AC) · Webysther · CC BY-SA 4.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">Não é parâmetro de controle; é vetor de interpretação.</p>
+<div class="notice">O caso veio do <strong>Acre</strong>: a Constituição estadual não repetia “sob a proteção de Deus”.</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="47/54">
+      <div class="block-band"><span>11 · Preâmbulo</span></div>
+      <p class="kicker">Questão simulada 11</p><h2>Um preâmbulo estadual diferente</h2><div class="quote compacta">A Constituição de um Estado não repete o trecho do preâmbulo federal que fala em “sociedade fraterna”. Um deputado estadual sustenta que a omissão torna inconstitucional toda a Constituição do Estado.</div><div class="choice"><div>A. A tese procede, porque o preâmbulo federal tem força normativa plena e é parâmetro autônomo de controle das leis.</div><div>B. A tese procede, porque todo o preâmbulo federal é norma central que os Estados-membros estão obrigados a repetir.</div><div>C. A tese não procede, porque o preâmbulo é juridicamente irrelevante e não serve nem para orientar a interpretação.</div><div>D. A tese não procede, porque os Estados podem omitir qualquer norma federal que não esteja entre as cláusulas pétreas.</div><div class="correct">E. A tese não procede, porque o preâmbulo não é de reprodução obrigatória, embora oriente a interpretação do texto.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>E</strong>. <b>A</b> É a tese da plena eficácia, que não prevaleceu. <b>B</b> O STF disse o contrário na ADI 2.076. <b>C</b> Acerta o resultado e erra o fundamento. <b>D</b> Generalização falsa sobre a autonomia dos Estados.</p>
+    </section>
+    <section class="slide banded" data-slide="48/54">
+      <div class="block-band"><span>12 · ADCT</span></div>
+      <div class="fala-layout foto-esq"><figure class="fala-foto"><img src="imagens-revisao-ii/q12a.jpg" alt="Sessão de promulgação da Constituição, 1988" style="object-position: 50% 50%"><figcaption>Sessão de promulgação da Constituição, 1988 · Senado Federal · CC BY 2.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Questão 10 · Módulo 5</p><h2>Transitório, mas constitucional</h2><div class="source-list">
+<div><strong>Mesma hierarquia:</strong> as normas do ADCT são normas constitucionais, como as da parte permanente.</div><div><strong>Por isso:</strong> servem de parâmetro de controle e só mudam por emenda.</div><div><strong>ADI 829:</strong> “a transitoriedade em si mesma não torna incompossível” a alteração; a emenda respeita os limites do art. 60.</div>
+</div></div></div>
+    </section>
+    <section class="slide banded tight" data-slide="49/54">
+      <div class="block-band"><span>12 · ADCT</span></div>
+      <p class="kicker">Desenvolvimento</p>
+<h2>O que decorre da natureza constitucional do ADCT</h2>
+<div class="table duas compacta">
+<div class="head">Consequência</div><div class="head">Exemplo</div>
+<div>Pode excepcionar regras da parte permanente</div><div>Regras de transição</div><div>É parâmetro de controle</div><div>Lei contrária ao ADCT é inconstitucional (RE 160.486)</div><div>Só muda por emenda</div><div>EC n. 2/1992 antecipou o plebiscito do art. 2º (ADI 829)</div><div>Limites da doutrina</div><div>Normas já exauridas; direitos atribuídos, como o do art. 68 (quilombolas)</div>
+</div>
+<p class="micro">Módulo 5, tópico 6; Lenza (2024); Mendes e Branco (2018).</p>
+    </section>
+    <section class="slide banded" data-slide="50/54">
+      <div class="block-band"><span>12 · ADCT</span></div>
+      <div class="fala-layout foto-dir"><figure class="fala-foto"><img src="imagens-revisao-ii/q12b.jpg" alt="Mapa do resultado do plebiscito de 1993" style="object-position: 50% 50%"><figcaption>Mapa do resultado do plebiscito de 1993 · José Arlindo Pinto · CC BY-SA 4.0 · Wikimedia Commons</figcaption></figure><div class="fala-texto"><p class="kicker">Para levar</p><h2>A ideia que resolve</h2><p class="fechamento">Transitoriedade não é imutabilidade, nem hierarquia menor.</p>
+<div class="notice">O plebiscito de 1993 sobre forma e sistema de governo foi <strong>antecipado por emenda</strong>, e o STF validou a emenda.</div></div></div>
+    </section>
+    <section class="slide banded quiz" data-slide="51/54">
+      <div class="block-band"><span>12 · ADCT</span></div>
+      <p class="kicker">Questão simulada 12</p><h2>A regra de transição alterada</h2><div class="quote compacta">Uma emenda modifica um artigo do ADCT ainda em vigor. Um partido sustenta que a emenda é inválida porque o ADCT teria força de lei complementar e, por isso, só poderia ser alterado por lei.</div><div class="choice"><div>A. O ADCT tem força de lei complementar e, por isso, só pode ser alterado por lei aprovada pela maioria absoluta.</div><div>B. O ADCT é constitucional, mas imutável, porque o caráter transitório impede qualquer atuação do poder derivado.</div><div>C. O ADCT não serve de parâmetro de controle, porque se limita a orientar a interpretação da parte permanente.</div><div class="correct">D. O ADCT tem hierarquia constitucional e pode ser emendado, desde que respeitados os limites do poder de reforma.</div><div>E. O ADCT pode ser alterado livremente, porque a parte transitória não se sujeita aos limites materiais do art. 60.</div></div><p class="dica-gabarito">Toque na questão para ver o gabarito.</p><p class="notice gabarito">Gabarito: <strong>D</strong>. <b>A</b> O ADCT integra a Constituição. <b>B</b> É o argumento afastado na ADI 829. <b>C</b> Lei contrária ao ADCT é inconstitucional. <b>E</b> Emendas ao ADCT têm os mesmos limites de qualquer emenda.</p>
+    </section>
+    <section class="slide banded tight" data-slide="52/54">
+      <div class="block-band"><span>Revisão · fechamento</span></div>
+      <p class="kicker">Para a prova</p>
+<h2>Cinco cuidados que valem pontos</h2>
+<div class="source-list">
+<div><strong>Leia o caso inteiro</strong> antes das alternativas: a resposta quase sempre depende de um detalhe do enunciado.</div>
+<div><strong>Desconfie da alternativa que repete o enunciado</strong> com uma palavra trocada: “rígida” por “suprema”, “Congresso” por “Constituinte”.</div>
+<div><strong>Separe forma de conteúdo:</strong> documento, assembleia e voto dizem respeito à forma; limitar o poder é o conteúdo.</div>
+<div><strong>Nas discursivas, explique o porquê</strong>: não basta nomear o conceito; mostre como ele resolve o caso.</div>
+<div><strong>Escreva em texto corrido,</strong> com começo, meio e conclusão, e releia antes de entregar.</div>
+</div>
+    </section>
+    <section class="slide banded tight" data-slide="53/54">
+      <div class="block-band"><span>Créditos das imagens</span></div>
+      <p class="kicker">Imagens</p><h2>Créditos das imagens</h2><div class="creditos"><p><strong>q1a</strong> Declaration of the Rights of Man and of the Citizen in 1789 cropped he — Localcosmos — CC0</p><p><strong>q1b</strong> Montesquieu - Versailles MV 2976.png — After Jacques-Antoine Dassier — Public domain</p><p><strong>q2a</strong> Magna Carta (British Library Cotton MS Augustus II.106).jpg — Original authors were the barons and Kin — Public domain</p><p><strong>q2b</strong> Palace of Westminster, London - Feb 2007.jpg — Diliff — CC BY-SA 2.5</p><p><strong>q3a</strong> Jacques-Louis David - The Emperor Napoleon in His Study at the Tuileri — Jacques-Louis David — Public domain</p><p><strong>q3b</strong> Urne Ballot box république.jpg — Jebulon — CC0</p><p><strong>q4a</strong> Fachada do Supremo Tribunal Federal (STF) (54334559198).jpg — Agência Senado from Brasilia, Brazil — CC BY 2.0</p><p><strong>q4b</strong> Hans Kelsen (Nr. 17) - Bust in the Arkadenhof, University of Vienna -  — Hubertl — CC BY-SA 4.0</p><p><strong>q5a</strong> Ferdinand Lassalle standing portrait.jpg — Unknown authorUnknown author — Public domain</p><p><strong>q5b</strong> Unidade Básica de Saúde Santa Cecília (Porto Alegre, Brasil).jpg — Eugenio Hansen, OFS — CC BY-SA 2.0</p><p><strong>q6a</strong> Assembleia Constituinte (37684796576).jpg — Senado Federal — CC BY 2.0</p><p><strong>q6b</strong> Supreme Federal Court - Statue.jpg — Dasfour2022 — CC BY-SA 4.0</p><p><strong>q7a</strong> Promulgação-Constituição-1988.jpg — Agência Brasil — CC BY 3.0 br</p><p><strong>q7b</strong> Imagens de Brasília - Fachada do Palácio do Congresso Nacional (534576 — Agência Senado from Brasilia, Brazil — CC BY 2.0</p><p><strong>q8a</strong> Palácio Guanabara exterior.JPG — Rzpguimaraes — CC BY-SA 3.0</p><p><strong>q8b</strong> Plenário da Câmara dos Deputados durante votação da PEC das Prerrogati — Kayo Magalhães/Câmara dos Deputados — CC BY 3.0</p><p><strong>q9a</strong> Simplício Rodrigues de Sá - Retrato de Dom Pedro I.jpg — Simplício Rodrigues de Sá — Public domain</p><p><strong>q9b</strong> Desfile de 7 de Setembro na Esplanada dos Ministérios (36896845486).jp — Agência Brasília from Brasília, Brasil — CC BY 2.0</p><p><strong>q10a</strong> Proclamação da República by Benedito Calixto 1893.jpg — Benedito Calixto — Public domain</p><p><strong>q10b</strong> Getúlio Vargas - retrato oficial de 1930.JPG — Desconhecido. Colorida por Djalma Gomes  — Public domain</p><p><strong>q11a</strong> Constituição da República Federativa do Brasil 1988 (livro de bolso,ex — República Federativa do Brasil — Public domain</p><p><strong>q11b</strong> Webysther 20150907164050 - Palácio Rio Branco.jpg — Webysther — CC BY-SA 4.0</p><p><strong>q12a</strong> Promulgação da Constituição (8430668400).jpg — Senado Federal — CC BY 2.0</p><p><strong>q12b</strong> Mapa do Plebiscito 1993 do Brasil.png — José Arlindo Pinto — CC BY-SA 4.0</p></div><p class="micro">Todas as imagens vêm do Wikimedia Commons; endereços completos em imagens-revisao-ii/creditos.json.</p>
+    </section>
+    <section class="slide banded tight" data-slide="54/54">
+      <div class="block-band"><span>Transparência</span></div>
+      <p class="kicker">Como este material foi feito</p>
+<h2>Declaração de uso de Inteligência Artificial Generativa</h2>
+<p class="lead">As lâminas e as questões simuladas foram estruturadas e redigidas com apoio de Inteligência Artificial Generativa — Claude (Anthropic) —, a partir dos módulos da disciplina e da prova da II Unidade, sob direção, revisão e responsabilidade integral do professor.</p>
+<p class="declaracao-iag">Portaria CNPq nº 2.664/2026. Imagens de licença livre, com crédito na lâmina anterior.</p>
+    </section>
+
+  </main>
+
+  <div class="hud" id="hud" aria-hidden="true">
+    <div class="hud-item"><span class="hud-label">Lâmina</span><span class="hud-value" id="hud-slide">1/80</span></div>
+    <div class="hud-item"><span class="hud-label">Alvo</span><span class="hud-value" id="hud-alvo">18:30</span></div>
+    <div class="hud-item"><span class="hud-label">Agora</span><span class="hud-value" id="hud-agora">--:--</span></div>
+    <div class="hud-item"><span class="hud-label">Ritmo</span><span class="hud-value" id="hud-delta">-</span></div>
+    <p class="hud-help">setas navegam · F tela cheia · G gabarito · O oculta opcionais · M limpa tudo · H oculta este painel</p>
+  </div>
+
+  <script>
+    (function () {
+      var slides = [].slice.call(document.querySelectorAll('.slide'));
+      var hudSlide = document.getElementById('hud-slide');
+      var hudAlvo = document.getElementById('hud-alvo');
+      var hudAgora = document.getElementById('hud-agora');
+      var hudDelta = document.getElementById('hud-delta');
+      var atual = 0;
+
+      function visiveis() { return slides.filter(function (slide) { return slide.offsetParent !== null; }); }
+      function minutos(valor) { var partes = (valor || '').split(':'); return partes.length === 2 ? (+partes[0] * 60) + (+partes[1]) : null; }
+      function atualizarHud(slide, indice, total) {
+        if (!slide) return;
+        var alvo = slide.getAttribute('data-alvo') || '--:--';
+        var agora = new Date();
+        var diferenca = minutos(alvo) === null ? null : (agora.getHours() * 60 + agora.getMinutes()) - minutos(alvo);
+        hudSlide.textContent = (indice + 1) + '/' + total;
+        hudAlvo.textContent = alvo;
+        hudAgora.textContent = ('0' + agora.getHours()).slice(-2) + ':' + ('0' + agora.getMinutes()).slice(-2);
+        hudDelta.className = 'hud-value';
+        if (diferenca === null) hudDelta.textContent = '-';
+        else if (diferenca > 2) { hudDelta.textContent = '+' + diferenca + ' min'; hudDelta.classList.add('late'); }
+        else if (diferenca < -2) { hudDelta.textContent = diferenca + ' min'; hudDelta.classList.add('ahead'); }
+        else hudDelta.textContent = 'em dia';
+      }
+      function irPara(indice) {
+        var lista = visiveis();
+        if (!lista.length) return;
+        atual = Math.max(0, Math.min(lista.length - 1, indice));
+        lista[atual].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        atualizarHud(lista[atual], atual, lista.length);
+      }
+      function slideNaTela() {
+        var lista = visiveis(); var melhor = lista[0]; var distancia = Infinity;
+        lista.forEach(function (slide) { var valor = Math.abs(slide.getBoundingClientRect().top); if (valor < distancia) { distancia = valor; melhor = slide; } });
+        return melhor;
+      }
+      document.addEventListener('keydown', function (evento) {
+        var tecla = evento.key;
+        if (tecla === 'ArrowRight' || tecla === 'ArrowDown' || tecla === 'PageDown' || tecla === ' ') { evento.preventDefault(); irPara(atual + 1); }
+        else if (tecla === 'ArrowLeft' || tecla === 'ArrowUp' || tecla === 'PageUp') { evento.preventDefault(); irPara(atual - 1); }
+        else if (tecla === 'Home') { evento.preventDefault(); irPara(0); }
+        else if (tecla === 'End') { evento.preventDefault(); irPara(visiveis().length - 1); }
+        else if (tecla === 'f' || tecla === 'F') { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen && document.documentElement.requestFullscreen(); }
+        else if (tecla === 'g' || tecla === 'G') document.body.classList.toggle('mostrar-gabarito');
+        else if (tecla === 'n' || tecla === 'N') document.body.classList.toggle('mostrar-notas');
+        else if (tecla === 'h' || tecla === 'H') document.body.classList.toggle('hud-off');
+        else if (tecla === 'o' || tecla === 'O') { var referencia = slideNaTela(); document.body.classList.toggle('hide-optional'); var lista = visiveis(); var novoIndice = lista.indexOf(referencia); irPara(novoIndice < 0 ? Math.min(atual, lista.length - 1) : novoIndice); }
+        else if (tecla === 'm' || tecla === 'M') { document.body.classList.toggle('sem-marcas'); document.body.classList.remove('mostrar-gabarito', 'mostrar-notas'); }
+      });
+      if ('IntersectionObserver' in window) {
+        var observador = new IntersectionObserver(function (entradas) {
+          entradas.forEach(function (entrada) { if (entrada.isIntersecting) { var lista = visiveis(); var indice = lista.indexOf(entrada.target); if (indice >= 0) { atual = indice; atualizarHud(entrada.target, indice, lista.length); } } });
+        }, { threshold: .55 });
+        slides.forEach(function (slide) { observador.observe(slide); });
+      }
+      setInterval(function () { var lista = visiveis(); atualizarHud(lista[Math.min(atual, lista.length - 1)], Math.min(atual, lista.length - 1), lista.length); }, 20000);
+      irPara(0);
+    }());
+  </script>
+<script>
+  (function () {
+    document.querySelectorAll('.slide.quiz').forEach(function (s) {
+      s.addEventListener('click', function () { s.classList.toggle('revela'); });
+    });
+  })();
+  </script>
+</body>
+</html>
